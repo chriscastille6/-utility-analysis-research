@@ -1,0 +1,29 @@
+"timestamp","session_id","question_number","variable1","variable2","user_guess","correct_correlation","error","sample_size"
+2025-07-03 05:34:10.254102,"session_20250703_053353_8279",1,"Sugar consumption","Children's hyperactive behavior",0.35,0.17,0.18,50
+2025-07-03 05:35:57.874866,"session_20250703_053549_8279",1,"Sugar consumption","Children's hyperactive behavior",0.36,0.17,0.19,50
+2025-07-03 05:38:22.835117,"session_20250703_053818_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-03 05:39:01.914535,"session_20250703_053858_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-03 05:40:38.2114,"session_20250703_053858_8279",2,"Aspirin consumption","Heart attack risk",0,0.33,0.33,22071
+2025-07-03 05:40:42.325422,"session_20250703_053858_8279",3,"Chemotherapy treatment","Breast cancer survival",0,0.17,0.17,1000
+2025-07-03 05:41:47.642238,"session_20250703_054142_8464",1,"Sugar consumption","Children's hyperactive behavior",0,0.38,0.38,50
+2025-07-03 05:46:08.056834,"session_20250703_054602_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-03 05:46:31.075916,"session_20250703_054626_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-03 05:48:05.700636,"session_20250703_054626_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-03 05:48:08.655999,"session_20250703_054626_8279",2,"Aspirin consumption","Heart attack risk",0,0.33,0.33,22071
+2025-07-03 05:48:57.283188,"session_20250703_054626_8279",3,"Chemotherapy treatment","Breast cancer survival",0,0.17,0.17,1000
+2025-07-03 05:50:04.788111,"session_20250703_054940_4908",1,"Sugar consumption","Children's hyperactive behavior",0,0.39,0.39,50
+2025-07-03 06:06:13.717963,"session_20250703_060603_6347",1,"Family/couples therapy","Drug abuse treatment outcome",0,0.23,0.23,13,13,TRUE
+2025-07-03 06:13:34.492082,"session_20250703_060941_2908",1,"Social conformity","Conformity behavior",0,0.42,0.42,4627,NA,FALSE
+2025-07-03 06:13:37.491577,"session_20250703_060941_2908",1,"Social conformity","Conformity behavior",0,0.42,0.42,4627,NA,FALSE
+2025-07-03 06:25:14.657237,"session_20250703_062510_9604",1,"Antibiotic treatment","Improvement in middle ear pain",0,0.08,0.08,1843,NA,FALSE
+2025-07-03 06:28:11.945674,"session_20250703_062803_8499",1,"Gender (male vs female)","Self-reported assertiveness",0,0.32,0.32,19546,NA,FALSE
+2025-07-03 06:28:28.075811,"session_20250703_062803_8499",1,"Gender (male vs female)","Self-reported assertiveness",0,0.32,0.32,19546,NA,FALSE
+2025-07-03 06:28:39.026403,"session_20250703_062803_8499",2,"Gender (male vs female)","Body weight",0.6,0.26,0.34,16950,NA,FALSE
+2025-07-03 06:31:14.323672,"session_20250703_063105_2621",1,"Family/couples therapy","Drug abuse treatment outcome",0,0.23,0.23,13,13,TRUE
+2025-07-03 06:32:58.649336,"session_20250703_063253_5778",1,"Post-MI cardiac rehabilitation","Reduced death from cardiovascular complications",0,0.04,0.04,4044,NA,FALSE
+2025-07-03 06:33:43.515185,"session_20250703_063253_5778",2,"Movie critic ratings","Box office success",0.03,0.17,0.14,15,15,TRUE
+2025-07-03 08:16:41.570095,"session_20250703_081624_9998",1,"Observer attractiveness ratings","Attractiveness in romantic partnerships",0.31,0.39,0.08,1299,NA,FALSE
+2025-07-03 08:34:23.290634,"session_20250703_083401_2487",1,"Alcohol consumption","Aggressive behavior",0.32,0.23,0.09,47,47,TRUE
+2025-07-03 09:17:00.213039,"session_20250703_091638_7515",1,"Post-high school grades","Job performance",0.28,0.16,0.12,13984,NA,FALSE
+2025-07-03 09:49:08.281143,"session_20250703_094853_8671",1,"Combat exposure","Subsequent PTSD",0.22,0.11,0.11,2490,NA,FALSE
+2025-07-03 13:25:26.598164,"session_20250703_132511_4214",1,"Parental attachment","Child's attachment quality",0.44,0.47,0.03,854,NA,FALSE

@@ -1,0 +1,143 @@
+entry,description,correlation,sample_size,notes,category,intuitive
+1,"Dexamethasone suppression test scores and response to depression treatment",0.00,2068,"Ribeiro et al. (1993) - essentially uninformative for predicting treatment response","Medical Test",FALSE
+2,"Fecal occult blood test screening and reduced death from colorectal cancer",0.01,329642,"Towler et al. (1998) - screening test effectiveness","Medical Test",TRUE
+3,"Routine umbilical artery Doppler ultrasound and reduced perinatal deaths in low-risk women",0.01,11375,"Goffinet et al. (1997) - minimal impact on outcomes","Medical Test",FALSE
+4,"Routine ultrasound examinations and successful pregnancy outcomes",0.01,16227,"Bucher & Schmidt (1993) - very small effects across multiple outcomes","Medical Test",FALSE
+5,"MMPI Ego Strength scores and subsequent psychotherapy outcome",0.02,280,"Meyer & Handler (1997) - limited predictive value","Psychological Test",FALSE
+6,"Routine umbilical artery Doppler ultrasound and reduced perinatal deaths in high-risk women",0.03,7474,"Alfirevic & Neilson (1995) - small but consistent effect","Medical Test",TRUE
+7,"Denial/repressive coping style and development of breast cancer",0.03,12908,"McKenna et al. (1999) - psychological factors in cancer","Psychological Test",FALSE
+8,"Triple marker prenatal screening and identification of Trisomy 18",0.03,40748,"Yankowitz et al. (1998) - rare condition screening","Medical Test",TRUE
+9,"Impact of geriatric medical assessment teams on reduced deaths",0.04,10065,"Combined meta-analysis - comprehensive assessment benefits","Medical Test",TRUE
+10,"MMPI depression profile scores and subsequent cancer within 20 years",0.05,2018,"Persky et al. (1987) - long-term prediction","Psychological Test",FALSE
+11,"Ventilatory lung function test scores and subsequent lung cancer within 25 years",0.06,3956,"Islam & Schottenfeld (1994) - long-term prediction","Medical Test",TRUE
+12,"Rorschach Interaction Scale scores and subsequent cancer within 30 years",0.07,1027,"Graves et al. (1986) - controlled for multiple factors","Psychological Test",FALSE
+13,"Unique contribution of MMPI high-point code to relevant criteria",0.07,8614,"McGrath & Ingersoll (1999a, 1999b) - incremental validity","Psychological Test",FALSE
+14,"MMPI scores and subsequent prison misconduct",0.07,17636,"Gendreau et al. (1997) - predictive validity","Psychological Test",TRUE
+15,"Beck Hopelessness Scale scores and subsequent suicide",0.08,2123,"Combined studies - Beck et al. (1990, 1985)","Psychological Test",TRUE
+16,"MMPI elevations and criminal defendant incompetency",0.08,1461,"Nicholson & Kugler (1991) - forensic assessment","Psychological Test",TRUE
+17,"Extroversion test scores and success in sales",0.08,6004,"Combined meta-analyses - Barrick & Mount (1991), Salgado (1997), Vinchur et al. (1998)","Psychological Test",TRUE
+18,"Attention and concentration test scores and residual mild head trauma",0.09,622,"Binder et al. (1997) - neuropsychological assessment","Psychological Test",TRUE
+19,"Lack of glandular differentiation on tissue biopsy and survival past 5 years in cervical cancer",0.11,685,"Heatley (1999) - tissue pathology prediction","Medical Test",TRUE
+20,"Negative emotionality test scores and subsequent heart disease",0.11,104,"Booth-Kewley & Friedman (1987) - psychological factors in heart disease","Psychological Test",TRUE
+21,"Triple marker prenatal screening and identification of Down's syndrome",0.11,194326,"Conde-Agudelo & Kafury-Goeta (1998) - across all ages","Medical Test",TRUE
+22,"General cognitive ability and involvement in automobile accidents",0.12,1020,"Arthur et al. (1991) - cognitive factors in safety","Psychological Test",TRUE
+23,"Conscientiousness test scores and job proficiency",0.12,21650,"Combined meta-analyses - Barrick & Mount (1991), Mount et al. (1998), Salgado (1998), Vinchur et al. (1998)","Psychological Test",TRUE
+24,"Platform posturography and detection of balance deficits due to vestibular impairment",0.13,1477,"Di Fabio (1996) - balance assessment","Medical Test",TRUE
+25,"General intelligence and success in military pilot training",0.13,15403,"Martinussen (1996) - cognitive ability in training","Psychological Test",TRUE
+26,"Self-report scores of achievement motivation and spontaneous achievement behavior",0.15,104,"Spangler (1992) - motivation-behavior relationship","Psychological Test",TRUE
+27,"Graduate Record Exam Verbal or Quantitative scores and subsequent graduate GPA in psychology",0.15,963,"Goldberg & Alliger (1992) - academic prediction","Psychological Test",TRUE
+28,"Low serotonin metabolites in cerebrospinal fluid and subsequent suicide attempts",0.16,140,"Lester (1995) - biological markers","Medical Test",TRUE
+29,"Personality tests and conceptually meaningful job performance criteria",0.16,11101,"Combined studies - Robertson & Kinder (1993), Tett et al. (1991, 1994)","Psychological Test",TRUE
+30,"Implicit memory tests and differentiation of normal cognitive ability from dementia",0.16,328,"Meiran & Jelicic (1995) - cognitive assessment","Psychological Test",TRUE
+31,"MMPI Cook-Medley hostility scale elevations and subsequent death from all causes",0.19,626,"Miller et al. (1996) - long-term health prediction","Psychological Test",TRUE
+32,"Motivation to manage from Miner Sentence Completion Test and managerial effectiveness",0.19,17741,"Carson & Gilliard (1993) - managerial assessment","Psychological Test",TRUE
+33,"Extroversion and subjective well-being",0.19,333,"DeNeve & Cooper (1998) - personality-wellbeing relationship","Psychological Test",TRUE
+34,"MRI T2 hyperintensities and differentiation of affective disorder patients from healthy controls",0.20,1991,"Videbech (1997) - neuroimaging in psychiatry","Medical Test",TRUE
+35,"Test anxiety scales and lower school grades",0.20,3816,"Hembree (1988) - academic performance impact","Psychological Test",TRUE
+36,"High trait anger assessed in interpersonal analogue and elevated blood pressure",0.20,626,"Jorgensen et al. (1996) - stress-physiology relationship","Psychological Test",TRUE
+37,"Reduced blood flow and subsequent thrombosis or failure of synthetic hemodialysis graft",0.21,17741,"Paulson et al. (1999) - vascular assessment","Medical Test",TRUE
+38,"MMPI validity scales and detection of known or suspected underreported psychopathology",0.22,333,"Baer et al. (1992) - response validity","Psychological Test",FALSE
+39,"Dexamethasone suppression test scores and subsequent suicide",0.22,626,"Lester (1992) - biological prediction","Medical Test",TRUE
+40,"Short-term memory tests and subsequent job performance",0.22,1991,"Verive & McDaniel (1996) - cognitive-job relationship","Psychological Test",TRUE
+41,"Depression test scores and subsequent recurrence of herpes simplex virus symptoms",0.22,3816,"Zorrilla et al. (1996) - psychological-immunological relationship","Psychological Test",FALSE
+42,"Four preoperative cardiac tests and prediction of death or MI within 1 week of vascular surgery",0.23,626,"Mantha et al. (1994) - surgical risk assessment","Medical Test",TRUE
+43,"Scholastic Aptitude Test scores and subsequent college GPA",0.23,104,"Baron & Norman (1992) - academic prediction","Psychological Test",TRUE
+44,"Self-reported dependency test scores and physical illness",0.24,1034,"Bornstein (1998) - personality-health relationship","Psychological Test",FALSE
+45,"Dexamethasone suppression test scores and psychotic vs. nonpsychotic major depression",0.24,984,"Nelson & Davis (1997) - diagnostic differentiation","Medical Test",TRUE
+46,"Traditional ECG stress test results and coronary artery disease",0.24,5431,"Fleischmann et al. (1998) - cardiac assessment","Medical Test",TRUE
+47,"Graduate Record Exam Quantitative scores and subsequent graduate GPA",0.24,5186,"Morrison & Morrison (1995) - academic prediction","Psychological Test",TRUE
+48,"TAT scores of achievement motivation and spontaneous achievement behavior",0.24,82,"Spangler (1992) - projective test validity","Psychological Test",FALSE
+49,"Isometric strength test scores and job ratings of physical ability",0.24,7900,"Blakley et al. (1994) - physical assessment","Medical Test",TRUE
+50,"Single serum progesterone testing and diagnosis of ectopic pregnancy",0.25,20849,"Mol et al. (1998) - pregnancy complication detection","Medical Test",TRUE
+51,"Cognitive multitask performance test scores and subsequent pilot proficiency",0.25,40230,"Damos (1993) - aviation assessment","Psychological Test",TRUE
+52,"WISC distractibility subscales and learning disability diagnoses",0.25,8481,"Kavale & Forness (1984) - cognitive assessment","Psychological Test",TRUE
+53,"Fetal fibronectin testing and prediction of preterm delivery",0.26,7550,"Faron et al. (1998) - pregnancy outcome prediction","Medical Test",TRUE
+54,"Decreased bone mineral density and lifetime risk of hip fracture in women",0.26,3013,"Marshall et al. (1996) - osteoporosis assessment","Medical Test",TRUE
+55,"General intelligence test scores and functional effectiveness across jobs",0.26,3527,"Schmitt et al. (1984) - cognitive-job relationship","Psychological Test",TRUE
+56,"Internal locus of control and subjective well-being",0.26,44,"DeNeve & Cooper (1998) - personality-wellbeing relationship","Psychological Test",TRUE
+57,"Integrity test scores and subsequent supervisory ratings of job performance",0.27,5788,"Ones et al. (1993) - personnel selection","Psychological Test",TRUE
+58,"Self-reported dependency test scores and dependent behavior",0.27,9777,"Bornstein (1999) - personality-behavior relationship","Psychological Test",TRUE
+59,"Self-efficacy appraisals and health-related treatment outcomes",0.27,192009,"Holden (1991) - psychological treatment relationship","Psychological Test",TRUE
+60,"Elevated Jenkins Activity Survey scores and heart rate and blood pressure reactivity",0.28,1354,"Lyness (1993) - stress-physiology relationship","Psychological Test",TRUE
+61,"Combined internal, stable, and global attributions for negative event outcomes and depression",0.28,3328,"Sweeney et al. (1986) - attribution-depression relationship","Psychological Test",FALSE
+62,"Neuroticism and decreased subjective well-being",0.28,5186,"DeNeve & Cooper (1998) - personality-wellbeing relationship","Psychological Test",TRUE
+63,"Screening mammogram results and detection of breast cancer within 2 years",0.28,6920,"Mushlin et al. (1998) - cancer screening","Medical Test",TRUE
+64,"Microbiologic blood culture tests to detect bloodstream infection from vascular catheters",0.28,54,"Siegman-Igra et al. (1997) - infection detection","Medical Test",TRUE
+65,"C-reactive protein test results and diagnosis of acute appendicitis",0.28,7900,"Hallan & Asberg (1997) - inflammation marker","Medical Test",TRUE
+66,"Graduate Record Exam Verbal scores and subsequent graduate GPA",0.28,3644,"Morrison & Morrison (1995) - academic prediction","Psychological Test",TRUE
+67,"Hare Psychopathy Checklist scores and subsequent criminal recidivism",0.28,192009,"Salekin et al. (1996) - forensic prediction","Psychological Test",TRUE
+68,"Short-term memory tests and subsequent performance on job training",0.28,3644,"Verive & McDaniel (1996) - cognitive-training relationship","Psychological Test",TRUE
+69,"Cranial ultrasound results in preterm infants and subsequent developmental disabilities",0.28,3644,"Ng & Dear (1990) - developmental prediction","Medical Test",TRUE
+70,"Serum CA-125 testing and detection of endometriosis",0.28,3644,"Mol et al. (1998) - gynecological assessment","Medical Test",TRUE
+71,"Neuropsychological test scores and differentiation of patients with multiple sclerosis",0.28,3644,"Wishart & Sharpe (1997) - neurological assessment","Psychological Test",TRUE
+72,"For women, ECG stress test results and detection of coronary artery disease",0.28,3644,"Kwok et al. (1999) - cardiac assessment","Medical Test",TRUE
+73,"YASR total problems and psychiatric referral status",0.28,3644,"Achenbach (1997) - clinical assessment","Psychological Test",TRUE
+74,"Fecal leukocyte results and detection of acute infectious diarrhea",0.28,3644,"Huicho et al. (1996) - infection detection","Medical Test",TRUE
+75,"Neuropsychological test scores and differentiation of learning disabilities",0.28,3644,"Kavale & Nye (1985) - cognitive assessment","Psychological Test",TRUE
+76,"Continuous performance test scores and differentiation of ADHD and control children",0.28,3644,"Losier et al. (1996) - attention assessment","Psychological Test",TRUE
+77,"Effects of psychological assessment feedback on subsequent patient well-being",0.28,3644,"Combined studies - Finn & Tonsager (1992), Newman & Greenway (1997)","Psychological Test",TRUE
+78,"Expressed emotion on the CFI and subsequent relapse in schizophrenia and mood disorders",0.28,3644,"Butzlaff & Hooley (1998) - family assessment","Psychological Test",FALSE
+79,"CT results and detection of aortic injury",0.28,3644,"Mirvis et al. (1996) - trauma assessment","Medical Test",TRUE
+80,"Screening mammogram results and detection of breast cancer within 1 year",0.28,3644,"Mushlin et al. (1998) - cancer screening","Medical Test",TRUE
+81,"Halstead-Reitan Neuropsychological Tests and differentiation of impaired vs. control children",0.28,3644,"Forster & Leckliter (1994) - neuropsychological assessment","Psychological Test",TRUE
+82,"CT results for enlarged ventricular volume and differentiation of schizophrenia from controls",0.28,3644,"Raz & Raz (1990) - neuroimaging in psychiatry","Medical Test",TRUE
+83,"Long-term memory test scores and diagnosis of multiple sclerosis",0.28,3644,"Thornton & Raz (1997) - cognitive assessment","Psychological Test",TRUE
+84,"Hare Psychopathy Checklist scores and subsequent violent behavior",0.28,3644,"Salekin et al. (1996) - forensic prediction","Psychological Test",TRUE
+85,"Alanine aminotransferase results and detection of improved liver function in hepatitis C patients",0.28,3644,"Bonis et al. (1997) - liver function assessment","Medical Test",TRUE
+86,"Rorschach scores and conceptually meaningful criterion measures",0.33,122,"Combined meta-analyses - Atkinson (1986), Hiller et al. (1999), Parker et al. (1988)","Psychological Test",FALSE
+87,"Papanicolaou Test (Pap smear) and detection of cervical abnormalities",0.33,53,"Fahey et al. (1995) - cancer screening","Medical Test",TRUE
+88,"Conventional dental X-rays and diagnosis of biting surface cavities",0.33,1567,"Ie & Verdonschot (1994) - dental assessment","Medical Test",TRUE
+89,"Incremental contribution of Rorschach PRS scores over IQ to predict psychotherapy outcome",0.33,480,"Meyer (2000) - incremental validity","Psychological Test",FALSE
+90,"Rorschach or Apperceptive Test Dependency scores and physical illness",0.33,122,"Bornstein (1998) - projective test validity","Psychological Test",FALSE
+91,"Assessment center evaluations and job success",0.33,17421,"Combined studies - Schmitt et al. (1984), Gaugler et al. (1987)","Psychological Test",TRUE
+92,"Competency screening sentence-completion test scores and defendant competency",0.33,5466,"Nicholson & Kugler (1991) - forensic assessment","Psychological Test",TRUE
+93,"MCMI-II scale score and average ability to detect depressive or psychotic disorders",0.33,290,"Ganellen (1996) - clinical assessment","Psychological Test",TRUE
+94,"MMPI scale scores and average ability to detect depressive or psychotic disorders",0.33,325,"Ganellen (1996) - clinical assessment","Psychological Test",TRUE
+95,"Rorschach Apperceptive Test Dependency scores and dependent behavior",0.33,927,"Bornstein (1999) - projective test validity","Psychological Test",FALSE
+96,"Accuracy of home pregnancy test kits in patients conducting testing at home",0.33,1808,"Bastian et al. (1998) - diagnostic accuracy","Medical Test",TRUE
+97,"Sperm penetration assay results and success with in vitro fertilization",0.33,155,"Mol et al. (1998) - fertility assessment","Medical Test",TRUE
+98,"Endovaginal ultrasound in postmenopausal women and detection of endometrial cancer",0.33,1335,"Smith-Bindman et al. (1998) - cancer screening","Medical Test",TRUE
+99,"MMPI Validity scales and detection of underreported psychopathology",0.33,3443,"Baer et al. (1992) - response validity","Psychological Test",FALSE
+100,"MMPI scores and conceptually meaningful criterion measures",0.33,2297,"Combined meta-analyses - Atkinson (1986), Hiller et al. (1999), Parker et al. (1988)","Psychological Test",TRUE
+101,"Neuropsychologists' test-based judgments and presence/absence of impairment",0.33,2235,"Garb & Schramke (1996) - clinical judgment","Psychological Test",TRUE
+102,"Prostate-specific antigen and estimated detection of prostate cancer for men aged 60-70",0.33,4200,"Aziz & Barathur (1993) - cancer screening","Medical Test",TRUE
+103,"Short-term verbal learning and differentiation of major depression from controls",0.33,1022,"Veiel (1997) - cognitive assessment","Psychological Test",TRUE
+104,"CT results and detection of lymph node metastases in cervical cancer",0.33,1705,"Scheidler et al. (1997) - cancer staging","Medical Test",TRUE
+105,"Dissociative Experiences Scale scores and detection of MPD or PTSD vs. controls",0.33,2249,"Van IJzendoorn & Schuengel (1996) - clinical assessment","Psychological Test",TRUE
+106,"Colposcopy and detection of normal/low-grade SIL vs. high-grade SIL/cancer of the cervix",0.33,157,"Mitchell et al. (1998) - cancer screening","Medical Test",TRUE
+107,"Cortical tuber count on MRI and degree of impaired cognitive development in tuberous sclerosis",0.33,8,"Goodman et al. (1997) - neuroimaging","Medical Test",TRUE
+108,"Conventional dental X-rays and diagnosis of between-tooth cavities",0.33,157,"Van Rijkom & Verdonschot (1995) - dental assessment","Medical Test",TRUE
+109,"Cardiac fluoroscopy and diagnosis of coronary artery disease",0.33,157,"Gianrossi et al. (1990) - cardiac assessment","Medical Test",TRUE
+110,"Serum chlamydia antibody levels and detection of fertility problems due to tubal pathology",0.33,157,"Mol et al. (1997) - fertility assessment","Medical Test",TRUE
+111,"Rorschach PRS scores and subsequent psychotherapy outcome",0.33,732,"Meyer & Handler (1997, 2000) - projective test validity","Psychological Test",FALSE
+112,"Digitally enhanced dental X-rays and diagnosis of biting surfaces cavities",0.33,2459,"Ie & Verdonschot (1994) - dental assessment","Medical Test",TRUE
+113,"WAIS IQ and obtained level of education",0.33,4906,"Hanson et al. (1988) - cognitive-education relationship","Psychological Test",TRUE
+114,"MMPI Validity scales and detection of known or suspected malingered psychopathology",0.33,24,"Combined studies - Berry et al. (1991), Rogers et al. (1994)","Psychological Test",FALSE
+115,"D-dimer blood test results and detection of deep vein thrombosis or pulmonary embolism",0.33,157,"Becker et al. (1996) - vascular assessment","Medical Test",TRUE
+116,"Exercise SPECT imaging and identification of coronary artery disease",0.33,8,"Fleischmann et al. (1998) - cardiac assessment","Medical Test",TRUE
+117,"Antineutrophil cytoplasmic antibody testing and detection of Wegener's granulomatosis",0.33,157,"Rao et al. (1995) - autoimmune assessment","Medical Test",TRUE
+118,"Lecithin/sphingomyelin ratio and prediction of neonatal respiratory distress syndrome",0.33,157,"Petersen et al. (1996) - neonatal assessment","Medical Test",TRUE
+119,"Sensitivity of total serum cholesterol levels to changes in dietary cholesterol",0.33,157,"Howell et al. (1997) - dietary response","Medical Test",TRUE
+120,"Memory recall tests and differentiation of schizophrenia from controls",0.33,157,"Aleman et al. (1999) - cognitive assessment","Psychological Test",TRUE
+121,"CBCL parent report of total problems and psychiatric referral status",0.33,157,"Achenbach (1991b) - child assessment","Psychological Test",TRUE
+122,"WAIS IQ subtests and differentiation of dementia from controls",0.33,157,"Christensen & Mackinnon (1992) - cognitive assessment","Psychological Test",TRUE
+123,"Single serum progesterone testing and diagnosis of any nonviable pregnancy",0.33,157,"Mol et al. (1998) - pregnancy assessment","Medical Test",TRUE
+124,"MRI results and detection of ruptured silicone gel breast implants",0.33,157,"Goodman et al. (1998) - implant assessment","Medical Test",TRUE
+125,"Association of Hachinski ischemic scores with postmortem classification of dementia type",0.33,157,"Moroney et al. (1997) - dementia assessment","Medical Test",TRUE
+126,"MRI results and detection of lymph node metastases in cervical cancer",0.33,157,"Scheidler et al. (1997) - cancer staging","Medical Test",TRUE
+127,"Cognitive tests of information-processing speed and reasoning ability",0.33,157,"Verhaeghen & Salthouse (1997) - cognitive assessment","Psychological Test",TRUE
+128,"MRI results and differentiation of dementia from controls",0.33,157,"Zakzanis (1998) - neuroimaging","Medical Test",TRUE
+129,"WAIS IQ scores and conceptually meaningful criterion measures",0.33,157,"Parker et al. (1988) - cognitive assessment","Psychological Test",TRUE
+130,"Exercise ECG results and identification of coronary artery disease",0.33,157,"Fleischmann et al. (1998) - cardiac assessment","Medical Test",TRUE
+131,"Ultrasound results and identification of deep venous thrombosis",0.33,157,"Wells et al. (1995) - vascular assessment","Medical Test",TRUE
+132,"Neuropsychologists' test-based judgments and presence/localization of impairment",0.33,157,"Garb & Schramke (1996) - clinical judgment","Psychological Test",TRUE
+133,"Long-term verbal memory tests and differentiation of dementia from depression",0.33,157,"Christensen et al. (1997) - cognitive assessment","Psychological Test",TRUE
+134,"CT results and detection of metastases from head and neck cancer",0.33,157,"Merrit et al. (1997) - cancer staging","Medical Test",TRUE
+135,"Neuropsychological tests and differentiation of dementia from controls",0.68,94,"Christensen et al. (1991) - strong cognitive assessment","Psychological Test",TRUE
+136,"Immunoglobulin-G antiperinuclear factor scores and detection of rheumatoid arthritis",0.68,2541,"Berthelot et al. (1998) - autoimmune assessment","Medical Test",TRUE
+137,"MMPI Validity scales and detection of malingered psychopathology",0.74,11204,"Combined studies - Berry et al. (1991), Rogers et al. (1994)","Psychological Test",FALSE
+138,"MMPI basic scales: booklet vs. computerized form",0.78,732,"Finger & Ones (1999) - test format equivalence","Psychological Test",FALSE
+139,"Thoracic impedance scores and criterion measures of cardiac stroke volume and output",0.81,24,"Fuller (1992) - cardiac assessment","Medical Test",TRUE
+140,"Creatinine clearance test results and kidney function",0.83,2459,"Campens & Buntinx (1997) - renal assessment","Medical Test",TRUE
+141,"Duplex ultrasonography results and identification of peripheral artery disease",0.83,4906,"de Vries et al. (1996) - vascular assessment","Medical Test",TRUE
+142,"Finger or ear pulse oximetry readings in patients and arterial oxygen saturation",0.84,4354,"Jensen et al. (1998) - oxygenation assessment","Medical Test",TRUE 

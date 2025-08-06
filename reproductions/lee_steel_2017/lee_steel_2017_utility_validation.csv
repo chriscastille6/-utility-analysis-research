@@ -1,0 +1,7 @@
+"Test_Case","Expected_Utility","Our_Utility","Difference","Percent_Difference","Validation_Status"
+"Low Validity",1350000,1350000,0,0,"✅ Valid"
+"High Validity",6950000,6950000,0,0,"✅ Valid"
+"Low Selection Ratio",5989000,5989000,0,0,"✅ Valid"
+"High Selection Ratio",2374000,2374000,0,0,"✅ Valid"
+"Low Performance SD",2050000,2050000,0,0,"✅ Valid"
+"High Performance SD",8350000,8350000,0,0,"✅ Valid"

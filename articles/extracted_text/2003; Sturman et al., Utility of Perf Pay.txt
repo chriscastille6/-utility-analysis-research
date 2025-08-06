@@ -1,0 +1,1147 @@
+        Is it worth it to win the Talent War? Evaluating the Utility of
+                                   Performance-Based Pay
+
+
+                              Michael C. Sturman, Cornell University
+                        Charlie O. Trevor, University of Wisconsin-Madison
+                               John W. Boudreau, Cornell University
+                         Barry Gerhart, University of Wisconsin-Madison
+
+
+             Although the business press suggests that "winning the talent war," the attraction and
+    retention of key talent, is increasingly pivotal to organization success, executives often report
+    that their organizations do not fare well on this dimension. We demonstrate how, through
+    integrating turnover and compensation research, the Boudreau and Berger (1985) staffing
+    utility framework can be used by I-O psychologists and other HR professionals to address this
+    issue. Employing a step-by-step process that combines organization-specific information about
+    pay and performance with research on the pay-turnover linkage, we estimate the effects of
+    incentive pay on employee separation patterns at various performance levels. We then use the
+    utility framework to evaluate the financial consequences of incentive pay as an employee
+    retention vehicle. The demonstration illustrates the limitations of standard accounting and
+    behavioral cost-based approaches and the importance of considering both the costs and
+    benefits associated with pay-for-performance plans. Our results suggest that traditional
+    accounting or behavioral cost-based approaches, used alone, would have supported rejecting a
+    potentially lucrative pay-for-performance investment. In addition, our approach should enable
+    HR professionals to use research findings and their own data to estimate the retention patterns
+    and subsequent financial consequences of their existing, and potential, company-specific
+    performance-based pay policies.
+
+
+
+        The ability to achieve competitive advantage through people depends in large part on the
+composition of the work force. This, in turn, is a function of who is hired, how they are developed, and
+who is retained- the latter of which is the focus of this study. Voluntary employee turnover can be either
+dysfunctional or functional for the organization, depending on who leaves (Boudreau, 1991; Boudreau &
+
+
+--- PAGE BREAK ---
+
+Berger, 1985; Hollenbeck & Williams, 1986; Trevor, 2001). Both low and high performers are generally
+more likely to leave an organization than are average performers (Jackofsky, 1984; Trevor, Gerhart, &
+Boudreau, 1997; Williams & Livingstone, 1994). Thus, organizations often will shed poor employees
+(functional turnover), but will also fail to retain star employees (dysfunctional turnover). It appears,
+however, that organizational practices can influence the performance distribution of leavers.
+Specifically, though high performers typically may leave the organization more often than do average
+performers, they do not necessarily do so. Although research consistently reports that an organization’s
+pay system affects the probability of voluntary turnover (Dreher, 1982; Gerhart & Milkovich, 1992;
+Griffeth, Hom, & Gaertner, 2000; Harrison, Virick, & William, 1996; Porter & Lawler, 1968; Schwab,
+1991; Steers & Mowday, 1981; Trevor et al., 1997), the probability of high-performer turnover is
+particularly sensitive to the strength of the pay-for-performance link (Trevor et al., 1997). Consequently,
+organizations may be able to design compensation systems to enhance organizational value by targeting
+retention efforts at the dysfunctional high performer turnover.
+        This may, in fact, be increasingly happening as organizations in the United States and abroad are
+progressing toward linking pay more strongly to performance (Milkovich & Newman, 2002). Although
+many organizations have expanded their use of plans that reward team, business unit, and corporate
+performance (Milkovich & Newman, 2002), the predominant basis for pay-for-performance continues to
+be individual performance (Hewitt Associates, 2002; IOMA, 2002), and survey data indicate that
+companies believe individual pay-for-performance programs are effective (IOMA, 2002). Although there
+are concerns about the wisdom of pay-for-performance (e.g., Kohn, 1993; Pfeffer, 1998), particularly for
+individual performance, research reviews find ample evidence that pay-for-performance is associated
+with higher performance at both the individual (Jenkins, Mitra, Gupta, & Shaw, 1998) and organizational
+levels of analysis (Gerhart, 2000). Such research, however, has not explicitly examined the mechanisms
+through which pay-for-performance plans affect individual behaviors to influence the organizational
+bottom line. One such mechanism involves pay-for-performance’s effects on performance-specific
+turnover, and the associated costs and benefits that contribute to organizational financial performance.
+        The professional HR literature suggests that influencing the retention of high performers in
+particular is a crucial matter. Many articles cite the increasing difficulty in obtaining and keeping top
+talent (e.g., Bartlett & Ghoshal, 2002; Branch, 1998; Chambers, Handfield-Jones, Hanking, & Michaels,
+1998; Rich, 1999). A report based on interviews of over 5,000 executives and managers (McKinsey &
+Company, 1998), for example, found that 65% of executives believed that they had insufficient talent in
+the ranks of their top 300 leaders while only 10% strongly believed that their companies retained most
+
+
+--- PAGE BREAK ---
+
+of their high performers. Even with the recent economic slowdown, organizations face increased
+pressures to attract and retain top talent in their most pivotal talent areas. The Bureau of Labor
+Statistics projects that, by 2010, the labor supply will grow by 17 million (Fullerton & Toosi, 2001) and
+labor demand will increase by 22.2 million (Berman, 2001), indicating that labor shortages will play
+increasing roles in the future. Moreover, even if a company is reducing employee headcount, voluntary
+attrition is often the first and most attractive option (Sherwyn & Sturman, 2002). Each of these
+circumstances highlights the potential benefits of managerial investments that particularly facilitate top-
+performer retention.
+        Few would debate the merits of a performance-based pay practice that, all else equal, resulted
+in greater retention of high performers. Unfortunately, all else is far from equal when changing an
+organization’s pay systems. Because such changes will affect total labor costs, individual employee pay
+levels, and subsequent employee behaviors, the critical question becomes one of whether the benefits
+of such a practice outweigh the costs. We propose that although the potential retention benefits of
+incentive pay have been recognized, they have yet to be quantified in dollar terms. Moreover,
+researchers have failed to adequately address actual costs of performance-based bay. Our goal here is
+to provide the first empirical cost-benefit assessment of the viability of performance-based pay. Our
+approach should contribute to the pay-for-performance literature by specifying the circumstances that
+affect the success of pay-for- performance plans.
+        Our results should also contribute to practice, as the likelihood that HR professionals would
+apply the research findings to their own organizations should increase if these professionals are
+provided with a viable technique for doing so. In this paper, we demonstrate such a technique. The
+employee movement utility model of Boudreau and Berger (1985) provides the means to evaluate the
+dollar value implications of various pay-for-performance strategies, which we illustrate with a step-by-
+step application to a published turnover and pay-for-performance article. In doing so, we (a)
+demonstrate how organizational representatives can use research findings, publicly available
+compensation, and turnover data, or their own data to diagnose, inform, and evaluate their own
+company-specific incentive pay decisions; and (b), demonstrate that this technique will often provide
+different conclusions from typical decision models that use only traditional cost or accounting analysis.
+
+Utility Analysis Applied to Pay Decisions
+
+        Utility analysis is a tool for cost-benefit analysis that helps quantify the impact of human
+resource interventions (Cascio, 2000). Although utility analysis has been applied to numerous human
+
+
+--- PAGE BREAK ---
+
+resource program areas, most applications have concentrated in the areas of employee selection and
+training (Boudreau, 1991; Boudreau & Ramstad, 2003b; 1999). The Boudreau and Berger (1985)
+framework represents one of the few applications to employee retention. Klass and McClendon (1996)
+used that framework to examine the pay policy decision of whether to lead, lag, or match the market.
+They gathered parameter information from published studies and simulated effects on employee
+separation and offer acceptance patterns. Results for bank tellers suggested that a lag policy produced
+higher payoffs, although “leading the market” (paying higher than the average) did enhance retention
+and attraction of top candidates. The authors noted that these results did not necessarily suggest using
+a particular pay policy, and showed how simulated reductions in citizenship behavior due to low pay
+might change the results. This was an important initial application of employee movement utility
+principles to decisions about pay.
+        In this paper, we focus on a different type of pay decision-how to allocate pay increases across
+employees at different performance levels. Trevor et al. (1997) found that pay policies providing greater
+pay growth for high performers (and less for low performers) substantially increased retention among
+high performers, encouraged separation among low performers, and, thus, increased the value of the
+work force. This is an appealing prospect, but it is unclear whether the enhanced workforce value would
+offset the cost associated with such a reward system. Such costs are quite apparent using traditional
+accounting or behavioral costing models, but such models have limited ability to reflect effects on
+workforce value; furthermore, little data exists on the actual implications of these limitations (Boudreau
+& Ramstad, 2003a; 2003b). It is also unclear to what extent the enhanced workforce value would
+depend on such factors as the pay policy specifics, the retention pattern, and the variability in
+performance. The Boudreau-Berger utility framework provides a method to address these questions.
+        Using the Boudreau and Berger (1985) separation/acquisition utility model, our paper presents a
+model that captures the value associated with employee separations (turnover) and acquisitions (hires)
+over time. The model estimates three components in each time period: (a) movement costs-the costs
+associated with employee separations and acquisitions; (b) service costs-the pay, benefits, and
+associated expenses required to support the work force; and (c) service value-the value of the goods
+and services produced by the work force. The dollar-valued implications of a given pay plan, and of the
+subsequent separation and acquisition patterns over time, are estimated by subtracting the movement
+costs and service costs from the service value (i.e., subtracting the pay plan's costs from its benefits).
+Figure 1 shows the steps necessary to compute this estimate and the tables we employ here to illustrate
+these steps.
+
+
+--- PAGE BREAK ---
+
+The Illustrative Case Study
+
+         We illustrate our approach using a scenario in which a hypothetical company is considering
+implementing a pay-for-performance plan at the end of the year 2003. We assume that the company
+does not currently relate pay to performance, so, under the current strategy, all employees would
+receive the same pay increases over time. We compare the effects of this strategy with those of two
+alternative strategies that place different emphases on pay-for-performance. We choose to evaluate the
+implications of the three possible approaches over a 4-year period (2004 to 2007). Thus, because pay-
+for-performance affects turnover differently at different levels of performance (Trevor et al., 1997), the
+2007 workforce would reflect a different performance distribution under each of the three pay
+strategies. By calculating the movement costs, service costs, and service values from 2004 to 2007, we
+can estimate the cumulative effects of the pay strategies over the 4-year period. 1
+         We used a number of spreadsheets to make the necessary calculations, with each spreadsheet
+corresponding to a table in this paper. The spreadsheets are available from the lead author upon
+request, although the descriptions we provide here should be sufficient for many readers to create their
+own. We also make a number of assumptions to perform the necessary calculations. These assumptions
+are all based on published research (e.g., Trevor et al., 1997) or publicly available data (e.g., BLS, 2002).
+First, we draw directly from the Trevor et al. (1997) study to estimate (a) the relationship between pay
+growth, performance, and turnover that is captured in their survival analysis (see Appendix) and is used
+to calculate the turnover probabilities at each performance level under each pay strategy; (b) the
+baseline turnover probability necessary to compute those turnover probabilities that are specific to each
+performance level-pay strategy combination; and (c) the performance distribution at the beginning of
+our utility analysis timeframe.
+         It should be noted that the Trevor et al. (1997) data are from all 5,143 exempt employees hired
+by a large petrochemical organization between 1983 and 1988. Furthermore, Trevor et al. (1997)
+examined the effects of various strengths of pay-for-performance relationships based on archival data
+on individuals' performance and pay levels; they did not specifically manipulate the pay-for-
+
+1
+  The Boudreau and Berger (1985) model in its purest form would calculate the work force value in each
+intervening year and apply a discount factor to equalize the time value of the dollar amounts. Although these
+economic corrections can yield substantial changes to the estimated value (Sturman, 2000), such embellishments
+do not have a significant effect in this case because the changes in dollar amounts are assumed to be linear, the
+time frame is relatively short, and our focus is on the relative (vs. absolute) value of the different strategies. We
+also did not have information about the organizational tax rate, so we report our results in pretax dollars. Aftertax
+effects could be easily calculated by multiplying the final results by an appropriate aftertax proportion, but the
+relative effects of the options would not be altered.
+
+
+--- PAGE BREAK ---
+
+performance link as part of either an experimental or quasi-experimental design. Nonetheless, these
+data represent a wide variety of exempt jobs over several years, and the results provide valuable insight
+into the relationships between turnover, pay, and performance. Thus, the results of the Trevor et al.
+(1997) study are useful for our purpose of illustrating our technique.
+
+
+
+
+        Second, we use published surveys (BLS, 2002; WorldatWork, 2002) to help generate realistic pay
+strategies, determine starting average pay levels, and estimate benefit costs. Finally, we employ the
+results of published research studies to help provide realistic estimates of the cost of turnover (e.g.,
+Johnson, 1995; Solomon, 1988) and the value of different levels of employee performance (Becker &
+Huselid, 1992; Boudreau, 1991; Cascio, 2000; Schmidt & Hunter, 1983). We describe the rationale for
+our assumptions and suggest how professionals might apply each rationale or gather their own data to
+customize the application for their organizations. Thus, our demonstration is intended (a) to provide
+information on the value of pay-for-performance plans and the extent that they should ultimately lead
+
+
+--- PAGE BREAK ---
+
+to improved organizational financial success; and (b) to enable others to use the method with their own
+company's data, new research findings, and/or their own estimates to create company-specific
+evaluations to facilitate their own decision making regarding the implementation of pay-for-
+performance policies.
+
+
+
+
+                  Pay-for-Performance Plans and Performance-Specific Turnover
+
+Step 1: Specify the Pay-for-Performance Options
+
+        As is evident in Figure 1, the first major phase in estimating the costs and benefits of
+performance-based pay is to make explicit the relevant organizational characteristics and assumptions.
+The initial step within this phase is to specify the pay policy scenarios to be considered. The two key
+parameters needed are: (a) the current pay level in each performance category for the employees to be
+considered; and (b) the relationship between pay growth and performance levels (usually expressed in
+terms of the percentage increase awarded for each performance level). For this second parameter, we
+constructed three hypothetical, but realistic, performance-based pay strategies. Because we intend to
+provide a broad range of potential outcomes, within which most particular organizational results should
+fall, the strategies were chosen to range from conservative to aggressive in terms of the pay-for-
+performance link. In terms of performance categories, we adopted the nine performance-rating
+categories used by Trevor et al. (1997), which range from 1.0 = lowest performance to 5.0 = highest
+performance in 0.5 increments, because this will facilitate using other aspects of the Trevor et al.
+situation as an illustration. Trevor et al. (1997) created the nine categories by computing average
+performance over time from a rating system in which “The performance scale ranged from 1 = lowest to
+
+
+--- PAGE BREAK ---
+
+5 = highest, with the five categories representing levels of consistency in meeting and exceeding the
+basic requirements of the job7, (p. 49). Professionals adopting our utility analysis framework should
+change the performance categories to reflect their own performance assessment approach.
+        The details of our three illustrative pay-for-performance plans are shown in Table 1. Pay
+Strategy 1 gives all employees the same average pay increase, regardless of performance level. Data
+suggest that current pay increases average 4% (BLS, 2002; Peck, 2002; WorldatWork, 2002), so we used
+this value for all performance categories in Pay Strategy 1. Pay Strategy 2 creates a pay-performance link
+(i.e., larger pay increases as performance improves) for performers above the middle “3.0” rating, and
+average pay increases (i.e., 4%) to those rated 3.0 and below. Pay Strategy 3 maintains the positive
+reinforcement of Pay Strategy 2, and extends the pay-for-performance link to those below the middle
+rating (i.e., smaller pay increases as performance worsens). Thus, Pay Strategy 1 provides no
+performance link, Pay Strategy 2 is more aggressive, and Pay Strategy 3 is the most aggressive.
+        As noted above, in addition to the pay raise strategy, Step 1 requires the setting of an initial pay
+level upon which the pay strategies will be applied. Because our example involves evaluating the pay-
+for-performance strategies for white-collar employees, we used the Bureau of Labor Statistics (BLS,
+2002) estimate of average 2001 white-collar (nonsales) pay, adjusted for the average salary increases of
+exempt workers for 2002 and 2003 (WorldatWork, 2002). This ultimately yielded a pay level of $47,983
+for the year 2003. 2 For illustration, we simply assigned this same initial pay level to every performance
+category. Then, applying the percentage increase associated with each pay strategy and extrapolating
+for 4 future years, we projected the resulting performance-specific pay levels for the year 2007, as
+reported in Table 1.
+        In actual organizations, of course, the current pay levels would be available from company
+records. The same forward-projection method can be used based on these initial values. With
+observations of real data, it seems likely that initial pay levels will vary across performance categories,
+reflecting past pay policies, demographics, and performance distributions. Although quite easy to
+
+
+2
+  The Bureau of Labor Statistics provides a wealth of information on hourly earnings for diverse groups and
+occupations (see BLS, 2002, Table 3). We used the average hourly earnings and weekly hours of all white-collar
+occupations, excluding sales jobs. The most recent information shows that white-collar, full-time employees
+(excluding sales) earned an average hourly wage of $21.65 and worked an average of 39.4 hours per week in 2001.
+Based on the 29th Annual Report on the ‘2002-2003 Total Salary Increase Budget Survey (Worldatwork, 2002),
+salary increases averaged 3.9% for exempt salaried employees in 2002, and is projected to increase 4.1% for 2003.
+This led us to use an estimated hourly wage of $23.42, for a total salary for 2003 of $47,983. Note again that
+anyone employing the methods described in this paper can simply enter the data from other sources, such as their
+own company's data. The value we chose was intended to capture a broad, generalizable sample. More
+importantly, it is intended to be a reasonable estimate to help illustrate our technique.
+
+
+--- PAGE BREAK ---
+
+observe in practice, pay-performance distributions are likely quite variable, so no obvious method exists
+to simulate them for our example. Our decision to begin with a uniform pay distribution across
+categories simplifies the presentation but does not otherwise reduce the generalizability of our
+approach.
+
+Step 2: Determine Turnover Probabilities
+
+        The second step in the making explicit of organizational characteristics and assumptions (i.e.,
+the first major phase in Figure 1) is to estimate the probability of separation at each performance level
+for each pay strategy. This step defines the key link between performance-based pay and workforce
+composition. For practitioners, this may represent the most novel element of the model, yet, we believe
+it is quite feasible. We describe several methods for estimating these probabilities.
+        Estimation wing existing research literature: Perhaps the most straightforward approach is to
+refer to existing empirical findings. For our hypothetical example, we use the performance level/pay
+strategy specific separation results generated by Trevor et al. (1997). Professionals employing utility
+analysis likely would prefer to access separation probabilities from a study of an employee population
+that resembled their own employees in terms of occupations, industry, and demographics. To date,
+however, the Trevor et al. (1997) study is the only published work from which the performance
+level/pay strategy specific separation probabilities can be estimated. Although future research providing
+such information for different employee populations would be helpful, in their absence, the Trevor et al.
+(1997) results offer a useful starting point.
+        Estimation using organizational data: A second option for generating the performance
+level/pay strategy specific separation probabilities that are necessary for the cost-benefit analysis would
+be for professionals to estimate them using their own organization’s data. In most companies,
+separation rates are customarily calculated for entire job categories and are seldom broken down by
+performance levels. Even when separation rates are reported by performance levels, they are rarely
+further broken down to reflect pay growth. Yet, if yearly individual-level information on performance,
+pay level, and separation is available, it can rather easily be converted into the required separation
+probabilities estimates.
+        First, professionals can compute each employee’s average pay growth and average employee
+performance over a specified time period (e.g., over the last 3 years). These relatively continuous data
+can then be used to slot employees into performance level/pay strategy categories, such as Table 1’s 27
+categories that were created from all combinations of three pay strategies and nine performance levels.
+
+
+--- PAGE BREAK ---
+
+This approach would be repeated for all appropriate performance level and pay growth combinations,
+thus yielding counts of employees that fit each category. After compiling these counts, the second step
+would be simply to divide each category’s number of voluntary separations by the number of employees
+in that category. This would yield the estimates of the separation probabilities specific to each
+performance level/pay strategy combination that are necessary for conducting the cost-benefit analysis
+of performance-based pay.
+        Although relatively simple to describe, estimating category-specific separation probabilities from
+one’s own organization involves two potentially difficult hurdles. First, to estimate the separation
+probabilities with any degree of reliability, there must be an adequate number of employees in the
+categories of interest. If the number of employees in a given category is low, then the resultant average
+rate of turnover may be strongly influenced by sampling error rather than reflecting an accurate
+estimate of that category’s true turnover likelihood (e.g., a category with one employee mandates an
+unrealistic separation probability estimate of either one or zero). Thus, the HR professional or I-O
+psychologist must be working with relatively few categories and/or with large employee populations. A
+second serious problem with the approach described above is that it will produce separation
+probabilities that are likely to be confounded by other factors that are related to turnover, performance,
+and pay growth, such as pay level, age, gender, and tenure with the organization. Hence, though
+computing performance level/pay strategy specific separation probabilities for one’s own organization is
+relatively simple, its value may be limited.
+        Fortunately, two statistical methods are available for dealing with the confounding and
+employee-per-category problems. Although both of these methods require a statistical package and
+reasonable statistical sophistication, I-O psychologists may well have been exposed to one or both of the
+methods. If not, their training still may well have provided them with a methodological foundation
+sufficient to allow them to learn the techniques, particularly with the advances in user-friendly statistical
+software. Alternatively, HR professionals or I-O psychologists could simply hire a consultant to assist
+with the analyses.
+        Logistic regression and survival analysis can be used to estimate separation probabilities. Both
+explicitly account for the potential confound described above by statistically controlling for the effects
+of these other variables. The analyses yield partial coefficients that are net of the effects of the
+potentially confounding variables. The partial coefficients are then used to compute separation
+probabilities needed to conduct the cost-benefit analysis. Both methods also exploit the full range of the
+relatively continuous salary growth and performance data, rather than requiring preestablished
+
+
+--- PAGE BREAK ---
+
+categories that necessarily result in a loss of information. Logistic regression estimates the probability of
+separation over a specified time period. Survival analysis (Kalbfleisch & Prentice, 1980) computes the
+probability of survival (i.e., not separating) over a specified timespan and accounts for the length of time
+an individual stays before leaving the organization. In other words, survival analysis specifically models
+how long an individual remains with an employer before leaving, whereas logistic regression models
+whether a person leaves or not. Although both methods are appropriate for estimating the separation
+probabilities specific to the performance 1eveUpay strategy combinations of interest, each offers
+advantages under certain circumstances (for a complete discussion of this issue, see Morita, Lee, &
+Mowday, 1993). The Appendix describes the use of survival analysis to calculate the required separation
+probabilities that are specific to each of our performance level/pay strategy combinations.
+        Estimated separation probabilities for the example: For our example, we used the survival
+analysis results reported in Trevor et al. (1997), which estimated a survival model from data on a sample
+of exempt employees in one organization. The analysis produced a mathematical function describing
+survival probabilities as a function of salary growth and performance, which we present in the Appendix.
+Substituting a specific salary growth amount and performance level into the equation produces an
+estimated survival probability that is appropriate for that performance level and salary growth
+combination. Thus, we used the equation reported in Trevor et al.'s (1997) Table 4 (p. 54) to compute
+the separation probability (1.0 minus the survival probability), for each performance category under
+each pay strategy, at the end of our example's 4-year period. The estimated separation probabilities are
+presented in the top part of Table 2.
+        We caution that our use of the Trevor et al. (1997) survival analysis provides reasonable
+separation probability estimates, rather than definitive ones. It is certainly probable that other factors
+could also influence the probability of turnover. For example, equity theory suggests that even when
+high performers receive the same pay increase (such as under Pay Strategy 2 and Pay Strategy 3), their
+turnover likelihoods may differ as a function of how referent others (e.g., low performers) are
+compensated. Our approach does not take this into consideration. Thus, the reader should keep in mind
+the imperfections associated with relying on any single study, model of turnover, or data set to estimate
+turnover probabilities.
+
+
+--- PAGE BREAK ---
+
+Step 3: Determine Performance Distribution and Number of Separations
+
+        So far, we have established the pay increase that individuals in each performance level will
+receive under the different pay policies and we have subsequently established the separation
+probabilities for each performance level/pay strategy category. Next, we need to project the number of
+separations in each performance level/pay strategy category over time. We specified our initial
+hypothetical employee group (those at the end of year 2003) to mirror in size and performance
+distribution the 5,143 employees analyzed by Trevor et al. (1997), which is shown in Table 2 (in actual
+organizations, the initial number of employees in each performance category would be identified
+through a straightforward count). We then multiplied the initial number of employees in each
+performance level/pay strategy category by the appropriate separation probability. Table 2 presents the
+resultant category-specific numbers of employees that separated (and will need to be replaced) and
+employees retained.
+        At this point, a traditional analysis of total separations would likely lead to a decision to adopt
+Pay Strategy 2, the moderately aggressive policy through which performers above the midpoint receive
+higher pay increases. As Table 2 indicates, the number of separations over the 4-year analysis period is
+1,326 for Pay Strategy 2, 1,457 for Pay Strategy 1, and 1,716 for Pay Strategy 3. Based only on separation
+
+
+--- PAGE BREAK ---
+
+rates, Pay Strategy 3 seems the least attractive policy. However, such conclusions are simplistic and
+superficial from a cost/benefits perspective; a more sophisticated and meaningful inference regarding
+the implications of the three pay strategies requires an analysis incorporating critical financial data.
+
+
+                          Estimating the Cost of Pay-for-Performance Plans
+
+Step 4: Determine Movement Costs
+
+        In Steps 1 through 3, we specified the pay-for-performance options, the estimated separation
+probabilities, and the subsequent numbers of separations and necessary replacements from each
+performance level/pay strategy combination. Hence, one key financial outcome to be considered is the
+projected cost of employee movements into and out of the workforce under each pay policy. As we see
+in Table 2, relative to the retention effects of simply providing everyone with the same salary increase
+(Pay Strategy l), Pay Strategy 2 reduces overall separations, but Pay Strategy 3 increases them. We next
+translate these projected separations and replacements into financial costs.
+        We refer to the combined costs of employee separations and replacement acquisitions as
+movement costs. These costs include direct expenses, such as separation costs (e.g., exit interview,
+separation pay), replacement costs (e.g., advertising, travel expenses, interviewing and testing
+candidates), and training costs (e.g., informational literature costs, paying trainers). Movement costs
+also include indirect expenses, such as the lower productivity of new employees as they learn the job,
+time spent by managers having to supervise new employees more directly, and diminished productivity
+of veteran employees as they mentor and help new employees (Cascio, 2000). Although such costs are
+not standard elements of traditional accounting systems, organizations increasingly employ software
+and reporting algorithms that calculate such metrics as turnover costs, costs per hire, and so forth. If
+these are available, one can simply multiply the relevant cost by the number of separations and/or
+replacements that emerge under each pay strategy.
+        Data available to calculate movement costs vary widely across companies. When movement
+costs are not readily available from the organization, one can turn to research. For example, Solomon
+(1988) suggested that movement costs range from 1.5 to 2.5 times the annual salary paid for a job
+(Solomon, 1988), and Johnson (1995) suggested that movement costs range from 93% to 200% of the
+position's salary. In our example, we estimated the movement cost associated with each separation as
+two times the average salary of all employees in the year of the separation (note that average salary will
+vary according to pay strategy). We also assumed that each separation is replaced, and, thus, we
+
+
+--- PAGE BREAK ---
+
+combined all separation and acquisition costs into a single estimate labeled movement costs. Should
+replacement not be expected, such as during a downsizing, separation cost estimates should be applied
+to the number of separations, and replacement acquisition costs should be applied to the number of
+replacements (Boudreau & Berger, 1985).
+        Table 3 provides the necessary information to estimate movement costs for our example. At the
+top of the table is the workforce's average salary in 2003 and in 2007 under each of the three pay
+strategies. As noted above, we multiplied this salary by 2.0 to estimate the average movement costs for
+each separation, which is shown for years 2003 and 2007. We then subtracted the 2003 average
+movement cost from the 2007 average movement cost and divided by four to get yearly movement cost
+increase, which we added to the 2003 average movement cost to get the 2004 average movement cost.
+This was added to the 2007 average movement cost and the sum was divided by two to compute the
+average (2004-2007) movement cost per separation. Table 3 also provides the total projected number of
+separations/replacements from 2004 to 2007, which were calculated in Table 2. Total movement costs
+for each pay strategy over the 4-year period were then calculated by multiplying each pay strategy's
+total number of projected separations/replacements by each pay strategy's average movement cost per
+separation/replacement.
+        Table 3's total estimated movement costs were $154.67 million, $142.05 million, and $181.80
+million for Pay Strategies 1, 2, and 3, respectively. Compared to Pay Strategy 1 (giving equal pay
+increases to everyone), the turnover reduction associated with the policy of linking pay and
+performance for high performers (Pay Strategy 2) saves $12.61 million in movement costs over four
+years. Linking pay and performance for both high and low performers (Pay Strategy 3), however, creates
+additional separations among low performers and, thus, incus 4-year movement costs of $27.13 million
+and $39.75 million more than those incurred through Pay Strategies 1 and 2, respectively.
+
+
+--- PAGE BREAK ---
+
+        Some of these costs would be evident with standard accounting tools, to the extent that they
+represent “out-of-pocket” costs such as fees to search firms or consultants providing exit interviews.
+However, as mentioned above, many of these costs (e.g., staff time spent in processing separations and
+acquisitions) are “opportunity costs,” and only a portion of these savings (costs) would be recorded by
+the accounting system. Thus, our analytical approach offers the advantage of a more complete cost
+analysis for incentive pay strategies. Still, movement costs represent only one of the crucial financial
+implications of using pay-for-performance to manage performance and turnover. Hence, we next
+address the pay strategies’ substantial implications for differences in costs associated with pay levels,
+benefits, and other service costs.
+
+Step 5: Estimate Future Service Costs
+
+        Service costs are the total costs required to retain and support the work force, and, thus, include
+pay and benefits (Boudreau & Berger, 1985), the latter of which is typically the largest service cost
+component other than pay. In some cases, service costs may vary with employee performance. For
+example, there may be significant bonuses or stock options, or higher performers may use significantly
+more materials or resources than lower performers. In these cases, which would tend to be of more
+relevance in executive populations, such variability in service costs should also be taken into account.
+
+
+--- PAGE BREAK ---
+
+Absent such factors, estimating service costs simply involves adjusting projected salary levels upward to
+reflect additional service costs (i.e., benefits), multiplying the resulting values by the number of
+employees in each year, and summing the products across years. Because we define total service costs
+as salary plus benefits in our example, we estimate each year’s service costs by estimating the ratio of
+total remuneration (employee benefits plus salary) to salary, and then multiplying this ratio by projected
+salary levels under each pay policy.
+        In Table 3, we had established, for each pay strategy, the average salary levels for the full work
+force in 2003 and 2007. Because we assumed that benefits were 37% of salary (US. Department of
+Labor, 2001), we multiplied Table 3’s average salary levels by 1.37 to reflect the 2003 and 2007 average
+service costs for each pay strategy (see Table 4). Using the assumption that service costs increased
+linearly from 2003 to 2007, we then computed, for each of the three pay strategies, (a) the average
+service cost increase (2007 service cost minus 2003 service cost, divided by four), (b) 2004 service cost
+(2003 service cost plus the average service cost increase), (c) the average 2004-2007 service cost (2004
+service cost plus 2007 service cost, divided by two), and (d) the total 2004-2007 service cost (average
+2004-2007 service cost times four, the number of years in our simulation, times 5,143, the total number
+of employees in each year).
+        An implication of our decision to use the workforce average service costs to estimate total
+service costs is that it implicitly assumes that replacement employees will be paid at the average level of
+the workforce they enter. The framework of this model can certainly accommodate other assumptions
+(e.g., stronger pay-performance links will attract better performers who will be paid more), and would
+allow practitioners to incorporate such data when appropriate. We adopted the workforce-average
+assumption for simplicity.
+        Pay Strategy 2 yielded the highest service costs; it is projected to cost $13.76 million more than
+Pay Strategy 1 (no performance-pay relationship). Under Pay Strategy 2, pay is always equal (for
+performers at or below the performance midpoint) or higher (for performers above the midpoint) than
+in Pay Strategy 1. Pay Strategy 3 raises the pay for higher performers, but also lowers pay for lower
+performers, resulting in costs of $2.94 million less over 4 years than Pay Strategy 1, and $16.70 million
+less than Pay Strategy 2.
+        Service costs (i.e., pay and benefits) are highly visible to standard accounting systems. In fact,
+one could argue that they are the most visible elements of human capital in standard accounting. Thus,
+if standard accounting were used to evaluate these pay policies, the costs shown in Table 4 would likely
+be quite evident, and would perhaps suggest an argument for Pay Strategy 3 to organizational
+
+
+--- PAGE BREAK ---
+
+constituents who rely on accounting information for their decisions. Given that the movement costs
+analysis suggested Pay Strategy 3 as the least economical approach, however, it is clear that relying on
+only a single type of cost information may well provide an inaccurate basis for a decision. When we do
+aggregate the total movement and total service cost data from Tables 3 and 4, we see that Pay Strategy
+3 is the most expensive, costing over $23 million more than Pay Strategy 2 and over $24 million more
+than Pay Strategy 1.
+
+
+
+
+        Consequently, from a cost-based perspective, we might conclude that undertaking an aggressive
+pay-for-performance system to “win the talent war” is not worth the investment. We instead caution
+that such an inference (and any decisions based on it) is at the least premature and is potentially
+detrimental to the organization. High performers provide greater value than do low performers, and any
+assessment of an HR program that differentially affects the performance distribution of the workforce
+must account for this. HR investments must be examined for both their “efficiency” and “effectiveness”
+(Boudreau & Ramstad, 2003b). Hence, having addressed the movement and service costs implications of
+the three pay strategies’ effects on turnover, we next turn to the strategies’ implications for workforce’s
+value, an often overlooked but absolutely essential consideration when assessing the financial
+practicality of human resource interventions.
+
+
+--- PAGE BREAK ---
+
+                          Estimating the Value of Pay-for-Performance Plans
+
+Step 6: Determine Service Value
+
+           Although our analyses have focused on the cost implications of the pay-for-performance
+strategies, such strategies also can produce value through the elimination of poor performers (and their
+subsequent replacement by average performers), and, in particular, the retention of high performers,
+whose retention is especially sensitive to pay-for-performance effects (Trevor et al., 1997). Moreover,
+when differences in individual performance are high (Le., when a high performer is worth much more to
+the organization than an average performer), retaining top employees and eliminating poor employees
+may yield value that far outweighs the associated costs (Boudreau & Berger, 1985; Boudreau, 1991;
+Boudreau & Ramstad, 1999; 2003a; 2003b).
+           To examine the potential effects of performance-based pay on workforce value, we need to
+estimate the dollar value of individual performance variation. This will allow us to estimate the effect
+that changes in the workforce's performance distribution will have on workforce value. Our data provide
+estimates of changes in the performance ratings, so we must convert ratings to dollar values. This
+conversion method requires two components (Boudreau & Berger, 1985): (a) the dollar value of the
+average performance level; and (b) the incremental value of deviations from that average performance
+level. 3
+           We employed the Schmidt and Hunter (1983) approach, which assumes that the value of the
+average performance level would equal 1.754 times the average wage at that level. For the 2003 work
+force, we multiplied Table 3's average salary of $47,983 by 1.754 to obtain a service value of $84,162
+per person. For the 2007 work force, consistent with the estimate of average service costs above, we
+estimated average salary as that which would have been produced by four years of average salary
+increases, beginning in 2004. As noted in Table 3, the average 2007 salary under Pay Strategy 1, which
+allocates average salary increases across the performance distribution, is estimated to be $56,133.
+Multiplying this salary by 1.754 produces an average work force value estimate of $98,457 per person.
+
+
+3
+  There is no single accepted method of estimating the dollar value of average performance among workers or
+applicants. Some research has suggested that average performance value can be estimated equal to the average
+compensation of the work p u p (Boudreau, 1991, p. 654; Raju, Burke, & Normand, 1990. p. 9). However, it seems
+unlikely that average-performing employees produce only enough value to offset their direct wage costs.
+Considering the other service costs that are incurred, and the need for organizations to obtain a positive return on
+costs, a higher level of average service value seems likely. Based on an analysis of wage and productivity estimates
+in the national income accounts of the United States, Schmidt and Hunter (1983) proposed assuming that the ratio
+of average dollar value to average wage is approximately 1.754.
+
+
+--- PAGE BREAK ---
+
+These 2003 and 2007 average service value estimates are shown in “average service value” section of
+Table 5.
+
+
+
+
+           For the second component necessary to estimate the value associated with each employee, we
+needed an estimate for the value of each performance level above and below the average. Combined
+with the estimate for the average value of individuals’ performance, this will allow us to calculate the
+value of each of the nine performance levels in both 2003 and 2007. In this study, and probably
+characteristic of most organizations, we had no direct estimates of the dollar value of particular
+performance levels. Hence, we used an estimation approach typical of utility analysis studies (e.g.,
+Boudreau, 1991; Boudreau & Ramstad, 2003b). Utility analysis typically employs an estimate of the
+value of a one-standard-deviation difference in employee value, referred to as SDy with SDy often
+approximated as equal to a given percentage of salary (Boudreau, 1991; Cascio, 2000). Thus, someone
+who performs one standard deviation above average (i.e., someone who is in the 84th percentile of
+performance) is estimated to be worth more than an average performer by a value equal to SDy. Using
+the SDy term, we can compute the value of each performance category relative to the average.
+
+
+--- PAGE BREAK ---
+
+        A recurring problem with using SDy is that it is unlikely to be estimated precisely (Boudreau,
+1991; Cascio, 2000). Furthermore, its impact on final estimates of the value of a utility estimate is often
+quite significant (Boudreau, 1991). Thus, we investigated three potential values. As a very conservative
+approach, we assumed that SDy would equal 30% of average salary. This is substantially less than
+Schmidt and Hunter’s (1983) 40% recommendation, which has been characterized as a conventional
+benchmark (Becker & Huselid, 1992), a safe estimate (Schmidt, Hunter, Outerbridge, & Trattner, 1986),
+and a conservative estimate (Judiesch, Schmidt, & Mount, 1992). We also used 60% of average salary as
+a somewhat conservative estimate, and we used 90% of average salary as what we believe to be a more
+realistic estimate. 4 In other words, our three estimates suggest that an employee performing better
+than 84% of the employee population is worth 30% of salary, 60% of salary, or 90% of salary more to the
+organization than an average performer (i.e., someone performing at the 50th percentile) in the same
+job.
+        In order to move from these SDy estimates to estimates of each employee’s service value, we
+first used the observed distribution of employee performance to compute the standardized z-score
+corresponding to each of the nine performance ratings. This transformation, accomplished through
+subtracting the mean performance score from each performance category rating and then dividing by
+the performance standard deviation, produces a performance distribution with a mean of zero and a
+standard deviation of one. For example, performance category 1.5 received a z-score of -1.89 through
+subtracting the average performance rating of 2.764 from 1.5 and dividing by the standard deviation of
+0.668. The z-scores, which represent the number of standard deviations that each performance category
+rating deviates from the performance mean, are listed in the fifth row of data in Table 5.
+        We assumed that the z-scores associated with each raw performance score would remain
+constant from 2003 to 2007. That is, although the actual distribution of workers across performance
+categories changes from 2003 to 2007, we assumed that the value of performance at each performance
+level did not change. For example, a performance rating of 4 in 2003, which was 1.850 standard
+deviations above the mean in 2003, provided value to the employer equal to mean performance’s value
+plus the product of 1.850 and SDy. We assumed, regardless of the actual number of employees who
+received a score of 4 in 2007, the financial value of an individual with a performance rating of 4 in that
+year would be equal to 2007 mean performance’s value plus the product of 1.850 and SDy.
+
+4
+ Support of the 90% approach is provided by Becker and Huselid (1992) who found direct observations of fell in
+the 74% to 100% of mean salary range. Moreover, because researchers generally contend that SDy increases as job
+complexity increases (e.g., Judiesch et al., 1992), our 30% and 60% SDy values would appear to have additional
+support as conservative estimates given our sample of all exempt hires in a large company.
+
+
+--- PAGE BREAK ---
+
+        For 2003, we estimated average salary as $47,983 (from Table 1), producing Sa, estimates of
+$14,395 (i.e., 0.3 x $47,983), $28,790 (i.e., 0.6 x $47,983), and $43,185 (i.e., 0.9 x $47,983) for the 30%,
+60%, and 90% SDy scenarios, respectively. For 2007, estimated average salary was $56,133 (from Table
+1), producing, at the 30%, 60%, and 90% SDy scenarios, estimated Sa, levels of $16,840 (i.e., 0.3 x
+$56,133), $33,680 (i.e., 0.6 x $56,133), and $50,520 (i.e., 0.9 x $56,133). Multiplying these SDy estimates
+(i.e., the appropriate dollar value of a one standard deviation performance difference) by the z-scores
+(i.e., the number of standard deviations the performance category is from the mean) produced the
+“incremental” (beyond the average) dollar values corresponding to each performance rating level for
+each SDy, assumption (see Table 5). Thus, under the 60% assumption in 2007, an employee at
+performance level 5.0 is worth $112,726 more than an average employee (i.e., $56,133 x 0.60 x 3.347).
+The sums of the average service values for the workforce and the incremental service values for each
+performance category produced the individual service values for each performance category that are
+reported in the bottom section of Table 5. Thus, the last six lines of data in Table 5 represent, for each
+unique combination of performance level (1.0 - 5.0 at half point intervals), year (2003 and 2007), and
+SD, scenario (30%, 60%, and go%), the individual service value for each employee.
+        With individual service values determined for both 2003 and 2007, we can now compute the
+total service value for the workforce under each of the three pay strategies. For 2003 (for all three pay
+strategies), we calculated the total service value of the workforce by multiplying each performance
+category’s individual service value by the corresponding quantity of employees in the performance
+category, and adding the products. Thus, for example, Table 5’s individual service value of $1 15,888 for
+SDy = 60% and performance = 3.5 in 2003 is multiplied by 672 (the number of employees in that
+performance category) to yield the $77,876,736 figure in Table 6 (under SDy = 60% and performance =
+3.5). This $77,876,736 is then added to the similarly computed values for the other eight performance
+categories to produce, when SDy = 60%, Table 6‘s total 2003 service value of $432,351,857. This is our
+estimate of what the workforce is worth to the employer in 2003 under the assumption that being one
+standard deviation above average in performance is worth 60% of an average performer’s salary. We
+note that total service values are the same in 2003 regardless of pay strategy (though they do differ
+across SDy assumptions) because the three pay strategies had yet to result in the different performance-
+specific turnover patterns that begin in 2004.
+        For 2007, calculation of the total service value of the workforce is slightly more complex, as the
+computations for those employees retained over the 4-year analysis differ from the computations
+required for those hired as replacements during the 4-year period. For the retained employees, 2007
+
+
+--- PAGE BREAK ---
+
+total service value calculation closely resembles the approach to 2003, where Table 5’s 2003 individual
+service values for each SDy level and performance category combination were multiplied by the quantity
+of retained employees for each performance category and these products were summed. In 2007,
+however, the three pay strategies’ different effects on performance-specific turnover result in pay
+strategy-specific numbers of retained employees in each performance category. Consequently, we need
+to conduct the individual service value by employee quantity multiplications separately for each pay
+strategy to get the 2007 estimates. Thus, Table 5’s 2007 individual service values for each SD, level and
+performance category combination were multiplied by the quantity of retained employees for each
+performance category under each pay strategy and these products were summed. For example, Table
+5’s individual service value of $129,611 for SDy = 30% and performance = 4.0 in 2007 is multiplied by
+231,282, and 282 (the number of retained employees in that performance category under the three pay
+strategies, as listed in Table 7) to yield the $29,940,141, $36,550,302, and $36,550,302 figures in Table 7
+(under SDy = 30%, performance = 4.0, and Pay Strategies 1, 2, and 3, respectively). Thus, the final nine
+rows of data in Table 7 chronicle, for each SDy and pay strategy combination, the combined service value
+of all retained employees in 2007 at each performance level. The final column for each of these nine
+rows provides total service values across performance categories.
+        Having computed 2007 service value for retained employees, we next address the 2007 value of
+those employees hired to replace the employees that separated during the 2004-2007 window. These
+replacement employees were assumed to have an individual service value equal to the average
+individual service value of retained employees under Pay Strategy 1 for each of the SDy assumptions.
+Thus, for example, Table 8's average individual replacement employee service value of $101,594 when
+SDy = 60% was computed by dividing Table 7's total retainee service value of $374,575,510, which is
+under Pay Strategy 1 with SDy = 60%, by 3,687, which is Table 7's total retainees under Pay Strategy 1.
+We note that using Pay Strategy 1's retainee service value for all replacements assumes that the
+recruiting effectiveness and job performance of replacement employees are not affected by the
+compensation system. Because the average service value of retained employees under Pay Strategies 2
+and 3 is greater than the average service value of employees retained under Pay Strategy 1, this
+provides a conservative estimate of replacement service value under the two pay strategies with pay-
+for-performance links. The total service value of replacement employees for each pay strategy and SDy
+combination is equal to the pay strategy-specific number of replacements times the SDy specific average
+service value. These totals are reported in the bottom three rows of data in Table 8.
+
+
+--- PAGE BREAK ---
+
+        Finally, Table 8's service values of the replacements and Table 7's service values of retained
+employees were added to produce the estimated 2007 total service value for each pay strategy and SDy
+level combination, as shown in Table 9. We used these 2007 total service values, as well as the 2003
+total service values from Table 6, to compute total service value across all years in Table 10. As we had
+done with total service costs computations, we calculated the 4-year stream of service value levels by
+assuming that service value rose linearly in each performance category between 2003 and 2007. Thus,
+for each pay strategy and SDy combination, we computed (a) the average service value increase (2007
+service value minus 2003 service value, divided by four); (b) 2004 service value (2003 service value plus
+the average service value increase); (c) the average 2004-2007 service value (2004 service value plus
+2007 service value, divided by 2); and (d), the total 2003-2007 service value (average 2003-2007 service
+value, times four, the number of years in our simulation).
+
+
+--- PAGE BREAK ---
+
+        Under all assumptions about SDy the 2007 and total service values are lowest when giving all
+employees average pay increases (Pay Strategy 1), are higher when giving high performers high pay
+increases and all others average increases (Pay Strategy 2), and are highest when the pay-for-
+performance link was strongest (Pay Strategy 3). Compared to Pay Strategy 1, which gives all employees
+average pay increases, Pay Strategy 2 prompts more high-performing and highly paid employees to stay,
+and their value enhances the work force. Pay Strategy 3 augments this effect by encouraging the
+turnover of low performers, who subsequently are replaced with workers whose expected value is that
+of average workers under Pay Strategy 1.
+
+
+--- PAGE BREAK ---
+
+        Hence, whereas our cost analysis suggested that Pay Strategy 3 was the least effective and Pay
+Strategy 1 was the most effective, our analysis of workforce value indicates the exact opposite.
+Obviously, relying only on either cost or value estimates would be shortsighted. The critical question is
+whether the service value benefits of a strong pay-for-performance link outweigh the costs (Boudreau,
+1991; Boudreau & Ramstad, 2003a; 2003b).
+
+Step 7: Determining the Final Utility-Is Pay -for-Performance worth It?
+
+        At this point, we return to the flow chart in Figure 1 and the question that motivated this
+research effort: Is it worth it to use pay-for-performance in an attempt to win the war for talent? To
+speak to this, we began by specifying three pay-plan strategies and estimating the subsequent turnover
+probabilities and performance distributions we would expect under each. Using this turnover and
+performance information, we then addressed costs for each pay plan through the estimation of
+expenses associated with employee movement out of and into the workforce and with the pay and
+benefits for the workforce. Having estimated costs, we turned to the benefits dimension of the cost-
+benefit analysis and estimated the value of the retained workforce and of the replacement employees.
+Thus, we have estimated the three components for the decision of whether pay-for-performance makes
+sense in our example: (a) the 4-year stream of movement costs; (b) the 4-year stream of service costs;
+
+
+--- PAGE BREAK ---
+
+and (c), the 4-year stream of service value. Now, we combine these components to estimate the relative
+value of the three pay strategies by taking the stream of service value and subtracting the stream of
+service costs and movement costs (Boudreau & Berger, 1985). The relevant amounts are summarized in
+Table 11 for each pay strategy and SDy, assumption combination.
+        These results suggest a different conclusion from the cost analysis presented earlier. Recall that
+traditional compensation-cost analyses may have led decision makers to the conclusion that a strong
+link between pay and performance would be unwise given its extreme cost, and that although a
+moderate pay-for-performance link was not much more expensive than having no link, there were no
+cost-based data to strongly suggest it as a compelling alternative. When the potential benefits of
+workforce value are accounted for, however, it becomes clear that investments in performance-based
+pay may hold the potential for significant organizational improvement. Table 11 indicates that even
+under our most conservative SDy assumption, pay-for-performance plans yielded greater net values than
+did the noncontingent pay strategy. That is, by fully incorporating both costs and benefits into our
+assessment, we find that, under all of our conditions, pay-for-performance is indeed a valuable
+investment. Moreover, as SDy (i.e., the value associated with performance differences) became larger,
+the payoff to pay-for-performance increased dramatically, ultimately (i.e., at So, = 90%) resulting in
+advantages relative to the noncontingent pay from Pay Strategy 1 of over $26 and $56 million dollars for
+the partially contingent and highly contingent pay strategies, respectively.
+
+
+
+
+                                               Discussion
+
+        This analysis suggests that even under conservative assumptions about the value of
+performance variability among employees, the 4-year financial benefit of linking pay to performance in
+
+
+--- PAGE BREAK ---
+
+this company would be substantial. When these SDy assumptions are closer to what we believe to be
+more realistic (i.e., if job performance differences have greater value to an organization), the present
+model reveals the potentially high payoff from investments in performance-based pay. Moreover, our
+analysis vividly illustrates the limitations of standard accounting and behavioral cost-based approaches
+for identifying the critical variables and, thus, the appropriate pay strategy.
+
+Simplifying Decisions
+
+        Because utility analysis can be rather complex, we used a number of simplifying decisions here.
+First, we assumed that replacement employees would be of average performance level (and, thus,
+average service value). This implicitly assumes that pay-for-performance would not influence applicant
+attraction, even though research suggests that the degree to which pay and performance are linked
+does in fact matter to applicants (Cable & Judge, 1994). Second, in focusing on the relationship between
+pay-for-performance and turnover, we made no provisions for whether the performance-based pay
+would actually improve workforce performance (net of retention effects). This implicit modeling of no
+effect of performance-based pay on performance is particularly noteworthy given that the contingent
+pay plan in the Trevor et al. (1997) study was sufficiently well designed to elicit a performance-specific
+retention pattern. Third, we were working with the relatively normally distributed performance
+distribution from the Trevor et al. sample. Although using this distribution simplified matters by allowing
+us to make use of other aspects of the Trevor et al. study, we recognize that many performance
+distributions may be characterized by a greater proportion of employees being rated in the top two or
+three performance categories and by the subsequent negative skew. The Trevor et al. distribution arose
+because the organization, consistent with its individualistic and hierarchical culture, encouraged
+differentiation among employees during performance appraisal. In addition, because 2evor et al. used
+averaged performance levels (with a mean of 3.05 performance ratings per employee), such factors as
+change in performance over time and random error in ratings combined to reduce the likelihood of
+having an average rating in the very top or bottom performance levels. To the extent that an
+organization with an aggressive pay-for-performance plan does encourage or mandate a normal
+performance distribution, however, the implications are noteworthy. For example, the system allocates
+large raises to the relatively few high performers, who should then be satisfied, motivated, and likely to
+remain; in contrast, the system also may frustrate, demotivate, and ultimately result in increased
+turnover among employees that might be reasonably high performers but were not rated as such as a
+result of the forced distribution.
+
+
+--- PAGE BREAK ---
+
+        We emphasize that each of the three simplifying decisions was made to facilitate our
+presentation rather than strengthen our results. Indeed, each decision actually weakens the results’
+apparent support for performance-based pay. In unreported analyses, we incorporated into the utility
+analysis improved applicant quality under Pay Strategies 2 and 3, improved performance (net of
+retention effects) under Pay Strategies 2 and 3, and a more negative skew in the performance
+distribution. In each case, these alternative approaches to the decision in question resulted in a larger
+net advantage for Pay Strategy 2 and, to an even greater extent, for Pay Strategy 3. Thus, the analyses
+we presented here are a simplified and conservative approach. The spreadsheets available from the first
+author can be adapted to test such alternative assumptions.
+
+On Overcoming the “Futility of Utility”
+
+        Our simplifying decisions notwithstanding, the analyses presented here entail much detail and
+speculation that, according to utility analysis criticism, might hinder their acceptance in managerial
+ranks. Indeed, we are quite aware of the “futility of utility” (Latham & Whyte, 1994; Whyte & Latham,
+1997) findings in which utility analysis appeared to reduce managerial support for an HR intervention. To
+a large extent, the futility of utility problem likely resides within the presenter and recipients of utility
+analysis data, rather than with utility analysis itself. In defense of utility analysis, Sturman (2000)
+concludes that managers need to understand utility analysis and be trained in the use of the technology.
+Citing the necessity of managers making decisions based on the Merton and Scholes options pricing
+formula to have experience in finance and economics, Sturman (2000) argued that “For a complex
+decision making tool to be useful, the users of the decision aid must desire the information it provides
+and be trained in its use” (p. 297). Hence, rather than being apologists for the complexity of utility
+analysis, we believe that in-house I-O psychologists should attempt to convey that it is important for key
+stakeholders to have some basic grounding in sophisticated human resource decision making. Given that
+labor costs often comprise over half of all operating costs (Milkovich & Newman, 2002), training decision
+makers in a decision tool designed to inform as to the optimal way to allocate these costs would appear
+to be a valid undertaking. On the presenter side, Cronshaw (1997), after participating as the expert
+utility presenter in the Whyte and Latham (1997) “futility” study, contended that “it is not utility analysis
+per se that imperils I-O psychologists, but the intemperate way it is often used. In effect, the messenger
+kills the message” (p. 614). Cronshaw advocated that utility analysis should be presented as an
+informational tool rather than as a “persuasive tool in a one-sided (and often self-serving) attempt to
+‘sell’ innovations to managers” (p. 614).
+
+
+--- PAGE BREAK ---
+
+        Boudreau and Ramstad (1999; 2002) noted that the powerful influence of disciplines such as
+finance and marketing evolved from their focus on enhancing decisions about the key resource (money
+or customers), rather than on selling accounting or sales programs, and suggested that the influence of
+HR and I-O professionals will increase with a similar focus on talent decisions. They suggested (Boudreau
+& Ramstad, 2002, 2003a; 2003b) the HC BRidge®decision model for “talent” resources that draws upon
+well developed decision models to delineate three fundamental elements: efficiency, effectiveness, and
+impact. The present analysis vividly shows the value of integrating “efficiency” (payroll and movement
+costs); “effectiveness” (changes in movement patterns); and “impact” (value of improvements in
+performance) into a decision support model, and the dangers of decision frameworks based solely on
+efficiency or effectiveness alone.
+        In addition to these emphases on decision-maker training and on presenting utility analysis as
+an informative tool rather than marketing it as a panacea, we also offer a few additional suggestions
+that might assist the I-O psychologist in communicating utility analyses. First, expectations should be set
+at the outset by affirming that the evaluation will be somewhat complex, just as would be expected
+from manufacturing, finance, or accounting. Any simplistic attempt to estimate performance-based
+pay’s effects on the bottom line would be superficial and incomplete. Second, communicating the utility
+analysis would probably benefit from an initially broad explanation. Perhaps using something similar to
+our Figure 1 as a guide, the practitioner should emphasize the simple cost-benefit concepts of
+movement costs, service costs, performance-specific retention, and the critical, but often overlooked,
+workforce value. We believe that it would be wise to continually hearken back to these big picture
+concepts, with emphasis on effects rather than on measures (Cascio, 2000) and technical details
+(Hoffman, 1996). Third, acceptance may be facilitated via emphasis on the conservative nature of the
+assumptions, decisions, and subsequent estimates (Hoffman, 1996). Finally, highlighting the rationale
+for these assumptions and decisions should demystify them, and using the spreadsheets to
+instantaneously show the effects of changing them may provide valuable “best case” and “worse case”
+scenarios. Together, these recommendations should assist in indicating that well designed performance-
+based pay is worth considering and that HR is able to quantitatively evaluate the relevant alternatives.
+
+Limitations and Conclusions
+
+        Several limitations are noteworthy. Our results reflect one organization's characteristics, such as
+plan specifics, the individual job performance distribution, and the relationship between pay-for-
+performance and turnover. The extent to which this organization, its employees, and our conclusions
+
+
+--- PAGE BREAK ---
+
+are representative of other firms and employees with regard to these factors is unknown. What is
+critical, however, is that the approach we took to finding these results can be applied in a wide variety of
+situations, thus enabling the examination of external validity. A second limiting factor in our study is that
+there may be additional pay strategy-specific training costs or administrative costs that we did not
+include. We believe, however, that such costs could easily be incorporated into this framework. Third, as
+discussed throughout this study, we made a number of assumptions and decisions in order to conduct
+the analyses. Although we believe that we took the most logical and conservative approaches at these
+junctures, viable arguments could be made for approaches different from our own. Fourth, although we
+modeled employees' performance levels as stable over time, research has shown that employee
+performance levels change over time (e.g., Deadrick, Bennett, & Russell, 1997; Ployhart & Hakel, 1998;
+Sturman & Trevor, 2001). Furthermore, changes in performance levels are related to the likelihood of
+turnover, even after controlling for the effects of current performance levels (Harrison et al., 1996;
+Sturman & Trevor, 2001). Considering the movement of employees between different performance
+categories across years, and the implications of these movements for forecasting turnover, would
+certainly add complexity to the model we presented. It may be valuable for future research to explore
+the implications of these model refinements.
+        The method we describe involves a significant amount of calculation, but is relatively simple to
+replicate on a spreadsheet. Actual replication may require some customization to fit a specific
+company's profile, but the basic premise of the methods should be the same. We hope that this
+demonstration will inspire organizations to more fully tap available research findings to help them
+enhance their HR policy decision making. We also hope that this paper helps demonstrate the value of
+research findings like those reported in Trevor et al. (1997) and will be complemented by future
+research on additional factors that may influence the pay-for-performance link with turnover. For
+example, satisfaction with different types of pay-for-performance plans (e.g., raises vs. bonuses) can
+have different effects on outcomes of organizational interest, such as job satisfaction and organizational
+commitment (Sturman & Short, 2000). Ideally, the research presented here will encourage extensions of
+this work that can prove valuable for both understanding HR practices in general and for evaluating
+specific HR policies.
+        Organizations of all types will likely respond to increasing pressures to “win the talent war” by
+employing all available tools to enhance attraction, selection, and retention processes. A formidable tool
+in this endeavor is the accumulated knowledge available from I-O psychology and HR research. The
+method described here illustrates how utility analysis can be used to demystify and integrate this
+
+
+--- PAGE BREAK ---
+
+research, making it a more practical decision-making tool, and, thus, a more potent influence on
+significant strategic organizational goals (Boudreau, 1991; Boudreau & Ramstad, 1997; 1999; 2002;
+2003a; 2003b).
+
+
+                                               References
+
+Bartlett CA, Ghoshal S. (2002). Building competitive advantage through people. MIT Sloan Management
+        Review, 43(2), 34-41.
+Becker BE, Huselid MA. (1992). Direct estimates of SDy and the implications for utility analysis. Journal of
+        Applied Psychology, 77,227-233.
+Berman JM. (2001). Industry output and employment projections to 2010. Monthly Labor Review,
+        124(11), 39-56.
+Boudreau JW. (1991). Utility analysis for decisions in human resource management. In Dunnette MD,
+        Hough LM (Eds.), Handbook of industrial and organizational psychology, 2nd ed., (Vol. 2, pp.
+        621-745). Palo Alto, CA Consulting Psychology Press.
+Boudreau JW, Berger CJ. (1985). Decision-theoretic utility analysis applied to employee separations and
+        acquisitions [Monograph]. Journal of Applied Psychology, 70, 581-612.
+Boudreau JW, Ramstad PM. (2002). From "professional business partner" to "strategic talent leader":
+        ‘What’s next for human resource management. Working Paper 02-10, Center for Advanced
+        Human Resource Studies, Cornell University, Ithaca, NY.
+Boudreau JW, Ramstad PM. (2003a). Strategic HRM measurement in the 21st century: From justifying
+        HR to strategic talent leadership. In Goldsmith M, Gandossy RP, Efron MS (Eds.), HRM in the 2Ist
+        Century, (pp. 79-90). New York Wiley
+Boudreau JW, Ramstad PM. (2003b). Strategic I-O psychology and the role of utility analysis models. In
+        Borman W, Ilgen D, Klimoski R (Eds.), Handbook of pychology, (Vol. 12, pp. 193-221). New York
+        Wiley.
+Boudreau JW, Ramstad PM. (1999). Human resource metrics: Can measures be strategic? In Wright P,
+        Dyer L, Boudreau J, Milkovich G (Eds.), Strategic human resources management in the twenty-
+        first century. [Supplement 4 to G.R. Ferris (Ed.), Research in personnel and human resource
+        management (pp. 75-98)]. Stamford, CT: JAI Press.
+Boudreau JW, Ramstad PM. (1997). “Measuring intellectual capital: Learning from financial history.’’
+        Human Resource Management, 36(3), 343-356.
+Branch S. (1998, November 9). You hired ’em, but can you keep ’em? Fortune, 138, 247-250.
+
+
+--- PAGE BREAK ---
+
+Bureau of Labor Statistics. (2002). National compensation survey: Occupational wages in the United
+        States, 2001. [On-line data source]. Washington, DC US Department of Labor, Bureau of Labor
+        Statistics. Retrieved from http://wwr.bls.gov/ncdocs/sp/ncbl.449.pdf
+Cable DM, Judge TA. (1994). Pay preference and job search decisions: A person-organization fit
+        perspective. Personnel Psychology, 47,317 - 348.
+Cascio WF. (2 000). Costing human resources: The financial impact of behavior in organizations (4th ed.).
+        Boston: Kent.
+Chambers EG, Handfield-Jones H, Hanking SM, Michaels EG III. (1998, December). Win the war for top
+        talent. Workforce, 50-56.
+Cronshaw SE (1997). Lo! The stimulus peaks: The insiders view on Whyte and Latham's "the futility of
+        utility analysis." Personnel Psychology, 50, 611-616.
+Deadrick DL, Bennett N, Russell CJ. (1997). Using hierarchical linear modeling to examine dynamic
+        performance criteria Over time. Journal of Management, 23, 745-757.
+Dreher GE (1982). The role of performance in the turnover process. Academy of Management Journal,
+        25, 137-147.
+Fullerton HN Jr, Toosi M. (2001). Labor force projections to 2010: Steady growth and changing
+        composition. Monthly Labor Review, 124(11), 21-38.
+Gerhart B. (2000). Compensation strategy and organizational performance. In Rynes SL, Gerhart B (Eds.),
+        Compensation in organizations. San Francisco: Jossey-Bass.
+Gerhart B, Milkovich W. (1992). Employee compensation: Research and practice. In Dunnette MD,
+        Hough L (Eds.), Handbook of industrial and organizational psychology, 2nd ed., (Vol. 3, pp. 481-
+        569). Palo Alto, CA Consulting Psychologists Press.
+Griffeth RW, Hom PW, Gaertner S. (2000). A meta-analysis of antecedents and correlated of employee
+        turnover: Update, moderator tests, and research implications for the next millennium. Journal
+        of Management, 26, 463-488.
+Harrison DA, Virick M, William S. (1996). Working without a net: Time, performance, and turnover under
+        maximally contingent rewards. Journal of Applied Psychology, 81, 331-345.
+Hewitt Associates. (2002). Twenty-sixth annual U.S. salary increase survey. Lincolnshire, IL Author.
+Hoffman CC. (1996). Applying utility analysis to guide decisions on selection system content. Journal of
+        Human Resource Costing and Accounting 1, 9-17.
+Hollenbeck JR, Williams CR. (1986). M o v e r functionality versus turnover frequency: A note on work
+        attitudes and organizational effectiveness. Journal of Applied Psychology, 71, 606-611.
+
+
+--- PAGE BREAK ---
+
+IOMA. (2002, May). Pay for performance report. New York Institute of Management and Administration.
+Jackofsky EF. (1984). Turnover and job performance: An integrated process model. Academy of
+        Management Review, 9, 74-83.
+Jenkins DG Jr, Mitra A, Gupta N, Shaw JD. (1998). Are financial incentives related to performance? A
+        meta-analytic review of empirical research. Journal of Applied Psychology, 83, 777-787.
+Johnson A.A. (1995). The business case for work-family programs. Journal of Accountancy, 180(2), 53-57.
+Judiesch MK, Schmidt FL, Mount MK. (1992). Estimates of the dollar value of employee output in utility
+        analyses: An empirical test of two theories. Journal of Applied Psychology, 77, 234-250.
+Kalbfleisch JD, Prentice RL. (1980). The statistical analysis of failure time data. New York Wiley.
+Klass BS, McClendon JA. (1996). To lead, lag, or match: Estimating the financial impact of pay level
+        policies. Personnel Psychology, 49, 121-141.
+Kohn A. (1993, September-October). Why incentive plans cannot work. Harvard Business Review, 54-63.
+Latham GP, Whyte G. (1994). The futility of utility analysis. Personnel Psychology, 47, 31-46.
+McKinsey Br Company. (1998). The war for talent. New York McKinsey & Company.
+Milkovich GT, Newman JM. (2002). Compensation (7th ed). Boston, MA: Irwin.
+Morita JG, Lee Tw, Mowday m. (1993). The regression-analog to survival analysis: A selected application
+        to turnover research. Academy of Management Journal, 36, 1430-1464.
+Peck C. (2002, June). Salary increase budgets: 2002 increases fall in many industries, rebound projected
+        for 2003. Executive Action, 24, 1-5.
+Pfeffer J. (1998, May/June). Six dangerous myths about pay. Harvard Business Review, 76, 108-120.
+Ployhart RE, Hake1 MD. (1998). The substantive nature of performance variability: Predicting
+        interindividual differences in intraindividual performance. Personnel Psychology, 51, 859-901.
+Porter LW, Lawler EE. (1968). Attitudes and performance. Homewood, Hi Irwin-Dorsey.
+Raju NS. Burke MJ, Normand J. (1990). A new approach for utility analysis. Journal of Applied Psychology,
+        75, 3-12.
+Retherford RD, Choe MK. (1993). Statistical models for causal analysis. New York: Wiley.
+Rich JT (1999, March/April). The growth imperative. The Journal of Business Strategy, 20, 27-31.
+Schmidt FL, Hunter JE. (1983). Individual differences in productivity: An empirical test of estimates
+        derived from studies of selection procedure utility. Journal of Applied Psychology, 68, 407-414.
+Schmidt FL, Hunter JE, Outerbridge AN, Trattner MH. (1986). The economic impact of job selection
+        methods on size, productivity, and payroll costs of the federal work force: An empirically based
+        demonstration. Personnel Psychology, 39, 1-29.
+
+
+--- PAGE BREAK ---
+
+Schwab DP. (1991). Contextual variables in employee performance-mover relationships. Academy of
+        Management Journal, 34, 966-975.
+Sherwyn DS, Sturman MC. (2002). Job-sharing in the hotel industry: A potential new human resource
+        tool resulting from the events of September 11th. Cornell Hotel and Restaurant Administration,
+        43(5), 84-91.
+Solomon J. (1988, December 29). Companies try measuring cost savings from new types of corporate
+        benefits. The Wall Street Journal, B1.
+Steers RM, Mowday RT (1981). Employee turnover and the post decision accommodation process. In
+        Staw BM, Cummings LL (Eds.), Research in organizational behavior (pp. 235-281). Greenwich, CT
+        JAI Press.
+Sturman MC. (2OOO). Implications of utility analysis adjustments for estimates of human resource
+        intervention value. Journal of Management, 26, 281-299.
+Sturman MC, Short JC. (2000). Lump-sum bonus satisfaction: '&sting the construct validity of a new pay
+        satisfaction dimension. Personnel Psychology, 53, 673-700.
+Sturman MC, Trevor CO. (2001). The implications of linking the dynamic performance and employee
+        turnover literatures. Journal of Applied Psychology, 86, 684-696.
+Trevor CO. (2001). Interactive effects among actual ease of movement determinants and job satisfaction
+        in the prediction of voluntary mover. Academy of Management Journal, 44, 621-638.
+Trevor CO. Gerhart B, Boudreau JW. (1997). Voluntary turnover and job performance: Curvilinearity and
+        the moderating influences of salary growth and promotions. Journal of Applied Psychology, 82,
+        44-61.
+U.S. Department of Labor. (2001, March). Employer Costs for Employee Compensation. Washington, DC
+        U.S. Department of Labor.
+Whyte G, Latham GP. (1997). The futility of utility analysis revisited When even an expert fails. Personnel
+        Psychology, 50, 601-610.
+Williams CR, Livingstone LP. (1994). Another look at the relationship between performance and
+        voluntary turnover. Academy of Management Journal, 37, 269-298.
+WorldatWork. (2002). 29th Annual Report on the 2002-2003 Total Salary Increase Budget
+Survey. Scottsdale, AZ: WorldatWork.
+
+
+--- PAGE BREAK ---
+
+                                                  Appendix
+
+Computing Separation Probabilities Using Survival Analysis Results
+
+         Our estimation uses the survival analysis from Trevor et al.’s (1997) Table 4 (model 1).
+
+Probability of survival = S(0)e(Sx)
+
+where S(0) = baseline probability of survival, which was 0.77,
+
+β = a vector of survival analysis regression coefficients,
+
+χ = a vector of independent variables,
+
+(βχ) = 4.941 + 0.314 x Salary Growth - 2.541 x Performance + 0.553 x Performance2 - 0.020 x
+Performance3 + 0.007 x Salary Growth3 - 0.663 x Salary Growth x Performance + 0.071 x Salary Growth x
+Performance
+
+         The salary growth data used to estimate the equation above was measured in thousands of
+dollars. Thus, to use the equation, our example’s percentage increases had to be converted to a parallel
+salary growth measure for each pay strategy and performance level combination. ?b do so, we
+determined the average pay growth under each strategy by subtracting 2003 pay from 2007 pay,
+dividing by 4, and then dividing this amount by 1,000.
+         For example, under Pay Strategy 3 and Performance Level 2.5, the average pay increase was
+([$54,005 - $47,983]/4)/1,000= 1.5055. The table below lists the salary growth for each pay strategy and
+performance level.
+
+
+
+
+         Next, we need to estimate separation probability (i.e., 1 - probability of survival):
+
+1 -S(0)e(βχ)
+
+         For example, for performers rated at 5.0 under Pay Strategy 2, the pay increase of 8% translates
+to an average dollar increase (in thou- sands) of 4.3243, which yields a separation probability = 1 - -77
+
+
+--- PAGE BREAK ---
+
+e(βχ)
+        = 1-.77e(4.941-5.467)=1-.77(0.5910)=1-.086=.14. Table 2 for separation probabilities at each performance
+level/pay strategy combination.
+            The 4.941 constant in the (βχ) calculation resulted from adding the estimated model constant
+(6.810) from Trevor et al.3 (1997) equation to the sum of the model terms that included neither
+performance nor salary growth (e.g., age, promotions). These terms were evaluated at the means of the
+respective x variables. As an aside, we advocate centering variables prior to conducting hazard analyses,
+which causes the model constant and variables set at their means to drop out, thus simplifying the
+calculation of survival probabilities (Retherford & Choe, 1993; Trevor, 2001). See Trevor (2001) and
+Morita et al. (1993) for more on computing survival probabilities.
+

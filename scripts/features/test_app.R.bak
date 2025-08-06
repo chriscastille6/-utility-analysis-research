@@ -1,0 +1,436 @@
+library(shiny)
+library(ggplot2)
+library(rmarkdown)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(scales)
+library(mvtnorm)
+library(plotly)
+library(VennDiagram)
+library(grid)
+
+# Function for expectancy calculation
+Expectancyfunc <- function(Validity, PredLowerCut, PredUpperCut, CritLowerCut, CritUpperCut) {
+  # build lower & upper cutoff vectors (z-scale)
+  lower <- c(PredLowerCut, CritLowerCut)
+  upper <- c(PredUpperCut, CritUpperCut)
+  # 2×2 correlation matrix with diagonals = 1
+  corr  <- matrix(c(1, Validity, Validity, 1), nrow=2)
+  # joint probability under bivariate normal
+  jtprob <- pmvnorm(lower = lower,
+                    upper = upper,
+                    mean  = c(0, 0),
+                    sigma = corr,
+                    algorithm = Miwa(steps = 128))
+  # marginal probability of predictor in band
+  xprob  <- pnorm(PredUpperCut) - pnorm(PredLowerCut)
+  # expectancy as proportion
+  as.numeric(jtprob / xprob)
+}
+
+# Function to generate correlated data
+generate_correlated_data <- function(r, n = 100) {
+  # Generate standard normal data
+  x <- rnorm(n)
+  y <- r * x + sqrt(1 - r^2) * rnorm(n)
+  return(data.frame(x = x, y = y))
+}
+
+# Function to create Venn diagram
+create_venn <- function(r) {
+  # Calculate shared variance
+  shared_var <- r^2 * 100
+  
+  # Create Venn diagram
+  grid.newpage()
+  venn <- draw.pairwise.venn(
+    area1 = 100,
+    area2 = 100,
+    cross.area = shared_var,
+    category = c("X", "Y"),
+    fill = c("#6BAED6", "#FF9999"),
+    alpha = 0.5,
+    label.col = "black",
+    cex = 1.2,
+    fontfamily = "sans",
+    cat.fontfamily = "sans",
+    cat.cex = 1.2,
+    cat.pos = c(0, 0),  # Position labels at top
+    cat.dist = 0.05,    # Distance of labels from circles
+    ext.text = FALSE,   # Dont show external labels
+    ext.percent = FALSE # Dont show percentages
+  )
+  return(venn)
+}
+
+# Create CSS file for styling
+writeLines('
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin-top: 1.5em;
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.plot {
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.reference {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+', "styles.css")
+
+# UI
+ui <- fluidPage(
+  titlePanel("The Correlator"),
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("rxy1", "Correlation Coefficient:", 0.44, min = -1, max = 1, step = 0.01),
+      textInput("x_var", "X Variable Title:", "Attendance"),
+      textInput("y_var", "Outcome Variable:", "Grades"),
+      hr(),
+      h4("Scatter Plot Options"),
+      checkboxInput("show_regression", "Show Regression Line", value = TRUE),
+      checkboxInput("show_residuals", "Show Residuals", value = FALSE),
+      checkboxInput("show_ellipses", "Show Probability Ellipses", value = FALSE),
+      actionButton("generate", "Generate Chart"),
+      downloadButton("download_pdf", "Export Report")
+    ),
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Correlation Visualization", 
+                 fluidRow(
+                   column(6, plotlyOutput("scatter_plot")),
+                   column(6, plotOutput("venn_diagram"))
+                 ),
+                 fluidRow(
+                   column(12, 
+                          div(style = "text-align: center; margin-top: 20px;",
+                              h4("Correlation Formula"),
+                              p("r = ", textOutput("correlation_formula", inline = TRUE)),
+                              p("Shared Variance = ", textOutput("shared_variance", inline = TRUE), "%"),
+                              hr(),
+                              h4("Regression Statistics"),
+                              p("Regression Equation: ", textOutput("regression_equation", inline = TRUE)),
+                              p("Mean(y) = ", textOutput("mean_y", inline = TRUE)),
+                              p("Mean(x) = ", textOutput("mean_x", inline = TRUE)),
+                              p("SD(y) = ", textOutput("sd_y", inline = TRUE)),
+                              p("SD(x) = ", textOutput("sd_x", inline = TRUE))
+                          )
+                   )
+                 )
+        ),
+        tabPanel("Expectancy Chart", plotOutput("expectancy_plot"))
+      )
+    )
+  )
+)
+
+# Server
+server <- function(input, output, session) {
+  # Reactive values to store expectancy results
+  expectancy_results <- reactiveVal()
+  
+  # Reactive data generation
+  scatter_data <- reactive({
+    generate_correlated_data(input$rxy1)
+  })
+  
+  # Calculate regression statistics
+  regression_stats <- reactive({
+    data <- scatter_data()
+    model <- lm(y ~ x, data = data)
+    coef <- coef(model)
+    means <- colMeans(data)
+    sds <- apply(data, 2, sd)
+    
+    list(
+      intercept = coef[1],
+      slope = coef[2],
+      mean_x = means["x"],
+      mean_y = means["y"],
+      sd_x = sds["x"],
+      sd_y = sds["y"]
+    )
+  })
+  
+  # Output regression statistics
+  output$regression_equation <- renderText({
+    stats <- regression_stats()
+    sprintf("y = %.2f + %.2fx", stats$intercept, stats$slope)
+  })
+  
+  output$mean_y <- renderText({
+    sprintf("%.2f", regression_stats()$mean_y)
+  })
+  
+  output$mean_x <- renderText({
+    sprintf("%.2f", regression_stats()$mean_x)
+  })
+  
+  output$sd_y <- renderText({
+    sprintf("%.2f", regression_stats()$sd_y)
+  })
+  
+  output$sd_x <- renderText({
+    sprintf("%.2f", regression_stats()$sd_x)
+  })
+  
+  # Generate chart
+  observeEvent(input$generate, {
+    # Calculate expectancies
+    r_target <- input$rxy1
+    quartile_zs <- c(-Inf, qnorm(c(0.25, 0.5, 0.75)), Inf)
+    crit_cut <- qnorm(0.75)
+    
+    expectancies <- sapply(1:4, function(i) {
+      Expectancyfunc(r_target,
+                     PredLowerCut = quartile_zs[i],
+                     PredUpperCut = quartile_zs[i+1],
+                     CritLowerCut = crit_cut,
+                     CritUpperCut = Inf)
+    })
+    
+    expectancyLowOld <- 100 * expectancies[1]
+    expectancyLMOld <- 100 * expectancies[2]
+    expectancyUMOld <- 100 * expectancies[3]
+    expectancyTopOld <- 100 * expectancies[4]
+    
+    # Create plot data with ordered quartiles
+    bar_data <- data.frame(
+      Quartile = factor(
+        c("Bottom 25%", "Lower Middle 25%", "Upper Middle 25%", "Top 25%"),
+        levels = c("Bottom 25%", "Lower Middle 25%", "Upper Middle 25%", "Top 25%")
+      ),
+      Probability = c(
+        expectancyLowOld,
+        expectancyLMOld,
+        expectancyUMOld,
+        expectancyTopOld
+      )
+    )
+    
+    # Create the app version with large text
+    p_app <- ggplot(bar_data, aes(x = Quartile, y = Probability)) +
+      geom_bar(stat = "identity", fill = "#6BAED6") +
+      geom_text(aes(label = sprintf("%.1f%%", Probability)), 
+                position = position_stack(vjust = 0.5),
+                color = "white", size = 6) +
+      labs(
+        title = "Expectancy Chart",
+        subtitle = paste("Probability of High", input$y_var, "by", input$x_var, "Quartiles"),
+        x = paste(input$x_var, "Quartiles"), 
+        y = paste("Probability of High", input$y_var)
+      ) +
+      theme_minimal() +
+      theme(
+        plot.title = element_text(hjust = 0, size = 16),
+        plot.subtitle = element_text(hjust = 0, size = 14),
+        axis.text = element_text(size = 13),
+        axis.title = element_text(size = 14),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_line(color = "gray90"),
+        axis.line = element_line(color = "black", linewidth = 0.5)
+      ) +
+      scale_y_continuous(limits = c(0, 100))
+    
+    # Create PDF version with smaller text
+    p_pdf <- ggplot(bar_data, aes(x = Quartile, y = Probability)) +
+      geom_bar(stat = "identity", fill = "#6BAED6") +
+      geom_text(aes(label = sprintf("%.1f%%", Probability)), 
+                position = position_stack(vjust = 0.5),
+                color = "white", size = 3.5) +
+      labs(
+        title = "Expectancy Chart",
+        subtitle = paste("Probability of High", input$y_var, "by", input$x_var, "Quartiles"),
+        x = paste(input$x_var, "Quartiles"), 
+        y = paste("Probability of High", input$y_var)
+      ) +
+      theme_minimal() +
+      theme(
+        plot.title = element_text(hjust = 0, size = 10),
+        plot.subtitle = element_text(hjust = 0, size = 9),
+        axis.text = element_text(size = 8),
+        axis.title = element_text(size = 9),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_line(color = "gray90"),
+        axis.line = element_line(color = "black", linewidth = 0.5)
+      ) +
+      scale_y_continuous(limits = c(0, 100))
+    
+    # Save the PDF version
+    ggsave("expectancy_chart.png", p_pdf, width = 5, height = 3.5, dpi = 300)
+    
+    # Display the app version
+    output$expectancy_plot <- renderPlot(p_app, width = 600, height = 400)
+    
+    # Store results
+    expectancy_results(list(
+      expectancyLowOld = input$rxy1,  # Correlation coefficient for the report
+      expectancyLMOld = expectancyLMOld,
+      expectancyUMOld = expectancyUMOld,
+      expectancyTopOld = expectancyTopOld,
+      x_var = input$x_var,
+      y_var = input$y_var,
+      # Add regression statistics
+      intercept = regression_stats()$intercept,
+      slope = regression_stats()$slope,
+      mean_x = regression_stats()$mean_x,
+      mean_y = regression_stats()$mean_y,
+      sd_x = regression_stats()$sd_x,
+      sd_y = regression_stats()$sd_y
+    ))
+  })
+  
+  # Generate and display scatter plot
+  output$scatter_plot <- renderPlotly({
+    data <- scatter_data()
+    
+    # Create base plot
+    p <- ggplot(data, aes(x = x, y = y)) +
+      geom_point(alpha = 0.6, color = "#6BAED6") +
+      labs(
+        x = input$x_var,
+        y = input$y_var,
+        title = "Correlation Scatter Plot"
+      ) +
+      theme_minimal() +
+      theme(
+        plot.title = element_text(size = 14),
+        axis.title = element_text(size = 12),
+        axis.text = element_text(size = 11)
+      )
+    
+    # Add regression line if selected
+    if (input$show_regression) {
+      p <- p + geom_smooth(method = "lm", se = TRUE, color = "#FF9999")
+    }
+    
+    # Add residuals if selected
+    if (input$show_residuals) {
+      # Calculate regression line predictions
+      model <- lm(y ~ x, data = data)
+      data <- data %>%
+        mutate(predicted = predict(model))
+      
+      # Add vertical lines for residuals
+      p <- p + geom_segment(
+        data = data,
+        aes(x = x, y = y, xend = x, yend = predicted),
+        color = "red",
+        alpha = 0.3,
+        linetype = "dashed"
+      )
+    }
+    
+    # Add probability ellipses if selected
+    if (input$show_ellipses) {
+      p <- p + stat_ellipse(
+        type = "norm",
+        level = 0.95,
+        color = "darkgreen",
+        linetype = "dashed"
+      )
+    }
+    
+    ggplotly(p)
+  })
+  
+  # Generate and display Venn diagram
+  output$venn_diagram <- renderPlot({
+    create_venn(input$rxy1)
+  })
+  
+  # Display correlation formula and shared variance
+  output$correlation_formula <- renderText({
+    sprintf("%.2f", input$rxy1)
+  })
+  
+  output$shared_variance <- renderText({
+    sprintf("%.1f", input$rxy1^2 * 100)
+  })
+  
+  # Download PDF
+  output$download_pdf <- downloadHandler(
+    filename = function() {
+      paste0("correlation_analysis_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".pdf")
+    },
+    contentType = "application/pdf",
+    content = function(file) {
+      tryCatch({
+        # Create a temporary directory
+        temp_dir <- tempdir()
+        temp_file <- file.path(temp_dir, "temp_report.pdf")
+        
+        # Check if tinytex is installed
+        if (!requireNamespace("tinytex", quietly = TRUE)) {
+          stop("tinytex package is required for PDF generation. Please install it using: install.packages('tinytex')")
+        }
+        
+        # Check if tinytex is properly installed
+        if (!tinytex::is_tinytex()) {
+          stop("TinyTeX is not installed. Please run: tinytex::install_tinytex()")
+        }
+        
+        # Render the R Markdown template to the temporary file
+        result <- rmarkdown::render(
+          "utility_report.Rmd",
+          output_file = temp_file,
+          output_format = "pdf_document",
+          params = expectancy_results(),
+          envir = new.env(parent = globalenv()),
+          quiet = FALSE  # Show compilation messages
+        )
+        
+        # Copy the temporary file to the requested file
+        if (file.exists(temp_file)) {
+          file.copy(temp_file, file, overwrite = TRUE)
+        } else {
+          stop("PDF file was not created. Check the compilation messages above.")
+        }
+      }, error = function(e) {
+        # Show detailed error message
+        showNotification(
+          paste("Error generating PDF:", e$message, "\nPlease ensure you have LaTeX installed."),
+          type = "error",
+          duration = NULL
+        )
+        # Print the full error for debugging
+        print(e)
+        # Return NULL to indicate failure
+        return(NULL)
+      })
+    }
+  )
+}
+
+# Run the app
+shinyApp(ui, server) 

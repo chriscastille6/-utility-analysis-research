@@ -1,0 +1,20 @@
+# PORTABLE REFERENCE SPACING FOR R MARKDOWN DOCUMENTS
+# Copy these lines to your YAML header under "header-includes:"
+
+header-includes:
+  - \usepackage{booktabs}        # for tables
+  - \usepackage{longtable}       # for long tables  
+  - \usepackage{float}           # for figure placement
+  - \usepackage{array}           # for advanced tables
+  # REFERENCE SPACING - Copy these 3 lines for spaced references:
+  - \usepackage{setspace}
+  - \usepackage{etoolbox}  
+  - \AtBeginEnvironment{CSLReferences}{\begin{spacing}{1.6}}
+
+# ALTERNATIVE SIMPLER VERSION (just copy this one line):
+# - \renewenvironment{CSLReferences}[2]{\begin{spacing}{1.6}\list{}{}\item\relax}{\end{spacing}\endlist}
+
+# USAGE:
+# 1. Add the 3 lines above to your YAML header under header-includes
+# 2. Change 1.6 to your desired spacing (1.0 = normal, 1.5 = 1.5x spacing, 2.0 = double spacing)
+# 3. Render your document - references will have increased line spacing 

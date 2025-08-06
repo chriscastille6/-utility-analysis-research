@@ -1,0 +1,86 @@
+{
+  "study_info": {
+    "title": "Seijts, Espinoza, & Carswell (2020) - Character Assessment Utility Analysis",
+    "journal": "Leadership & Organization Development Journal",
+    "volume": 41,
+    "issue": 5,
+    "pages": "703-720",
+    "doi": "10.1108/LODJ-08-2019-0354"
+  },
+  "basic_parameters": {
+    "N": 1,
+    "selection_ratio": 0.33,
+    "cost_per_candidate": 800,
+    "sdy": 115500,
+    "tenure_15": 15,
+    "tenure_10": 10,
+    "reported_correlation": 0.30,
+    "alpha_character": 0.95,
+    "alpha_performance": 0.91,
+    "zxs_value": 1.097
+  },
+  "reported_results": {
+    "utility_15": 564128,
+    "utility_10": 375285,
+    "yearly_15": 37609,
+    "yearly_10": 37529
+  },
+  "economic_adjustments": {
+    "variable_costs": {
+      "min": -0.02,
+      "mid": -0.185,
+      "max": -0.35,
+      "source": "Sturman (2000)"
+    },
+    "taxation_rates": {
+      "min": 0.30,
+      "mid": 0.465,
+      "max": 0.63,
+      "source": "Sturman (2000)"
+    },
+    "discounting_rates": {
+      "min": 0.01,
+      "mid": 0.06,
+      "max": 0.11,
+      "source": "Sturman (2000)"
+    },
+    "incremental_validity": {
+      "min": 0.05,
+      "mid": 0.175,
+      "max": 0.30,
+      "source": "Seijts et al. (2020)"
+    }
+  },
+  "iopsych_results": {
+    "utility_15": 569584,
+    "utility_10": 379456,
+    "yearly_15": 37972,
+    "yearly_10": 37946,
+    "roi_15": 23495,
+    "roi_10": 15653
+  },
+  "character_dimensions": [
+    "Accountability",
+    "Collaboration", 
+    "Courage",
+    "Drive",
+    "Humanity",
+    "Humility",
+    "Integrity",
+    "Judgment",
+    "Justice",
+    "Temperance",
+    "Transcendence"
+  ],
+  "methodology": {
+    "utility_model": "Brogden-Cronbach-Gleser",
+    "zxs_source": "Naylor & Shine (1965) tables via IOPsych ux() function",
+    "economic_adjustments": "Sturman (2000) parameter ranges",
+    "sample": "111 senior managers from Canadian manufacturing organization",
+    "assessment": "Leader Character Insight Assessment (LCIA) - peer ratings",
+    "performance": "Supervisor ratings (8-item scale)"
+  },
+  "currency": "CAD",
+  "last_updated": "2024-12-19",
+  "reproduction_status": "successfully_completed_with_iopsych_package"
+} 

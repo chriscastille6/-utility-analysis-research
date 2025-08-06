@@ -1,0 +1,998 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/342315188
+
+
+
+Utility analysis of character assessment in employee placement
+
+Article in Leadership & Organization Development Journal · June 2020
+DOI: 10.1108/LODJ-07-2019-0314
+
+
+
+
+CITATIONS                                                                                              READS
+
+12                                                                                                     892
+
+
+3 authors, including:
+
+            Gerard Seijts                                                                                         Jose Antonio Espinoza
+            Western University                                                                                    University of Winnipeg
+            87 PUBLICATIONS 4,965 CITATIONS                                                                       19 PUBLICATIONS 144 CITATIONS
+
+                SEE PROFILE                                                                                          SEE PROFILE
+
+
+
+
+ All content following this page was uploaded by Gerard Seijts on 07 October 2020.
+
+ The user has requested enhancement of the downloaded file.
+
+
+--- PAGE BREAK ---
+
+                          The current issue and full text archive of this journal is available on Emerald Insight at:
+                          https://www.emerald.com/insight/0143-7739.htm
+
+
+
+
+   Utility analysis of character     Character
+                                 assessment in
+assessment in employee placement placement
+                                     employee
+                                               Gerard Seijts
+                 Ivey Business School, Western University, London, Canada
+                                                                                                                                             703
+                                           Jose A. Espinoza
+         Department of Psychology, Western University, London, Canada, and                                                 Received 13 July 2019
+                                              Julie Carswell                                                              Revised 2 January 2020
+                                                                                                                          Accepted 15 April 2020
+                       Sigma Assessment Systems Inc., London, Canada
+
+Abstract
+Purpose – There has been a surge of interest in leader character and a push to bring character into mainstream
+management theory and practice. Research has shown that CEOs and board members have many questions
+about the construct of leader character. For example, they like to see hard data indicating to what extent
+character contributes to organizational performance. Human resource management professionals are often
+confronted with the need to discuss and demonstrate the value of training and development initiatives. The
+question as to whether such interventions have a dollars-and-cents return on the investment is an important
+one to consider for any organizational decision-maker, especially given the demand for increased
+accountability, the push for transparency and tightening budgets in organizations. The authors
+investigated the potential dollar impact associated with the placement of managers based on the
+assessment of leader character, and they used utility analysis to estimate the dollar value associated with
+the use of one instrument – the Leader Character Insight Assessment or LCIA – to measure leader character.
+Design/methodology/approach – The authors used field data collected for purposes of succession planning
+in a large Canadian manufacturing organization. The focus was on identifying senior management candidates
+suitable for placement into the most senior levels of leadership in the organization. Peers completed the LCIA to
+obtain leader character ratings of the candidates. The LCIA is a behaviorally based and validated instrument to
+assess leader character. Performance assessments of the candidates were obtained through supervisor ratings.
+Findings – The correlation between the leader character measure provided by peers and performance
+assessed by the supervisor was 0.30 (p < 0.01). Using the data required to calculate ΔU from the Brogden-
+Cronbach-Gleser model leads to an estimate of CAD $564,128 for the use of the LCIA over the expected tenure of
+15 years, which is equivalent to CAD $37,609 yearly; and CAD $375,285 over an expected tenure of 10 years,
+which is equivalent to CAD $37,529 yearly. The results of the study also indicate that there is still a positive and
+sizeable return on investment or ROI associated with the LCIA in employee placement even with highly
+conservative adjustments to the basic utility analysis formula.
+Originality/value – Utility analysis is a quantitative and robust method of evaluating human resource
+programs. The authors provide an illustration of the potential utility of the LCIA in a selection process for
+senior managers. They assert that selecting and promoting managers on leader character and developing their
+character-based leadership will not only leverage their own contributions to the organization but also
+contribute to a trickle-down effect on employees below them.
+Keywords Leadership, Character, Utility analysis, Leader character insight assessment
+Paper type Research paper
+
+
+Introduction
+Hannah and Avolio (2011) stated that “character is an indispensable component of
+sustainable leadership performance” (p. 979). Liborius (2017) found that character –
+specifically, integrity and humility – incrementally predicted the leader’s worthiness of
+being followed above and beyond the impact of transformational leadership. Yet, according
+to Hannah and Avolio (2011), “most current leadership theories such as leader member                                        Leadership & Organization
+                                                                                                                                  Development Journal
+                                                                                                                                    Vol. 41 No. 5, 2020
+                                                                                                                                           pp. 703-720
+We are grateful to the Ian O. Ihnatowycz Institute for Leadership at the Ivey Business School for the                    © Emerald Publishing Limited
+                                                                                                                                             0143-7739
+funding that has supported much of the research on leader character.                                                    DOI 10.1108/LODJ-07-2019-0314
+
+
+--- PAGE BREAK ---
+
+LODJ   exchange or ethical leadership do not include an in-depth discussion of character or other
+41,5   locus that drives such leadership” (p. 980). Scholars have urged leadership researchers to
+       address this void and pursue an agenda that helps us to develop a deeper understanding of
+       character in business leadership (e.g. Cohen et al., 2014; Wright and Quick, 2011).
+           A surge of interest in leader character in the public, private and not-for-profit sectors has
+       created an additional push to bring character into mainstream management theory and
+       practice. We suspect that the recent interest in leader character is, to some degree, the result of
+704    highly visible leadership fiascos. For example, the business world continues to be mired in
+       scandal, from the role of bank executives in the global financial crisis, to Volkswagen’s diesel
+       emissions scandal, to the fraud at Theranos, to Wells Fargo’s unauthorized account openings,
+       and to cultures of harassment in many organizations. These examples all involve leaders with
+       character deficiencies that induce, influence or propel poor judgment and / or situations where
+       others have accepted and tolerated such behavior when shown by others (e.g. Crossan et al.,
+       2017; Seijts et al., 2019; Wright, 2011).
+           The cost of these (and other) transgressions for organizations and related stakeholders
+       has been substantial. For example, in 2016 alone, in two settlements, one with the United
+       States and the State of California and the other with the US Federal Trade Commission,
+       German automaker Volkswagen AG and related entities agreed to spend up to USD $14.7
+       billion to settle allegations of cheating emissions tests and deceiving customers (Good Jobs
+       First, 2016). It is no surprise, therefore, that scholars have urged that character be elevated
+       alongside competencies in leadership research and practice (e.g. Hannah and Avolio, 2011;
+       Seijts et al., 2015; Sturm et al., 2017; Wright and Quick, 2011).
+           Leader character is an ambiguous construct that has challenged researchers (e.g. Crossan
+       et al., 2017; Wright and Goodstein, 2007; Wright and Huang, 2008). For example, researchers
+       have used different definitions and operationalizations of character. Although a detailed
+       discussion of what exactly constitutes leader character is beyond the scope of this article, a
+       comprehensive examination of the literature reveals that many researchers anchor their
+       discussion of character in virtuous character (e.g. Bright et al., 2006; Crossan et al., 2017;
+       Liborius, 2017; Palanski et al., 2015; Riggio et al., 2010; Peterson and Seligman, 2004; Wang
+       and Hackett, 2016; Wright et al., 2017). For example, Crossan and her colleagues (2017)
+       describe character as a set of interconnected virtues that are manifested “in habits of
+       cognition, emotion and behavior that embody human excellence and produce social
+       betterment” (p. 2). They conceptualize leader character as an amalgam of virtues, values and
+       personality traits that enable sustained excellence through habits and / or behaviors.
+           Virtues are contextually appropriate behaviors (e.g. humanity and temperance) that are
+       widely considered as emblematic of good leadership. For example, demonstrating care for
+       others and actively promoting their well-being are behaviors associated with the virtue of
+       humanity and contribute to both personal and professional development. A few of the
+       virtuous behaviors reflect personality traits, such as conscientiousness and openness to
+       experience, which are relatively stable dispositional variables. These personality traits
+       predispose individuals to behave in certain virtuous ways, if not overridden by contextual
+       variables such as incentive systems or peer pressure. For example, behaviors that help to
+       withstand difficult situations and to bounce back from hardship reflect the personality trait of
+       resiliency, which enables individuals to develop mechanisms for protection against
+       experiences that could be overwhelming, if not debilitating. Lastly, a few of the virtuous
+       behaviors express values, such as transparency and acting with candor in interpersonal
+       interactions. Values are an acquired set of deeply held beliefs about what is morally right or
+       wrong and, like personality traits, remain relatively stable across contexts and situations (e.g.
+       Russell, 2001; Schwartz and Bilsky, 1987). For example, leaders who provide timely and
+       candid feedback to their employees tend to develop higher levels of trust which facilitates
+
+
+--- PAGE BREAK ---
+
+engagement and sustained excellence. Character, in short, is a habit of being – a set of              Character
+observable behaviors – anchored in a set of virtues, personality traits and values.               assessment in
+    Crossan, Gandz, Seijts and their colleagues initiated a comprehensive research program to
+examine character in organizational and managerial contexts (e.g. Crossan et al., 2016, 2017;
+                                                                                                      employee
+Seijts et al., 2015, 2019) and, in doing so, they extended the seminal work of Peterson and          placement
+Seligman (2004) on virtues and character strengths to organizational settings. Both
+qualitative and quantitative studies involving over 2,500 leaders from the public, private and
+not-for-profit sectors led to the identification of 11 character dimensions and 61 character                  705
+elements (see Figure 1). Crossan et al. (2017) use the term character dimension to refer to the
+higher-order construct (e.g. temperance, humanity and courage) and character elements to
+refer to the virtuous behavioral indicators (e.g. composed, compassionate and tenacious) that
+illustrate and support the dimensions.
+    Further, as can be seen from Figure 1, the researchers view character as a network of
+closely intertwined character dimensions that support each other. This intertwined aspect is
+an important property of the framework since what might appear to be inherently a virtue
+may, in fact, operate as a vice when not connected to other leader character dimensions. For
+
+
+
+
+                                                                                                           Figure 1.
+                                                                                                     Leader character
+                                                                                                      dimensions and
+      Note(s): Leader character framework reflecting character dimensions and                     associated elements
+      associated elements. Framework adapted from Crossan et al. (2017)
+
+
+--- PAGE BREAK ---
+
+LODJ   example, an excess of confidence and determination may be interpreted as insensitivity or
+41,5   arrogance in the absence of empathy and compassion.
+           The research that Crossan, Gandz, Seijts and others conducted led to the development of a
+       character diagnostic — the Leader Character Insight Assessment (LCIA; Crossan et al., 2014)
+       — structured in both self-administered and 360-degree formats. The LCIA consists of 60-plus
+       behavioral statements used to describe the character elements. Latham and Wexley (1994)
+       explained that behavioral statements are the preferred method of performance assessment
+706    for at least two reasons. First, behavioral statements measure what people actually do on the
+       job, and hence they are less susceptible to biases outside the control of the person being
+       evaluated. Second, behavioral statements typically show higher inter-rater reliability than
+       pure trait-based measures. However, consistent with the definition of character provided
+       earlier, several of the behavioral statements embed within them cognitive and / or emotional
+       components. For example, the character dimension of humanity invokes empathy and
+       compassion which contain emotional aspects.
+           The instrument has been used by manufacturing and construction companies, institutions
+       in the financial sector, organizations providing healthcare services, government agencies,
+       academic institutions and other entities. The diagnostic tool provides an assessment of an
+       individual’s leader character and is a resource to help them unpack and discuss the
+       dimensions and elements of character.
+           Although research has shown that character is related to performance measures
+       including, but not limited to, executive performance, innovation, subjective well-being and
+       customer retention, Seijts and his colleagues (2019) reported that CEOs and board members
+       have many questions about the construct of character. Senior executives in the public, private
+       and not-for-profit sectors believe character is essential in individual, team and organizational
+       excellence. However, they like to see data showing to what extent character contributes
+       financially to organizational performance. Put differently, they are concerned about the
+       question as to the utility of selecting leaders based on their level of character: How much
+       exactly does leader character matter? Human resource management professionals are often
+       confronted with the need to discuss and demonstrate the value of their training and
+       development initiatives, including making a compelling case to use organizational resources
+       to select on and develop leader character (e.g. Cascio and Boudreau, 2008; Winkler et al., 2010).
+       Our assumption is that empirical evidence on the relationship between character and
+       financial metrics would reinforce the perceived importance of character and hence makes it
+       easier for human resource professionals and senior executives to justify embedding character
+       in organizational processes.
+           Studies have shown that human resource management processes and interventions – in
+       recruitment and selection, performance appraisal, training and development, turnover and so
+       forth – can have a substantial economic impact on business organizations (e.g. Cascio, 1999).
+       Our paper relies on the previously established finding that character drives performance to
+       tackle a more practical concern – to investigate the potential financial impact associated with
+       placing managers based on leader character. Specifically, we used utility analysis to estimate
+       the dollar value of employee placement based on the assessment of character using the LCIA.
+           Utility analysis is a quantitative method of evaluating the net financial benefit resulting
+       from human resource interventions such as selection and training and development (e.g. Cascio,
+       1999; Holling, 1998; Sturman, 2012). An organization’s success depends, to a large extent, on
+       having the right work force. For example, Tziner and Birati (2015) wrote that: “[t]he economic
+       success of a firm is contingent on careful planning, not only in the realms of production and
+       marketing, but also in the selection, maintenance, and training of a highly loyal and skilled
+       work force whose size and performance ratings are compatible with the firm’s short- and long-
+       term financial strategies” (p. 1270). Therefore, it is important that organizations appreciate and
+       use quantitative approaches to selecting, developing and motivating their employees.
+
+
+--- PAGE BREAK ---
+
+Utility analysis overview                                                                               Character
+In the context of employee selection or placement, utility refers to the improvement in the         assessment in
+“quality of individuals selected beyond what would have occurred had that device not been
+used” (Cascio and Aguinis, 2011, p. 333). What exactly constitutes the “improvement in
+                                                                                                        employee
+quality” is the chief distinction between the various utility analysis models. Some models             placement
+designate this improvement as a binary decision on the successfulness of the candidate
+selected with the device (Taylor and Russell, 1939), whereas others designate it as the average
+improvement on a criterion or performance metric for the group selected with the device                     707
+versus a group selected at random (Naylor and Shine, 1965).
+    The model that is at the core of the utility analysis approach we used in our study –
+Brogden (1946) and Cronbach and Gleser (1965) – defines utility as the estimated
+improvement in financial value due to increased performance from candidates selected
+with a device versus the performance of individuals selected at random. Therefore, in the
+context of the LCIA, the dollar-value improvement in performance stems from the placement
+of individuals in a management position using the device.
+
+The Brogden-Cronbach-Gleser model
+The Brogden-Cronbach-Gleser model assumes a linear relationship between the scores on the
+selection device (e.g. the LCIA) and the criterion. Importantly, the criterion must be an
+operationalization of job performance (e.g. peer or supervisor ratings of performance) to satisfy
+the assumptions underlying the utility analysis. Both the predictor variable and the criterion
+must be continuous and are assumed to closely resemble or be identical in distribution forms
+(e.g. Cascio and Aguinis, 2011; O’Boyle and Aguinis, 2012; Schmidt et al., 1979).
+    With these assumptions, the model uses the correlation between the scores on the selection
+device and criterion as an index of how an increase in the scores on the selection device
+corresponds to an increase in the criterion and, subsequently, job performance. Although
+similar to the Naylor-Shine model (1965), the Brogden-Cronbach-Gleser model includes an
+estimate of the dollar-value improvement provided by an individual who performs one
+standard deviation above the average on the criterion (SDy). The model also includes the cost
+of using the device and the dollar-value improvement compounded over an employee’s
+tenure. The utility formula can be expressed as follows (see Cascio, 1999):
+                          ΔU ¼ N3Tðrxy 3Zxs 3SDy Þ  ½NðC÷SRÞ
+
+where,
+   ΔU 5 Marginal utility or the estimated dollar-value savings over tenure as a result of
+   using the selection device in placement
+   N 5 Number of candidates placed into a position per year
+   T 5 Average tenure in years of employees in a position
+   rxy 5 Correlation between the selection device or predictor and the criterion or job
+   performance measure in the employee population
+   Zxs 5 Average performance of selected candidates in standardized units
+   SDy 5 Dollar value of a standard deviation in the criterion
+   C 5 The cost incurred in acquiring and administering the selection device per candidate
+   SR 5 Selection ratio or the number of candidates placed into a position per year, divided
+   by the number of candidates available per instance of placement
+
+
+--- PAGE BREAK ---
+
+LODJ   Estimating SDy
+41,5   The greatest difficulty in calculating utility in terms of dollar value is the estimation of SDy.
+       SDy reflects the dollar value to the organization of obtaining applicants whose average
+       performance is one standard deviation higher than other applicants. The estimate of SDy is an
+       important consideration because it affects confidence in the conclusions regarding the
+       economic impact of selecting an employee based on leader character (see, for example, Becker
+       and Huselid, 1992; Boudreau, 1991).
+708        For positions that include objective markers of performance (e.g. car or mortgage sales), the
+       estimation of SDy only requires that the criterion data for employees in this position be plotted
+       to determine the dollar value associated with the standard deviation. SDy is simply the standard
+       deviation of the job performance criterion. However, such objective data are not available for
+       many positions (e.g. leadership roles that oversee idea generation and implementation), and,
+       instead, researchers and practitioners have relied on supervisors to provide judgments of the
+       estimated monetary value provided by employees — based on the quantity and quality of the
+       outputs — who perform at various percentiles to calculate SDy (e.g. Cascio and Aguinis, 2011;
+       Schmidt et al., 1979). Nonetheless, estimation of SDy using judgments from supervisors can be
+       time-consuming and expensive. In light of the aforementioned, Schmidt and Hunter (1983)
+       suggested that 40% of the average salary for the position can be used as an estimate of SDy
+       because most supervisor-based estimates of SDy fluctuate between 40% and 70% of average
+       salary (see also Becker and Huselid, 1992; Holling, 1998).
+           Other researchers have found that 40% of the average salary might be a very conservative
+       estimate of SDy (e.g. Judiesch et al., 1992). Further, Hunter et al. (1990) found that these
+       percentage-based estimates fluctuate based on the cognitive complexity required to
+       effectively perform the job, with jobs characterized by the highest levels of cognitive
+       complexity resulting in estimates of SDy above 70% of the average salary. The 70% estimate
+       may be the most appropriate value to use in our calculations since the jobs we studied were at
+       the senior management level (e.g. directors, vice-presidents and senior vice-presidents).
+
+       Concerns with estimates of the basic utility analysis formula
+       Previous research has found that the results of utility analysis are not always readily
+       accepted by managers and practitioners for deciding whether to implement a new instrument
+       or tool (e.g. Latham and Whyte, 1994; Whyte and Latham, 1997). Several researchers (e.g.
+       Cascio and Boudreau, 2008; Macan and Highhouse, 1994; Sturman, 2012) have argued that
+       this might be due to the tendency for the basic utility analysis formula to provide exceedingly
+       high estimates of returns that might be perceived as unrealistic. However, various
+       adjustments to improve the precision of utility estimates have been developed (see, for
+       example, Sturman, 2000, for a review). Generally, these adjustments consist of modifications
+       to the different components of the basic utility analysis formula. Therefore, in order to present
+       a more comprehensive assessment of the potential returns by implementing a character
+       assessment into placement practices, our analyses include several of these adjustments,
+       resulting in a range of utility estimates. The nature of the adjustments is explained in detail in
+       the Supplemental Analyses section.
+
+       Methods
+       Sample and data
+       We used data collected for purposes of succession planning in a large Canadian
+       manufacturing organization that operates on an international stage. The third author was
+       asked to help the organization build an infrastructure to identify candidates suitable for
+       placement into the most senior levels of leadership in the organization. The infrastructure
+       should cultivate a pool of candidates for senior leadership positions and facilitate informed as
+       opposed to ad hoc placement decisions. Given the importance of the initiative for the
+
+
+--- PAGE BREAK ---
+
+organization’s succession and development planning, there was a 100% response rate. The                 Character
+total number of candidates or targets was 111. The number of males and females was 79 and           assessment in
+32, respectively. No other demographic data were collected from the candidates at the request
+of the organization.
+                                                                                                        employee
+    Peers completed the LCIA to obtain leader character ratings of the candidates. The                 placement
+average number of peer assessments available for each senior manager was 4.22 (SD 5 1.67).
+Peer assessments were used because they are frequently used as a tool to facilitate employee
+development (e.g. Campion et al., 2015; McCauley and Moxley, 1996; Toegel and Conger,                       709
+2003). Performance assessments of the candidates were obtained through supervisor ratings.
+The average number of performance assessments for each manager was 2.17 (SD 5 1.39).
+Measures were collected at roughly the same time, and hence the research design was
+concurrent in nature. Although, traditionally, predictive validity studies have been assumed
+to be superior to concurrent validity studies, Barrett et al. (1981) showed that the differences
+associated with these designs have a minimal impact on the magnitude of the obtained
+validity coefficients.
+    N and T are relatively straightforward: they are based on historical data and, of course,
+determined by organizational needs, turnover and other variables. For example, one
+placement every two years would be entered as 0.5. N and T were provided by the
+organization and were set at 1 and 15 years, respectively. However, due to a concern with the
+potential overestimation of tenure provided to us, analyses were also conducted that included
+an expected tenure of 10 years.
+    SR requires an estimate of the average number of candidates for the position and is based
+on organizational records. This variable too was provided by the organization and was set
+at 3.
+    C requires an estimate of the costs associated with administering the LCIA to a single
+candidate. There is a standard fee associated with administering the LCIA; however,
+additional costs may include the costs associated with the time expended on obtaining the
+completed LCIA. The direct costs associated with the peer review of the senior manager were
+set at CAD $800 given the average of four raters. The average annual pay for the position is
+based on organizational records and is necessary to calculate SDy. The average starting
+salary for the position was CAD $165,000.
+    Zxs is the average performance of selected candidates in standardized units. The estimate
+of Zxs was taken from Naylor and Shine’s (1965) tables to calculate Zxs using the selection ratio
+of 0.33 given to us by the company.
+
+Measures
+Leader character. We used the LCIA developed and validated by Crossan and her colleagues
+(e.g. Crossan et al., 2017; Crossan et al., 2014) to measure leader character. The assessment
+asked peers to rate the senior managers in terms of their likelihood to demonstrate 61 leader-
+specific behaviors. These behaviors are classified into 11 character dimensions:
+transcendence, drive, collaboration, humanity, humility, integrity, temperance, justice,
+accountability, courage and judgement. A sample leader-specific behavior for rating is:
+“Displays resolve and stays committed to see things through.”
+    The scale scores ranged from 1 (extremely unlikely) to 5 (extremely likely); the midpoint
+was 3 (unsure). The average score of the 61 items was used as the character measure in our
+analysis. The average score was used for a single reason. Utility analysis is a distinctly
+practical tool and is concerned with whether using a certain assessment instrument such as
+the LCIA has the potential to improve the value of the selection and employee development
+process. Prior theorizing and research have shown that organizations should consider the 11
+leader character dimensions in a holistic way rather than focusing on only a select few of the
+dimensions (e.g. Crossan et al., 2017). Further, we could think of no compelling reason why
+
+
+--- PAGE BREAK ---
+
+LODJ   organizations would only use one or a subset of the character dimensions in making
+41,5   placement decisions. The Cronbach’s alpha was 0.95 (see Table 1). Furthermore, to confirm
+       the appropriateness of aggregating our rater scores, we examined the intraclass correlation
+       coefficient (ICC[1]). The ICC[1] value was 0.13 and well above the 0.05 guideline (e.g. LeBreton
+       and Senter, 2008; Reise et al., 2005), indicating non-ignorable sharedness and hence justifying
+       the aggregation of rater scores.
+          Job performance. The direct supervisors were asked to rate the performance of the senior
+710    managers using an eight-item measure of job performance. Assessments were administered
+       before placement as part of an annual succession planning process. The measure was
+       developed in collaboration with human resource and leadership development executives
+       from the organization as it was critical to use items that were relevant to the organization, and
+       the most senior leadership positions, on a go-forward basis. Direct supervisors were asked to
+       rate managers on each of the eight items, scoring the manager based on performance in their
+       current position as well as aspects of performance that were considered important to
+       promotion and job performance overall. A sample item is: “How effective would this person be
+       as a leader of a structured cross-functional team?” The scale scores ranged from 1 (low) to 7
+       (high). The average score of the eight items was used as the job performance measure in our
+       analysis. The Cronbach’s alpha was 0.91 (see Table 1). The ICC[1] value was 0.39.
+
+
+       Results
+       The means and standard deviations of the variables measured, as well as the correlations
+       among these variables, are shown in Table 1. The correlation between the leader character
+       measure provided by peers and performance assessed by the supervisor was 0.30 (p < 0.01).
+           As explained in the introduction, the estimate of SDy is challenging for jobs that do not
+       have objective markers of performance. We used 70% of salary as a proxy of SDy. Therefore,
+       using the data required to calculate ΔU from the Brogden-Cronbach-Gleser model leads to an
+       estimate of CAD $564,128 for the use of the LCIA over the expected tenure of 15 years, which
+       is equivalent to CAD $37,609 yearly (ROI: 23,505%) and CAD $375,285 and CAD $37,529
+       yearly (ROI: 15,637%) over a tenure of 10 years.
+
+
+       Supplemental analyses – adjustments to the basic utility analysis formula
+       We considered five adjustments to the basic utility analysis formula designed to improve the
+       precision of our estimates. These adjustments center on the impact of employee flows
+       (Boudreau, 1983b), probationary periods (De Corte, 1994), departures from top-down hiring
+       (Murphy, 1986), economic adjustments (e.g. variable costs, marginal tax rates and
+       discounting; Boudreau, 1983a) and the incremental validity of the LCIA over current
+       placement practices at the organization (Boudreau, 1991; Raju and Burke, 1986). We decided
+       to discard the first three of these adjustments given that they do not appear to be relevant to
+       the focus of the present study: to examine the potential utility of promoting employees based
+       on leader character. We briefly explain the nature of each of the adjustments we considered.
+           Employee flows modify the basic utility analysis formula to account for the effects of the
+       entrance and exit of employees over several years, including factors such as increases in the
+       overall quality of employees after the LCIA is implemented. This adjustment requires careful
+       tracking of employee cohorts over multiple periods in time to establish relationships between
+       performance, turnover and the LCIA. However, we collected our data at a single point in time,
+       and hence estimating the trajectory of the relationships among the variables of interest would
+       require several assumptions which we were not prepared to make. Probationary periods
+       involve estimating the effects of the dismissal of employees who do not meet a particular
+       standard. It is highly unlikely this scenario applies to our study given that the employees
+
+
+--- PAGE BREAK ---
+
+                           M   SD      1          2          3         4          5          6         7          8          9         10        11        12       13
+
+1. Character            4.38 0.29 (0.95)
+2. Accountability       4.56 0.35       0.82*** (0.87)
+3. Collaboration        4.32 0.38       0.85***  0.58*** (0.87)
+4. Courage              4.57 0.28       0.70***  0.79***  0.42*** (0.81)
+                                            ***      ***
+5. Drive                4.38 0.32       0.76     0.76     0.53***   0.77*** (0.86)
+6. Humanity             4.20 0.43       0.82***  0.48***  0.87***   0.32**     0.40*** (0.91)
+7. Humility             4.29 0.37       0.93***  0.68***  0.86***   0.51***    0.59***   0.89*** (0.90)
+8. Integrity            4.56 0.34       0.88***  0.75***  0.71***   0.62***    0.64***   0.69***   0.80*** (0.88)
+                                            ***      ***      ***       ***        ***       ***
+9. Judgment             4.42 0.32       0.79     0.79     0.50      0.75       0.68      0.45      0.62***   0.66*** (0.92)
+10. Justice             4.31 0.36       0.90***  0.65***  0.81***   0.50***    0.59***   0.82***   0.86***   0.83***     0.63*** (0.88)
+11. Temperance          4.29 0.43       0.71***  0.36***  0.64***   0.24*      0.40***   0.67***   0.69***   0.54***     0.44***     0.65*** (0.91)
+12. Transcendence 4.28 0.30             0.78***  0.65***  0.55***   0.65***    0.66***   0.49***   0.66***   0.67***     0.71***     0.64***    0.46*** (0.81)
+                                                                        x
+13. Performance         5.40 0.83       0.30**
+                                                 0.28**
+                                                          0.23*
+                                                                    0.17       0.35***
+                                                                                         0.23*
+                                                                                                   0.31**
+                                                                                                             0.24 *
+                                                                                                                         0.28 **
+                                                                                                                                     0.23 *
+                                                                                                                                                0.21*      0.18x (0.91)
+Note(s): N 5 111. Leader character is the composite of all leader character dimensions. Cronbach’s alpha coefficients of reliability are on the diagonal in parentheses.
+x
+ p < 0.08; *p < 0.05; **p < 0.01; ***p < 0.001
+
+
+
+
+                                                                                                                                                         assessment in
+  Descriptive statistics
+  and intercorrelations
+  for peer-rated leader
+      supervisor-rated
+
+
+
+
+                                                                                                                                                            placement
+
+                                                                                                                                                             Character
+                                                                                                                                                             employee
+         character and
+          performance
+
+
+
+
+             Table 1.
+
+
+
+
+                                                                                                                                               711
+
+
+--- PAGE BREAK ---
+
+LODJ   considered for promotion had previously been identified as high potential employees. Finally,
+41,5   departures from top-down hiring estimate the impact of offers being rejected by the best
+       candidates. The pool of employees we studied was composed of individuals with the potential
+       to perform in the new position and, importantly, who have expressed an interest in advancing
+       within the organization. Therefore, it is highly unlikely that any candidate offered a
+       promotion would reject such an offer.
+           We implemented two adjustments to the basic utility formula: the impact of various
+712    economic factors, and the incremental validity of the LCIA over current placement practices
+       at the organization we studied. Sturman (2000) reported that these adjustments have the
+       highest impact in reducing inflated estimates – on average by 84%. Boudreau (1983a)
+       detailed three economic factors that impact the potential returns of implementing a new
+       instrument. First, variable costs model the additional costs incurred by the organization due
+       to performance increases stemming from the implementation of the new instrument (e.g.
+       higher compensation, such as bonuses due to increases in employee performance) by
+       multiplying SDy by a value that is representative of all variable costs identified by Boudreau
+       (1983a). Second, the adjustment for taxation rates reflects the impact of taxation on potential
+       profits and costs of implementing the new instrument. This adjustment is obtained by
+       multiplying SDy and C by an overall taxation rate (Boudreau, 1983a). Third, adjusting for
+       discounting estimates the opportunity costs associated with investing the resources
+       necessary to obtain and implement the new instrument that would have been invested
+       otherwise, to account for the fact that “future monetary values cannot be directly equated
+       with present monetary values” (Boudreau, 1983a, p. 563). In practical terms, the adjustment
+       for discounting involves replacing the T component of the basic utility analysis formula with
+       a modified T that includes a yearly compounding effect of a discounting rate (see Boudreau,
+       1983a, for more details on how to arrive at the modified T). Lastly, adjustments for the
+       incremental validity of any new instrument over current assessments can be applied, in most
+       cases, by subtracting the correlation between the current placement method and the criterion
+       (job performance) (rold) from the correlation between the new instrument (the LCIA) and the
+       criterion (rnew) and using the difference in correlations in place of rxy in the basic utility
+       analysis formula.
+           Altogether, the modified formula for utility analysis after implementing these
+       adjustments can be expressed as:
+                    ΔU ¼ N 3Tmod ðrold  rnew Þ3Zxs 3½SDy 3ð1 þ VCÞ3ð1  TAXÞ
+                              fN ½C3ð1  TAXÞ÷SRg
+
+       where,
+          ΔU 5 Marginal utility or the estimated dollar-value savings over tenure as a result of
+          using the selection device in placement
+          N 5 Number of candidates placed into a position per year
+          Tmod 5 Modified tenure in years of employees in a position according to discounting rate
+          rold 5 Correlation between the current selection device or predictor and the criterion or job
+          performance measure in the employee population
+          rnew 5 Correlation between the new selection device or predictor and the criterion or job
+          performance measure in the employee population
+          Zxs 5 Average performance of selected candidates in standardized units
+          SDy 5 Dollar value of a standard deviation in the criterion
+
+
+--- PAGE BREAK ---
+
+     VC 5 Variable costs rate                                                                                   Character
+     TAX 5 Taxation rate                                                                                    assessment in
+     C 5 The cost incurred in acquiring and administering the selection device per candidate
+                                                                                                                employee
+                                                                                                               placement
+     SR 5 Selection ratio or the number of candidates placed into a position per year, divided
+     by the number of candidates available per instance of placement
+The necessary information required to complete the various economic adjustments was                                       713
+either not known or not made available to us. Additionally, the organization did not have any
+data on the validity of their current placement practices, rendering it challenging for us to
+assess the incremental validity of the LCIA. However, Sturman (2000) reviewed the literature
+on utility analysis and developed a realistic range of parameters for use in subsequent
+calculations. Thus, we conducted a series of utility analyses using the parameters provided
+by Sturman (2000) for economic factors and incremental validity to produce a range of
+estimates for the potential utility of applying the LCIA in placement. Specifically, we selected
+the minimum and maximum parameters reported for each adjustment, and we also calculated
+the midpoint for each adjustment. This approach resulted in three parameters per
+adjustment.
+    The maximum value reported by Sturman (2000) for the incremental validity of a new
+instrument (0.38) is, in fact, larger than the actual correlation we found in our study (see
+Table 1). Therefore, we deviated from Sturman (2000) to set the maximum value for this
+parameter at 0.30 and calculated a midpoint value accordingly.
+    These procedures resulted in the following minimum, midpoint and maximum parameters
+for each adjustment: variable costs rate (0.02, 0.185, 0.35), taxation rate (0.30, 0.465,
+0.63), discounting rate (0.01, 0.06, 0.11) and incremental validity (0.05, 0.175, 0.30). The final set
+of estimates was produced by conducting separate utility analyses for every possible
+combination of the various adjustments, resulting in a total of 81 estimates (see Appendix for
+an illustration). These analyses were conducted for expected 10-years and 15-years tenures,
+for a total of 162 estimates. A summary of the results is shown in Table 2. The data in Table 2
+reveal that the lowest utility estimate is CAD $8,027, for the condition with the highest
+economic factors and lowest incremental validity at the 10-year tenure level. The ROI for this
+estimate is 904%. The highest utility estimate includes the adjustments for the lowest
+economic factors and highest incremental validity at the 15-year tenure level: CAD $357,551
+and an ROI of 21,283%. These results indicate that there is still a positive and sizeable ROI
+associated with the LCIA in employee placement even with highly conservative adjustments.
+
+Discussion
+Are organizational investments in human resource programs and leadership development — in
+both time and money — justified by their returns? Do such programs have a dollars-and-cents
+
+
+
+                        15-Year tenure                                    10-Year tenure
+Δr           M          SD         Min          Max           M           SD         Min          Max
+                                                                                                                       Table 2.
+0.05       $26,863     $11,668       $9,998      $58,192       $19,502     $7,520      $8,027     $39,218   Descriptive statistics
+0.175      $97,232     $41,330     $37,214     $207,871        $71,761    $26,540     $30,315    $141,462     for adjusted utility
+0.30      $167,601     $70,994     $64,430     $357,551      $125,459     $50,242     $52,604    $243,706       estimates across
+Note(s): The results for each level of incremental validity are based on 27 estimates using 70% of annual   expected 10- and 15-
+salary as SDy. Δr 5 estimated incremental validity of the LCIA                                               year tenure periods
+
+
+--- PAGE BREAK ---
+
+LODJ   return on the investment? What is the effect size associated with such programs? These are
+41,5   important questions to consider for any organizational decision-maker, in particular given the
+       demand for increased accountability (e.g. from senior executives), the push for transparency
+       (e.g. board members and shareholders) and the tightening budgets in organizations. Hence,
+       Luthans et al. (2015) concluded that “the challenge of assessing the investments in and dollar
+       return from human resources is now more pertinent than ever” (p. 241).
+           Character is an essential ingredient of leadership that has been neglected for far too long in
+714    both the empirical and practitioner literature on leadership. Perhaps this is because people
+       think character is a highly subjective construct and hence more difficult to define and assess
+       than specific competencies or skill sets that are part of — and tend to dominate — formal job
+       descriptions. However, recent research has revealed a set of concrete behaviors associated
+       with character dimensions that can be developed to strengthen character. Scholars have also
+       begun to develop instruments to assess character and relate it to performance (see, for
+       example, Crossan et al., 2017; Riggio et al., 2010; Wright et al., 2017).
+           Organizational leaders will be more inclined to adopt selection and development tools –
+       including assessment instruments such as the LCIA –— to facilitate character-based
+       leadership if data show that such tools help provide a meaningful financial return. The
+       objective of our study was to understand how much character matters financially in selecting
+       employees for senior leadership positions in a large Canadian manufacturing organization.
+       The results of our analysis are both illustrative and illuminating. Our data revealed a range of
+       utility estimates from ΔU of CAD $8,027 over a 10-year tenure period to CAD $564,128 over a
+       15-year tenure period. The estimates we provided include various adjustments to the basic
+       utility analysis formula to address the myriad dynamics at play in organizations, such as
+       economic conditions. We believe it is entirely plausible, and consistent with Hunter et al.
+       (1990), that the dollar value associated with selection and placement based on instruments
+       that assess leader character further increase for individuals at even higher levels in the
+       organization, that is, for those individuals whose jobs are even more cognitively complex
+       such as CFOs, COOs, CEOs and directors of boards.
+           Further, we assert that selecting and promoting managers on character and developing
+       their character-based leadership will not only leverage their own contributions to the
+       organization but also contribute to a trickle-down effect on employees below them. This is
+       because the organization’s leaders are expected to model the behaviors they want to promote
+       throughout the organization. For example, leaders who act and speak with humanity beget
+       others who act in similar ways. Any character-associated behaviors expressed or enacted by
+       senior leaders are perceived by others, especially those at the early stages of their leadership
+       development, as the behaviors that are valued in the organization (e.g. Crossan et al., 2016;
+       Foulk et al., 2016; Kolk et al., 2010; Shin, 2012).
+           Thus, behavioral contagion may add to the estimated dollar value. The reverse is also true:
+       to ignore character in recruitment and selection may cost the organization in productivity and
+       legal settlements. For example, dysfunctional behaviors that are rooted in character
+       deficiencies – for example, rude, disrespectful, inflexible and unfair behaviors – are likely to
+       create an outflow of people who will not stand for that kind of behavior, meaning that, over
+       time, organizations may lose capable people.
+           People may have difficulty believing that using the LCIA in placement could lead to a best-
+       case yearly savings of 23% of a senior manager’s annual salary. However, the potential costs
+       of poor leadership due to deficiencies in character can be much greater than CAD $37,609 a
+       year. For example, workplace harassment settlements in Canada can rise to over $100,000 in
+       some cases, and they can amount to millions of dollars in the United States. The standards for
+       senior managers in addressing claims of harassment are high. Those in senior management
+       positions need to demonstrate integrity to hold themselves to a high moral standard and
+       behave consistently with ethical standards; with courage to show an unrelenting
+
+
+--- PAGE BREAK ---
+
+determination and perseverance in confronting the most difficult situations; temperance to              Character
+conduct themselves in a calm, composed manner in addressing the issue; humanity to                  assessment in
+demonstrate genuine concern and care for the victims of the injustice; and judgment to make
+sound decisions in a timely manner based on relevant information and critical analysis
+                                                                                                        employee
+of facts.                                                                                              placement
+    The costs associated with poor leader character tend to escalate as the position and
+authority of the leader increases. For example, Volkswagen has paid more than US$25 billion
+in fines, penalties and settlements since US officials charged the automaker in 2015 with                   715
+breaking environmental laws by cheating on diesel emissions tests (e.g. Boston and Michaels,
+2019; Ewing, 2018; Rogers and Spector, 2017). Martin Winterkorn, the CEO of Volkswagen
+during the scandal, was charged with fraud and could face a prison sentence. His salary in
+2014 was US$18 million — a relatively minor component of the overall cost to the
+organization, which saw its stock drop by a third when the scandal broke (e.g. Bryan, 2017;
+Snyder and Jones, 2015).
+    How could the fortunes of one of the world’s largest automakers deteriorate so rapidly?
+We believe the answer lies, in part, in the lack of character at the top of the organization. For
+example, a key element of good risk management is asking appropriate questions and getting
+truthful answers. And so, if a CEO, or any other senior executive for that matter, does not
+demand that leaders and managers root out unethical conduct by asking the tough questions
+and holding people accountable, then that bad behavior is likely to gradually spread like a
+weed throughout the organization. The German magazine Der Spiegel in 2013 compared
+Volkswagen’s corporate culture to that of “North Korea minus the labor camps.” Employees
+felt they had to obey directives and were actively prevented from flagging problems and
+raising concerns out of fear that doing so might jeopardize ambitious goals set by the senior
+leadership team. Winterkorn was convinced that diesel engines rather than electric vehicles
+were the company’s future, and with most executives afraid to question him, it appears the
+automaker did everything it could to boost the sale of diesel-powered vehicles, even in the face
+of conflicting engineering and market information (e.g. Ewing and Bowley, 2015; Gapper,
+2018). Nowhere in this story do we see a value-based culture characterized by humility, open-
+mindedness, consideration, integrity, temperance, courage or accountability – or for that
+matter, any other dimension of leader character.
+    Hence, as our results suggest, organizations in the public, private and not-for-profit
+sectors simply need to recognize the importance of assessing and developing leader
+character. The issue of leadership character can be ignored, but the price of doing so cannot
+be when paying for this neglect.
+
+Strengths and limitations
+Utility analysis is a quantitative and robust method of evaluating human resource programs.
+For example, the method allows human resource professionals to assess whether a selection
+program using a particular tool yields a positive utility versus selecting individuals at
+random. Our paper is an illustration of the potential utility of the LCIA in a selection process
+for senior managers. There are several strengths associated with our study. First, we used
+actual and objective multi-source data from the field. Second, we used supervisor
+assessments of performance rather than self-assessments. Supervisor ratings are
+commonly used in performance assessments and scholarly research. Third, we used a
+behaviorally based and validated instrument to assess character. Behaviorally based
+statements are the preferred method of assessment given that they measure what people
+actually do on the job, are less susceptible to biases outside the control of the person being
+evaluated and typically show higher inter-rater reliability than trait-based measures (e.g.
+Latham et al., 2005; Latham and Wexley, 1994). Fourth, the performance assessment and the
+
+
+--- PAGE BREAK ---
+
+LODJ   assessment of character were conducted by different sources, hence eliminating common-
+41,5   method and same-rater bias. Fifth, we used a realistic estimate of SDy based on actual salary
+       information provided by the organization. Sixth, we included various adjustments in
+       calculating the estimates using the basic utility analysis function. And while these estimates
+       predictably declined in magnitude, the utility if the LCIA remained positive and appears to be
+       of substantial value – an ROI over 900% is our most conservative estimate.
+           Nevertheless, as with any study, there are limitations that need to be acknowledged. First,
+716    there is a rich literature on the best methods to estimate the return of human resource
+       interventions. Luthans et al. (2015) observed that “debates regarding the reliability, validity
+       and utility of various approaches for quantifying the return on investment and value of
+       human resources and development are far from resolved” (p. 241). We used a straightforward
+       and widely recognized approach to estimate the return on investment of using the LCIA in
+       placement (see, for example, Cascio and Boudreau, 2011; Luthans et al., 2015; Tziner and
+       Birati, 2015). Luthans, Youssef and Avolio (2007) explained that “research has found that the
+       complexity of traditional utility analysis may actually challenge the credibility of its results
+       as perceived by managers, possibly even reversing its intended impact” (p. 217). The
+       approaches to utility analysis vary widely in depth, breadth and complexity. Hence, it is likely
+       the different approaches result in somewhat different estimates. Second, the instrument we
+       used to assess character – the LCIA – is one of several measures of character. The assumption
+       that the estimated returns may be greater or smaller using other instruments is reasonable.
+       Third, we used a concurrent validity design. Barrett et al. (1981) found no substantial
+       differences in results between concurrent validity and predictive validity design.
+       Nevertheless, future studies should explore this assertion in more detail and include
+       measures of performance after individuals were placed in leadership roles. Fourth, although
+       different raters assessed performance and leader character, our design does not allow us to
+       tease apart whether character contributes to improved performance or whether those with
+       high performance are seen as people of high character. Future studies therefore need to
+       establish causality through training and developing character, including the use of control
+       groups, to more firmly establish the impact of character-based leadership. Fifth, the
+       administration of the LCIA at multiple time intervals to assess character – and its stability –
+       would further strengthen our analysis. And lastly, utility analysis is based on the
+       contribution of a measure, not of a construct. The assumption behind utility analysis is that
+       the construct underlying the measure is driving the potential utility, but ultimately we are
+       estimating the potential value of the measure itself. Prior studies have shown that leader
+       character predicts performance. Future research designs should continue to include a myriad
+       of variables to show that character predicts managerial performance – and thus has a dollars-
+       and-cents return – beyond constructs known to predict performance including demographic
+       variables.
+
+       References
+       Barrett, G.V., Phillips, J.S. and Alexander, R.A. (1981), “Concurrent and predictive validity designs: a
+             critical reanalysis”, Journal of Applied Psychology, Vol. 66, pp. 1-6.
+       Becker, B.E. and Huselid, M.A. (1992), “Direct estimates of SDy and the implications for utility
+             analysis”, Journal of Applied Psychology, Vol. 77, pp. 227-233.
+       Boston, W. and Michaels, D. (2019), “SEC charges Volkswagen with defrauding U.S. bond investors”,
+             The Wall Street Journal, March 15.
+       Boudreau, J.W. (1983a), “Economic considerations in estimating the utility of human resource
+            productivity improvements”, Personnel Psychology, Vol. 36, pp. 551-557.
+
+
+--- PAGE BREAK ---
+
+Boudreau, J.W. (1983b), “Effects of employee flows on utility analysis of human resource productivity           Character
+     improvement programs”, Personnel Psychology, Vol. 68, pp. 396-407.
+                                                                                                            assessment in
+Boudreau, J.W. (1991), “Utility analysis for decisions in human resource management”, in Dunnette,
+     M.D. and Hough, L.M. (Eds), Handbook of Industrial and Organizational Psychology, Consulting
+                                                                                                                employee
+     Psychologists Press, Alo Alto, CA, pp. 621-745.                                                           placement
+Bright, D.S., Cameron, K.S. and Caza, A. (2006), “The amplifying and buffering effects of virtuousness
+      in downsized organizations”, Journal of Business Ethics, Vol. 64, pp. 249-269.
+                                                                                                                    717
+Brogden, H.E. (1946), “On the interpretation of the correlation coefficient as a measure of predictive
+     efficiency”, Journal of Educational Psychology, Vol. 37, pp. 64-76.
+Bryan, V. (2017), Volkswagen plans to cap CEO pay at 10 million euros: sourc, Reuters, February 6.
+Campion, M.C., Campion, E.D. and Campion, M.A. (2015), “Improvements in performance
+     management through the use of 360 feedback”, Industrial and Organizational Psychology,
+     Vol. 8, pp. 85-93.
+Cascio, W.F. (1999), Costing Human Resources: The Financial Impact of Behavior in Organizations, 4th
+      ed., South-Western College Publishing, Cincinnati, OH.
+Cascio, W.F. and Aguinis, H. (2011), Applied Psychology in Human Resource Management, 7th ed.,
+      Prentice-Hall, Upper Saddle River, NJ.
+Cascio, W.F. and Boudreau, J.W. (2008), Investing People: Financial Impact of Human Resource
+      Initiatives, Pearson/Financial Times Publishing, Upper Saddle River, NJ.
+Cohen, T.R., Panter, A.T., Turan, N., Morse, L. and Kim, Y. (2014), “Moral character in the workplace”,
+     Journal of Personality and Social Psychology, Vol. 107, pp. 943-963.
+Cronbach, L.J. and Gleser, G.C. (1965), Psychological Tests and Personnel Decisions, 2nd ed., University
+     of Illinois Press, Urbana. IL.
+Crossan, M.M., Seijts, G.H. and Gandz, J. (2014), Leader Character Insight Assessment, Sigma
+      Assessment Systems, London, ON.
+Crossan, M., Seijts, G. and Gandz, J. (2016), Developing Leadership Character, Routledge, New
+      York, NY.
+Crossan, M.M., Byrne, A., Seijts, G.H., Reno, M., Monzani, L. and Gandz, J. (2017), “Toward a
+      framework of leader character in organizations”, Journal of Management Studies, Vol. 54,
+      pp. 986-1018.
+De Corte, W. (1994), “Utility analysis for the one-cohort selection-retention decision with a
+     probationary period”, Journal of Applied Psychology, Vol. 79, pp. 402-411.
+Ewing, J. (2018), “Ex-Volkswagen CEO charged with fraud over diesel emissions”, The New York
+     Times, May 3.
+Ewing, J. and Bowley, G. (2015), “The engineering of Volkswagen’s aggressive ambition”, The New
+     York Times, December 13.
+Foulk, T., Woolum, A. and Erez, A. (2016), “Catching rudeness is like catching a cold: the contagion
+      effects of low-intensity negative behaviors”, Journal of Applied Psychology, Vol. 101, pp. 50-67.
+Gapper, J. (2018), “Martin Winterkorn’s prosecution has benefits for VW”, Financial Times, May 4.
+Good Jobs First (2016), “Volkswagen AG violation tracker individual record”, available at: https://
+     violationtracker.goodjobsfirst.org/prog.php?parent5volkswagen.
+Hannah, S.T. and Avolio, B.J. (2011), “Leader character, ethos, and virtue: individual and collective
+     considerations”, The Leadership Quarterly, Vol. 22 No. 5, pp. 989-994.
+Holling, H. (1998), “Utility analysis of personnel selection: an overview and empirical study based on
+      objective performance measures”, Methods of Psychological Research, Vol. 3, pp. 5-24.
+Hunter, J.E., Schmidt, F.L. and Judiesch, M.K. (1990), “Individual differences in output variability as a
+     function of job complexity”, Journal of Applied Psychology, Vol. 75, pp. 28-42.
+
+
+--- PAGE BREAK ---
+
+LODJ   Judiesch, M.K., Schmidt, F.L. and Mount, M.K. (1992), “Estimates of the dollar value of employee
+             output in utility analyses: an empirical test of two theories”, Journal of Applied Psychology,
+41,5         Vol. 77, pp. 234-250.
+       Kolk, A., van Dolen, W. and Vock, M. (2010), “Trickle effects of cross-sector social partnerships”,
+             Journal of Business Ethics, Vol. 94, pp. 123-137.
+       Latham, G.P. and Wexley, K.N. (1994), Increasing Productivity through Performance Appraisal,
+            Addison-Wesley, Reading, MA.
+718
+       Latham, G.P. and Whyte, G. (1994), “The futility of utility analysis”, Personnel Psychology, Vol. 47,
+            pp. 31-46.
+       Latham, G.P., Almost, J., Mann, S. and Moore, C. (2005), “New developments in performance
+            management”, Organizational Dynamics, Vol. 34, pp. 77-87.
+       LeBreton, J.M. and Senter, J.L. (2008), “Answers to 20 questions about interrater reliability and
+             interrater agreement”, Organizational Research Methods, Vol. 11, pp. 815-852.
+       Liborius, P. (2017), “What does leaders’ character add to transformational leadership?”, Journal of
+             Psychology, Vol. 151, pp. 299-320.
+       Luthans, F., Youssef, C.M. and Avolio, B.J. (2007), Psychological Capital: Developing the Human
+            Competitive Edge, Oxford University Press, New York, NY.
+       Luthans, F., Youssef, C.M. and Avolio, B.J. (2015), Psychological Capital and beyond, Oxford University
+            Press, New York, NY.
+       Macan, T.H. and Highhouse, S. (1994), “Communicating the utility of human resource activities: a
+            survey of I/O and HR professionals”, Journal of Business and Psychology, Vol. 8, pp. 425-436.
+       McCauley, C.D. and Moxley, R.S. (1996), “Developmental 360: how feedback can make managers more
+            effective”, Career Development International, Vol. 1, pp. 15-19.
+       Murphy, K.R. (1986), “When your top choice turns you down: effect of rejected offers on the utility of
+            selection tests”, Psychological Bulletin, Vol. 99, pp. 133-138.
+       Naylor, J.C. and Shine, L.C. (1965), “A table for determining the increase in mean criterion score
+             obtained by using a selection device”, Journal of Industrial Psychology, Vol. 3, pp. 33-42.
+       O’Boyle, E. Jr and Aguinis, H. (2012), “The best and the rest: revisiting the norm of normality of
+            individual performance”, Personnel Psychology, Vol. 65, pp. 79-119.
+       Palanski, M.E., Cullen, K.L., Gentry, W.A. and Nichols, C.M. (2015), “Virtuous leadership: exploring the
+             effects of leader courage and behavioral integrity on leader performance and image”, Journal of
+             Business Ethics, Vol. 132, pp. 297-310.
+       Peterson, C. and Seligman, M.E.P. (2004), Character Strengths and Virtues, Oxford University Press,
+             New York, NY.
+       Raju, N.S. and Burke, M.J. (1986), “Utility analysis”, in Berk, R.A. (Ed.), Performance Assessment:
+             Methods and Applications, Johns Hopkins, Baltimore, MD, pp. 186-202.
+       Reise, S.P., Ventura, J., Nuechterlein, K.H. and Kim, K.H. (2005), “An illustration of multilevel factor
+              analysis”, Journal of Personality Assessment, Vol. 84, pp. 126-136.
+       Riggio, R.E., Zhu, W., Reina, C. and Maroosis, J.A. (2010), “Virtue-based measurement of ethical
+             leadership: the leadership virtues questionnaire”, Consulting Psychology Journal: Practice and
+             Research, Vol. 62, pp. 235-250.
+       Rogers, C. and Spector, M. (2017), “Judge slaps VW with $2.8 billion criminal fine in emissions fraud”,
+            The Wall Street Journal, April 21.
+       Russell, R.F. (2001), “The role of values in servant leadership”, The Leadership and Organization
+             Development Journal, Vol. 22, pp. 76-84.
+       Schmidt, F.L. and Hunter, J.E. (1983), “Individual differences in productivity: an empirical test of
+            estimates derived from studies of selection procedure utility”, Journal of Applied Psychology,
+            Vol. 68, pp. 407-414.
+
+
+--- PAGE BREAK ---
+
+Schmidt, F.L., Hunter, J.E., McKenzie, R.C. and Muldrow, T.W. (1979), “Impact of valid selection                 Character
+     procedures on work-force productivity”, Journal of Applied Psychology, Vol. 64, pp. 609-626.
+                                                                                                             assessment in
+Schwartz, S.H. and Bilsky, W. (1987), “Toward a universal psychological structure of human values”,
+     Journal of Personality and Social Psychology, Vol. 53, p. 550.
+                                                                                                                 employee
+Seijts, G., Gandz, J., Crossan, M. and Reno, M. (2015), “Character matters: character dimensions’ impact
+                                                                                                                placement
+        on leader performance and outcomes”, Organizational Dynamics, Vol. 44, pp. 65-74.
+Seijts, G., Byrne, A., Crossan, M.M. and Gandz, J. (2019), “Leader character in board governance”,                   719
+        Journal of Management and Governance, Vol. 23, pp. 227-258.
+Shin, Y. (2012), “CEO ethical leadership, ethical climate, climate strength, and collective organizational
+      citizenship behavior”, Journal of Business Ethics, Vol. 108, pp. 299-312.
+Snyder, B. and Jones, S. (2015), “Here’s a timeline of Volkswagen’s tanking stock price”, Fortune,
+     September 23.
+Sturm, R.E., Vera, D. and Crossan, M. (2017), “The entanglement of leader character and leader
+     competence and its impact on performance”, The Leadership Quarterly, Vol. 28,
+     pp. 349-366.
+Sturman, M.C. (2000), “Implications of utility analysis adjustments for estimates of human resource
+     intervention value”, Journal of Management, Vol. 26, pp. 281-299.
+Sturman, M.C. (2012), “Employee value: combining utility analysis with strategic human resource
+     management research to yield strong theory”, in Schmitt, N. (Ed.), The Oxford Handbook of
+     Personnel Assessment and Selection, Oxford University Press, New York, NY, pp. 768-792.
+Taylor, H.C. and Russell, J.T. (1939), “The relationship of validity coefficients to the practical
+      effectiveness of tests in selection”, Journal of Applied Psychology, Vol. 23, pp. 565-578.
+Toegel, G. and Conger, J.A. (2003), “360-degree assessment: time for reinvention”, The Academy of
+     Management Learning and Education, Vol. 2, pp. 297-311.
+Tziner, A. and Birati, A. (2015), “Assessing the financial value of human resource management
+      programs and employee behaviors: a critical tool still coming of age”, Amfiteatru Economic,
+      Vol. 17, pp. 1259-1272.
+Wang, G. and Hackett, R.D. (2016), “Conceptualization and measurement of virtuous leadership: doing
+     well by doing good”, Journal of Business Ethics, Vol. 137, pp. 321-345.
+Whyte, G. and Latham, G.P. (1997), “The futility of utility analysis revisited: when even an expert
+     fails”, Personnel Psychology, Vol. 50, pp. 601-610.
+Winkler, S., K€onig, C.J. and Kleinmann, M. (2010), “Single-attribute utility analysis may be futile, but
+     this can’t be the end of the story: causal chain analysis as an alternative”, Personnel Psychology,
+     Vol. 63, pp. 1041-1065.
+Wright, T.A. (2011), “Character assessment in business ethics education”, in Swanson, D.L. and
+     Fisher, D.G. (Eds), Got Ethics? Toward Assessing Business Ethics Education, Information Age
+     Publishing, Charlotte, NC, pp. 361-380.
+Wright, T. and Goodstein, J. (2007), “Character is not “dead” in management research: a review of
+     individual character and organizational-level virtue”, Journal of Management, Vol. 33,
+     pp. 928-958.
+Wright, T.A. and Huang, C.-C. (2008), “Character in organizational research: past directions and future
+     prospects”, Journal of Organizational Behavior, Vol. 29, pp. 981-987.
+Wright, T.A. and Quick, J.C. (2011), “The role of character in ethical leadership research”, The
+     Leadership Quarterly, Vol. 22, pp. 975-978.
+Wright, T.A., Quick, J.C., Hannah, S.T. and Blake Hargrove, M. (2017), “Best practice recommendations
+     for scale construction in organizational research: the development and initial validation of the
+     Character Strength Inventory (CSI)”, Journal of Organizational Behavior, Vol. 38, pp. 615-628.
+
+
+--- PAGE BREAK ---
+
+LODJ                            Appendix
+                                Illustration of the calculation for the utility estimate
+41,5                            The following is an example of how each utility estimate was calculated. The formula presented below
+                                uses an expected tenure of 15 years, the minimum parameters for the three economic adjustments and
+                                the maximum parameter for the incremental validity of the LCIA over the current placement practices at
+                                the manufacturing organization. Note that values throughout have been rounded for ease of illustration.
+                                               ΔU ¼ N 3Tmod ðrold  rnew Þ3Zxs 3½SDy 3ð1 þ VCÞ3ð1  TAXÞ
+720
+                                                         fN ½C3ð1  TAXÞ÷SRÞg
+
+                                   Step 1: ΔU 5 1 3 13.865 (0.30) 3 1.09 3 [$115,500 3 (10.02)] 3 (10.30)]
+                                                 {1 [800 3 (10.30)] ÷ 0.33)}
+                                   Step 2: ΔU 5 13.865 (0.30) 3 1.09 3 [$115,500 3 (0.98) 3 (0.70)]  {$1,681}
+                                   Step 3: ΔU 5 4.160 3 1.09 3 [$115,500 3 (0.686)]  {$1,681}
+                                   Step 4: ΔU 5 4.533 3 $79,233  $1,681
+                                   Step 5: ΔU 5 $359,163  $1,681
+                                   Step 6: ΔU 5 $357,482
+                                   ΔU 5 Estimated dollar-value savings over an expected 15-year tenure as a result of the LCIA
+                                   N 5 Number of candidates placed into a position per year (1 candidate)
+                                   Tmod 5 Modified tenure for 15 years based on a discounting rate of 0.01 (13.865) (provided by
+                                   Boudreau (1983a))
+                                   rold  rnew 5 Difference between the validity coefficients of the current method (0.00) and the
+                                   LCIA (0.30)
+                                   Zxs 5 Average performance of selected candidates in standardized units, using a selection ratio of
+                                   0.33 (provided by the organization) and Naylor and Shine’s (1965) tables for determining the increase
+                                   in mean criterion score (1.09)
+                                   SDy 5 Dollar value of a standard deviation in the criterion using 70% of annual salary ($115,500)
+                                   VC 5 Variable costs rate (0.02) (provided by Sturman, 2000)
+                                   TAX 5 Taxation rate (0.30) (provided by Sturman, 2000)
+                                   C 5 The cost incurred in acquiring and administering the selection device per candidate ($800)
+                                   SR 5 Selection ratio or the number of candidates placed into a position per year, divided by the
+                                   number of candidates available per instance of placement (0.33)
+
+
+
+                                Corresponding author
+                                Gerard Seijts can be contacted at: gseijts@ivey.ca
+
+
+
+
+                                For instructions on how to order reprints of this article, please visit our website:
+                                www.emeraldgrouppublishing.com/licensing/reprints.htm
+                                Or contact us for further details: permissions@emeraldinsight.com
+
+
+
+
+       View publication stats
+

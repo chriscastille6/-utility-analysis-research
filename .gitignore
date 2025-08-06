@@ -1,0 +1,54 @@
+# R specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rcheck/
+*.tar.gz
+
+# Shiny token
+rsconnect/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*~
+*.tmp
+*.temp
+
+# Package files
+*.zip
+*.tar.gz
+
+# Large data files (uncomment if needed)
+# *.csv
+# *.rds
+# *.RData
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.synctex.gz
+
+# PDF outputs (uncomment if you don't want to track PDFs)
+# *.pdf 

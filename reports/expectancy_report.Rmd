@@ -1,0 +1,230 @@
+---
+output:
+  pdf_document:
+    toc: false
+    toc_depth: 2
+    number_sections: true
+header-includes:
+  - \usepackage{graphicx}
+params:
+  rxy: NA
+  rxx: NA
+  ryy: NA
+  u: NA
+  n: NA
+  bar_data: NA
+  correlations: NA
+  uncorrected_expectancies: NA
+  criterion_corrected_expectancies: NA
+  fully_corrected_expectancies: NA
+  show_corrected: NA
+  show_fully_corrected: NA
+---
+
+\begin{center}
+\includegraphics[width=0.18\textwidth]{logo.png}
+
+{\LARGE \textbf{Expectancy Chart Report}}
+\end{center}
+
+\tableofcontents
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(dplyr)
+
+# Store parameters in local variables to avoid binding issues
+rxy <- params$rxy
+rxx <- params$rxx
+ryy <- params$ryy
+u <- params$u
+n <- as.numeric(params$n)  # Ensure n is numeric
+bar_data <- params$bar_data
+correlations <- params$correlations
+uncorrected_expectancies <- params$uncorrected_expectancies
+criterion_corrected_expectancies <- params$criterion_corrected_expectancies
+fully_corrected_expectancies <- params$fully_corrected_expectancies
+show_corrected <- params$show_corrected
+show_fully_corrected <- params$show_fully_corrected
+
+# Simple parameter validation
+if (is.null(rxy) || is.null(bar_data)) {
+  stop("Essential parameters (rxy or bar_data) are missing")
+}
+
+# Validate sample size
+if (is.null(n) || !is.numeric(n) || n < 1) {
+  n <- 100  # Default to 100 if invalid
+}
+```
+
+# Expectancy Chart Analysis
+
+## Input Parameters
+
+- Observed correlation: `r round(rxy, 2)`
+- Predictor reliability (rxx): `r if(!is.null(rxx)) round(rxx, 2) else "N/A"`
+- Criterion reliability (ryy): `r if(!is.null(ryy)) round(ryy, 2) else "N/A"`
+- Range restriction ratio (u): `r if(!is.null(u)) round(u, 2) else "N/A"`
+- Sample size (n): `r n`
+
+## Expectancy Chart
+
+```{r expectancy_plot, fig.width=10, fig.height=6}
+# Calculate error bars if sample size is provided
+if (!is.null(n) && is.numeric(n) && n >= 1) {
+  pval <- bar_data$Probability / 100
+  n_total <- n
+  n_quartile <- n_total / 4
+  se <- sqrt(pval * (1 - pval) / n_quartile)
+  lower <- pval - 1.96 * se
+  upper <- pval + 1.96 * se
+  bar_data$lower <- pmax(0, lower * 100)
+  bar_data$upper <- pmin(100, upper * 100)
+  bar_data$lower[!is.finite(bar_data$lower)] <- NA
+  bar_data$upper[!is.finite(bar_data$upper)] <- NA
+}
+
+# Recreate the expectancy chart using the provided data
+p <- ggplot(bar_data, aes(x = Quartile, y = Probability, fill = Correction)) +
+  geom_col(position = position_dodge(width = 0.8),
+           width = 0.6,
+           color = "black") +
+  scale_fill_manual(values = c(
+    "Uncorrected" = "white",
+    "Criterion Corrected" = "#808080",
+    "Fully Corrected" = "#6BAED6"
+  )) +
+  labs(
+    title = "The Science of Picking High Performers",
+    subtitle = "A quartile-by-quartile look at the probability of hiring top performers",
+    x = "Quartile Score on Selection Procedure",
+    y = "Probability of High Job Performance"
+  ) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 100)) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(hjust = 0, size = 22, face = "bold", color = "black"),
+    plot.subtitle = element_text(hjust = 0, size = 18, color = "black"),
+    axis.text = element_text(size = 13, color = "black"),
+    axis.title = element_text(size = 14, color = "black"),
+    axis.title.x = element_text(margin = margin(t = 18)),
+    legend.position = "none",
+    panel.grid.major.y = element_line(color = "gray90"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.line = element_line(color = "black", linewidth = 0.5),
+    plot.margin = margin(30, 30, 30, 30),
+    panel.background = element_rect(fill = "white"),
+    plot.background = element_rect(fill = "white")
+  ) +
+  geom_text(aes(label = sprintf("%d%%", round(Probability)),
+                y = Probability / 2),
+            position = position_dodge(width = 0.8),
+            size = 5,
+            color = ifelse(bar_data$Correction == "Uncorrected", "black", "white"))
+
+# Add error bars if they exist
+if (!is.null(n) && is.numeric(n) && n >= 1 && "lower" %in% names(bar_data) && "upper" %in% names(bar_data) && 
+    any(!is.na(bar_data$lower)) && any(!is.na(bar_data$upper))) {
+  p <- p + geom_errorbar(
+    aes(ymin = lower, ymax = upper),
+    position = if (nlevels(bar_data$Correction) > 1) position_dodge(width = 0.8) else "identity",
+    width = 0.2,
+    color = "black"
+  )
+}
+
+p
+```
+
+## Understanding the Expectancy Chart
+This tool, based on the work by <a href='https://doi.org/10.25035/pad.2017.001' target='_blank'>Cucina et al. (2017)</a> and the foundational <a href='https://doi.org/10.1037/h0057079' target='_blank'>Taylor & Russell (1939)</a> model, allows you to:
+
+- Input the observed correlation between selection test performance and job performance
+- Optionally apply corrections for measurement error and range restriction
+- Compare corrected and uncorrected correlations
+- View error bars to understand the uncertainty in the estimates
+
+## Statistical Analysis
+
+### Understanding the Math Behind Your Expectancy Chart
+
+#### Step 1: Start with the Observed Correlation
+We begin with the observed correlation between test scores and job performance. In this example, that's r = `r round(rxy, 2)`.
+
+#### Step 2: Correct for Criterion Unreliability
+Job performance ratings are not perfectly reliable. To get a more accurate estimate, we correct the observed correlation using the formula:
+
+$r_{corrected} = \frac{r_{observed}}{\sqrt{r_{yy}}}$
+
+where $r_{yy}$ is the reliability of the job performance measure (here, `r if(!is.null(ryy)) round(ryy, 2) else "N/A"`).
+
+The criterion-corrected correlation is `r if(!is.null(correlations$criterion_corrected)) round(correlations$criterion_corrected, 2) else "N/A"`.
+
+#### Step 3: Correct for Range Restriction
+Often, we only see a limited range of test scores (for example, if only top scorers are hired). To estimate what the correlation would be in the full population, we apply a range restriction correction:
+
+$r_{fully\ corrected} = \frac{r_{corrected} \sqrt{1 + (u^2 - 1) r_{corrected}^2}}{u}$
+
+where $u$ is the range restriction ratio (here, `r if(!is.null(u)) round(u, 2) else "N/A"`).
+
+The fully corrected correlation is `r if(!is.null(correlations$fully_corrected)) round(correlations$fully_corrected, 2) else "N/A"`.
+
+#### Step 4: Calculate the Probability of High Performance
+For each quartile of test scores, we use the correlation to estimate the probability of being a high performer (in the top 25% of job performance).
+For example, with an uncorrected correlation of `r round(rxy, 2)`, about `r if(!is.null(uncorrected_expectancies$Top)) round(uncorrected_expectancies$Top, 1) else "N/A"`% of people in the top quartile of test scores are expected to be high performers.
+
+#### Step 5: Error Bars and Confidence
+The lines on top of each bar (error bars) show the range where the true probability is likely to fall, based on your sample size. The bigger your sample, the smaller these error bars will be.
+Error bars represent 95% confidence intervals for each bar. Each bar assumes a sample size of n/4, where n is the total sample size (n = `r n`).
+
+#### Step 6: How the Probabilities Are Calculated
+For each group, the probability is calculated using a statistical method called the bivariate normal distribution. This takes into account the correlation and the boundaries for each quartile.
+
+#### Assumptions
+These calculations assume that both test scores and job performance follow a normal (bell curve) distribution, and that each quartile contains the same number of people.
+
+### Correlation Corrections
+
+1. **Observed Correlation**: `r round(rxy, 2)`
+2. **Criterion-Corrected Correlation**: `r if(!is.null(correlations$criterion_corrected)) round(correlations$criterion_corrected, 2) else "N/A"`
+3. **Fully-Corrected Correlation**: `r if(!is.null(correlations$fully_corrected)) round(correlations$fully_corrected, 2) else "N/A"`
+
+### Sample Size and Error Analysis
+- Total Sample Size: `r n`
+- Sample Size per Quartile: `r round(n/4, 1)`
+- Error bars represent 95% confidence intervals for each probability estimate
+
+### Expectancy Values
+
+#### Uncorrected Correlation
+- Bottom 25%: `r if(!is.null(uncorrected_expectancies$Low)) round(uncorrected_expectancies$Low, 1) else "N/A"`%
+- Lower Middle 25%: `r if(!is.null(uncorrected_expectancies$LM)) round(uncorrected_expectancies$LM, 1) else "N/A"`%
+- Upper Middle 25%: `r if(!is.null(uncorrected_expectancies$UM)) round(uncorrected_expectancies$UM, 1) else "N/A"`%
+- Top 25%: `r if(!is.null(uncorrected_expectancies$Top)) round(uncorrected_expectancies$Top, 1) else "N/A"`%
+
+`r if(params$show_corrected) paste0(
+'#### Criterion-Corrected Correlation\n',
+'- Bottom 25%: ', if(!is.null(criterion_corrected_expectancies$Low)) round(criterion_corrected_expectancies$Low, 1) else "N/A", '%\n',
+'- Lower Middle 25%: ', if(!is.null(criterion_corrected_expectancies$LM)) round(criterion_corrected_expectancies$LM, 1) else "N/A", '%\n',
+'- Upper Middle 25%: ', if(!is.null(criterion_corrected_expectancies$UM)) round(criterion_corrected_expectancies$UM, 1) else "N/A", '%\n',
+'- Top 25%: ', if(!is.null(criterion_corrected_expectancies$Top)) round(criterion_corrected_expectancies$Top, 1) else "N/A", '%\n'
+) else ''`
+
+`r if(params$show_fully_corrected) paste0(
+'#### Fully-Corrected Correlation\n',
+'- Bottom 25%: ', if(!is.null(fully_corrected_expectancies$Low)) round(fully_corrected_expectancies$Low, 1) else "N/A", '%\n',
+'- Lower Middle 25%: ', if(!is.null(fully_corrected_expectancies$LM)) round(fully_corrected_expectancies$LM, 1) else "N/A", '%\n',
+'- Upper Middle 25%: ', if(!is.null(fully_corrected_expectancies$UM)) round(fully_corrected_expectancies$UM, 1) else "N/A", '%\n',
+'- Top 25%: ', if(!is.null(fully_corrected_expectancies$Top)) round(fully_corrected_expectancies$Top, 1) else "N/A", '%\n'
+) else ''`
+
+## References
+
+Cucina, J. M., Berger, J., & Busciglio, H. (2017). Communicating criterion-related validity using expectancy charts: A new approach. *Personnel Assessment and Decisions, 3*(1), 1–10. https://doi.org/10.25035/pad.2017.001
+
+Taylor, H. C., & Russell, J. T. (1939). The relationship of validity coefficients to the practical effectiveness of tests in selection: Discussion and tables. *Journal of Applied Psychology, 23*, 565–578. https://doi.org/10.1037/h0057079
+
+Sackett, P. R., Zhang, C., Berry, C. M., & Lievens, F. (2021). Revisiting meta-analytic estimates of validity in personnel selection: Addressing systematic overcorrection for restriction of range. *Journal of Applied Psychology, 106*(9), 1407–1435. https://doi.org/10.1037/apl0000994

@@ -1,0 +1,6 @@
+"Concept","Description","Impact"
+"Two-Stage Process","Selection → Probation → Retention","Introduces retention uncertainty"
+"Success Ratio","Proportion of selectees who pass probation","Determines effective workforce size"
+"Conditional Expectations","Performance expectations given selection and retention","Accounts for predictor-performance correlation"
+"Time Structure","Period 1: All selectees; Periods 2-T: Only retained","Amplifies retention effects over time"
+"Cost Accounting","Training, separation, and recruitment costs","Provides economic realism"

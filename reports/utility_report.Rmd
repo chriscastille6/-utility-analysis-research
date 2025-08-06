@@ -1,0 +1,98 @@
+---
+title: "Correlation Analysis Report"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+    toc: true
+params:
+  r_value: 0.44
+  expectancyLowOld: 0
+  expectancyLMOld: 0
+  expectancyUMOld: 0
+  expectancyTopOld: 0
+  x_var: "X"
+  y_var: "Y"
+  intercept: 0
+  slope: 0
+  mean_x: 0
+  mean_y: 0
+  sd_x: 0
+  sd_y: 0
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(dplyr)
+```
+
+# Correlation Analysis Report
+
+## Overview
+
+This report presents a correlation analysis between `r params$x_var` and `r params$y_var`. The correlation coefficient (r) is `r format(params$r_value, digits = 2)`.
+
+## Expectancy Chart
+
+The expectancy chart below shows the probability of high `r params$y_var` for each quartile of `r params$x_var`. This chart helps visualize how the probability of achieving high `r params$y_var` changes across different levels of `r params$x_var`. The bars represent the probability of being in the top 25% of `r params$y_var` for each quartile of `r params$x_var`.
+
+```{r expectancy_chart, fig.width=8, fig.height=6}
+# Create expectancy chart data
+bar_data <- data.frame(
+  Quartile = factor(
+    c("Bottom 25%", "Lower Middle 25%", "Upper Middle 25%", "Top 25%"),
+    levels = c("Bottom 25%", "Lower Middle 25%", "Upper Middle 25%", "Top 25%")
+  ),
+  Probability = c(
+    params$expectancyLowOld,  # Bottom 25%
+    params$expectancyLMOld,   # Lower Middle 25%
+    params$expectancyUMOld,   # Upper Middle 25%
+    params$expectancyTopOld   # Top 25%
+  )
+)
+
+# Create the plot
+ggplot(bar_data, aes(x = Quartile, y = Probability)) +
+  geom_bar(stat = "identity", fill = "#6BAED6") +
+  geom_text(aes(label = sprintf("%.1f%%", Probability)), 
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 3.5) +
+  labs(
+    title = "Expectancy Chart",
+    subtitle = paste("Probability of High", params$y_var, "by", params$x_var, "Quartiles"),
+    x = paste(params$x_var, "Quartiles"), 
+    y = paste("Probability of High", params$y_var)
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0, size = 10),
+    plot.subtitle = element_text(hjust = 0, size = 9),
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 9),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.y = element_line(color = "gray90"),
+    axis.line = element_line(color = "black", linewidth = 0.5)
+  ) +
+  scale_y_continuous(limits = c(0, 100))
+```
+
+## Regression Statistics
+
+The regression analysis provides the following statistics:
+
+- Regression Equation: y = `r sprintf("%.2f", params$intercept)` + `r sprintf("%.2f", params$slope)`x
+- Mean of `r params$y_var`: `r sprintf("%.2f", params$mean_y)`
+- Mean of `r params$x_var`: `r sprintf("%.2f", params$mean_x)`
+- Standard Deviation of `r params$y_var`: `r sprintf("%.2f", params$sd_y)`
+- Standard Deviation of `r params$x_var`: `r sprintf("%.2f", params$sd_x)`
+
+## Interpretation
+
+The correlation coefficient of `r format(params$r_value, digits = 2)` indicates a `r if(abs(params$r_value) < 0.1) {"negligible"} else if(abs(params$r_value) < 0.3) {"weak"} else if(abs(params$r_value) < 0.5) {"moderate"} else {"strong"}` relationship between `r params$x_var` and `r params$y_var`. This means that `r format(params$r_value^2 * 100, digits = 1)`% of the variance in `r params$y_var` can be explained by `r params$x_var`.
+
+## References
+
+Credé, M., Roch, S. G., & Kieszczynska, U. M. (2010). Class attendance in college: A meta-analytic review of the relationship of class attendance with grades and student characteristics. *Review of Educational Research*, 80(2), 272–295. https://doi.org/10.3102/0034654310362998
+

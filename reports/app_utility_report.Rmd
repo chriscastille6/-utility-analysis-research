@@ -1,0 +1,335 @@
+---
+title: "Utility Analysis Report"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    latex_engine: xelatex
+    fig_width: 10.625
+    fig_height: 6.75
+    includes:
+      in_header: "header.tex"
+params:
+  n: NA
+  sdy: NA
+  sr: NA
+  rxy1: NA
+  rxy2: NA
+  cost1: NA
+  cost2: NA
+  period: NA
+  utilityUn: NA
+  utilityUnPer: NA
+  utilityUnPerYear: NA
+  be_sdy: NA
+  be_sdy_percent: NA
+  cost_term_actual: NA
+  delta_rxy: NA
+  uxs: NA
+  expectancy_plot: NA
+  goodHire: NA
+  badHire: NA
+  etn: NA
+  eto: NA
+  eln: NA
+  elo: NA
+  be_rxy: NA
+  nnh: NA
+  # Financial adjustment parameters
+  vcost: NA
+  tax: NA
+  drate: NA
+  utilityAdj: NA
+  utilityAdjPer: NA
+  utilityAdjPerYear: NA
+  be_sdy_adj: NA
+  be_rxy_adj: NA
+  nnh_adj: NA
+  IRR: NA
+  financial_adjustment: NA
+  pv_factor: NA
+  B0_raw: NA
+  B0_after_vc: NA
+  B0_after_tax: NA
+  total_pv_benefit: NA
+  net_cost: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(ggtext)
+library(stringr)
+library(knitr)
+library(kableExtra)
+```
+
+# Utility Analysis
+
+## Overview
+
+This report presents an analysis of the economic value (utility) of implementing a new staffing system compared to an existing one. The analysis considers both the benefits of improved selection and the costs of implementation.
+
+## Expectancy Chart Analysis
+
+```{r expectancy_chart, fig.width=10.625, fig.height=6.75}
+params$expectancy_plot
+```
+
+The above chart compares the expectancy of the new staffing system to the old staffing system. Expectancy is a measure of the ability of a test to predict outcomes. Using the new system improves the chance that we acquire a high performer by `r format(params$goodHire, nsmall=2)`% [(`r format(params$etn, nsmall=2)` - `r format(params$eto, nsmall=2)`)/`r format(params$eto, nsmall=2)`] and avoid a bad hire by `r format(params$badHire, nsmall=2)`% [(`r format(params$elo, nsmall=2)` - `r format(params$eln, nsmall=2)`)/`r format(params$elo, nsmall=2)`].
+
+## Input Parameters
+
+```{r results="asis"}
+# Create a table of input parameters
+params_df <- data.frame(
+  Parameter = c(
+    "Number of hires",
+    "SD of performance in monetary units (SDy)",
+    "Selection ratio",
+    "Validity of old system",
+    "Validity of new system",
+    "Cost per applicant (old system)",
+    "Cost per applicant (new system)",
+    "Anticipated tenure (years)"
+  ),
+  Value = c(
+    params$n,
+    paste0("$", format(round(params$sdy, 2), big.mark=",", scientific=FALSE)),
+    paste0(params$sr, "%"),
+    format(params$rxy1, nsmall=2),
+    format(params$rxy2, nsmall=2),
+    paste0("$", format(round(params$cost1, 2), big.mark=",", scientific=FALSE)),
+    paste0("$", format(round(params$cost2, 2), big.mark=",", scientific=FALSE)),
+    params$period
+  )
+)
+
+# Display the table
+kable(params_df, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+```{r results="asis"}
+# Add financial adjustment parameters table if available
+if (!is.na(params$utilityAdj)) {
+  cat("### Financial Adjustment Parameters\n\n")
+  
+  financial_params_df <- data.frame(
+    Parameter = c(
+      "Variable Costs",
+      "Tax Rate", 
+      "Discount Rate"
+    ),
+    Value = c(
+      paste0(params$vcost, "%"),
+      paste0(params$tax, "%"),
+      paste0(params$drate, "%")
+    ),
+    Description = c(
+      "Costs that increase with greater production",
+      "Percentage of profits paid in taxes",
+      "Rate for present value calculations"
+    )
+  )
+  
+  # Display the financial parameters table
+  kable(financial_params_df, format = "latex", booktabs = TRUE) %>%
+    kable_styling(latex_options = c("striped", "hold_position"))
+}
+```
+
+## Unadjusted Utility Analysis
+
+The unadjusted utility estimate of `r paste0("$", format(round(params$utilityUn, 2), big.mark=",", scientific=FALSE))` represents the raw economic value of the staffing system, before accounting for financial factors such as variable costs, taxes, and discount rates. It provides a baseline measure of the potential return on investment from implementing the new staffing system.
+
+While this estimate may appear large, it represents the anticipated aggregate returns over `r params$n` hires who are expected to stay for `r params$period` years (one cohort). This translates to `r paste0("$", format(round(params$utilityUnPer, 2), big.mark=",", scientific=FALSE))` per hire and `r paste0("$", format(round(params$utilityUnPerYear, 2), big.mark=",", scientific=FALSE))` per hire per year - values that make much more intuitive sense.
+
+**Break-Even Analysis**
+
+Solving for the point at which unadjusted utility exactly equals the `r paste0("$", format(round(params$cost_term_actual, 2), big.mark=",", scientific=FALSE))` cost term gives a break-even SDy of roughly `r paste0("$", format(round(params$be_sdy, 2), big.mark=",", scientific=FALSE))` per hire. To put this in context, a conservative estimate for SDᵧ as 40% of annual salary is widely recommended (i.e., the 40% rule, see [Boudreau, 1983](https://doi.org/10.1111/j.1744-6570.1983.tb02235.x); [Burke & Frederick, 1984](https://doi.org/10.1037/0021-9010.69.3.482); see also [Cascio et al., 2019](https://store.shrm.org/Investing-in-People-Financial-Impact-of-Human-Resource-Initiatives-Third-Edition)); however, values as large as 110% have also been observed. Holding all elements in the utility formula constant and back-solving our observed SDᵧ of `r paste0("$", format(round(params$sdy, 2), big.mark=",", scientific=FALSE))` gives an implied salary of about `r paste0("$", format(round(params$sdy/0.40, 2), big.mark=",", scientific=FALSE))` (`r paste0("$", format(round(params$sdy, 2), big.mark=",", scientific=FALSE))` ÷ 0.40). Under that same percent-of-salary rule, a break-even SDᵧ of `r paste0("$", format(round(params$be_sdy, 2), big.mark=",", scientific=FALSE))` corresponds to just `r format(round(params$be_sdy/(params$sdy/0.40)*100, 2), nsmall=2)`% of salary—an order of magnitude smaller than the 40% conservative benchmark.
+
+There are other break-even points that we can examine such as: (i) the minimum level of test validity needed and (ii) the minimum number of higher performers that must be selected to recoup costs. Both values can be obtained from solving for the point at which unadjusted utility = 0 — isolating Δr in one case (break-even validity uplift) and isolating NNH in the other (number needed to hire). Regarding the minimum level of validity, solving for Δr results in a minimum validity boost of **`r format(round(params$be_rxy, 4), nsmall=4)`** for the new system to break even (r = **`r format(round(params$rxy1 + params$be_rxy, 4), nsmall=4)`**). Regarding the minimum number of higher performers that must be selected to recoup costs, solving for N gives us approximately **`r round(params$nnh)`** higher performing hires.
+
+Our break-even SDᵧ analysis assumes job performance is normally distributed. Although a long-standing assumption in human resource management, scholars have more recently called this into question and suggested that performance follows a heavy-tailed (power-law) distribution ([Aguinis & O'Boyle, 2014](https://doi.org/10.1111/peps.12054); [O'Boyle & Aguinis, 2012](https://doi.org/10.1111/j.1744-6570.2011.01239.x)). What this means is that a handful of what are termed 'star performers' – if they can be hired – will generate value far in excess of the "average" benefit we've been modeling ([Joo et al., 2022](https://doi.org/10.1080/09585192.2021.1948890); [Sturman et al., 2023](https://doi.org/10.1080/09585192.2023.2225282)). In other words, the top 1–5% of employees can account for a disproportionately large share of output, revenue, or innovation. Such performers may be crucial in strategic roles (e.g., senior sales, key account managers, R&D heads). In practical terms, whereas **`r round(params$nnh)`** higher performing new hires may be needed to recoup costs under a normal distribution, our analysis suggests that you might only need **`r ceiling(params$nnh/1.74)`** star hires under a power-law distribution—rather than **`r round(params$nnh)`** or more above average hires—to recoup the same investment. This is based on empirical findings from [Joo et al. (2022)](https://doi.org/10.1080/09585192.2021.1948890) showing that the value of hires under a power-law distribution is 1.74 times greater than under a normal distribution. Ultimately, the performance gains you'd need to justify this investment are almost vanishingly small.
+
+**Caveat**
+
+These returns do not yet account for opportunity costs nor do they account for the fact that higher profits often mean more taxes. Lastly, higher hiring costs may need to be spent to retain high-performing employees. These financial factors are accounted for on the next page.
+
+## Financially Adjusted Utility Analysis
+
+```{r results='asis'}
+# Only show this section if financial parameters are available
+if (!is.na(params$utilityAdj)) {
+  # Calculate percentage reduction
+  pct_reduction <- (1 - (params$utilityAdj / params$utilityUn)) * 100
+}
+```
+
+`r if (!is.na(params$utilityAdj)) paste0("The financially adjusted utility estimate of $", format(round(params$utilityAdj, 2), big.mark=",", scientific=FALSE), " accounts for three key financial factors:")`
+
+`r if (!is.na(params$utilityAdj)) paste0("1. **Variable Costs (", params$vcost, "%)**: Higher performance often means higher costs for materials, incentives, and variable overhead.")`
+
+`r if (!is.na(params$utilityAdj)) paste0("2. **Taxes (", params$tax, "%)**: Higher profits typically result in higher tax payments, reducing the net benefit.")`
+
+`r if (!is.na(params$utilityAdj)) paste0("3. **Discount Rate (", params$drate, "%)**: Future benefits are worth less in present terms due to the time value of money and opportunity costs.")`
+
+`r if (!is.na(params$utilityAdj)) { pct_reduction <- (1 - (params$utilityAdj / params$utilityUn)) * 100; paste0("After these adjustments, the utility per hire is $", format(round(params$utilityAdjPer, 2), big.mark=",", scientific=FALSE), " and $", format(round(params$utilityAdjPerYear, 2), big.mark=",", scientific=FALSE), " per hire per year. Financial adjustments reduce utility by ", format(round(pct_reduction, 1), nsmall=1), "%.") }`
+
+`r if (!is.na(params$utilityAdj)) "**Break-Even Analysis with Financial Adjustments**"`
+
+`r if (!is.na(params$utilityAdj)) { pct_reduction <- (1 - (params$utilityAdj / params$utilityUn)) * 100; paste0("Solving for the point at which financially adjusted utility exactly equals the $", format(round(params$cost_term_actual, 2), big.mark=",", scientific=FALSE), " cost term gives a break-even SDy of roughly $", format(round(params$be_sdy_adj, 2), big.mark=",", scientific=FALSE), ". This is **lower** than the unadjusted break-even SDy of $", format(round(params$be_sdy, 2), big.mark=",", scientific=FALSE), ", which may seem counterintuitive given that financial adjustments reduce overall utility by ", format(round(pct_reduction, 1), nsmall=1), "%.") }`
+
+`r if (!is.na(params$utilityAdj)) paste0("**Why is the adjusted break-even SDy lower?** The key insight is that the financial adjustment factor (", round(params$financial_adjustment, 3), ") appears in the *denominator* of the break-even formula. This factor represents how $1 of SDy today translates into present value terms after accounting for variable costs, taxes, and discounting over ", params$period, " years. Since this factor is greater than 1, it means each dollar of SDy has amplified value in present value terms, making the break-even threshold easier to achieve.")`
+
+`r if (!is.na(params$utilityAdj) && !is.na(params$IRR)) paste0("We can also identify the break-even level of interest (discount rate) that brings the net present value of this investment to exactly zero. This break-even interest rate is commonly known as the Internal Rate of Return (IRR). For this investment, the IRR is **", format(round(params$IRR * 100, 1), nsmall=1), "%**. This means that if we used ", format(round(params$IRR * 100, 1), nsmall=1), "% as our discount rate instead of ", params$drate, "%, the financially adjusted utility would equal zero.")`
+
+`r if (!is.na(params$utilityAdj)) paste0("Regarding the minimum level of validity needed, solving for Δr results in a minimum validity boost of **", format(round(params$be_rxy_adj, 6), nsmall=6), "** for the new system to break even (r = **", format(round(params$rxy1 + params$be_rxy_adj, 4), nsmall=4), "**). This is **lower** than the unadjusted break-even validity because the financial adjustment factor amplifies the value of validity improvements over time.")`
+
+`r if (!is.na(params$utilityAdj)) paste0("Regarding the minimum number of higher performers needed to recoup costs, solving for N gives us approximately **", params$nnh_adj, "** higher performing hire", if(params$nnh_adj == 1) "" else "s", ". This remarkably low number (compared to ", params$nnh, " in the unadjusted case) demonstrates how the financial adjustment factor amplifies the value of performance improvements over the ", params$period, "-year period.")`
+
+```{r results="asis"}
+# Add summary comparison table if financial adjustments are available
+if (!is.na(params$utilityAdj)) {
+  cat("### Summary Comparison: Unadjusted vs. Financially Adjusted Utility\n\n")
+  
+  comparison_df <- data.frame(
+    Metric = c(
+      "Total Utility",
+      "Utility per Hire",
+      "Utility per Hire per Year",
+      "Break-Even SDy",
+      "Break-Even Validity Uplift",
+      "Number Needed to Hire"
+    ),
+    Unadjusted = c(
+      paste0("$", format(round(params$utilityUn, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$utilityUnPer, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$utilityUnPerYear, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$be_sdy, 2), big.mark=",", scientific=FALSE)),
+      format(round(params$be_rxy, 4), nsmall=4),
+      round(params$nnh)
+    ),
+    `Financially Adjusted` = c(
+      paste0("$", format(round(params$utilityAdj, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$utilityAdjPer, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$utilityAdjPerYear, 2), big.mark=",", scientific=FALSE)),
+      paste0("$", format(round(params$be_sdy_adj, 2), big.mark=",", scientific=FALSE)),
+      format(round(params$be_rxy_adj, 6), nsmall=6),
+      params$nnh_adj
+    )
+  )
+  
+  # Display the comparison table
+  kable(comparison_df, format = "latex", booktabs = TRUE) %>%
+    kable_styling(latex_options = c("striped", "hold_position")) %>%
+    column_spec(1, width = "4cm") %>%
+    column_spec(2, width = "3cm") %>%
+    column_spec(3, width = "3cm")
+}
+```
+
+**Underlying Math**
+
+```{r results='asis'}
+# Create a table of calculations
+math_steps <- c(
+  "1. Unadjusted Utility Formula",
+  "2. Break-Even SDy Analysis",
+  "3. Break-Even Validity Analysis",
+  "4. Number Needed to Hire (NNH) Analysis",
+  "5. Star Power Analysis"
+)
+
+math_calculations <- c(
+  paste0("U = n × SDy × (rxy₂ - rxy₁) × ux(sr) × period - Cost Term\n",
+         "U = ", params$n, " × ", params$sdy, " × (", params$rxy2, " - ", params$rxy1, ") × ", params$uxs, " × ", params$period, " - ", params$cost_term_actual, "\n",
+         "U = ", format(round(params$utilityUn, 2), big.mark=",", scientific=FALSE)),
+  paste0("0 = n × SDy × (rxy₂ - rxy₁) × ux(sr) × period - Cost Term\n",
+         "SDy = Cost Term / (n × (rxy₂ - rxy₁) × ux(sr) × period)\n",
+         "SDy = ", params$cost_term_actual, " / (", params$n, " × ", params$delta_rxy, " × ", params$uxs, " × ", params$period, ")\n",
+         "SDy = ", format(round(params$be_sdy, 2), big.mark=",", scientific=FALSE)),
+  paste0("0 = n × SDy × Δr × ux(sr) × period - Cost Term\n",
+         "Δr = Cost Term / (n × SDy × ux(sr) × period)\n",
+         "Δr = ", params$cost_term_actual, " / (", params$n, " × ", params$sdy, " × ", params$uxs, " × ", params$period, ")\n",
+         "Δr = ", format(round(params$be_rxy, 4), nsmall=4)),
+  paste0("0 = N × SDy × (rxy₂ - rxy₁) × ux(sr) × period - Cost Term\n",
+         "N = Cost Term / (SDy × (rxy₂ - rxy₁) × ux(sr) × period)\n",
+         "N = ", params$cost_term_actual, " / (", params$sdy, " × ", params$delta_rxy, " × ", params$uxs, " × ", params$period, ")\n",
+         "N = ", round(params$nnh)),
+  paste0("Power-law Tail Multiplier = 1.74 (from Joo et al., 2022)\n",
+         "Number of Star Performers Needed = NNH / Tail Multiplier\n",
+         "Number of Star Performers Needed = ", round(params$nnh), " / 1.74\n",
+         "Number of Star Performers Needed = ", ceiling(params$nnh/1.74))
+)
+
+# Add financially adjusted calculations if available
+if (!is.na(params$utilityAdj)) {
+  math_steps <- c(math_steps, c(
+    "6. Financially Adjusted Utility Formula",
+    "7. Financial Adjustment Factor",
+    "8. Break-Even SDy Analysis (Adjusted)",
+    "9. Break-Even Validity Analysis (Adjusted)",
+    "10. Number Needed to Hire (Adjusted)"
+  ))
+  
+  math_calculations <- c(math_calculations, c(
+    paste0("Step 1: Raw Benefit = n × SDy × Δr × ux(sr) × period = ", format(round(params$B0_raw * params$n * params$period, 2), big.mark=",", scientific=FALSE), "\n",
+           "Step 2: Adjust for Variable Costs = Raw Benefit × (1 - vc) = ", format(round(params$B0_after_vc * params$n * params$period, 2), big.mark=",", scientific=FALSE), "\n",
+           "Step 3: Adjust for Taxes = Step 2 × (1 - tax) = ", format(round(params$B0_after_tax * params$n * params$period, 2), big.mark=",", scientific=FALSE), "\n",
+           "Step 4: Present Value Factor = (1 - (1 + dr)^(-period)) / dr = ", round(params$pv_factor, 4), "\n",
+           "Step 5: Present Value Benefits = Step 3 × PVF = ", format(round(params$total_pv_benefit, 2), big.mark=",", scientific=FALSE), "\n",
+           "Step 6: After-tax Cost = Cost Term × (1 - tax) = ", format(round(params$net_cost, 2), big.mark=",", scientific=FALSE), "\n",
+           "Step 7: Net Present Value = Step 5 - Step 6 = ", format(round(params$utilityAdj, 2), big.mark=",", scientific=FALSE)),
+    paste0("Financial Adjustment = (1 - vc) × (1 - tax) × PVF\n",
+           "Financial Adjustment = (1 - ", params$vcost/100, ") × (1 - ", params$tax/100, ") × ", round(params$pv_factor, 4), "\n",
+           "Financial Adjustment = ", round(params$financial_adjustment, 4)),
+    paste0("SDy = Cost Term / (n × Δr × ux(sr) × period × Financial Adjustment)\n",
+           "SDy = ", params$cost_term_actual, " / (", params$n, " × ", params$delta_rxy, " × ", params$uxs, " × ", params$period, " × ", round(params$financial_adjustment, 4), ")\n",
+           "SDy = ", format(round(params$be_sdy_adj, 2), big.mark=",", scientific=FALSE)),
+    paste0("Δr = Cost Term / (n × SDy × ux(sr) × period × Financial Adjustment)\n",
+           "Δr = ", params$cost_term_actual, " / (", params$n, " × ", params$sdy, " × ", params$uxs, " × ", params$period, " × ", round(params$financial_adjustment, 4), ")\n",
+           "Δr = ", format(round(params$be_rxy_adj, 6), nsmall=6)),
+    paste0("N = ceiling(Cost Term / (SDy × Δr × ux(sr) × period × Financial Adjustment))\n",
+           "N = ceiling(", params$cost_term_actual, " / (", params$sdy, " × ", params$delta_rxy, " × ", params$uxs, " × ", params$period, " × ", round(params$financial_adjustment, 4), "))\n",
+           "N = ", params$nnh_adj)
+  ))
+  
+  # Add IRR calculation if available
+  if (!is.na(params$IRR)) {
+    math_steps <- c(math_steps, "11. Internal Rate of Return (IRR)")
+    math_calculations <- c(math_calculations, paste0("IRR = ", format(round(params$IRR * 100, 1), nsmall=1), "%\n",
+                                                     "This is the discount rate at which NPV = 0"))
+  }
+}
+
+math_df <- data.frame(
+  Step = math_steps,
+  Calculation = math_calculations
+)
+
+# Display the table with longtable for better page breaks
+kable(math_df, format = "latex", booktabs = TRUE, longtable = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position", "repeat_header")) %>%
+  column_spec(1, width = "2cm") %>%
+  column_spec(2, width = "12cm")
+```
+
+## References
+
+[Aguinis, H., & O'Boyle, E. (2014). Star Performers in Twenty-First Century Organizations. *Personnel Psychology, 67*(2), 313–350.](https://doi.org/10.1111/peps.12054)
+
+[Boudreau, J. W. (1983). Economic considerations in estimating the utility of human resource productivity improvement programs. *Personnel Psychology, 36*(3), 551–576.](https://doi.org/10.1111/j.1744-6570.1983.tb02235.x)
+
+[Burke, M. J., & Frederick, J. T. (1984). Two modified procedures for estimating standard deviations in utility analyses. *Journal of Applied Psychology, 69*(3), 482–489.](https://doi.org/10.1037/0021-9010.69.3.482)
+
+[Cascio, W. F., Boudreau, J. W., & Fink, A. A. (2019). *Investing in people: financial impact of human resource initiatives* (3rd ed.). Society for Human Resource Management.](https://store.shrm.org/Investing-in-People-Financial-Impact-of-Human-Resource-Initiatives-Third-Edition)
+
+[Joo, H., Aguinis, H., Lee, J., Kremer, H., & Villamor, I. (2022). HRM's financial value from obtaining more star performers. *The International Journal of Human Resource Management, 33*(21), 4179–4214.](https://doi.org/10.1080/09585192.2021.1948890)
+
+[O'Boyle Jr., E., & Aguinis, H. (2012). The best and the rest: Revisiting the norm of normality of individual performance. *Personnel Psychology, 65*(1), 79–119.](https://doi.org/10.1111/j.1744-6570.2011.01239.x)
+
+[Sturman, M. C., Fan, X., & Shim, H. (2023). The theoretical value of understanding HRM's financial value. *The International Journal of Human Resource Management, 34*(13), 2582–2594.](https://doi.org/10.1080/09585192.2023.2225282) 

@@ -1,0 +1,1143 @@
+Journal of Applied Psychology
+1994. Vol. 79. No. 3,402-411
+
+Copyright 1994 by the American Psychological Association Inc
+002I-9010/94/S3.00
+
+Utility Analysis for the One-Cohort Selection-Retention Decision With
+a Probationary Period
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+Wilfried De Corte
+This article provides a method for estimating the utility of a choice between alternative predictors
+for selecting a single cohort of new employees when some of these employees are later judged to
+perform at an unacceptable level and are therefore dismissed at the end of the probationary period.
+The method is shown to apply to both the traditional selection utility situation, in which the objective
+is to obtain a fixed number of hires, and the situation in which the objective is to obtain a fixed
+number of employees who successfully survive the initial probationary period. The utility estimation
+method proposed applies J. W. Boudreau and C. J. Berger's (1985) conceptual model to a singlecohort probationary case and extends that model by providing an estimation method to predict the
+utility of alternative predictors before selection takes place. The limitations of the proposal as well as
+its relationship to recruitment and separation costs are also discussed.
+
+In personnel selection, the concept of utility refers to the net
+gain in productivity (i.e., the gain minus the costs) that results
+from using a particular selection device. Brogden (1949) developed the basic equations for estimating this utility, and most of
+the current research on the topic (e.g., Boudreau, 1983a; Martin & Raju, 1992; Murphy, 1986; Raju, Burke, & Normand,
+1990) has been derived from his pioneering work. At present,
+the most elaborated version of the classic utility model is the
+external-employee-movement framework presented by Boudreau and Berger (1985) and further discussed by Boudreau
+(1991). Although the framework can handle a variety of decision situations, Boudreau asserted that the required complexity
+level of any utility model ultimately depends on the specific nature of the decision problem, and Boudreau and Berger
+summed up the conditions that allow their proposal to be
+simplified.
+In the present article, I focus on one such special case of Boudreau and Berger's (hereinafter referred to as B & B) model.
+More specifically, the proposed formulation addresses the
+choice among alternative predictors for selecting a single cohort
+of new employees when some of these employees are later
+judged to perform at an unacceptable level and are therefore
+dismissed at the end of the training and probationary period.
+For further reference, this situation is hereinafter referred to as
+selection with a probationary period (at probationary selection
+for short), and the new model can be regarded as an alternative
+
+statement of the B & B one-cohort selection-retention model,
+in which it is assumed that (a) dismissal is the only form of
+separation and (b) the retention-decision variable (i.e., job performance rating) correlates with the selection predictor.
+Although the new selection-retention model is less general
+than the external-employee-movement approach, it still offers a
+significant contribution to the existing utility literature because
+it overcomes a limitation of the B & B proposal. The limitation
+relates to the estimation procedure that B & B proposed to predict the value of some of the crucial utility parameters. Although the B & B model offers a conceptually adequate framework to study the probationary selection problem, I show in the
+next section that their estimation procedure cannot be applied
+in the present context because of the correlation between the
+selection variable and the retention-decision variable.
+Besides providing a solution to the parameter estimation
+problem, the present proposal also meets the criteria of theoretical and practical relevance discussed by Boudreau (1991). The
+theoretical importance of the new model derives from the fact
+that the proposal integrates the former Taylor-Russell approach
+(Taylor & Russell, 1939) with the standard Brogden-CronbachGleser (BCG) formulation (Brogden, 1949; Cronbach &
+Gleser, 1965). The practical value is linked to two observations.
+First, the model relates to a typical decision situation in that
+misselection and the subsequent dismissal of unsatisfactory employees is a fact of life in selection: Many new employees are
+first hired on a probationary basis, and only at the end of this
+period is it decided (usually on the basis of observed job
+performance) whether they will remain on the job (Brewster,
+Hegewisch, Holden, & Lockhart, 1992). Second, the proposed
+model can be applied to another important selection situation
+that also cannot be dealt with in the B & B and BCG frameworks. More specifically, the model can be extended to estimate
+the utility of a predictor when, at the end of the probationary
+period, a fixed quota of successfully performing selectees is
+needed. As observed by one of the reviewers for this article, the
+latter selection situation may be even more realistic than the
+traditional fixed-quota-of-selectees decision.
+
+I thank William Whitely and two particularly helpful anonymous reviewers for their useful comments on a draft of the article.
+A computer program (written in FORTRAN 77) that performs the
+utility calculations described in this article is available on request. Because the program calls routines from the Numerical Algorithms
+Group library, interested readers should first check whether they have
+this library (or a similar one) at their disposal.
+Correspondence concerning this article should be addressed to Wilfried De Corte, Department of Work and Organizational Psychology,
+Ghent University, H. Dunantlaan 2, B-9000 Ghent, Belgium.
+402
+
+ONE-COHORT SELECTION-RETENTION UTILITY ANALYSIS
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+Fixed-Quota Selection With a Probationary Period
+In the fixed-quota probationary selection condition, the new
+selection-retention model estimates the utility of a predictor
+when a given number (N) of employees must be hired from
+an applicant pool of a fixed number of candidates («) with the
+understanding that the unsuccessful selectees will be dismissed
+after the probationary period, whereas the successful employees
+will remain on the job. Whether a selectee is considered successful or not depends only on his or her performance rating at the
+end of the probation period. Therefore, performance rating is
+the retention-decision variable (cf. the variable q in the B &
+B model, 1985, p. 590) and, assuming top-down selection, the
+selectees have a predictor score (X) that is at least equal to xc —
+the predictor cutoff score that corresponds to the selection ratio
+N/n —whereas the successful selectees are characterized by a
+performance rating R at least equal to rc, the critical criterion
+rating. Equating the duration of one time period with the time
+spent on the job by the unsuccessful selectees (i.e., the length of
+the trial period, excluding the training time), the net utility of
+the predictor-selected workforce (t/ p ) can then be written as
+follows:
+
+-ATC t -«Cp, (1)
+
+where T is the average number of time periods on the job for the
+successful selectees; Sp is the success ratio of the predictor (i.e.,
+Sp indicates the proportion of selectees whose performance rating at the end of the trial period is at least equal to rc ) ; F denotes
+the dollar- valued payoff of job performance; Mr<xc) represents
+the average payoff of all the selectees; Mr(V(.) expresses the average payoff of the successful selectees; MS refers to the average
+service cost (i.e., salary and costs other than compensation) associated with the job performance; Cp indicates the cost per candidate of using the predictor; and C, is the training cost per hire.
+Apart from the omission of the separation cost, which will be
+included at a later stage, the definition of Up in Equation 1 is a
+faithful reflection of the conceptualization proposed by Boudreau and Berger ( 1985, p. 584) in their Figure 1. More specifically, the first term of the equation represents the utility of
+the new cohort of selectees (cf. the additions in Boudreau &
+Berger's, 1985, terminology) for Time Period 1, whereas the
+transaction costs of the acquisitions are summarized by the last
+two terms. Finally, the utility of the retained part of the cohort,
+over the periods 2 to T, is given by the second term of the formula, which ( as indicated by Boudreau & Berger, 1985) consists
+of the product of (a) the average length of stay on the job (after
+the trial period) of the retained selectees, (b) the quantity of
+retentions (i.e., the product NSP ) , and ( c ) the quality minus the
+performance cost (the term MJ-OVJ - MS) of these retained
+employees.
+Like all utility expressions, the formulation of Equation 1
+makes several simplifying assumptions ( cf. Boudreau, 1 99 1 ). It
+is assumed that both the mean service cost (MS) and the training
+investment (C,) are the same for successful and unsuccessful
+employees. In addition, it is also assumed that the mean service
+cost and the mean payoff, HY^J, do not change over time; but
+the eventual time dependency of both parameters can be ac-
+
+403
+
+counted for if their value at time / + 1 is a simple function of
+the corresponding quantities at time t. Finally, the model does
+not provide for the impact of financial and economic correction
+parameters, such as variable cost, taxes, and discounting (cf.
+Boudreau, 1983a). These parameters could easily be included
+in the present model, however, and their inclusion would have
+the effect of reducing the utility values reported here. They have
+been omitted simply to focus on the main tenet of the proposal.
+
+Utility Estimation Problem
+For Utility Equation 1 to be of any real practical value as
+a decision aid in choosing between alternative predictors, one
+should be able to estimate its value before the selection is actually performed. Thus, besides values for the usual parameters—
+T, Cp, and Myoxj—advance estimates of Sp, My<Vc>, Q, and MS
+are also needed. The latter two parameters pose no major estimation problems, however, because Boudreau and Berger
+(1985) offered several adequate suggestions to determine MS and
+referred to the human resource accounting literature to evaluate Ct.
+To determine the remaining two quantities—Sp and HY^C)—
+one might consider another proposal by Boudreau and Berger
+(1985). More specifically, these authors suggested the use of
+concurrent or past empirical data to estimate the number N( 1
+— Sp) of separations (A^, in their notation) and the difference
+in average quality between the retained and the preseparation
+workforce (the difference [Mr(xcrc) ~ Mr(xc)] in the present
+article), where the latter difference would be obtained as the
+product of (a) the average standardized score of the retained
+group on the retention-decision variable (Zqr, in Boudreau and
+Berger's notation), (b) the correlation between this variable
+and dollar-valued payoff in the group of selectees (r,,OT), and (c)
+the value of a one-standard-deviation difference in payoff in the
+selected cohort (SD^; cf. Boudreau & Berger, 1985, pp. 591,596).
+Unfortunately, the B & B model cannot be applied in the
+present context of selection with a probation period because the
+situation is characterized by a substantial correlation between
+the selection-decision and the retention-decision variables. In
+fact, this correlation (i.e., between performance rating and predictor scores) is often used as a proxy for the correlation between the selection predictor and the dollar-valued performance
+(cf. Raju et al., 1990), and, because of this association, past
+empirical records will typically produce wrong estimates of all
+four quantities: Nt, Zqr, rQiSV, and S7)m.. Only data that relate
+to a predictor with the same validity and that are used with an
+identical selection ratio will not lead to such biased estimates.
+But it is most unlikely for both conditions to hold simultaneously, especially when the selection decision, as is typically
+the case, involves the introduction of a new predictor. Finally,
+using current empirical data is no solution either because the
+present objective is to predict the utility of selection devices that
+have not yet been applied in a particular situation to decide
+between the alternative possibilities.
+Alternative Utility Model
+
+To overcome the estimation difficulties described above, I
+propose a new utility model. The model, which integrates the
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+404
+
+WILFRIED DE CORTE
+
+earlier Taylor-Russell framework with the classic BCG approach, is based on two assumptions. First, it is assumed that,
+after standardization, the observed predictor scores (X) and the
+observed performance ratings (R) are jointly distributed in the
+applicant population according to the bivariate standard normal density, with pXR the correlation between X and R. This
+assumption is identical to the one that Taylor and Russell
+(1939) introduced to estimate the success ratio of a selection,
+and I discuss its justification at length in the closing section of
+this article.
+The second assumption asserts that the regression of dollarvalued payoff of performance ( Y ) on performance rating (R) is
+linear: E( Y \ R = r) = HY + PYR^Y^', with My and aY the mean
+and the standard deviation (over one time period) of Fin the
+applicant population, respectively, and with PYR the correlation
+between Y and R. Although the assumption is essentially similar to the one proposed by Boudreau and Berger in their discussion of nonrandom retentions (cf. Boudreau & Berger, 1985, pp.
+590-591), it should be noted that the linearity of the regression
+is presumed for the applicant population, because this feature
+makes it possible to estimate the newly introduced correlation
+parameter pYK by using the procedure suggested by Hsu (1982),
+in which R is considered as an alternative predictor.1
+Given the previous two assumptions, the new utility model
+no longer requires the type of empirical data proposed by Boudreau and Berger to estimate the success ratio (Sv) and the average quality of the retained (successful) selectees, Mytv,.)More specifically, it follows from the first assumption that the
+success ratio of the predictor is equal to ^(xc, rc)/$i(xc),
+where $2(-, •) and <J>i(-) refer to the bivariate and univariate
+standard normal distributions,2 respectively. In turn, the second assumption implies that the average quality of the retained
+selectees is obtained as
+j,
+
+(2)
+
+with M«<xcrc) the mean performance rating of the successful selectees. A similar equation relates My(;tc) to MJ?(JCC)> the mean performance rating of all selectees.
+The bivariate assumption also provides an analytic expression for the average rating scores because Muthen (1990) and
+Tallis (1961) have shown that
+
+c, rc),
+
+(3)
+
+where 0i(a) denotes the univariate normal density function,
+and the shorter notation, p, is used to indicate the correlation
+PXR. Finally, M/?<XC) equals PM*<XC)> whereas the mean predictor
+score of the selectees, MA-<*C>> equals <M-*c)/*i(*c) because the
+bivariate assumption implies that the regression of R on X is
+linear and that the marginal distributions ofR and X are both
+normal.
+Thus, in comparison with the BCG approach and except for
+the already discussed quantities PYR, MS, and C,, the application
+of the new utility model requires the specification of only two
+additional parameters. The evaluation of the first of these new
+parameters, fiy, is, however, part of the judgmental procedure
+
+to estimate <j> described by Schmidt, Hunter, McKenzie, and
+Muldrow (1979). Moreover, in a recent study, Judiesch,
+Schmidt, and Mount (1992) concluded that "under most conditions, a reasonable estimate of Y . . . can be computed" (p.
+248).
+Finally, the specification of the performance cutoff is basically similar to the determination of xc because the values of
+both parameters are the result of managerial decisions that define the characteristics of the utility problem. The meaning of
+being a successful performer is something for the organization
+to decide, and the present model allows the translation of this
+decision in terms of meaningful economic utility parameters.
+From the assumption that the regression of dollar- valued payoff
+on observed performance is linear, it follows that rc can be expressed as rc = [E(Y\R = rc) - HY]/(PYROY)- So, if the organization decides that a successful employee must contribute, for
+example, at least as much as his or her service cost— that is, it is
+decided that E( Y \ R = rc) should be equal to MS— then rc is chosen equal to (MS - My)/(pra">). Alternatively, management
+might decide that to be successful a selectee must perform as
+well as the average of the present, tenured employees (Mr,); in
+this case, rc would equal (My, — Mr)/(Pra°>) and so on. Also,
+observe that the decided criterion cutoff value can easily be implemented at the end of the probationary period because the
+present assumptions imply that the successful employees can
+be identified by simply ranking the selectees according to their
+performance ratings. The top percentage of the thus-ranked performers (Sp X 100) then corresponds to the percentage of successful selectees.
+
+Predictor Utility
+As noted above, Equation 1 indicates the utility of the predictor-selected workforce and not the utility of using the predictor. To obtain the latter type of utility estimate, 'it is common
+practice to calculate A(7 defined as the difference between Up
+and l/o , the net utility of a randomly selected workforce. Following the same logic as before, this random utility can be written as
+I/o = N[»Y - Ms] + ( T- 1 )AW 0 [My<r c ) - Ms]
+
+(4)
+
+where S0 = $\ (rc) is the success ratio of a random selection and
+My<rc) corresponds to the mean payoff of the randomly selected
+successful selectees. This average can be computed as My<r c ) = My
++ py/jOYM/jog, with the mean performance rating of the randomly successful selectees, M*(rc) , equal to 0 1 ( rc ) / 4> i ( rc ) .
+1
+
+To apply the procedure of Hsu (1982), the two basic assumptions
+of the present model must be combined with the assumption that the
+regression of Y on X is linear (this is the basic assumption in the Brogden-Cronbach-Gleser model (Brogden, 1949; Cronbach & Gleser,
+1965) and that the pairs Y, R and Y, X have a bivariate exponential type
+of distribution.
+2
+More specifically, *2(xc, rc) is denned as /*" /*" <t>2(X, R)dRdX,
+whereas *i(xc) is equal to /*°° <t>,(X)dX, with <fe(a, b) and 0,(a) the
+bivariate and univariate standard normal densities, respectively.
+
+ONE-COHORT SELECTION-RETENTION UTILITY ANALYSIS
+Subtracting U0 from t/p and rearranging terms then leads to
+the following expression for the predictor utility:
+AC/
+
+- U0 =
+
+p.
+
+(5)
+
+From the equation, it can be seen that the parameters required
+to evaluate t/p also suffice to estimate At/.
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+Relationship to the BCG Utility Model
+The classic BCG framework does not distinguish between
+successful and unsuccessful selectees. As a consequence, the
+framework cannot be applied to the present problem of selection with a probationary period. The relationship between the
+BCG and the new selection-retention model is straightforward,
+however, in that the latter formulation of the utility of a predictor-selected workforce essentially differs from the classic proposal in only two respects. First, the total of all selectees, N,
+is divided into the numbers SfN and ( 1 — SP)N of successful
+(retained) and unsuccessful (dismissed) hires, respectively, and
+the expected length of stay is adjusted accordingly. Successful
+selectees are expected to remain T time periods on the job,
+whereas the unsuccessful selectees are fired after one time period. Second, the expected payoff is also differentiated: During
+the first period, the same payoff, Mxtxj, is used as in the BCG
+approach, whereas in the following periods the payoff My(xcrc) is
+introduced.
+The analysis outlined above shows that the present selectionretention model becomes equivalent to the BCG formulation
+only if one assumes that all selected individuals remain with the
+organization for the full duration of the Ttime periods. Because
+this assumption does not hold in many practical selection decisions (and certainly not in the present, probationary selection
+situation), it follows that utility models that incorporate employee separation — such as the B & B model and the present
+elaboration of this framework — are generally to be preferred.
+
+Fixed Quota of Successful Selectees
+The situation addressed here differs from the traditional
+fixed-quota selection problem in that the quota is not in terms
+of people to be hired but in terms of successful selectees (cf.
+Kao & Rowan, 1959). Thus, as is often the case in practical
+situations, the organization needs to add a fixed number (N) of
+successful employees to the workforce; and the problem is to
+predict the utility of using a predictor to perform the selection,
+again with the understanding that the unsatisfactorily performing employees will be dismissed at the end of the probationary
+period. As before, the utility of the predictor is obtained by
+comparing t/p, the utility of the predictor-selected workforce
+(cf. Equation 1 ), with t/0, the utility of a randomly hired group
+of employees (cf. Equation 4), but this time the computation
+of both Up and U0 is complicated by the requirement that AT
+successful employees must ultimately be added to the workforce
+after selection and separations occur.
+A different number of people must be hired to satisfy the requirement, depending on whether the predictor is used or not.
+
+405
+
+More specifically, the pair of assumptions introduced earlier
+implies that the number of predictor-selected employees, N f ,
+should equal N/Sp, whereas N0 —the number of randomly selected hires— must equal N/S0. Replacing the number of selectees with Nf and N0 in Equations 1 and 4, respectively; rewriting both NfSp and N0S0 as N; and subtracting the thusmodified formula for U0 from the equally updated expression
+for Up, it follows that the utility of the predictor, At/, is
+
+At/ - Up - U0 =
+(6)
+
+where the predictor cutoff (xc) is the solution of 4>2(xc, rc) = N/
+n, provided that n ss A7*i(r c ). For, if the latter condition is
+not fulfilled, then it is impossible to obtain at least N successful
+selectees.
+For the fixed-quota-of-selectees problem, it has been shown
+that the BCG framework and the present proposal can be made
+equivalent by recognizing that BCG assumes that all employees
+are treated as successful and that all have average tenure of T
+periods. The BCG model treats the fixed-quota-of-selectees
+problem and the fixed-quota-of-successful-hires problem precisely the same, whereas the present procedure recognizes that
+they are different. The B & B model can encompass the fixedquota-of-hires problem, but, as noted above, the suggested estimation approach of the B & B model is likely to be inaccurate
+for the probationary selection situation. Thus, the proposed estimation approach improves on the BCG model by recognizing
+the difference between the two problems, and it provides a
+method for estimating parameters necessary to apply the B & B
+conceptualization to the probationary situation. Also, it seems
+likely that many organizations define their selection goal as filling a number of vacancies with acceptable employees, rather
+than simply hiring that number of new employees (Milkovich
+& Boudreau, 1 99 1 ) . Thus, the present proposal is both theoretically and practically interesting.
+To further strengthen the relevance of the new selection-retention utility analysis, I show in the next section how two additional decision parameters can be integrated into the framework. These new parameters are the cost associated with firing
+an unsuccessful selectee (Cs; cf. the separation cost discussed
+by Boudreau & Berger, 1 985 ) and the recruitment expenses.
+
+Separation and Recruitment Costs
+The separation costs are easily accounted for. In case the organization needs A7 successful selectees, (Nf — N) predictor-selected employees will have to be fired after the first time period,
+whereas the number of dismissals will equal (N0 - N) when the
+selection is performed randomly. Thus, to adjust the predictor
+utility for the separation costs, the term (Np — N0)CS must be
+subtracted from the right-hand side of Equation 6. Because Np
+will be smaller than N0 when a valid predictor is used, this will
+always result in a higher value of A U. On the other hand, when
+the decision situation corresponds to the common fixed-quota
+selection scenario, the quantities N( 1 - Sp ) Cs and N(l-So)C,
+must be subtracted from the right-hand side of Equations 1 and
+4, respectively, and the predictor utility, corrected for separation
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+406
+
+WILFRIED DE CORTE
+
+costs, is obtained by adding the term N(SP - S0)CS to the expression for A {/in Equation 5.
+To assess the impact of the recruitment cost, one can adopt
+a procedure similar to the one described by Martin and Raju
+( 1992). That is, if n is the number of applicants and Cr(n) represents the average recruitment cost per applicant, then the utility of the predictor-selected workforce — adjusted for the recruitment expenses— is found by subtracting the quantity
+«Cr(w) from the utility Up. Also, observe that the notation C r(n)
+clearly indicates that the average recruitment cost is conceived
+as a function of the number of recruited applicants (cf. Martin
+&Raju, 1992).
+The same recruitment cost does not apply to the randomly
+selected workforce, however. Assuming—as the majority of the
+utility models do (Boudreau, 1991; Martin & Raju, 1992)—
+that the characteristics of the applicant pool (i.e., the value of
+Mr and ay) are independent of the size of the pool, it follows that
+the utility of the randomly selected employees is not related to
+the selection ratio. Hence, the recruitment cost in random selection must be based on the number of selectees, which means
+that this cost is equal to NCr(N) for the fixed-quota selection
+decision and equal to N0Cr(N0) when N successful selectees are
+needed. Furthermore, the assumption implies that the predictor
+utility is almost always inflated when the recruitment cost is not
+accounted for, regardless of whether unsuccessful selectees are
+dismissed or not. That is, the utility of a valid predictor is typically bought at the expense of a higher recruitment cost because
+such a predictor is useful only when more people than needed
+are recruited. The only exception to this occurs when the total
+recruitment cost does not depend on the number of recruitments. Although rare, this may happen when, for example, an
+organization has a sufficient number of spontaneous walk-ins.
+To summarize, the utility of the predictor, corrected for both
+the recruitment and separation costs, is equal to
+At/ =
+
+N(SP -
+
+(So -
+
+(7)
+
+in the common fixed-quota selection situation. Alternatively,
+when the quota relates to N successful selectees, the corrected
+predictor utility is
+At/ =
+(8)
+
+Observe that Equations 7 and 8 both reduce to the classic utility
+formula (adjusted for training, separation, and recruitment
+costs) when it is assumed that all selectees are successful.
+Illustrative Application
+The purpose of the following example is to illustrate the
+utility equations derived above and to clarify some of the computational aspects of the formulas. The example is based on
+data gathered during a workshop on utility held by the selection
+division of the Belgian Association of Work and Organizational
+Psychology. As a preparatory step, the participants—all of
+whom had several years of experience in recruitment and selec-
+
+Table 1
+Selection Decision Parameters for the Illustrative Application
+Parameter description
+No. of applicants
+No. of selectees
+Average tenure (time periods) for
+successful selectees"
+Predictor validity (predictor-observed
+performance r)
+Correlation between money-valued
+payoff (Y) and observed (rated)
+performance (ft)
+Predictor cost per applicant
+Training cost per selectee
+Average payoff of job performance (one
+time period) in the applicant
+population
+SD
+Average service cost per employee
+Separation cost per unsuccessful
+employee
+Recruitment cost per applicant
+Random selection11
+Predictor selection
+
+Notation
+
+Value
+
+n
+N
+
+136
+17
+
+T
+
+11
+
+pXR or p
+
+0.35
+
+PYR
+Cp
+C,
+
+0.85
+$200
+$10,000
+
+My
+aY
+MS
+
+$25,000
+$7,000
+$22,500
+
+Cs
+
+$1,000
+
+QNo)
+QB)
+
+$100
+$400
+
+" Average tenure for unsuccessful selectees was one time period.
+b
+Fixed-quota-of-successful-selectees condition.
+
+tion—were asked to summarize a number of firm-specific
+utility figures with regard to the hiring of recently graduated
+university students for an entry-level management position. In
+what follows, only the data related to the selection of junior
+managers in the financial sector are used to construct a typical
+selection scenario for this position.
+Table 1 shows a complete overview of the parameters and the
+parameter values of the scenario. From the table, it can be seen
+that the situation refers to the selection of 17 selectees from a
+total of 136 applicants, using a predictor (a general ability test)
+with validity PXR equal to 0.35 and assuming a correlation pra
+of 0.85 between observed performance and the dollar value of
+that performance. First, the utility of the predictor-selected
+workforce (t/ p ) and the utility of using the predictor (At/) are
+calculated when a fixed quota of 17 graduates is hired on a probationary basis. Next, these quantities are computed for the
+case that 17 successful selectees are needed at the end of the trial
+period.
+Traditional Fixed-Quota Selection Situation
+The data in Table 1 indicate that the selection ratio, 4>, (xc), is
+17 /136 = 0.125 in the fixed-quota situation. Hence, the critical
+predictor score, xc, equals 1.150.3 As to the value of the crite3
+
+All computations were performed in double precision, and the reported values are accurate to the nearest third decimal or the nearest
+integer. Because of the truncation, some results may be slightly different
+from those obtained by straight calculation. For example, MXO.ISO, -0.4201
+is in fact equal to 0.8315061 and nrii.iso.-OAW = $29,947.46. Hence,
+the value of Mro.i so.-0.4201'« reported as 29,947, whereas the straight
+
+ONE-COHORT SELECTION-RETENTION UTILITY ANALYSIS
+
+407
+
+Table 2
+Calculation of the Average Performance Payoff Predictor and Randomly Selected Workforce
+Quantity
+
+Value
+
+Computational formula
+2
+
+MR< 1.1 50, -0.420)
+
+M« I . I 50. -0.420)
+MW.150)
+M*(I.150)
+
+Mm. 150)
+
+(<*>,(-0.42) X <*>, f f( 1 . 1 5 - 0.35 X -0.42)]/Vl -0.35 } +
+0.35 X <h(1.15) X $,[(-0.42 - 0.35 X 1.15)/Vl - 0.352])/
+*2(1.15,-0.42)
+25,000 + 0.85 X 7,000 X 0.832
+0,(1.150)/*,(1.150)
+0.35X1.647
+25,000 + 0.85 X 7,000 X 0.576
+
+0.832
+29,947
+1.647
+0.576
+28,430
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+Calculation of So and /iy(-0.4201
+
+Mlf-0.420)
+
+<t>,(-0.420)
+0,(-0.420)/*i(-0.420)
+25,000 + 0.85 X 7,000 X 0.551
+
+rion cutoff ( r c ) it is decided that a selectee is successful when his
+or her expected payoff is at least equal to the expected service
+cost. So, rc can be computed as (22,500 - 25,000)7(7,000 X
+0.85) = —0.420. Using this value and the value of xc, one can
+calculate the success ratio of the predictor (Sp) as $2( 1.150,
+-0.420)/$,( 1.150) = 0.853.
+To determine the utility of the predictor-selected workforce
+(Up; see Equation 1), the values of//y(1.15o,-o.420) and My(i.iso)
+are also required. The calculations that lead to the determination of both these quantities are summarized in the first part of
+Table 2. The first column of the table indicates the quantity that
+is to be computed, the second column gives the computational
+formula, and the final column contains the resulting value. To
+evaluate the expressions $ t (a) and 4>2(a, b), which occur in
+some of the calculations, routines from the Numerical Algorithms Group FORTRAN library (Numerical Algorithms
+Group [ NAG ], 1990) are used. As a final result, it is found that
+HY( 1.150.-0.420) = $29,947 and that /»x { ,., 5 o> = $28,430. So, the
+utility of the predictor-selected workforce, uncorrected for separation and recruitment costs, is equal to (see Equation 1)
+
+0.663
+0.551
+28,279
+
+utility is essentially derived from three sources. First, the average quality of the predictor-based hires exceeds that of the randomly selected employees; that is, compare the average, HY^J,
+of $28,430 to tiY ~ $25,000. Second, using the predictor also
+results in a higher average quality of the retained selectees; compare Mrcvj = $29,947 to /ty<rc> = $28,279. Finally, a larger
+quantity of employees is retained when the selection is based on
+the predictor (i.e., compare 17 X 0.853 = 14.501 to 17 X 0.663
+= 11.271).
+Although the first two of these utility components are selfevident, one might object to the last component because it does
+not reflect the actual practice of probationary selection in organizations. According to the objection, organizations would replace the unsuccessful selectees at the end of the probationary
+period with new hires until they have enough qualified people to
+produce the required output. As a consequence, the difference
+between the utility of a predictor-selected versus a randomly selected workforce would be substantially smaller than the one
+obtained in the present proposal because of the reduced difference in the quantity of contributing employees.
+This is an important objection, not because it implies that
+Up = 17 X (28,430 - 22,500) + 10 X 17 X 0.853 X (29,947
+the proposed calculation is incorrect but because it points
+- 22,500) - 17 X 10,000 - 136 X 200 = $983,955. (9) out that the initial formulation of the utility question as a
+single-cohort decision problem may sometimes be inadeIn a similar way, and by using the quantities that are tabulated
+quate.
+Obviously, when the selection proceeds according to
+in the second half of Table 2, one can calculate the (equally
+the
+scenario
+depicted in the objection, then the present sinuncorrected) utility of the random-selected workforce (t/ 0 ; see
+gle-cohort proposal must be extended to a multiple-cohort
+Equation 4):
+formulation to account for the fact that the predictor will be
+I/o = 17 X (25,000 - 22,500) + 10 X 17 X 0.663
+used repeatedly. Such a generalization is easily achieved,
+however, by adopting a procedure that is similar to the one
+X (28,279 - 22,500) - 17 X 10,000 = $523,635. (10)
+proposed by Boudreau (1983b).
+Hence, the utility of using the predictor (AC/; see Equation 5)
+Alternatively, when it is feasible to hire enough workers to
+for thefixed-quotaselection amounts to 983,955 - 523,635 =
+ensure that the required number of successful selectees is ob$460,320 when neither the separation nor the recruitment costs
+tained at once, the objection suggests that the utility question
+are accounted for.
+should, right from the start, be framed as a decision related to
+Inspection of Equations 9 and 10 reveals that the predictor
+the hiring of a fixed quota of successful selectees. The next example shows that such a formulation is indeed possible within
+the new utility model. The example deals also with the separacalculation 25,000 + 0.85 X 7,000 X 0.832 (see top of Table 2) results
+tion and recruitment costs that were left unaccounted for in the
+in the slightly different value of $29,950.40.
+previous illustration.
+
+408
+
+WILFRIED DE CORTE
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+Fixed Quota of Successful Selectees
+This example focuses on the utility of selecting afixednumber of 17 successful selectees from the applicant pool. To determine the predictor utility in the fixed-quota-of-successful-selectees condition, it is necessary to first know the required number of selectees: Nf (predictor selection) and N0 (random
+selection). The latter number is easily obtained, however, because N0 can be calculated as AY So, where S0 depends only on
+the value of rc. Applied to the present example, in which rc =
+-0.420 and N = 17, this results in N0 = 17/*,(-0.420) =
+25.648.
+The derivation of the number Np is somewhat more difficult
+in that it requires solving the following nonlinear equation in
+Xc- *2(•*,:, rc) = N/n. Thus, in the example, Np= 136 X *, (xc),
+where jcc is the solution of *2(xc, -0.420) = 17/136. To solve
+the nonlinear equation, a routine from the NAG library (NAG,
+1990) is used, which returns a value of 1.046 forx c . Hence, Np
+equals 136 X $, (1.046) = 20.099.
+Because the decision situation relates to the selection of exactly 17 successful selectees, the numbers N0 and Np are typically noninteger valued. To overcome this problem, the decision
+objective might be rephrased to the requirement that at least
+17, but less than 18, successful employees are selected. The calculations could then proceed with NO and Np equal to 26 and
+21, respectively. Such rounding to the next integer will only
+marginally affect the utilities U0, Up, and At/, however; they
+were therefore omitted from further computations.
+Given the values of xc, N0, and Np, the calculation of the
+expected utility of the predictor usage (see Equation 6) poses
+no other problems than those encountered in the computation
+of the predictor utility for the common fixed-quota selection.
+Thus, it is found that /jy< 1.045. -0.420) = $29,837 and that MX< i.o46>
+= $28,253, which implies that
+At/ = 20.099 X 28,253 - 25.648 X 25,000
+- (20.099 - 25.648) X 22,500 + 10 X 17
+X (29,837 - 28,279) - (20.099 - 25.648)
+X 10,000-136X200 = $344,774. ( 1 1 )
+To adjust for the separation and recruitment costs, the terms
+(20.099 - 25.648) X 1,000 (Cs = $1,000, see Table 1) and 136
+X400 - 25.648 X 100(C r(n) = $400andCr№o) = $100;cf. Table
+1) must be subtracted from this utility value. The corrected
+utility of the predictor is then estimated to be $298,487.
+Comparing the present utility figure of $344,774 (i.e., the
+value of At/ calculated in Equation 1 1 ) to the previously obtained estimate of $460,320, one can see that the utility of the
+predictor decreases substantially when the decision problem is
+framed in terms of hiring a fixed quota of successful candidates.
+This is not surprising, however, because now the number of randomly selected employees that contribute to the utility in Time
+Period 1 is higher than the corresponding number of predictorselected hires. Also, although it is still true that the average quality of both the initially selected and subsequently retained selectees is higher when the predictor is used, there is no difference
+anymore with regard to the quantity of the retained hires.
+
+Whether random or predictor selection is performed, enough
+applicants are hired to guarantee that 17 of the selectees are
+successful and, hence, are retained. Finally, both effects are not
+compensated for by (a) the higher acquisition cost associated
+with the random selection (i.e., 25.648 instead of 20.099 selectees must be trained in the random-selection condition) and (b)
+the higher total performance cost of the random selectees during the first period.
+This lack of compensation may very well generalize to situations other than the present selection situations when the average length of stay on the job for successful selectees is substantially higher than the duration of the probationary period.
+Hence, the new selection-retention model may offer an additional explanation for the observation that the usual utility
+models overestimate the real gain of selection (cf. Becker, 1989;
+Boudreau, 1991; Murphy, 1986) because these models typically
+address the utility issue in the context of the common fixedquota selection condition and not in terms of the fixed-quotaof-successful-selectees situation (cf. Boudreau, 1991, p. 698).
+
+Discussion
+I have described a new utility model for dealing with the onecohort selection-retention decision problem. Unlike the B & B
+model, the new approach allows for a correlation to exist between the selection variable and the retention variable. Because
+of this feature, the new estimation procedure can be used to
+predict the selection utility for the one-cohort probationary period situation, under both the goal of obtaining a fixed quota of
+new hires and the goal of obtaining a fixed quota of successful
+employees. Hence, the new utility model conforms to the view
+that utility analysis is a decision-making tool that enables industrial and organizational psychologists to anticipate the future consequences of "programs designed to enhance the value
+of the work force to the employing organization" (Boudreau,
+1991, p. 623).
+The present proposal is not without limitations, however.
+First, the model pertains to the one-cohort selection-retention
+decision problem only, and even this topic is not dealt with exhaustively because certain decision parameters or outcome attributes (cf. Boudreau, 1991) are not included in the model.
+Thus, the equations do not anticipate the effects of rejected job
+offers on the utility of the selection. To integrate these effects, an
+extension of the proposals by Hogarth and Einhorn (1976) and
+by Murphy (1986) may be considered, however. In particular,
+one could assume that the probability of accepting a job offer—
+P(A = 1), with A the dichotomous job-acceptance variable—
+can be estimated from the logistic regression of job acceptance
+on X (cf. Raju, Steinhaus, Edwards, & DeLessio, 1991, who
+use logistic regression to express the probability of job success):
+P(A= 1) = [e ( V*. Ar )]/[i + e(*°+V>]. From the assumption it
+then follows that, for example, the average payoff of the successful selectees who accept the job offer, Mytv c a>, is equal to HY +
+v^), With
+/»+oc p+cc
+
+r
+
++
+
+/?^o 'V
+
+1 1 *[777v
+f °° f
+Ic Jrc
+
+| e °—!—1\<t>2(X,R)dRdX
+[l+eWJ
+
+-. (12)
+
+409
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+ONE-COHORT SELECTION-RETENTION UTILITY ANALYSIS
+The other quantities in Equations 1 and 4 could be estimated in
+a similar way.
+Some of the practical problems related to this extension are
+comparable to those that characterized Hogarth and Einhorn's
+(1976) and Murphy's (1986) proposals; that is, the assumption
+concerning the logistic relationship between job acceptance and
+X may be erroneous, or it may be less straightforward to obtain
+advance estimates of the parameters b0 and bt. Finally, the analytic formulas to compute, for example, Sp and RR(VC>> must be
+replaced by the numerical evaluation of double integrals of the
+type shown above for the determination of AI/J(JW,).
+Another limitation of the present proposal is that no translation of the utility outcomes is given in terms of the capital
+budgeting framework (cf. Cascio & Morris, 1990). Such a
+translation is easily achieved, however, because it only requires
+substituting the BCG type of utility values with the new estimates in the formulas presented by, among others, Boudreau
+(1983a) and Cascio and Morris (1990).
+A more serious problem with the new utility model relates to
+the assumption that the observed predictor and criterion scores
+follow a bivariate normal distribution. Even though Schmidt et
+al. (1979) mentioned the studies by Tiffin and Vincent (1960)
+and by Surgent (1947)—both of which substantiated the validity of the bivariate normal model to describe test-criterion sample data—the assumption may still be judged as questionable.
+Remember, however, that the main purpose of the distributional
+assumption is to enable the estimation of the utility before the
+selection actually takes place. In this respect, Schmidt et al.
+(1979) observed that "for most purposes, there is no need for
+the utility estimates to be accurate down to the last dollar" (p.
+617). Their second remark—that one should also consider the
+alternative situation—is also relevant here because, as shown
+earlier here, neither the BCG nor the B & B models offer an
+adequate approach to the presently discussed selection-decision
+problems.
+The argumentation above is not really conclusive, however,
+and I therefore decided to conceive of a generalized version of
+the new selection-retention utility model. The generalization is
+based on the work by Raju et al. (1990) in that a distinction is
+made between true and observed predictor-criterion scores. A
+full account of the extension is given in the Appendix. For present purposes, it suffices to observe that the generalization permits one to estimate the robustness of the utility outcomes for
+violations of the assumption that the observed predictor and
+criterion scores are bivariate normally distributed. To mimic
+the level of violation, the variance of the measurement errors ex
+and eR is manipulated relative to the variance of the true score
+components A", and Rt. The robustness of the utility outcomes
+can then be assessed by comparing the values of Up, U0, and
+At/ obtained in the zero-error condition, to the corresponding
+estimates in the nonzero conditions.
+Table 3 shows the results of such a comparison with respect
+to the Up,U0, and AC/ values that were calculated in the example given above for the common fixed-quota selection problem.
+The rows of the table correspond to the ratio of the variance of
+the error components (al x and a2eR, respectively) to the variance
+of the true score components. (In all cases, the two error variances were assumed equal.) The columns of the table refer to
+
+Table 3
+Utility Values for the Extended Bivariate Model
+Ratio a^tJa^Xi
+
+£/„
+
+l/o
+
+At/
+
+.00
+
+983,955
+983,955
+
+523,635
+523,635
+
+460,320
+460,320
+
+.10
+
+932,590
+982,183
+
+505,829
+505,829
+
+426,761
+476,354
+
+.30
+
+845,419
+976,790
+
+473,886
+473,886
+
+371,533
+502,904
+
+.50
+
+773,537
+968,625
+
+446,198
+446,198
+
+327,339
+522,427
+
+1.00
+
+638,543
+937,896
+
+391,528
+391,528
+
+247,015
+546,368
+
+the utilities Up, C/o, and AC/, and the upper entry of each cell
+indicates the value of the appropriate quantity. Although these
+values indicate a steady decrease in the utilities for increasing
+levels of error variance, it should be noted that the value
+changes are related not only to the incremental violation of the
+bivariate assumption but also to the decline of the correlation
+between the observed scores. In case that, for example, <r*x/0x,
+= fflg/ff^ = 0.3, it follows that the correlation between X0 and
+RO decreases from .35 (i.e., the correlation in the zero-error
+condition) to .35/V1.3 X 1.3 = .269. To neutralize this unwanted
+effect, one can modify the extended bivariate utility model in a very
+simple way. In particular, it suffices to fix the correlation of the observed scores at the initial value of .35 for each error condition by
+adjusting the correlation between the true score components. With
+this modification, the error conditions differ only in the form of the
+observed score distribution and differ no longer in the magnitude of
+the observed score correlation. This allows for a better baseline with
+which to evaluate the robustness issue.
+The results that correspond to the modification are also summarized in Table 3. For each error condition, the lower cell entry indicates the appropriate utility value, and by comparing these values
+to the utilities of the zero-error condition one can see that the new
+utility model is quite robust for mild violations of the distributional
+assumption. Also, because the U0 estimates are unaffected by the
+modification, whereas the Up values decrease only slowly, it follows
+that the predictor utilities, AC/, increase for higher error levels. But
+the overestimation is quite small when both the predictor and the
+criterion are measured in a reasonably reliable way.
+One final issue remains to be settled. The issue concerns the
+complexity of the present utility model. More specifically, one
+might ask—as Boudreau (1991) did—whether the increased
+complexity is really worth it. I believe that the main arguments
+in favor of such complex models, put forward by Boudreau, also
+apply to the present utility framework. In addition, it should be
+noted that (except for the generalized version) all of the relevant
+formulas of the model have been around for at least 30 years.
+Alternatively, when a highly valid predictor is available or the
+predictor cutoff is highly negative, then the benefits of the more
+complex framework will be rather marginal. However, in most
+practical selection situations, predictors are moderately valid
+and the cutoff levels are near or above the average. In such situ-
+
+410
+
+WILFRIED DE CORTE
+
+ations, the estimation approach suggested here allows selection
+decision makers to more accurately apply Boudreau and Berger's conceptual framework and to anticipate selection utility in
+the one-cohort probationary period situation, when the selection-decision variables and retention-decision variables correlate substantially.
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+References
+Becker, B. E. (1989). The influence of labor markets on human resources utility estimates. Personnel Psychology, 42, 531-546.
+Boudreau, J. W. (1983a). Economic considerations in estimating the
+utility of human resources productivity improvement programs. Personnel Psychology, 36, 551-576.
+Boudreau, J. W. (1983b). Effects of employee flows on utility analysis
+of human resource productivity improvement programs. Journal of
+Applied Psychology, 68, 396-406.
+Boudreau, J. W. (1991). Utility analysis for decisions in human resource management. In M. D. Dunnette & L. M. Hough (Eds.),
+Handbook of industrial and organizational psychology (2nd ed., Vol.
+2, pp. 621 -745). Palo Alto, CA: Consulting Psychologists Press.
+Boudreau, J. W., & Berger, C. J. (1985). Decision-theoretic utility analysis applied to employee separations and acquisitions. Journal of Applied Psychology, 70, 581-612.
+Brewster, C., Hegewisch, A., Holden, L., & Lockhart, T. (Eds.). (1992).
+The European human resource management guide. San Diego, CA:
+Academic Press.
+Brogden, H. (1949). When testing pays off. Personnel Psychology, 2,
+171-183.
+Cascio, W. F, & Morris, J. C. (1990). A critical reanalysis of Hunter,
+Schmidt, and Coggin's (1988) "Problems and pitfalls in using capital
+budgeting and financial accounting techniques in assessing the utility
+of personnel programs." Journal of Applied Psychology, 75,410-417.
+Cronbach, L., & Gleser, G. (1965). Psychological tests and personnel
+decisions. Urbana: University of Illinois Press.
+Hogarth, R. M., & Einhorn, H. J. (1976). Optimal strategies for personnel selection when candidates can refuse job offers. Journal of
+Business, 49, 479-495.
+
+Hsu, L. M. (1982). Estimation of the relative value of employee selection tests from information commonly available in the presence of
+direct and indirect range restriction. Journal of Applied Psychology,
+67.509-511.
+Judiesch, M. K., Schmidt, F. L., & Mount, M. K. (1992). Estimates of
+the dollar value of employee output in utility analysis: An empirical
+test of two theories. Journal of Applied Psychology, 77, 234-250.
+Kao, R. C., & Rowan, T. C. (1959). A model for personnel recruiting
+and selection. Management Science, 5, 192-203.
+Martin, S. L., & Raju, N. S. (1992). Determining cutoff scores that
+optimize utility: A recognition of recruiting costs. Journal of Applied
+Psychology, 77, 15-23.
+Milkovich, G. T., & Boudreau, J. W. (1991). Human resource management. Homewood, IL: Irwin.
+Murphy, K. (1986). When your top choice turns you down: Effect of
+rejected offers on the utility of selection tests. Psychological Bulletin,
+99, 133-138.
+Muthen, B. (1990). Moments of the censored and truncated bivariate
+normal distribution. British Journal of Mathematical and Statistical
+Psychology, 43, 131-143.
+Numerical Algorithms Group. (1990). The NAG FORTRAN library
+manual. Mark 14. Oxford, England: Author.
+Raju, N. S., Burke, M. J., & Normand, J. (1990). A new approach for
+utility analysis. Journal of Applied Psychology, 75, 3-12.
+Raju, N. S., Steinhaus, S. D., Edwards, J. E., & DeLessio, J. (1991). A
+logistic regression model for personnel selection. Applied Psychological Measurement, 15, 139-152.
+Schmidt, F. L., Hunter, J. E., McKenzie, R. C., & Muldrow, T. W.
+(1979). Impact of valid selection procedures on workforce productivity. Journal of Applied Psychology, 64, 609-626.
+Surgent, L. V. (1947). The use of aptitude tests in the selection of radio
+tube mounters. Psychological Monographs, 61 (2, Whole No. 283).
+Tallis, G. M. (1961). The moment generating function of the truncated
+multinormal distribution. Journal of the Royal Statistical Society,
+Series B, 23, 223-229.
+Taylor, H. C., & Russell, J. F. (1939). The relationship of validity coefficients to the practical effectiveness of tests in selection: Discussion
+and tables. Journal of Applied Psychology, 23, 565-578.
+Tiffin, J., & Vincent, N. L. (1960). Comparison of empirical and theoretical expectancies. Personnel Psychology, 13, 59-64.
+
+411
+
+ONE-COHORT SELECTION-RETENTION UTILITY ANALYSIS
+
+Appendix
+Extension of the New Utility Model
+The extension of the new utility model was inspired by the proposal
+of Raju, Burke, and Normand (1990) in that a distinction is made between true and observed scores for both the retention-decision measure
+(i.e., rated job performance) and the predictor measure. In addition,
+the extension restricts the assumption of bivariate normality to the joint
+distribution of the true predictor and performance scores. More specifically, the observed predictor and performance scores, Xo and RO,
+respectively, are decomposed into
+
+The density function outlined above makes it possible to estimate, for
+example, the mean performance payoff for the successful predictor-selected candidates, where selection and success are both related to the
+corresponding observed score:
+(A4)
+
+with
+poo |.+« ^^ R^g(Rt
+
+This document is copyrighted by the American Psychological Association or one of its allied publishers.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+A"o = AT, + ex, and
+
+Jxc
+
+Ro = R< + eR,
+
+(Al)
+
+Jrc
+
+where X, and Rt denote the true scores and ex and eR denote the corresponding error components that are independent of Xt and /?,, and
+where it is assumed that (X%, Rt) ~ N2(ii, 2), with pf = (0,0) and 1 and
+p (the correlation between true predictor and true performance scores)
+are the diagonal and off-diagonal elements, respectively, of 2. Next, it
+is assumed that the regression of job performance payoff, Y, on true
+performance rating is linear: E(Y\Rt) = HY + PYx,"YRt: with PYK, the
+correlation between Yand Rt. (The simulation results, reported in Table 3, we obtained under the condition that py/j, is also equal to 0.85.)
+Finally, ex and eR are considered to be independent, rectangularly distributed random variables with average values equal to 0 and variance
+alx = 1 / I2c2x and a2ex = 1 / l2c2K. The joint density of A",, Rt, ex, and
+eR can then be written as
+
+XQ
+
+Ro)dR^dRodXQ
+
+Jrc
+JRQ— 1 / 2cjj
+oo P+oo p^j+l/Zc,
+
+JXff-ltlc,,
+
+(AS)
+
+g(R,,X
+
+To evaluate the triple integrals in the latter quotient, a combination
+of quadrature routines from the NAG FORTRAN library (Numerical
+Algorithms Group, 1 990 ) is implemented.
+Similar developments lead to the estimation of the other components
+of Utility Equations 1 and 4. To compute, for example, the mean payoff
+of the successful random selectees, the joint distribution of .R, and RO,
+RO - 1 /2cR < Rt <
+
+h(Rt,
+
+1 /2cK,
++00,
+
+(A6)
+
+is considered to first obtain the mean true performance score of the
+random selectees whose observed performance is at least equal to rc:
+f + » TV
+
+t, Rt),
+
+/(AT,, Rt, ex, eR) =
+
+(A2)
+
+Jrc
+
+t, Ro)dRtdRo
+
+Jfip-l/
+
++i/
+
+rp - h(R ,
+
+with
+
+t
+
+Jrc
+
+JRQ—l/Zcjf
+
+— oo £ Xt, Rt < +00,
+
+(A7)
+
+-1
+1
+,
+— & ex < — , and
+2cx
+2cx
+-1
+
+1
+
+Applying the transformation X, = Xt, Rt = Rt, X0 = Xt + ex and RO =
+.Rt + eR and integrating out Xt, the joint density of R,, X0, and RO is
+K0-l/2cx-pRt
+X0+ l/2cx-pg
+
+, (A3)
+
+The mean payoff of the successful randomly selected candidates, MI-W.
+is then equal to py + pY^OYf-n^r^Although the present generalization assumes that the measurement
+errors are rectangularly distributed, it is obvious that any other distribution—for example, a triangular or a normal distribution—can be
+considered for ex and eR. Alternatively, all assumptions may be dropped,
+and the utility calculations could be based on the joint density of the
+observed predictor and criterion scores as estimated from previously
+gathered sample data. Such an approach seems hardly practical, however, especially when the selection decision relates to the introduction of
+a new predictor.
+
+with
+-oo < XO,RO& +00, and
+- l/2cR< R,£Ro + l/2cK.
+
+Received December 17, 1992
+Revision received September 17, 1993
+Accepted September 17,1993 •
+
+

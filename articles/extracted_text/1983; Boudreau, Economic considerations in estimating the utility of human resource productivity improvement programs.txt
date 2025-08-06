@@ -1,0 +1,1253 @@
+PERSONNEL PSYCHOLOGY
+ 1983,36
+
+
+
+
+ECONOMIC CONSIDERATIONS IN ESTIMATING THE
+UTILITY OF HUMAN RESOURCE PRODUCTIVITY
+IMPROVEMENT PROGRAMS
+                            JOHN W. BOUDREAU
+             New York State School of Industrial and Labor Relations
+                              Comeil University
+
+
+
+        Three economic concepts (variable costs, taxes, and discount-
+     ing) are applied and incorporated into the previous utility formulas
+     proposed by Brogden (1946, 1949), Cronbach and Gieser (1965),
+     and Schmidt, et al. (1979. 1982). The resulting utility model
+     indicates that the previous formulas are deficient and can produce
+     upwardly biased utility estimates. Empirical examples based on
+     published research (e.g., Schmidt, et al., 1982) are presented
+     indicating the substantial magnitude of the bias given realistic
+     levels of variable costs, taxes, and discount rates. The present
+     utility model is used to adjust for such bias and is shown to provide
+     a more complete and precise utility definition. Implications for
+     future research are discussed.
+
+
+   THE utility or payoff derived from using improved selection
+procedures has received a great deal of recent attention (e.g., Bobko
+and Karren, 1982; Cascio, 1980, 1982; Cascio and Silbey, 1979;
+Landy, Farr and Jacobs, 1982; Schmidt, Hunter and Pearlman,
+1982; Schmidt, Hunter, McKenzie and Muldrow, 1979). The basic
+utility equation was developed through Brogden's (1949) study of
+testing costs, Brogden's (1946) observations on validity, and Cron-
+bach and Gleser's (1965) discussion of decision theory applied to
+employee selection. Cascio (1980), Schmidt, et al. (1979) and Hunter
+and Schmidt (1982b) reviewed this theoretical development.
+
+  The author gratefully acknowledges the suggestions of Lee Dyer, Robert Eder,
+George Milkovich, John Hunler. Joe Rich, and two anonymous reviewers.
+  Requests for reprints should be sent to John W. Boudreau, Department of
+Personnel and Human Resource Studies. NYSSILR, Cornell Universiiy, 393 Ives
+Hall, Ithaca. New York 14853.
+Copyright ® 1983 Personnel Psychology, Inc.
+
+                                          551
+
+
+--- PAGE BREAK ---
+
+552                 PERSONNEL PSYCHOLOGY
+
+  The resulting utility formula is:
+                                  .:vZ,) - C                      (I)
+Where:
+At/ = the increase in average dollar-value payoff that results from
+       selecting N employees using a test or procedure (.v) instead
+       of selecting randomly,
+  N = the number of employees selected,
+   T = the expected tenure of the selected group,
+ r^y = the correlation coefficient (among prescreened applicants)
+       between predictor score U) and dollar-value payoff (v).
+SDy = the standard deviation of dollar-value payoff in the group of
+       prescreened applicants,
+  Zx = the average standard predictor score of the selected group,
+       and
+   C ~ the total selection cost for all applicants.
+   In a recent Personnel Psychology article, Schmidt, et al. (1982)
+extended the utility model of Equation 1 (for selection utility) to
+apply to any personnel program designed to increase the job
+performance of those treated by the program. They showed that the
+product of r^.y and Z^ in Equation 1 may be replaced by the "true
+difference in job performance" between the treated and untreated
+group in standard deviation units. The resulting utility formula may
+be written
+                     AU = {iV){T){d,)(SDy) - C                     (2)
+Where:
+Af/ = is the increase in utility resulting from the program,
+  N = the number treated,
+   T = the expected duration of benefits in the treated group,
+  d, = the true difference in job performance between the treated
+        and untreated groups in standard deviation units,
+SDy - the standard deviation of dollar-valued job performance
+        among the incumbent employees, and
+   C = is the cost of treating N employees.
+   The Schmidt, et al. (1982) extensions of the selection utility model
+(and their demonstration applying utility analysis to a training
+intervention) provided an important contribution, paving the way
+for utility analyses of other personnel programs. Landy, et al.
+(1982). for example, used the Schmidt, et al. (1982) formula to
+analyze the utility of a performance feedback program. It appears
+likely that utility analysis and estimation will play an increasingly
+greater role in industrial-organizational psychology research and,
+perhaps, in practice. Indeed, Landy et al. (1982, p. 38) suggest that
+
+
+--- PAGE BREAK ---
+
+                                JOHN W. BOUDREAU                                     553
+
+Utility analysis may be capable of "providing the science of person-
+nel research with a more traditional 'bottom line' interpretation."
+   Such an interpretation requires a utility model which incorporates
+the same economic considerations applied to traditional manage-
+ment decisions. Investments in personnel programs must be evaluat-
+ed similarly to other investment options so that their bottom line
+implications can be readily compared. Previous conceptual contri-
+butions (e.g., Brogden, 1946, 1949; Cronbach and Gieser, 1965),
+most recently exemplified by the Schmidt, et al. (1982) extensions,
+have integrated decision theory and industrial psychology concepts,
+but have devoted far less attention to economic theory and its
+implications. This can be seen most clearly in the definition of the
+payoff"function (v). Schmidt, et al. (1982) estimated SD,. based on an
+earlier study defining payoff as the "value of products and services"
+(Schmidt, et al., 1979), This payoff function has been interpreted as
+the value of "output as sold," what the employer "charges the
+customer" (Hunter and Schmidt. 1982b, pp. 268-269), or as a
+function having an average level of twice the salary of the "typical
+worker" (Schmidt, et al., 1982, p. 339). Cascio and Silbey (1979) and
+Bobko and Karren (1982) defined their payoff functions simply as
+the "value of sales." In this article, the value of output "as sold"
+will be called the "sales value" of productivity.
+   For several reasons, this payoff definition is a deficient expression
+of the "institutional" benefit (Cronbach and Gieser, 1965, p. 8) of
+treating a group of applicants or employees. The definition fails to
+reflect certain economic concepts which are basic to organizational
+investment decisions. Utility estimates using this deficient payoff
+definition may produce large (possibly upward) biases compared to
+payoff estimates for other investments.
+   The utility model extensions presented here suggest corrections
+for three of these deficiencies. The present utility model will
+incorporate three economic concepts into existing decision-theoret-
+ic utility models and demonstrate the effect of these concepts on
+previous utility estimates. The three economic concepts (in the
+order of their presentation) are variable costs, taxes, and discount-
+ing.
+   The effects of each concept will be illustrated in three ways. First,
+by incorporating each concept into the algebraic utility formula
+(Equation 1).' Second, by presenting research propositions indicat-
+
+   ' Though Equation I is expressed in terms of validity (r,..,' and ihe average
+standard predictor score of selectees (Z,). the algebraic derivations developed here
+generalizes to Equation 2 ifd, is substituted for the product of r, ,, andZ,. For brevity,
+the derivations are shown only for Equation 1.
+
+
+--- PAGE BREAK ---
+
+554                  PERSONNEL PSYCHOLOGY
+
+ing each concept's implications for utility estimation. Third, by
+empirically illustrating the effects of each concept using data from
+previously-published utility research. Data from the recently pub-
+lished utility study by Schmidt, et al. (1982) will provide the primary
+example, but other published data will be used where they illustrate
+a specific eflfect. It will be shown that these three economic
+considerations (both alone and in combination) identify deficiencies
+in the existing utility definition which can upwardly bias existing
+utility estimates. The more complete utility model proposed here
+provides a framework for identifying and correcting such biases in
+future research, and suggests new research directions.
+
+                   The Effects of Variable Costs
+  When a decision which increases productivity (e.g., adopting a
+selection device) also increases/decreases variable costs associated
+with productivity, then the change in variable costs should be
+subtracted from/added to the increased value generated by the
+increased productivity. For example, better-selected sales people
+may perform better by selling more units. Undoubtedly, the sales
+revenue would be higher, but not all of this increased revenue
+accrues to the firm. Higher-producing salespeople often receive
+higher pay in the form of a bonus or commission. Similarly, higher
+sales levels often require larger inventories, increased material
+costs, and production costs. In these cases, the benefits of the
+increased productivity are less than the increase in sales revenue.
+Conversely, in some jobs employees who produce at higher levels
+may also incur less costs than their lower-producing counterparts.
+For example, drill press operators who produce more units may also
+produce less scrap than those producing fewer units. Thus, variable
+costs which vary positively with productivity offset the sales value
+of the increased productivity while variable costs which vary
+inversely with productivity augment the sales value of the increased
+productivity.
+
+Algebraic Derivation: Variable Costs
+   Analytically, distinguishing the sales value and cost of productivi-
+ty gains due to treatments requires redefining y, the payoff function
+in Equation 1. Boudreau and Berger (in press) develop a model of
+the utility of employee movements through organizations (selection
+is one type of movement) which supplies useful concepts for
+developing this point. The model proposes that each movement
+
+
+--- PAGE BREAK ---
+
+                          JOHN W. BOUDREAU                             555
+
+produces (among other effects) changes in both sales value [sv/, the
+stream of present and future benefits (e.g.. sales revenue) provided
+by the mover^ (selectee in this case) during his/her tenure in the job
+or organization] and service costs [scj, the stream of present and
+future sacrifices (e.g., wages, benefits, materials) incurred to main-
+tain, support, and induce those services]. The difference between svj
+and scj will be termed the net betxefits of the movement (i.e., nhj =
+SVj -   SCj).
+  Thus, sv, sc and tjb are random variables over the population of
+prescreened applicants (or incumbents in the case of programs for
+existing employees). Net benefits (nb) is proposed here as a more
+logically correct definition of payoff (v in Equation I) than sv alone,
+sc alone, or any other combination of them. Algebraically. Equation
+1 becomes
+                  Af/ = (A0(7)(r,,^^)(Z,)(5D,,^) - C                (3)
+  Moreover, it can be shown that Equation 3 is equivalent to
+        At/ = iN)iT)[(rr.sv)(Z,)iSD,,) - (r,,,,)(Z^)(5Av.)] " C         (4)
+   Equation 4 recognizes that a selection device (x). in addition to
+correlating with sales value, may also correlate with service costs.
+These correlations need not be equal. For example, sv may reflect
+the value of increased production speed of selectees. Some service
+costs may vary positively with production speed (e.g., materials,
+piece-rate wages) while others may vary inversely (e.g., supervision
+required). Equation 4 is general enough to include situations where
+data on both types of variable costs exist. It can also include
+situations where cost reduction (in addition to or instead of revenue
+enhancement) is the major payoff associated with a selection device.
+   In many situations, it may be simpler to treat service costs as
+perfectly correlated with sales value. In this case /•,.„„- is equal to the
+absolute value of r,..,<- If sc is further treated as a proportion of sv
+(e.g.. where commissions equal a percent of sales revenue or
+variable materials costs comprise a percent of selling price) then
+Equation 4 becomes
+                At/ - (A0(r)(r,.,,)(Z,)(5D,,)(l + V) - C               (5)
+Where V equals the proportion of .sv represented by sc (i.e., ,scfsv =
+V). This parameter (V) will be negative when a higher proportion of
+costs varies positively with sales value, and positive when a higher
+proportion of costs varies negatively with sales value. For simplic-
+ity, and because operational data on variable costs may often be
+expressed as a proportion of revenue. Equation 5 will serve as the
+basis for further discussion.
+
+
+--- PAGE BREAK ---
+
+556                 PERSONNEL PSYCHOLOGY
+
+Research Propositions: Variahle Costs
+
+   Existing literature inconsistently (and often incorrectly) addresses
+the role of costs in selection utility. The present discussion will
+focus first on fixed costs (those not varying with changes in
+productivity) then on wages, and finally on other variable costs.
+   Fixed costs.
+   P\: Utility estimates based on profit including allocated fixed
+        costs will underestimate variability in net benefits.
+   Fixed costs are irrelevant to utility. From an economic and
+decision theoretic standpoint, the utility of any decision or action
+(e.g., use of a selection device) reflects the changes that action
+brings to various outcomes. In the classic utility framework (Cron-
+bach and Gleser, 1965) the phenomenon of interest is the change in
+payoff (At/) resulting from selecting using a particular device instead
+of selecting randomly. Costs or benefits which do not change as a
+result of a program have no role in defining the utility of that
+program.
+   The pioneering work by Brogden fI949). Brogden and Taylor
+(1950, p. 143). and Tiffin and McCormick (1958, p. 25) does not
+reflect this fact. All three studies propose that less overhead '"per
+unit produced'' should be "prorated" to efficient workers (those
+producing more output per time unit). This proposition implies that
+accounting allocations of fixed costs reflect actual cost differences,
+an implication clearly at odds with economic and financial decision
+theory (see Brealey and Myers. 1981, p. 86). An organization will
+incur fixed utility costs, overhead costs, etc., just to continue in
+operation. Personnel programs generally will not change this. While
+fixed costs lower the average profit obtained from all workers, fixed
+cost variability is zero, and 5/)^/, is the same whether nh reflects
+fixed costs or not. This observation implies that Roche (1961)
+probably underestimated selection utility by allocating profit (reve-
+nue minus both fixed and variable costs) to workers according to
+production speed.
+  Just as fixed costs are irrelevant to decisions, variable cost
+relationships which are not reflected in decisions are also irrelevant.
+For example, suppose compensation is based not on productivity
+but on seniority. Further, suppose seniority (tenure) is negatively
+related to productivity. [This assumption provides an extreme
+example. In fact, Gordon and Johnson (1982) conclude that little
+evidence exists to estimate the actual perform ance-tenure relation-
+ship.] Under these assumptions, data from the incumbent employee
+population would indicate a negative correlation between compen-
+
+
+--- PAGE BREAK ---
+
+                        JOHN W. BOUDREAU                          557
+
+salion and productivity. One might be templed to reflect this in
+utility estimates by increasing V to reflect the proportion of sales
+value represented by seniority-related variable compensation costs.
+This would be incorrect, however. Productivity improvement pro-
+grams (e.g., training, selection) affect the prodttctivity not the
+seniority of treated employees. Higher-performing trainees, for
+example, would not suffer decreased seniority, so there would be no
+reason to expect a compensation cost saving to accrue as a result of
+training even though such a relationship exists in the incumbent
+population.
+   In general, it is important to include in the variable cost term (V)
+only those costs which will vary with the increases in sales value
+prodtaed hy the program options tinder consideration. In view of
+this principle, it seems unlikely that compensation costs would vary
+negatively with productivity improvements induced by personnel
+programs. Therefore, subsequent sections will address only the
+effects of positive or zero covariation between compensation and
+productivity (sales value).
+   Salary and benefits.
+   p2. When salaries and benefits vary positively with sales value
+        (jv) then the standard deviation of sales value (5Avv) will
+        overestimate the standard deviation of net benefits iSD^h)-
+   Salary and benefit payments to individuals may relate to sv
+through many mechanisms. Clearly, when individuals are paid on
+commission or piece rate, or when bonuses are linked to output, the
+increased productivity achieved (e.g., through better selection) is
+partly offset by higher direct compensation. Where better perform-
+ers progress upward through a pay range faster than poorer perform-
+ers a similar effect would occur. In addition to direct compensation,
+benefits may also be associated with performance. For example,
+higher direct pay often means higher employer pension contribu-
+tions, social security payments, or insurance levels {and premiums).
+   The more salary and benefit costs which are positively related to
+sales value, the lower is V in Equation 5, the lower SD,,f,, and the
+lower is AU. Belcher (1974, p. 511) suggests that incentives may
+comprise 10% to 35% of total compensation of salespeople. If
+average sales value is twice average wage (as Hunter and Schmidt,
+ 1982a, p. 305; 1982b, p. 208 suggest) then incentive costs may
+comprise 5% to 17% of sv. As shown by Equation 5, if V equals
+ -.17, then the actual SD,,,, is 83% of .SD,,,,.
+    Existing research often ignores potential variable compensation
+ effects. Cascio and Silbey (1979). Landy, et al. (1982). Lee and
+ Booth (1974), Roche (1961), Schmidt, et al. (1979. 1982). Schmidt
+
+
+--- PAGE BREAK ---
+
+558                  PERSONNEL PSYCHOLOGY
+
+ and Hoffman (1973). and Van Naersson (1963) presented utility
+ analyses with no discussion of the possibility that variable compen-
+ sation costs may offset increased sales value. While such treatment
+ may have been appropriate in some studies due to the likelihood that
+ all job holders were paid similarly, the analytical issue was not
+ explored and no data were presented to justify such an approach.
+ One study (Cascio and Silbey, 1979) defined the payoff function iy)
+ for sales managers in terms of sales revenue. It seems likely that, for
+ this job. some portion of compensation took the form of incentive
+ pay.
+    Another misconception regarding the role of wages in selection
+ utility is that wages equal sales value. This position was taken by
+ Brogden and Taylor (1950, p. 144). More recently, Cascio (1982, p.
+ 163-i73) described the Cascio-Ramos estimate of performance in
+ dollars (CREPID) which is based on the assumption that "the
+economic value of each employee's labor is best reflected in his or
+ her annual wage or salary" (Cascio, 1982. p. 164). For analyzing
+ utility to the organization, however, the appropriate "economic
+ value" is not the wage (defined by the labor market), but the value
+of what is produced (determined by the product/service market)
+adjusted for variable costs (and other factors discussed subsequent-
+ly). As Hunter and Schmidt (1982b, p. 268) pointed out. "any
+accountant would assure you that a business in which dollar value of
+output is equal to wages would be unable to pay costs and overhead,
+[much] less profit." Hunter and Schmidt (1982b) were distinguishing
+wages from sales value, while the present utility model distinguishes
+wages from net benefits. In either case, wages are a cost. When they
+vary positively with sales value they are a cost which reduces the
+value of SD,,i,.
+    Variable costs other than compensation. The general proposition
+regarding other variable costs is similar to proposition P2.
+   Py. When non-compensation costs vary positively with sales
+        value (.sv) then the standard deviation of sales value (5/),.)
+        will overestimate the standard deviation of net benefits
+        (SDnh)^ and vice versa.
+The major non-compensation cost which varies with the sales value
+of productivity (sv) will probably be raw material costs. For
+example, production workers producing higher volume may require
+more raw materials to work with. Similarly, sales people producing
+higher sales volume require that more units be available for sale.
+Hunter and Schmidt (1982a. p. 304) note that "increased production
+by the worker might result in increased [overhead] costs of produc-
+tion; especially if the product has a high raw material cost." They do
+
+
+--- PAGE BREAK ---
+
+                         JOHN W. BOUDREAU                           559
+
+not, however, include such costs explicitly in the utility model as is
+done here.
+    Interpreting proposition Pi, in terms of Equation 5: When the
+amount of non-compensation costs varying positively is larger, V is
+smaller (or more negative), the value of SD,,h is smaller, and MJ is
+less. As noted above, variable compensation costs might make Vas
+low as -.17. Non-compensation costs which vary positively with sv
+would further reduce V. The exact amount of the reduction would
+vary (across jobs and industries for example). Assuming (for illustra-
+tion) a range of non-compensation variable costs from 0% to 33% of
+sales value, and adding this effect to the variable compensation cost
+range of 0% to 17% implies that when both compensation and non-
+compensation costs vary positively with increases in sales value. V
+could range from 0 to -.50.
+    As noted earlier, some non-compensation costs (e.g., scrap,
+damage, losses) may vary inversely rather than positively with
+increases in sales value produced by personnel programs. When all
+variable non-compensation costs behave in this way, V could reach
+an upper value of + .33. (Recall the earlier argument that compensa-
+tion costs are unlikely to vary negatively with productivity in-
+creases).
+    Total variahle cost effects. Combining al! the arguments in this
+ section implies a range of V (including variable compensation costs,
+and positively-related as well as negatively-related non-compensa-
+ tion costs) from -.50 to +.33. This range implies an adjustment
+ (1 +Vin Equation 5) ranging from .50 to 1.33. The actual value of V
+ in any application would be the difference between the proportion of
+ sales value represented by costs varying negatively with sales value
+ increases and the proportion of sales value represented by costs
+ varying positively with sales value increases.
+
+Empirical Illustrations: Variable Costs
+  The empirical efFects of variable costs will be illustrated using data
+reported by Schmidt, et al. (1982) and data reported by Cascio and
+Silbey (1979). The Schmidt, et al. (1982) utility analysis for training
+computer programmers (using Equation 2 with N ^ 100, 7 = 2
+years, d, = .65, SD, = $10,413. and C = $500 per trainee) produced
+an estimate of the training program's utility equal to $1,303,690 (p.
+339). Their example ignores variable costs, however. For computer
+programmers, variable costs may be low because productivity
+increases may not require increased raw materials or overhead and
+programmers may not be rewarded differently. Assuming the net
+
+
+--- PAGE BREAK ---
+
+560                  PERSONNEL PSYCHOLOGY
+
+effect of positively and negatively correlated variable costs produce
+V equal to -.05, the after-cost utility estimate based on SDy of
+$9,892 [i.e.. ($IO,413)(1-.O5)] would be $1,235,960. or 94.8% of the
+reported utility estimate.
+   Unlike the Schmidt, et al. (1982) study in which the bias due to
+omitting variable costs was probably small, the study by Cascio and
+Silbey (1979) focused on sales managers, a job in which variable
+costs are likely to have been more substantial. Cascio and Silbey
+(1979, p. Ill) estimated the utility of improved internal selection
+(i.e.. replacing an interview with an assessment center) to be
+$153,855 [assuming N equal to 50. Tequal to 5, SDy equal to $9,500,
+Zr equal to .80 (i.e., a selection ratio of .50), assessment center
+validity of .35, interview validity of .25. and a cost difference of
+$11,328 in favor of the interview], ln this case, SD, (estimated using
+the "dollar value of sales to the company") was for the job of sales
+manager. Such sales positions would probably be paid (at least in
+part) on commission or incentive. In addition, it seems likely that
+raw materials costs for this "food and beverage firm'" would also
+increase with increased sales. Cascio and Silbey report no data on
+this point, but. for illustration, let us assume that V equals -.40 in
+this situation. The SD,,^ value would be $5,700 [i.e., ($9.500)(.60)] as
+opposed to $9,500 estimated by Cascio and Silbey. Thus, the
+adjusted utility estimate would be $87,782. or 57% of the reported
+value.
+
+                        The Effects of Taxes
+   Just as variable costs are an economic fact of life for many
+organizations, so taxes are also an often unavoidable obligation
+(except for the government and other exceptions discussed later).
+Yet. the effect of taxes has never been addressed in previous utility
+research. Taxes are assessed on an organization's reported profits.
+Thus, unlike variable costs which offset changes in revenue, taxes
+produce a proportional reduction in both revenue and costs.
+   Accounting for taxes in personnel program utility estimates is
+necessary for two reasons. First, as noted earlier, one purpose of
+utility analysis is to provide a "bottom line interpretation" for
+investments in personnel programs so that they can be compared to
+other investment options. Because taxes affect the flow of costs and
+benefits from investments, a basic principle in capita! budgeting
+analysis is that after-tax costs and benefits are the appropriate basis
+for decisions (see Horngren, 1981. p. 321; Weston and Brigham.
+1978. pp. 304-305; Bierman and Smidt. 1971, p. 123). Second,
+
+
+--- PAGE BREAK ---
+
+                         JOHN W, BOUDREAU                          561
+
+because organizations vary in their tax liability, inter-organizationa!
+utility comparisons require adjusting utility values to account for
+different tax consequences. The marginal tax rate (the tax rate
+applicable to changes in reported profits generated by a decision) is
+the appropriate adjustment because existing utility definitions ex-
+press the effects of personnel programs on productivity "as sold"
+and on costs, both of which usually directly affect reported profits.
+
+Algebraic Derivation: Taxes
+  Recall that net benefits inh) is defined as the random variable
+representing sales value minus service costs. If we denote the
+marginal tax rate as TAX. then after-tax net benefits may be denoted
+{\~TAX){nb). Noting that nh was earlier defined as (H-V)(A»'). we
+can rewrite Equation 5 as
+                                                   - (C){\-TAX)     (6)
+Taxes produce a proportional decrease in SD,,h imd in C. Because
+SD^h is usually greater than C. this will usually reduce At/.
+
+Research Proposition: Taxes
+   P4: The higher an organization's marginal tax rate, the lower
+        utility will be (all else equal).
+   In order to examine actual tax effects, researchers must obtain
+estimates of the marginal tax rate. This requires the input of an
+organization's accountants or financial experts. Although the feder-
+al corporate income tax rate ranges from 0% to 46% (U.S. Master
+Tax Guide. 1981), this range omits the effects of additional State tax
+liabilities. Copeland and Dasher (1974. p. 226) assume a 55%
+combined tax rate for their illustrations. Therefore, a range of
+marginal tax rates (TAX) from 0% to 55% will be assumed here. This
+implies an adjustment (i-TAX, in Equation 6) ranging from 1.0 to
+.45.
+
+Empirical Illustrations: Combined Effects of Variable Costs and
+Taxes
+   The combined effects of variable costs and taxes on utility can be
+seen in Table I. This table shows the adjustment li.e.,
+(i + V)(\-TAX) in Equation 6] necessary to account for various
+combinations of variable cost (VO and tax (TAX) levels.
+   The implications of Table I can be illustrated by returning to the
+
+
+--- PAGE BREAK ---
+
+562                            PERSONNEL PSYCHOLOGY
+
+                                    TABLE I
+ Illustrative Adjustments to Correct Utility Estimates for the Combined Effects of
+                        Variable Costs (Vj and Taxes (TAX)
+                                                            TAX
+  V                0                .05              .10             .30             .45             .55
+  .33             1.33             L26               1.20            .93             .73             .60
+  .10             LlO              1.04               .99            .77             .60             .50
+  .05             1.05             LOO                .94            .74             .58             .47
+  .00             1.00              .95               .90            .70             .55             .45
+-.05               .95              .90               .86            .68             .52             .43
+-.10               .90              .86               .81            .63             .50             .40
+-.20               .80              .76               .72            .56             .44             .36
+-.30               .70              .67               .63            .49             .39             .32
+-.40               .60              .57               .54            .42             .33             .27
+-.50               .50              .48               .45            .35             .28             .22
+  Noic—Table values equald + V)(l - MAI. These values would be muliiplied hy the sales value or increased
+productivity lo adjusl for variable cosis and [axes.
+
+
+
+earlier examples. Assuming variable costs of 5%, it was noted that
+the Schmidt, et al. (1982) SD,. estimate of $10,413 would be reduced
+to an SD,,f, of $9,892. Though the Schmidt, et al. estimate of 5Ov was
+originally derived for the federal government (which is not taxed),
+generalizing the results to private-sector taxable organizations re-
+quires recognizing the tax rale. Assuming a marginal tax rate of
+45%, their SDy estimate would be further reduced to $5,415 [i.e.,
+(.52)($10,413) using Table 1]. In addition, their estimated treatment
+cost of $500 per person corresponds to an after-lax cost of $275 per
+person [i.e., (.55)($5OO)]. Substituting these values into equation 6
+along with the other parameters noted by Schmidt, et al. (1982)
+produces a total utility estimate of $676,450 for one application of
+the training program. This value equals 52% of the $1,303,690
+reported by Schmidt, et al. (1982), though it is still a substantial
+payoflF.
+   The Cascio and Silbey (1979) study of selection utility not only
+involved a job (sales manager) probably subject to high variable
+costs, but involved a private-sector organization probably subject to
+taxes. Assuming a 45% tax rate in addition to the 40% variable cost
+level assumed earlier, the yearly SDy estimate after variable costs
+and taxes would have been $3,135 [i.e., (.33)($9.500) using Table 1].
+The difference in cost between the assessment center and the
+interview would also be reduced from $! 1,328 to $6,230 after taxes.
+Holding the other parameters at the levels noted earlier, the
+resulting payoff from the assessment center would be $48,280. Still
+substantial, but only 31% of the $153,855 reported by Cascio and
+Silbey (1979).
+
+
+--- PAGE BREAK ---
+
+                        JOHN W. BOUDREAU                          563
+
+                     The Effects of Discounting
+  The third economic consideration is that monetary values re-
+ceived in different time periods are subject to different opportunity
+costs. Specifically, future monetary values cannot be directly equat-
+ed with present monetary values because benefits received in the
+present or costs delayed into the future would be invested to earn
+returns. Thus, a dollar received today at a 6% annual return would
+be worth $1.12 in two years. A future benefit worth $1.12 received in
+two years, then, has a "present value" of $1.00 li.e., ($1.12)/
+(1.06)-]. Similarly, a future cost of $1.12 in two years could be paid
+by investing $1.00 at 6% interest today. In general, the formula for
+the present value {PV) of an amount (a) received or paid out (t)
+periods in the future, at a rate of return (/) may be written:
+                        PVia) = t!/(l + O'(a)]                     (7)
+   The principle of discounting becomes relevant because personnel
+program utility involves benefits and costs which accrue over time.
+Many previously published studies ignore this fact. For example,
+Roche (1961) computed utility per hour for radial drill operators,
+Brogden (1949) used cost data from Tiffin (1942) based on one year's
+salary for hosiery loopers. Van Naersson (1963) used the cost of otte
+year's accidents and driver training, and Schmidt and Hoffman
+(1973) computed replacement cost savings for one year's separa-
+tions. As Hunter and Schmidt (1982b, p. 252) noted, such measures
+are deficient because they fail to refiect that "productivity gains due
+to increased job performance continue to accumulate for as long as
+the employee remains on the job."
+   Some studies have explicitly dealt with the accrual of utility over
+time. Cascio and Silbey (1979) acknowledged this effect by express-
+ing SDy (accruing over five years, with a correlation of .70 between
+any two years) as the one-year SDy times 4.36 (i.e., VT9). Schmidt,
+et al. (1979) simply multiplied the one-year payoff [{t\y){Zy){SDy)]
+by the average tenure of computer programmers (9.69 years). Both
+Schmidt, et al. (1982) and Landy. et al. (1982) also simply multiplied
+by the number of periods over which benefits occur. None of these
+studies incorporated the effects of discounting.
+
+
+Algebraic Derivation: Discounting
+   Including the accrual of benefits and costs over time and the
+effects of discounting requires altering the formula for net benefits.
+Total net benefits for individual, (nbi,sum)j) may be written as the
+
+
+--- PAGE BREAK ---
+
+564                  PERSONNEL PSYCHOLOGY
+
+sum of a Stream of net benefits occurring over T future periods,
+                                     T
+                       nb{sum)j = 2 ribj,                           (8)
+
+where t signifies the time period in which the net benefits occur.
+Thus, nbisum) is actually a random variable over individuals defined
+by the sum of period-to-period net benefits for each individual. To
+account for a discount rate (0, we may write
+                                 T
+               PV[nbisum)] = ^ («^)[I/(I + O'j                 (9)
+                                 /=(
+Which is the correct expression for the pre-tax payoff function in
+light of the economic concept of discounted present value.
+   Defining net benefits in this way. Equation 6 now becomes
+
+AU= (N)
+
+
+
+
+         - TAX)                                                    (10)
+
+Finally, if we note the effects of variable costs by expressing SD^^ as
+the product of SD,,. and 1 + V, we may write
+
+      (N)
+
+
+
+
+Equation 11 indicates that the analytically correct expression for the
+utility accruing from applying a personnel program to a group of
+employees involves not one constant payoff level li.e..
+(rx,y)(Z_^)(SDy) in Equation 1]. but a series of discounted yearly
+payoffs which may vary over time.
+
+
+--- PAGE BREAK ---
+
+                         JOHN W. BOUDREAU                            565
+
+   To isolate the effects of the discount rate, let us ignore variability
+in Tr.jv, and SD,,. over time, treating them as constants (/•,,,.,. and
+SD,^. respectively). This same assumption is implied by Schmidt, et
+al. (1979, 1982) and Cascio and Silbey (1979). For purposes of
+analytical development, let us also assume the variable cost level
+(V,) and tax rate (TAX,) are constant over time. Thus, we may
+rewrite Equation 11 as
+
+
+
+
+X i         [1/(1
+      i=\
+
+
+
+
+- (C)(l - TAX)                                                      (12)
+
+   Note that Equation 12 assumes that the costs of a program (O
+occur only at the beginning of the program (/=0) and thus are not
+subject to discounting (when t=0, PV(a) = a). This is usually true
+for selection programs where all testing occurs prior to hiring.
+Schmidt, et al. (1982. p. 341) noted, however, that some personnel
+programs (e.g. sensitivity training) may require a continuing inter-
+vention in every period. They proposed multiplying the cost term
+(O by 7". In light of the present discussion of discounting, a more
+correct approach would be to multiply the cost term by the discount
+factor
+
+                                       +
+
+to note that program costs as well as payoflFs are subject to
+opportunity costs of time. Costs which occur later affect the present
+value of utility less strongly than more immediate costs.
+
+Research Proposition: Discounting
+  P-i. The larger the discount rate (/), the lower the utility of a
+       personnel program (all else equal).
+  Including the .effect of discounting on utility estimates requires
+estimating the appropriate discount rate. Ogan (1976, p. 310) states,
+*The discount rate may be the average interest rate on U.S.
+Government securities or any other externally determined, objec-
+
+
+--- PAGE BREAK ---
+
+566                  PERSONNEL PSYCHOLOGY
+
+tive factor." This definition is inappropriate for purposes of utility
+analysis for two reasons. First, Ogan's (1976) model estimates the
+value of "human assets" on a "nominal" basis (that is, in dollars
+which may include inflation effects). Previous utility treatments
+have not adjusted future amounts upward to account for inflation.
+Instead, current payoffs have been multiplied by T to reflect only
+accrual of "real" (unadjusted for inflation) amounts. The average
+interest rate on government securities includes an amount to cover
+expected inflation, and thus might overestimate /.
+    Second, the interest rate on government securities reflects a
+guaranteed (risk-free) return. Because personnel programs will be
+employed in all types of organizations from very risky endeavors to
+ relatively risk-free endeavors, the discount rate (/) must reflect the
+fact that risky firms must earn a risk premium and face a higher
+discount rate than less risky firms.
+   Operationally, then, the appropriate discount rate for utility
+analysis should be the rate applied to uninflated benefits and costs
+given the organization's evaluation of overall risk and return re-
+quirements. With this definition in place, we can estimate an
+illustrative range of discount rates.
+   The low end of the range would equal the rate of interest on the
+highest-quality (least risky) investment adjusted for inflation. Ehren-
+berg and Smith (1982, p. 249) reported that the average real interest
+rate (actual rate minus inflation) on the safest corporate bonds from
+ 1953 to 1977 was 2.14%. Thus, at a minimum. / would probably
+equal about .02.
+   The upper end of the range would equal the rate of retum used by
+risky firms to evaluate capital budgeting decisions. Two surveys of
+corporate practices provide some guidance. Gittman and Forrestal
+(1977) found (p. 69) that firms' cost of capital ranged from roughly
+5% to "above" 20%. These rates would apply to nominal (including
+inflation) after-tax benefits and costs, so they must be adjusted
+downward. Using a 1976-77 inflation rate of 6%, the corresponding
+discount rates for real returns would be zero to above 13% (see
+Bierman, 1981. p. 123 for the formula). A similar survey (Schall,"
+Sundem. and Geijsbeek. 1978) found nominal rates of 7 to "greater
+than 17" percent. Using an 8% inflation rate for 1977-1978, these
+correspond to real rates from zero to greater than 8%. The authors
+note that this sample was "biased toward large, stable firms." (p.
+281) which may account for the lower values.
+   As a rough range, then, values for / (in Equation 12) between 0%
+and 15% will be used. Table 2 illustrates the effect of various
+discount rates and tenure levels on the discount factor (DF) defined
+
+
+--- PAGE BREAK ---
+
+                                        JOHN W, BOUDREAU                                                    567
+
+                                      TABLE 2
+      Values of the Discount Factor (OF) At^ustment Computed Using Illustrative
+       Combinations ofValttesfor the Di.scotmt Rate (i) and the Dttration of the
+                                Prof;ram's Effects <Ti
+                                                                 T
+i                     1                    2                     5                    7                      10
+.00                 1.00                 2.00                  5.00                  7.00                  10.00
+.05                  .95                 1.86                  4.33                  5.79                   7.72
+.10                  .91                 1.74                  3.79                  4.87                   6.M
+,15                  .87                 1.62                  3.35                  4.16                   5.02
+ Nuic—Table values are computed using the formula
+            7
+      DF-   2 [1/(1 + rt'l.
+
+
+
+
+as
+
+
+
+Table 3 shows the Table 2 values divided by T. Because Landy, et
+al. (1982). Schmidt, et al. (1979, 1982), and Cascio and Silbey (1979)
+essentially multiplied their one-year values by T, Table 3 shows the
+adjustment needed to discount their values at various levels of 7 and
+/. Tables 2 and 3 illustrate that the longer the duration of a personnel
+program's effects (T) and the higher the discount rate (/). the larger
+the effect of discounting. That is, the larger the reduction in
+undiscounted utility gains [such as those reported by Landy, et al.
+(1982), Schmidt, et al. (1979, 1982) and Cascio and Silbey, (1979)],
+especially in later periods.
+
+                                   TABLE 3
+Values of the Discount Factor Adjustment {From Table 2} Divided hy the Duration
+                          of the Program's Effects (T)
+                                                                     T
+ i                     1                    2                        5                  7                     10
+.00                  1.00                  1.00                1.00                    1.00                  1.00
+.05                   .95                   .93                 .87                       .83                 .11
+.10                   .91                   .87                 .76                       .70                 .61
+.15                   .87                   .81               " .67                       .59                 .50
+    Note.—Table values are compuied using Ihe farmula
+                f
+      DFiT= 2 [1/(1 +iyi/r.
+
+These ailiU5lmems would be applied lo uiilily estimates which multiplied one-year utility values by the duration of
+the program's effecls ID,
+
+
+--- PAGE BREAK ---
+
+ 568                  PERSONNEL PSYCHOLOGY
+
+Empirical Illustrations: Combining the Effects of Variahle Costs,
+Taxes, and Discounting
+
+    Earlier, it was shown that the combined effects of variable costs
+ and taxes could reduce the yearly SDy estimate for computer
+ programmers reported by Schmidt, et al. (1982) from $10,413 to
+ $5,415, producing a reduced total utility estimate. The effects of
+ discounting can be illustrated by noting that Schmidt, et al. (1982)
+ multiply their one-year payoff by T (equal to 2), the duration of the
+ training program's effect. Table 2 indicates that the appropriate
+ multiplication factor would be less than 2 if the discount rate is non-
+ zero. For example, at a discount rate of 10% (i.e., / = .10), the
+ appropriate multiplication factor would be 1.74, not 2. Table 3
+ indicates that this is 87% of the multiplication factor used by
+ Schmidt, et al. (1982). The result is that the yearly payoff from
+ increased performance (after taxes and variable costs) of $5,415 is
+ multiplied by 1.74 instead of 2. Subtracting after-tax treatment costs
+ (which are not discounted in this case because they occur at time
+ period zero, prior to any payoff) of $275 per person, the discounted,
+ after-cost, after-tax utility estimate for the training program is
+ $584,937. This equals 45% of the $1,303,690 value reported by
+ Schmidt, et al. (1982).
+    Unlike Schmidt, et al. (1982). the Cascio and Silbey (1979) study
+ of selection utility accounted for instability in expected perform-
+ ance. Assuming a correlation of .70 between performance in any
+ pair of periods had the effect of multiplying the yearly SDy estimate
+ by 4.36 (i.e., Vl9), rather than the value of 7(5 in this case). Though
+ Cascio and Silbey did not discuss discounting, this instability
+adjustment has the same effect as assuming a discount rate of 4.75%.
+If the discount rate were higher, the appropriate multiplication
+factor would be lower and vice versa. Given the earlier assumptions,
+and using a discount rate of 10%, the resulting discounted after-cost,
+after-tax utility estimate for replacing an interview with an assess-
+ment center would be $41,154. This value equals 27% of the
+$153,855 reported by Cascio and Silbey.
+   The effects of discounting are even more pronounced than these
+examples illustrate when the tenure of those selected or the duration
+of treatment benefits is longer. Schmidt et a!. (1979) published an
+empirical study of a sample with longer tenure. The average tenure
+of computer programmers was 9.69 years. Schmidt, et al. accounted
+for benefits accruing over time by multiplying their one-year esti-
+mated payoffs by 9.69. For organizations facing a discount rate this
+is unrealistic and inflates estimated utility. For example, when /
+
+
+--- PAGE BREAK ---
+
+                                      JOHN W. BOUDREAU                           569
+
+equals .10, the values reported by Schmidt, et al. (1979. Table I)
+would be reduced by about 40%. Specifically {using 7 = 10), the
+range of undiscounted utility reported ($9,061 per selectee to
+$157,282 per selectee) would correspond to a corrected (discounted)
+utility range of $5,741 per selectee, [i.e.. {$9,061)(6.14/9.69)] to
+$99,587 per selectee. (The latter figure refiects costs of $10 per
+applicant when only the PAT is used).
+   This range, however, still reflects the SDy value of $10,413, which
+does not account for variable costs or taxes. While this may have
+been appropriate for the federal government jobs used in Schmidt, et
+al. (1979). it would not be appropriate for private-sector organiza-
+tions facing variable costs and/or taxes. As noted earlier, assuming
+variable costs of 5% and a tax rate of 45%. the after-cost, after-tax,
+one-year SD,,^ value would be $5,415 li.e.. (.52)($10,413)]. Using
+this yearly SD^f, value, and adjusting for the effects of discounting at
+a rate of 10%, the range of utility values reported by Schmidt, et a!.
+(1979, Table 1) would be from $2,985 [i.e.. ($9,06l)(6.14/9.69)(.52)l
+to $51,779 per selectee. (The latter figure reflects after-tax costs of
+$5.50 per applicant). These values are still substantial, but are only
+33% of the reported values.
+
+                                                Summary
+   Individually, and in combination, the economic considerations
+presented here indicate substantial biases (especially upward biases)
+in published utility estimates when such estimates do not reflect the
+effects of variable costs, taxes, and discounting. Table 4 summarizes
+the magnitude of the adjustments implied by these considerations.
+
+
+                                    TABLE 4
+ Illustrative Adjustments to Correct Utility Estimates for the Combined Effects of
+    Selected Levels of Variable Cav/.v f V). Taxe.i (TAX), and Discount Rates (i)
+                                        Utility Model Parameter Level     Combined
+    Adjustment                            V                TAX      /    Adjustment"
+No Change                                 .00               ,00    ,00       1.00
+Largest Upward                            .33               .00    .00       1.33
+Moderate Downward                       -.15                .20    .05        .59
+Largest Downward                        -.50                .55    .15        .16
+  * Ttiese values are computed using the formula
+
+
+
+
+The duration of program effects ,(T1 is assumed to be 5 periods.
+
+
+--- PAGE BREAK ---
+
+570                  PERSONNEL PSYCHOLOGY
+
+   The last column of Table 4 contains the adjustment which would
+be multiplied by the estimated sales value of increased job perform-
+ance [i.e.. {N){T)(r,_,)(Z,){SDy) in Equation 1. or (N)iT)(d,)(SDy) in
+Equation 2] from existing utility models. The adjustments in the last
+column correspond to three levels of each variable. Previous utility
+treatments have implied that V. TAX, and / all equal zero, as shown
+in the first row of Table 4. The second row of Table 4 indicates the
+set of assumptions producing the highest upward adjustment. Large
+cost reductions are associated with sales value increases (V= + .33)
+and the applicable taxes and discount rates are assumed to equal
+zero. Adjusted utility estimates would equal 133% of previously
+reported values. The third row of Table 4 depicts the results of
+assuming a moderate and positively-variable cost proportion
+(V=-. 15), a moderate tax rate (TAX = .20) and a moderate discount
+rate {i^ .05). Under these assumptions, the adjusted utility estimates
+would equal 59% of reported values. Finally, in the fourth row, all
+parameters are set at levels which would lead to large downward
+adjustments in utility values as typically reported. These adjustment
+levels reduce pre-cost, pre-tax, undiscounted utility estimates to
+16% of previously reported levels. If T were greater than five
+periods [as in Schmidt, et al. (1979)1, the reductions would be still
+greater.
+   Across various situations, the actual levels of these variables will
+differ. The values in Table 4 are provided to illustrate the substantial
+range of the effects variable costs, taxes, and discounting can have
+on personnel program utility. In view of the variability and magni-
+tude of such effects. Equation 12 provides a more complete utility
+formula than those previously used, (Equations 1 and 2): a formula
+likely to produce less biased (though often lower) utility estimates
+for personnel programs.
+
+                 Implications for Future Research
+   The three economic concepts discussed here indicate that existing
+utility estimates can overstate actual economic utility whenever
+positively-related variable costs, taxes, and/or discount rates affect
+an organization's payoff function and decision making. The algebra-
+ic formulas incorporating these factors are conceptually straightfor-
+ward. In view of the magnitude of the possible effects of these
+factors (especially in combination), the utility formulas presented
+here provide a more complete definition of utility than previous
+models. Euture research should incorporate these economic con-
+cepts into utility analyses to avoid producing deficient and possibly
+upwardly biased utility estimates.
+
+
+--- PAGE BREAK ---
+
+                        JOHN W. BOUDREAU                           571
+
+   Estimates of the tax rate and discount rate are already frequently
+used by organizations in evaluating other financial and economic
+decisions, so it is likely that an organization's accountants or
+financial experts can provide reasonably accurate estimates of these
+parameters. The present utility model contributes to this process by
+specifying the precise nature of these parameters. Eor example,
+because utility analyses usually produce estimates of the real
+(unadjusted for infiation) sales value of increased productivity over
+time, utility analysts must adjust the traditional discount rates used
+in financial analysis (which reflect inflation) downward. As noted
+earlier, when inflation is high this adjustment substantially reduces
+the nominal discount rate.
+   Estimates of variable service eosts are probably less readily
+available. Financial records are often not designed to separate costs
+which vary with program-induced increases in productivity from
+fixed costs. The present discussion has identified the service cost
+concept more precisely than previous treatments, pointing out the
+pitfalls of mistaking allocated fixed costs for variable costs and of
+mistaking wages or salaries for sales value. Thus, data on service
+costs may now be gathered more systematically. Further research is
+needed which explores ways to estimate service costs within this
+conceptual definition.
+   The present utility model provides a more precise definition of
+economic utility considerations which can facilitate the "closer
+liason between personnel psychologists and cost accountants"
+proposed by Cascio and Silbey (1979, p. 116). Landy, et al. (1982)
+suggest that validity may be indicated by positive correlations
+between cost accounting procedures and direct utility estimation
+procedures. Cost accounting utility estimates will (and should)
+incorporate the economic concepts discussed here. Recognizing
+these concepts in direct utility estimates provides a much stronger
+test of the convergence between the two procedures (both in terms
+of shape, indicated by correlations, and in terms of level). In
+addition by making such economic considerations explicit, incon-
+sistencies may be more thoroughly explained and addressed.
+    Incorporating these economic variables into utility estimates will
+ require research addressing the nature of the economic variables
+themselves. Landy, et al. (1982) suggest a need for descriptive
+ research elaborating the contextual or boundary conditions affecting
+ utility. This research would examine the behavior of SDy across job
+families and job titles. Such research can provide information on
+ inter- and intraorganizational SDy variation. It is critical that such
+ research recognize and include the economic concepts discussed
+ here. Not only are jobs, job families, companies, and industries
+
+
+--- PAGE BREAK ---
+
+572                   PERSONNEL PSYCHOLOGY
+
+  likely to differ in SD, based on sales value or revenue (as measured
+  by previous authors), but the proportion of variable costs, effective
+ tax levels, and discount rates are also likely to vary. In fact, it is
+  possible that a great deal of interorganizational variability in utility
+  within job families may be due to such economic variables. Includ-
+ ing such variables in future utility analyses is likely to increase the
+ ability to predict, explain, and more precisely generalize the utility
+ implications of personnel programs.
+     Apart from assessing the behavior of the economic parameters
+ themselves, future research incorporating these concepts may help
+ to explain inconsistencies in SDy estimates produced by existing
+ "rational" estimation methods. Two very different concepts have
+ been used to define the underlying dollar scale in previous SDy
+ estimates. Schmidt, et al. (1979) asked supervisors to estimate the
+ ''value of output" (p. 621)of computer programmers, and instructed
+ them to "consider what the cost would be of having an outside firm
+ provide these products and services" (emphasis added). Cascio and
+ Silbey (1979), as noted earlier, asked third-level sales managers to
+ estimate the yearly "dollar value of sales to the company" produced
+ by second-level sales managers (p. 110, emphasis added).
+     One recent study (Bobko and Karren. 1982) compared both
+approaches by having 13 supervisors estimate the "total yearly
+dollar sales" produced by insurance counsellors in one year, and
+then having the supervisors make another estimate considering what
+ it would cost to have an outside firm provide the products and
+services. Bobko and Karren's results indicate that the average
+supervisory estimate of the standard deviation of "sales revenue"
+was not significantly different from the actual standard deviation of
+sales revenue. The within-sample standard deviations of these
+estimates however, were roughly as large as the averages, indicating
+inconsistencies in the SD, estimates. When estimates of the cost of
+obtaining services from an outside firm were gathered, the averages
+were much smaller and the within-sample standard deviations of the
+estimates were larger than the averages, again indicating inconsis-
+tency within the sample. Bobko and Karren note that the "substan-
+tial variation [in SDy estimates] suggests a need for research to
+explain differences among supervisors in these cognitive estimates"
+(p. 275).
+    The economic considerations presented here provide a framework
+for systematically conducting such research and for explaining such
+results more thoroughly. For example, these considerations indicate
+that the "concrete standard" suggested by Schmidt, et a!. (1979)
+may be inappropriate or confusing in an economic sense. The value
+
+
+--- PAGE BREAK ---
+
+                        JOHN W. BOUDREAU                         573
+
+of products and services "as sold" is not equal to the cost of
+obtaining them from outside contractors. A rational economic
+organization would pay an outside firm a maximum of the costs to
+provide the services in-house, not their sales value. Paying more
+would not be rational because at higher contractor prices the firm or
+manager would rather provide the services themselves and save the
+cost difference.
+   By using both the "overall value o f and the "costs of obtaining"
+goods and services as standards in the same measure, the Schmidt,
+et al. (1979) estimation procedure may introduce confusion and
+resulting unreliability into SDy estimates. Moreover, to interpret
+estimates based on this "standard" as reflecting the value of
+products and services "as sold" (Hunter and Schmidt. 1982b) may
+be highly speculative.
+   This observation is not intended to discount the genuine opera-
+tional advantages of "rational" SDy estimates or the contributions
+of those who have applied them. It does illustrate, however, that the
+economic concepts embodied in the present utility model provide a
+framework for investigating how such "rational" estimates are
+made, what phenomena they reflect, and how to improve future
+operational SDy estimation procedures.
+   An important research direction not addressed previously but
+implied by the present discussion involves the temporal stability of
+utility parameters. All previous treatments have assumed r,,, and
+SDy are constant over time within the treated (e.g., selected) group.
+The present utility discussion has also added the assumption that
+variable costs and taxes remain constant. As shown in Equation 11,
+however, these assumptions are not necessary to utility analysis.
+They are made for convenience and may obscure important phe-
+nomena. For example, the most recently proposed selection utility
+estimation procedures (Cascio and Silbey. 1979; Cascio. 1982;
+Schmidt, etaL, 1979; Janz and Dunnette, 1977) estimate 5D,,. for the
+existing incumbent population and then assume this value applies to
+the .selected firoup throughout its tenure. Schmidt, et al. (1979) and
+Hunter and Schmidt (1982b) note that such estimates may underesti-
+mate SD,,. in the applicant population due to'range restriction.
+However, such estimates also fail to recognize that the analytically
+correct SD^,. value comprises a sum of single-period values reflect-
+ing the tenure of the cohort and might change with increasing tenure
+(see Equation 11). Thus SD^,^ (in period I) should reflect variability
+in service value among applicants who begin with no work experi-
+ence. In period 2, 5D,n, should reflect variability in service value
+among applicants who begin with one year's experience, and so on.
+
+
+--- PAGE BREAK ---
+
+574                      PERSONNEL PSYCHOLOGY
+
+No existing research has addressed this eflfect, so its magnitude
+remains an empirical question.
+
+                                    Conclusion
+   In their recent Personnel Psychology article. Schmidt, et al.
+(1982) suggest that their reported utility estimates may be "greater
+than has generally been assumed" (p. 345). If so. one explanation
+may be that such utility estimates overlook economic considerations
+which affect organizational investment planning and decision mak-
+ing. This is especially true when these considerations indicate
+substantial reductions in reported utility estimates, as demonstrated
+here. This discussion has shown that utility estimates recognizing
+such economic considerations reflect a substantially different, more
+realistic, and more complete description of the effect of personnel
+programs. In view of the economic nature of most organizations,
+utility estimates incorporating these economic concepts are likely to
+better reflect the "bottom line"" (Landy, et al.. 1982} contribution of
+personnel programs.
+   By incorporating economic adjustments into the Brogden-Cron-
+bach-Gleser selection utility model [as well as the more recent
+Schmidt, et ai. (1982) version of this model extending it to other
+personnel programs], the present utility model provides a utility
+deflnition arguably more consistent with the economic nature of
+most organizations, and more compatible with typical investment
+analyses. The dollar-valued effects of personnel programs often
+remain substantial even after accounting for variable costs, taxes,
+and discounting. This is apparent in the illustrations presented.
+Thus, in addition to extending the theoretical deflnition of utility and
+suggesting new research directions, the present model may provide
+a more defensible and realistic utility deflnition. This utility defini-
+tion can often lead to lower utility estimates, but when such
+estimates remain substantial, they provide more compelling evi-
+dence for the utility to be derived from personnel programs.
+
+                     •           REFERENCES
+Belcher. D. W. Compensation administration. Englewood Cliffs. NJ: Prentice-Hall,
+  Inc.. 1974.
+Biermati, H, J. Financial management and ii\fiation. New York: The Free Press,
+  1981,
+Bierman. H. J. and Smidt. S. The capital budgeting decision (3rd ed.). New York:
+  MacMillan, 1971,
+Bobko, P, and Karren. R. The estimation of standard deviations in utility analysis. In
+  K. H. Chung (Ed.) Proceeding.s of the forty-second annual meeting of the
+
+
+--- PAGE BREAK ---
+
+                              JOHN W. BOUDREAU                                  575
+
+  Academy of Management. New York: Academy of Management. 1982, 272-276.
+Boudreau. J. W. and Berger. C, J. Toward a conceptual model of employee
+  movement utility. In K. M. Rowland and G. R. Ferris (Eds.), Research in
+  personnel and human resource management, in press.
+Brealey. R. A. and Myers, S. C. Principles of corporate finance. New York:
+  McGraw-Hill. 1981.
+Brogden. H. E. On the interpretation of the correlation coefficient as a measure of
+  predictive efficiency. Jmtrnul of Edttcalional Psychology, 1946. Xl, 64-76.
+Brogden. H. E. When testing pays off. PERSONNEL PSYCHOLOGY. 1949. 2. 171-185.
+Brogden. H. E. and Taylor. E. K. The dollar criterion—applying the cost accounting
+  concept lo criterion construction. PERSONNEL PSYCHOLOGV. 1950. 3. 133-154.
+Cascio. W. E. Responding to ihe demand for accountability: A critical analysis of
+  three utility models, Organizational Behavior and Human Performance, 25. 1980,
+  32-45.
+Cascio, W, F. Costing human resources: The financial impact of behavior in
+  organizations. Boston. MA: Kent, 1982.
+Cascio, W. F. and Silbey, V. Utility of the assessment center as a selection device.
+  Jotirna! of Applied Psychology, 1979,64, 107-118.
+Copeland. R. M. and Dasher, P. E. Managerial accounting. Santa Barbara, CA:
+  Hamilton Publishing Co.. 1974.
+Cronbach, L. J. and Gleser. G. Psychological tests and personnel decisions, Urbana.
+  IL; University of Illinois Press, 1965.
+Doppelt. J. E. and Bennett, G. K. Reducing the cost of training satisfactory workers
+  by using tests. PERSONNEL PSYCHOLOGY, 1953, 6, 1-8.
+Ehrenberg. R. and Smith. R. Modern labor economics. Glenview. Illinois: Scotl,
+  Foresman and Co.. 1982.
+Gittman. L. T. and Forrestal. J. R., Jr. Capita! budgeting techniques used by major
+  firms. Financial Management, Fall, 1977, 6, 66-71.
+Gordon. M. E. and Johnson. W. A. Seniority: A review of its legal and scientific
+  standing. PERSONNEL PSYCHOLOGY. 1982. 35. 255-280.
+Horngren, C. T. Introduction to management accounting. Englewood-Cliffs. NJ:
+  Prentice-Hall, 1981.
+Hunter, J. E. and Schmidt, F. L. Ability tests: Economic benefits versus the issue of
+  fairness. Industrial Relations, 1982. 21. 293-308. (al
+Hunter, J. E. and Schmidt. F. L. Fitting people to jobs: The impact of personnel
+  selection on national productivity. In M. D. Dunnette and E. A. Fleishman (Eds.),
+  Human performance and prodtictivity (Volume I). Hillsdale, NJ: Eribaum Asso-
+  ciates. 1982. (b)
+Janz, J. T. and Dunnetle. M. An approach to selection decisions; Dollars and sense.
+  In Hackman. J. R., Lawler, E., & Porter. L. W. (Eds.), Perspectives on behavior
+  in organizations. New York: McGraw-Hill, 1977.
+Landy, F. J., Farr, J. L., and Jacobs. R. R. Utility concepts in performance
+  measurement. Organizational Behavior and Htnnan Performance. 1982. 30. 15-40.
+Lee. R. and Booth, J. M. A utility analysis of a weighted application blank designed
+  to predict turnover for clerical employees. Journal of Applied Psychology, 1974,
+  59,516-518.
+Ogan, P. A human resource value model for professional service organizations. The
+  Accotmting Review, 1976. 51, 306-320.
+Roche, U. J. The Cronbach-Gleser utility function in fixed treatment employee
+  selection (Doctoral dissertation. Southern Illinois University. I%1). Dissertation
+  Abstracts International, 1961-62, 22, 4413. (University Microfilms No. 62-1570).
+
+
+--- PAGE BREAK ---
+
+576                      PERSONNEL PSYCHOLOGY
+
+Schall. L. D.. Sundem. G. L.. and Geijsbeek. W. R.. Jr. Survey and analysis of
+  capital budgeting methods. Journal of Finance. 1978. 33. 281-287.
+Schmidt. F. L. and Hoffman, B. Empirical comparison of three methods of assessing
+  utility of a selection device. Journal of Industrial and Organizational Psychology.
+   1973. 1973, 13-22.
+Schmidt, F. L., Hunter, J. E.. and Pearlman. K. Assessing the economic impact of
+  personnel programs on work-force productivity. PERSONNEL PSYCHOLOGY, 1982,
+  35. 333-347,
+Schmidt, F. L., Hunter, J, E,, McKenzie, R. C . and Muldrow. T. W, Impact of valid
+  selection procedures on work-force productivity. Journal of Applied Psychology.,
+   1979. 64, 609-626.
+Tiffin, J. Industrial psychology. New York: Prentice-Hall, 1942.
+Tiffin, J. and McCormick. E. J. Industrial psychology. (4th ed.), Englewood, Cliffs,
+   NJ: Prentice-Hall, 19S8.
+U.S. master tax gtiide. 1982. Chicago. IL: Commerce Clearing House. 1981.
+Van Naersson. R, F. Selecrie van chauffers. Groningen: Wolters. 1963, ln L, J.
+  Cronbach and G. C. Gieser, Psychological tests and personnel decisions (2nd ed.l.
+   Urbana: University of Illinois Press, 1965.
+Weston. J. F. and Brigham. E. F. Managerial finance (6lh ed.) Hinsdale, IL: Dryden
+   Press. 1978.
+
+
+--- PAGE BREAK ---
+
+

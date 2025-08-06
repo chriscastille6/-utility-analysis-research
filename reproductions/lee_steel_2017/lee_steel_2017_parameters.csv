@@ -1,0 +1,7 @@
+"parameter","value","description"
+"N",100,"Number of employees selected"
+"T",10,"Tenure in years"
+"rxy",0.3,"Validity coefficient"
+"SDy",10000,"Performance standard deviation ($)"
+"m",0.2,"Selection ratio (proportion)"
+"C",100,"Cost per applicant ($)"

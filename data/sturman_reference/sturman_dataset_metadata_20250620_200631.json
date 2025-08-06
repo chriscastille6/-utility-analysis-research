@@ -1,0 +1,36 @@
+{
+  "dataset_info": {
+    "title": ["Sturman (2000) Monte Carlo Reference Dataset"],
+    "description": ["10,000 Monte Carlo simulations replicating Sturman's utility analysis adjustments"],
+    "n_simulations": [10000],
+    "random_seed": [42],
+    "timestamp": ["2025-06-20 20:06:31"],
+    "r_version": ["R version 4.4.2 (2024-10-31)"]
+  },
+  "parameter_ranges": {
+    "n": ["1 to 1,100 (exponential distribution)"],
+    "t": ["1 to 10 years (uniform)"],
+    "sr": ["0.05 to 1.0 (uniform)"],
+    "r": ["0.10 to 0.70 (uniform)"],
+    "sdy": ["$5,000 to $50,000 (uniform)"],
+    "cost": ["$10 to $1,000 (exponential distribution)"],
+    "discount": ["0.05 to 0.15 (uniform)"],
+    "tax": ["0.20 to 0.40 (uniform)"],
+    "vc": ["0.10 to 0.30 (uniform)"],
+    "r_old": ["0.05 to 0.38 (uniform)"]
+  },
+  "key_results": {
+    "general_usefulness_median_reduction": [60],
+    "economic_adjustment_impact": [60],
+    "negative_cases_percent": [1],
+    "sturman_target_general": [291],
+    "sturman_target_lw": [96],
+    "replication_gap_general": [231]
+  },
+  "files_created": {
+    "main_dataset_csv": ["sturman_reference_dataset_20250620_200631.csv"],
+    "main_dataset_rds": ["sturman_reference_dataset_20250620_200631.rds"],
+    "summary_stats": ["sturman_summary_stats_20250620_200631.csv"],
+    "usefulness_analysis": ["sturman_usefulness_stats_20250620_200631.csv"]
+  }
+}

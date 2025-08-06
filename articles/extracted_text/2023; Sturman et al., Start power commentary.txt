@@ -1,0 +1,666 @@
+The International Journal of Human Resource Management
+2023, VOL. 34, NO. 13, 2582–2594
+https://doi.org/10.1080/09585192.2023.2225282
+
+COMMENT
+
+The theoretical value of understanding HRM’s
+financial value
+Michael C. Sturmana, Xueqing Fana# and Hanbo Shimb
+a
+ Department of Human Resource Management, School of Management and Labor Relations,
+Rutgers, The State University of New Jersey, ‎Piscataway, New Jersey, USA; bDepartment of
+Management, College of Business, University of Texas at Arlington, Arlington, Texas, USA
+
+
+
+    ABSTRACT                                                              KEYWORDS
+    Although the paper by Joo et al. (2022) purports to demon-            Employee value;
+    strate the value of acquiring star performers, we argue that          utility analysis;
+    the value of their paper lies more in the demonstration of            strong theory;
+                                                                          computational modeling
+    the use of utility analysis as strong theory, implemented
+    with computational modeling. We articulate why we see the
+    Joo et al. (2022) paper contributing to a strong theory about
+    employee value and how its efforts represent more of a the-
+    oretical contribution to the star performers, employee value,
+    employee performance, and utility analysis literatures than
+    one simply about the specific returns on investment related
+    to acquiring star employees. Our commentary explains our
+    view of their contribution and develops new questions and
+    directions for future research that this perspective implies.
+
+
+
+
+Introduction
+The intent of the paper by Joo et al. (2022) is to provide a better under-
+standing of the financial value of star performers. To accomplish their
+goal, they use various processes for computing the value of employee
+performance (SDy), which are then incorporated into utility analyses. The
+authors offer a number of conclusions from their paper, including that
+their ‘overall empirical finding was that HRM creates greater financial
+value by obtaining more stars’ (p. 29), that their ‘results highlight the
+need to use utility analysis procedures that more fully consider the pres-
+ence of stars’ (p. 27), and that ‘extant procedures often significantly
+underestimated the value brought by obtaining more stars’ (p. 27). We
+do not dispute the analytical approach or mathematical findings from
+
+CONTACT Michael C. Sturman         michael.sturman@rutgers.edu        Department of Human Resource
+Management, School of Management and Labor Relations, Rutgers, Rutgers, The State University of New
+Jersey, Piscataway, NJ, USA.
+#
+ Department of Organization Management, Antai College of Economics and Management, Shanghai Jiao Tong
+University, Shanghai, China.
+© 2023 Informa UK Limited, trading as Taylor & Francis Group
+
+
+--- PAGE BREAK ---
+
+                  The International Journal of Human Resource Management   2583
+
+
+Joo et al. (2022); in fact, we applaud them. We argue, however, that the
+empirical findings from Joo et al. (2022) are unsuited for making claims
+about the validity of the proposed methods. That said, what we see
+instead is a larger contribution: one that speaks to how research can
+develop more precise theory about the nature of employee performance.
+   The Joo et al. (2022) paper provides a series of approaches that esti-
+mate the extent to which differences in performance have financial impli-
+cations for organizations. In the set of techniques known as utility
+analysis, the key parameter SDy is defined as the dollar value of a one
+standard deviation difference in the criterion (Boudreau, 1991; Cascio
+et al., 2019). As originally defined, this parameter assumes that the orga-
+nizational value contributed by employees is normally distributed. As Joo
+et al. (2022) appropriately criticize, this assumption conflicts with key
+advances in the study of job performance: there exist star performers
+who produce disproportionally larger amounts of output compared to
+their peers (e.g. Asgari et al., 2021; Kehoe et al., 2018; Morris et al.,
+2021; O’Boyle & Aguinis, 2012; Taylor & Bendickson, 2021) thus making
+the distribution of job performance non-normal (Aguinis et al., 2016;
+O’Boyle & Kroska, 2017). Consequently, Joo et al. (2022) employ various
+methods of computing SDy to represent the idea that the value from
+employee performance is non-normal and in particular is influenced by
+the substantial contributions of star employees. The methods they use, in
+order of their presentation, give greater heed to this non-normality.
+   Through a large number of demonstrations of utility analysis calcula-
+tions, varying a number of parameters and contrasting the results from
+the different methods for estimating SDy, the authors conclude that stars
+do contribute greater value because the method of SDy that best incor-
+porates the non-normality of actual performance scores—the method
+they call the ‘observed distribution procedure’—produces notably higher
+estimates of workforce utility. We argue that this conclusion is not sup-
+ported; at the same time, we do not say it is falsified nor do we claim
+that it is incorrect. Rather, we argue that there is simply no way to val-
+idate the financial predictions made by these utility analyses. This is a
+limitation of the utility analysis technique (Sturman, 2012) and not a
+particular fault of the Joo et al. (2022) paper. On the other hand, the
+contribution we feel that is truly made here is that the authors provide
+a critical step to develop and refine a strong theory of employee perfor-
+mance value that is indeed a major contribution to research on star
+employees, employee value, employee performance, and utility analysis.
+Their work provides a more specified theoretical structure that informs
+a computational model (cf., Ballard et al., 2021; Harrison et al., 2007),
+demonstrating the implications of non-normality in performance ratings
+at the organizational level. In other words, we argue that Joo et al. (2022)
+
+
+--- PAGE BREAK ---
+
+2584    M. C. STURMAN ET AL.
+
+
+make an interesting and highly valuable contribution because they refine
+theory of the value of employee performance and use that information
+through an application of computational modeling to enhance the field’s
+understanding of the implications of that theory.
+
+
+Refinement of a strong theory of job performance
+The idea that employee performance has value and that this value var-
+ies across employees is a fundamental assumption of the driving para-
+digm of human resource research. This idea speaks to why it is
+important to study employee performance and performance measure-
+ment; it also explains why there is potential value in investments in the
+workforce in general and in some valued employees in particular.
+Although this assumption is rarely explicitly stated, it must be accepted
+if one is seeking to understand how firms create and capture value
+from employee job performance (Barney & Clark, 2007; Bowman &
+Ambrosini, 2000; Call & Ployhart, 2021; Lepak et al., 2007; Sundaram
+& Inkpen, 2004).
+   The explicit modeling of employee value, though, is far less com-
+mon. Examples include calculating differences in value from ‘good’ ver-
+sus ‘poor’ employees (Tiffin, 1942) or otherwise providing a linear
+function to convert employee performance or productivity into a dollar
+value (Brogden & Taylor, 1950, Schmidt & Kaplan, 1971). These means
+of converting information about employee job performance to a spe-
+cific metric of value (e.g. dollars, euros, yuan), however, have gone
+untested (Sturman, 2012). In the spirit of the long-articulated (e.g.
+Meehl, 1967, 1978) and often reiterated (e.g. Edwards & Berry, 2010;
+Meehl, 1990) view that management theory should increase its preci-
+sion, Sturman (2012) called for greater attention to making explicit the
+idea of employee value, using theory to improve such estimates, refin-
+ing methodological tools to examine such estimates, and ultimately
+using these estimates to develop theoretical models of employee out-
+comes. A key contribution of Joo et al. (2022) is that it actually pro-
+vides a refined estimate of employee value creation, driven by the
+theoretical and empirical contributions of research on ‘star performers’
+(e.g. Joo et al., 2017; Kehoe et al., 2018). Joo et al. (2022) then use this
+improved model of employee value creation to inform and specify the
+implications of the human resource effort of acquiring more star
+performers.
+   As Joo et al. (2022) well note, the ‘classic’ utility analysis formula
+(Brogden, 1949; Cronbach & Gleser, 1965) includes a linear transforma-
+tion of employee performance scores into financial terms. This is accom-
+plished using the metric known as SDy, which represents the financial
+
+
+--- PAGE BREAK ---
+
+                   The International Journal of Human Resource Management   2585
+
+
+value of an employee who performs one standard deviation above aver-
+age (Boudreau, 1991; Cascio et al., 2019).
+
+                                        ∅
+                  =U N S SD y r           − N AC A                          (1)
+                                        p
+   This equation provides the utility formula for evaluating a selection
+context. In the formula, U = financial value of using the selection device;
+NS = number of applicants selected; r = validity coefficient for the selec-
+tion device; p = proportion of applicants acquired (i.e. the selection ratio)
+while assuming top-down acquisition; ∅ = ordinate (i.e. height) of a nor-
+mal curve associated with the selection ratio; NA = number of applicants;
+                                             φ
+and CA = cost per applicant. The ratio ( ) provides the average value,
+                                             p
+expressed in standardized units, of those selected,   which is based on the
+assumption that the quality of applicants on the selection test follows a
+                                                       φ
+normal distribution. Then, the product of r and ( ) provides the pre-
+dicted average job performance of those hired, expressedp    in standardized
+units. Thus, multiplying this product by SDy (which is the value of
+employee performance expressed in standardized units) provides the
+value gained, on average, from each selected individual. Although Joo
+et al. (2022) demonstrate the implications of non-normally distributed
+performance value due to the presence of stars for a selection context,
+the implications of their approach are applicable to utility analytic eval-
+uations of any sort of human resource practice, such as in compensation
+(e.g. Sturman et al., 2003) or for training and development (e.g. Avolio
+et al., 2010; Carretero-Gómez & Cabrera, 2012).
+   As this basic description of the mathematics shows, there are assump-
+tions made about the nature of the utility analysis parameters. By its
+definition and how it is employed in the above formula, SDy assumes
+both a linear transformation between performance and value and nor-
+mality of the related distributions: the distribution of scores on the selec-
+tive device, the distribution of performance scores, and therefore the
+resulting distribution of employee value. While many have noted this
+issue as a criticism of utility analysis (e.g. Boudreau, 1991; Boudreau
+et al., 1994; Cascio et al., 1992; Cronbach & Gleser, 1965; Macan &
+Highhouse, 1994; Schmidt et al., 1979), Joo et al. (2022) actually take
+steps to address this limitation.
+   Originally, utility analysis was proposed as a tool to help make human
+resource investment decisions. While this specific purpose has met with
+limited success as a practitioner decision aid (cf., Latham & Whyte, 1994;
+Sturman, 2000; Whyte & Latham, 1997), Sturman (2012) proposed that
+utility analysis may better serve as a theoretical tool because it provides
+an explicit way to model employee value yielding specific predictions.
+
+
+--- PAGE BREAK ---
+
+2586    M. C. STURMAN ET AL.
+
+
+Joo et al. (2022) have done just this. They have refined theory of employee
+value by providing a new function in place of SDy where this function
+is based on the advancement in the human resource literature that star
+employees exist and employee performance does not follow a normal
+distribution.
+   Viewed in this way, Joo et al. (2022) provide a theory-based refine-
+ment that better expresses the value associated with employee perfor-
+mance given the performance distribution of a particular job. Although
+not explicitly stated in such terms, the Joo et al. (2022) paper provides
+a seemingly slight but ultimately impactful change to the utility formula,
+replacing the constant parameter SDy with a value function. Representing
+that value function as v(p), the formula changes incrementally but impor-
+tantly to
+
+                                                 ∅ 
+                               U = N S v ( p ) r   − N AC A            (2)
+                                                  p 
+
+   The Joo et al. (2022) paper walks the reader through a series of value
+functions that increasingly account for non-normally distributed perfor-
+mance scores. Specifically, they provide four methods of computing
+SDy—what we now label as v(p)—that begin to incorporate the potential
+for non-normality in the performance-to-value conversion. We wish to
+highlight this particular effort, as we argue it constitutes an effort to
+refine the theory of employee value. So, in contrast to the simplest depic-
+tion of employee value—where SDy equals a constant of 0.4 times the
+average annual wage of a position—their proposed estimate is that v(p)
+equals the observed standard deviation of employee performance divided
+by the estimated standard deviation of performance (based on estimates
+of performance at the 85th, 50th, 15th, and minimum distribution), times
+1.1 times the average salary.1
+
+
+Why this value function matters
+The reason we highlight the introduction of a value function to the util-
+ity analysis formula is because it provides a refinement to the theory of
+human resource value. A theory-driven refinement of the estimation of
+employee utility shows that consideration of the non-normality of
+employee performance yields substantially different estimates of work-
+force value by an average factor of 9.08 (nearly a single order of magni-
+tude). Showing that utility analysis estimates can be bigger is itself not a
+major contribution, considering that a key criticism of the basic utility
+analysis formula is it yields estimates that are likely far too large anyway
+
+
+--- PAGE BREAK ---
+
+                   The International Journal of Human Resource Management   2587
+
+
+(Sturman, 2000). The contribution here comes from the new research
+questions that can be considered with a revised, more precise estimate of
+the employee value function.
+   With this new value function, Joo et al. (2022) examine the value
+associated with obtaining more star performers. More notably, they delve
+into the pattern of the value function associated with different propor-
+tions of stars based on distinct distributional assumptions. By comparing
+differences in value obtained by the implementation of the various value
+functions, Joo et al. (2022) show that productive stars add great financial
+value to the organization and there exist diminishing returns for focusing
+on obtaining the most productive stars. It is only by contrasting these
+different value functions that they are able to reach this conclusion, thus
+showing that having a more precise theory of employee value informs
+new research possibilities.
+
+
+Utility analysis as computational modeling rather than decision aid
+We have argued that the Joo et al. (2022) paper, by presenting a formal
+model based on theoretical reasoning, provides a demonstration on how
+utility analysis can serve a theoretical purpose for articulating how
+human resource practices influence individual performance thereby hav-
+ing an influence on organizational value. Utility models, by their nature,
+describe an emergence process: how individual-level employee perfor-
+mance emerges as organizational-level value. The value function is the
+parameter that lies at the core of how individual-level behaviors translate
+to organizational-level outcomes. Furthermore, although not specifically
+part of Joo et al.’s (2022) application, the longitudinal application of util-
+ity analysis has long been considered (Boudreau & Berger, 1985). As
+such, utility analysis models can be seen as the basis for computational
+modeling (Ballard et al., 2021; Davis et al., 2007; Harrison et al., 2007).
+   Computational modeling ‘is the practice of articulating theory in the
+form of mathematical equations…and evaluating… theory by simulating
+the model’ (Ballard et al., 2021, p. 252). In this light, refining the utility
+model is refining the functions upon which a computational model can
+be based. The utility models run by Joo et al. (2022) are thus actually
+computational models, describing the effects of selection systems given
+various parameters (the various characteristics of the selection system as
+described by Joo et al. (2022) in addition to the key parameter of the
+value function). For example, in the value functions—labeled as v(p) in
+Equation 2 above—Joo et al. (2022) incorporate the effects caused by
+non-normality in employee performance. They also demonstrate the con-
+sistency of their implications by varying a set of other parameters in
+their modeling. The computational modeling Joo et al. (2022) employ
+
+
+--- PAGE BREAK ---
+
+2588    M. C. STURMAN ET AL.
+
+
+allows them to reveal the overall trend of their findings; it also allows
+further investigation into how sensitive their results are to other param-
+eters in their model (Sturman, 2000). While the computational model
+they employ is fairly simple—it is static, based on fairly straight-forward
+arithmetic operations, and does not consider performance or utility over
+time—it is still an instance of how the utility analysis tool can be applied
+to computational modeling, and thus how computational models can
+provide particular conclusions.
+   Going forward, utility analysis can be used to create more complex—
+and thus hopefully more theoretically interesting and accurate—compu-
+tational models. Again, we recognize that it was not Joo et al.’s (2022)
+purpose to demonstrate such an application; rather, we see that what
+they have done has great potential in this area and presents perhaps the
+first effort to make such a demonstration, purposefully or not. Taking
+into account all of the utility analysis enhancements for future efforts
+would certainly reach a level of complexity that would be made easier
+with computer modeling (Sturman, 2000, 2003). Computational model-
+ing is increasingly advocated as a method for developing and testing
+complex theories (e.g. Ballard et al., 2021; Ballard et al., 2016; Harrison
+et al., 2007; Vancouver et al., 2020), and there have certainly been many
+complex developments that have been proposed to the basic utility model
+(e.g. Boudreau, 1983a; Boudreau, 1983b; Boudreau & Berger, 1985; De
+Corte, 1994; Murphy, 1986). Joo et al. (2022) present a new complex
+component—the value function—to the utility model, yet one that is
+driven by theoretical developments related to job performance rather
+than contextual aspects of the human resource intervention being exam-
+ined. Including a more complex value function with the host of other
+utility analysis refinements would provide an improved theoretical model
+rather than a better practitioner-oriented decision aid.
+
+
+Other contributions and new research directions
+Beyond its potential contributions to computational modeling, when one
+considers Joo et al. (2022) through the lens of a paper contributing to
+our understanding of the performance value function, the paper’s impli-
+cations for future research increase. While a key contribution of the Joo
+et al. (2022) study is that it takes one set of key findings from human
+resource management research (i.e. the literature on star performers) and
+uses that literature to refine the estimate of employee value, there are
+many other findings in human resource management research that could
+similarly be examined to consider their implications for employee value.
+This includes work on teams, dynamic performance, performance and
+turnover, citizenship and counterproductive work behaviors, and likely
+
+
+--- PAGE BREAK ---
+
+                  The International Journal of Human Resource Management   2589
+
+
+many others. Despite the long-held pervasive but implicit assumption of
+the existence of employee value and some sort of employee value func-
+tion, there have been essentially no efforts to articulate the specific pro-
+cess. As argued by Sturman (2012), ‘it is time to be explicit about
+employee value’ (p. 782). Certainly, this can provide value for utility
+analyses’ application to computational modeling, and it has value for
+understanding the role of job performance as well. Although it may not
+have been their original intent, we applaud the Joo et al. (2022) paper’s
+contributions in this area. There are also several ways in which the esti-
+mates from Joo et al. (2022) could be further refined.
+   While the focus of Joo et al.’s (2022) effort was understandably on the
+specification of SDy, the rest of the utility function remained in its sim-
+plest form. Utility analysis work, however, has provided a large array of
+refinements to the basic utility analysis formula that influence its estima-
+tions (Sturman, 2000). The refinement of SDy is a critical step, but the
+implementation of a fully complex utility model could potentially provide
+more accurate insights into the value associated with human resource
+practices given the presence of star employees.
+   Joo et al. (2022) also show the value in questioning distributional
+assumptions. A key point made in Joo et al. (2022) is that, evidenced by
+the literature on star performers as well as the data they used in this
+paper and elsewhere (Joo et al., 2017; O’Boyle & Aguinis, 2012), perfor-
+mance does not follow a normal distribution; thus, the fundamental
+assumption of SDy is flawed. That said, there is reason to delve further
+into this issue. First, most notably, SDy actually does not assume that the
+performance distribution of those hired follows a normal distribution;
+rather, it assumes that the distribution of performance if all applicants
+were hired (or if people are hired randomly) follows a normal distribu-
+tion. The data upon which Joo et al. (2017, 2022) question the normality
+assumption is the performance of people already in a specific profession.
+Take for example the number of publications (a metric used in a large
+number of their samples). The individuals in the specific professions that
+actually seek to publish in their top five field-specific journals are not a
+random sampling of the workforce. Rather it is quite a small subset.
+According to the U.S. Census Bureau (2021), only 2% of the U.S. popu-
+lation aged 18 and over have a Ph.D. (U.S. Census Bureau, 2021). If only
+looking at the top 2% of a normal distribution, summary statistics of that
+subset would have substantial skewness (skew = 1.52) and kurtosis (kur-
+tosis = 2.86). Having a more restricted sample would only lead to more
+skew and kurtosis. Thus, one should expect to find even greater skew in
+samples that are even more restricted, such as when looking at outcomes
+like home runs from major league ball players (which represents 1,026
+individuals total from the applicable workforce, a ratio far less than 1%).
+
+
+--- PAGE BREAK ---
+
+2590    M. C. STURMAN ET AL.
+
+
+   Second, as acknowledged by Joo et al. (2022), they use objective mea-
+sures of job performance (e.g. number of some performance metrics like
+publications, chapters, presentations, patents, etc.). As such, the nature of
+these metrics typically creates a lower bound (i.e. 0). Objective measures
+of job performance are also more subject to influences of shocks and
+events outside of the individual’s control and thus are more affected by
+transient error than are subjective ratings (Sturman et al., 2005). It is
+clear from the Joo et al. (2017, 2022) data that the performance mea-
+sures, particularly when looking at objective measures from highly selec-
+tive occupations, are not normally distributed. Because the nature of the
+performance distribution has critical implications for developing a more
+precise value function, Joo et al. (2022) highlight the need for more work
+considering the implications of the performance distribution on the func-
+tionality of utility analysis equations to further enhance the accuracy of
+utility models.
+   Another key direction for future research revealed by our perspective
+of the Joo et al. (2022) article is that the need exists to develop ways to
+test the validity of utility models. As we noted earlier, the estimates pro-
+vided by Joo et al. (2022) are purely hypothetical, albeit theoretically
+driven by implications of research on performance stars. The conclusions
+drawn in the paper, although not validated, speak to the theoretical impli-
+cations of skewed performance outcomes. This certainly is not a flaw, as
+indeed our field has journals specifically devoted to theoretical papers.
+Nonetheless, the most useful theories are ones that can be tested and
+further refined (cf., Meehl, 1967, 1978, 1990). Utility analysis provides a
+mechanism to create strong theory, with very specific predictions about
+the consequences of organizational human resource policies and practices
+(Sturman, 2012). Enhancing utility analysis based on findings from other
+areas of human resource management research—like Joo et al. (2022) do
+with research on star performers—provides a specific articulation of the
+impact that human resource practices are predicted to have. While we
+advocate one line of research further develops and refines that theoretical
+model, another line of research considering how to test, validate, and
+improve that model could prove exceptionally valuable as well.
+
+
+Conclusion
+Joo et al. (2022) provide a valuable, first-of-its-kind demonstration of a
+theoretically driven utility-based model, yielding specific predictions and
+implications about human resource policy. Although there certainly have
+been prior examples of utility analysis demonstrations (e.g. Boudreau,
+1991; De Corte, 1994; Schmidt et al., 1979; Sturman et al., 2003), Joo et al.
+(2022) is the first demonstration of which we are aware that refines utility
+
+
+--- PAGE BREAK ---
+
+                       The International Journal of Human Resource Management          2591
+
+
+analysis based on theory to estimate implications through a computational
+model. If we have one criticism of the Joo et al. (2022) paper, it is only
+that it does not go far enough. We therefore hope others will see Joo et al.
+(2022) as an example to follow to consider how refined, research-based
+value functions can alter our predictions about human resource policy.
+Certainly, this is truly a muted criticism; no research can do all things,
+and the Joo et al. (2022) paper thus leaves the reader with several prom-
+ising paths for a type of research that has been called for (Sturman, 2012)
+but heretofore been undelivered. A key point of our commentary is that
+the Joo et al. (2022) paper is really the first to delve into this process of
+altering an explicit employee value function, and thus their work is a valu-
+able starting point for hopefully much future research in this area.
+
+
+Note
+ 1.    In Joo et al.’s (2022) procedures, their approach (referred to as the “global proce-
+       dure”) is based on differences between the 85th, 50th, 15th, and minimum percen-
+       tiles, and then further simplified based on the overall average finding reported in
+       Burke and Frederick (1986) that the ratio of SDy to SDO is an average of 2.75.
+       They then multiply this by the estimate of SDy using the 40% rule (where SDy =
+       0.4 * mean salary), and thus their estimate from the global procedure ultimately
+       equals (2.75 * 0.4 * mean salary =) 1.1 * mean salary.
+
+
+
+References
+Aguinis, H., O’Boyle, E., Gonzalez-Mulé, E., & Joo, H. (2016). Cumulative advantage:
+  Conductors and insulators of heavy-tailed productivity distributions and productivity
+  stars. Personnel Psychology, 69(1), 3–66. https://doi.org/10.1111/peps.12095
+Asgari, E., Hunt, R., Lerner, D., Townsend, D., Hayward, M. L., & Kiefer, K. (2021). Red
+  giants or black holes? The antecedent conditions and multi-level impacts of star per-
+  formers. Academy of Management Annals, 15(1), 223–265. https://doi.org/10.5465/an-
+  nals.2019.0061
+Avolio, B. J., Avey, J. B., & Quisenberry, D. (2010). Estimating return on leadership de-
+  velopment investment. The Leadership Quarterly, 21(4), 633–644. https://doi.
+  org/10.1016/j.leaqua.2010.06.006
+Ballard, T., Palada, H., Griffin, M., & Neal, A. (2021). An integrated approach to testing
+  dynamic, multilevel theory”: Using computational models to connect theory, model,
+  and data. Organizational Research Methods, 24(2), 251–284. https://doi.
+  org/10.1177/1094428119881209
+Ballard, T., Yeo, G., Loft, S., Vancouver, J. B., & Neal, A. (2016). An integrative formal
+  model of motivation and decision making: The MGPM. The Journal of Applied
+  Psychology, 101(9), 1240–1265. https://doi.org/10.1037/apl0000121
+Barney, J. B., & Clark, D. N. (2007). Resource-based theory: Creating and sustaining com-
+  petitive advantage. Oxford University Press.
+Boudreau, J. W. (1983a). Economic considerations in estimating the utility of human
+  resource productivity improvements. Personnel Psychology, 36(3), 551–576. https://doi.
+  org/10.1111/j.1744-6570.1983.tb02235.x
+
+
+--- PAGE BREAK ---
+
+2592     M. C. STURMAN ET AL.
+
+
+Boudreau, J. W. (1983b). Effects of employee flows on utility analysis of human resource
+  productivity improvement programs. Journal of Applied Psychology, 68(3), 396–406.
+  https://doi.org/10.1037/0021-9010.68.3.396
+Boudreau, J. W. (1991). Utility analysis for decisions in human resource management. In
+  M. D. Dunnette & L. M. Hough (Eds.), Handbook of industrial and organizational
+  psychology (pp. 621–745). Consulting Psychologists Press.
+Boudreau, J. W., & Berger, C. J. (1985). Decision-theoretic utility analysis applied to
+  employee separations and acquisitions. Journal of Applied Psychology, 70(3), 581–612.
+  https://doi.org/10.1037/0021-9010.70.3.581
+Boudreau, J. W., Sturman, M. C., & Judge, T. A. (1994). Utility analysis: What are the
+  black boxes and do they affect decisions? In N. Anderson & P. Herriot (Eds.)
+  Assessment and selection in organizations (pp. 77–96), John Wiley & Sons.
+Bowman, C., & Ambrosini, V. (2000). Value creation versus value capture: Towards a
+  coherent definition of value in strategy. British Journal of Management, 11(1), 1–15.
+  https://doi.org/10.1111/1467-8551.00147
+Brogden, H. E. (1949). When testing pays off. Personnel Psychology, 2(2), 171–183.
+  https://doi.org/10.1111/j.1744-6570.1949.tb01397.x
+Brogden, H. E., & Taylor, E. K. (1950). The dollar criterion: Applying the cost account-
+  ing concept to criterion construction. Personnel Psychology, 3(2), 133–154. https://doi.
+  org/10.1111/j.1744-6570.1950.tb01691.x
+Burke, M. J., & Frederick, J. T. (1986). A comparison of economic utility estimates for
+  alternative rational SDy estimation procedures. Journal of Applied Psychology, 71(2),
+  334–339. https://doi.org/10.1037/0021-9010.71.2.334
+Call, M. L., & Ployhart, R. E. (2021). A theory of firm value capture from employee job
+  performance: A multidisciplinary perspective. Academy of Management Review, 46(3),
+  572–590. https://doi.org/10.5465/amr.2018.0103
+Carretero-Gómez, J. M., & Cabrera, E. F. (2012). An empirical evaluation of training
+  using multi-attribute utility analysis. Journal of Business and Psychology, 27(2), 223–
+  241. https://doi.org/10.1007/s10869-011-9241-6
+Cascio, W. F., Schmidt, N., & Borman, W. C. (1992). Assessing the utility of selection
+  decisions: Theoretical and practical considerations. In Personnel selection in organiza-
+  tions (pp. 310–340). Jossey-Bass.
+Cascio, W. F., Boudreau, J. W., & Fink, A. A. (2019). Investing in people: Financial impact
+  of human resource initiatives. (3rd ed.) Pearson Education.
+Cronbach, L. J., & Gleser, G. C. (1965). Psychological tests and personnel decisions.
+  University of Illinois Press.
+Davis, J. P., Eisenhardt, K. M., & Bingham, C. B. (2007). Developing theory through
+  simulation methods. Academy of Management Review, 32(2), 480–499. https://doi.
+  org/10.5465/amr.2007.24351453
+De Corte, W. (1994). Utility analysis for the one-cohort selection-retention decision with
+  a probationary period. Journal of Applied Psychology, 79(3), 402–411. https://doi.
+  org/10.1037/0021-9010.79.3.402
+Edwards, J. R., & Berry, J. W. (2010). The presence of something or the absence of
+  nothing: Increasing theoretical precision in management research. Organizational
+  Research Methods, 13(4), 668–689. https://doi.org/10.1177/1094428110380467
+Harrison, J. R., Lin, Z., Carroll, G. R., & Carley, K. M. (2007). Simulation modeling in
+  organizational and management research. Academy of Management Review, 32(4),
+  1229–1245. https://doi.org/10.5465/amr.2007.26586485
+Joo, H., Aguinis, H., & Bradley, K. J. (2017). Not all nonnormal distributions are creat-
+  ed equal: Improved theoretical and measurement precision. The Journal of Applied
+  Psychology, 102(7), 1022–1053. https://doi.org/10.1037/apl0000214
+
+
+--- PAGE BREAK ---
+
+                       The International Journal of Human Resource Management              2593
+
+
+Joo, H., Aguinis, H., Lee, J., Kremer, H., & Villamor, I. (2022). HR’s financial value from
+   obtaining more star performers. The International Journal of Human Resource
+   Management, 33(21), 4179–4214. https://doi.org/10.1080/09585192.2021.1948890
+Kehoe, R. R., Lepak, D. P., & Bentley, F. S. (2018). Let’s call a star a star: Task perfor-
+   mance, external status, and exceptional contributors in organizations. Journal of
+   Management, 44(5), 1848–1872. https://doi.org/10.1177/0149206316628644
+Latham, G. P., & Whyte, G. (1994). The futility of utility analysis. Personnel Psychology,
+   47(1), 31–46. https://doi.org/10.1111/j.1744-6570.1994.tb02408.x
+Lepak, D. P., Smith, K. G., & Taylor, S. (2007). Value creation and value capture: A
+   multilevel perspective. Academy of Management Review, 32(1), 180–194. https://doi.
+   org/10.5465/amr.2007.23464011
+Macan, T. H., & Highhouse, S. (1994). Communicating the utility of human resource
+   activities: A survey if I/O and HR professionals. Journal of Business and Psychology,
+   8(4), 425–436. https://doi.org/10.1007/BF02230958
+Meehl, P. E. (1967). Theory-testing in psychology and physics: A methodological para-
+   dox. Philosophy of Science, 34(2), 103–115. https://doi.org/10.1086/288135
+Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the
+   slow progress of soft psychology. Journal of Consulting and Clinical Psychology, 46(4),
+   806–834. https://doi.org/10.1037/0022-006X.46.4.806
+Meehl, P. E. (1990). Why summaries of research on psychological theories are often unin-
+   terpretable. Psychological Reports, 66(1), 195–244. https://doi.org/10.2466/pr0.1990.66.1.195
+Morris, S. S., Alvarez, S. A., & Barney, J. B. (2021). Dancing with the stars: The practi-
+   cal value of theory in managing star employees. Academy of Management Perspectives,
+   35(2), 248–264. https://doi.org/10.5465/amp.2017.0223
+Murphy, K. R. (1986). When your top choice turns you down: Effect of rejected offers
+   on the utility of selection tests. Psychological Bulletin, 99(1), 133–138. https://doi.
+   org/10.1037/0033-2909.99.1.133
+O’Boyle, E., & Aguinis, H. (2012). The best and the rest: Revisiting the norm or nor-
+   mality of individual performance. Personnel Psychology, 65(1), 79–119. https://doi.
+   org/10.1111/j.1744-6570.2011.01239.x
+O’Boyle, E., & Kroska, S. (2017). Star performers. In D. G. Collings, K. Mellahi, & W.
+   F. Cascio (Eds.), Oxford handbook of talent management (pp. 43–65). Oxford University
+   Press.
+Schmidt, F. L., Hunter, J. E., McKenzie, R. C., & Muldrow, T. W. (1979). Impact of val-
+   id selection procedures on work-force productivity. Journal of Applied Psychology,
+   64(6), 609–626. https://doi.org/10.1037/0021-9010.64.6.609
+Schmidt, F. L., & Kaplan, L. B. (1971). Composite vs. multiple criteria: A review and
+   resolution of the controversy. Personnel Psychology, 24(3), 419–434. https://doi.
+   org/10.1111/j.1744-6570.1971.tb00365.x
+Sturman, M. C. (2000). Implications of utility analysis adjustments for estimates of hu-
+   man resource intervention value. Journal of Management, 26(2), 281–299. https://doi.
+   org/10.1177/014920630002600206
+Sturman, M. C. (2003). Introducing utility analysis for hospitality: A tool for quantifying
+   the value of human resource interventions. The Cornell Hotel and Restaurant
+   Administration Quarterly, 44(2), 106–108. https://doi.org/10.1016/S0010-8804(03)90023-1
+Sturman, M. C. (2012). Employee value: Combining utility analysis with strategic hu-
+   man resource management research to yield strong theory. In N. Schmitt (Ed.),
+   Oxford handbook of personnel assessment and selection (pp. 768–792). Oxford
+   University Press.
+
+
+--- PAGE BREAK ---
+
+2594     M. C. STURMAN ET AL.
+
+
+Sturman, M. C., Cheramie, R. A., & Cashen, L. H. (2005). The impact of job complex-
+   ity and performance measurement on the temporal consistency, stability, and test-retest
+   reliability of employee job performance ratings. The Journal of Applied Psychology,
+   90(2), 269–283. https://doi.org/10.1037/0021-9010.90.2.269
+Sturman, M. C., Trevor, C. O., Boudreau, J. W., & Gerhart, B. (2003). Is it worth it to
+   win the talent war? Evaluating the utility of performance-based pay. Personnel
+   Psychology, 56(4), 997–1035. https://doi.org/10.1111/j.1744-6570.2003.tb00248.x
+Sundaram, A. K., & Inkpen, A. C. (2004). The corporate objective revisited. Organization
+   Science, 15(3), 350–363. https://doi.org/10.1287/orsc.1040.0068
+Taylor, E. C., & Bendickson, J. S. (2021). Star performers, unit performance and unit
+   turnover: A constructive replication. Human Resource Management Journal, 31(4),
+   977–994. https://doi.org/10.1111/1748-8583.12336
+Tiffin, J. (1942). Industrial Psychology. Prentice Hall.
+U.S Census Bureau. (2021, April 21). Educational Attainment in the United States: 2020.
+   https://www.census.gov/data/tables/2020/demo/educational-attainment/cps-detailed-
+   tables.html
+Vancouver, J. B., Wang, M., & Li, X. (2020). Translating informal theories into formal
+   theories: The case of the dynamic computational model of the integrated model of
+   work motivation. Organizational Research Methods, 23(2), 238–274. https://doi.
+   org/10.1177/1094428118780308
+Whyte, G., & Latham, G. P. (1997). The futility of utility analysis revisited: When even
+   an expert fails. Personnel Psychology, 50(3), 601–610. https://doi.org/10.1111/
+   j.1744-6570.1997.tb00705.x
+
+
+--- PAGE BREAK ---
+
+Copyright of International Journal of Human Resource Management is the property of
+Routledge and its content may not be copied or emailed to multiple sites or posted to a listserv
+without the copyright holder's express written permission. However, users may print,
+download, or email articles for individual use.
+

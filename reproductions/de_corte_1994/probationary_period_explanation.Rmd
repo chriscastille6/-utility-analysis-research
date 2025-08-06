@@ -1,0 +1,283 @@
+---
+title: "Understanding Probationary Periods in De Corte's Utility Analysis"
+subtitle: "A Detailed Explanation of the Selection-Retention Framework"
+author: "Reproduction Team"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+    theme: cosmo
+    highlight: tango
+  pdf_document:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(scales)
+
+# Load the results for demonstration
+results <- read.csv("de_corte_1994_results.csv")
+```
+
+# Introduction
+
+De Corte's (1994) utility analysis framework introduces a crucial innovation: **probationary periods** in selection decisions. This document explains how the model accounts for the reality that not all selected employees will be retained, and how this affects utility calculations.
+
+## The Problem with Traditional Utility Analysis
+
+Traditional utility analysis (e.g., Brogden, 1949) assumes that:
+- All selected employees remain on the job
+- Performance is immediately observable
+- No costs are associated with employee separation
+
+However, in practice:
+- **Probationary periods** are common (3-6 months)
+- **Some employees fail probation** and are dismissed
+- **Separation costs** are incurred for unsuccessful employees
+- **Performance is only observed after probation**
+
+# The Probationary Period Framework
+
+## Key Concepts
+
+### 1. Two-Stage Decision Process
+
+The model conceptualizes selection as a **two-stage process**:
+
+1. **Selection Stage**: Choose N employees from n applicants using a predictor
+2. **Retention Stage**: After probation, retain only employees who meet performance standards
+
+### 2. Critical Values
+
+Two critical values determine the process:
+
+- **x_c**: Critical predictor score (determines who gets hired)
+- **r_c**: Critical performance score (determines who gets retained)
+
+### 3. Success Ratios
+
+- **S_p**: Success ratio of the predictor (proportion of selectees who pass probation)
+- **S_0**: Success ratio of random selection (proportion who would pass probation if selected randomly)
+
+## Mathematical Framework
+
+### Basic Utility Formula
+
+The utility of predictor-based selection with probationary periods is:
+
+$$U_p = N \times (\mu_y(x_c) - \mu_s) + (T-1) \times N \times S_p \times (\mu_y(x_c,r_c) - \mu_s) - N \times C_t - n \times C_p$$
+
+Where:
+- $N$ = Number of hires
+- $\mu_y(x_c)$ = Average payoff of all selectees
+- $\mu_s$ = Average service cost
+- $T$ = Average time periods on job for successful employees
+- $S_p$ = Success ratio (proportion who pass probation)
+- $\mu_y(x_c,r_c)$ = Average payoff of successful selectees
+- $C_t$ = Training cost per hire
+- $C_p$ = Cost per candidate for predictor
+
+### Key Components Explained
+
+#### 1. Initial Period Utility
+$$N \times (\mu_y(x_c) - \mu_s)$$
+
+This represents the utility from all selected employees during the probationary period (Period 1).
+
+#### 2. Retention Period Utility
+$$(T-1) \times N \times S_p \times (\mu_y(x_c,r_c) - \mu_s)$$
+
+This represents the utility from retained employees over the remaining periods (Periods 2 to T).
+
+#### 3. Costs
+$$-N \times C_t - n \times C_p$$
+
+Training costs for all hires plus predictor costs for all applicants.
+
+# How Probationary Periods Affect Utility
+
+## 1. Success Ratio Impact
+
+The success ratio $S_p$ is crucial because it determines:
+- How many employees actually contribute to long-term utility
+- The effective workforce size after probation
+- The economic impact of selection accuracy
+
+```{r success-ratio-impact, echo=FALSE}
+# Create example to show success ratio impact
+success_example <- data.frame(
+  Scenario = c("Random Selection", "Predictor Selection"),
+  Success_Ratio = c(0.663, 0.853),
+  Employees_Hired = c(17, 17),
+  Employees_Retained = c(17 * 0.663, 17 * 0.853),
+  Retained_Count = c(11.27, 14.50)
+)
+
+kable(success_example, 
+      col.names = c("Scenario", "Success Ratio", "Employees Hired", "Employees Retained", "Retained Count"),
+      caption = "Impact of Success Ratio on Employee Retention") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## 2. Conditional Performance Expectations
+
+The model uses **conditional expectations** to account for the correlation between selection and retention:
+
+### μ_y(x_c) - Average Performance of All Selectees
+This represents the expected performance of all employees during probation.
+
+### μ_y(x_c,r_c) - Average Performance of Successful Selectees
+This represents the expected performance of employees who pass probation.
+
+### μ_y(r_c) - Average Performance of Random Successful Employees
+This represents the expected performance if selection were random.
+
+## 3. Time Period Structure
+
+The model distinguishes between:
+- **Period 1**: Probationary period (all selectees)
+- **Periods 2-T**: Post-probation periods (only retained employees)
+
+This creates a **two-tier utility structure**:
+1. Initial investment period (probation)
+2. Return period (retention)
+
+# Practical Implications
+
+## 1. Economic Realism
+
+The model accounts for real organizational costs:
+- **Training costs** for all hires
+- **Separation costs** for unsuccessful employees
+- **Recruitment costs** for different selection methods
+
+## 2. Decision Making Scenarios
+
+### Fixed Quota of Selectees
+When the goal is to hire a fixed number of employees:
+- Calculate how many need to be hired to achieve target retention
+- Compare costs of different selection methods
+
+### Fixed Quota of Successful Employees
+When the goal is to have a fixed number of successful employees:
+- Calculate required hiring numbers for each method
+- Account for separation and recruitment costs
+
+## 3. Sensitivity to Key Parameters
+
+The model is particularly sensitive to:
+- **Predictor validity** (ρ)
+- **Success ratio** (S_p)
+- **Performance variability** (σ_y)
+- **Time horizon** (T)
+
+# Comparison with Traditional Models
+
+## Traditional Brogden Model
+$$U = N \times T \times (Z_{barx} \times r \times SD_y) - C$$
+
+**Limitations:**
+- No probationary period
+- No separation costs
+- No retention uncertainty
+
+## De Corte's Enhanced Model
+**Advantages:**
+- Realistic probationary periods
+- Separation cost accounting
+- Retention probability modeling
+- Two-stage decision framework
+
+# Example from De Corte (1994)
+
+Using the parameters from the original paper:
+
+```{r example-calculation, echo=FALSE}
+# Display key results from our reproduction
+example_results <- data.frame(
+  Metric = c("Employees Hired (N)", "Success Ratio (S_p)", "Employees Retained", 
+             "Utility with Predictor", "Utility with Random Selection", "Utility Difference"),
+  Value = c(17, 0.853, round(17 * 0.853, 2), 
+            paste0("$", format(round(results$Value[6]), big.mark=",")),
+            paste0("$", format(round(results$Value[7]), big.mark=",")),
+            paste0("$", format(round(results$Value[8]), big.mark=",")))
+)
+
+kable(example_results, 
+      col.names = c("Metric", "Value"),
+      caption = "Example Results from De Corte (1994)") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Interpretation
+
+1. **17 employees are hired** using the predictor
+2. **14.50 employees (85.3%) pass probation** and are retained
+3. **Utility difference of $459,566** compared to random selection
+4. **Economic value** comes from both better initial selection and higher retention rates
+
+# Key Insights
+
+## 1. Probationary Periods Reduce Utility
+- Not all selected employees contribute to long-term value
+- Training costs are incurred for employees who don't stay
+- Success ratios significantly impact overall utility
+
+## 2. Predictor Validity Matters More
+- Higher validity improves both selection and retention
+- The correlation between predictor and performance affects retention rates
+- Small improvements in validity can have large utility impacts
+
+## 3. Time Horizon is Critical
+- Longer time horizons increase the value of retention
+- The (T-1) multiplier amplifies retention effects
+- Organizations with longer employee tenures benefit more from good selection
+
+## 4. Cost Structure Matters
+- Separation costs reduce utility differences
+- Training costs affect both selection methods equally
+- Recruitment costs vary by selection method
+
+# Practical Applications
+
+## 1. Organizational Decision Making
+- **When to use probationary periods**: High training costs, uncertain performance
+- **How long probation should be**: Balance between information gain and costs
+- **Selection method choice**: Consider both selection and retention effects
+
+## 2. Utility Analysis Best Practices
+- **Include probationary periods** in utility calculations
+- **Account for separation costs** realistically
+- **Model retention probabilities** based on predictor validity
+- **Consider time horizons** in utility estimates
+
+## 3. Research Implications
+- **Test predictor-retention relationships** empirically
+- **Validate success ratio estimates** in different contexts
+- **Explore modern selection methods** with probationary frameworks
+
+# Conclusion
+
+De Corte's (1994) model provides a **realistic framework** for utility analysis that accounts for the common organizational practice of probationary periods. By incorporating:
+
+- **Two-stage decision processes**
+- **Success ratios and retention probabilities**
+- **Conditional performance expectations**
+- **Realistic cost structures**
+
+The model offers a more accurate and practical approach to utility analysis that reflects real organizational decision-making contexts.
+
+The key insight is that **probationary periods fundamentally change the economics of selection** by introducing uncertainty about retention and requiring consideration of both selection and retention effects in utility calculations.
+
+---
+
+**Key Takeaway**: Probationary periods don't just add complexity—they fundamentally change the utility calculus by introducing retention uncertainty and requiring consideration of both selection accuracy and retention probability in decision-making. 

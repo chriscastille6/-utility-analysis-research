@@ -1,0 +1,50 @@
+{
+  "study_info": {
+    "title": ["Sturman (2000) Monte Carlo Simulation: Comprehensive Replication"],
+    "original_paper": ["Sturman, M. C. (2000). Monte Carlo simulation of utility analysis adjustments. Journal of Applied Psychology, 85(6), 900-906."],
+    "replication_date": ["2025-06-21"],
+    "replication_version": ["Final Comprehensive Analysis"],
+    "r_version": ["R version 4.4.2 (2024-10-31)"],
+    "random_seed": [42]
+  },
+  "simulation_parameters": {
+    "n_iterations": [10000],
+    "n_valid_scenarios": [10000],
+    "parameter_ranges": {
+      "n": ["1 to 1,100 (log-uniform)"],
+      "t": ["1 to 10 years (uniform)"],
+      "sr": ["0.05 to 1.0 (uniform)"],
+      "r": ["0.10 to 0.70 (uniform)"],
+      "sdy": ["$5,000 to $50,000 (uniform)"],
+      "cost": ["$10 to $1,000 (log-uniform)"],
+      "discount": ["5% to 12% (uniform)"],
+      "tax": ["25% to 35% (uniform)"],
+      "vc": ["15% to 25% (uniform)"],
+      "r_old": ["10% to 30% (uniform)"]
+    }
+  },
+  "key_findings": {
+    "replication_success_rate": ["75-80%"],
+    "methodology_confirmed": ["Multiple regression usefulness analysis (Darlington, 1968)"],
+    "ranking_match": ["Perfect: Economic > Multiple > TopDown > Probation > Flows"],
+    "major_discovery": ["Logarithmic effect sizes reduce 291% gap from 198pp to 66pp"],
+    "persistent_mystery": ["Sturman's 291% calculation method remains undocumented"]
+  },
+  "effect_size_comparison": {
+    "standard_combined_median": [92.6776],
+    "logarithmic_combined_median": [225.2555],
+    "sturman_target": [291],
+    "standard_gap": [198.3224],
+    "logarithmic_gap": [65.7445],
+    "improvement": [132.5779]
+  },
+  "files_generated": {
+    "main_dataset": ["sturman_monte_carlo_dataset_final.csv/.rds"],
+    "summary_stats": ["sturman_summary_statistics_final.csv"],
+    "replication_comparison": ["sturman_replication_comparison_final.csv"],
+    "usefulness_analysis": ["sturman_usefulness_analysis_final.csv"],
+    "case_study": ["latham_whyte_parameters.csv, latham_whyte_replication_results.csv"],
+    "reports": ["sturman_2000_replication_report.html/.pdf"],
+    "metadata": ["replication_metadata_final.json"]
+  }
+}

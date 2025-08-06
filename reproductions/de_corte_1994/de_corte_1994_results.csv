@@ -1,0 +1,14 @@
+"Parameter","Value"
+"Critical predictor score (x_c)",1.1503
+"Critical performance score (r_c)",-0.4202
+"Selection ratio (N/n)",0.125
+"Success ratio predictor (S_p)",0.853
+"Success ratio random (S_0)",0.6628
+"μ_y(x_c) - Average payoff of all selectees",28429.52
+"μ_y(x_c,r_c) - Average payoff of successful selectees",29945
+"μ_y(r_c) - Average payoff of random successful employees",28278.66
+"Utility with predictor (U_p)",983200.74
+"Utility with random (U_0)",523635.04
+"Utility difference (Delta_U)",459565.7
+"Fixed quota utility difference",344823.97
+"Fixed quota utility difference (corrected)",298538.66

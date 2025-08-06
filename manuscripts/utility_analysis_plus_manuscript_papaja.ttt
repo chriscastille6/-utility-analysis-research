@@ -1,0 +1,26 @@
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{10cm}}
+\caption{\label{tab:literature-table}Literature Review Summary of UA Attributes and Their Inclusion in Tools}\\
+\toprule
+UA Attribute & Expected Impact & Key References\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:literature-table}Literature Review Summary of UA Attributes and Their Inclusion in Tools \textit{(continued)}}\\
+\toprule
+UA Attribute & Expected Impact & Key References\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+Validity & Positive but weak & Carson et al. (1998); Latham \& Whyte (1994);
+                     Macan \& Foster (2004); Whyte \& Latham (1997)\\
+Utility & Mixed & Latham \& Whyte (1994); Whyte \& Latham (1997);
+                     Carson et al. (1998); Macan \& Foster (2004)\\
+SDy & Mixed & Highhouse (2008); Carson et al. (1998)\\
+Break-even levels & Unclear & Cascio, Boudreau, \& Fink (2019)\\
+Expectancy Charts & Mixed & Cucina (2017); Latham \& Whyte (1994)\\
+\addlinespace
+Framing Effects & Unclear & Hazer \& Highhouse (1997)\\
+Plain-Text Descriptions & Positive & Brooks et al. (2014)\\*
+\end{longtable}

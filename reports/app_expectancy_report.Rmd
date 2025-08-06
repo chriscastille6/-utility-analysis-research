@@ -1,0 +1,87 @@
+---
+title: "Expectancy Chart Analysis"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    latex_engine: pdflatex
+    fig_width: 10.625
+    fig_height: 6.75
+    includes:
+      in_header: "header.tex"
+params:
+  rxy1: NA
+  rxy2: NA
+  sr: NA
+  expectancy_plot: NA
+  goodHire: NA
+  badHire: NA
+  etn: NA
+  eto: NA
+  eln: NA
+  elo: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(ggtext)
+library(stringr)
+library(knitr)
+library(kableExtra)
+```
+
+# Expectancy Analysis
+
+## Overview
+
+This report presents an analysis of the expectancy of high job performance comparing two selection procedures. The expectancy chart shows how the new selection system compares to the old one in terms of predicting high job performance across different performance quartiles. This analysis is based on the expectancy chart methodology developed by Cucina et al. (2017).
+
+## Input Parameters
+
+```{r results="asis"}
+# Create a table of input parameters
+params_df <- data.frame(
+  Parameter = c(
+    "Validity of old procedure(s)/system(s)",
+    "Validity of new procedure(s)/system(s)",
+    "Selection ratio"
+  ),
+  Value = c(
+    params$rxy1,
+    params$rxy2,
+    paste0(params$sr, "%")
+  )
+)
+
+# Display the table
+kable(params_df, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+## Results
+
+```{r plot, echo=FALSE}
+params$expectancy_plot
+```
+
+## Interpretation
+
+The above chart compares the expectancy of the new staffing procedure to the old staffing procedure. Expectancy is a measure of the ability of a test to predict outcomes. Using the new procedure improves the chance that we acquire a high performer by `r params$goodHire`% [(`r params$etn` - `r params$eto`)/`r params$eto`] and avoid a bad hire by `r params$badHire`% [(`r params$elo` - `r params$eln`)/`r params$elo`].
+
+## Understanding Validity
+
+Validity is the correlation between selection test performance and actual job performance. It can range from -1.00 to 1.00, where:
+- -1.00 indicates a perfect negative relationship
+- 0 indicates no relationship
+- 1.00 indicates a perfect positive relationship
+
+In practice, validity coefficients for selection procedures typically range from 0 to .50. For example, structured interviews have an estimated operational validity of .42 (Sackett et al., 2021). However, combining multiple procedures into a system of assessments that measure different complementary features of applicants can yield higher validity and, therefore, better prediction of job performance.
+
+## References
+
+Cucina, J., Berger, J., & Busciglio, H. (2017). Communicating Criterion-Related Validity Using Expectancy Charts: A New Approach. *Personnel Assessment and Decisions, 3*(1). https://doi.org/10.25035/pad.2017.001
+
+Sackett, P. R., Zhang, C., Berry, C. M., & Lievens, F. (2021). Revisiting meta-analytic estimates of validity in personnel selection: Addressing systematic overcorrection for restriction of range. *Journal of Applied Psychology, 107*(11), 2040-2068. https://doi.org/10.1037/apl0000994 

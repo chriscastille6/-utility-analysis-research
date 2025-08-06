@@ -1,0 +1,11 @@
+"timestamp","session_id","question_number","variable1","variable2","user_guess","correct_correlation","error","sample_size"
+2025-07-02 16:06:55.855739,"session_20250702_160601_6523",1,"Sugar consumption","Children's hyperactive behavior",0,0.27,0.27,100
+2025-07-02 16:08:09.02639,"session_20250702_160601_6523",2,"Aspirin consumption","Heart attack risk",0,0.33,0.33,100
+2025-07-02 16:28:32.603586,"session_20250702_162752_8279",1,"Sugar consumption","Children's hyperactive behavior",0.6,0.17,0.43,50
+2025-07-02 16:29:18.69724,"session_20250702_162905_8279",1,"Sugar consumption","Children's hyperactive behavior",0.24,0.17,0.07,50
+2025-07-02 16:31:07.665159,"session_20250702_162905_8279",2,"Aspirin consumption","Heart attack risk",0.31,0.33,0.02,22071
+2025-07-02 16:31:46.273152,"session_20250702_163129_4014",1,"Sugar consumption","Children's hyperactive behavior",0.33,0.33,0,50
+2025-07-02 16:33:53.89534,"session_20250702_163347_8279",1,"Sugar consumption","Children's hyperactive behavior",0.33,0.17,0.16,50
+2025-07-02 16:34:22.116491,"session_20250702_163347_8279",1,"Sugar consumption","Children's hyperactive behavior",0.33,0.17,0.16,50
+2025-07-02 16:34:31.44606,"session_20250702_163426_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50
+2025-07-02 16:37:08.117004,"session_20250702_163702_8279",1,"Sugar consumption","Children's hyperactive behavior",0,0.17,0.17,50

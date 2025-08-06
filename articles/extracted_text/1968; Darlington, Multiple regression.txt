@@ -1,0 +1,1322 @@
+Psychological Bulletin
+1968, Vol. 69, No. 3, 161-182
+
+
+                  MULTIPLE REGRESSION IN PSYCHOLOGICAL
+                         RESEARCH AND PRACTICE
+                                      RICHARD B. DARLINGTON *
+                                              Cornell University
+
+                A number of common practices and beliefs concerning multiple regression are
+                criticized, and several paradoxical properties of the method are emphasized.
+                Major topics discussed are the basic formulas; suppressor variables; measures
+                of the "importance" of a predictor variable; inferring relative regression
+                weights from relative validities; estimates of the true validity of population
+                regression equations and of regression equations developed in samples; and
+                statistical criteria for selecting predictor variables. The major points are
+                presented in outline form in a final summary.
+
+   In recent years, electronic computers have               Some of the points made herein are original,
+made the multiple regression method readily             some have been derived independently by
+available to psychologists and other scientists,        several workers in recent years, and some
+while simultaneously making it unnecessary              surprisingly little-known points were made in
+for them to study in full the cumbersome                print 40 or more years ago.
+computational details of the method. There-                 In general, the dependent or criterion
+fore, there is a need for a discussion of               variable will be denoted by X0, and the in-
+multiple regression which emphasizes some               dependent or predictor variables by Xi, Xt,
+of the less obvious uses, limitations, and               • • • , Xn. The score of person * on variable Xj
+properties of the method. This article at-              is symbolized by xtj. The population multiple
+tempts to fill this need. It makes no attempt           correlation is denoted by R, ordinary correla-
+to cover thoroughly computational techniques            tions by p, standard deviations by a. Popula-
+or significance tests, both of which are dis-           tion regression weights are denoted by 0,
+cussed in such standard sources as McNemar              with ft' denoting the corresponding weights
+(1962), Hays (1963), DuBois (1957), and                 when all variables have been adjusted to
+Williams (1959). The discussion of signifi-             standard score form. Sample values of these
+cance tests by Williams is especially com-              parameters are denoted by R, r, s, b, and b'.
+plete, as is the presentation of computing                  The purpose of the multiple regression
+directions by DuBois. The latter source also            method is to derive weights /3i, /82, • • • , j8n
+contains many basic formulas of consider-               for the variables Xi, Xs, • ••, Xn, and an
+able interest. Anderson (1958) gives a very             additive constant a, such that the resulting
+complete mathematical presentation of the               weighted composite X0, which is defined by
+exact sampling distributions of many of the             the multiple regression equation
+statistics relevant to multiple regression.
+Elashoff and Afifi (1966) reviewed procedures                       + 182^2 + 183X3 -)-•
+applicable when some observations are                                                            a   [1]
+missing. Beaton (1964) described a set of
+elegantly simple computer subroutines which          predicts a specified criterion variable X0 with a
+a FORTRAN programmer can use to write                minimum sum of squared errors; thus X0 cor-
+quickly almost any standard or special-pur-          relates maximally with X0. This paper deals
+pose regression program he may require.              directly only with the linear additive model,
+  1
+    For critical comments on preliminary drafts, the in which X0 is a linear function of the
+author is indebted to J. Millman, P. C. Smith, and predictor variables. This restriction is more
+T. A. Ryan, and to his students J. T. Barsis, W. apparent than real, however, since if desired
+Buckwalter, H. Day, B. Goldwater, and G. F. some of the variables in the equation can be
+Stauffer. He is especially grateful to his student
+C. S. Otterbein, whose editorial and substantive curvilinear or configural (interactive) func-
+contributions amounted nearly to coauthorship.       tions of other variables.
+                                                    161
+
+
+--- PAGE BREAK ---
+
+162                                  RICHARD B. DARLINGTON
+
+               BASIC FORMULAS 2                   if Xj were removed from the regression equa-
+   As described in standard works on the sub- tion and the remaining variables appropriately
+ject, the « multiple regression weights /?i, @2) reweighted, then Formula 3 shows that the
+Pa, ''', Pn are found by solving a set of n usefulness of Xj equals p0/ when predictor
+simultaneous linear equations in which these variables are uncorrelated.
+weights are the unknowns. These equations             Results analogous to some of those stated
+are the so-called normal equations of regres-     above   can be derived for the case in which
+sion theory, although this term does not          predictor   variables are intercorrelated. Sup-
+imply any dependence on an assumption that        pose  we  have  a regression equation predicting
+variables are normally distributed. The known Xo from Xi, X%, • • • , Xn, Consider a second
+quantities in the normal equations are the multiple regression equation in which one of
+standard deviations of the n predictor vari- the predictor variables Xf ( 1 < j < n) is the
+ables and the criterion variable, and the inter- dependent variable and the remaining n — 1
+correlations among these n + 1 variables. A predictor variables Xi; X2, • • • , -Xy_i, Xi+\,
+change in the standard deviation of one of • • • , Xn are the predictors. Let the residuals
+the predictor variables will affect only the in this second equation (i.e., the set of scores
+beta weight of that one variable, while a obtained by subtracting each person's score
+change in the correlation between any two on this regression function from his actual
+variables will generally affect all the beta score on Xj) constitute the variable ^(p).
+weights.                                          The variable Xi(m is uncorrelated with all of
+   After the /3s are found, the additive con- the variables used to construct the regression
+stant a is chosen so as to make the mean of equation predicting X}. Following Rozeboom
+the scores on X0 equal to the mean of the (1965) and others, X i ( f ) is termed the com-
+                                                  ponent of Xj orthogonal to the other predictor
+scores on X0. The multiple correlation R can
+                                                  variables, or more simply the orthogonal com-
+then be found in any of several ways, of
+                                                  ponent of Xj. (We shall later have occasion
+which the simplest conceptually (though not
+                                                  to denote the component of X0 orthogonal to
+computationally) is to compute each person's
+                                                  all the predictor variables— which component
+score on X0, and then to correlate these is the residual in the regression equation pre-
+scores with X0.
+                                                  dicting X0 from those predictor variables—as
+   If all predictor variables are uncorrelated, -STofp). The   component of any predictor vari-
+then the above-mentioned procedures for com- able Xj orthogonal to the criterion variable
+puting beta weights and R reduce to the X will be denoted by X . In the present
+                                                    0                          iw
+simple formulas                                   terminology, the partial correlation between
+                                                  two variables X} and X* holding m other
+                   ft- = Poy —                [2] variables constant is the correlation between
+and                                               the components of Xj and Xk orthogonal to
+                                                  the other m variables.)8
+       /? = pox2 + p»22 + P<B2 + • • • + Pon2 [3]     The standard deviation of X],v) is denoted
+If we define the "usefulness" of predictor by o-^p), and the correlation of Xj(V) with
+variable Xf as the amount R2 would drop
+                                                       available from the American Documentation Institute.
+  2
+    A number of points made in this paper are          Order Document No. 9810 from the ADI Auxiliary
+amplified and proven in a supplementary document       Publications Project, Photoduplication Service, Li-
+by the author entitled "Proofs of Some Theorems        brary of Congress, Washington, D. C. 20540. Remit
+on Multiple Regression," Statements in the present     in advance $1.75 for microfilm or $2.50 for photo-
+section are given as Theorems 4, 6, 10, 11, 12, and    copies and make checks payable to: Chief, Photo-
+13 of that document. Although the proofs are           duplication Service, Library of Congress.
+                                                          3
+not original in any important sense of the word,            Dunlap and Cureton (1930) called the correla-
+the author has tried to simplify many of the           tion between a variable and the orthogonal com-
+standard proofs to a level readily grasped by          ponent of another variable a "semipartial correla-
+students in an intermediate-level course in psycho-    tion," and McNemar (1962, p. 167) called it a
+metric theory. The document will routinely be sent     "part correlation." Both these terms emphasize its
+along with responses to reprint requests. It as also   similarity to the partial correlation.
+
+
+--- PAGE BREAK ---
+
+                     MULTIPLE       REGRESSION IN RESEARCH AND PRACTICE                              163
+
+any variable Xh by p»./ ( p ) . Then we can write         able with a nonzero correlation with X0 is
+a formula for #, which is very similar to                 scored in the direction which makes that
+Formula 2 but which applies whether the                   correlation positive in the population. The
+predictor variables are intercorrelated or not:           scoring direction of variables correlating zero
+                                                          with X0 can be chosen arbitrarily.
+                    =   PO-.                        [4]      Although various definitions have been
+                               "V(p>                      given (cf. Guilford, 1954; Horst, 1941;
+Further, just as the usefulness of Xj equals              McNemar, 1962), a suppressor variable is
+p0j2 when predictor variables are uncorrelated,           here defined as a variable which, when in-
+so it equals po.^p) 2 when predictor variables            cluded in a regression equation in which the
+are intercorrelated. There is no formula                  variables have been scored as described above,
+quite so directly analogous to Formula 3;                 receives a negative weight when the equation
+in general it is not true that                            is derived in the population. (This definition
+                                                          thus excludes variables whose negative weight
+    R* — PO-l(p) 2 + P0-2(p) 2 + ' ' '+ PO'Tt (P)         is the result of sampling error.) Since a vari-
+  When n — 2, it can be shown that                        able correlating zero with X0 is allowed to be
+                                                          scored in either direction, and since it will
+                          POl — P02P12                    receive a negative regression weight when
+                                                    [5]   scored in one of those directions if its weight
+                           "Vl - P122
+                                                          is not zero, then by our definition any vari-
+and that
+                                                          able which correlates zero with XQ but which
+                           Pi2
+                     = <r,Vl           [6]                receives a nonzero weight can be called a
+                                                          suppressor variable. Contrary to most previ-
+Interchanging the subscripts 1 and 2 in
+                                                          ous definitions, by the present definition a
+Formulas 5 and 6 gives po-2(p> and cr 2 ( p ).
+                                                          suppressor variable need not have a low or
+Substituting Formulas 5 and 6 in Formula 4
+                                                          zero validity, although in practice it usually
+gives the familiar formula
+                                                          does.
+                     POl — P02P12                             Since the multiple regression method
+                                                    [7]   chooses those weights, whether positive or
+                        1 — P122
+                                                          negative, which maximize the multiple cor-
+for the case in which n = 2. Analogously,                 relation, it necessarily follows that a sup-
+when n— 2,                                                pressor variable improves prediction in the
+                      P02 — P01P12 ffo                    population when it is given a negative weight.
+               PS = —:          ;                   [8]   A typical example in which prediction is im-
+                        1 — Pl2        f2
+                                                          proved by assigning a negative weight to a
+When n = 2, the useful relation                           variable might be a situation in which a
+      K2 = POl2 + P0-2(p) 2 = P022 + PO.l(p) 2
+                                                           test of reading speed is used in conjunction
+                                                          with a speeded history achievement test to
+follows directly from the fact that                       predict some external criterion of knowledge
+equals the usefulness of Xf. This result fits              of history. Since the history test is contami-
+intuitively with Formula 3 since X\ and Xz(V)              nated by reading speed, assigning a negative
+(or X% and XI(T,I) are uncorrelated variables              weight to the reading-speed test would help
+which contain the same basic information                   to correct for the disadvantage suffered by
+(and thus yield the same prediction of X0)                 a student with low reading speed who is
+as Xi and X2.                                              competing with faster readers.
+                                                              To understand more fully the functions of
+            SUPPRESSOR VARIABLES
+                                                           suppressor variables, it is helpful to examine
+  This section describes suppressor variables              the exact conditions under which negative
+and criticizes the common belief that dealing              weights appear. For simplicity, regression
+with them requires a modification of standard              equations with only two predictor variables
+multiple regression procedures. For simplicity,            Xj and X2, and only the case in which X2
+the section assumes that each predictor vari-              receives a negative weight, will be considered.
+
+
+--- PAGE BREAK ---
+
+164                                    RICHARD B. DARLINGTON
+
+   Let .Xi<c> denote the component of Xi              The algebra here consists of using Formulas
+orthogonal to the criterion variable. ATi (c) can     5 and 6 to set
+be considered to measure the sources of error                                   Pl2 — P01P02
+in X-i, that is, those aspects of Xi which                          P2-l(o) =
+prevent a perfect prediction of X0 from Xi.                                         — poi
+For example, consider a hypothetical modifi-          and
+cation of the previous example in which read-
+ing speed correlates zero with the criterion
+variable, and is the only source of error in          and then substituting these expressions in
+the history test. If the history test were X\,        Inequality 10, which then simplifies to In-
+then X i ( C ) would measure only reading speed.      equality 9. These same two formulas can be
+In real-life cases, ATi (c) does not represent a      used to derive an inequality which is similar
+single source of error, such as reading speed,        to Inequality 10, but which some readers will
+but measures instead a composite of all the           find more meaningful. If both sides of In-
+sources of error in Xi.                               equality 10 are squared, then the resulting
+   Ordinarily, the variable .X"i«.) is not directly   quantities P0i2, p<>22, PI-KO, and p 8 .i<o equal
+measurable. However, suppose a second test            the proportions of variance in Xi and X2
+X2 were available which correlated perfectly          "accounted for" by X0 and -X"i (c) , respectively,
+                                                      so that the formula is in terms of proportions
+with XKO; in other words, suppose X2 were
+                                                      of variance rather than correlation coeffi-
+a perfect measure of the sources of error in
+Xi. (For instance, in our hypothetical ex-            cients. Some readers will prefer this alter-
+ample, suppose X2 was a perfect test of read-         native since ratios between proportions of
+ing speed.) Then, by giving Xz a negative             variance are more familiar than ratios be-
+weight in a regression equation in which Xi           tween correlation coefficients.
+had a positive weight, it would be possible              Inequality 10 provides the basis for a
+to subtract out, or correct for, or "suppress,"       clear and simple statement of the algebraic
+those sources of error.                               nature of a suppressor variable. The left side
+                                                      of Inequality 10 is the ratio mentioned above,
+   Generally, of course, a second variable X2
+                                                      showing the ability of X2 to measure XKC-,
+does not correlate perfectly with X l ( C ) . The
+                                                      relative to its ability to measure X0. The
+example should make clear, however, that X2
+                                                      right side is an analogous ratio for X1} show-
+can be used in either of two ways, depending
+                                                      ing the ability of Xi to measure Xiw relative
+on its characteristics: to measure X0 directly,
+                                                      to its ability to measure X0. If the ratios on
+or to measure Xi(C). X2 should receive a
+                                                      the left and right sides of Inequality 10 are
+positive weight if used the first way or a
+                                                      equal, then X2 cannot usefully supplement
+negative weight if used the second way. It
+                                                      Xi in measuring either X0 or Xim, so it
+will be shown that whether X2 receives a
+                                                      receives a zero weight. Normally, Xi is a
+positive or a negative weight, when used in
+                                                      better measure of its own sources of error
+a regression equation with X\, depends upon
+the ratio between its abilities to perform            than is X2> so PI-KO, the numerator of the
+                                                      right side, is normally larger than p2.i<c>, the
+these two different tasks; specifically, on the
+                                                      numerator of the left side. Hence the fraction
+ratio p2.i<c)'po2-
+                                                      on the right side is normally larger than the
+   In a regression equation with two predictor
+                                                      fraction on the left. If this occurs, then Xz
+variables, Formula 8 shows that Xa receives a         is more useful as a measure of X0 than as a
+negative weight if
+                                                      measure of Xiw, so it receives a positive
+                                                      weight. However, if X2 correlates so highly
+                POt — P01P12 <     0          [9]     with XKC-, that the left side of Inequality 10
+Some algebra shows that Inequality 9 is               is larger than the right (as a test of reading
+equivalent to                                         speed would correlate highly with the error in
+                                                      the history test in the above example), then
+                 P2-l(o)   PI-                        Xz is more useful as a measure of Xiw, and
+                                             [10]     so receives a negative weight.
+                  PI2        POl
+
+
+--- PAGE BREAK ---
+
+                   MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                165
+
+   Inequality 9 shows that in regression equa-     XB in this way raises the multiple correlation
+tions with two predictor variables, /?2 is never   for all three variables to .5, while the highest
+negative if p02 is greater than or equal to poi    multiple correlation without negative weights
+or if both predictor variables correlate posi-     is only .21, using X± and X*.
+tively with XQ and negatively with each               Thus, suppressor relationships appear in
+other. Further, fa is always negative if poa       situations in which a "reasonable" interpreta-
+= 0 and pig and poi are both positive.             tion of the relationship is extremely difficult.
+   When an equation contains more than two         Relationships among more than three pre-
+predictor variables, any variable Xt is a sup-     dictor variables are even more complex.
+pressor if Inequality 10 holds when X2 is          Therefore, even if the improvement resulting
+replaced by Xit and Xi is replaced by the          from using a negative weight were small,
+variable formed by dropping the ;th term           it is difficult to imagine an investigator with
+from the multiple regression equation which        such faith in his ability to conceive of all
+uses all n predictor variables. This follows       possible suppressor situations that he would
+from the fact that if the variable formed in       ignore the improved prediction resulting
+this way were used with Xs in a two-variable       from the use of a negative weight.
+regression equation predicting X0, then clearly
+the weight of Xt in this equation would equal        MEASURES OF THE "IMPORTANCE" OF A
+the weight of Xt in the regression equation                  PREDICTOR VARIABLE
+computed directly from all n variables. Thus          The present section deals with five differ-
+fa in the ^-variable equation would be nega-       ent measures of the "importance" of pre-
+tive whenever ft in the two-variable equation      dictor variables; for variable Xlt the measures
+was negative, which would occur whenever           are p0/; /?'/; p<H<p> 2 , which as we saw above
+Inequality 10 holds for that equation.             equals the usefulness of Xt; /?Vo/; and a
+   The multiple regression method considers        measure proposed by Englehart (1936). It
+suppressor relationships in that it chooses        will be recalled that ft'} was defined as the
+the weights, positive or negative, which give      weight given to Xt when all variables have
+the highest multiple correlation. Hence, the       been adjusted to unit variance, and that
+observation of negative weights in a sample        the usefulness of Xf was defined as the
+regression equation, indicating that suppres-      amount R* would drop if X) were removed
+sor variables may be present, does not alone       from the regression equation and the weights
+imply that there should be a deviation from        of the remaining predictor variables were then
+standard regression procedures. However,           recalculated.
+Gulliksen (1950) stated that negative weights         When all predictor variables are uncor-
+"should lead to a careful scrutiny of the          related, all five of these measures are equiva-
+test and a consideration of the reasonableness     lent. The equivalence of the first four can
+of such a finding [p. 330]." Although such a       be verified merely by inspection of Formulas
+scrutiny can often be attempted with con-          2 and 3; the fifth will be discussed later. If
+fidence in regression equations with two pre-      predictor variables are uncorrelated, each of
+dictor variables, it is difficult for an in-       the five measures also equals the difference
+vestigator to reach a conclusion about the          (expressed as a proportion of the variance
+reasonableness of a negative weight in a           of X0) between the original variance of X0
+complex, multipredictor situation. For ex-         and the variance of X0 in a subpopulation
+ample, consider a three-predictor situation in     whose members all have the same score on
+which poi = po2 = .15, poa — -2, pi2 = 0, and      Xj. (If this latter variance varies across
+pis = P28 = -7. Although Xa is the most valid      subpopulations, then an average is taken.)
+single predictor and would be assigned a           Further, if any of the five measures is
+positive weight when used in conjunction           summed across all the predictor variables in
+with either Xi or Xz alone, it can be shown        a regression equation, the total is R*. Thus
+that it is given a negative weight when X\,        it is meaningful and useful to consider R* to
+Xn, and Xa are all used together. Yet using        be the sum of the proportions of variance in
+
+
+--- PAGE BREAK ---
+
+166                                RICHARD B. DARLINGTON
+
+the criterion variable "accounted for by," or       only one of the five measures unaffected by
+"attributable to," or "contributed by" each of      the choice of the other variables in the
+the predictor variables. The interpretation         regression equation.
+is completely analogous to the interpretation
+of results in analysis-of-variance designs.         Beta Weights as Measures of the Importance
+    In analysis-of-variance designs, the com-       of Causal Relationships
+plete independence of all the independent              For many purposes, /3'j is of more interest
+variables is assured by the requirement of          than /?'/. In the present discussion, they will
+equal or proportional cell frequencies (or by       be considered equivalent, since either can be
+the requirement of statistical adjustments,         computed from the other (provided the sign
+such as those given by Federer and Zelen,           of the weight is known) and since they rank
+ 1966, designed to produce estimates of the         variables in the same order of importance.
+same parameters as those estimated with                Previous sections showed that beta weights,
+equal cell frequencies). In multiple regression,    like usefulness, are determined solely by the
+however, there is no requirement that pre-          characteristics of the orthogonal component
+dictor variables be uncorrelated. This prop-        of the variable under consideration. They
+erty gives regression analysis a substantial        thus have little relation to validity and are
+element of flexibility lacking in analysis of       heavily influenced by the nature of the other
+variance. When predictor variables are in-          variables in the regression equation. Beta
+tercorrelated, however, the five measures of        weights can even change in sign as variables
+importance are no longer equivalent, so that        are added to or removed from the equation;
+the term "contribution to variance" suddenly        one example was given in the section on
+becomes very ambiguous. The different meas-         suppressors, another is given by Kendall
+ures of importance do not even necessarily           (1957, p. 74).
+rank order the variables in a regression equa-
+                                                       It was shown above that ft'j (or /}'/) is not
+tion in the same order. For example, con-
+                                                    a measure of the usefulness of Xj when pre-
+sider the case in which pn — .4, p02 = .44,
+                                                    dictor variables are intercorrelated. The pres-
+pos = .3, p12 = .8, pis — 0, and p2a = -4.
+                                                    ent section describes a particular case in
+Given_these values, standard formulas show
+                                                    which beta weights are nevertheless of con-
+that R = .5. The three /?' weights computed         siderable interest as a measure of the "im-
+from these numbers are, respectively, .4, 0,        portance" of a variable.
+and .3, and the three decreases in R2 used             It is true that "correlation does not imply
+as measures of usefulness are, respectively,        causation." In most cases, an investigator
+.038, 0, and .050. Thus Xt has the highest          cannot determine whether an observed correla-
+ft' weight, X2 is most valid, and Xs is most        tion between two variables X0 and X\ is due
+useful. Although in this example the variable       to the effect of X0 on X\, or to the effect of
+with the lowest /}' weight, X2, is also the least   Xi on Xoj or to some combination of effects
+useful, other examples can be constructed in        which might include the effects of other out-
+which this is not true.
+                                                    side variables on both X0 and X\. However,
+   The rest of this section attempts to explain     there are cases in which some of these alter-
+what meaning, if any, can be attached to            natives can be ruled out by the nature of the
+each of the five measures of importance. Of         variables involved; thus, if there is a correla-
+the five, only /8'#>oy and Englehart's measure      tion between snowfall and traffic accidents,
+total to R2 when summed across the variables        it can be assumed that the traffic accidents
+in a regression equation. Nevertheless, of the      did not cause the snowfall. If a large enough
+five, these two will be shown to be of least        number of such causal hypotheses can be
+interest and value.                                 eliminated, then there are certain situations
+                                                    in which a multiple regression equation can
+Squared Validity
+                                                    be used to estimate the importance of the
+  Of the five measures, poj3 or the squared         remaining causal relationships. Partly because
+validity, needs the least comment. It is the        this technique has been used in cases in
+
+
+--- PAGE BREAK ---
+
+                   MULTIPLE    REGRESSION IN RESEARCH AND PRACTICE                                 167
+
+which it was not wholly appropriate, this sec-     tion beta weights, they can be employed as
+tion attempts to make explicit the assumptions     unbiased estimates of the true causal weights.
+necessary for the use of the technique.            The method can also be extended to handle
+   Consider a situation in which (a) a given       curvilinear or interactive effects by including
+dependent variable is affected only by a           such terms in the regression equation.
+specified set of measurable variables, (b) the        Thus, the method assumes:
+effect of each of these variables on the de-
+pendent variable is linear, and (c) the de-           1. All variables which might affect the
+pendent variable has no effect, either directly    dependent variable are either included in the
+or indirectly, on any of the independent           regression equation or are uncorrelated with
+variables. In such a situation, consider a         the variables which are included.
+linear function of the causal variables in            2. Terms are included in the regression
+which the weight of each variable equals the       equation to handle any curvilinear or inter-
+causal importance of that variable; that is,       active effects.6
+if increasing Xj by 1 unit increases the              3. The dependent variable has no effect on
+dependent variable by g units, then g is the       the independent variables.
+weight of Xj. This linear function will per-
+                                                   Since these assumptions are rarely all fully
+fectly predict the dependent variable. Since
+                                                   met, the technique should be used with cau-
+the multiple regression method computes the
+                                                   tion. Nevertheless, when they are met, it pro-
+weights which result in the best prediction of
+                                                   vides a technique for rationally inferring
+the dependent variable, in this situation a
+                                                   causal relationships in complex situations
+multiple regression equation computed in the
+                                                   even though experimental manipulation of the
+population necessarily computes the true
+                                                   independent variables is impossible.
+causal weights for the set of variables involved
+                                                      The technique is actually a variant of the
+in the equation, since these are the only
+                                                   method of computing a partial correlation
+weights which result in perfect prediction.
+                                                   between the dependent variable and each of
+Further, if an investigator has inadvertently
+                                                   the independent variables. In the regression
+included among the predictors a variable
+                                                   technique, however, the emphasis is on re-
+which in fact has no effect on the dependent
+                                                   gression weights rather than correlation co-
+variable, then that predictor variable will
+                                                   efficients. The advantage is that the final
+receive a weight of zero.
+                                                   conclusions are in the form, "Increasing Xj
+    Suppose now that the dependent variable        by 1 unit increases the dependent variable
+is determined partly by chance factors or by       by /?/ units"; for example, "Every inch of
+nonchance factors which are uncorrelated           snowfall causes, on the average, IS addi-
+with all of the predictors which the in-           tional traffic accidents." This is the most
+vestigator uses. It can be shown that the          useful form of a statement when the emphasis
+weights in a multiple regression equation are      is on cause and effect.
+unchanged by the addition of a new predictor          In any attempt to illustrate the method
+variable which is uncorrelated with all the        by an example, valid questions can be raised
+other predictors.4 Therefore, the best possible    concerning the applicability of the assump-
+prediction of the dependent variable from the      tions listed above to that specific example.
+causal measures used is still obtained when        However, as an illustration of the technique,
+ the weight of each variable equals the true       consider a study of the effects of different
+ causal effect of that variable on the dependent   weather conditions on the frequency of traffic
+variable. Hence the population multiple            accidents. Suppose that each day, in a large
+regression weights still equal the true causal     city, several measures of weather conditions
+weights, although the multiple correlation is      were recorded, and that the number of traffic
+ less than unity. And since sample beta
+                                                      6
+ weights are unbiased estimates of the popula-          Configural and curvilinear terms, however, can
+                                                   produce complications in the interpretation of linear
+  4
+    See Theorem 5 of the document cited in Foot-   terms. See Darlington and Paulus (1966) for a more
+note 2.                                            complete discussion.
+
+
+--- PAGE BREAK ---
+
+168                               RICHARD B. DARLINGTON
+
+accidents in the city each day was also           veloped by Wright (1921) in the biological
+recorded. Suppose then that a multiple re-        sciences, where it is known as "path analysis."
+gression equation was constructed to pre-         Recent general discussions of the method
+dict the number of traffic accidents in a day     were given by Wright (1954) and by Turner
+from the various measures of weather con-         and Stevens (1959). At least one of these
+ditions that day. Despite the fact that weather   should be read by anyone planning to use
+conditions cannot be manipulated at will, and     the technique. Detailed recent discussions of
+despite the fact that, say, humidity may be       particular aspects of path analysis have been
+correlated with temperature, the beta weights     given by Wright (1960a, 1960b) and by
+in this regression equation would give in-        Turner, Monroe, and Lucas (1961). These
+formation on the causal importance of each        and the more general articles also give refer-
+aspect of the weather.                            ences to further literature in the area. They
+   The questions which arise in connection        also discuss in detail techniques applicable
+with this example illustrate the types of ques-   when some of the independent variables are
+tions which must be considered in any use of      themselves affected by other independent
+the technique. For example, in connection         variables. The simple technique outlined
+with Assumption 1 above, we must ask:             above still applies in this situation, but the
+ (a) "Does temperature have a positive beta       weight given to each independent variable
+weight because vacations come in the sum-         measures only the direct causal effect which
+mer, and people drive more during vaca-           that variable has on the dependent variable,
+tions?" (This could be handled by, say, using     ignoring effects which operate indirectly
+number of accidents per vehicle mile as the       through the effect which the independent
+dependent variable.) (b) "Does an aspect of       variable has on other independent variables.
+the weather which has not been recorded,
+but which correlates with some measures           Usefulness
+which were recorded, affect accidents?" (This         When the focus is on the prediction of X0>
+would result in spuriously high beta weights      rather than causal analysis, usefulness is
+for these recorded measures.) Similar ques-       clearly the measure of greatest interest. Use-
+tions arise concerning the appropriateness of     fulness actually has a closer relationship to
+Assumption 2, although Assumption 3 seems         a partial correlation coefficient than does ft'f,
+to hold for this example.                         it can be shown that dividing the usefulness
+   Whenever a causal relationship is estab-       of Xj by 1 — R2 gives the squared partial
+lished in any branch of science, there is al-     correlation between X0 and Xit holding all
+ways the possibility of investigating the         other variables constant. Since 1 — .R2 is con-
+causal relationships which mediate those          stant for a given regression equation, it fol-
+relationships found. This is true of the pres-    lows that the usefulnesses of the predictor
+ent technique. Thus, if hot weather is found      variables in a regression equation are pro-
+to increase accidents, there remains for future   portional to these squared partial correlations.
+investigators the task of discovering whether         It follows directly from Formula 4 that
+this is mediated by the effect of heat on the     /?'/ equals the validity of the orthogonal com-
+alertness of drivers, on the reliability of       ponent of X} (i.e., the square root of the
+brakes, or on other factors. This considera-      usefulness of Xj), divided by the standard
+tion, however, does not lessen the value of       deviation of the same orthogonal component
+the original finding.                              (when all the original variables are expressed
+   The method has been developed far beyond       in standard-score form). Thus, if two vari-
+the limits indicated here. More complete dis-     ables are equally useful, the one with the
+cussions by social scientists of this and re-     larger /?' weight has the orthogonal com-
+lated techniques can be found in Simon            ponent with the smaller variance.
+ (1957), Blalock (1964), Monroe and Stuit             The hypothesis that a predictor variable
+ (1935), Dunlap and Cureton (1930), and           has zero usefulness in the population is
+Burks (1926). The method was first de-            equivalent to the hypothesis that the variable
+
+
+--- PAGE BREAK ---
+
+                     MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                 169
+
+has a population beta weight of zero, so the        lowing is a list of meanings which "independ-
+significance tests of these two hypotheses are      ent contribution" has when predictor vari-
+the same. The parametric test of this hy-           ables are uncorrelated:
+pothesis is an F test, described in McNemar
+(1962, p. 284) and elsewhere. The F value              1. The squared validity of Xj.
+given by this test equals PO y<p> 2 (which is the      2. The usefulness of Xj.
+sample usefulness of the variable in question),        3. fff.
+multiplied by the fraction (N — n—1)/                  4. The amount the variance of the regres-
+(1 — R2). This fraction is, of course, constant     sion equation would drop if Xj were removed
+for all the variables in a given regression equa-   from the equation, expressed as a proportion
+tion. Hence the F statistic is equivalent to use-   of o-o2.
+fulness as a measure of the relative importance        5. The amount the covariance between the
+of the variables in a given regression equation.    regression equation and X0 would drop if Xj
+If a worker has access to a computer program        were removed, expressed as a proportion of
+which computes this F value for each pre-           <r02.
+dictor variable (if the test available is a t         6. The increase in the variance of -Xo(p>
+test, then t2 equals F), then he can readily        when Xj is removed from the equation, ex-
+find each variable's usefulness by dividing         pressed as a proportion of a0".
+F by the above fraction.                               7. The average difference, expressed as a
+                                                    proportion of o-02, between <r02 and the vari-
+                                                    ance of Xo in subpopulations in which Xj is
+                                                    held constant.
+   It can be shown that .R2 can be calculated
+from /3' weights by the formula6                       This list attempts to include all of the major
+                                                    properties which most readers consciously or
+      R" = /S'lPOl + /3V02 + • • ' + /3'nPO;,
+                                                    unconsciously associate with the term "in-
+This formula has suggested to several writers       dependent contribution." It is thus of con-
+(Chase, 1960; Hoffman, 1960; personal com-          siderable interest to note that /?V<v has
+munications from several sources) that /3'/po/      none of these properties. As a minor excep-
+must be a measure of the "importance" of            tion, fi'jpoj has Property 5 if the remaining
+Xj, since it totals to .R2 when summed across       variables in the regression equation are not
+all the variables in the regression equation,       reweighted after removal of Xjt but this is not
+and all measures of importance have this            a property of any particular interest.
+property when predictor variables are un-              Although all of the measures in the above
+correlated. Ward (1962) raised a question           list do sum to R2 when predictor variables
+concerning the value of the measure; in de-         are uncorrelated, this fact alone does not
+fense, Hoffman (1962) called it the unique          justify the use of a measure, simply on the
+measure of the "independent contribution" of        grounds that it sums to R3 even when pre-
+Xj. Ward's position will be restated and elabo-     dictor variables are intercorrelated. It would
+rated, since the present position is in basic       be better to simply concede that the notion
+agreement with it.                                  of "independent contribution to variance"
+   Although it is the province of an author to      has no meaning when predictor variables are
+assign a name like "measure of independent          intercorrelated. The meaninglessness of y3'/p<v
+contribution" to any statistic he proposes,         as a measure of importance is further under-
+this particular name has accumulated a good         scored by the fact that it can be zero, or even
+deal of "surplus meaning" by virtue of the          negative, in cases in which X} contributes
+powerful properties which it has when pre-          substantially to the prediction of X0.
+dictor variables are uncorrelated, as in analy-
+sis-of-variance designs, where its meaning is       Englehart's Measure
+highly specific. Partly as a review, the fol-          Englehart assigned a "contribution to vari-
+  6
+    See Theorem 9 of the document cited in Foot-    ance" not only to each predictor variable, but
+note 2.                                             also to the joint effect of each pair of predictor
+
+
+--- PAGE BREAK ---
+
+170                                RICHARD B. DARLINGTON
+
+variables. He based his system on the formula      the weight of a variable increases its im-
+                                                   portance.
+R* = 0V + 0V + • • • + /3V +                          Some of these papers (Creager & Valentine,
+                                                   1962; Richardson, 1941) simply propose
+                                                   statistical measures of importance, calling
+Each of the first n terms in this sum is labeled   the proposed measure the "effective weight"
+the "contribution to variance" of the cor-
+                                                   or "contribution to variance" of the variable.
+responding predictor variable, while each of       (In every case, the latter term is subject in
+the last [»(« — 1)1/2 terms is called the          large part to the same criticisms made of the
+contribution of the "joint effect" of two vari-    term in the previous section.) Others (Edger-
+ables. This analysis was accepted by Mc-           ton & Kolbe, 1936; Horst, 1936; Wilks,
+Nemar (1962, p. 176).                              1938) go one step further, first adopting one
+   The criticisms of this measure are similar      particular measure of importance, and then
+to those of /3'jpoj; the measure has none of       showing how the variables should be weighted
+the most important properties that a "con-         so that all of the variables are equally im-
+tribution to variance" has when variables are      portant, or, more generally, how the variables
+uncorrelated. The concept of the "joint con-
+                                                   should be weighted so that the measures of
+tribution to variance" of two predictor vari-      importance of the different variables are
+ables might connote to some readers a measure      proportional to some specified set of numbers.
+of the amount that R2 would drop if the two           These methods, then, are intended to be
+predictor variables were somehow made un-          used for weighting variables in situations in
+correlated. This connotation would be in-          which regression equations cannot be derived
+correct; in fact, if /?'y, /?'&, and pjk are all   because the criterion variable is not easily
+positive, so that the "joint contribution to       observable, even though it exists in some
+variance" of Xj and -X"ft is positive in Engle-    meaningful sense. Although all of these papers
+hart's system, then R2 would actually increase     give careful descriptions of the statistical
+if pjk were zero.                                  properties of the resulting composite, none
+                                                   gives an example of a practical situation in
+INFERRING RELATIVE REGRESSION WEIGHTS              which the composite can be shown to have
+       FROM RELATIVE VALIDITIES                    optimum properties. Most of the papers state
+   This section briefly mentions a series of       that the procedure for specifying the desired
+papers which deal with a problem, or set of        relative sizes of the measures of importance
+problems, which is not clearly denned. Al-         would vary across situations. This statement,
+though these papers have not traditionally         though true, has been allowed to obscure
+been considered to be closely related to re-       the fact that not one of the papers gives even
+gression theory, they are mentioned briefly        the slightest hint, even for one situation, how
+here since a regression solution can be pro-       one should go about specifying these values.
+posed for at least one of the problems with        In other words, none of the papers makes a
+which they deal. All of these papers deal in       convincing case for the practical value of the
+some fashion with the relationship between         particular measure of importance proposed.
+the weight of a variable in a weighted average        In approaching the present problem, it
+of several variables, and the "importance" of      would seem that the first question to be asked
+the variable to that composite. The weights        is what a layman or a psychologist is likely
+of the variables in the composite may have         to mean when he tells a psychometrician that
+been chosen by any subjective or objective         he wants several variables to be weighted
+method. This freedom in the method of as-          so that they are, for example, "equally im-
+signing weights distinguishes these papers         portant." Most commonly (though certainly
+from those mentioned in the previous section,      not always), he probably means that he esti-
+which assume that regression weights are           mates the variables to correlate equally with
+used. For all of the measures of importance        some specified but unobservable criterion
+referred to in the present section, increasing     variable. In this case, use can be made of
+
+
+--- PAGE BREAK ---
+
+                  MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                              171
+
+the property of multiple regression equa-        measure of importance (i.e., simple validity)
+tions—obvious from an inspection of the nor-     which one should use in specifying the rela-
+mal equations of regression theory—that the      tive importance of the different variables.
+relative weights of the predictor variables in   The reader should be cautioned that the
+a multiple regression equation can be de-        technique does not apply—at least in the
+termined from a knowledge of only the relative   simple form outlined above—to another com-
+ (rather than absolute) sizes of the correla-    mon situation in which the validity of each
+tions of the predictor variables with a cri-     predictor variable is estimated from the cor-
+terion variable. That is, if the validities of   relation of that variable with other predictor
+all the predictor variables in a multiple re-    variables, rather than from external data as
+gression equation are multiplied by the same     in the above example.
+constant and the beta weights are then re-          In using the technique, the arbitrarily
+computed using the new validities and the        chosen validities should not be set so high
+old matrix of predictor intercorrelations, the   that they are inconsistent with the observed
+relative sizes of the weights will be un-        intercorrelations of the variables. For ex-
+changed; each weight will simply be multi-       ample, if two variables correlate zero with
+plied by the same constant by which the          each other, it can be shown that they cannot
+validities were multiplied.                      both correlate .9 with the same criterion
+   This fact enables the estimation of the       variable. Setting validities so high that such
+optimum relative weights of several predictor    an inconsistency appears does not distort the
+variables even when the criterion variable is    relative weights computed by the program,
+not directly observable, provided there is       but will usually produce one of two otherwise
+some estimate of the relative validities of      puzzling results (depending on the computer
+the variables. For example, suppose several      program used): The program will fail to run,
+observers are estimated to be equally accurate   or it will compute and print a value of R
+raters of some trait on which subjects are to    above unity.
+be ranked. Suppose the ratings by these
+observers are available, and the problem is            ESTIMATES OF THE VALIDITY OF
+to find the optimum relative weights for a                  REGRESSION EQUATIONS
+weighted average of the raters. A problem of     Estimating the Validity of the Population
+this type was described by Dunnette and          Regression Equation
+Hoggatt (1957). A solution to this problem
+could proceed as follows. An arbitrarily            Let the term "population regression equa-
+chosen number can be entered into a multiple     tion" refer to the equation developed in the
+regression computer program as the common        entire population using predictor variables Xi,
+validity of the raters, along with the ob-       X2, • • • , Xa to predict X0; the validity of
+served standard deviations and intercorrela-     this equation is measured by the population
+tions of the raters, and along with an           multiple correlation R. Likewise, let the term
+arbitrarily chosen value for the standard        "sample regression equation" refer to an
+deviation of the criterion variable. The         equation using the same variables which is
+weights computed by the regression program       developed in any random sample from that
+are then the weights used to form a composite    population; the validity of this equation in
+variable. If the user has entered into the       that same sample is measured by the sample
+program accurate estimates of the relative       multiple correlation R.
+validities of the different variables, then         Normally, a sample multiple correlation
+this composite is optimum in the obviously       is higher than the corresponding population
+important sense that it correlates higher with   multiple correlation. In the extreme instance
+the unobservable "criterion" variable than       in which a regression equation using one pre-
+any other composite using different relative     dictor variable is developed in a sample of
+weights.                                         only two individuals, the sample multiple
+   The technique thus makes explicit the         correlation is unity in all but trivial cases,
+
+
+--- PAGE BREAK ---
+
+172                                 RICHARD B. DARLINGTON
+
+no matter what the population correlation is.       mean square error is the population variance
+In general, the same result occurs whenever         of the criterion variable. Hence, the familiar
+the number of predictor variables » is one          formula which states that N/ (N — 1) times
+less than the sample size N. If n is greater        the sample variance gives an unbiased esti-
+than or equal to N, then the solution is in-        mate of the population variance is simply the
+determinate; infinitely many sets of weights        special case of the previous formula in which
+will yield sample multiple correlations of          M = 0.
+unity.                                                The population mean square error is related
+   It is often useful to describe the validity of   to the multiple correlation by the formula
+a regression equation in terms of its mean
+square error; this quantity is the mean of                       R = Vl -
+the squared differences between each person's
+true criterion score and the prediction of that     which is merely the translation into present
+score made by the regression equation.              notation of a familiar formula taught in most
+                                                    undergraduate statistics courses. Wherry
+   The expected value of the mean square
+error in a sample of size N in which a re-           (1931) suggested that R could be estimated
+gression equation is developed is equal to          by substituting into this formula the esti-
+ (N— n — l)/N times the mean square error           mates of <ro<p) 2 and o-02 described in the previ-
+in the population of the population regression      ous two paragraphs. He further pointed out
+equation. Therefore, the reciprocal of this         that the ratio between these two estimates is
+fraction times the sample mean square error         a function of the sample multiple correlation.
+is an unbiased estimator of the population          The resulting formula can be found in Mc-
+mean square error. Since the latter mean square     Nemar (1962, p. 184) and elsewhere.
+error equals the population variance of the            Although the Wherry formula is based on
+component of X0 orthogonal to the predictors,       unbiased estimators of o-02 and o-ocp)2, in itself
+it is denoted by cro(p)2, as mentioned earlier.     it is not an unbiased estimator of R in the
+Similarly, the sample mean square error is          strict statistical sense, contrary to McNemar
+                                                     (1962, p. 184) and others. However, this
+                                                    is no grounds for criticism of the formula,
+                                                    since it has long been known that any un-
+                                                    biased estimator of R has properties which
+where XM is the predicted score of person * on
+                                                    make it clearly inferior to certain biased esti-
+X0, as made by the sample regression equa-
+                                                    mators. By definition, an estimator is un-
+tion. Thus, the formula for an unbiased
+                                                    biased only if the mean of an infinite number
+estimator of o-o(p)2 is
+                                                    of estimates from independent random samples
+                       N                            equals the parameter estimated, no matter
+                     N-n-1                  [11]    what the value of that parameter is. When R
+                                                    is less than 1, no estimate of R based on
+An examination of the derivation of this            finite samples can be perfect, that is, yield
+estimator (Graybill, 1961, p. I l l ) shows it to
+                                                    exactly correct estimates of R in every sample.
+be unbiased even if none of the usual as-
+sumptions of linearity, homoscedasticity, and       Therefore, if R = 0, an estimator which is
+normality holds, although without these as-         unbiased must be one which can yield nega-
+sumptions little can be said about its              tive estimates in some samples. But this means
+efficiency.                                         that a statistic, in order to be an unbiased
+   A special case of Formula 11 is the case in      estimator of R, must be able to assume values
+which n — 0. In this case, the prediction of        which the parameter estimated cannot assume,
+any individual's criterion score is the sample      since R is greater than or equal to zero. Clearly,
+mean, so that the sample mean square error          whenever an estimate of R is negative, the
+is the sample variance of the criterion vari-       estimate can be improved by estimating R to be
+able. By the same reasoning, the population         zero, since zero is always closer to the true R
+
+
+--- PAGE BREAK ---
+
+                   MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                173
+
+than is the negative estimate. But although        tion as does the population regression equa-
+this modification of the estimation procedure      tion, it would therefore also not be expected
+is obviously an improvement, it no longer         to predict as well in a random cross-validation
+yields an unbiased estimate of R. Therefore,      sample from the population.
+unbiased estimators of R are clearly not the          Hence, three different mean square errors
+best estimators. For similar reasons, un-         must be distinguished. The smallest, and
+biased estimators of .R2 are of no practical      normally the easiest to observe, is the sample
+interest. These points were made by Olkin         mean square error of the equation developed
+and Pratt (1958), who nevertheless developed      in that same sample. The second and next
+an unbiased estimator of JR2.                     smallest is the population mean square
+                                                  error of the equation developed in the
+Estimating the Validity of a Sample Regres-       entire population; this equals the expected
+sion Equation                                     mean square error of that equation in
+   Lord (19SO) and Nicholson (1948) have          any random sample. The third and largest is
+pointed out that the Wherry formula has           the mean square error of a sample regression
+often been misinterpreted as an estimator         equation in the population, which equals the
+of the true validity (i.e., the validity in the   expected mean square error of such an equa-
+population) of a multiple regression equation     tion in a cross-validation sample. The Wherry
+developed in a sample. Actually, it overesti-     formula is based on a formula which estimates
+mates this validity. The Wherry formula           the second of these three mean square errors
+estimates, instead, the validity of the popula-   from the first, while a prediction of cross-
+tion regression equation, which was the equa-     validity requires predicting the third from
+tion developed in the entire population rather    the first. In his original article, Wherry failed
+than in a sample. This equation, by defini-       to distinguish between the second and third
+tion, has a higher validity in the population     of these mean square errors, and the result-
+than any other linear equation using the same     ing confusion still appears in even the most
+predictor variables. In general, the weights      recent standard sources, such as Guilford
+in a sample regression equation will not be        (1965, p. 401) and Guion (1965, pp. 163-
+exactly equal to the weights in the population    164). Since the Wherry formula was thus
+equation. The sample regression equation will     often misused to attempt to predict the cross-
+then necessarily have a lower validity in the     validity of a sample regression equation, it
+population than will the population regres-       was often observed to overestimate this quan-
+sion equation. Thus, the Wherry formula           tity (i.e., to underestimate the mean square
+generally overestimates the population validity   error).
+of a sample regression equation, because it           Lord and Nicholson, working independently,
+actually estimates a parameter (the validity      found that an unbiased estimator of the popu-
+of the population regression equation) which      lation mean square error of a regression equa-
+is higher than this validity.                     tion developed in a sample of size N is
+   The same distinction must be made if the                      N+n+ 1
+validities of the two types of regression equa-                                              [13]
+tion are measured in a second (cross-valida-                     N-n-1
+tion) random sample from the population. If       In their derivations, Lord and Nicholson as-
+any regression equation, based either on the      sumed that the conditional distributions of X0
+entire population or on a random sample           are normal, have a common variance, and are
+from that population, is applied to a cross-      linearly related to the predictor variables.
+validation sample, then the expected mean         They further assumed that the scores ob-
+square error of that equation in the cross-       served on the predictor variables are fixed by
+validation sample equals the mean square          the investigator, rather than sampled ran-
+error of that equation in the population.         domly from a population (the usual case in
+Since the regression equation developed in a      psychology). If we replace the assumption of
+sample does not predict as well in the popula-    fixed scores by the assumption of random
+
+
+--- PAGE BREAK ---
+
+174                               RICHARD B. DARLINGTON
+
+sampling, and replace the other assumptions      gression equations, even though they will
+by the assumption that scores on all variables   be phrased in regression terms.
+form a multivariate normal distribution, then       Formula 12 shows the well-known means
+the estimator comparable to Formula 13 is        of translating the mean square error of a
+                                                population regression equation into the coef-
+           N                                     ficient of correlation between the regression
+                                           [14]
+         N-n-2N -n-1                             equation and the criterion variable. However,
+ This estimator gives still larger estimates of when the mean square error of a sample re-
+ the mean square error than does Formula 13, gression equation is computed in a cross-
+ except in the trivial case in which « = 0, in validation sample or in the population as a
+which instance the two estimates are identi- whole, neither Formula 12 nor any other
+ cal. Formula 14 is an algebraic rearrangement formula provides an exact translation of that
+of a formula given by Stein (1960, p. 427). mean square error into a coefficient of cor-
+An independent derivation by the present relation between the regression equation and
+author, which is longer but which requires the criterion variable. This is because two
+less mathematical competence to follow, is regression equations can have different mean
+given under Theorem 18 of the document square errors yet correlate equally with the
+cited in Footnote 2.                            criterion variable. Suppose that two sample
+   Unfortunately, there is as yet no practical regression equations are based on the same
+means of establishing a confidence interval predictor variables, and that the weights
+around estimates computed from either For- within the first equation have exactly the
+mula 13 or 14; empirical work suggests that same relative sizes as the weights within the
+their standard errors might be quite large.     second. Then the two equations will correlate
+   An extremely important property of For- equally with the criterion variable. But if the
+mulas 13 and 14 is that the estimated true actual sizes of the weights, or the size of the
+validity of a sample multiple regression equa- additive constant a, differ between the two
+tion is very low (and the mean square error equations, then the two equations will have
+very high) when the number of predictor different mean square errors in the popula-
+variables is large in relation to the number tion or in a cross-validation sample.
+of people in the sample on which the equa-          Just as two regression equations with dif-
+tion was derived. This is often observed in ferent mean square errors may correlate
+practice. For example, Guttman (1941, p. equally with the criterion variable, parallel
+360) constructed a regression equation with reasoning shows that two equations with the
+84 predictor variables using 136 subjects, and same mean square error may have different
+observed a correlation with the criterion vari- correlations with the criterion variable. Thus
+able of .73 in the initial sample and .04 in a cross-validity mean square error computed
+a cross-validation sample. Thus, it is often in a second sample, or estimated by Formula
+better to use fewer predictor variables, or to 13 or 14, cannot be translated exactly into a
+use a different prediction method altogether, correlation coefficient by formulas analogous
+than to use a regression equation with an ex- to Formula 12. If N is large, however, the
+tremely large number of variables. For ex- familiar formula for translating a mean square
+ample, using the same data, Guttman ob- error into a correlation coefficient should give
+served a cross-validity of .20 using a regres- a good approximation.
+sion equation with 21 variables, and a cross-      When a regression equation or other meas-
+validity of .31 for a simple item-analytic ure is used to select the m individuals esti-
+technique.                                      mated to be highest on the criterion variable
+                                                and m is fixed by the situation, then the value
+Relation between the Mean Square Error and of the measure depends only upon the rela-
+the Correlation Coefficient                     tive, not absolute, scores of the individuals on
+   The points to be made in this section are that measure. Since the correlation coefficient
+relevant to measures other than multiple re- likewise depends only on relative scores, it
+
+
+--- PAGE BREAK ---
+
+                    MULTIPLE     REGRESSION IN RESEARCH AND PRACTICE                                 175
+
+follows that, in this situation, the correlation ods discussed below are of most interest when
+between the measure and the criterion vari- 10 < v < SO, but may be of value when
+able gives a more realistic statement of the 5 < v < 100.
+value of the measure than does the mean              If an investigator wishes to predict a crite-
+square error. On the other hand, when m is rion variable by a regression or least squares
+not predetermined, whether a person is se- technique, and he has available v possible
+lected depends upon his absolute score on predictor variables, he can use in the equation
+the measure rather than upon the relation- all v variables (so that M, the number of pre-
+ship of that score to the scores of other in- dictor variables used in the regression equa-
+dividuals. In this situation, the value of a tion, is equal to v). Or, he can discard all v
+measure is a function of the actual difference predictor variables (so that n = 0) and use
+between a person's estimated and true cri- the sample mean of the criterion variable as
+terion scores; therefore, the mean square the prediction of each person's criterion score.
+error is a more appropriate index of the value Or, he can use a regression equation with less
+of the measure than is the correlation coef- than v predictors (so that v > n > 0). Since
+ficient. For this reason, Formulas 13 and 14 he can choose independently whether to in-
+are most useful in situations in which the clude or exclude each of the v variables, he is
+number of people to be selected by a measure faced with 2* possible alternative sets of pre-
+is flexible rather than predetermined. (None dictor variables, plus sets formed by lumping
+of this is meant to imply, however, that either together several variables and then entering
+the multiple correlation coefficient or the them in a regression equation as one variable.
+mean square error is proportional to the             In general, it is impractical to compute
+value of a test battery, as value is measured all of the 2" or more possible regression equa-
+in decision theory terms.)                       tions and then estimate the validity of each
+                                                 equation, so it is necessary to follow some
+     STATISTICAL CRITERIA FOR SELECTING          simpler procedure in choosing a final regres-
+              PREDICTOR VARIABLES                sion equation. The remainder of this section
+    Formulas 13 and 14 show the desirability discusses several such procedures.
+of selecting a small number of predictor vari-
+ables for use in a regression equation when Selecting Variables to Minimize Sampling
+v, the total number of available variables, is Errors o] Beta Weights
+large. This section discusses several methods        If -the regression of X0 on the predictor
+which have been proposed for doing this. All variables is linear and if the conditional dis-
+methods discussed below involve complex tributions of X0 have a common standard
+computational manipulations, such as invert- deviation, then the sampling distribution of
+ing the v X v correlation matrix of predictor each sample beta weight b) has mean /}/
+variables. Although modern computers use (hence bf is an unbiased estimator of /?/) and
+approximate methods to perform these cal- a conditional standard deviation
+ culations, the calculations are so complex that
+ either the computational time or the rounding                                  •Tj(p)            [15]7
+ errors increase rapidly as v increases. As a
+ very rough rule, when v is larger than ap-          7
+                                                       Although this expression as a whole is a popula-
+ proximately 50-100, item-analytic methods        tion  value, it contains the sample value SKV>. This
+ discussed by Darlington and Bishop (1966) itusage        will be new to many psychologists, although
+                                                     is standard practice in some branches of statistical
+ are preferable to any of the methods dis- theory. Briefly, the expression as a whole is the
+ cussed below, both because they are simpler standard deviation of the sampling distribution of
+ computationally and because tests constructed bt in those samples which have a given value of
+ by those methods have been demonstrated to suti, rather than in all samples. This point is fur-
+                                                  ther clarified in the discussion at the beginning of
+ perform better on cross-validation when the Part        II of the document cited in Footnote 2. Some
+ number of people in the test-construction of the points made briefly in the remainder of the
+ sample is small. Roughly speaking, the meth- present paragraph are also expanded there.
+
+
+--- PAGE BREAK ---
+
+176                                RICHARD B. DARLINGTON
+
+An estimate of Expression IS, using the esti-      siderable doubt as to the value of this
+mate of o-o(p)2 given by Formula 11, is com-       strategy.
+puted by most standard multiple regression            Consider a situation with three predictor
+computer programs. If we can also assume           variables, Xi, X2, and X3. Suppose the initial-
+normality of the conditional distributions of      sample validity of the regression equation
+X0 (or if N is large enough so that the central    using Xi and X2 equals the initial-sample
+limit theorem applies), then dividing bj — /3t     validity of the equation using Xt and Xs,
+by this estimate of Expression IS yields a         but suppose that rl2* is lower than ri32. In
+statistic with a t distribution with N — n — 1     this situation, an investigator following Cure-
+df. When (3j is set equal to zero, this test is    ton's recommendation would prefer using the
+equivalent to the F test mentioned earlier.        former of the two equations, since the esti-
+Although many texts fail to mention it, Bart-      mated standard errors of the beta weights are
+lett (1933, esp. pp. 277-278) has shown that       lower in that equation, even though the
+use of both Expression IS and the t test is        initial-sample validities of the two equations
+appropriate when the sample values on the          are the same.
+predictor variables are determined by the              On the other hand, when Formula 13 or 14
+random sampling procedure common in psy-           is used to estimate the true validity of a
+chology, as well as in the case (more com-          regression equation, intercorrelations of the
+monly discussed by statisticians) in which          predictor variables are ignored except insofar
+those values are fixed by the investigator.         as they affect the initial-sample validity.
+   Because the quantities N and <r0(P) in Ex-       Hence, in the above example, the predicted
+pression IS are the same for all the variables      cross-validities of the two regression equa-
+in any one regression equation, the standard        tions would be the same, despite the differ-
+errors of the several bjS in the equation are       ences in the estimated sampling errors of
+inversely proportional to the values of % p) ,      the beta weights caused by the difference
+which are the observed standard deviations         between r^ and ri32.
+of the orthogonal components of the various            We thus have the paradoxical situation
+predictor variables. The quantity % p) is           that the sizes of the errors in estimates of
+generally large if Xf has low correlations with     beta weights do not enter into the estimation
+the other predictor variables and small if         of the true validity of a regression equation.
+Xj is highly correlated with the other pre-            The solution to this paradox lies in the
+dictors; therefore, the weights of the variables    nature of the correlation between the two
+which have the lowest correlations with other       sample beta weights within the same equa-
+predictor variables are generally the weights       tion (i.e., the correlation we would observe
+which are least subject to sampling errors.         if we drew infinitely many equal-sized in-
+   Cureton (19Sla, pp. 12-15; 19Slb, p. 691)        dependent random samples from the popula-
+referred to the number of variables which           tion, computed two regression weights bj
+must be removed from a set of predictor             and bit in each sample, and then correlated
+variables in order to leave the remaining           bj with b,c across the samples). In a regres-
+variables reasonably uncorrelated with each         sion equation with n variables, the correla-
+other as the number of "approximate linear          tion between any two weights bf and bk
+restraints" in the set. He recommended that         equals —1 times the partial correlation be-
+variables be removed or combined so as to           tween Xj and Xk, partialing out the other
+eliminate the approximate linear restraints,        n — 2 predictor variables.8 This correlation is
+ in order to maximize % p) for each ;' and           8
+                                                       This statement assumes linearity and homo-
+thus minimize the sampling errors of beta          scedasticity but not normality. The statement is
+weights in the regression equation. His            exactly correct only if values on the predictor
+recommendation was apparently accepted by          variables are fixed by the experimenter; if instead
+                                                   they are sampled randomly (the most common
+ Guilford (1954, p. 404). It will be shown,        case in psychology), then we use, instead of all
+ however, that Formulas 13 and 14 raise con-       samples, the subset of samples with given values of
+
+
+--- PAGE BREAK ---
+
+                     MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                   177
+
+ defined as the correlation between the com-           opposite directions and such errors tend to
+ ponents of Xj and Xk orthogonal to the other          compensate for each other in a manner lack-
+ « — 2 predictor variables. In the present ex-         ing when TIZ = 0.
+ ample, in which » = 2, there are no other pre-          Errors in beta weights also tend to com-
+ dictor variables; hence, the correlation be-          pensate for each other when r\z is negative.
+ tween bi and ba is — rlz. Thus in this example,       Again, in the extreme case in which r12 = — 1,
+ if ri2 is positive, the correlation between the       the compensation is perfect. Thus, it is pre-
+ two sample beta weights is negative. Since           cisely in those situations in which errors in
+ sample beta weights are unbiased estimates of        the estimates of beta weights tend to be
+the corresponding population weights, this            largest that the adverse effect of these errors
+means that if r12 is positive, an overestimation      on validity is minimized by the pattern in
+of one beta weight will tend to be found in           which the errors tend to occur. This is true
+the same sample with an underestimation of            for regression techniques with any number of
+the other beta weight. Further, the higher the        variables.11 Therefore an investigator seeking
+value of r12, the more probable it is that this       to choose which of several regression equa-
+relationship exists.                                  tions has the highest true validity need not
+    This fact becomes important when con-             concern himself directly with sampling errors
+sidered in conjunction with the effect of differ-     of beta weights. He should simply choose
+ent combinations of errors in the two beta            the equation for which Formula 13 or 14
+weights on the validity of the regression             predicts the lowest cross-validation mean
+equation. When two predictor variables are            square error, based on the number of in-
+positively correlated, then, if an error is           dividuals in the initial sample, the number
+made in estimating one beta weight, the               of predictor variables in an equation, and the
+adverse effect of this error on validity can be       initial-sample validity (expressed in terms of
+lessened by an error in the opposite direction        the initial-sample mean square error).
+in estimating the other beta weight. The                 The laws described above also explain the
+higher the correlation between the two vari-          paradoxical but common finding that when
+ables, the greater is the ability of errors in        predictor variables are highly correlated, re-
+opposite directions to compensate for each            gression equations developed in two different
+other in the prediction of criterion scores,          random samples from the same population
+since the predictors are increasingly "sub-           often have widely different weights, yet both
+stitutable" for each other.9 In the extreme           equations predict about equally well in both
+case in which two variables of equal variance         samples. In a typical example of this effect
+correlate perfectly, any two pairs of beta            in operation, a psychologist using the Grad-
+weights with the same sum are completely              uate Record Exam Verbal Aptitude Test and
+equivalent to each other. For example, in             the Miller Analogies Test to predict a cri-
+this extreme instance, weights of .8 and —.2,         terion of success in graduate school found
+of .3 and .3, and of —.1 and .7 are all               that the regression equation developed in one
+equivalent since each pair sums to .6.10              half of his sample gave a high positive weight
+    Hence, when ri2 is positive, the sampling         to the GRE and a near-zero weight to the
+errors of the two beta weights are larger             MAT, while the equation developed in the
+than if r12 — 0, but the errors tend to be in         other half of his sample did exactly the op-
+the predictor variables. See Theorem 16 of the        posite, giving the MAT a high positive
+document cited in Footnote 2.                         weight and the GRE a near-zero weight. Yet
+   •The last two statements follow directly from a    each equation worked almost as well in the
+formula proven by Guttman (1941, p. SOS). It is
+                                                        11
+given without proof as Theorem 17 of the document          These few paragraphs are an attempt to recon-
+cited in Footnote 2.                                  cile Formulas 13 and 14 with facts which at first
+   10
+      The truth of this statement is unaffected by    seem to contradict them, using the simplest case
+the fact that standard methods of deriving multiple   of two predictor variables. A more rigorous de-
+regression weights break down when two predictor      velopment of the reasoning presented would simply
+variables are perfectly correlated.                   amount to proofs of those formulas.
+
+
+--- PAGE BREAK ---
+
+178                               RICHARD B. DARLINGTON
+
+other half of the sample as in the half in         bines with the first two variables to produce
+which it was originally derived.                   the best three-predictor equation. Subsequent
+                                                   variables are selected in a similar manner.
+Removing Variables with Small Beta Weights         Variables can also be removed if they are
+   It was shown above that the predictor           found to be no longer useful.
+variables with the smallest /?' weights in a          The process can be stopped when the
+population regression equation are not neces-      initial-sample validity of the equation ap-
+sarily those whose removal would cause the         proaches that computed using all available
+smallest drop in the population validity of        variables, or when adding the most useful
+that equation. The same relationship clearly       remaining variable produces no statistically
+holds between initial-sample beta weights and      significant increase in the multiple correla-
+initial-sample validity.                           tion by the significance test mentioned earlier.
+   Formulas 13 and 14 show that when               Significance tests are not normally appropriate
+two regression equations have the same             for this purpose, however, since addition of
+number of predictor variables, the one which       a variable to a regression equation does not
+has the higher initial-sample validity has the     normally require a definite rejection of the
+higher estimated true validity. Since remov-       hypothesis that fewer variables would suffice.
+ing variables with the smallest beta weights       Perhaps the best strategy is to use Formula
+is not the most efficient way to achieve the       13 or 14 to evaluate each of the regression
+highest possible initial-sample validity after     equations calculated by a stepwise regression
+the removal of a given number of predictor         computer program, and then to select the
+variables, it follows that this is also not        one equation which appears best by this
+the best way to maximize true validity.            criterion. Of course, Formula 13 or 14 will
+                                                   then underestimate the mean square error
+Stepwise Regression                                of the equation so selected for the same reason
+   The foregoing discussion has made it clear      that the correlation between a test and a
+that the only statistics relevant to selecting     criterion variable can be expected to shrink
+predictor variables from a larger number of        if the test was selected from a large number
+variables are the initial-sample validity, N,      of tests on the basis of this correlation.
+and n for each of the possible regression
+equations formed from different combinations       Factor Analysis of Predictor Variables
+of the variables. The technique of stepwise           Another technique for reducing the number
+regression, for which computer programs are        of predictor variables is to factor analyze the
+widely available, has the desirable property       set of all available predictors and then use
+that it uses only these statistics.                some of the resulting factors in a regression
+   This technique selects variables for a re-      equation in place of the original variables.
+gression equation one at a time. Selecting         This section discusses the conditions under
+first the most valid predictor variable, it then   which this procedure or variations of it are
+selects that variable which when combined          likely to improve the prediction of the cri-
+with the first is the most useful—that is, the     terion variable.
+one which adds the most to the multiple cor-          If the number of factors extracted equals
+relation and which thus yields the best two-       the original number of predictor variables,
+predictor equation among those equations           then it can be shown that the multiple regres-
+which contain the first variable selected. The     sion equation constructed to predict the cri-
+extent to which the multiple correlation           terion variable from the factors is equivalent
+would be increased by a variable is deter-         to the comparable equation constructed from
+mined by computing the validity of the             the original variables. The two equations will
+orthogonal component or some mathematically        make identical predictions for any individual
+equivalent statistic for the predictor variable    since the weight given to each original vari-
+being considered. The technique then selects       able in the equation based on factors exactly
+by the same criterion the variable which com-      equals the weight given that same variable
+
+
+--- PAGE BREAK ---
+
+                   MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                 179
+
+in the regression equation based on the orig-       strategies are especially worthy of considera-
+inal variables.12 Therefore, any improvement        tion: stepwise regression (discussed above),
+resulting from the use of factors as predictors     and stepwise regression using all of the fac-
+can occur only when the number of factors           tors rather than the original variables. When
+used is smaller than the number of original         factors are uncorrelated, it follows from
+predictor variables.                                Formula 3 that the latter procedure simply
+    Because of this, often only the few factors     involves selecting the factors most highly
+which account for the most variance are used        correlated with the criterion variable. Both
+ (cf. Horst, 1941, pp. 437-444). However,           these strategies have the desirable property
+from a purely mathematical standpoint, it           that only the usefulness of each predictor
+could conceivably happen that the factor            variable is considered in the selection of
+which accounts for the least variance in the        variables, and this property is not shared
+predictor variables could correlate perfectly       by any strategy which considers only the
+with the criterion variable, and all other fac-     factors which account for the most variance
+tors could correlate zero with the criterion.       in the original set of predictor variables. An
+Therefore, if factor analysis is a possibility,     empirical comparison of the two stepwise
+it is important to consider, from the nature of     methods has been made by Burket (1964).
+ the variables being factored, whether this or
+a similar result is likely to occur.                                   SUMMARY
+    When the variables being factored contain       Basic Formulas
+ substantial error variance, it is well known          The beta weight and usefulness of a pre-
+ that this error tends to be concentrated in        dictor variable in a multiple regression equa-
+ the factors which account for the least vari-      tion are expressed simply in terms of the
+ ance, with a resultant increase in the reli-       properties of the component of the variable
+ ability and therefore the validity of the other    orthogonal to the other predictor variables.
+ factors. In such a situation, the strategy of
+ using in a regression equation only the several    Suppressor Variables
+ factors which account for the most variance          A variable receives a negative weight in a
+ would have much to recommend it.                   regression equation if the ratio between its
+    The situation is different when highly reli-    correlation with the error in the rest of the
+ able variables, such as age, sex, or census        equation, and its correlation with the criterion
+ data, are used. In such situations, it could       variable, exceeds a certain amount.
+ happen that factors which account for very           The relations possible among sets of vari-
+ little variance in the predictor variables are     ables are so complex that when a variable
+ highly useful in predicting the criterion. For     with a positive correlation with the criterion
+ example, if two of the original variables are      variable receives a negative weight in a re-
+ highly correlated, such as subject's age and       gression equation, it is generally very difficult
+ age of the subject's next younger sibling          or impossible to determine, from the content
+  (assuming he has one), a factor consisting        of the variables, whether the negative weight
+ of the difference between these two scores         is "unreasonable."
+ would "account for" very little variance in
+  the original two variables. Yet this difference   Measures of the "Importance"         of a Pre-
+  might well have had an important effect on        dictor Variable
+  the subject's childhood and therefore might          When the predictor variables in a multiple
+  correlate more highly with an external cri-       regression equation are intercorrelated, the
+  terion than, say, a factor consisting of the      "contribution to variance" of a predictor
+  sum of the two ages, which accounts for far       variable cannot be interpreted in the same
+  more variance in the original predictor vari-     way that it can be interpreted when predictor
+  ables. In such situations, two alternative        variables are uncorrelated. In the latter case,
+  12
+     See the discussion under Theorem 11 of the     the phrase has essentially the same meaning
+document cited in Footnoote 2.                      it has in analysis-of-variance designs.
+
+
+--- PAGE BREAK ---
+
+180                               RICHARD B. DARLINGTON
+
+   If the usefulness of a predictor variable       agrees with the results of empirical cross-
+is defined as the amount that the squared          validation studies. Therefore, cross-validity is
+multiple correlation would drop if the variable    sometimes enhanced by using fewer predictor
+were removed, then rank ordering the pre-          variables or by using a different prediction
+dictor variables in a regression equation gives    method altogether.
+different orders depending on whether the             Estimates of the true validity of a sample
+ranking is by validity, by usefulness, or by       regression equation can be expressed either
+the absolute value of the beta weight. This is     as correlation coefficients or as mean square
+true even if all variables have the same stand-    errors. Unfortunately, estimates in one form
+ard deviation.                                     cannot always be readily converted to the
+   From the sizes of the weights in a multiple     other form, despite the well-known formula
+regression equation predicting a specified de-     relating the two in other situations. The cor-
+pendent variable from several independent          relation coefficient is more useful in "fixed
+variables, it is sometimes possible to measure     quota" situations, and the mean square error
+the size of the "effect" which each of the         is more useful in "flexible quota" situations.
+independent variables has on the dependent
+variable.                                          Statistical Criteria for Selecting Predictor
+   Two measures of "importance," which sum         Variables
+to R2 when summed across all variables in             The method of "approximate linear re-
+a regression equation, have little practical       straints" is not the most effective method of
+value.                                             selecting predictor variables, because of the
+                                                   highly paradoxical relationship between the
+Inferring Relative Regression Weights from         validity of a regression equation and the
+Relative Validities                                sampling errors of beta weights in the equa-
+   The relative sizes of the weights in a re-      tion.
+gression equation can be computed from the            The same analysis explains the fact that
+relative validities (correlations with the cri-    regression equations developed in two differ-
+terion variable) of the predictor variables,       ent random samples from the same popula-
+even if the actual validities are unknown.         tion often have surprisingly different beta
+This provides an exact solution to a common        weights, yet in any one sample the two equa-
+practical problem.                                 tions make very similar predictions and thus
+                                                   have very similar validities.
+Estimates oj the Validity oj Regression Equa-         The method of removing from a regres-
+tions                                              sion equation variables with low beta weights
+   The Wherry formula estimates the validity       is not the most effective method, because
+of the multiple regression equation developed      such variables are not necessarily those whose
+in a population from the validity of an equa-      removal produces the smallest drop in the
+tion developed in a sample.                        multiple correlation.
+   Statistics which give strictly unbiased esti-      Stepwise regression and extensions thereof
+mates of a population multiple correlation         are defended.
+coefficient are of no practical interest.             Under certain conditions, factor analysis
+   The Wherry formula has been used widely         can be used to develop a few factors which
+but incorrectly to estimate the cross-validity     contain most of the valid variance in a set
+of a regression equation developed in a            of predictor variables; under other conditions
+sample. Two alternative formulas are the           this procedure is not recommended.
+correct formulas for this situation.
+                                                                   REFERENCES
+   These alternative formulas produce ex-
+tremely low estimates of cross-validity when       ANDERSON, T. W. Introduction to multivariate
+                                                     statistical analysis. New York: Wiley, 19S8.
+the number of predictor variables is large in      BARTLETT, M. S. On the theory of statistical re-
+relation to the number of cases used in              gression. Proceedings of the Royal Society of
+developing the regression equation. This             Edinburgh, 1933, 53, 260-283.
+
+
+--- PAGE BREAK ---
+
+                      MULTIPLE REGRESSION IN RESEARCH AND PRACTICE                                         181
+
+BEATON, A. E. The use of special matrix operators        GUION, R. M. Personnel testing. New York: Mc-
+  in statistical calculus. (Research Bulletin No. 64-      Graw-Hill, 1965.
+  Sl) Princeton, N. J.: Educational Testing Service,     GULLIKSEN, H. Theory of mental tests. New York:
+  1964.                                                    Wiley, 1950.
+BLALOCK, H. M., JR. Causal inferences in nonexperi-      GUTTMAN, L. Mathematical and tabulation tech-
+  mental research. Chapel Hill: University of North        niques. Supplementary Study B. In P. Horst,
+  Carolina Press, 1964.                                    Prediction of personal adjustment. (Bulletin No.
+BURKET, G. R. A study of reduced rank models for           48) New York: Social Science Research Council,
+  multiple prediction. Psychometric Monographs,            1941.
+  1964, No. 12.                                          HAYS, W. L. Statistics for psychologists. New York:
+BURKS, B. S. On the inadequacy of the partial and          Holt, Rinehart & Winston, 1963.
+  multiple correlation technique. Journal of Educa-      HOFFMAN, P. J. The paramorphic representation of
+  tional Psychology, 1926, 17, S32-S40, 625-630.           clinical judgment. Psychological Bulletin, 1960,
+CHASE, C. I, Computation of variance accounted             57, 116-131.
+  for in multiple correlation. Journal of Experi-
+  mental Education, 1960, 28, 265-266.                   HOFFMAN, P. J. Assessment of the independent
+CREAGER, J. A., & VALENTINE, L. D., JR. Regression         contributions of predictors. Psychological Bulletin,
+  analysis of linear composite variance. Psycho-           1962, 59, 77-80.
+  metrika, 1962, 27, 31-38.                              HORST, P. Obtaining a composite measure from a
+CURETON, E. E. Approximate linear restraints and           number of different measures of the same at-
+  best predictor weights. Educational and Psy-             tribute. Psychometrika, 1936, 1, 53-60.
+  chological Measurement, 1951, 11, 12-15. (a)           HORST, P. Prediction of personal adjustment. (Bul-
+CURETON, E. E. Validity. In E. F. Lindquist (Ed.),         letin No. 48) New York: Social Science Re-
+  Educational measurement. Washington, D. C.:              search Council, 1941.
+  American Council on Education, 1951. (b)               KENDALL, M. G. A course in multivariate analysis.
+DARLINGTON, R. B., & BISHOP, C. H. Increasing test         London: Griffin, 1957.
+  validity by considering interitem correlations.        LORD, F. M. Efficiency of prediction when a pro-
+  Journal of Applied Psychology, 1966, SO, 322-330.        gression equation from one sample is used in a
+DARLINGTON, R. B., & PATJLUS, D. H. On the use             new sample. (Research Bulletin No. 50-40)
+  of interaction terms in multiple regression equa-        Princeton, N. J.: Educational Testing Service,
+  tions. Paper presented at the meeting of the             1950. (Discussed by H. E. Brogden, Statistical
+  Educational Research Association of New York             theory and research design. Annual Review of
+  State, Albany, November, 1966. (Available from           Psychology, 1954, 5, 381.)
+  the author)                                            McNEMAH, Q. Psychological statistics. (3rd ed.) New
+DuBois, P. H. Multivariate correlational analysis.         York: Wiley, 1962.
+  New York: Harper, 1957.                                MONROE, W. S., & STUIT, D. B. Correlation analysis
+DUNLAP, J. W., & CURETON, E. E. On the analysis            as a means of studying contributions of causes.
+  of causation. Journal of Educational Psychology,         Journal of Experimental Education, 1935, 3, 155-
+  1930, 21, 657-679.                                        165.
+DUNNETTE, M. D., & HOGOATT, A. C. Deriving a             NICHOLSON, G. E., JR. The application of a re-
+  composite score from several measures of the             gression equation to a new sample. Unpublished
+  same attribute. Educational and Psychological            doctoral dissertation, University of North Caro-
+  Measurement, 1957, 17, 423-434.                          lina, 1948. (Condensed in G. E. Nicholson, Jr.,
+EDGERTON, H. A., & KOLBE, L. E. The method of              Prediction in future samples. In I. Olkin et al.
+  minimum variation for the combination of cri-             (Eds.), Contributions to probability and statistics.
+  teria. Psychometrika, 1936, 1, 183-188.                  Stanford: Stanford University Press, 1960.)
+ELASHOFF, R. M,, & Ann, A. Missing values in             OLKIN, I., & PRATT, J. W. Unbiased estimation of
+  multivariate statistics—I. Review of the literature.     certain correlation coefficients. Annals of Mathe-
+  Journal of the American Statistical Association,          matical Statistics, 1958, 29, 201-211.
+   1966, 61, 595-604.                                    RICHARDSON, M. W. Supplementary Study D. In
+ENGLEHART, M. D. The technique of path coefficients.       P. Horst, Prediction of personal adjustment.
+  Psychometrika, 1936, 1, 287-293.                          (Bulletin No. 48) New York: Social Science Re-
+FEDERER, W. T., & ZELEN, M. Analysis of multi-              search Council, 1941.
+   factor classification with unequal numbers of ob-
+                                                         ROZEBOOM, W. W. Linear correlations between sets
+  servations. Biometrics, 1966, 22, 525-552.
+                                                            of variables. Psychometrika, 1965, 30, 57-71.
+GRAYBILL, F. A. An introduction to linear statistical
+  models. Vol. 1. New York: McGraw-Hill, 1961.           SIMON, H. A. Models of man: Social and rational.
+GUILFORD, J. P. Psychometric methods. (2nd ed.)            Mathematical essays on rational human behavior
+  New York: McGraw-Hill, 1954.                              in a social setting. New York: Wiley, 1957.
+GUILFORD, J. P. Fundamental statistics in psychology     STEIN, C. Multiple regression. In I. Olkin et al.
+   and education. (4th ed.) New York: McGraw-                (Eds.), Contributions to probability and statistks.
+   Hill, 1965.                                              Stanford: Stanford University Press, 1960.
+
+
+--- PAGE BREAK ---
+
+182                                     RICHARD B. DARLINGTON
+
+TURNER, M., & STEVENS, D. The regression analysis         WILLIAMS, E. J. Regression analysis. New York:
+  of causal paths. Biometrics, 1959, 15, 236-2S8.           Wiley, 1959.
+TURNER, M., MONROE, R. J., & LUCAS, H. L., JR.            WRIGHT, S. Correlation and causation. Journal of
+  Generalized asymptotic regression and non-linear          Agricultural Research, 1921, 20, 557-585.
+  path analysis. Biometrics, 1961, 17, 120-143.           WRIGHT, S. The interpretation of multivariate sys-
+WARD, J. H., JR. Comments on "The paramorphic               tems. In 0. Kempthorne et al. (Eds.), Statistics
+  representation of clinical judgment." Psychological       and mathematics in biology. Ames: Iowa State
+  Bulletin, 1962, 59, 74-76.                                College Press, 1954.
+WHERRY, R. J. A new formula for predicting the            WRIGHT, S. Path coefficients and path regressions:
+  shrinkage of the coefficient of multiple correlation.     Alternative or complimentary concepts? Bio-
+  Annals of Mathematical Statistics, 1931, 2, 440-          metrics, 1960, 16, 189-202. (a)
+  457.                                                    WRIGHT, S. The treatment of reciprocal interaction,
+WILKS, S. S. Weighting systems for linear functions         with or without lag, in path analysis. Biometrics,
+  of correlated variables when there is no dependent        1960, 16, 423-445. (b)
+  variable. Psychometrika, 1938, 3, 23-40.                           (Received February 14, 1967)
+

@@ -1,0 +1,478 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  english,
+  man]{apa6}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off,]{babel}
+\else
+\usepackage[bidi=default,shorthands=off,]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\makeatother
+\keywords{utility analysis, human resource management, decision making, web application, science-practice gap, organizational psychology\newline\indent Word count: 2994}
+\DeclareDelayedFloatFlavor{ThreePartTable}{table}
+\DeclareDelayedFloatFlavor{lltable}{table}
+\DeclareDelayedFloatFlavor*{longtable}{table}
+\makeatletter
+\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
+\makeatother
+\usepackage{lineno}
+
+\linenumbers
+\usepackage{csquotes}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Toward a More Useful Utility Analysis: A Literature Review and Web Application},
+  pdfauthor={Christopher Castille1, Eric Martinez1, James Daigle1, \& Kristen Toups1},
+  pdflang={en-EN},
+  pdfkeywords={utility analysis, human resource management, decision making, web application, science-practice gap, organizational psychology},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Toward a More Useful Utility Analysis: A Literature Review and Web Application}
+\author{Christopher Castille\textsuperscript{1}, Eric Martinez\textsuperscript{1}, James Daigle\textsuperscript{1}, \& Kristen Toups\textsuperscript{1}}
+\date{}
+
+
+\shorttitle{Utility Analysis Web App}
+
+\authornote{
+
+Correspondence concerning this article should be addressed to Christopher Castille, Department of Management, Nicholls State University, Thibodaux, LA. Email: \href{mailto:christopher.castille@nicholls.edu}{\nolinkurl{christopher.castille@nicholls.edu}}
+
+Correspondence concerning this article should be addressed to Christopher Castille, Department of Management, Nicholls State University, Thibodaux, LA. E-mail: \href{mailto:christopher.castille@nicholls.edu}{\nolinkurl{christopher.castille@nicholls.edu}}
+
+}
+
+\affiliation{\vspace{0.5cm}\textsuperscript{1} Nicholls State University}
+
+\abstract{%
+Scholars continue to discuss the merits and drawbacks of utility analysis (UA) as a tool for influencing management decisions. Despite its potential for quantifying the economic value of human resource interventions, UA has faced criticism for being overly complex and potentially backfiring when presented to managers. This paper synthesizes the literature on communicating validity and utility information to managers, introduces the UA+ web application, and demonstrates its usefulness through published case studies. The UA+ app incorporates evidence-based features including expectancy charts, plain-text descriptions, framing effects, and economic adjustments to enhance managerial decision-making. We illustrate the app's capabilities using three published examples: Latham and Whyte's (1994) staffing case, Avolio et al.'s (2010) leadership development analysis, and Schmidt's (2012) goal setting intervention. Our work contributes to bridging the science-practice gap by providing a practical tool that leverages research insights to help industrial-organizational psychologists and business leaders communicate the value of theory-based interventions.
+}
+
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{introduction}
+
+Scholars routinely bemoan the fact that management decisions are suboptimal (Fisher et al., 2021; Highhouse, 2008; Rynes, Colbert, \& Brown, 2002). Causes have been posited such as the poor training of managers (Highhouse, 2008; Rynes, 2012; Rynes, Colbert, \& O'Boyle, 2018), the widening science-practice gap (Pfeffer \& Fong, 2002; Rynes, 2012), and fetish for theory in research that emphasizes complexity at the expense of validity and utility in our published research (Götz \& O'Boyle, 2023). To address these concerns, educators in human resource management and industrial-organizational psychology have been encouraged to improve their training of both practitioners and scholarly researchers using methods that emphasize validity and utility of theory-based interventions (Russell, 2022; Sturman, 2000; Sturman \& Trevor, 2001).
+
+Utility analysis (UA) is one method of describing such evidence in statistical, economic, and heuristic terms (i.e., quantity, quality, and cost; Cascio, Boudreau, and Fink (2019)). Recent examples of scholars using utility analysis to communicate the value of theory-based interventions include Avolio, Avey, and Quisenberry (2010) who discuss the merits of a transformational leadership intervention; Schmidt (2012) who highlights the economic impact of goal setting; and Oprea, Barzin, Vîrgă, Iliescu, and Rusu (2019) who highlight the value of a brief job crafting intervention. Consider a situation where several hundred workers must be hired into a firm. UA can be used to identify the highest quality of workers that can be reasonably delivered to the organization for a given cost (De Corte, Sackett, \& Lievens, 2011). An example is Sturman (2000) who used UA to demonstrate that an enhanced employee program described by a validity coefficient of .4 and applied to over 1400 applicants to hire 470 workers hired over several years is (after accounting for a series of adjustments) expected to yield a median return \textasciitilde\$1.7M experienced over the lifetime use of the program. Although large, this value represents only a few thousand dollars per hire per year. Such economic value represents potential revenue enhancements or cost savings attributed to, in this case, hiring higher-performing workers (Schmidt, 2012).
+
+Although UA is widely viewed as a complicated tool to both teach and use, complicated tools in finance (e.g., the Black-Scholes equation) also enjoy wide-spread use (Sturman, 2000). Russell (2022) notes that he often builds web apps for IO psychology teams to use UA to aid management decision making. What seems to be needed are tools that help decision-makers (both IOs and non-IOs alike) make use of UA insights to optimize investments more effectively in people.
+
+With our manuscript, we make two contributions to the literature. First, we synthesize the literature on communicating validity and utility information to managers. Second, we build off both Cascio et al. (2019) (who designed a web app made available in their \emph{Investing in People} textbook) and Russell (2022) (who designs web apps for UA in practice) by introducing the UA+ web app, a tool designed to leverage insights from literature to help IOs and business leaders communicate the validity and utility of theory-derived interventions. In the sections to follow, we summarize the literature informing the design of our app, explain the capabilities that the UA+ application offers over what is currently available, offer a tutorial grounded in the literature, and conclude by discussing future directions for functions built into the app. We hope the IO psychology community finds our app useful while identifying ways to enhance it and that scholars use it to teach students in applying UA to managerial decisions.
+
+\section{Method}\label{method}
+
+\subsection{A Review of the Utility Analysis (UA) Literature}\label{a-review-of-the-utility-analysis-ua-literature}
+
+UA research goes back to the 1970s (see Boudreau (1988)). The basic utility model calculates utility as the dollar value of performance differences resulting from an intervention (e.g.~higher performance from better selection or training) minus the costs of the intervention. The general formula is below:
+
+\[\Delta U = T \times N \times (Z_{barx} \times r \times SD_y) - C\]
+
+Where:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\Delta U\) = Utility change from selection device
+\item
+  \(N\) = Number of people hired
+\item
+  \(T\) = Average tenure of those hired
+\item
+  \(Z_{barx}\) = Average Z-score of predictor for hired employees
+\item
+  \(r\) = Correlation between predictor and criterion (e.g., performance)
+\item
+  \(SD_y\) = Dollar value of a SD change in criterion
+\item
+  \(C\) = Cost of the intervention
+\end{itemize}
+
+Unfortunately, this basic equation yields grossly inflated estimates of economic value (e.g., over 14,000\% return on investment; see Sturman (2000)).
+
+Unsurprisingly, a `futility of utility' research vein emerged positing that presenting UA information to managers backfires (Latham \& Whyte, 1994; Whyte \& Latham, 1997). In a series of studies, Latham and colleagues examined whether presenting utility information (e.g., the economic value of enhanced staffing) supplemented the presentation of validity information (e.g., the accuracy of the pre-employment staffing test). Latham et al.~found that while presenting validity information was received favorably, presenting utility information alongside validity information backfired, making managers hesitant to adopt a valuable intervention. This narrative is discussed to this day (e.g., Van Iddekinge, Lievens, and Sackett (2023)) and for good reason; practitioners should be rightly concerned about using methods that could backfire.
+
+However, we should note that in explaining the `futility of utility,' Cronshaw (1997) (who was a contributor to the `futility of utility' research vein) theorized that the `backfire effect' is attributable to a `persuasional hypothesis'. Specifically, management is right to be skeptical of overly complex methods for the problem at hand. Cronshaw went on to posit that utility information can help managers make more optimal decisions about practices that impact the workforce when it is presented to inform rather than to persuade (Cronshaw, 1997).
+
+Accordingly, later replication efforts showed more promise presenting utility with validity information. Carson, Becker, and Henderson (1998) found that managers' acceptance of UA information was positively impacted by utility information, although acceptance of the proposed intervention was still distressingly low. Later work by Macan and Foster (2004) found managers ranked UA information (e.g., the economic value of an intervention) highly when making final decisions, stating the dollar values helped in this. Later, Brooks, Dalal, and Nolan (2014) found using non-traditional effect size indicators such as common language effect size (CLES) helps managers understand the validity of interventions.
+
+We should note that scholars have provided guidance for making utility estimates more accurate that include (i) accounting for economic factors (i.e., interest, taxes, variable costs), (ii) (in the context of selection) the cost of using multiple selection devices, deviating from top-down hiring, and using a probationary period, and (iii) cohort or temporal effects (e.g., validity over time) (see Sturman (2000)). Although such adjustments can have a cumulative effect of shrinking utility estimates to levels that are \textasciitilde4\% of the basic utility analysis estimate and further complicate UA, they can help address flaws in assumptions of the basic model and provide a more realistic valuation of human resource programs for organizations. Unfortunately, managers' receptivity to these methods has not been examined empirically.
+
+In sum, we believe that used thoughtfully, UA can serve as a useful tool to help business leaders make more informed decisions about investing in people. Although it has been noted that UA can be helpful where IO psychologists in their context (Russell, 2022), we believe that as a discipline we can always improve how we help both business leaders and academicians consider the implications of theory-based interventions.
+
+\section{Results}\label{results}
+
+\subsection{Introducing the Utility Analysis Plus (UA+) Tool}\label{introducing-the-utility-analysis-plus-ua-tool}
+
+We introduce the Utility Analysis plus (UA+) tool. Our work builds on Cascio et al. (2019) by incorporating insights from validity and utility analysis research that have either been shown to help managers make decisions regarding how best to staff, train, and develop their talent or are believed to support management decision-making (see Table 1). Also is a glossary of terms for those less familiar with UA, and ways to export the analysis in the .pdf format. Below, we offer a tutorial of the app using three published examples: (i) the classic case of Latham and Whyte (1994) (adapted by Carson et al. (1998)), (ii) using UA to estimate returns on leadership development investment (Avolio et al., 2010), and (iii) using UA to communicate goal setting intervention value (Schmidt, 2012). We do not cover all features of the app here as several are still under development (e.g., using Monte Carlo analysis to facilitate risk management). The app can be accessed here: \url{https://uaplus.shinyapps.io/UAPlus/}.
+
+\begin{verbatim}
+## Warning in attr(x, "align"): 'xfun::attr()' is deprecated.
+## Use 'xfun::attr2()' instead.
+## See help("Deprecated")
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in attr(x, "format"): 'xfun::attr()' is deprecated.
+## Use 'xfun::attr2()' instead.
+## See help("Deprecated")
+\end{verbatim}
+
+\begingroup\fontsize{8}{10}\selectfont
+
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{10cm}}
+\caption{\label{tab:literature-table}Literature Review Summary of UA Attributes and Their Inclusion in Tools}\\
+\toprule
+UA Attribute & Expected Impact & Key References\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:literature-table}Literature Review Summary of UA Attributes and Their Inclusion in Tools \textit{(continued)}}\\
+\toprule
+UA Attribute & Expected Impact & Key References\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+Validity & Positive but weak & Carson et al. (1998); Latham \& Whyte (1994);
+                     Macan \& Foster (2004); Whyte \& Latham (1997)\\
+Utility & Mixed & Latham \& Whyte (1994); Whyte \& Latham (1997); 
+                     Carson et al. (1998); Macan \& Foster (2004)\\
+SDy & Mixed & Highhouse (2008); Carson et al. (1998)\\
+Break-even levels & Unclear & Cascio, Boudreau, \& Fink (2019)\\
+Expectancy Charts & Mixed & Cucina (2017); Latham \& Whyte (1994)\\
+\addlinespace
+Framing Effects & Unclear & Hazer \& Highhouse (1997)\\
+Plain-Text Descriptions & Positive & Brooks et al. (2014)\\*
+\end{longtable}
+\endgroup{}
+
+\subsection{Case Examples}\label{case-examples}
+
+\subsubsection{Improving Staffing: The Latham \& Whyte (1994) Example}\label{improving-staffing-the-latham-whyte-1994-example}
+
+Carson et al. (1998) demonstrate that the utility analysis conducted by Latham and Whyte (1994) is useful in managers' decision-making if presented in an easily understandable way. We reproduce key features of Carson et al.'s vignettes with the UA+ app. Also, building on Cucina, Berger, and Busciglio (2017) and Latham and Whyte (1994), we add expectancy charts (Cucina et al., 2017) and plain-text explanations to aid decision making. To begin, users should click on the Staffing Utility tab. There they will find an introduction on staffing utility as well as the app, along with a sidebar with sections, ``Staffing Utility,'' ``Expectancy,'' and ``Utility Outputs.''
+
+When users click on the ``Expectancy'' section, they will be met with a series of inputs used within the utility calculation. Default values for these inputs are from Latham and Whyte (1994). Users will notice the option of inputting costs and validity for separate procedures for comparison. Results are populated when the ``Compute Expectancy'' button is clicked, which consists of an expectancy chart (Cucina et al., 2017), as well as a common language explanation of the expectancy results from the user's inputs. This output also frames both the value added by acquiring high performers and the opportunity cost of continuing to hire poor performers (Hazer \& Highhouse, 1997). Users will note that throughout all outputs found within UA+, this framing effect is present in visualization explanations, UA outputs, and UA plain-text descriptions.
+
+Users may proceed to the ``Utility Outputs'' section. This section contains an input panel with economic and workflow adjustments. Default values for economic adjustments are from Sturman (2000) while values for workflows are from Cascio et al. (2019). The outputs consist of total unadjusted utility, total utility, per year, and per hire per year dollar values of UA, a break-even value for SDy, as well as a plain-text description of these values. The figure shown for unadjusted utility reproduces the value found by Latham and Whyte (1994), and plain-text descriptions are modeled similarly to those by Carson et al. (1998).
+
+\subsubsection{Improving Training or Employee Development}\label{improving-training-or-employee-development}
+
+\textbf{Case 1: The Avolio et al.~(2010) Example:} Avolio et al. (2010) demonstrate how UA can be used in terms of training and be presented as the returns on development investment (RODI). Our tool presents RODI using an effect size visualization explaining how training impacts production and a plain-text explanation in order to effectively explain results of RODI analysis to managers. To use the RODI section of the app, users may click on the ``Training Utility'' tab. This will lead to a page similar to the ``Staffing Utility'' tab, with sidebar options of ``Training Utility,'' ``Effect Size,'' and ``Utility Output.'' Clicking ``Training Utility'' will display an explanation of training utility as well as explanations of RODI and goal setting intervention.
+
+When users click on the ``Effect Size'' option, they will be met with an input panel for displaying effect size. This panel includes a ``Training Effectiveness'' input as well as options for training(RODI) or goal setting. Users should click the training options, which will fill the input boxes with a set of values found in Avolio et al. (2010). The output includes an effect size distribution chart (Alexander III, Mulfinger, \& Oswald, 2019) as well as a plain-language effect size description (Hazer \& Highhouse, 1997; Magnusson, 2023). Users should then navigate to the ``Utility Outputs'' section. There they will see a two page input panel. These pages are similar to the ``Staffing Utility'' panels, except that there are options for RODI and goal setting, along with an input for ``SD of Work Output''. Users should click ``RODI Inputs'' and then click ``Calculate Utility (Unadjusted)'' to display an unadjusted utility estimate.
+
+Users may then proceed to the second page of the panel to input utility adjustments. This page contains inputs for economic adjustments and workflows, as well as radio buttons to select output type and a ``Compute Utility'' button. The defaults for the economic adjustments are from Sturman (2000) while defaults for the workflow adjustments are from Cascio et al. (2019). The output consists of the values for RODI simply listed as well as in the form of a plain-text description. The unadjusted utility value reproduces the value found by Avolio et al. (2010). A break even value for SDy is also listed.
+
+\textbf{Case 2: The Schmidt (2012) Example:} Schmidt (2012) uses utility analysis in order to demonstrate the effectiveness of goal setting interventions by presenting utility as a dollar value, as well as presenting increases in production value from goal setting as a reduction of labor cost. The UA+ tool is able to concisely present these calculations using plain-text descriptions.
+
+Using the ``Effect Size'' portion of the app for goal setting is identical to the RODI method, except that goal setting inputs and outputs should be selected. This will generate an output with terminology specific to goal setting. Users may then proceed to the ``Utility Outputs'' section and choose goal setting inputs. This will enable the ``SD of Work Output'' input box which is used in the calculation for increased production and reduced labor costs. They may then press the ``Compute Utility (Unadjusted)'' button in order to display the unadjusted utility in terms of dollar value from goal setting. The second page of the panel and default adjustments are identical to the previous tutorials. The ``Goal Setting Output'' radio button should then be selected. The ``Compute Utility'' button displays returns on goal setting procedures as well as production increases and labor reduction. The unadjusted utility, increased production, and employee reduction values reproduce the results found by Schmidt (2012).
+
+The code for this app is available via Github: \url{https://github.com/utilityanalysis/webApp}. Interested readers are welcome to issue requests for the app or improve the app as they like for their purposes.
+
+\section{Discussion}\label{discussion}
+
+We have given a brief overview of the UA+ web app. In closing, we wish to share our plans for (i) adding more features to the app and (ii) engaging in a set of literal replications to identify those features that meaningfully enhance the usefulness of this app for our community.
+
+\subsection{Planned Features}\label{planned-features}
+
+Features we plan to include follow. First, we wish to add graphical descriptions of UA (i.e.~slides) that allow a causal chain to be described (e.g., \% increase in training → \% increase in performance → \% increase in economic value), which Winkler, König, and Kleinmann (2010) suggest help managers see how an intervention impacts the workforce. Second, concerning the accuracy of UA, Sturman (2000) notes that a Monte Carlo analysis allows a comprehensive set of adjustments to be used to accurately appraise the value of HR interventions. We hope to update the UA+ app with a Monte Carlo analysis feature that is relatively easy to use and reproduces (as closely as possible) the findings from Sturman (2000) (e.g., adjustments reduce basic utility estimates to \textasciitilde4\% of their initial value). Third, we wish to augment the selection utility tools in the app with a pareto-optimization feature that allows users to identify the most economic value that can be attained while diversifying the workforce (see De Corte et al. (2011); Rupp, Song, and Strah (2020)). Fourth, we wish to highlight the neglected role of compensation in utility research (e.g., its impact on workforce value, see Sturman and Trevor (2001)). Our long-term aim is to have a tool that allows HR professionals to identify optimal bundles of interventions (e.g., combinations of staffing, training, and compensation enhancements).
+
+\subsection{Future Research Directions}\label{future-research-directions}
+
+We wish to close by noting that while our app's design is grounded in the literature, more information or features in the app may not always be better (Connelly, Ketchen, \& Zhou, 2023); sometimes, less is more. Indeed, as described in Table 1, there are many claims concerning how to present evidence to managers, some of which have been supported. Therefore, our first step is to replicate those effects that have been tested in the literature via a set of literal replication studies (i.e., a replication aimed at replicating, as close as possible, the initial conditions of these studies). In this first wave of confirmatory testing, we will identify and retain information features that are useful for our community. As part of this, we will include conditions that test claims that have gone relatively untested (e.g., framing effects applied to validity). Our aim is to provide clear evidence concerning what does and does not help users make decisions regarding investing in their people and then build this information in the UA+ app. We have already begun pre-registering our methods and hypotheses on the Open Science Framework and look forward to incorporating feedback from our reviewers.
+
+\section{Conclusion}\label{conclusion}
+
+This paper has presented the UA+ web application as a practical tool for bridging the science-practice gap in utility analysis. By synthesizing the literature on communicating validity and utility information to managers, we have identified key features that enhance managerial decision-making, including expectancy charts, plain-text descriptions, framing effects, and economic adjustments. The UA+ app incorporates these evidence-based features to help industrial-organizational psychologists and business leaders communicate the value of theory-based interventions more effectively.
+
+Our demonstration of the app using three published case studies---Latham and Whyte (1994) staffing analysis, Avolio et al. (2010) leadership development study, and Schmidt (2012) goal setting intervention---illustrates the app's versatility across different HR interventions. The app successfully reproduces key findings from these studies while providing additional features that enhance comprehension and decision-making.
+
+Future development of the UA+ app will focus on incorporating Monte Carlo analysis capabilities, pareto-optimization features, and compensation considerations. Additionally, planned replication studies will systematically test the effectiveness of various presentation features to ensure that the app provides optimal support for managerial decision-making.
+
+The UA+ app represents a step toward addressing the persistent challenge of translating research insights into practical tools that can enhance organizational decision-making. By providing a user-friendly interface that incorporates evidence-based features, we hope to contribute to the broader goal of improving how organizations invest in their people and make evidence-based decisions about human resource interventions.
+
+\newpage
+
+\section{References}\label{references}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-alexander2019}
+Alexander III, L., Mulfinger, E., \& Oswald, F. L. (2019). Investing in people online. \emph{Software}.
+
+\bibitem[\citeproctext]{ref-avolio2010}
+Avolio, B. J., Avey, J. B., \& Quisenberry, D. (2010). Estimating return on leadership development investment. \emph{The Leadership Quarterly}, \emph{21}(4), 633--644. \url{https://doi.org/10.1016/j.leaqua.2010.06.006}
+
+\bibitem[\citeproctext]{ref-boudreau1988}
+Boudreau, J. W. (1988). \emph{Utility analysis for decisions in human resource management}.
+
+\bibitem[\citeproctext]{ref-brooks2014}
+Brooks, M. E., Dalal, D. K., \& Nolan, K. P. (2014). Are common language effect sizes easier to understand than traditional effect sizes? \emph{Journal of Applied Psychology}, \emph{99}(2), 332--340. \url{https://doi.org/10.1037/a0034745}
+
+\bibitem[\citeproctext]{ref-carson1998}
+Carson, K. P., Becker, J. S., \& Henderson, J. A. (1998). Is utility really futile? A failure to replicate and an extension. \emph{Journal of Applied Psychology}, \emph{83}(1), 84--96. \url{https://doi.org/10.1037/0021-9010.83.1.84}
+
+\bibitem[\citeproctext]{ref-cascio2019}
+Cascio, W. F., Boudreau, J. W., \& Fink, A. A. (2019). \emph{Investing in people: Financial impact of human resource initiatives} (3rd ed.). Society for Human Resource Management.
+
+\bibitem[\citeproctext]{ref-connelly2023}
+Connelly, B. L., Ketchen, D. J., \& Zhou, Y. S. (2023). The presenter's paradox: More is not always better. \emph{Journal of Management}, \emph{49}(7), 2208--2217. \url{https://doi.org/10.1177/01492063231155982}
+
+\bibitem[\citeproctext]{ref-cronshaw1997}
+Cronshaw, S. F. (1997). Lo! The stimulus speaks: The insider's view on whyte and latham's "the futility of utility analysis". \emph{Personnel Psychology}, \emph{50}, 611--615. \url{https://doi.org/10.1111/j.1744-6570.1997.tb00706.x}
+
+\bibitem[\citeproctext]{ref-cucina2017}
+Cucina, J., Berger, J., \& Busciglio, H. (2017). Communicating criterion-related validity using expectancy charts: A new approach. \emph{Personnel Assessment and Decisions}, \emph{3}(1). \url{https://doi.org/10.25035/pad.2017.001}
+
+\bibitem[\citeproctext]{ref-decorte2011}
+De Corte, W., Sackett, P. R., \& Lievens, F. (2011). Designing pareto-optimal selection systems: Formalizing the decisions required for selection system development. \emph{Journal of Applied Psychology}, \emph{96}(5), 907--926. \url{https://doi.org/10.1037/a0023298}
+
+\bibitem[\citeproctext]{ref-fisher2021}
+Fisher, P. A., Risavy, S. D., Robie, C., König, C. J., Christiansen, N. D., Tett, R. P., \& Simonet, D. V. (2021). Selection myths: A conceptual replication of HR professionals' beliefs about effective human resource practices in the united states and canada. \emph{The Journal of Personnel Psychology}, \emph{20}(2), 51--60. \url{https://doi.org/10.1027/1866-5888/a000263}
+
+\bibitem[\citeproctext]{ref-gotz2023}
+Götz, M., \& O'Boyle, E. H. (2023). Cobblers, let's stick to our lasts! A song of sorrow (and of hope) about the state of personnel and human resource management science. \emph{Research in Personnel and Human Resources Management}, 7--92. \url{https://doi.org/10.1108/S0742-730120230000041004}
+
+\bibitem[\citeproctext]{ref-hazer1997}
+Hazer, J. T., \& Highhouse, S. (1997). Factors influencing managers' reactions to utility analysis: Effects of SDy method, information frame, and focal intervention. \emph{Journal of Applied Psychology}, \emph{82}(1), 104--112. \url{https://doi.org/10.1037/0021-9010.82.1.104}
+
+\bibitem[\citeproctext]{ref-highhouse2008}
+Highhouse, S. (2008). Stubborn reliance on intuition and subjectivity in employee selection. \emph{Industrial and Organizational Psychology}, \emph{1}(3), 333--342. \url{https://doi.org/10.1111/j.1754-9434.2008.00058.x}
+
+\bibitem[\citeproctext]{ref-latham1994}
+Latham, G. P., \& Whyte, G. (1994). The futility of utility analysis. \emph{Personnel Psychology}, \emph{47}(1), 31--46. \url{https://doi.org/10.1111/j.1744-6570.1994.tb02408.x}
+
+\bibitem[\citeproctext]{ref-macan2004}
+Macan, T. H., \& Foster, J. (2004). Managers' reactions to utility analysis and perceptions of what influences their decisions. \emph{Journal of Business and Psychology}, \emph{19}(2), 241--253. \url{https://doi.org/10.1007/s10869-004-0550-x}
+
+\bibitem[\citeproctext]{ref-magnusson2023}
+Magnusson, K. (2023). A causal inference perspective on therapist effects. \emph{Preprint}. \url{https://doi.org/10.31234/osf.io/f7mvz}
+
+\bibitem[\citeproctext]{ref-oprea2019}
+Oprea, B. T., Barzin, L., Vîrgă, D., Iliescu, D., \& Rusu, A. (2019). Effectiveness of job crafting interventions: A meta-analysis and utility analysis. \emph{European Journal of Work and Organizational Psychology}, \emph{28}(6), 723--741. \url{https://doi.org/10.1080/1359432X.2019.1646728}
+
+\bibitem[\citeproctext]{ref-pfeffer2002}
+Pfeffer, J., \& Fong, C. T. (2002). The end of business schools? Less success than meets the eye. \emph{Academy of Management Learning \& Education}, \emph{1}(1), 78--95. \url{https://doi.org/10.5465/amle.2002.7373679}
+
+\bibitem[\citeproctext]{ref-rupp2020}
+Rupp, D., Song, Q. C., \& Strah, N. (2020). Addressing the so-called validity--diversity trade-off: Exploring the practicalities and legal defensibility of pareto-optimization for reducing adverse impact within personnel selection. \emph{Industrial and Organizational Psychology}, \emph{13}(2), 246--271. \url{https://doi.org/10.1017/iop.2020.19}
+
+\bibitem[\citeproctext]{ref-russell2022}
+Russell, C. (2022). Scholarly course corrections needed to advance organizational science: Field tests of theory-based deductions are long overdue. \emph{Data, Methods and Theory in the Organizational Sciences: A New Synthesis}, 241--265. \url{https://doi.org/10.4324/9781003015000}
+
+\bibitem[\citeproctext]{ref-rynes2012}
+Rynes, S. L. (2012). The research-practice gap in i/o psychology and related fields: Challenges and potential solutions. \emph{The Oxford Handbook of Organizational Psychology, Vol. 1}, 409--452. \url{https://doi.org/10.1093/oxfordhb/9780199928309.001.0001}
+
+\bibitem[\citeproctext]{ref-rynes2002}
+Rynes, S. L., Colbert, A. E., \& Brown, K. G. (2002). HR professionals' beliefs about effective human resource practices: Correspondence between research and practice. \emph{Human Resource Management}, \emph{41}(2), 149--174. \url{https://doi.org/10.1002/hrm.10029}
+
+\bibitem[\citeproctext]{ref-rynes2018}
+Rynes, S. L., Colbert, A. E., \& O'Boyle, E. H. (2018). When the "best available evidence" doesn't win: How doubts about science and scientists threaten the future of evidence-based management. \emph{Journal of Management}, \emph{44}(8), 2995--3010. \url{https://doi.org/10.1177/0149206318796934}
+
+\bibitem[\citeproctext]{ref-schmidt2012}
+Schmidt, F. L. (2012). The economic value of goal setting to employers. \emph{New Developments in Goal Setting and Task Performance}, 16--20. \url{https://doi.org/10.4324/9780203082744}
+
+\bibitem[\citeproctext]{ref-sturman2000}
+Sturman, M. C. (2000). Implications of utility analysis adjustments for estimates of human resource intervention value. \emph{Journal of Management}, \emph{26}(2), 281--299. \url{https://doi.org/10.1177/014920630002600206}
+
+\bibitem[\citeproctext]{ref-sturman2001}
+Sturman, M. C., \& Trevor, C. O. (2001). The implications of linking the dynamic performance and employee turnover literatures. \emph{Journal of Applied Psychology}, \emph{86}(4), 684--696. \url{https://doi.org/10.1037/0021-9010.86.4.684}
+
+\bibitem[\citeproctext]{ref-vaniddekinge2023}
+Van Iddekinge, C. H., Lievens, F., \& Sackett, P. R. (2023). Personnel selection: A review of ways to maximize validity, diversity, and the applicant experience. \emph{Personnel Psychology}, \emph{76}, 651--686. \url{https://doi.org/10.1111/peps.12578}
+
+\bibitem[\citeproctext]{ref-whyte1997}
+Whyte, G., \& Latham, G. (1997). The futility of utility analysis revisited: When even an expert fails. \emph{Personnel Psychology}, \emph{50}(3), 601--610. \url{https://doi.org/10.1111/j.1744-6570.1997.tb00705.x}
+
+\bibitem[\citeproctext]{ref-winkler2010}
+Winkler, S., König, C. J., \& Kleinmann, M. (2010). Single-attribute utility analysis may be futile, but this can't be the end of the story: Causal chain analysis as an alternative. \emph{Personnel Psychology}, \emph{63}(4), 1041--1065. \url{https://doi.org/10.1111/j.1744-6570.2010.01197.x}
+
+\end{CSLReferences}
+
+
+\end{document}

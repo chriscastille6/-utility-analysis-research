@@ -1,0 +1,464 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{array}
+\usepackage{setspace}
+\doublespacing
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[R]{\thepage}}
+\usepackage{titling}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Toward a More Useful Utility Analysis: A Literature Review and Web Application},
+  pdfauthor={Christopher Castille},
+  pdfkeywords={utility analysis, human resource management, decision
+making, web application, science-practice gap, organizational
+psychology},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Toward a More Useful Utility Analysis: A Literature Review and
+Web Application}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Bridging the Science-Practice Gap in Human Resource Decision
+Making}
+\author{Christopher Castille}
+\date{December 2024}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Scholars continue to discuss the merits and drawbacks of utility
+analysis (UA) as a tool for influencing management decisions. Despite
+its potential for quantifying the economic value of human resource
+interventions, UA has faced criticism for being overly complex and
+potentially backfiring when presented to managers. This paper
+synthesizes the literature on communicating validity and utility
+information to managers, introduces the UA+ web application, and
+demonstrates its usefulness through published case studies. The UA+ app
+incorporates evidence-based features including expectancy charts,
+plain-text descriptions, framing effects, and economic adjustments to
+enhance managerial decision-making. We illustrate the app's capabilities
+using three published examples: Latham and Whyte's (1994) staffing case,
+Avolio et al.'s (2010) leadership development analysis, and Schmidt's
+(2012) goal setting intervention. Our work contributes to bridging the
+science-practice gap by providing a practical tool that leverages
+research insights to help industrial-organizational psychologists and
+business leaders communicate the value of theory-based interventions.
+\end{abstract}
+
+\section{Abstract}\label{abstract}
+
+Scholars continue to discuss the merits and drawbacks of utility
+analysis (UA) as a tool for influencing management decisions. Despite
+its potential for quantifying the economic value of human resource
+interventions, UA has faced criticism for being overly complex and
+potentially backfiring when presented to managers. This paper
+synthesizes the literature on communicating validity and utility
+information to managers, introduces the UA+ web application, and
+demonstrates its usefulness through published case studies. The UA+ app
+incorporates evidence-based features including expectancy charts,
+plain-text descriptions, framing effects, and economic adjustments to
+enhance managerial decision-making. We illustrate the app's capabilities
+using three published examples: Latham and Whyte's (1994) staffing case,
+Avolio et al.'s (2010) leadership development analysis, and Schmidt's
+(2012) goal setting intervention. Our work contributes to bridging the
+science-practice gap by providing a practical tool that leverages
+research insights to help industrial-organizational psychologists and
+business leaders communicate the value of theory-based interventions.
+
+\section{Author Note}\label{author-note}
+
+Correspondence concerning this article should be addressed to
+Christopher Castille, Department of Management, Nicholls State
+University, Thibodaux, LA. Email:
+\href{mailto:christopher.castille@nicholls.edu}{\nolinkurl{christopher.castille@nicholls.edu}}
+
+\setcounter{page}{2}
+
+\section{Introduction}\label{introduction}
+
+Scholars routinely bemoan the fact that management decisions are
+suboptimal (Fisher et al., 2021; Highhouse, 2008; Rynes et al., 2002).
+Causes have been posited such as the poor training of managers
+(Highhouse, 2008; Rynes, 2012; Rynes et al., 2018), the widening
+science-practice gap (Rynes, 2012; Pfeffer \& Fong, 2002), and fetish
+for theory in research that emphasizes complexity at the expense of
+validity and utility in our published research (Götz \& O'Boyle, 2023).
+To address these concerns, educators in human resource management and
+industrial-organizational psychology have been encouraged to improve
+their training of both practitioners and scholarly researchers using
+methods that emphasize validity and utility of theory-based
+interventions (Sturman, 2000, 2001; Russell, 2022).
+
+Utility analysis (UA) is one method of describing such evidence in
+statistical, economic, and heuristic terms (i.e., quantity, quality, and
+cost; Cascio et al., 2019). Recent examples of scholars using utility
+analysis to communicate the value of theory-based interventions include
+Avolio et al.~(2010) who discuss the merits of a transformational
+leadership intervention; Schmidt (2012) who highlights the economic
+impact of goal setting; and Oprea et al.~(2019) who highlight the value
+of a brief job crafting intervention. Consider a situation where several
+hundred workers must be hired into a firm. UA can be used to identify
+the highest quality of workers that can be reasonably delivered to the
+organization for a given cost (De Corte, 2011). An example is Sturman
+(2000) who used UA to demonstrate that an enhanced employee program
+described by a validity coefficient of .4 and applied to over 1400
+applicants to hire 470 workers hired over several years is (after
+accounting for a series of adjustments) expected to yield a median
+return \textasciitilde\$1.7M experienced over the lifetime use of the
+program. Although large, this value represents only a few thousand
+dollars per hire per year. Such economic value represents potential
+revenue enhancements or cost savings attributed to, in this case, hiring
+higher-performing workers (Schmidt, 2012).
+
+Although UA is widely viewed as a complicated tool to both teach and
+use, complicated tools in finance (e.g., the Black-Scholes equation)
+also enjoy wide-spread use (Sturman, 2000). Russell (2022) notes that he
+often builds web apps for IO psychology teams to use UA to aid
+management decision making. What seems to be needed are tools that help
+decision-makers (both IOs and non-IOs alike) make use of UA insights to
+optimize investments more effectively in people.
+
+With our manuscript, we make two contributions to the literature. First,
+we synthesize the literature on communicating validity and utility
+information to managers. Second, we build off both Cascio et al.'s
+(2019) (who designed a web app made available in their \emph{Investing
+in People} textbook) and Russell (2022) (who designs web apps for UA in
+practice) by introducing the UA+ web app, a tool designed to leverage
+insights from literature to help IOs and business leaders communicate
+the validity and utility of theory-derived interventions. In the
+sections to follow, we summarize the literature informing the design of
+our app, explain the capabilities that the UA+ application offers over
+what is currently available, offer a tutorial grounded in the
+literature, and conclude by discussing future directions for functions
+built into the app. We hope the IO psychology community finds our app
+useful while identifying ways to enhance it and that scholars use it to
+teach students in applying UA to managerial decisions.
+
+\section{Method}\label{method}
+
+\subsection{A Review of the Utility Analysis (UA)
+Literature}\label{a-review-of-the-utility-analysis-ua-literature}
+
+UA research goes back to the 1970s (see Boudreau, 1988). The basic
+utility model calculates utility as the dollar value of performance
+differences resulting from an intervention (e.g.~higher performance from
+better selection or training) minus the costs of the intervention. The
+general formula is below:
+
+\[\Delta U = T \times N \times (Z_{barx} \times r \times SD_y) - C\]
+
+Where:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\Delta U\) = Utility change from selection device
+\item
+  \(N\) = Number of people hired
+\item
+  \(T\) = Average tenure of those hired
+\item
+  \(Z_{barx}\) = Average Z-score of predictor for hired employees
+\item
+  \(r\) = Correlation between predictor and criterion (e.g.,
+  performance)
+\item
+  \(SD_y\) = Dollar value of a SD change in criterion
+\item
+  \(C\) = Cost of the intervention
+\end{itemize}
+
+Unfortunately, this basic equation yields grossly inflated estimates of
+economic value (e.g., over 14,000\% return on investment; see Sturman,
+2000).
+
+Unsurprisingly, a `futility of utility' research vein emerged positing
+that presenting UA information to managers backfires (Latham \& Whyte,
+1994; Whyte \& Latham, 1997). In a series of studies, Latham and
+colleagues examined whether presenting utility information (e.g., the
+economic value of enhanced staffing) supplemented the presentation of
+validity information (e.g., the accuracy of the pre-employment staffing
+test). Latham et al.~found that while presenting validity information
+was received favorably, presenting utility information alongside
+validity information backfired, making managers hesitant to adopt a
+valuable intervention. This narrative is discussed to this day (e.g.,
+van Iddekinge et al., 2023) and for good reason; practitioners should be
+rightly concerned about using methods that could backfire.
+
+However, we should note that in explaining the `futility of utility,'
+Cronshaw (1997) (who was a contributor to the `futility of utility'
+research vein) theorized that the `backfire effect' is attributable to a
+`persuasional hypothesis'. Specifically, management is right to be
+skeptical of overly complex methods for the problem at hand. Cronshaw
+went on to posit that utility information can help managers make more
+optimal decisions about practices that impact the workforce when it is
+presented to inform rather than to persuade (Cronshaw, 1997).
+
+Accordingly, later replication efforts showed more promise presenting
+utility with validity information. Carson et al.~(1998) found that
+managers' acceptance of UA information was positively impacted by
+utility information, although acceptance of the proposed intervention
+was still distressingly low. Later work by Macan and Foster (2004) found
+managers ranked UA information (e.g., the economic value of an
+intervention) highly when making final decisions, stating the dollar
+values helped in this. Later, Brooks et al.~(2014) found using
+non-traditional effect size indicators such as common language effect
+size (CLES) helps managers understand the validity of interventions.
+
+We should note that scholars have provided guidance for making utility
+estimates more accurate that include (i) accounting for economic factors
+(i.e., interest, taxes, variable costs), (ii) (in the context of
+selection) the cost of using multiple selection devices, deviating from
+top-down hiring, and using a probationary period, and (iii) cohort or
+temporal effects (e.g., validity over time) (see Sturman, 2000).
+Although such adjustments can have a cumulative effect of shrinking
+utility estimates to levels that are \textasciitilde4\% of the basic
+utility analysis estimate and further complicate UA, they can help
+address flaws in assumptions of the basic model and provide a more
+realistic valuation of human resource programs for organizations.
+Unfortunately, managers' receptivity to these methods has not been
+examined empirically.
+
+In sum, we believe that used thoughtfully, UA can serve as a useful tool
+to help business leaders make more informed decisions about investing in
+people. Although it has been noted that UA can be helpful where IO
+psychologists in their context (Russell, 2022), we believe that as a
+discipline we can always improve how we help both business leaders and
+academicians consider the implications of theory-based interventions.
+
+\section{Results}\label{results}
+
+\subsection{Introducing the Utility Analysis Plus (UA+)
+Tool}\label{introducing-the-utility-analysis-plus-ua-tool}
+
+We introduce the Utility Analysis plus (UA+) tool. Our work builds on
+Cascio et al.~(2019) by incorporating insights from validity and utility
+analysis research that have either been shown to help managers make
+decisions regarding how best to staff, train, and develop their talent
+or are believed to support management decision-making (see Table 1).
+Also is a glossary of terms for those less familiar with UA, and ways to
+export the analysis in the .pdf format. Below, we offer a tutorial of
+the app using three published examples: (i) the classic case of Latham
+and Whyte (1994) (adapted by Carson et al., 1998), (ii) using UA to
+estimate returns on leadership development investment (Avolio et al.,
+2010), and (iii) using UA to communicate goal setting intervention value
+(Schmidt, 2012). We do not cover all features of the app here as several
+are still under development (e.g., using Monte Carlo analysis to
+facilitate risk management). The app can be accessed here:
+\url{https://uaplus.shinyapps.io/UAPlus/}.
+
+\begin{table}[!h]
+\centering
+\caption{\label{tab:literature-table}Literature Review Summary of UA Attributes and Their Inclusion in Tools}
+\centering
+\begin{tabular}[t]{lllll}
+\toprule
+UA Attribute & Expected Impact & Investing in People Online & UA+ & Description\\
+\midrule
+\cellcolor{gray!10}{Validity} & \cellcolor{gray!10}{Positive but weak} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{Validity should help managers see that practices work as claimed}\\
+Utility & Mixed & ✓ & ✓ & Utility should help managers see economic value\\
+\cellcolor{gray!10}{SDy} & \cellcolor{gray!10}{Mixed} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{SDy helps managers appreciate economic value of performance}\\
+Break-even levels & Unclear & ✓ & ✓ & Break-even values help managers see minimum economic value needed\\
+\cellcolor{gray!10}{Expectancy Charts} & \cellcolor{gray!10}{Mixed} & \cellcolor{gray!10}{} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{Expectancy charts help managers see validity-probability relationships}\\
+\addlinespace
+Framing Effects & Unclear &  & ✓ & Framing utility as opportunity costs vs. monetary gains\\
+\cellcolor{gray!10}{Plain-Text Descriptions} & \cellcolor{gray!10}{Positive} & \cellcolor{gray!10}{} & \cellcolor{gray!10}{✓} & \cellcolor{gray!10}{Plain-text descriptions improve comprehension}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Case Examples}\label{case-examples}
+
+\subsubsection{Improving Staffing: The Latham \& Whyte (1994)
+Example}\label{improving-staffing-the-latham-whyte-1994-example}
+
+\subsubsection{Improving Training or Employee
+Development}\label{improving-training-or-employee-development}
+
+\paragraph{Case 1: The Avolio et al.~(2010)
+Example}\label{case-1-the-avolio-et-al.-2010-example}
+
+\paragraph{Case 2: The Schmidt (2012)
+Example}\label{case-2-the-schmidt-2012-example}
+
+The code for this app is available via Github:
+\url{https://github.com/utilityanalysis/webApp}. Interested readers are
+welcome to issue requests for the app or improve the app as they like
+for their purposes.
+
+\section{Discussion}\label{discussion}
+
+We have given a brief overview of the UA+ web app. In closing, we wish
+to share our plans for (i) adding more features to the app and (ii)
+engaging in a set of literal replications to identify those features
+that meaningfully enhance the usefulness of this app for our community.
+
+\subsection{Planned Features}\label{planned-features}
+
+Features we plan to include follow. First, we wish to add graphical
+descriptions of UA (i.e.~slides) that allow a causal chain to be
+described (e.g., \% increase in training → \% increase in performance →
+\% increase in economic value), which Winkler et al.~(2010) suggest help
+managers see how an intervention impacts the workforce. Second,
+concerning the accuracy of UA, Sturman (2000) notes that a Monte Carlo
+analysis allows a comprehensive set of adjustments to be used to
+accurately appraise the value of HR interventions. We hope to update the
+UA+ app with a Monte Carlo analysis feature that is relatively easy to
+use and reproduces (as closely as possible) the findings from Sturman
+(2000) (e.g., adjustments reduce basic utility estimates to
+\textasciitilde4\% of their initial value). Third, we wish to augment
+the selection utility tools in the app with a pareto-optimization
+feature that allows users to identify the most economic value that can
+be attained while diversifying the workforce (see De Corte et al., 2011;
+Rupp et al., 2020). Fourth, we wish to highlight the neglected role of
+compensation in utility research (e.g., its impact on workforce value,
+see Sturman, 2001). Our long-term aim is to have a tool that allows HR
+professionals to identify optimal bundles of interventions (e.g.,
+combinations of staffing, training, and compensation enhancements).
+
+\subsection{Future Research
+Directions}\label{future-research-directions}
+
+We wish to close by noting that while our app's design is grounded in
+the literature, more information or features in the app may not always
+be better (Connelly et al., 2023); sometimes, less is more. Indeed, as
+described in Table 1, there are many claims concerning how to present
+evidence to managers, some of which have been supported. Therefore, our
+first step is to replicate those effects that have been tested in the
+literature via a set of literal replication studies (i.e., a replication
+aimed at replicating, as close as possible, the initial conditions of
+these studies). In this first wave of confirmatory testing, we will
+identify and retain information features that are useful for our
+community. As part of this, we will include conditions that test claims
+that have gone relatively untested (e.g., framing effects applied to
+validity). Our aim is to provide clear evidence concerning what does and
+does not help users make decisions regarding investing in their people
+and then build this information in the UA+ app. We have already begun
+pre-registering our methods and hypotheses on the Open Science Framework
+and look forward to incorporating feedback from our reviewers.
+
+\section{Conclusion}\label{conclusion}
+
+This paper has presented the UA+ web application as a practical tool for
+bridging the science-practice gap in utility analysis. By synthesizing
+the literature on communicating validity and utility information to
+managers, we have identified key features that enhance managerial
+decision-making, including expectancy charts, plain-text descriptions,
+framing effects, and economic adjustments. The UA+ app incorporates
+these evidence-based features to help industrial-organizational
+psychologists and business leaders communicate the value of theory-based
+interventions more effectively.
+
+Our demonstration of the app using three published case studies---Latham
+and Whyte's (1994) staffing analysis, Avolio et al.'s (2010) leadership
+development study, and Schmidt's (2012) goal setting
+intervention---illustrates the app's versatility across different HR
+interventions. The app successfully reproduces key findings from these
+studies while providing additional features that enhance comprehension
+and decision-making.
+
+Future development of the UA+ app will focus on incorporating Monte
+Carlo analysis capabilities, pareto-optimization features, and
+compensation considerations. Additionally, planned replication studies
+will systematically test the effectiveness of various presentation
+features to ensure that the app provides optimal support for managerial
+decision-making.
+
+The UA+ app represents a step toward addressing the persistent challenge
+of translating research insights into practical tools that can enhance
+organizational decision-making. By providing a user-friendly interface
+that incorporates evidence-based features, we hope to contribute to the
+broader goal of improving how organizations invest in their people and
+make evidence-based decisions about human resource interventions.
+
+\section{References}\label{references}
+
+\end{document}

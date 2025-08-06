@@ -1,0 +1,269 @@
+---
+title: "Extending Utility Analysis: The Evolution of the Latham & Whyte Case"
+author: "Utility Analysis Research Project"
+date: "`r Sys.Date()`"
+output: pdf_document
+bibliography: references.bib
+csl: apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+load("latham_whyte_comprehensive_results.RData")
+```
+
+# Executive Summary
+
+This report examines the classic Latham & Whyte (1994) budget analyst selection case using four methodological approaches, demonstrating how recent advances in utility analysis affect interpretation of classic findings.
+
+## Four Approaches Compared
+
+1. **Traditional utility analysis** [@brogden1949when; @cronbach1965psychological]
+2. **Sturman (2000) Monte Carlo adjustments** [@sturman2000implications] 
+3. **Star performer approach** [@joo2022hrm; @sturman2023getting]
+4. **Combined approach** (integrating both insights)
+
+## Key Results
+
+- **Traditional:** $`r formatC(round(traditional$total_utility), format = "d", big.mark = ",")`
+- **Sturman adjusted:** $`r formatC(round(sturman$total_utility), format = "d", big.mark = ",")` (35% reduction)
+- **Star performer:** $`r formatC(round(star_power$total_utility), format = "d", big.mark = ",")` (175% increase)
+- **Combined:** $`r formatC(round(combined$total_utility), format = "d", big.mark = ",")` (140% increase)
+
+# Background: The Latham & Whyte (1994) Case
+
+@latham1994futility examined manager reactions to utility analysis by presenting the financial results of implementing a cognitive ability test for budget analyst selection. Despite showing a $59.7 million return (14,000% ROI), managers were actually *less* likely to implement the selection procedure, suggesting the estimates lacked credibility.
+
+## Case Study Parameters
+
+The case involved:
+
+- **Position:** Budget Analyst (Government agency)
+- **Candidates selected:** `r format(lw_params$n_selected, big.mark = ",")`
+- **Total applicants:** `r format(lw_params$n_applicants, big.mark = ",")`
+- **Selection ratio:** `r paste0(lw_params$selection_ratio * 100, "%")`
+- **Test validity:** `r lw_params$validity`
+- **Mean salary:** $`r formatC(lw_params$mean_salary, format = "d", big.mark = ",")`
+- **Time horizon:** `r lw_params$time_horizon` years
+
+# Methodological Evolution
+
+## Traditional Utility Analysis
+
+The classical approach uses the Brogden-Cronbach-Gleser formula [@brogden1949when; @cronbach1965psychological]:
+
+$$U = N_s \times SDy \times r \times \frac{\phi}{p} \times T - N_a \times C_a$$
+
+Where SDy = 0.40 × mean salary, assuming normal performance distributions.
+
+## Sturman (2000) Monte Carlo Insights
+
+@sturman2000implications conducted comprehensive Monte Carlo simulations revealing that traditional utility analysis often produces unrealistically high estimates. His analysis of the original Latham & Whyte case showed:
+
+**Sturman's Actual Findings:**
+- **Original estimate:** $59,657,532
+- **After all five adjustments:** Mean = $2,228,170 (**96.3% reduction**)
+- **Median effect size of total adjustments:** 291%
+- **Key adjustments:** Economic variables, multiple devices, top-down hiring, probationary period, employee flows
+
+**Our Simplified Adjustment:**
+- We applied a conservative **35% reduction** factor
+- This represents a simplified approximation of Sturman's complex, scenario-dependent adjustments
+- Sturman's actual reductions were much more dramatic (often >90%) but highly variable
+
+## Star Performer Recognition
+
+@joo2022hrm developed methodology recognizing that job performance follows heavy-tailed distributions where star performers create disproportionate value. @sturman2023getting confirmed their approach uses:
+
+$$SDy_{star} = 1.1 \times \text{mean salary}$$
+
+Based on @burke1986comparison empirical finding that SDy/SDO ratio averages 2.75.
+
+# Comparative Analysis
+
+```{r methodology-table}
+# Table 1a: Methodology Comparison
+methodology_table <- data.frame(
+  Approach = c("Traditional", "Sturman", "Star Power", "Combined"),
+  SDy_Method = c("40% rule", "40% rule (adjusted)", "110% rule", "110% rule (conservative)"),
+  SDy_Value = summary_df$SDy_Value,
+  Key_Assumption = c("Normal performance", "Range restriction", "Heavy-tailed distributions", "Balanced realism")
+)
+
+kable(methodology_table,
+      col.names = c("Approach", "SDy Method", "SDy Value", "Key Assumption"),
+      caption = "Table 1a: Methodological Approaches Comparison",
+      align = c("l", "l", "r", "l")) %>%
+  kable_styling(font_size = 10, latex_options = c("striped", "hold_position"))
+```
+
+```{r results-table}
+# Table 1b: Financial Results Comparison
+results_table <- data.frame(
+  Approach = c("Traditional", "Sturman", "Star Power", "Combined"),
+  Total_Utility = summary_df$Total_Utility,
+  Per_Hire = summary_df$Per_Hire,
+  Change = summary_df$Change
+)
+
+kable(results_table,
+      col.names = c("Approach", "Total Utility", "Per-Hire Value", "Change (%)"),
+      caption = "Table 1b: Financial Results Comparison",
+      align = c("l", "r", "r", "r"),
+      format.args = list(big.mark = ",")) %>%
+  kable_styling(font_size = 10, latex_options = c("striped", "hold_position"))
+```
+
+```{r utility-plot, fig.cap="Total Utility Estimates by Methodological Approach", fig.height=5, fig.width=8}
+plot_data <- data.frame(
+  Approach = c("Traditional", "Sturman", "Star Power", "Combined"),
+  Utility = c(traditional$total_utility, sturman$total_utility, 
+              star_power$total_utility, combined$total_utility)
+)
+
+ggplot(plot_data, aes(x = reorder(Approach, Utility), y = Utility)) +
+  geom_col(fill = "steelblue", alpha = 1.0, color = "black", size = 0.5) +
+  geom_text(aes(label = paste0("$", round(Utility/1e6, 1), "M")), 
+            hjust = -0.1, size = 3.5, fontface = "bold") +
+  coord_flip() +
+  scale_y_continuous(labels = scales::dollar_format(scale = 1e-6, suffix = "M"),
+                     expand = expansion(mult = c(0, 0.15))) +
+  labs(title = "Total Utility Estimates by Approach",
+       x = "Methodological Approach", y = "Total Utility (Millions)") +
+  theme_minimal() +
+  theme(
+    panel.grid.major = element_line(color = "grey90", size = 0.5),
+    panel.grid.minor = element_blank(),
+    axis.line = element_line(color = "black", size = 0.8),
+    axis.text = element_text(size = 10),
+    axis.title = element_text(size = 11, face = "bold"),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8)
+  )
+```
+
+# Detailed Analysis
+
+## Traditional Approach
+- **Total Utility:** $`r formatC(round(traditional$total_utility), format = "d", big.mark = ",")`
+- **Per-Hire Value:** $`r formatC(round(traditional$per_hire_utility), format = "d", big.mark = ",")`
+- **SDy:** $`r formatC(round(traditional$sdy), format = "d", big.mark = ",")` (40% rule)
+
+Uses the classical Brogden-Cronbach-Gleser utility formula assuming normal performance distributions.
+
+## Sturman (2000) Adjustments
+
+**Important Note:** Our analysis applies a simplified 35% reduction factor, while @sturman2000implications actual findings were much more dramatic:
+
+- **Our Adjusted Utility:** $`r formatC(round(sturman$total_utility), format = "d", big.mark = ",")`
+- **Our Reduction:** $`r formatC(round(traditional$total_utility - sturman$total_utility), format = "d", big.mark = ",")` (35%)
+
+**Sturman's Actual Findings (Original Latham & Whyte Case):**
+- **Sturman's Adjusted Utility:** $2,228,170 (mean)
+- **Sturman's Reduction:** $57,429,362 (**96.3% reduction**)
+- **Median Effect Size:** 291% (across all adjustments)
+
+Sturman's analysis revealed that utility estimates are highly contingent on organizational and environmental factors, with reductions ranging from 71% to over 96% depending on circumstances.
+
+## Star Performer Approach
+- **Star-Adjusted Utility:** $`r formatC(round(star_power$total_utility), format = "d", big.mark = ",")`
+- **Improvement:** $`r formatC(round(star_power$total_utility - traditional$total_utility), format = "d", big.mark = ",")` (+175%)
+- **SDy Multiplier:** 2.75× [@burke1986comparison]
+
+Recognizes heavy-tailed performance distributions where star performers create exceptional value using SDy = 1.1 × mean salary [@joo2022hrm].
+
+## Combined Approach
+- **Combined Utility:** $`r formatC(round(combined$total_utility), format = "d", big.mark = ",")`
+- **Net Improvement:** $`r formatC(round(combined$total_utility - traditional$total_utility), format = "d", big.mark = ",")` (+140%)
+
+Balances Sturman's realism with star performer recognition, applying a moderate 20% reduction to star estimates.
+
+# Methodological Comparison: Our Adjustments vs. Sturman's Findings
+
+## Adjustment Severity Comparison
+
+```{r adjustment-comparison}
+# Create comparison with Sturman's actual findings
+comparison_data <- data.frame(
+  Scenario = c("Our Sturman Adjustment", "Sturman's Actual Mean", "Sturman's Actual Median"),
+  Utility = c(formatC(round(sturman$total_utility), format = "d", big.mark = ","),
+              "$2,228,170", "$1,738,861"),
+  Reduction = c("35%", "96.3%", "97.1%"),
+  Method = c("Simplified factor", "Complex Monte Carlo", "Complex Monte Carlo")
+)
+
+kable(comparison_data,
+      col.names = c("Scenario", "Total Utility ($)", "Reduction (%)", "Method"),
+      caption = "Comparison: Our Adjustments vs. Sturman's Actual Findings",
+      align = c("l", "r", "r", "l")) %>%
+  kable_styling(font_size = 10, latex_options = c("striped", "hold_position"))
+```
+
+## Key Differences
+
+1. **Complexity:** Sturman used five specific adjustments (economic variables, multiple devices, top-down hiring, probationary period, employee flows) while we used a simplified reduction factor
+
+2. **Magnitude:** Sturman's reductions were far more dramatic (>90%) than our conservative 35%
+
+3. **Variability:** Sturman showed high variability across scenarios; our approach uses a fixed factor
+
+4. **Realism:** Sturman's approach may be more realistic but requires extensive organizational data
+
+# Strategic Implications
+
+## Investment Justification
+
+Even under conservative assumptions, the selection program generates substantial value:
+
+- **Assessment Costs:** $`r formatC(round(lw_params$n_applicants * lw_params$cost_per_applicant), format = "d", big.mark = ",")`
+- **Conservative ROI (Our Sturman):** `r round(sturman$total_utility / (lw_params$n_applicants * lw_params$cost_per_applicant))`× return
+- **Realistic ROI (Combined):** `r round(combined$total_utility / (lw_params$n_applicants * lw_params$cost_per_applicant))`× return
+- **Sturman's Actual ROI:** `r round(2228170 / (lw_params$n_applicants * lw_params$cost_per_applicant))`× return
+
+## Research Evolution Timeline
+
+```{r evolution-table}
+evolution_data <- data.frame(
+  Period = c("1940s-1980s", "2000s", "2020s"),
+  Development = c("Classical utility analysis", "Sturman's operational realism", "Star performer recognition"),
+  Key_Finding = c("Positive utility estimates", "Highly variable, often reduced", "Exceptional value of top talent"),
+  Representative_Study = c("Brogden (1949)", "Sturman (2000)", "Joo et al. (2022)")
+)
+
+kable(evolution_data,
+      col.names = c("Period", "Development", "Key Finding", "Representative Study"),
+      caption = "Evolution of Utility Analysis Methodology",
+      align = c("c", "l", "l", "l")) %>%
+  kable_styling(font_size = 9, latex_options = c("striped", "scale_down"))
+```
+
+# Conclusions
+
+This analysis demonstrates the evolution of utility analysis methodology and reveals important insights:
+
+## Key Findings
+
+1. **Traditional utility analysis** provides a useful baseline but may substantially overestimate benefits [@sturman2000implications]
+
+2. **Sturman's adjustments** revealed utility estimates are highly contingent on organizational factors, with actual reductions often exceeding 90%
+
+3. **Our simplified 35% reduction** represents a conservative approximation of Sturman's complex, scenario-dependent adjustments
+
+4. **Star performer recognition** [@joo2022hrm] reveals exceptional value when organizations can identify top talent
+
+5. **Combined approaches** offer balanced assessments recognizing both operational constraints and star performer potential
+
+## Methodological Implications
+
+- **Sturman's contribution:** Demonstrated that utility analysis requires careful consideration of organizational context
+- **Star performer contribution:** Recognized that performance distributions are often heavy-tailed
+- **Future research:** Need for integration of both realistic constraints and star performer recognition
+
+## Practical Recommendations
+
+Even under Sturman's most conservative scenarios, high-validity selection procedures remain valuable investments. The key is designing selection systems capable of identifying potential star performers while maintaining realistic expectations about organizational constraints.
+
+# References 
