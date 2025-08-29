@@ -817,8 +817,194 @@ server <- function(input, output, session) {
     ))
   })
   
-  # ROI Calculator (placeholder - would implement similar to above)
-  # Training Reports (placeholder - would implement PDF generation)
+  # ROI Calculator Analysis
+  roi_results <- reactive({
+    input$calculate_roi
+    
+    isolate({
+      # Calculate total investment
+      total_investment <- input$roi_design_cost + 
+                         (input$roi_participants * input$roi_delivery_cost) + 
+                         (input$roi_participants * input$roi_materials_cost) + 
+                         (input$roi_participants * input$roi_opportunity_cost)
+      
+      # Calculate annual benefits with decay
+      annual_benefit_base <- input$roi_participants * input$roi_effect_size * input$roi_performance_sdy
+      
+      # Apply benefit decay over time
+      years <- 1:ceiling(input$roi_benefit_duration)
+      decay_factor <- (1 - input$roi_decay_rate/100)
+      
+      # Calculate benefits for each year
+      yearly_benefits <- sapply(years, function(year) {
+        if(year <= input$roi_benefit_duration) {
+          annual_benefit_base * (decay_factor ^ (year - 1))
+        } else {
+          0
+        }
+      })
+      
+      # Partial year calculation if needed
+      if(input$roi_benefit_duration %% 1 != 0) {
+        partial_year <- ceiling(input$roi_benefit_duration)
+        partial_fraction <- input$roi_benefit_duration %% 1
+        yearly_benefits[partial_year] <- yearly_benefits[partial_year] * partial_fraction
+      }
+      
+      total_benefits <- sum(yearly_benefits)
+      net_benefit <- total_benefits - total_investment
+      roi_percentage <- (total_benefits / total_investment - 1) * 100
+      
+      # Create time series data
+      time_series_data <- data.frame(
+        Year = years,
+        Cumulative_Investment = rep(total_investment, length(years)),
+        Cumulative_Benefits = cumsum(yearly_benefits),
+        Annual_Benefits = yearly_benefits,
+        Net_Value = cumsum(yearly_benefits) - total_investment
+      )
+      
+      # Cost breakdown
+      cost_breakdown <- data.frame(
+        Category = c("Design & Development", "Delivery Costs", "Materials", "Opportunity Cost"),
+        Amount = c(
+          input$roi_design_cost,
+          input$roi_participants * input$roi_delivery_cost,
+          input$roi_participants * input$roi_materials_cost,
+          input$roi_participants * input$roi_opportunity_cost
+        )
+      )
+      
+      list(
+        total_investment = total_investment,
+        total_benefits = total_benefits,
+        net_benefit = net_benefit,
+        roi_percentage = roi_percentage,
+        time_series_data = time_series_data,
+        cost_breakdown = cost_breakdown,
+        payback_period = total_investment / (annual_benefit_base * mean(decay_factor ^ (0:(length(years)-1))))
+      )
+    })
+  })
+  
+  output$roi_total_investment <- renderValueBox({
+    results <- roi_results()
+    valueBox(
+      value = paste0("$", format(round(results$total_investment), big.mark = ",")),
+      subtitle = "Total Investment",
+      icon = icon("dollar-sign"),
+      color = "red"
+    )
+  })
+  
+  output$roi_total_benefits <- renderValueBox({
+    results <- roi_results()
+    valueBox(
+      value = paste0("$", format(round(results$total_benefits), big.mark = ",")),
+      subtitle = "Total Benefits",
+      icon = icon("chart-line"),
+      color = "green"
+    )
+  })
+  
+  output$roi_net_benefit <- renderValueBox({
+    results <- roi_results()
+    valueBox(
+      value = paste0("$", format(round(results$net_benefit), big.mark = ",")),
+      subtitle = "Net Benefit",
+      icon = icon("plus"),
+      color = if(results$net_benefit > 0) "green" else "red"
+    )
+  })
+  
+  output$roi_percentage <- renderValueBox({
+    results <- roi_results()
+    valueBox(
+      value = paste0(round(results$roi_percentage, 0), "%"),
+      subtitle = "ROI Percentage",
+      icon = icon("percentage"),
+      color = if(results$roi_percentage > 0) "blue" else "red"
+    )
+  })
+  
+  output$roi_time_series <- renderPlotly({
+    results <- roi_results()
+    
+    p <- ggplot(results$time_series_data) +
+      geom_line(aes(x = Year, y = Cumulative_Benefits, color = "Cumulative Benefits"), size = 1.2) +
+      geom_line(aes(x = Year, y = Cumulative_Investment, color = "Total Investment"), size = 1.2) +
+      geom_line(aes(x = Year, y = Net_Value, color = "Net Value"), size = 1.2) +
+      geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.5) +
+      scale_y_continuous(labels = scales::dollar_format()) +
+      scale_color_manual(values = c("Cumulative Benefits" = "green", "Total Investment" = "red", "Net Value" = "blue")) +
+      labs(title = "ROI Analysis Over Time", x = "Year", y = "Value ($)", color = "Metric") +
+      theme_minimal()
+    
+    ggplotly(p)
+  })
+  
+  output$roi_breakdown_chart <- renderPlotly({
+    results <- roi_results()
+    
+    p <- ggplot(results$cost_breakdown, aes(x = reorder(Category, Amount), y = Amount, fill = Category)) +
+      geom_col(alpha = 0.8) +
+      scale_y_continuous(labels = scales::dollar_format()) +
+      labs(title = "Training Investment Breakdown", x = "Cost Category", y = "Amount ($)") +
+      theme_minimal() +
+      guides(fill = "none") +
+      coord_flip()
+    
+    ggplotly(p)
+  })
+  
+  output$roi_detailed_analysis <- renderUI({
+    results <- roi_results()
+    
+    HTML(paste0(
+      "<div style='background-color: #f8f9fa; padding: 20px; border-radius: 5px;'>",
+      "<h5>Comprehensive ROI Analysis</h5>",
+      
+      "<h6>Investment Breakdown:</h6>",
+      "<p><strong>Participants:</strong> ", format(input$roi_participants, big.mark = ","), "</p>",
+      "<p><strong>Design & Development:</strong> $", format(input$roi_design_cost, big.mark = ","), "</p>",
+      "<p><strong>Delivery Cost:</strong> $", format(input$roi_delivery_cost, big.mark = ","), " × ", input$roi_participants, " = $", format(input$roi_delivery_cost * input$roi_participants, big.mark = ","), "</p>",
+      "<p><strong>Materials Cost:</strong> $", format(input$roi_materials_cost, big.mark = ","), " × ", input$roi_participants, " = $", format(input$roi_materials_cost * input$roi_participants, big.mark = ","), "</p>",
+      "<p><strong>Opportunity Cost:</strong> $", format(input$roi_opportunity_cost, big.mark = ","), " × ", input$roi_participants, " = $", format(input$roi_opportunity_cost * input$roi_participants, big.mark = ","), "</p>",
+      "<p><strong>Total Investment:</strong> $", format(round(results$total_investment), big.mark = ","), "</p>",
+      
+      "<hr>",
+      
+      "<h6>Benefit Calculations:</h6>",
+      "<p><strong>Effect Size:</strong> d = ", input$roi_effect_size, "</p>",
+      "<p><strong>Performance SDy:</strong> $", format(input$roi_performance_sdy, big.mark = ","), "</p>",
+      "<p><strong>Annual Benefit per Person:</strong> $", format(round(input$roi_effect_size * input$roi_performance_sdy), big.mark = ","), "</p>",
+      "<p><strong>Total Annual Benefits (Year 1):</strong> $", format(round(input$roi_participants * input$roi_effect_size * input$roi_performance_sdy), big.mark = ","), "</p>",
+      "<p><strong>Benefit Duration:</strong> ", input$roi_benefit_duration, " years</p>",
+      "<p><strong>Annual Decay Rate:</strong> ", input$roi_decay_rate, "%</p>",
+      
+      "<hr>",
+      
+      "<h6>ROI Summary:</h6>",
+      "<p><strong>Total Benefits:</strong> $", format(round(results$total_benefits), big.mark = ","), "</p>",
+      "<p><strong>Net Benefit:</strong> $", format(round(results$net_benefit), big.mark = ","), "</p>",
+      "<p><strong>ROI Percentage:</strong> ", round(results$roi_percentage, 1), "%</p>",
+      "<p><strong>Payback Period:</strong> ", round(results$payback_period, 1), " years</p>",
+      
+      "<hr>",
+      
+      "<h6>Key Insights:</h6>",
+      if(results$roi_percentage > 0) {
+        paste0("<p style='color: green;'>• <strong>Positive ROI:</strong> Training investment generates positive returns</p>",
+               "<p>• <strong>Break-even:</strong> Investment recovers in ", round(results$payback_period, 1), " years</p>",
+               "<p>• <strong>Per-participant value:</strong> $", format(round(results$net_benefit / input$roi_participants), big.mark = ","), " net benefit per trainee</p>")
+      } else {
+        paste0("<p style='color: red;'>• <strong>Negative ROI:</strong> Training investment does not recover costs under current assumptions</p>",
+               "<p>• Consider increasing effect size, reducing costs, or extending benefit duration</p>")
+      },
+      
+      "</div>"
+    ))
+  })
   
   # Download Report Handler
   output$download_training_report <- downloadHandler(
