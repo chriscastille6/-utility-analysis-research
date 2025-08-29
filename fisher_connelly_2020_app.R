@@ -389,12 +389,12 @@ ui <- dashboardPage(
             
             <h5>Source Code & Documentation:</h5>
             <p><strong>GitHub Repository:</strong><br>
-            <a href='#' target='_blank' style='color: #666; font-style: italic;'>
-            [GitHub link to be added when published online]
+            <a href='https://github.com/chriscastille6/-utility-analysis-research' target='_blank' style='color: #666; font-style: italic;'>
+            https://github.com/chriscastille6/-utility-analysis-research
             </a></p>
             
             <p><strong>Citation for this Tool:</strong><br>
-            <em>Disability Employment Business Case Analysis Tool</em> (2025). Interactive educational application based on Fisher & Connelly (2020). [GitHub URL to be added].</p>
+            <em>Disability Employment Business Case Analysis Tool</em> (2025). Interactive educational application based on Fisher & Connelly (2020). Available at: https://github.com/chriscastille6/-utility-analysis-research</p>
             
             <h5>Technical Requirements:</h5>
             <ul>

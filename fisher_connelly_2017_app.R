@@ -552,12 +552,12 @@ ui <- dashboardPage(
             
             <h5>Source Code & Documentation:</h5>
             <p><strong>GitHub Repository:</strong><br>
-            <a href='#' target='_blank' style='color: #666; font-style: italic;'>
-            [GitHub link to be added when published online]
+            <a href='https://github.com/chriscastille6/-utility-analysis-research' target='_blank' style='color: #666; font-style: italic;'>
+            https://github.com/chriscastille6/-utility-analysis-research
             </a></p>
             
             <p><strong>Citation for this Tool:</strong><br>
-            <em>Contingent Workers Business Case Analysis Tool</em> (2024). Interactive educational application based on Fisher & Connelly (2017). [GitHub URL to be added].</p>
+            <em>Contingent Workers Business Case Analysis Tool</em> (2024). Interactive educational application based on Fisher & Connelly (2017). Available at: https://github.com/chriscastille6/-utility-analysis-research</p>
             
             <h5>Technical Requirements:</h5>
             <ul>
