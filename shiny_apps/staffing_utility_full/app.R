@@ -17,7 +17,7 @@ library(gridExtra)
 library(rmarkdown)
 library(knitr)
 library(stringr)
-library(lavaan)
+# library(lavaan)  # Not needed for current functionality
 
 # =============================================================================
 # CORE UTILITY ANALYSIS FUNCTIONS
@@ -720,40 +720,22 @@ ui <- dashboardPage(
                     DT::dataTableOutput("optimal_combinations")
                   ),
                   
-                  tabPanel("Pareto Optimization",
+                  tabPanel("Advanced Analysis",
                     br(),
-                    div(style = "background-color: #e8f4fd; padding: 15px; border-radius: 5px; margin-bottom: 20px;",
-                      h6("Advanced Pareto Analysis:"),
-                      p("Find mathematically optimal trade-offs between validity and adverse impact using the ParetoR package 
-                        (De Corte, Sackett, & Lievens, 2011; Rupp et al., 2020). This approach identifies the Pareto frontier 
-                        of solutions where you cannot improve one objective without worsening the other."),
-                      p(strong("Methodology:"), " Based on De Corte et al.'s (2011) groundbreaking approach for designing 
-                        Pareto-optimal selection systems, implemented through the ParetoR R package with Berry et al. (2024) 
-                        updated meta-analytic correlations.")
-                    ),
-                    
-                    fluidRow(
-                      column(6,
-                        h6("Pareto Parameters:"),
-                        numericInput("pareto_prop", "Minority Proportion in Applicant Pool:", value = 0.35, min = 0.1, max = 0.9, step = 0.05),
-                        numericInput("pareto_sr", "Selection Ratio:", value = 0.25, min = 0.05, max = 0.95, step = 0.05),
-                        actionButton("run_pareto", "Run Pareto Analysis", class = "btn-warning", style = "width: 100%;")
-                      ),
-                      column(6,
-                        valueBoxOutput("pareto_solutions", width = 12),
-                        br(),
-                        htmlOutput("pareto_strategies")
-                      )
-                    ),
-                    
-                    br(),
-                    
-                    fluidRow(
-                      box(width = 6, title = "Pareto Frontier Plot", status = "primary", solidHeader = TRUE,
-                        plotlyOutput("pareto_frontier_plot")
-                      ),
-                      box(width = 6, title = "Strategy Comparison", status = "info", solidHeader = TRUE,
-                        DT::dataTableOutput("pareto_strategies_table")
+                    div(style = "background-color: #fff3cd; padding: 20px; border-radius: 5px; border: 1px solid #ffeaa7;",
+                      h6(icon("info-circle"), " Advanced Features"),
+                      p("Additional advanced selection analysis features are being developed for future releases."),
+                      p("Current functionality includes comprehensive selection battery optimization, adverse impact analysis, 
+                        and all core utility analysis approaches. These provide complete support for evidence-based selection decisions."),
+                      
+                      h6("Available Now:"),
+                      tags$ul(
+                        tags$li("Selection Battery Optimization with validity and cost analysis"),
+                        tags$li("Adverse Impact Assessment using the 4/5ths rule"),
+                        tags$li("Executive Selection & Character Assessment"),
+                        tags$li("Monte Carlo Analysis with custom parameter bounds"),
+                        tags$li("Cost Savings Analysis and Break-even calculations"),
+                        tags$li("Comprehensive Business Case Report generation")
                       )
                     )
                   )

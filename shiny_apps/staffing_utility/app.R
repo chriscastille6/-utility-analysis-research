@@ -876,6 +876,18 @@ ui <- dashboardPage(
                 essential for accurate utility analysis. These tables are implemented in the iopsych package ux() function.")
             ),
             
+            div(style = "background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;",
+              h5("Seijts, G., Espinoza, J. A., & Carswell, J. (2020)."),
+              p(em("Utility analysis of character assessment in employee placement."), 
+                strong("Leadership & Organization Development Journal"), ", 41(5), 703-720."),
+              p("DOI: 10.1108/LODJ-07-2019-0314"),
+              
+              h6("Contribution:"),
+              p("Demonstrated the economic value of character assessment in executive selection using the Leader Character Insight Assessment (LCIA). 
+                Found a significant correlation (r = 0.30) between character assessment and performance, with substantial utility over 10-15 year periods. 
+                Validates the business case for character-based leadership assessment in succession planning.")
+            ),
+            
             h4("Utility Analysis Framework"),
             h5("Brogden-Cronbach-Gleser (BCG) Model:"),
             p("• Brogden, H. E. (1949). When testing pays off. Personnel Psychology, 2(2), 171-183."),
