@@ -1,0 +1,1024 @@
+         Canadian Journal of Disability Studies
+
+Published by the Canadian Disability Studies Association
+  Association Canadienne des Études sur le handicap
+
+         Hosted by The University of Waterloo
+
+                 www.cjds.uwaterloo.ca
+
+                cjdseditor@uwaterloo.ca
+
+
+--- PAGE BREAK ---
+
+Building the “Business Case” for Hiring People with Disabilities: A Financial Cost-Benefit
+                          Analysis Methodology and Example
+
+   Dr. Sandra L. Fisher, Senior Research Fellow and Lecturer, Münster School of Business,
+                           Münster University of Applied Sciences
+                                 sandy.fisher@fh-muenster.de
+   Dr. Catherine E. Connelly, Professor, DeGroote School of Business, McMaster University
+                                    connell@mcmaster.ca
+
+
+Abstract
+This paper demonstrates a technique to empirically estimate the financial costs (or savings) of
+employing people with disabilities, in order to provide a mechanism for organizations to develop
+a “business case” for hiring these employees. We conducted a utility analysis, a technique
+common in Human Resources Management (HRM), to illustrate how the financial net value can
+be calculated based on the difference between service costs and service value. Employment costs
+include those related to wages, health benefits, pensions, life insurance, vacation pay, training,
+safety, absences, lateness, turnover, and disability accommodations. Service value estimates are
+based on wages and are adjusted for performance levels. The data used for our example is drawn
+from a food services company in Canada. Employees with disabilities in this example provided
+higher net value to the organization because of their average to above-average performance and
+lower turnover costs. More importantly, we demonstrate a process that can be used to assess the
+financial value of hiring workers with disabilities. Given the negative preconceptions often
+associated with hiring workers with disabilities, this method and example can provide evidence
+that will be useful for managers and disability advocates for assisting people who wish to join the
+workforce.
+
+
+
+
+Keywords: business case, utility analysis, financial costs, financial savings, net benefits,
+accommodations
+
+
+--- PAGE BREAK ---
+
+                                                  Fisher & Connelly, Utility Analysis Methodology
+                                                                        CJDS 10.1 (January 2021)
+
+Building the “Business Case” for Hiring People with Disabilities: A Financial Cost-Benefit
+                          Analysis Methodology and Example
+
+   Dr. Sandra L. Fisher, Senior Research Fellow and Lecturer, Münster School of Business,
+                           Münster University of Applied Sciences
+                                 sandy.fisher@fh-muenster.de
+   Dr. Catherine E. Connelly, Professor, DeGroote School of Business, McMaster University
+                                    connell@mcmaster.ca
+
+Introduction
+
+Work is beneficial for a broad array of reasons; it provides structure, meaning, an opportunity for
+
+social interactions, as well as a salary (Lastuka & Cottingham, 2016). Despite some stereotypes
+
+to the contrary, people with disabilities seek employment at approximately the same rate as the
+
+non-disabled workforce, and place a similar value on job security, income, promotion
+
+opportunities, having an interesting job, and having a job that contributes to society (Ali et al.,
+
+2011; Lindsay et al., 2016). Employment is not the only way in which people with disabilities
+
+can add value to society (e.g., Graby, 2015) but is a path desired by many.
+
+       Unfortunately, people with disabilities routinely have difficulty finding and maintaining
+
+employment, resulting in high unemployment rates around the world (Houtenville & Boege,
+
+2019; Mavranezouli et al., 2014). Some disabilities may limit some people’s abilities to perform
+
+certain jobs. However, much of this employment disparity is attributed to biases or
+
+misunderstandings by hiring organizations and managers. There is evidence that hiring managers
+
+hold negative perceptions and stereotypes about the ability of people with disabilities to perform
+
+work (Bonaccio et al., 2020). There is evidence that many employers are concerned that people
+
+with disabilities are not qualified for the available jobs (e.g., Kaye et al., 2011) or will have
+
+lower performance than employees without documented disabilities (Lengnick-Hall et al., 2008;
+
+Scott et al., 2017). However, based on social exchange theory (Blau, 1964), workers with
+
+disabilities may feel greater obligation to a company that gives them the opportunity for
+
+
+                                                  71
+
+
+--- PAGE BREAK ---
+
+                                                  Fisher & Connelly, Utility Analysis Methodology
+                                                                        CJDS 10.1 (January 2021)
+
+employment, leading to increased service value. Further, many hiring managers are aware of the
+
+requirement to create reasonable accommodations that would allow a person with a disability to
+
+perform a job and have concern about potentially higher costs of employing such individuals
+
+(Domzal et al., 2008; Scott et al., 2017).
+
+        Human resource management offers a technique, utility analysis, that allows
+
+organizations to evaluate the financial costs and benefits of different HR practices. Variations on
+
+utility analysis have been performed to determine the financial benefits of different approaches
+
+to pay-for-performance (Klaas & McClendon, 1996; Sturman et al., 2003) and to examine the
+
+financial costs of workplace phenomena such as sexual harassment and substandard performance
+
+(Faley et al., 1999; Griffeth et al., 2011).
+
+        Utility analysis requires that the organization estimate the financial value of each
+
+worker’s performance, the extent to which his or her performance improves or diminishes if the
+
+new initiative is put into place, and the costs of the proposed initiative. For example, if an
+
+employer were considering a new training program for warehouse employees, estimates would
+
+be required of the average value of the employees’ performance, the extent to which their
+
+performance might improve as a result of the training program, and all the costs of the program,
+
+including worker time away from the job, the program development costs, and the salary of the
+
+trainer. If the total costs of the program are estimated to be higher than the prospective gains, the
+
+organization may decide against implementing the program, or find ways to either enhance the
+
+effectiveness of the training or decrease its costs. Thus, utility analysis gives managers a way to
+
+discuss advantages and disadvantages of HR initiatives in financial terms, which can provide a
+
+common language and framework for decision making.
+
+
+
+
+                                                 72
+
+
+--- PAGE BREAK ---
+
+                                                  Fisher & Connelly, Utility Analysis Methodology
+                                                                        CJDS 10.1 (January 2021)
+
+Purpose of the paper
+
+The purpose of this paper is to demonstrate a technique for empirically estimating the true costs
+
+involved in employing people with disabilities, thereby providing a mechanism for the
+
+development of the “business case” for hiring these employees. This technique can provide
+
+evidence for managers and rehabilitation professionals, helping them to demonstrate the potential
+
+impact (or lack of impact) of hiring people with disabilities. Our goal is to provide a useful tool
+
+for people who are pushing back against a stereotype that people with disabilities cannot work,
+
+cannot work productively, or should only be hired for charitable reasons. Similar to the above
+
+example of training, we can build a financial model showing the value and added costs (i.e., net
+
+value) of workers with disabilities and compare that to workers without disabilities.
+
+
+
+Methodology
+
+The general utility model
+
+The general utility model is based on a framework of estimating the total “service value” that an
+
+employee or class of employees brings to an organization, then subtracting out the estimated
+
+“service costs” incurred by employing that person (Sturman et al., 2003; Fisher & Connelly,
+
+2017) as shown in Table 1. This analysis can be conducted with actual employee data or with
+
+estimates for subgroups of employees in different jobs, work teams, or other classifications.
+
+Employee subgroups can be compared to determine if there are significant differences. For
+
+example, workers with and without disabilities could be compared to determine if there are
+
+differences in any of the three categories: service costs, service value, or net value.
+
+
+
+
+                                                  73
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+Table 1: General Utility Analysis Model
+
+                            Definition                                  Equation
+               The overall value an employee         Net value = [Service value] – [Service costs]
+Net value
+               brings to the organization
+               The financial value that an           Service value = [Annual wages * 1.754] ±
+Service
+               employee brings to an                 [Performance adjustment]
+value
+               organization
+               The costs, direct or indirect,        Service costs = [Direct salary costs] +
+Service
+               employees create for an               [Benefits costs] + [Behavioral costs] +
+costs
+               organization                          [Turnover costs] + [Accommodation costs]
+
+
+       Service costs include all costs of employing an individual (see Table 2). We look at five
+
+different types of costs:
+
+a) Direct salary can be an annual salary or hourly wages multiplied by the annual hours worked.
+
+   Any overtime wages are included here as well.
+
+b) Benefits include statutory and voluntary benefits provided by the employer, including taxes,
+
+   health insurance, and retirement benefits. These costs are often relatively constant within a
+
+   job grouping, as employees within a workgroup are typically all eligible for a certain set of
+
+   benefits.
+
+c) Behavioral costs are additional costs incurred based on how employees behave over the year,
+
+   including costs of absences and safety-related incidents. These can vary significantly
+
+   between individuals.
+
+d) Turnover costs appear when an employee leaves the organization. These costs include
+
+   reduced productivity before departure, hiring costs for a replacement employee, and other
+
+   transitional costs (Allen, 2008; Tracey & Hinkin, 2008).
+
+e) We also include specific costs for accommodating workers with disabilities (e.g., additional
+
+   equipment or materials). These costs could be incurred once (e.g., specialized software or a
+
+   modification to a workstation) or repeatedly (e.g., a sign-language translator).
+
+
+                                                74
+
+
+--- PAGE BREAK ---
+
+                                                 Fisher & Connelly, Utility Analysis Methodology
+                                                                       CJDS 10.1 (January 2021)
+
+Table 2: Potential Service Costs
+
+ a) Direct wages        Hourly rate * actual hours worked
+ b) Benefits            Health benefits
+                        Pension
+                        Mandatory benefits (government pension, employment insurance)
+                        Life insurance
+                        Vacation pay
+                        Training (new hire training, on-the-job training)
+                        Bereavement and jury duty pay
+ c) Behavioral costs    Absences
+                        Lateness
+                        Safety incidents
+ d) Turnover            Costs involved in replacing an employee
+ e) Disability          Initial accommodation upon hiring
+    accommodation       Continued annual accommodation costs
+
+
+       Service value is the total financial value each employee brings to an organization
+
+(Sturman et al., 2003; Fisher & Connelly, 2017). It is estimated from the performance of the
+
+employee. The value of any given worker to an organization is partially indicated by the wages
+
+paid to that employee. Wages and value are positively correlated but wages are an imperfect
+
+measure of value, partially because two employees making the same wage may perform at
+
+different levels and thus have a different level of contribution.
+
+       We make two adjustments to wages to create a more refined estimate of value.
+
+1) We apply an established salary multiplier of 1.754 (Schmidt & Hunter, 1983; Sturman et al.,
+
+   2003) to convert wages into value. This multiplier recognizes that in general, employers
+
+   expect to gain more value from an employee than they pay out in direct wages (i.e., each
+
+   employee is assumed to generate value to the organization equal to 1.754 times their
+
+   salaries). This value was established by examining productivity data across a variety of
+
+   occupations in the United States in the mid-twentieth century. While this value may need
+
+   updating due to productivity improvements due to more advanced technologies in the
+
+
+
+                                                 75
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+   workplace, this multiplier has been judged in the research literature (Sturman et al., 2003) as
+
+   superior to other approaches for estimating value such as using average work group salary as
+
+   an indicator of value.
+
+2) We adjust this estimate by taking into account the performance of the employee. High
+
+   performing employees bring much more value to a company than do low performing
+
+   employees (Griffith et al., 2011). Therefore, we adjust service value estimates for different
+
+   levels of performance, adding more value for high performers and reducing value for low
+
+   performers.
+
+Service costs are summed and then subtracted from service value to determine the overall net
+
+value for each employee.
+
+
+
+The case study method
+
+We conducted a case study within a small department of a large Canadian hospitality service
+
+organization to test our model. All values are presented in Canadian dollars. The department had
+
+46 workers, seven of whom had a documented disability (in this case cognitive or sensory). The
+
+anonymized data were provided to us directly by the company’s human resources department in
+
+spreadsheet format.
+
+       We first calculated the service costs for each employee. We did not include all of the
+
+components listed in Table 2 because some of the benefits were not provided to employees by
+
+the case study organization.
+
+a) Direct Wages: We used hourly pay rates and annualized hours worked to calculate the salary
+
+   paid to each worker during the year.
+
+
+
+
+                                               76
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+b) Benefits: Data on vacation pay were not provided by the employer and are assumed to have
+
+   been paid in addition to direct wages at 4%. Employer contributions for federally mandated
+
+   benefits (Canada Pension Plan [CPP] and employment insurance [EI]) were estimated using
+
+   published contribution rates for 2015, the year in which employee data were recorded. CPP
+
+   was 4.95% of wages and EI was 1.88% of wages multiplied by 1.4 for the employer
+
+   contribution.
+
+c) Behavioral costs: We then had to convert many of the company’s human capital metrics
+
+   (e.g., turnover, absences, lateness, safety incidents) into financial metrics using information
+
+   derived from our prior research, publicly available datasets, and best practices estimates. For
+
+   example, we assumed that the cost of turnover (an employee leaving and having to be
+
+   replaced) was equivalent to one year of wages for that position (Allen, 2008) to represent the
+
+   costs involved in hiring, training, and reduced performance levels during transition periods.
+
+   Lateness and absences were both estimated to result in costs of one hour of wages due to
+
+   work disruptions. There are many different approaches to costing worker absences depending
+
+   on the impact on the work unit and approach for covering the absence. In this organization,
+
+   employees are considered full time at 37.5 hours per week and provincial law in Ontario
+
+   requires that workers be paid overtime after 44 working hours within one week (i.e., the
+
+   hours of work cannot be averaged over a pay period). Thus, workers could be called in for
+
+   one extra shift per week without incurring overtime costs. In the event of an absence,
+
+   management would simply call in another worker, resulting in some disruption at the
+
+   beginning of the shift similar to what would occur with a lateness.
+
+d) Turnover costs: Estimates of turnover costs generally range from 1 to 2.5 times the annual
+
+   salary (Sturman et al., 2003). Here we use the lower estimate to be conservative and because
+
+
+
+
+                                                77
+
+
+--- PAGE BREAK ---
+
+                                               Fisher & Connelly, Utility Analysis Methodology
+                                                                     CJDS 10.1 (January 2021)
+
+   of the relatively low job complexity (Tracey & Hinkin, 2008). We estimated the average cost
+
+   of a safety incident at $800 based on hospitality industry data from governmental centers in
+
+   the United States and Canada (OSHA, WorkSafeBC).
+
+e) Disability accommodation costs: The accommodation provided was the supervisor’s estimate
+
+   of the cost of additional paper towels needed to write down food orders for the cooks who
+
+   were deaf. Employees without hearing disabilities received food orders orally.
+
+       The second step was to calculate the service value for each employee. To calculate
+
+service value, we computed the annualized wage for each employee and multiplied that by the
+
+1.754 standard multiplier.
+
+       We then adjusted each employee’s service value for performance differences using an
+
+SDy model (Schmidt & Hunter, 1983) that estimates the monetary value of one standard
+
+deviation difference in performance, either above or below the mean. Performance ratings were
+
+on a scale from 1-10 with an average rating of 6.8 and standard deviation of .96. For employees
+
+with an above average performance rating, we added one standard deviation of service value
+
+($9,783) to their score. For employees with a below average rating, we subtracted one standard
+
+deviation of service value. Employees at the average performance rating of 7 had no adjustment.
+
+Four employees with disabilities had above average performance and three had average
+
+performance. Six employees without disabilities had above average performance, 16 had average
+
+performance, and 17 had below average performance.
+
+       We then calculated net value by subtracting service costs from service value for each
+
+employee. We calculated both the regular net value and the adjusted net value. Adjusted net
+
+value takes into account the adjustments for high and low levels of performance, such that
+
+employees with high levels of performance add more value to the organization. Finally, we
+
+
+
+
+                                               78
+
+
+--- PAGE BREAK ---
+
+                                                 Fisher & Connelly, Utility Analysis Methodology
+                                                                       CJDS 10.1 (January 2021)
+
+compared employee groups on the three primary variables (service costs, service value, and net
+
+value) as well as many of the individual measures so we could understand the source of the
+
+variance.
+
+
+
+Results
+
+The results of our analysis indicated that while workers without disabilities had higher initial
+
+service value on average than workers with disabilities ($44,347 compared to $34,524), the
+
+workers with disabilities had higher net value than non-disabled workers by an average of $868
+
+annually before considering performance adjustments, and $15,483 annually when considering
+
+performance.
+
+         This differential is explained primarily by higher performance ratings and lower turnover
+
+for workers with disabilities. Average wage costs were lower for workers with disabilities. This
+
+was due to differences in hourly wage rates ($13.50 for workers without disabilities and $12.25
+
+for workers with disabilities, primarily because of lower seniority) and because two of the
+
+workers with disabilities worked part-time while all of the workers without disabilities were full-
+
+time. Seven workers without disabilities (18%) left the organization during the case study year
+
+and none with disabilities left. We estimate this turnover cost the organization an average of
+
+$23,370 per departing employee (total annual cost of $163,594) in all factors related to turnover
+
+such as disruption due to an employee leaving, recruiting and hiring costs, new employee
+
+orientation costs, and lower productivity of the new employee (Allen, 2008; Hillmer et al.,
+
+2004).
+
+         Similarly, absences were lower among workers with disabilities, with 6.5 absences per
+
+year for workers without disabilities and 3.0 for workers with disabilities. This contributed to the
+
+
+
+
+                                                 79
+
+
+--- PAGE BREAK ---
+
+                                               Fisher & Connelly, Utility Analysis Methodology
+                                                                     CJDS 10.1 (January 2021)
+
+lower behavioral costs for workers with disabilities ($169.93 compared to $375.86).
+
+Accommodation costs were low in this sample. Four of the workers with disabilities had no
+
+accommodation costs at all, and the other three had only a $5 cost for accommodation during the
+
+year. Table 3 shows the average service costs for each element by employee group.
+
+
+
+Table 3: Average Service Costs for Employees with and without Disabilities
+
+
+                              Average       Average      Average          Average          Total
+                Average
+                              benefits     behavioral    turnover      accommodation      average
+               wage costs
+                               costs         costs         costs           costs           costs
+Employees
+with            $19,683        $2,525         $170            $0            $2.14        $22,380
+disabilities
+Employees
+without         $25,300        $3,200         $376        $4,195             $0          $33,071
+disabilities
+
+
+The average service values for employees with and without disabilities are shown in Table 4.
+
+
+Table 4: Service Value for Employees with and without Disabilities
+
+                                   Average service value           Average service value including
+                                 (annual wage * multiplier)           performance adjustment
+Employees with disabilities               $34,524                             $44,329
+Employees without
+                                          $44,347                             $39,537
+disabilities
+
+
+Table 5 shows the net value calculations for employees with and without disabilities.
+
+
+
+
+                                               80
+
+
+--- PAGE BREAK ---
+
+                                                   Fisher & Connelly, Utility Analysis Methodology
+                                                                         CJDS 10.1 (January 2021)
+
+Table 5: Net Value for Employees with and without Disabilities
+
+                         Average        Adjusted                                          Adjusted
+                                                          Average       Average net
+                         service         average                                         average net
+                                                        service costs     value
+                          value       service value                                         value
+ Employees with
+                         $34,524         $44,329          $22,380         $12,144         $21,949
+ disabilities
+ Employees
+                         $44,347         $39,537          $33,071         $11,276          $6,466
+ without disabilities
+
+Note: Adjusted service value and adjusted net value include adjustments to service value based
+on the relative monetary value of higher or lower performance.
+
+
+
+Discussion
+
+This case study demonstrates use of a methodology to analyze the relative costs and financial
+
+benefits of employing workers with disabilities. We show that in one organization employing
+
+people with disabilities, there is evidence of positive financial impact primarily due to above
+
+average performance and lower turnover. The workers with disabilities exhibited higher net
+
+value on average than the workers without disabilities, in contrast with expectations of managers
+
+as expressed in the literature (Scott et al., 2017). Results of this analysis could be used as
+
+evidence to suggest to managers that hiring people with disabilities, as long as they are qualified
+
+to perform the job, is likely to have benefits for the organization. Accumulating evidence of this
+
+type may make it easier for people with disabilities to find and maintain employment.
+
+       It is important to recognize that these results may be different in other organizations
+
+depending on a number of factors. Workers in our case study received few employment benefits,
+
+which is typical for the hospitality service industry. As a result, the service costs were lower for
+
+all workers, not just those with disabilities, but these lower costs may have resulted in higher net
+
+value than we might see in other organizations. The workers with disabilities in this sample also
+
+required no expensive accommodations. The HRM literature consistently reports that most
+
+
+                                                   81
+
+
+--- PAGE BREAK ---
+
+                                                 Fisher & Connelly, Utility Analysis Methodology
+                                                                       CJDS 10.1 (January 2021)
+
+accommodations are either zero or quite small, with managers reporting upfront costs of less
+
+than $500 in nearly 60% of cases (Schur et al., 2014), with on-going accommodation costs being
+
+much lower. Higher accommodation costs could reduce the net value of workers with
+
+disabilities, although employees receiving accommodation tend to have more positive attitudes
+
+toward the organization and are less likely to turnover (Schur et al., 2014) suggesting that
+
+accommodations may pay for themselves over time. Other accommodations may have been
+
+unreported, although this can be the case with employees both with and without disabilities. For
+
+example, employees may receive accommodations in work scheduling to allow employees
+
+flexibility for family needs such as taking care of children or elderly parents. There are typically
+
+no direct costs for such accommodations but any indirect costs that may be incurred for such
+
+schedule changes are not accounted for in our analysis. Further, the financial costs for absences
+
+in this particular job were estimated to be quite low, equivalent to having an employee report to
+
+work late. Workers without disabilities had over twice as many absences as workers with
+
+disabilities (6.5 absences per year compared to 3.0). In organizations or jobs where overtime or
+
+temporary worker costs would be incurred due to an absence, the costs associated with absences
+
+would have a larger impact on the results.
+
+       The accuracy of performance evaluation data will also impact the analysis. Given that
+
+many managers have pessimistic expectations about the abilities of workers with disabilities
+
+(Stone & Colella, 1996), performance evaluations could be negatively biased and erroneously
+
+suggest that service value is low. Research suggests that workers with and without disabilities
+
+tend to have comparable performance ratings in many jobs. For example, a study by Lee and
+
+Newman (1995) found that HR managers who had accommodated needs of workers with
+
+disabilities rated their performance as average, above average, or excellent, in 72% of cases.
+
+
+
+
+                                                 82
+
+
+--- PAGE BREAK ---
+
+                                                  Fisher & Connelly, Utility Analysis Methodology
+                                                                        CJDS 10.1 (January 2021)
+
+Similarly, Kaletta et al. (2012) found that workers with and without disabilities had comparable
+
+performance in 18 of 31 locations; where differences in productivity were found, workers with
+
+disabilities were more productive in 10 locations, and non-disabled employees were more
+
+productive in the remaining three. There is also some evidence that ratings for workers with
+
+disabilities may be somewhat inflated (Miller & Werner, 2005) as supervisors can be more
+
+lenient in ratings of workers with disabilities. Inaccuracy of performance ratings in either
+
+direction (inflation or deflation) would make the utility analysis results less accurate. We do find
+
+in this dataset a small negative correlation between employee absences and performance ratings
+
+(-.18, ns) and between lateness and performance ratings (-.19, ns). This increases our confidence
+
+that the performance ratings here are based on some objective data rather than disability-related
+
+bias, suggesting that supervisors considered these counterproductive behaviors when making
+
+performance ratings, or the absences and latenesses are related to other aspects of performance.
+
+       From a practical point of view, we do caution managers and rehabilitation professionals
+
+to interpret and implement the results of this technique with care. Utility analysis can be a
+
+powerful tool, but as with any other analytic technique it is only as good as the input data (e.g.,
+
+Klaas & McClendon, 1996). We have worked with organizations that do not have all of the
+
+necessary data to conduct the analysis, and in these cases have advised they not conduct the
+
+analysis at all rather than conducting it with missing values (e.g., incomplete records of which
+
+employees have disabilities, no performance appraisal data). We have also worked with other
+
+organizations that have inconsistent data across different organizational units. For example, one
+
+organization that wanted to conduct the utility analysis had slightly different performance
+
+evaluation systems (e.g., a 5-point rating scale vs. a 7-point rating scale) for different work units.
+
+
+
+
+                                                  83
+
+
+--- PAGE BREAK ---
+
+                                                 Fisher & Connelly, Utility Analysis Methodology
+                                                                       CJDS 10.1 (January 2021)
+
+This required a statistical conversion procedure to allow direct comparison among the different
+
+units.
+
+         The example that we have shown here demonstrated that workers with disabilities
+
+provided net cost savings to the organization that employed them. However, the question
+
+remains: if a cost-benefit analysis demonstrates a net cost increase for workers with disabilities,
+
+how should the organization proceed? We would argue that the workers with disabilities should
+
+not be fired; rather the organization should investigate the underlying causes for the disparity and
+
+proceed accordingly. For example, if the workers with disabilities have lower performance than
+
+their non-disabled counterparts, the manager should consider if the employees may require
+
+accommodations that would enable them to perform at a higher level (e.g., a better chair to
+
+prevent back pain, scheduling changes to avoid fatigue or to attend medical appointments).
+
+Likewise, the manager should consider if any of his or her own actions are exacerbating the
+
+problem (e.g., low expectations that are then fulfilled, training opportunities that are only
+
+available to some employees) and if these can be adjusted. Conversely, if the net costs from
+
+hiring workers with disabilities are accrued from higher accommodation costs, perhaps these can
+
+be reduced (e.g., government subsidies could be considered, one-time expenses should be
+
+depreciated over the tenure of the employee).
+
+         We acknowledge several limitations of our study. Our data were from a single
+
+department of one organization and there was a small number of workers with disabilities
+
+represented in this department. This limits the generalizability of our results. We also have only
+
+estimates of the cost of certain parameters such as injuries and absences, and we used a generic
+
+multiplier for determining financial value of performance. It would be interesting to determine if
+
+the service value would differ by job or by industry, similar to how Tracey and Hinkin (2008)
+
+
+
+
+                                                 84
+
+
+--- PAGE BREAK ---
+
+                                                 Fisher & Connelly, Utility Analysis Methodology
+                                                                       CJDS 10.1 (January 2021)
+
+suggested that turnover costs would be lower for low complexity jobs. We did run the model
+
+with the lower turnover costs suggested by Tracey and Hinkin for hospitality industry jobs and
+
+found the same pattern of results, although the difference in net service value between employees
+
+with and without disabilities was smaller. Similarly, the salary multiplier was developed many
+
+years ago (published in 1983) and assumptions about productivity may have changed in the
+
+intervening years. Further, the type of organization studied, where workers with disabilities were
+
+performing the same jobs as the non-disabled employees, does not generalize to the employment
+
+situation of all people with disabilities. We recognize that some people with disabilities find
+
+employment through community organizations where they are provided with extra supports, are
+
+largely separated from and perform different tasks than non-disabled employees, and may be
+
+supervised by non-organizational members (Modini et al., 2016). While supported employment
+
+is an effective strategy for some people with disabilities, job duties and performance conditions
+
+must be comparable in order to conduct a rigorous utility analysis.
+
+       In conclusion, this case study illustrates a technique that companies can use to analyze
+
+the financial impact of hiring people with disabilities into jobs and work units that also include
+
+people without disabilities. The utility analysis approach can help overcome biases managers
+
+may have about the relative contribution of people with disabilities in the workplace. The
+
+business case can be an important part of an organization’s total decision-making process,
+
+including community integration and corporate social responsibility, about appropriate hiring of
+
+people with disabilities.
+
+
+Acknowledgments
+
+This work was supported by a Partnership Grant from the Social Sciences and Humanities
+Research Council of Canada (grant number 895-2013-1021) for the Canadian Disability
+Participation Project (www.cdpp.ca).
+
+
+                                                 85
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+References
+
+Ali, M., Schur, L., & Blanck, P. (2011). What types of jobs do people with disabilities want?
+       Journal of Occupational Rehabilitation, 21(2), 199–210.
+
+Allen, D. G. (2008). Retaining talent: A guide to analyzing and managing employee turnover.
+       Society for Human Resource Management Foundation.
+
+Blau, P. (1964). Exchange and power in social life. Wiley.
+
+Bonaccio, S., Connelly, C. E., Gellatly, I. R., Jetha, A., & Martin Ginis, K. A. (2020). The
+      participation of people with disabilities in the workplace across the employment cycle:
+      Employer concerns and research evidence. Journal of Business and Psychology, 35, 135–
+      158.
+
+Domzal, C., Houtenville, A., & Sharma, R. (2008). Survey of employer perspectives on the
+     employment of people with disabilities: Technical report. Office of Disability and
+     Employment Policy, U.S. Department of Labor.
+     https://www.dol.gov/sites/dolgov/files/odep/research/surveyemployerperspectivesemploy
+     mentpeopledisabilities.pdf.
+
+Faley, R. H., Knapp, D. E., Kustis, G. A., & Dubois, C. L. (1999). Estimating the organizational
+       costs of s academy management discoveries exual harassment: The case of the US
+       Army. Journal of Business and Psychology, 13(4), 461–484.
+
+Fisher, S. L., & Connelly, C. E. (2017). Lower cost or just lower value? Modeling the
+        organizational costs and benefits of contingent work. Academy of Management
+        Discoveries, 3(2), 165–186.
+
+Graby, S. (2015). Access to work or liberation from work? Disabled people, autonomy, and post-
+       work politics. Canadian Journal of Disability Studies, 4(2), 132–160.
+
+Griffeth, R., Witt, L. A., Polk, C., Robinson, S., Thacker, R., & Callison, K. (2011). Assessing
+      the cost of underperformance: A computer programmer example. The Industrial-
+      Organizational Psychologist, 48(4), 13–19.
+
+Hillmer, S., Hillmer, B., & McRoberts, G. (2004). The real costs of turnover: Lessons from a call
+     center. Human Resource Planning, 27(3), 34–41.
+
+Houtenville, A. & Boege, S. (2019). Annual report on people with disabilities in America: 2018.
+     University of New Hampshire, Institute on Disability.
+
+Kaletta, J. P., Binks, D. J., & Robinson, R. (2012). Creating an inclusive workplace: Integrating
+      employees with disabilities into a distribution center environment. Professional Safety:
+      Journal of the American Society of Safety Engineers, 57(6), 62–71.
+
+
+
+                                                86
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+Kaye, H. S., Jans, L. H., & Jones, E. C. (2011). Why don’t employers hire and retain workers
+     with disabilities? Journal of Occupational Rehabilitation, 21(4), 526–536.
+
+Klaas, B. S., & McClendon, J. A. (1996). To lead, lag, or match: Estimating the financial impact
+     of pay level policies. Personnel Psychology, 49(1), 121–141.
+
+Lastuka, A., & Cottingham, M. (2016). The effect of adaptive sports on employment among
+     people with disabilities. Disability and Rehabilitation, 38(8), 742–748.
+
+Lee, B. A. & Newman, K. A. (1995). Employer responses to disability: Preliminary evidence and
+      a research agenda. Employee Responsibilities and Rights Journal, 8(3), 209–229.
+
+Lengnick-Hall, M. L., Gaunt, P. M., & Kulkarni, M. (2008). Overlooked and underutilized:
+     People with disabilities are an untapped human resource. Human Resource Management,
+     47(2), 255–273.
+
+Lindsay, S., Hartman, L. R., & Fellin, M. (2016). A systematic review of mentorship programs
+     to facilitate transition to post-secondary education and employment for youth and young
+     adults with disabilities. Disability and Rehabilitation, 38(14), 1329–1349.
+
+Mavranezouli, I., Megnin-Viggars, O., Cheema, N., Howlin, P., Baron-Cohen, S., & Pilling, S.
+    (2014). The cost-effectiveness of supported employment for adults with autism in the
+    United Kingdom. Autism, 18(8), 975–984.
+
+Miller, B. K., & Werner, S. (2005). Factors influencing the inflation of task performance ratings
+      for workers with disabilities and contextual performance ratings for their coworkers.
+      Human Performance, 18(3), 309–329.
+
+Modini, M., Tan, L., Brinchmann, B., Wang, M.-J., Killackey, E., Glozier, N., Mykletun, A., &
+    Harvey, S. B. (2016). Supported employment for people with severe mental illness:
+    Systematic review and meta-analysis of the international evidence. The British Journal of
+    Psychiatry, 209(1), 14–22.
+
+Schmidt, F. L., & Hunter, J. E. (1983). Individual differences in productivity: An empirical test
+    of estimates derived from studies of selection procedure utility. Journal of Applied
+    Psychology, 68(3), 407–414.
+
+Schur, L., Nishii, L., Adya, M., Kruse, D., Bruyère, S. M., & Blanck, P. (2014). Accommodating
+     employees with and without disabilities. Human Resource Management, 53(4), 593–621.
+
+Scott, M., Jacob, A., Hendrie, D., Parsons, R., Girdler, S., Falkmer, T., & Falkmer, M. (2017).
+        Employers’ perception of the costs and the benefits of hiring individuals with autism
+        spectrum disorder in open employment in Australia. PLoS ONE, 12(5), e0177607.
+        https://doi.org/10.1371/journal.pone.0177607
+
+
+
+
+                                                87
+
+
+--- PAGE BREAK ---
+
+                                                Fisher & Connelly, Utility Analysis Methodology
+                                                                      CJDS 10.1 (January 2021)
+
+Stone, D. L., & Colella, A. (1996). A model of factors affecting the treatment of disabled
+     individuals in organizations. Academy of Management Review, 21(2), 352–401.
+
+Sturman, M. C., Trevor, C. O., Boudreau, J. W., & Gerhart, B. (2003). Is it worth it to win the
+     talent war? Evaluating the utility of performance-based pay. Personnel Psychology, 56(4),
+     997–1035.
+
+Tracey, J. B., & Hinkin, T. R. (2008). Contextual factors and cost profiles associated with
+     employee turnover. Cornell Hospitality Quarterly, 49(1), 12–27.
+
+
+
+
+                                                88
+

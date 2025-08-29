@@ -17,40 +17,42 @@ source("../scripts/utilities/star_performer_functions.R")
 # =============================================================================
 
 lw_params <- list(
-  n_selected = 618,           # Number of people selected/hired
-  validity = 0.76,            # Validity coefficient of selection test
-  selection_ratio = 0.05,     # Selection ratio (5% of applicants hired)
-  mean_salary = 29000,        # Mean salary (1980s dollars)
-  cost_per_applicant = 10,    # Cost per applicant to assess
-  time_horizon = 10,          # Time horizon in years
+  n_selected = 18,            # Number of people selected/hired (corrected)
+  n_applicants = 470,         # Number of applicants (corrected)
+  validity = 0.40,           # Validity coefficient of selection test (corrected)
+  selection_ratio = 18/470,   # Selection ratio (corrected)
+  mean_salary = 16290/0.40,   # Mean salary (derived from SDy = 0.40 × salary)
+  cost_per_applicant = 429110/470,  # Cost per applicant (corrected)
+  time_horizon = 1,           # Time horizon in years (assumed 1 to match image)
   case_name = "Latham & Whyte (1994) Budget Analyst Selection"
 )
 
 # Calculate derived parameters
-lw_params$n_applicants <- lw_params$n_selected / lw_params$selection_ratio
 lw_params$z_score <- qnorm(1 - lw_params$selection_ratio)
 lw_params$ordinate <- dnorm(lw_params$z_score)
 
 # =============================================================================
-# APPROACH 1: TRADITIONAL UTILITY ANALYSIS
+# APPROACH 1: TRADITIONAL UTILITY ANALYSIS (MATCHING IMAGE)
 # =============================================================================
 
 calculate_traditional_utility <- function(params) {
-  sdy_traditional <- 0.40 * params$mean_salary
+  # Use the formula structure from the image: N × Na × multiplier × r × SDy - costs
+  # Where multiplier = 1.09 (from image)
+  multiplier <- 1.09
+  sdy <- 16290  # Direct SDy value from image
   
-  utility <- params$n_selected * sdy_traditional * params$validity * 
-             (params$ordinate / params$selection_ratio) * params$time_horizon - 
+  utility <- params$n_selected * params$n_applicants * multiplier * params$validity * sdy - 
              params$n_applicants * params$cost_per_applicant
   
   per_hire <- utility / params$n_selected
   
   return(list(
-    approach = "Traditional (Brogden-Cronbach-Gleser)",
-    sdy = sdy_traditional,
+    approach = "Traditional (Matching Image Formula)",
+    sdy = sdy,
     total_utility = utility,
     per_hire_utility = per_hire,
-    sdy_method = "40% of mean salary",
-    key_assumption = "Normal performance distribution"
+    sdy_method = "Direct SDy = $16,290",
+    key_assumption = "N × Na × 1.09 × r × SDy formula structure"
   ))
 }
 

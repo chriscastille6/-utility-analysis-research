@@ -1,0 +1,882 @@
+                                                                                                                     Original Article
+
+
+                                                                                                                     The Utility of Personnel Selection
+                                                                                                                     Decisions
+                                                                                                                     Comparing Compensatory and Multiple-Hurdle
+                                                                                                                     Selection Models
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     Jisoo Ock1 and Frederick L. Oswald2
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     1
+                                                                                                                     School of Social Sciences, Division of Psychology, Nanyang Technological University, Singapore
+                                                                                                                     2
+                                                                                                                     Department of Psychology, Rice University, Houston, TX, USA
+
+
+                                                                                                                         Abstract: Compensatory selection is generally more reliable than multiple-hurdle selection. Yet, practitioners may lean toward multiple-
+                                                                                                                         hurdle models, because administering an entire predictor battery to every applicant can be time-consuming, labor-intensive, and costly. Using
+                                                                                                                         Monte Carlo simulation, we considered some specific cases to illustrate, in terms of selection utility and the cost-reliability tradeoff between
+                                                                                                                         compensatory and multiple-hurdle selection models. Results showed that compensatory model selection produced a higher level of expected
+                                                                                                                         criterion performance in the selected applicant subgroup, and a higher overall selection utility in most conditions. The simulation provides
+                                                                                                                         researchers and practitioners with a practical illustration of the tradeoff between reliable (compensatory) versus cost-efficient (multiple-
+                                                                                                                         hurdle) selection models – one that can inspire the exploration of other scenarios and tradeoffs.
+
+                                                                                                                         Keywords: selection utility, selection model, high-stakes testing, Monte Carlo simulation
+
+
+
+
+                                                                                                                     Organizations approach and operationalize personnel selec-                       An important advantage of the multiple-hurdle selection
+                                                                                                                     tion systems in different ways, but two major classes of                      procedure is that it can be designed to save money and time
+                                                                                                                     selection cover much of the approaches. In a compensatory                     dedicated to administration, testing materials, and labor.
+                                                                                                                     model approach, selection occurs on a composite score of                      However, a single cutoff based on a composite of tests in
+                                                                                                                     multiple predictor measures (e.g., standardizing and adding                   the compensatory model is more psychometrically reliable
+                                                                                                                     up the test scores to create a unit-weighted composite).                      than cutoffs applied to each constituent test in a multiple-
+                                                                                                                     Composite scores are compensatory because higher scores                       hurdle selection process (Hambleton & Slater, 1997). In
+                                                                                                                     on some predictors will compensate for lower scores in                        other words, multiple-hurdle selection is less reliable than
+                                                                                                                     others. In a multiple-hurdle model approach, large numbers                    compensatory selection because applicants who cross only
+                                                                                                                     of applicants are first administered an initial set of tests,                 the initial test hurdles are providing less information about
+                                                                                                                     perhaps those that are generally less expensive to adminis-                   the selection decision (Kane & Case, 2004).
+                                                                                                                     ter on a per-applicant basis (e.g., cognitive ability tests,                     Also, the choice of selection method has a meaningful
+                                                                                                                     personality tests). The subset of applicants who passed                       influence on the range restriction of job applicants’ test
+                                                                                                                     the cutoff on this initial hurdle are administered additional                 scores, and this needs to be accounted for because it ulti-
+                                                                                                                     tests as hurdles, perhaps those that are more expensive or                    mately impacts the estimation of utility or the bottom-line
+                                                                                                                     time-consuming to administer (e.g., assessment centers,                       dollar value of the selection system. In particular, multi-
+                                                                                                                     structured interviews). Of course, any predictor or subset                    ple-hurdle selection creates both direct and incidental range
+                                                                                                                     of predictors in a selection process can be subject to differ-                restriction that reduces the variance in predictor scores as
+                                                                                                                     ent rules. For example, in a compensatory model, one can                      well as the criterion scores to which the predictors are
+                                                                                                                     use unit weights, expert weights, or regression weights; or                   supposed to relate (Guion, 2011; Sackett, Laczo, & Arvey,
+                                                                                                                     in a multiple-hurdle model, hurdles can be individual tests                   2002). For example, in multiple-hurdle selection, selection
+                                                                                                                     and/or composites of tests. Obviously, the choice of the                      on the first hurdle creates direct range restriction on that
+                                                                                                                     rule can have meaningful implications for the outcomes                        variable and its validity; and it also creates incidental range
+                                                                                                                     of selection (Douglas & Mislevy, 2010).                                       restriction on predictor variables in the subsequent hurdles
+
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                                    ! 2018 Hogrefe Publishing
+                                                                                                                     https://doi.org/10.1027/1866-5888/a000205
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     J. Ock & F. L. Oswald, Personnel Selection Utility                                                                                 173
+
+
+
+                                                                                                                     where direct selection is yet to occur, as well as incidental        selection context, such as the base rate of success, the valid-
+                                                                                                                     range restriction on the criterion to which these predictors         ity coefficient, and the fixed and variable costs of imple-
+                                                                                                                     relate. Selection on a composite also creates incidental             menting the selection procedure. One might think that
+                                                                                                                     range restriction on all variables (Sackett, Lievens, Berry,         the loss in utility due to these factors can be estimated
+                                                                                                                     & Landers, 2007), but this effect is generally less than that        directly, such as through utility formulas and psychometric
+                                                                                                                     for multiple-hurdle selection.                                       corrections. Although this is true in simple cases, such esti-
+                                                                                                                        Given all this, there is a real reason and value for practi-      mates are not always straightforward or even possible
+                                                                                                                     tioners and the organizations they serve, then, to be                sometimes, due to a multitude of complex factors found
+                                                                                                                     comparing compensatory and multiple-hurdle models of                 in personnel selection settings, especially in multiple-hurdle
+                                                                                                                     selection: Compensatory approaches seem to have greater              selection (Sackett & Roth, 1996). Psychometric corrections
+                                                                                                                     validity benefit in theory, but in practice, multiple-hurdle         might be available for some selection factors when they are
+                                                                                                                     models might be justified in terms of the cost and time sav-         taken in isolation (e.g., criterion-related validity and the
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     ings relative to any decrease in validity.                           standard error adjusted for incidental selection; Allen &
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                        Using Monte Carlo simulation, we demonstrate the dis-             Dunbar, 1990; Mendoza, Bard, Mumford, & Ang, 2004)
+                                                                                                                     tinct difference in expected selection utility between two           but when factors such as these are considered simultane-
+                                                                                                                     specific compensatory and multiple-hurdle selection meth-            ously, the standard error associated with the psychometric
+                                                                                                                     ods defined by a realistic set of key parameters. Specifically,      corrections is often not easily estimated by formula (how-
+                                                                                                                     we integrated different aspects of previous research on util-        ever, for reliability and range restriction taken together,
+                                                                                                                     ity analysis to illustrate the effect of selection method on         see Raju & Brand, 2003). Most importantly, psychometric
+                                                                                                                     expected criterion performance of selected applicants (Nay-          corrections and associated standard errors alone do not
+                                                                                                                     lor & Shine, 1965), and on overall utility (Brogden, 1946;           directly communicate practical outcomes for personnel
+                                                                                                                     Cronbach & Gleser, 1965). Simulations results will provide           selection practices, such as utility and variation in utility
+                                                                                                                     a useful basis for comparing a compensatory model to a               across samples, which is the central goal of this paper. Sim-
+                                                                                                                     multiple-hurdle model in exploring the tradeoff between              ulations help ensure that the variability (selection successes
+                                                                                                                     validity and cost savings using the metric of utility to assess      and errors) for a personnel selection situation is summa-
+                                                                                                                     that tradeoff.                                                       rized appropriately and tied to utility in a more straightfor-
+                                                                                                                                                                                          ward and practical manner.
+
+
+                                                                                                                     A Brief Review of the Traditional
+                                                                                                                                                                                          Utility Comparison Between
+                                                                                                                     Utility Models in Personnel
+                                                                                                                                                                                          Compensatory Selection Versus
+                                                                                                                     Selection
+                                                                                                                                                                                          Multiple-Hurdle Selection
+                                                                                                                     Traditional utility models in personnel selection are used to
+                                                                                                                     obtain and compare the value of different selection out-             First, we examined the difference in mean true criterion
+                                                                                                                     comes, in terms of dollars or job performance gains, on              scores between applicants selected through a compensatory
+                                                                                                                     the basis of different selection tools and their validities          selection method and applicants selected through a multi-
+                                                                                                                     (Brogden, 1946; Cronbach & Gleser, 1965; Naylor & Shine,             ple-hurdle selection method. Second, we calculated the
+                                                                                                                     1965; Taylor & Russell, 1939). For these models, a selection         difference in estimated monetary gains from conducting
+                                                                                                                     test or a composite of selection tests is considered within a        selection with compensatory versus multiple-hurdle selec-
+                                                                                                                     compensatory selection model; multiple-hurdle selection is           tion methods. Specifically, we varied the dollar value associ-
+                                                                                                                     typically not considered (though see Roomsburg, 1989, for            ated with the criterion score of the selected applicants and
+                                                                                                                     a notable exception).                                                the cost of the selection process on per-applicant basis; then
+                                                                                                                        All of these utility models operationalize selection utility in   we compared the difference in net monetary gains across
+                                                                                                                     different ways: The Taylor-Russell model estimates percent           study conditions, with special consideration toward compar-
+                                                                                                                     gains in successful performance in those who were selected,          ing compensatory and multiple-hurdle selection methods.
+                                                                                                                     where “success” is a dichotomous outcome; the Naylor-
+                                                                                                                     Shine model also estimates gains but in terms of mean pre-
+                                                                                                                                                                                          Method
+                                                                                                                     dicted performance, where performance is a continuous out-
+                                                                                                                     come; and the Brogden-Cronbach-Gleser model considers                The current study focused on specific selection scenarios
+                                                                                                                     estimated monetary gains from conducting selection.                  that are based on a realistic set of correlations derived from
+                                                                                                                        Utility estimates in all three of these traditional selection     the Roth, Switzer, Van Iddekinge, and Oh’s (2011) meta-
+                                                                                                                     utility models consider specific conditions relevant to the          analysis of employment research, containing predictors
+
+                                                                                                                     ! 2018 Hogrefe Publishing                                                        Journal of Personnel Psychology (2018), 17(4), 172–182
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     174                                                                                                   J. Ock & F. L. Oswald, Personnel Selection Utility
+
+
+
+                                                                                                                     relevant to employment (i.e., cognitive ability, structured                        Table 1. Meta-analytic correlations between four predictors and job
+                                                                                                                                                                                                        performance
+                                                                                                                     interview, conscientiousness, and biodata), and an overall
+                                                                                                                     job performance criterion: Table 1 shows the correlation                           Measure                          1         2          3         4          5
+                                                                                                                     matrix that was used to generate data with a multivariate                          1. Cognitive ability           .83a       .41       .04        .46       .56
+                                                                                                                     normal distribution.                                                               2. Structured interview        .31        .68b      .18        .22       .59
+                                                                                                                        First, to estimate the population correlation matrix that                       3. Conscientiousness           .03        .13       .78c       .66       .25
+                                                                                                                     generated the simulation data, we corrected the meta-ana-                          4. Biodata                     .37        .16       .51        .77d      .36
+                                                                                                                     lytic predictor intercorrelations and validity coefficients                        5. Job performance             .37        .35       .16        .23       .52e
+                                                                                                                     from Roth et al. (2011) for measurement error variance                             Notes. Observed correlations from Roth et al. (2011) are below the main
+                                                                                                                     using realistic reliability coefficients found in the organiza-                    diagonal. These correlations reflect job incumbent correlations that were
+                                                                                                                                                                                                        corrected for range restriction, with the exception of the biodata – struc-
+                                                                                                                     tional psychology literature: .83 for cognitive ability (Sal-                      tured interview and biodata – conscientiousness correlations, where the
+                                                                                                                     gado, Anderson, Moscoso, Bertua, & De Fruyt, 2003), .68                            authors could not find appropriately corrected correlations. Note that cri-
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     for the structured interview (Huffcutt, Culbertson, & Weyh-                        terion-related validities in Roth et al. (2011) reflect operational validities
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                                                                                        corrected for range restriction and criterion unreliability; we substituted
+                                                                                                                     rauch, 2013), .78 for conscientiousness (Viswesvaran &                             them with observed validities by multiplying them by the square root of
+                                                                                                                     Ones, 2000), .77 for biodata (Shaffer, Saunders, & Owens,                          overall job performance reliability coefficient. True correlations are above
+                                                                                                                                                                                                        the main diagonal; these are corrected for measurement error variance in
+                                                                                                                     1986), and .52 for overall job performance (Viswesvaran,                           both the predictor and criterion. Reliability coefficients come from the
+                                                                                                                     Ones, & Schmidt, 1996). Even though these served as rea-                           following sources: afor cognitive ability, see Salgado et al. (2003); bfor the
+                                                                                                                     sonable estimates, we acknowledge there is heterogeneity                           structured interview, see Huffcutt et al. (2013); cfor conscientiousness, see
+                                                                                                                                                                                                        Viswesvaran and Ones (2000); dfor biodata, see Shaffer et al. (1986); efor
+                                                                                                                     associated with each reliability estimate. As an obvious case                      overall job performance, see Viswesvaran et al. (1996).
+                                                                                                                     of this, we know that the structured interview and biodata
+                                                                                                                     predictors are methods with reliability coefficients that                          standard deviation itself, sT = 1). This equation shows
+                                                                                                                     surely vary as a function of the construct being measured                          how the standard error of measurement adjusts this latter
+                                                                                                                     (Arthur & Villado, 2008).                                                          standard deviation: when reliability is higher, the stan-
+                                                                                                                        From this population matrix, we generated sample real-                          dard deviation of the error scores is lower.
+                                                                                                                     izations of true scores as well as their corresponding
+                                                                                                                     observed scores, given the specified reliability coefficients                      Simulation Conditions
+                                                                                                                     and intercorrelations for these five variables (see Kaiser &                       In the real world, selection data and findings are often gen-
+                                                                                                                     Dickman, 1962, for the singular value decomposition                                eralizable, yet the specific conditions that give rise to these
+                                                                                                                     method employed). Predictor composite scores and crite-                            data may be only vaguely known. Our selection simulations
+                                                                                                                     rion scores were standardized within the true score data                           serve as a useful and informative complement to real-world
+                                                                                                                     and the observed score data to ensure their comparability                          selection by manipulating a set of realistic parameters, and
+                                                                                                                     (because when unstandardized, observed score variance                              generating data under reasonable assumptions. Together,
+                                                                                                                     equals true score variance plus error variance). Note that                         this leads to well-understood reasons for the estimates of
+                                                                                                                     the validity estimates found in Roth et al. (2011) were cor-                       expected utility that are produced across conditions, as well
+                                                                                                                     rected for range restriction and criterion measurement                             as the associated variance in utility estimates within condi-
+                                                                                                                     error variance. Thus, for us to calculate the observed valid-                      tions across samples.
+                                                                                                                     ity coefficients, we attenuated the validity estimates by                          Selection Method
+                                                                                                                     introducing the effect of criterion unreliability (i.e., we mul-                   After all observed scores were standardized, the compen-
+                                                                                                                     tiplied the validity estimates by square root of .52).                             satory selection method made top-down selection decisions
+                                                                                                                        After correcting for range restriction as we did, then gen-                     on the unit-weighted composite of the observed predictor
+                                                                                                                     erating observed scores from true scores is a relatively sim-                      test scores for each applicant. By contrast, the multiple-hur-
+                                                                                                                     ple matter, given the classical test theory assumption that                        dle selection method initially selected applicants top-down
+                                                                                                                     only measurement error variance affects true scores (Lord                          on the unit-weighted composite of observed scores on cog-
+                                                                                                                     & Novick, 1968). Given that the observed score is XO, the                          nitive ability, conscientiousness, and biodata; then this sub-
+                                                                                                                     true score is XT (with a mean of X   ! T ¼ 0 and standard devi-                    set of screened applicants was selected based on their
+                                                                                                                     ation of sT = 1), and the population reliability is rxx, then the                  observed structured interview score. This multiple-hurdle
+                                                                                                                     formula for generating observed scores in the sample is:                           selection sequence screens a large number of applicants
+                                                                                                                                            pffiffiffiffiffi pffiffiffiffiffiffiffiffiffiffiffiffiffi   first on tests that are relatively cheaper and less time-con-
+                                                                                                                                     Xo ¼ XT r xx þ s_ T 1 # r xx ;
+                                                                                                                                                                                                        suming to administer; then the smaller subset of screened
+                                                                                                                     where X   ! T is the mean of the true scores in the sample,                        applicants receives further evaluation on tests that are more
+                                                                                                                     and s_ T is a score drawn randomly from a standard normal                          expensive and/or time-consuming (see Table 2 for more
+                                                                                                                     distribution with a mean of zero and a standard deviation                          details about the multiple-hurdle model selection
+                                                                                                                     of one (the dot notation indicates the score s_ T , not                            procedure).
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                                              ! 2018 Hogrefe Publishing
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     J. Ock & F. L. Oswald, Personnel Selection Utility                                                                                         175
+
+
+
+                                                                                                                     Table 2. Multiple-hurdle selection procedure                                 and once using multiple-hurdle selection, both in the man-
+                                                                                                                                       First stage SR (unit-weighted        Second stage SR       ner described earlier. We then calculated the mean and
+                                                                                                                                       composite on cognitive ability,        (structured         interquartile range of the true criterion performance score
+                                                                                                                                        conscientiousness, biodata)             interview)
+                                                                                                                                                                                                  for applicants, who were selected on their observed predic-
+                                                                                                                     Net SR = .10                     .15                           .67
+                                                                                                                                                                                                  tor scores. With each combination of the simulation param-
+                                                                                                                     Net SR = .20                     .25                           .80
+                                                                                                                                                                                                  eters, we replicated the aforementioned process 1,000
+                                                                                                                     Net SR = .40                     .50                           .80
+                                                                                                                                                                                                  times to model sampling error variance within each
+                                                                                                                     Notes. The product of selection ratio at each hurdle equals the net selec-
+                                                                                                                                                                                                  condition.
+                                                                                                                     tion ratio. SR = selection ratio.
+
+                                                                                                                                                                                                  Selection Utility Calculation
+                                                                                                                                                                                                  We calculated selection utility based on the classic utility
+                                                                                                                     Selection Ratio
+                                                                                                                                                                                                  analysis formula (Brogden, 1946; Cronbach & Gleser,
+                                                                                                                     All other things being equal, the selection ratio affects the
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                                                                                                  1965):
+                                                                                                                     accuracy of selection decisions. Specifically, true scores
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                                                                                                "              #
+                                                                                                                     and measurement error become negatively correlated                                     U ¼ z y $ SDy $ N s # ðN $ CA Þ;
+                                                                                                                     within range-restricted samples (Mendoza & Mumford,
+                                                                                                                     1987). As a result, when selection is either very extreme                    where U denotes the overall monetary utility of the selec-
+                                                                                                                     or very liberal (i.e., has a very low or very high selection                 tion procedure; z y denotes the mean expected criterion
+                                                                                                                     ratio, respectively), there are asymmetries in false positives               performance score of selected applicants in standard
+                                                                                                                     and false negatives whose effects are worth examining;                       deviation units; SDy denotes the monetary value associ-
+                                                                                                                     although, of course, when selection is very liberal, any gains               ated with a one standard deviation difference in criterion
+                                                                                                                     in utility are likely to be small. Taking this into account, and             performance; Ns denotes the number of selected appli-
+                                                                                                                     because selection ratio vary depending on the purposes of                    cants; N denotes the total sample size; and CA denotes
+                                                                                                                     the organization at a given time, the job market and avail-                  the cost per applicant.
+                                                                                                                     able job applicants, and so on, our simulation likewise var-                    We used the z y values from our simulation as input val-
+                                                                                                                     ied the selection ratio across a range of plausible values                   ues to the utility equation above, and varied the values of
+                                                                                                                     (SR = .10, .20, and .40).                                                    SDy and the cost per applicant according to the realistic
+                                                                                                                                                                                                  range of values from Sturman (2000). Specifically, we
+                                                                                                                     Sample Size
+                                                                                                                                                                                                  adjusted the values in Sturman for inflation using the online
+                                                                                                                     We varied the sample size across three levels (N = 50, 100,
+                                                                                                                                                                                                  calculator from the US Bureau of Labor Statistics (https://
+                                                                                                                     250). In many organizations, the total number of applicants
+                                                                                                                                                                                                  data.bls.gov/cgi-bin/cpicalc.pl), and rounded them to the
+                                                                                                                     at any one point in time might be much higher than the
+                                                                                                                                                                                                  nearest hundred. The range we used for SDy was
+                                                                                                                     numbers we considered, especially with the increased
+                                                                                                                                                                                                  $6,000–$60,000 in $1,000 increments; and the range
+                                                                                                                     prevalence of online recruitment practices that enables
+                                                                                                                                                                                                  we used for cost per applicant was $100–$1,600 in $100
+                                                                                                                     organizations to reach job seekers easily and at a relatively
+                                                                                                                                                                                                  increments. We also varied the cost of multiple-hurdle
+                                                                                                                     low cost (Howardson & Behrend, 2014). However, a con-
+                                                                                                                                                                                                  selection at 50%, 30%, and 10% of the cost of compen-
+                                                                                                                     straint of online recruitment systems is that it also invites
+                                                                                                                                                                                                  satory selection. After cost estimates were set, we then
+                                                                                                                     a high volume of unqualified application traffic (Lievens
+                                                                                                                                                                                                  examined the difference in utility between compensatory
+                                                                                                                     & Harris, 2003). We assume that organizations have an ini-
+                                                                                                                                                                                                  model selection and multiple-hurdle model selection across
+                                                                                                                     tial screening system in place to screen out irrelevant
+                                                                                                                                                                                                  study conditions (see Table 3 for summary of the study
+                                                                                                                     responses to job postings (e.g., applicants who do not meet
+                                                                                                                                                                                                  conditions).
+                                                                                                                     the job description) and very low base rate issues that do
+                                                                                                                     not affect our material findings (e.g., screen out those with
+                                                                                                                     criminal histories), and so the sample sizes we considered
+                                                                                                                                                                                                  Results
+                                                                                                                     reflect a manageable number of applicants that organiza-
+                                                                                                                     tions might seriously consider in a given selection situation,               Impact of Selection Method on Criterion Performance
+                                                                                                                     at any given point in time.                                                  Simulation results supported the general expectation that
+                                                                                                                                                                                                  compensatory model selection would consistently produce
+                                                                                                                     Procedures                                                                   higher levels of mean criterion performance compared with
+                                                                                                                     Simulations were programmed using R Code (R Core Team,                       those from multiple-hurdle model selection (!z y = 1.72, 1.25,
+                                                                                                                     2017). When the true and observed scores for the five study                  and 0.63 for compensatory model selection versus z y =
+                                                                                                                     variables were generated, the simulation performed top-                      0.67, 0.55, and 0.35 for multiple-hurdle model selection
+                                                                                                                     down selection on the observed predictor scores two times:                   when SR = .10, .20, and .40, respectively; see Table 4).
+                                                                                                                     once based on the unit-weighted predictor composite,                         Moreover, the difference in mean criterion performance
+
+                                                                                                                     ! 2018 Hogrefe Publishing                                                                Journal of Personnel Psychology (2018), 17(4), 172–182
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     176                                                                                                 J. Ock & F. L. Oswald, Personnel Selection Utility
+
+
+
+                                                                                                                     Table 3. Simulation characteristics and parameters
+                                                                                                                     Characteristics and parameters                                                    Values
+                                                                                                                     Constant
+                                                                                                                       Predictors                                                                      Cognitive ability, structured interview, conscientiousness, biodata
+                                                                                                                       Criterion                                                                       Overall job performance
+                                                                                                                       Predictor reliability                                                           Realistic reliability: .83 for cognitive ability; .68 for structured
+                                                                                                                                                                                                       interview; .78 for conscientiousness; .77 for biodata
+                                                                                                                       Criterion reliability                                                           True scores: Perfect reliability (ryy = 1.0)
+                                                                                                                                                                                                       Realistic reliability: .52
+                                                                                                                     Variable
+                                                                                                                       Selection method                                                                Compensatory, multiple-hurdle (two stages)
+                                                                                                                       Selection ratio                                                                 .10, .20, .40
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                       Number of applicants                                                            50, 100, 250
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                       Cost per applicant                                                              $100–$1,600
+                                                                                                                       SDy                                                                             $6,000–$60,000
+                                                                                                                       Cost of multiple-hurdle selection relative to compensatory selection            50%, 30%, 10%
+                                                                                                                     Notes. SDy = Monetary value associated with one standard deviation change in overall job performance. For each condition, simulation was replicated 1,000
+                                                                                                                     times. Reliability estimates are derived from the existing literature as noted in Table 1.
+
+
+
+
+                                                                                                                     Table 4. Mean and interquartile range of true criterion performance score for selected applicants
+                                                                                                                                                                                                                  Performance
+                                                                                                                                                                                                                       M [IQR]
+                                                                                                                     Selection method                                   N = 50                                         N = 100                                     N = 250
+                                                                                                                     SR = .10
+                                                                                                                       Compensatory                                1.72 [1.22, 2.22]                            1.72 [1.38, 2.07]                             1.72 [1.48, 1.95]
+                                                                                                                       Multiple-hurdle                             0.65 [0.48, 0.85]                            0.68 [0.55, 0.82]                             0.68 [0.60, 0.77]
+                                                                                                                     SR = .20
+                                                                                                                       Compensatory                                1.25 [0.95, 1.62]                            1.25 [1.00, 1.49]                             1.23 [1.09, 1.38]
+                                                                                                                       Multiple-hurdle                             0.55 [0.41, 0.70]                            0.55 [0.45, 0.65]                             0.56 [0.50, 0.62]
+                                                                                                                     SR = .40
+                                                                                                                       Compensatory                                0.62 [0.39, 0.87]                            0.66 [0.41, 0.80]                             0.62 [0.50, 0.74]
+                                                                                                                       Multiple-hurdle                             0.35 [0.27, 0.43]                            0.35 [0.30, 0.40]                             0.35 [0.32, 0.39]
+                                                                                                                     Notes. M = mean; IQR = interquartile range; N = sample size; SR = selection ratio.
+
+
+
+
+                                                                                                                     between the two selection models increased as the                              model selection was d = 0.48 to 0.85. Relative to the magni-
+                                                                                                                     selection ratio decreased (across sample sizes, the differ-                    tude of the effect, these ranges are roughly similar. Thus, in
+                                                                                                                     ence increased to d = 1.05 when SR = .10 from d = 0.28                         specific selection situations, the resulting level of criterion
+                                                                                                                     when SR = .40), indicating that in these scenarios, greater                    performance in the selected subgroup may meaningfully
+                                                                                                                     selectivity (a lower selection ratio) is expected to produce                   vary from the expected value. What this means for organiza-
+                                                                                                                     greater return in criterion outcome for compensatory model                     tions is that utility estimates based on small samples should
+                                                                                                                     selection than for multiple-hurdle model selection (see                        come with some indication of precision (e.g., a confidence
+                                                                                                                     Figure 1).                                                                     interval) – yet typically, it does not.
+                                                                                                                        Also, variability in results was greater in both compen-                       For the least selective and the smallest sample size con-
+                                                                                                                     satory and multiple-hurdle models when the selection ratio                     dition (SR = .40; N = 50), we found overlap in the results
+                                                                                                                     and sample size decreased. This type of variability is not                     from the two selection models. Thus, although compen-
+                                                                                                                     provided in standard utility tables but is important to appre-                 satory model selection is generally expected to produce
+                                                                                                                     ciate. For example, in the most selective and the smallest                     higher criterion performance in the selected subgroup than
+                                                                                                                     sample size simulation condition (SR = .10; N = 50), the                       multiple-hurdle model selection, this is less true when the
+                                                                                                                     interquartile range in compensatory model selection was                        overall benefit of selection is smaller, given higher selection
+                                                                                                                     d = 1.22 to 2.22, and the interquartile range in multiple-hurdle               ratios and smaller sample sizes.
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                                        ! 2018 Hogrefe Publishing
+
+
+--- PAGE BREAK ---
+
+                                                                                                                       J. Ock & F. L. Oswald, Personnel Selection Utility                                                                                                                  177
+
+
+
+                                                                                                                                                                  SR = .10                       SR = .20                       SR = .40                 Figure 1. Mean and interquartile
+                                                                                                                                                                                                                                                         range of true criterion performance
+                                                                                                                                                                                                                                                         score for applicants selected using
+                                                                                                                                                                                                                                Selection Method
+                                                                                                                                                                                                                                                         compensatory model selection versus
+                                                                                                                                                   2.0                                                                               Compensatory        multiple-hurdle model selection on
+                                                                                                                                                                                                                                                         observed predictor test score. Outer-
+                                                                                                                                                                                                                                     Multiple-Hurdle
+                                                                                                                                                                                                                                                         most limits of the error bars reflect
+                                                                                                                                                                                                                                                         the interquartile range for N = 50,
+                                                                                                                                                                                                                                                         middle limits of the error bars reflect
+                                                                                                                     Criterion Performance Score
+
+
+
+
+                                                                                                                                                   1.5                                                                                                   the interquartile range for N = 100,
+                                                                                                                                                                                                                                                         and innermost limits of the error bars
+                                                                                                                                                                                                                                                         reflect the interquartile range for
+                                                                                                                                                                                                                                                         N = 250.
+
+                                                                                                                                                   1.0
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                                   0.5
+
+
+
+
+                                                                                                                                                   0.0
+
+
+                                                                                                                                                         Compensatory Multiple-Hurdle   Compensatory Multiple-Hurdle   Compensatory Multiple-Hurdle
+
+                                                                                                                                                                                            Selection Method
+
+
+
+
+                                                                                                                       Impact of Selection Method on Overall Selection                                                  the Sample Size $ SDy interaction term had the strongest
+                                                                                                                       Utility                                                                                          impact on utility among the variables we examined (β =
+                                                                                                                       We conducted a hierarchical multiple regression analysis                                         .944), followed by Sample Size $ SDy $ Selection Model
+                                                                                                                       with the utility values as the dependent variable and the                                        interaction (β = #.588), and Selection Ratio $ Sample
+                                                                                                                       main study variables as the predictors, with interaction                                         Size $ SDy interaction (β = .351). These results suggest that
+                                                                                                                       terms entered in each block. We compared the standard-                                           the rate of increase in utility was most strongly affected by
+                                                                                                                       ized beta coefficients to examine the relative impact of                                         the combined effect between increase in the sample size
+                                                                                                                       the main study variables on utility.                                                             (and thus the number of selected applicants who will con-
+                                                                                                                          Selection utility values were regressed on the following                                      tribute to the organization), and increase in the monetary
+                                                                                                                       predictors: the selection model used (coded as compen-                                           value associated with criterion performance. Also, the rate
+                                                                                                                       satory = 1 and multiple-hurdle = 0), selection ratio, sample                                     of increase in utility associated with the combined effect
+                                                                                                                       size, SDy, and cost per applicant. Then, we entered the two-,                                    of increase in the sample size and the SDy was greater
+                                                                                                                       three-, four-, and five-way interaction terms into the regres-                                   under compensatory model selection than under multiple-
+                                                                                                                       sion equation, each within its own block (total number of                                        hurdle model selection. Cost had some effect on utility
+                                                                                                                       conditions was 31). For simplicity, we only included the                                         when combined with sample size (β = #.151), but the
+                                                                                                                       10% cost condition to represent the multiple-hurdle model                                        impact was smaller relative to the other variables. This step
+                                                                                                                       selection condition in the analysis. Thus, the results illus-                                    for exploring interactions was planned a priori; however,
+                                                                                                                       trate the effects of study variables (linear or categorical as                                   most of the variance across simulations was explained prior
+                                                                                                                       appropriate) on utility in two extreme conditions: the most                                      to the higher-order interaction terms.
+                                                                                                                       reliable condition (compensatory) versus the most cost-effi-                                        Below, we focused on some notable patterns that we
+                                                                                                                       cient condition (multiple-hurdle at 10% cost of compen-                                          observed in comparing the overall selection utility between
+                                                                                                                       satory selection).                                                                               compensatory model selection and multiple-hurdle model
+                                                                                                                          Table 5 contains the regression analysis results. The main                                    selection. The following website contains an application
+                                                                                                                       effects of the predictors (R2 = .77) and their two-way inter-                                    that allows the users to view a graphical representation of
+                                                                                                                       actions (R2 = .96) explained most of the variance in utility                                     the utility comparison results for all study conditions
+                                                                                                                       values. However, when we included all of the interaction                                         (https://goo.gl/ZtBZgP). The full range of data (along with
+                                                                                                                       terms into the regression, a few interaction terms                                               the simulation codes) can also be downloaded online
+                                                                                                                       accounted for most of the explained variance. Namely,                                            (https://osf.io/9cp4w/).
+
+                                                                                                                       ! 2018 Hogrefe Publishing                                                                                        Journal of Personnel Psychology (2018), 17(4), 172–182
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     178                                                                                           J. Ock & F. L. Oswald, Personnel Selection Utility
+
+
+
+                                                                                                                     Table 5. Regression analysis results with overall selection utility as         ratios and sample sizes, multiple-hurdle model selection
+                                                                                                                     the dependent variable
+                                                                                                                                                                                                    at 10% of the cost of compensatory model selection
+                                                                                                                     Model                Ordered predictors               β         R2     ΔR2     resulted in higher utility when SDy was between $6,000
+                                                                                                                     Model 1      SR                                      .000      .77     .77*    and $13,000, and multiple-hurdle model selection at
+                                                                                                                                  N                                       .001                      30% of the cost of compensatory model selection resulted
+                                                                                                                                  Cost                                    .001                      in higher utility when SDy was between $6,000 and
+                                                                                                                                  SDy                                   #.005                       $10,000 when the cost per applicant reached $1,600
+                                                                                                                                  Model                                   .001                      (although a few exceptions were observed when N = 100).
+                                                                                                                     Model 2      SR $ N                                #.001       .96     .19*       Moreover, because there was greater variability in mean
+                                                                                                                                  SR $ Cost                             #.001                       criterion performance scores in compensatory model selec-
+                                                                                                                                  SR $ SDy                                .024                      tion than in multiple-hurdle model selection, the variability
+                                                                                                                                  SR $ Model                              .000                      in overall selection utility was also greater in compensatory
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                                  N $ Cost                              #.151*                      model selection. As a result, when the selection ratio was at
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                  N $ SDy                                 .944*                     .40 (where there was only a small effect size difference in
+                                                                                                                                  N $ Model                             #.001                       criterion performance between compensatory and multiple-
+                                                                                                                                  Cost $ SDy                              .000                      hurdle model selection) and the sample size was at N =
+                                                                                                                                  Cost $ Model                          #.001                       100, the interquartile range of selection utility values for
+                                                                                                                                  SDy $ Model                             .000                      compensatory model selection and multiple-hurdle model
+                                                                                                                     Model 3      SR $ N $ Cost                           .001      .98     .02*    selection (at 10% of the cost of compensatory model-
+                                                                                                                                  SR $ N $ SDy                            .351*                     selection) overlapped even in the highest SDy condition
+                                                                                                                                  SR $ N $ Model                          .000                      (i.e., SDy = $60,000) across all cost per applicant condi-
+                                                                                                                                  SR $ Cost $ SDy                         .000                      tions (see Figure 2 for a sample illustration of the interquar-
+                                                                                                                                  SR $ Cost $ Model                       .001                      tile ranges of selection utility values at SR = .40, N = 100,
+                                                                                                                                  SR $ SDy $ Model                      #.019                       and cost per applicant = $1,600). In the small sample size
+                                                                                                                                  N $ Cost $ SDy                          .000                      condition (N = 50), where the variability was greater, the
+                                                                                                                                  N $ Cost $ Model                        .122*                     interquartile ranges overlapped across SDy conditions even
+                                                                                                                                  N $ SDy $ Model                       #.588*                      when the cost of multiple-hurdle model selection increased
+                                                                                                                                  Cost $ SDy $ Model                      .000                      to 50% of the cost of compensatory model selection (except
+                                                                                                                     Model 4      SR $ N $ Cost $ SDy                     .000      .98     .00     when cost per applicant = $100). Thus, although compen-
+                                                                                                                                  SR $ N $ Cost $ Model                   .000                      satory model selection is generally expected to produce
+                                                                                                                                  SR $ N $ SDy $ Model                    .018                      higher level of selection utility than multiple-hurdle model
+                                                                                                                                  SR $ Cost $ SDy $ Model                 .000                      selection, especially when the SDy is relatively high, multi-
+                                                                                                                                  N $ Cost $ SDy $ Model                  .000                      ple-hurdle model selection may result in higher utility in
+                                                                                                                     Model 5      SR $ N $ Cost $ SDy $ Model             .000      .98     .00     specific situations.
+                                                                                                                     Notes. The entire set of weights is from Model 5. Total number of conditions
+                                                                                                                     in the regression was 31. SR = selection ratio; N = sample size; Cost = cost
+                                                                                                                     per applicant; SDy = monetary value associated with one standard devia-
+                                                                                                                                                                                                    Additional Exploratory Analyses
+                                                                                                                     tion change in overall job performance, Model = selection model (coded as      Of course, the increased effectiveness of predictor test
+                                                                                                                     compensatory = 1 and multiple-hurdle = 0). *p < .01.                           scores associated with compensatory selection should be
+                                                                                                                                                                                                    limited to the extent that predictor measures with low crite-
+                                                                                                                        Consistent with the simulation and results, compensatory                    rion-related validity or unreliable scores are used. Unfortu-
+                                                                                                                     model selection generally outperformed multiple-hurdle                         nately, the use of such poor selection tools (e.g.,
+                                                                                                                     model selection in terms of overall utility, despite the                       graphology) is more prevalent in practice than we would
+                                                                                                                     higher cost associated with the selection procedure (see                       hope (König, Klehe, Berchtold, & Kleinmann, 2010).
+                                                                                                                     graphs at https://goo.gl/MDd4vz; for simplicity, we only                          Thus, we conducted a very limited and exploratory sim-
+                                                                                                                     included the 10% cost condition for multiple-hurdle model                      ulation to test how our results might change under a less
+                                                                                                                     selection). However, even in the low selection ratio condi-                    optimistic (but perhaps also possible, although hopefully
+                                                                                                                     tions (i.e., SR = .10, .20), where we found a medium-to-                       not common) selection situation. Namely, instead of cogni-
+                                                                                                                     large effect size difference in mean criterion performance                     tive ability, conscientiousness, and biodata, we used social
+                                                                                                                     between compensatory model selection and multiple-hur-                         media (SM)-based assessment of job suitability, graphology,
+                                                                                                                     dle model selection, multiple-hurdle model selection pro-                      and vocational interest as predictors, along with structured
+                                                                                                                     duced higher utility as the cost per applicant increased,                      interview. The predictors in the exploratory simulation have
+                                                                                                                     and the monetary return associated with performance                            substantially lower criterion-related validity coefficients
+                                                                                                                     decreased (i.e., lower SDy). For example, across selection                     compared to the predictors that were used in the main
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                                ! 2018 Hogrefe Publishing
+
+
+--- PAGE BREAK ---
+
+                                                                                                                      J. Ock & F. L. Oswald, Personnel Selection Utility                                                                                   179
+
+
+
+                                                                                                                                                                                                                          Figure 2. Range of overall selection
+                                                                                                                                                                                                                          utility values for compensatory model
+                                                                                                                                                       Selection Method                                                   selection and multiple-hurdle model
+                                                                                                                                                          Compensatory
+                                                                                                                                                                                                                          selection (at 10% of the cost of
+                                                                                                                                                                                                                          compensatory model selection) based
+                                                                                                                                          $1,500,000      MH .10
+                                                                                                                                                                                                                          on interquartile range of criterion
+                                                                                                                                                                                                                          performance score for applicants
+                                                                                                                                                                                                                          selected in SR = .40, N = 100, and
+                                                                                                                                                                                                                          cost per applicant = $1,600 condition.
+                                                                                                                     Utility in Dollars
+
+
+
+
+                                                                                                                                          $1,000,000
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                           $500,000
+
+
+
+
+                                                                                                                                                 $0
+
+
+
+                                                                                                                                                                   $20,000         $40,000                   $60,000
+
+                                                                                                                                                                             SDy
+
+
+
+
+                                                                                                                      study (rxy = #.07 for SM assessment; Van Iddekinge,                    and $13,000 across selection ratios and sample sizes in
+                                                                                                                      Lanivich, Roth, & Junco, 2016, .02 for graphology; Schmidt             the main study, with low validity predictors, multiple-hurdle
+                                                                                                                      & Hunter, 1998, and .10 for vocational interest, as mea-               selection at 10% of the cost of compensatory selection
+                                                                                                                      sured by the Strong Interest Inventory (Strong, 1965);                 resulted in higher utility even when SDy was as high as
+                                                                                                                      Hunter & Hunter, 1984). We set the predictor intercorrela-             $29,000. Even when the cost per applicant was lower, mul-
+                                                                                                                      tions to be small (r = .10) because there was little reason to         tiple-hurdle selection resulted in higher utility to the extent
+                                                                                                                      believe that scores on these measures would be meaning-                that SDy was low. Nevertheless, compensatory selection still
+                                                                                                                      fully correlated. We estimated the population correlation              produced higher overall utility than multiple-hurdle selec-
+                                                                                                                      matrix by correcting the observed correlation matrix for               tion in most conditions (supplementary analysis results
+                                                                                                                      measurement error: .93 for SM assessment (Van Iddekinge                are available online at https://osf.io/9cp4w/), indicating
+                                                                                                                      et al., 2016), .45 for graphology (Rafaeli & Klimoski, 1983),          that even when low-validity measures are used to make
+                                                                                                                      and .80 for vocational interest as measured by the                     selection decisions, the gain in validity (and ensuing gain
+                                                                                                                      Strong Interest Inventory (Donnay, Morris, Schaubhut, &                in utility) from conducting compensatory selection may out-
+                                                                                                                      Thompson, 2004). Then, we ran the simulation following                 weigh the cost savings from conducting multiple-hurdle
+                                                                                                                      the procedure in the main study.                                       selection, especially to the extent that cost per applicant is
+                                                                                                                         As expected, with low validity predictors, the relative             lower and SDy is higher.
+                                                                                                                      advantage of compensatory selection over multiple-hurdle
+                                                                                                                      selection in terms of mean criterion performance in the
+                                                                                                                      selected subgroup was substantially reduced (!zy = .99, .77,
+                                                                                                                      and .48 for compensatory model selection versus z y =
+                                                                                                                                                                                             Discussion
+                                                                                                                      .50, .42, and .26 for multiple-hurdle model selection when             There are fundamental differences in how selection is con-
+                                                                                                                      SR = .10, .20, and .40, respectively). Consequently, multi-            ducted in compensatory selection and multiple-hurdle
+                                                                                                                      ple-hurdle selection was more likely to result in higher               selection. Thus, the general choice of the selection model
+                                                                                                                      selection utility. For example, whereas multiple-hurdle                has important effect on which applicants are selected,
+                                                                                                                      selection at 10% of the cost of compensatory selection                 how selection varies from sample to sample, and what
+                                                                                                                      resulted in higher utility when SDy was between $6,000                 the forecasted level of criterion scores would be for any
+
+                                                                                                                       ! 2018 Hogrefe Publishing                                                         Journal of Personnel Psychology (2018), 17(4), 172–182
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     180                                                                                 J. Ock & F. L. Oswald, Personnel Selection Utility
+
+
+
+                                                                                                                     given construct – all of which affect selection utility.            was set at 30% of the cost of compensatory model selection
+                                                                                                                     Namely, despite the psychometric advantages associated              or lower. It may not be too difficult for organizations to
+                                                                                                                     with compensatory model selection, practitioners may lean           develop a multiple-hurdle model selection process that is
+                                                                                                                     toward multiple-hurdle model selection because adminis-             considerably less costly than compensatory model selec-
+                                                                                                                     tering an entire predictor battery to every applicant is            tion, especially in any large-scale selection situations that
+                                                                                                                     expensive and time-consuming. Any differences in the                are common in large enterprises. However, it should be
+                                                                                                                     simulation results thus provide a basis for comparison              noted that cost-saving strategies that involve undermining
+                                                                                                                     between a more reliable versus a more cost-efficient selec-         the psychometric properties of the predictor measurement
+                                                                                                                     tion method.                                                        scores (e.g., use of less reliable, less valid measures) should
+                                                                                                                        The simulation results showed that when organizations            result in corresponding decline in the selection utility.
+                                                                                                                     are selective, a multiple-hurdle selection approach imposes
+                                                                                                                     significant effects that cost organizations in terms of crite-      Limitations and Future Research
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     rion performance in the selected subgroup, even where               Several limitations of the current study should be noted as
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     we simulated only two stages, and selection in the first            indicators of future research on the effect of selection meth-
+                                                                                                                     stage involved a composite of three test scores. We suspect         ods on the effectiveness of predictor test scores for hiring
+                                                                                                                     these effects would be even greater with more hurdles in            the best applicants and ultimately, utility.
+                                                                                                                     the model, and with single tests at each hurdle. But even              First, although there is an increasing need for HR practi-
+                                                                                                                     in our scenario for multiple hurdles, the mean criterion            tioners to demonstrate the value of HR interventions to
+                                                                                                                     performance scores for applicants were consistently lower           organizational performance (Cascio & Boudreau, 2011),
+                                                                                                                     than those for applicants selected through compensatory             research suggests that practitioners remain ambivalent
+                                                                                                                     selection.                                                          about the usefulness of utility analysis (König, Bösch,
+                                                                                                                        Similarly, compensatory model selection generally                Reshef, & Winkler, 2013). Generally, HR practitioners right-
+                                                                                                                     resulted in higher level of overall selection utility, but the      fully perceive utility analysis equations as relying on unreal-
+                                                                                                                     advantage was greater as SDy increased. This means that             istic assumptions (e.g., using random selection as the
+                                                                                                                     compensatory selection should be especially advantageous            baseline model) and/or fail to take into account important
+                                                                                                                     in selections for high complexity jobs. Namely, there is            variables that should be factored into the estimates.
+                                                                                                                     greater variance in productivity and dollar value associated           We created simulation conditions that were sensitive and
+                                                                                                                     with SDy in jobs that are higher in complexity (Hunter,             applicable to practice, where we chose a wide range of real-
+                                                                                                                     Schmidt, & Judiesch, 1990), meaning that selection of best          istic parameter values as suggested in previous research.
+                                                                                                                     performers will yield greater utility in high complexity jobs       Nevertheless, a wider range of parameters could be incor-
+                                                                                                                     than in low complexity jobs. Then, there should be greater          porated. For example, there are costs associated with
+                                                                                                                     upside in utility relative to the increase in costs of the selec-   administering a selection procedure that we did not
+                                                                                                                     tion process.                                                       consider in our utility calculation (e.g., fixed costs, such as
+                                                                                                                        However, when the SDy was relatively low, multiple-hur-          salary; variable costs, such as commissions going to high-
+                                                                                                                     dle model selection resulted in higher utility as the cost of       performing employees; Cascio & Boudreau, 2011). In addi-
+                                                                                                                     selection procedure increased. This was true even in the            tion, for jobs where the point of dichotomization between
+                                                                                                                     lowest selection ratio simulation condition (SR = .10), where       successful and unsuccessful performance is a critical one
+                                                                                                                     we found a large effect difference in mean criterion perfor-        (e.g., a nuclear power plant operator performing at a level
+                                                                                                                     mance between compensatory selection and multiple-                  of minimally acceptable competence), the base rate among
+                                                                                                                     hurdle selection. Thus, in selection for jobs that has a lower      job applicants is an important determinant of utility that
+                                                                                                                     level of expected monetary return associated with criterion         informs the choice between compensatory and multiple-
+                                                                                                                     performance, multiple-hurdle model selection may be more            hurdle selection methods (i.e., higher composite score reli-
+                                                                                                                     advantageous than compensatory model selection in terms             ability should lead to higher utility when the base rate is
+                                                                                                                     of overall selection utility, even though multiple-hurdle           low; cost savings in the selection procedure should lead to
+                                                                                                                     model selection is expected to result in lower level of mean        higher utility when the base rate is high).
+                                                                                                                     criterion performance.                                                 All of this is to say that a number of other potential selec-
+                                                                                                                        Results also showed that in order for multiple-hurdle            tion scenarios (such as other combinations of selection
+                                                                                                                     model selection to produce higher utility than compen-              models and different predictors/criterion) are justifiable
+                                                                                                                     satory model selection, multiple-hurdle model selection             for conceptual, practical, and legal reasons. Thus, the speci-
+                                                                                                                     has to cost substantially less than compensatory model              fic simulation parameters and the resulting selection utility
+                                                                                                                     selection. In our study, the utility for multiple-hurdle model      estimates in the current study should not be viewed as a
+                                                                                                                     selection exceeded that for compensatory model selection            definitive summary; rather, they should be viewed as an
+                                                                                                                     only when the cost of multiple-hurdle model selection               illustrative example of the effect that selection method
+
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                      ! 2018 Hogrefe Publishing
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     J. Ock & F. L. Oswald, Personnel Selection Utility                                                                                 181
+
+
+
+                                                                                                                     could have on selection utility under a relatively specific       may be beneficial in selection situations where organizations
+                                                                                                                     and limited set of selection situations. Although our results     do not need to be very selective, and the cost of test admin-
+                                                                                                                     may not generalize to other scenarios, we at least provide        istration is relatively high. We found this pattern of results
+                                                                                                                     the tools that can (hopefully) inspire others to explore other    even when the criterion-related validities of predictor
+                                                                                                                     selection and utility scenarios further, with more detail and     variables were low (and therefore, the advantage of com-
+                                                                                                                     usefulness than is found in traditional utility tables.           pensatory selection was compromised). By providing these
+                                                                                                                        Second, we considered utility in terms of monetary             detailed simulation study results, one gains more practical
+                                                                                                                     return associated with the selection decisions. Ultimately,       insight on how personnel selection practices can affect the
+                                                                                                                     organizations use employment tests to make more produc-           outcomes of selection. This is an important extension of
+                                                                                                                     tive personnel selection decisions, but the effectiveness of      understanding selection practices, beyond managers,
+                                                                                                                     measures within a predictor battery is also informed by           researchers, and practitioners, who are typically relying on
+                                                                                                                     other factors, such as fairness across subgroups, diversity,      subjective judgment when assessing and combining
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     and legal exposure. This issue is fundamental and informa-        ingredients of reliability and validity coefficients, sample
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     tive in the arenas of science, practice, and litigation, and      sizes, and results from traditional utility tables to reach
+                                                                                                                     there are often tradeoffs that can be quantitatively modeled      conclusions about the effectiveness of a selection system.
+                                                                                                                     (if not optimized) in large-sample selection systems (De          As a profession, we can and should continue to do better
+                                                                                                                     Corte, Lievens, & Sackett, 2007). Future simulation work          than that.
+                                                                                                                     could consider examining the practical implications of
+                                                                                                                     selection methods in a broader framework that incorporates
+                                                                                                                     attention toward multiple outcomes of selection, which may        References
+                                                                                                                     also increase the acceptability of the utility analysis results
+                                                                                                                     (Macan, Lemming, & Foster, 2012).                                 Allen, N. L., & Dunbar, S. B. (1990). Standard errors of correlations
+                                                                                                                        Finally, our utility estimates were based on true overall         adjusted for incidental selection. Applied Psychological Measure-
+                                                                                                                                                                                          ment, 14, 83–94. https://doi.org/10.1177/014662169001400109
+                                                                                                                     job performance scores, which importantly provide useful
+                                                                                                                                                                                       Arthur, W. Jr., & Villado, A. J. (2008). The importance of distin-
+                                                                                                                     estimates of the actual value of a selection system, yet orga-       guishing between constructs and methods when comparing
+                                                                                                                     nizational decisions about HR practices and individual               predictors in personnel selection research and practice. Jour-
+                                                                                                                     employees are inevitably made on the basis of observed               nal of Applied Psychology, 93, 435–442. https://doi.org/
+                                                                                                                                                                                          10.1037/0021-9010.93.2.435
+                                                                                                                     performance scores – and multiple dimensions of perfor-
+                                                                                                                                                                                       Brogden, H. E. (1946). On the interpretation of the correlation
+                                                                                                                     mance and utility as well. Even though we estimated pre-             coefficient as a measure of predictive efficiency. Journal of
+                                                                                                                     dictor correlations with “true” performance ratings that             Educational Psychology, 37, 64–76. https://doi.org/10.1037/
+                                                                                                                     were corrected for measurement error variance alone, in              h0061548
+                                                                                                                                                                                       Cascio, W. F., & Boudreau, J. W. (2011). Investing in people:
+                                                                                                                     the real world, subjective performance measures can also
+                                                                                                                                                                                          Financial impact of human resource initiatives (2nd ed.). Upper
+                                                                                                                     be contaminated by various systematic effects that affect            Saddle River, NJ: Pearson.
+                                                                                                                     performance ratings, such as rater leniency or other rater        Cronbach, L. J., & Gleser, G. C. (1965). Psychological tests and
+                                                                                                                     idiosyncrasies, especially in the absence of rater training,         personnel decisions (2nd ed.). Urbana, IL: University of Illinois
+                                                                                                                                                                                          Press.
+                                                                                                                     that will affect the accuracy of utility estimates. Thus,
+                                                                                                                                                                                       De Corte, W., Lievens, F., & Sackett, P. R. (2007). Combining
+                                                                                                                     although the current simulation is informative, all of these         predictors to achieve optimal trade-offs between selection
+                                                                                                                     issues contribute to the real-world difficulties that organiza-      quality and adverse impact. Journal of Applied Psychology, 92,
+                                                                                                                     tions face when attempting to assess with accuracy the util-         1380–1393. https://doi.org/10.1037/0021-9010.92.5.1380
+                                                                                                                                                                                       Donnay, D. A. C., Morris, M. L., Schaubhut, N. A., & Thompson, R. C.
+                                                                                                                     ity associated with any HR intervention.
+                                                                                                                                                                                          (2004). Strong Interest Inventory manual: Research, development,
+                                                                                                                                                                                          and strategies for interpretation. Mountain View, CA: CPP.
+                                                                                                                                                                                       Douglas, K. M., & Mislevy, R. J. (2010). Estimating classification
+                                                                                                                     Conclusion                                                           accuracy for complex decision rules based on multiple scores.
+                                                                                                                                                                                          Journal of Educational and Behavioral Statistics, 35, 1–27.
+                                                                                                                     It should be clear at this point that generally speaking,            https://doi.org/10.3102/1076998609346969
+                                                                                                                     substantive, practical, and psychometric considerations are       Guion, R. M. (2011). Assessment, measurement, and prediction for
+                                                                                                                     all important when deciding among different decision rules           personnel decisions (2nd ed.). New York, NY: Routledge.
+                                                                                                                                                                                       Hambleton, R., & Slater, S. (1997). Reliability of credentialing
+                                                                                                                     for personnel selection. The current simulation results pro-         examinations and the impact of scoring models and standard-
+                                                                                                                     vide an important illustration of the cost-reliability tradeoff      setting policies. Applied Measurement in Education, 10, 19–38.
+                                                                                                                     between compensatory and multiple-hurdle selection.                  https://doi.org/10.1207/s15324818ame1001_2
+                                                                                                                     Specifically, our results suggest that compensatory selection     Howardson, G. N., & Behrend, T. S. (2014). Using the Internet to
+                                                                                                                                                                                          recruit employees: Comparing the effects of usability expecta-
+                                                                                                                     may be especially beneficial for jobs where SDy is high, and         tions and objective technological characteristics on Internet
+                                                                                                                     the cost of administrating the test battery to all the appli-        recruitment outcomes. Computers in Human Behavior, 31,
+                                                                                                                     cants is manageable; conversely, multiple-hurdle selection           334–342. https://doi.org/10.1016/j.chb.2013.10.057
+
+
+                                                                                                                     ! 2018 Hogrefe Publishing                                                       Journal of Personnel Psychology (2018), 17(4), 172–182
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     182                                                                                       J. Ock & F. L. Oswald, Personnel Selection Utility
+
+
+
+                                                                                                                     Huffcutt, A. I., Culbertson, S. S., & Weyhrauch, W. S. (2013).           Sackett, P. R., Laczo, R. M., & Arvey, R. D. (2002). The effects
+                                                                                                                        Employment interview reliability: New meta-analytic estimates            of range restriction on estimates of criterion interrater relia-
+                                                                                                                        by structure and format. International Journal of Selection              bility: Implications for validation research. Personnel Psychol-
+                                                                                                                        and Assessment, 21, 264–276. https://doi.org/10.1111/ijsa.               ogy, 55, 807–825. https://doi.org/10.1111/j.1744-6570.2002.
+                                                                                                                        12036                                                                    tb00130.x
+                                                                                                                     Hunter, J. E., Schmidt, F. L., & Judiesch, M. K. (1990). Individual      Sackett, P. R., Lievens, F., Berry, C. M., & Landers, R. N. (2007).
+                                                                                                                        differences in output variability as a function of job complexity.       A cautionary note on the effects of range restriction on
+                                                                                                                        Journal of Applied Psychology, 75, 28–42. https://doi.org/               predictor intercorrelations. Journal of Applied Psychology, 92,
+                                                                                                                        10.1037/0021-9010.75.1.28                                                538–544. https://doi.org/10.1037/0021-9010.92.2.538
+                                                                                                                     Kaiser, H. F., & Dickman, K. (1962). Sample and population score         Sackett, P. R., & Roth, L. (1996). Multi-stage selection strategies:
+                                                                                                                        matrices and sample correlation matrices from an arbitrary               A Monte Carlo investigation of effects on performance and
+                                                                                                                        population correlation matrix. Psychometrika, 27, 179–182.               minority hiring. Personnel Psychology, 49, 549–572. https://doi.
+                                                                                                                        https://doi.org/10.1007/BF02289635                                       org/10.1111/j.1744-6570.1996.tb01584.x
+                                                                                                                     Kane, M., & Case, S. M. (2004). The reliability and validity of          Salgado, J. F., Anderson, N., Moscoso, S., Bertua, C., & De Fruyt, F.
+                                                                                                                        weighted composite scores. Applied Measurement in Education,             (2003). International validity generalization of GMA and cogni-
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                        17, 221–240. https://doi.org/10.1207/s15324818ame1703_1                  tive abilities: A European community meta-analysis. Personnel
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     König, C. J., Bösch, F., Reshef, A., & Winkler, S. (2013). Human            Psychology, 56, 573–605. https://doi.org/10.1111/j.1744-6570.
+                                                                                                                        resource managers’ attitudes toward utility analysis. Journal of         2003.tb00751.x
+                                                                                                                        Personnel Psychology, 12, 152–156. https://doi.org/10.1027/           Schmidt, F. L., & Hunter, J. E. (1998). The validity and utility of
+                                                                                                                        1866-5888/a000090                                                        selection methods in personnel psychology: Practical and theo-
+                                                                                                                     König, C. J., Klehe, U. -C., Berchtold, M., & Kleinmann, M. (2010).         retical implications of 85 years of research findings. Psychological
+                                                                                                                        Reasons for being selective when choosing personnel selection            Bulletin, 124, 262–274. https://doi.org/10.1037/0033-2909.124.
+                                                                                                                        procedures. International Journal of Selection and Assessment,           2.262
+                                                                                                                        18, 17–27. https://doi.org/10.1111/j.1468-2389.2010.00485.x           Shaffer, G. S., Saunders, V., & Owens, W. A. (1986). Additional
+                                                                                                                     Lievens, F., & Harris, M. M. (2003). Research on Internet recruiting        evidence for the accuracy of biographical data: Long-term retest
+                                                                                                                        and testing: Current status and future directions. In C. Cooper &        and observer ratings. Personnel Psychology, 39, 791–809.
+                                                                                                                        I. Robertson (Eds.), International review of industrial and organi-      https://doi.org/10.1111/j.1744-6570.1986.tb00595.x
+                                                                                                                        zational psychology (Vol. 18, pp. 131–165). Chichester, UK: Wiley.    Sturman, M. C. (2000). Implications of utility analysis adjust-
+                                                                                                                     Lord, F. M., & Novick, M. R. (1968). Statistical theories of mental         ments for estimates of human resource intervention value.
+                                                                                                                        test scores. Reading, MA: Addison-Mosley.                                Journal of Management, 26, 281–299. https://doi.org/10.1177/
+                                                                                                                     Macan, T., Lemming, M. R., & Foster, J. L. (2012). Utility analysis:        014920630002600206
+                                                                                                                        Do estimates and format matter? Personnel Review, 42,                 Taylor, H. C., & Russell, J. T. (1939). The relationship of validity
+                                                                                                                        105–126. https://doi.org/10.1108/00483481311285255                       coefficients to the practical effectiveness of tests in selection.
+                                                                                                                     Mendoza, J. L., Bard, D. E., Mumford, M. D., & Ang, S. C. (2004).           Journal of Applied Psychology, 23, 565–578.
+                                                                                                                        Criterion-related validity in multiple-hurdle designs: Estimation     Van Iddekinge, C. H., Lanivich, S. E., Roth, P. L., & Junco, E. (2016).
+                                                                                                                        and bias. Organizational Research Methods, 7, 418–441.                   Social media for selection? Validity and adverse impact poten-
+                                                                                                                        https://doi.org/10.1177/1094428104268752                                 tial of a Facebook-based assessment. Journal of Management,
+                                                                                                                     Mendoza, J. L., & Mumford, M. D. (1987). Corrections for atten-             42, 1811–1835. https://doi.org/10.1177/0149206313515524
+                                                                                                                        uation and range restriction on the predictor. Journal of             Viswesvaran, C., & Ones, D. S. (2000). Measurement error in “Big
+                                                                                                                        Educational and Behavioral Statistics, 12, 292–293. https://             Five factors” personality assessment: Reliability generalization
+                                                                                                                        doi.org/10.3102/10769986012003282                                        across studies and measures. Educational and Psychological
+                                                                                                                     Naylor, J. C., & Shine, L. C. (1965). A table for determining the           Measurement,        60,     224–235.      https://doi.org/10.1177/
+                                                                                                                        increase in mean criterion score obtained by using a selection           00131640021970475
+                                                                                                                        device. Journal of Industrial Psychology, 3, 33–42.                   Viswesvaran, C., Ones, D. S., & Schmidt, F. L. (1996). Comparative
+                                                                                                                     Rafaeli, A., & Klimoski, R. J. (1983). Predicting sales success             analysis of the reliability of job performance ratings. Journal of
+                                                                                                                        through handwriting analysis: An evaluation for the effects of           Applied Psychology, 81, 557–574. https://doi.org/10.1037/
+                                                                                                                        training and handwriting sample content. Journal of Applied              0021-9010.81.5.557
+                                                                                                                        Psychology, 68, 212–217. https://doi.org/10.1037/0021-9010.
+                                                                                                                        68.2.212
+                                                                                                                     Raju, N. S., & Brand, P. A. (2003). Determining the significance of      Received May 23, 2017
+                                                                                                                        correlations corrected for unreliability and range restriction.       Revision received January 15, 2018
+                                                                                                                        Applied Psychological Measurement, 27, 152–171. https://doi.          Accepted January 16, 2018
+                                                                                                                        org/10.1177/0146621602239476                                          Published online November 2, 2018
+                                                                                                                     R Core Team. (2017). R: A language and environment for statistical
+                                                                                                                        computing. Retrieved from https://www.R-project.org/
+                                                                                                                     Roomsburg, J. D. (1989). Utility as a function of selection ratio and
+                                                                                                                                                                                              Jisoo Ock
+                                                                                                                        base rate: An empirical investigation of military aviation selec-
+                                                                                                                                                                                              14 Nanyang Drive
+                                                                                                                        tion. Unpublished doctoral dissertation, University of Texas,
+                                                                                                                                                                                              School of Social Sciences
+                                                                                                                        Austin, TX, USA.
+                                                                                                                                                                                              Division of Psychology
+                                                                                                                     Roth, P. L., Switzer, F. S., Van Iddekinge, C. H., & Oh, I. S. (2011).
+                                                                                                                                                                                              #04-41, Nanyang Technological University
+                                                                                                                        Toward better meta-analytic matrices: How input values can
+                                                                                                                                                                                              Singapore 637332
+                                                                                                                        affect research conclusions in human resource management
+                                                                                                                                                                                              jisoo.ock@gmail.com
+                                                                                                                        simulations. Personnel Psychology, 64, 899–935. https://doi.
+                                                                                                                        org/10.1111/j.1744-6570.2011.01231.x
+
+
+
+
+                                                                                                                     Journal of Personnel Psychology (2018), 17(4), 172–182                                                              ! 2018 Hogrefe Publishing
+

@@ -394,9 +394,7 @@ ui <- dashboardPage(
             </a></p>
             
             <p><strong>Citation for this Tool:</strong><br>
-            <em>Disability Employment Business Case Analysis Tool</em> (2025). Interactive educational application based on Fisher & Connelly (2020).<br>
-            <strong>Live App:</strong> <a href='https://christopher-m-castille.shinyapps.io/hr_analytics_shinyapp/' target='_blank'>https://christopher-m-castille.shinyapps.io/hr_analytics_shinyapp/</a><br>
-            <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research</p>
+            <em>Disability Employment Business Case Analysis Tool</em> (2025). Interactive educational application based on Fisher & Connelly (2020). Available at: https://github.com/chriscastille6/-utility-analysis-research</p>
             
             <h5>Technical Requirements:</h5>
             <ul>

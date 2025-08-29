@@ -1,0 +1,1043 @@
+                                                                                                                     Journal of Applied Psycholoi                                                                     Copyright 1998 by the American Psychological Association, Inc.
+                                                                                                                     1998, VbL 85, No. 1, 84-96                                                                                                                0021-9010/98/$3.DO
+
+
+
+
+                                                                                                                                                                               RESEARCH             REPORTS
+
+
+                                                                                                                                 Is Utility Really Futile? A Failure to Replicate and an Extension
+
+                                                                                                                                                           Kenneth P. Carson, John S. Becker, and John A. Henderson
+                                                                                                                                                                       University of Tennessee at Chattanooga
+
+
+                                                                                                                                                    G. P. Latham and G. Whyte (1994) found that managers gave less positive evaluations
+                                                                                                                                                    to a proposal to implement a valid selection procedure when information about the utility
+                                                                                                                                                    of that procedure was also given. The authors hypothesized that the manner in which the
+                                                                                                                                                    utility information was presented might explain this result. Two empirical studies (Ns =
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                                                    145 and 186) were conducted. Results of mean contrast analyses show that the effect
+                                                                                                                                                    found by Latham and Whyte was not replicated, that revised scenarios including utility
+                                                                                                                                                    information are more understandable to managers, and that utility information presented
+                                                                                                                                                    in a revised manner has a low-to-moderate positive effect on the acceptability ratings
+                                                                                                                                                    that managers give to these selection proposals. However, acceptability ratings remain
+                                                                                                                                                    disappointingly low no matter which scenario is presented. Future study is encouraged
+                                                                                                                                                    to examine managerial reactions to innovations suggested by psychological research.
+
+
+
+
+                                                                                                                        A general question facing all professionals, including                      that managers want such information (e.g., Cascio,
+                                                                                                                     industrial/organizational (I/O) psychologists, is how best                     1991b). However, some have questioned this assumption.
+                                                                                                                     to communicate the important findings of a discipline to                       Latham (1988) wondered whether the consumers of orga-
+                                                                                                                     individuals who are in a position to use that information                      nizational psychology really desire an economic justifica-
+                                                                                                                     but who are not familiar with the intricacies of the re-                       tion for the interventions that they consider. This thought
+                                                                                                                     search that led to those conclusions. Miller (1969) made                       received some empirical support when Macan and High-
+                                                                                                                     this point very well for psychologists in his memorable                        house (1994) conducted a survey that found that roughly
+                                                                                                                     American Psychological Association (APA) presidential                          half of the I/O psychologists and human resource prac-
+                                                                                                                     address. His comments focused on the challenges and                            titioners surveyed did not find that their clients expressed
+                                                                                                                     difficulties facing psychologists who were in a position                       interest in utility information.
+                                                                                                                     to give the important findings of scientific psychology                            Latham and Whyte's (1994) study on managers' reac-
+                                                                                                                     away to nonpsychologists.                                                      tions to utility information directly addressed this issue.
+                                                                                                                        Many researchers who have focused on the calculation                        They found that managers who were presented with utility
+                                                                                                                     of the utility of human resource practices have assumed                        data concerning a proposed selection practice were less
+                                                                                                                                                                                                    likely to support the selection practice than if they were
+                                                                                                                                                                                                    given the same proposal without the utility information.
+                                                                                                                        Kenneth P. Carson, John S. Becker, and John A. Henderson,
+                                                                                                                                                                                                    They summarized the inference of these findings by con-
+                                                                                                                     Department of Psychology, University of Tennessee at Chatta-
+                                                                                                                     nooga. John A. Henderson is now at the Department of Manage-
+                                                                                                                                                                                                    cluding that "industrial-organizational psychologists are
+                                                                                                                     ment, University of Tennessee, Knoxville.                                      advised to reconsider their assumptions regarding the in-
+                                                                                                                        We thank Mike Biderman, Rich Metzger, Jeffrey Ryer, and                     formation managers use when managers make human re-
+                                                                                                                     Greg Stewart for helpful comments on previous versions of this                 source policy decisions" (p. 31). This finding has influ-
+                                                                                                                     article. We also thank the numerous faculty at several universities            enced thinking about utility. For instance, in reviewing
+                                                                                                                     who assisted us with data collection. Study 1 is based on a                    the Latham and Whyte findings, Borman, Hanson, and
+                                                                                                                     master's thesis completed by John S. Becker, and Study 2 is                    Hedge (1997) observed, "these troubling results have
+                                                                                                                     based on a master's thesis completed by John A. Henderson,                     stimulated a great deal of discussion" (p. 321). The pur-
+                                                                                                                     both under the direction of Kenneth P. Carson. An earlier version
+                                                                                                                                                                                                    pose of our studies was to further investigate managerial
+                                                                                                                     of this article was presented in 1997 at the 12th Annual Meeting
+                                                                                                                                                                                                    reactions to utility information.
+                                                                                                                     of the Society for Industrial and Organizational Psychology, St.
+                                                                                                                     Louis, Missouri.                                                                   Latham and Whyte (1994) presented a sample of 143
+                                                                                                                        Correspondence concerning this article should be addressed                  experienced managers attending an executive master of
+                                                                                                                     to Kenneth P. Carson, Department of Psychology, University                     business administration (EMBA) program with a written
+                                                                                                                     of Tennessee at Chattanooga, Chattanooga, Tennessee 37377.                     scenario that described a human resource selection prob-
+                                                                                                                     Electronic mail may be sent to ken-carson@utc.edu.                             lem in a hypothetical corporation. They varied the type
+
+                                                                                                                                                                                               84
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                                  RESEARCH REPORTS                                                   85
+
+
+                                                                                                                     of information that the managers received in four ways:                results, namely that the manner in which the utility infor-
+                                                                                                                     validity information only, a combination of validity and               mation was presented led to their counterintuitive result.
+                                                                                                                     expectancy table information, a combination of validity                   There is a strong conceptual rationale for hypothesizing
+                                                                                                                     and utility information (which we will refer to as validity            that the manner in which the proposals are presented will
+                                                                                                                      + utility), and a combination of validity, expectancy, and            make a difference to the managers who evaluate them.
+                                                                                                                     utility information (see Table 1 for a summary of the                  Dutton and Ashford (1993) proposed a framework for
+                                                                                                                     scenarios used in each study). The dependent variable                  analyzing the manner in which issues are "sold" to top
+                                                                                                                     was an eight-item scale assessing the extent to which the              management. Many researchers have argued that the pro-
+                                                                                                                     participant-managers would accept the proposal includ-                 cess of selling an issue to top management is an important
+                                                                                                                     ing the likelihood that they would commit organizational               determinant of the decision to "buy" the issue. They
+                                                                                                                     resources to its implementation. The significant main ef-              advise that "the more an issue seller portrays an issue
+                                                                                                                     fect for type of information showed a difference between               succinctly, the greater the level of top management's atten-
+                                                                                                                     only the validity-only and validity + utility conditions               tion invested in an issue" (Dutton & Ashford, 1993, p.
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     such that the proposal was rated higher when only validity             416). O'Reilly (1983) made a similar argument in a paper
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     information was presented. Latham and Whyte concluded                  on organizational decision making. He argued that infor-
+                                                                                                                     that managers respond negatively to utility information                mation must be readily accessible and summarized in or-
+                                                                                                                     when they do receive it.                                               der for good quality decisions to be made and that "only
+                                                                                                                        Such a conclusion has important consequences. If accu-              limited amounts of information from any set are likely to
+                                                                                                                     rate, consultants, both internal and external to the organi-           be used for decision making purposes" (p. 126). Petty
+                                                                                                                     zation, would be wise to stay away from utility analyses               and Cacioppo (1986) made a similar argument in the
+                                                                                                                     when attempting to persuade their clients to adopt human               context of a more general framework for understanding
+                                                                                                                     resource innovations. Although research as to the efficacy             persuasive communications. One prediction of their elabo-
+                                                                                                                     of such innovations would remain entirely appropriate,                 ration likelihood model is that strong arguments will be
+                                                                                                                     persons in positions of giving psychology away (Miller,                more favorably received to the extent that complexity is
+                                                                                                                     1969) to managers would be advised to refrain from com-                reduced and comprehensibility increased. Similarly,
+                                                                                                                     municating the utility evidence that buttresses their recom-           flawed arguments will be more negatively evaluated when
+                                                                                                                     mendations and rely instead primarily on nondollar-based               complexity is reduced and comprehensibility is increased
+                                                                                                                     arguments. In the research arena, future investigators may             (Petty & Cacioppo, 1986, p. 76). Taken together, these
+                                                                                                                     rely on this conclusion as they conduct further research               reviews suggest that the manner in which a problem or a
+                                                                                                                     on managerial decision making (Borman et al., 1997;                    solution to a problem is presented to individuals influ-
+                                                                                                                     Hazer & Highhouse, 1997).                                              ences the reaction that they have to it. Specifically, mate-
+                                                                                                                        Although their conclusion is certainly tenable and is               rial that is shorter and easier to understand will be, or at
+                                                                                                                     consistent with their findings, it is not the only possible            least can be, more persuasive and lead to better quality
+                                                                                                                     explanation for their results. The Latham and Whyte                    decisions (see also Chervany & Dickson, 1974; Lyles,
+                                                                                                                     (1994) explanation is that managers react negatively to                1987; Oskamp, 1965; Sweller, Chandler, Tierney, & Coo-
+                                                                                                                     something central to utility analysts. Among the possible              per, 1990).
+                                                                                                                     items to which managers may negatively react are the                      It is therefore appropriate to examine the content of the
+                                                                                                                     algebraic formulas involved, the description of the manner             experimental materials used by Latham and Whyte (1994)
+                                                                                                                     in which standard deviation in dollars (i.e., SDy) is calcu-           in light of these conceptual perspectives and evidence.
+                                                                                                                     lated, or the size of the utility estimates themselves. In             Because the content of these materials is central to the
+                                                                                                                     contrast, we hypothesized a different explanation for their            present investigation, they are included in the Appendix.
+                                                                                                                                                                                            Latham and Whyte's validity-only proposal contains in-
+                                                                                                                                                                                            formation about only the process of conducting a valida-
+                                                                                                                     Table 1
+                                                                                                                                                                                            tion study but does not include any quantitative informa-
+                                                                                                                     Summary of the Scenarios Used in Each Study                            tion whatsoever. The scenario comprises 365 words. La-
+                                                                                                                                                                                            tham and Whyte's validity + utility condition appears
+                                                                                                                                                          Latham                            next in the Appendix. The first four paragraphs are identi-
+                                                                                                                                  Scenario               and Whyte     Study 1    Study 2
+                                                                                                                                                                                            cal to the validity-only condition followed by the utility
+                                                                                                                     Validity only"                          X           X          X       information. In total, this proposal is more than four times
+                                                                                                                     Validity -f expectancy6                 X                              as long as the validity-only proposal (1,550 words). Fur-
+                                                                                                                     Validity + utility'                     X           X          X
+                                                                                                                     Validity + expectancy 4- utility*       X                              thermore, it is considerably more complex than the valid-
+                                                                                                                     Revised validity only                               X                  ity-information section. This proposal contains the actual
+                                                                                                                     Revised validity + utility                          X          X       utility formula and an extended description of the process
+                                                                                                                     SZ>,,-enhanced validity + utility                              X
+                                                                                                                                                                                            of determining SDy estimates using managerial judgments.
+                                                                                                                     a
+                                                                                                                         This scenario was authored by Latham and Whyte (1994).             Latham and Whyte report that much of the utility informa-
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     86                                                      RESEARCH REPORTS
+
+
+                                                                                                                     tion was taken directly from Cronshaw's (1991) under-                  private) in the southeastern United States. Table 2 summarizes
+                                                                                                                     graduate textbook and from Cascio's (1991b) description                the demographic information for this sample along with the
+                                                                                                                     of the calculation of SDy. Their rationale for using these             similar information from the Latham and Whyte (1994) study.
+                                                                                                                                                                                            The samples are quite similar in terms of age and experience.
+                                                                                                                     sources was to minimize experimenter bias. However, the
+                                                                                                                                                                                            Our sample had a significantly higher percentage of women,
+                                                                                                                     effect of using these sources was to make the presentation
+                                                                                                                                                                                            31% versus 20%, X 2 (1, N = 141) = 4.49, p < .05. Because
+                                                                                                                     considerably longer and much more analytically complex
+                                                                                                                                                                                            prior academic exposure to concepts relating to human resource
+                                                                                                                     than the validity-only materials.
+                                                                                                                                                                                             accounting, utility, and validity might influence the results, we
+                                                                                                                          We hypothesized that the negative reaction that manag-             had participants self-report whether these topics had ever been
+                                                                                                                     ers had toward the utility materials (relative to the valid-            discussed in a course. By way of comparison, Latham and
+                                                                                                                     ity-only materials) was not a function of the essential                 Whyte reported that no one in their sample had taken a course
+                                                                                                                     content of the utility information but was rather due to                devoted to any of these topics.
+                                                                                                                     the manner of its presentation. In addition, we predicted                  Design. Study 1 used four scenarios to be compared with
+                                                                                                                     that utility information that was shorter and easier to un-             linear contrasts (Howell, 1997). The first two scenarios were a
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     derstand would be more favorably received. Latham and                   replication of the stimulus materials presented by Latham and
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     Whyte (1994) did note in the discussion of their study that             Whyte (1994) in their validity-only and validity + utility cells.
+                                                                                                                     subject-matter comprehension was a possible alternative                 The third and fourth scenarios consisted of revised validity-only
+                                                                                                                     explanation for their results. Because they did not include             and validity + utility information. These materials are described
+                                                                                                                                                                                             below. Only one of the four scenarios was evaluated by each
+                                                                                                                     a measure of comprehension in their materials, it was not
+                                                                                                                                                                                             participant-manager.
+                                                                                                                     possible for them to test that possibility. They pointed to
+                                                                                                                                                                                                We elicited the cooperation of instructors of three different
+                                                                                                                     the nature of the source of the material (undergraduate
+                                                                                                                                                                                             EMBA programs. We randomly distributed the four scenarios
+                                                                                                                     texts) and the fact that none of their participants reported
+                                                                                                                                                                                             to EMBA students during class or other meeting times. Because
+                                                                                                                     any comprehension problems or asked any questions of
+                                                                                                                                                                                             materials were distributed in a random fashion in each of the
+                                                                                                                     the experimenter as indicators that this alternative expla-
+                                                                                                                                                                                             three universities, sample sizes for the four cells were slightly
+                                                                                                                     nation was, in their view, unlikely. However, they also                 uneven, ranging from 34 to 40. Data for two participants were
+                                                                                                                     noted that issues such as this are "best resolved through               incomplete for the acceptability dependent measure. The data
+                                                                                                                     further empirical investigation rather than by debate" (p.              obtained from these two participants were included in the sum-
+                                                                                                                     44).                                                                    mary of demographic characteristics and analyses concerning
+                                                                                                                                                                                             the understandability dependent variable but were excluded from
+                                                                                                                                                Study 1
+                                                                                                                                                                                             the analyses involving the acceptability dependent measure.
+                                                                                                                     Method                                                                    Materials. The materials used in the Latham and Whyte
+                                                                                                                      Sample. The sample consisted of 145 managers attending                 presentation condition were identical to Latham and Whyte's
+                                                                                                                     EMBA programs at three different universities (two public, one          (1994) original experimental materials (provided to us by La-
+
+
+                                                                                                                                       Table 2
+                                                                                                                                       Demographic Characteristics of the Three Samples
+
+                                                                                                                                                 Characteristic                   Latham and Whyte               Study 1            Study 2
+
+                                                                                                                                       Total sample                                        143                    145                186
+                                                                                                                                       University setting
+                                                                                                                                         EMBA                                              143                    145                 92
+                                                                                                                                         MBA                                                 0                      0                 94
+                                                                                                                                       Experience
+                                                                                                                                         Human resources                                   51                      61                 49
+                                                                                                                                         Finance or accounting                             44                      52                 79
+                                                                                                                                       Education
+                                                                                                                                         Courses
+                                                                                                                                           HRA                                              0                                          7
+                                                                                                                                           Utility                                          0                      —                  18
+                                                                                                                                           Validity                                         0                      —                  13
+                                                                                                                                                                                                                   —
+                                                                                                                                         Discuss
+                                                                                                                                           HRA                                                                     23                 37
+                                                                                                                                                                                            —
+                                                                                                                                           Utility                                     •    —                      35                 50
+                                                                                                                                           Validity
+                                                                                                                                                                                            —                      40                 53
+                                                                                                                                       Gender
+                                                                                                                                         Male                                              114                     97                126
+                                                                                                                                         Female                                             29                     44                 60
+                                                                                                                                       Age (mean)                                          39.0                    37.3               32.5
+                                                                                                                                       Work experience (mean in years)                     16.0                    15.7                9.9
+
+                                                                                                                                       Note. EMBA = executive master of business administration; MBA = master of business administration;
+                                                                                                                                       HRA = human resource accounting. Dash indicates that these data were not collected for this sample.
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                              RESEARCH REPORTS                                                          87
+
+
+                                                                                                                      tham) with two exceptions. First, we changed the description         agers' perception of their understanding of the proposal. This
+                                                                                                                      of the company in the scenario from "a large Canadian based          was a two-item scale, including "How well did you understand
+                                                                                                                      multinational corporation'' to "a large American based multina-      this consultant's proposal?" and "To what extent was the pro-
+                                                                                                                      tional corporation." Second, we removed the consultant's affil-      posal clearly presented?" These items also had 5-point response
+                                                                                                                      iation with the Canadian Psychological Association from the          scales with 1 anchoring the negative dimension so that possible
+                                                                                                                      description of the consultant's experience (we retained the affil-   scale scores range from 2 to 10. The internal consistency relia-
+                                                                                                                      iation with the American Psychological Association, which was        bility of this scale is .82.
+                                                                                                                      also present in Latham and Whyte's original materials). Both
+                                                                                                                     changes were made because our sample of managers were at-
+                                                                                                                                                                                           Results and Discussion
+                                                                                                                      tending U.S. universities.
+                                                                                                                         We altered the materials in the revised presentation condition      As indicated earlier, we used linear contrasts in all anal-
+                                                                                                                      in such a way that the material was shorter and easier to compre-    yses. The descriptive statistics for these conditions are
+                                                                                                                     hend. We did not make many changes for the revised validity-          shown in Table 3. First, we hypothesized that the Latham
+                                                                                                                     only condition. Most significantly, we gave an expected validity
+                                                                                                                                                                                           and Whyte (1994) effect would be replicated. To test this,
+                                                                                                                     coefficient for the proposed validity study (.40) and placed it
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                                                                                           we gave the two Latham and Whyte scenarios weights of
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     in the context of validity coefficients generally (usually not
+                                                                                                                                                                                           1 and -1, respectively, with the remaining two scenarios
+                                                                                                                     higher than .50) and of typical validity coefficients for unstruc-
+                                                                                                                     tured interviews (.20). See the Appendix for the actual wording.      being given zero weights. The effect was not replicated.
+                                                                                                                     We chose the .40 value because that was the value used in the         The participant-managers evaluated the validity-only and
+                                                                                                                     other three conditions of Latham and Whyte's study. The .20           validity + utility proposals equivalently, f(139) = 0.42,
+                                                                                                                     value, which we chose, represents the average of the two major        p = .68, d = 0.09.
+                                                                                                                     meta-analyses that report average validity coefficients for tradi-      We further hypothesized that the revised materials
+                                                                                                                     tional, unstructured interviews (Hunter & Hunter, 1984; McDan-        would be perceived to be easier to comprehend than La-
+                                                                                                                     iel, Whetzel, Schmidt, & Maurer, 1994). The revised validity-         tham and Whyte's (1994) original materials. To test this
+                                                                                                                     only proposal is 485 words in length.                                 hypothesis, we gave both Latham and Whyte scenarios
+                                                                                                                         In contrast to the relatively minor adjustments made to the
+                                                                                                                                                                                           weights of — 1, and we gave the two revised scenarios
+                                                                                                                     revised validity-only materials, we made major changes in the
+                                                                                                                                                                                           weights of 1. This contrast was significant, f( 141) = 2.10,
+                                                                                                                     revised validity + utility proposal. In terms of raw length, we
+                                                                                                                                                                                           p = .037, d = 0.31, and in the expected direction. The
+                                                                                                                     reduced Latham and Whyte's 1,550-word proposal to 772
+                                                                                                                     words, a reduction of greater than 50%. Perhaps as important          revised scenarios were more understandable than the orig-
+                                                                                                                     as mere reduction in verbiage was the deletion of the technical       inal Latham and Whyte scenarios. An inspection of the
+                                                                                                                     jargon. We deleted the utility derivations and formulas as well       cell means reveals that this difference is due to the validity
+                                                                                                                     as information concerning the specifics of the determination of       + utility scenario; the Latham and Whyte validity-only
+                                                                                                                     SDy. We broke the financial gain estimate down into individual        scenario was not significantly different from the revised
+                                                                                                                     gain per year, cohort gain per year, and, finally, total gain for     scenarios, r(141) = 0.62, p = .539, d = -0.11.
+                                                                                                                     the entire cohort over an 18-year period (the average tenure of         The final hypothesis, which is the main focus of the
+                                                                                                                     clerical employees at this company). We altered this material         study, predicted that participant-managers evaluating the
+                                                                                                                     in order to clarify the issues for managers not trained in the
+                                                                                                                                                                                           revised scenarios would give higher acceptability ratings
+                                                                                                                     intricacies of utility analysis and to enable managers to better
+                                                                                                                                                                                           to the validity + utility proposal compared with the valid-
+                                                                                                                     understand the benefits of improved selection practices. It is
+                                                                                                                                                                                           ity-only proposal. Although the mean difference was in
+                                                                                                                     important to emphasize, however, that we did not change the
+                                                                                                                     magnitude of the quantitative content of the utility analysis (such   the expected direction, this contrast was not significant,
+                                                                                                                     as the validity coefficient, SDy estimates, and dollar estimates).    f(139) = 1.91, p = .058, d = 0.45.
+                                                                                                                     For example, the utility gain of $60,208,786 over an 18-year
+                                                                                                                     time span that Latham and Whyte used in their original materials                                 Study 2
+                                                                                                                     was also given in the revised validity + utility proposal.
+                                                                                                                         Measures. This study used two primary dependent mea-                The results of Study 1 partially supported the hypothe-
+                                                                                                                     sures. The first was identical to Latham and Whyte's (1994)           ses. Specifically, participant-managers understood the re-
+                                                                                                                     eight-item scale designed to measure the extent to which manag-       vised scenarios more than they did Latham and Whyte's
+                                                                                                                     ers accepted the consultant's proposal. Example items include         original validity + utility scenario. This was consistent
+                                                                                                                      "How likely are you to implement the consultant's recommen-          with our observation that the Latham and Whyte (1994)
+                                                                                                                     dations?" and "How will others in the company react if you
+                                                                                                                                                                                           scenarios were more complex than the revised scenarios.
+                                                                                                                     decide to implement the consultant's recommendations?" Each
+                                                                                                                                                                                             However, three features of Study 1 suggested that fur-
+                                                                                                                     item had a 5-point Likert-type response scale with 1 represent-
+                                                                                                                                                                                           ther investigation was warranted. The first was the unex-
+                                                                                                                     ing the negative end of the scale. Thus, scores on this acceptabil-
+                                                                                                                                                                                           pected nonreplication of Latham and Whyte's (1994)
+                                                                                                                     ity scale could range from 8 to 40. We found this scale to
+                                                                                                                     have an internal consistency reliability of .92 using Cronbach's      original finding. The reason that the Latham and Whyte
+                                                                                                                     (1951) alpha formula (Latham & Whyte reported a reliability           effect was not replicated in our sample when using their
+                                                                                                                     of .93).                                                              identical materials was not clear. The demographic com-
+                                                                                                                         The second dependent measure assesses the participant-man-        position of the sample, although substantially equivalent
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                            RESEARCH REPORTS
+
+
+                                                                                                                                      Table 3
+                                                                                                                                      Descriptive Statistics for Study 1 Dependent Variables
+
+                                                                                                                                                                                               Acceptability        Understandability
+
+                                                                                                                                                   Condition                    n          M               SD       M            SD
+
+                                                                                                                                      Latham and Whyte validity only           40        22.05            6.50     6.45          1.85
+                                                                                                                                      Latham and Whyte validity + utility      35        22.69            6.12     5.63          1.94
+                                                                                                                                      Revised validity only                    34        22.24            6.41     6.50          2.12
+                                                                                                                                      Revised validity 4- utility              34        25.26            7.08     6.79          1.67
+
+
+
+
+                                                                                                                     in many respects, was different in one important way. Our        second revision of the validity + utility scenario. This
+                                                                                                                     sample contained a number of participant-managers who            scenario was identical to the first revision except for the
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     reported that they had been educationally exposed to top-        addition of a paragraph that explains the SDy estimation
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     ics relating to human resource accounting, validity, or          procedure.
+                                                                                                                     utility. Latham and Whyte reported that no one in their
+                                                                                                                     sample had a course devoted to these topics; they did not        Method
+                                                                                                                     ask whether the topics had ever been discussed (see Table
+                                                                                                                     2). This led to the suspicion that education led the partici-       Sample. The sample for Study 2 consisted of 186 students
+                                                                                                                                                                                      from six different universities in the United States. The major
+                                                                                                                     pant-managers in the current study to be less negatively
+                                                                                                                                                                                      difference between this sample and that of earlier samples was
+                                                                                                                     predisposed to the utility material in the Latham and
+                                                                                                                                                                                      the inclusion of MBA as well as EMBA students. We did this
+                                                                                                                     Whyte presentation because they were more familiar with
+                                                                                                                                                                                      to test whether MBA students respond differently than EMBA
+                                                                                                                     the issues. However, one-way analyses of covariance com-         students. Demographic information concerning this sample is
+                                                                                                                     paring the means of the Latham and Whyte validity-only           summarized in Table 2.
+                                                                                                                     and validity + utility conditions while holding educational         Design. Study 2 was a 4 (type of information) X 2 (pro-
+                                                                                                                     exposure or self-reported understanding of the material          gram) between-subjects design. The four levels of type of infor-
+                                                                                                                     constant did not change the nature of the effect. The means      mation were crossed with two levels of program (EMBA and
+                                                                                                                     remained not significantly different. The sample size used       MBA students). The dependent measures, identical to those in
+                                                                                                                     in Study 1 provided plenty of power (0.92; Cohen, 1988)          Study 1, were the eight-item acceptability and two-item under-
+                                                                                                                     to detect the large effect that Latham and Whyte found,          standability scales.
+                                                                                                                                                                                         Materials. The materials used in Study 2 were identical to
+                                                                                                                     suggesting that sampling error also was not the source of
+                                                                                                                                                                                      those used in Study 1 with two exceptions. First, we eliminated
+                                                                                                                     the different experimental result. So we were left knowing
+                                                                                                                                                                                      the revised validity-only condition. Second, we added an SDy-
+                                                                                                                     only what the nonreplication was not due to, not what it
+                                                                                                                                                                                      enhanced revised validity + utility condition (see Table 1 for a
+                                                                                                                     was due to. In such a situation, it seemed reasonable to         comparison of the three studies). The enhancement consisted
+                                                                                                                     collect more data.                                               of the addition of a concise description of how the SDy was
+                                                                                                                        The second concern was that although Study 1 did              obtained. This revision was necessary to investigate the claim
+                                                                                                                     not find that utility information had a negative effect on       that managers who are told about the way in which SD, estimates
+                                                                                                                     managers, it also did not have a significant positive effect     are calculated will lower their acceptability ratings. In order to
+                                                                                                                     in the set of revised scenarios as we had hypothesized.          give a fair, balanced, and complete description of SO, estimation,
+                                                                                                                     However, the marginal p value suggests that the effect,          we took a description from a widely used textbook. This de-
+                                                                                                                     although probably not strong, may indeed exist. This indi-       scription was taken from Cascio's (1991a) undergraduate text
+                                                                                                                                                                                      Applied Psychology in Personnel Management (p. 302). This
+                                                                                                                     cated that further data collection was appropriate.
+                                                                                                                                                                                      description is still considerably shorter than the one given by
+                                                                                                                        The third concern was that the content of the revised
+                                                                                                                                                                                      Cascio (1991b), which Latham and Whyte (1994) used. We
+                                                                                                                     validity + utility scenario was written so that the partici-
+                                                                                                                                                                                      used the shorter version in order to be consistent with our goal
+                                                                                                                     pant managers were given much less information about             of making the proposals more understandable. All told, we ex-
+                                                                                                                     the utility analysis procedures. In particular, the revised      panded the material dealing with SDy estimation from 1 phrase
+                                                                                                                     validity + utility scenario reduced the description of the       to 12 full lines. See the Appendix for the actual wording.
+                                                                                                                     SDy estimation procedure to one phrase. It is possible that
+                                                                                                                     if the participant managers were aware of the nature of
+                                                                                                                                                                                       Results and Discussion
+                                                                                                                     these estimation procedures that the results would be
+                                                                                                                     different.                                                           Means for each of the four conditions can be found in
+                                                                                                                        Therefore, we conducted Study 2. We included the two           Table 4. On the basis of the results of Study 1, we con-
+                                                                                                                     original scenarios from Latham and Whyte (1994) in this           ducted three planned contrasts. First, we compared the
+                                                                                                                     second study to see if the effect that they found could be        two Latham and Whyte (1994) scenarios (the two revi-
+                                                                                                                     replicated. To address the third concern, we developed a          sions were given zero weights). There was no significant
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                            RESEARCH REPORTS                                                    89
+
+
+                                                                                                                                      Table 4
+                                                                                                                                      Descriptive Statistics for Study 2 Dependent Variables
+
+                                                                                                                                                                                               Acceptability         Understandability
+
+                                                                                                                                                  Condition                     n          M               SD        M            S£>
+
+                                                                                                                                      Latham and Whyte validity only           47        22.60             5.98     6.04          1.98
+                                                                                                                                      Latham and Whyte validity + utility      41        22.12             6.24     5.54          1.95
+                                                                                                                                      Revised validity + utility               45        24.71             5.56     6.42          1.84
+                                                                                                                                      SZ),-enhanced validity + utility         53        24.60             5.49     6.11          1.92
+
+
+
+
+                                                                                                                     difference between these two conditions, t( 182) = .38, p        + utility scenario were not statistically significant given
+                                                                                                                     = .703, d = -0.08. Therefore, the Latham and Whyte               traditional criteria, whereas Study 2 found that these
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     effect was not replicated once again.                            higher ratings were statistically significant. The effect
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                        Second, we compared the two revisions. We did not             sizes for comparisons in each of the three studies are
+                                                                                                                     hypothesize a difference here although we were concerned         summarized in Table 5. Clearly, there is a discrepancy
+                                                                                                                     that the deletion of almost all material relating to the         between the results obtained by Latham and Whyte and
+                                                                                                                     estimation of SDy may have changed the content of the            those reported in our two studies. Further, the revised
+                                                                                                                     utility scenario too much. This planned contrast (with the       presentation of validity and utility information seems to
+                                                                                                                     two Latham and Whyte scenarios given zero coefficients)          be preferred by participant-managers compared with ei-
+                                                                                                                     was also not significant, t(l&2) = .10, p = .927, d =            ther the validity-only or the Latham and Whyte
+                                                                                                                     0.02.                                                            presentation.
+                                                                                                                        Next, we examined the difference in acceptability rat-
+                                                                                                                     ings between the Latham and Whyte validity + utility                                         Conclusion
+                                                                                                                     scenario (given a coefficient of -2) and the two validity
+                                                                                                                                                                                         The results of these two studies lead to several conclu-
+                                                                                                                     + utility revisions (both with a coefficient of 1). This
+                                                                                                                                                                                      sions. First, the effect found by Latham and Whyte (1994)
+                                                                                                                     contrast was significant, ?(182) = 2.35, p = .02, d =
+                                                                                                                                                                                      has not been replicated in two subsequent studies. Power
+                                                                                                                     0.44. Thus, we concluded that the manner of presentation
+                                                                                                                                                                                      analysis suggests that it is extremely unlikely that this is
+                                                                                                                     does influence the way in which each scenario is evalu-
+                                                                                                                                                                                      the result of sampling error. Further, this failure to repli-
+                                                                                                                     ated. To investigate the reason for this difference, we con-
+                                                                                                                                                                                      cate resulted after using the same scenarios that they used
+                                                                                                                     ducted a planned contrast for the understanding dependent
+                                                                                                                                                                                      and relying primarily on participants that were very close
+                                                                                                                     variable. With the same coefficient weights (-2, 1, 1),
+                                                                                                                                                                                      to the type of participants that they used (experienced
+                                                                                                                     there is a significant difference in the degree to which the
+                                                                                                                                                                                      managers enrolled in EMBA educational programs).
+                                                                                                                     participant-managers reported that they understood the
+                                                                                                                                                                                      Clearly, there is some other reason for the disparate re-
+                                                                                                                     material, r(182) = 2.36, p = .019, d = 0.37.
+                                                                                                                                                                                      sults, which has not been identified. We are left to specu-
+                                                                                                                        Finally, we examined the difference in acceptability
+                                                                                                                                                                                      late as to the reason for this disparity. It is possible that
+                                                                                                                     ratings between the Latham and Whyte validity-only sce-
+                                                                                                                                                                                      demand characteristics may explain the result. For exam-
+                                                                                                                     nario (given a coefficient of —2) and the two validity
+                                                                                                                                                                                      ple, Latham and Whyte wrote that Latham has ' 'known
+                                                                                                                     + utility revisions (both given a coefficient of 1). This
+                                                                                                                                                                                      biases . . . regarding utility analysis" (Latham & Whyte,
+                                                                                                                     comparison was significant, f(182) = 2.00, p = .047, d
+                                                                                                                                                                                      1994, p. 39), and therefore Whyte was responsible for
+                                                                                                                     = 0.35, such that the revised validity + utility scenarios
+                                                                                                                                                                                      designing the stimulus materials and for data collection.
+                                                                                                                     were given higher acceptability ratings compared with the
+                                                                                                                                                                                      However, because the data appear to have been collected
+                                                                                                                     validity-only version.
+                                                                                                                                                                                      from students in a program with which both Latham and
+                                                                                                                                                                                      Whyte were affiliated, it is possible that, despite the pre-
+                                                                                                                                                Summary
+                                                                                                                                                                                      cautions taken to minimize demand characteristics, the
+                                                                                                                        Taking the results of both studies along with the Latham      study participants had been exposed to Latham's self-
+                                                                                                                     and Whyte (1994) study, we were faced with a set of              professed bias. In contrast, the participants in the two
+                                                                                                                     conflicting findings. The most obvious conflict was that         studies reported here came from multiple university pro-
+                                                                                                                     the results of the two studies reported here did not repli-      grams, none of which any of us, the present authors, were
+                                                                                                                     cate the surprising effect that Latham and Whyte found,          or are affiliated with. We do not know that this is the
+                                                                                                                     even though identical materials were used and even though        correct explanation, only that it is one possibility. Another
+                                                                                                                     the participant-managers seemed to be taken from the             possibility is that there is some difference between Cana-
+                                                                                                                     same population. The second conflict was that Study 1            dian and American managers that affects these results. We
+                                                                                                                     found that the higher ratings given to the revised validity      think that this is unlikely, but not impossible.
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     90                                                      RESEARCH REPORTS
+
+
+                                                                                                                                       Table 5
+                                                                                                                                       Summary of Sample and Effect      Sizes
+
+                                                                                                                                       Comparison"         Latham and Whyte           Study 1          Study 2
+
+                                                                                                                                          B-A                     -.75                   .09            -.08           474          158.0
+                                                                                                                                          C-A                                            .49              .36          331          165.5
+                                                                                                                                          C-B                                            .39              .44          331          165.5
+
+                                                                                                                                      Note. Dash indicates that the comparisons were not available in this study.
+                                                                                                                                      ' A = Latham and Whyte validity-only condition; B = Latham and Whyte validity + utility condition; C
+                                                                                                                                      = Revised validity + utility condition. b Tbtal sample size. c Average sample size.
+
+
+
+                                                                                                                        A second conclusion is that presenting information to             the acceptance ratings of selection proposals to be im-
+                                                                                                                     managers in a more user-friendly manner results in some              proved. There are a number of possible factors that may
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     improvement in the rated acceptability of the selection              lead the proposals to be more positively viewed. For in-
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     proposals. The size of this effect is in the low-medium              stance, Hazer and Highhouse (1997) recently found that
+                                                                                                                     range in Cohen's (1988) scheme (ds of 0.45 and 0.37 in               managers appear to prefer utility estimates based on the
+                                                                                                                     the two studies). In addition, adding more description               40% rule compared with those based on SDy estimates,
+                                                                                                                     about the SDy estimation procedures did not lead to a                such as those used in the studies reported here. In addition,
+                                                                                                                     decline in acceptability of the proposal at all, although            Macan and Highhouse's (1994) survey results suggest
+                                                                                                                     this particular conclusion is based only on the data in              that some managers may want utility information whereas
+                                                                                                                     Study 2.                                                             others may not. This suggests that individual difference
+                                                                                                                        Thus, the results obtained here suggest that utility infor-       variables may be a fruitful avenue of further study. Further
+                                                                                                                     mation, presented in a user-friendly manner, may add to              conceptual analysis and empirical study are required in
+                                                                                                                     the efficacy of a proposal to improve a selection system.            order to identify what these factors might be.
+                                                                                                                     In particular, managers were not put off by the size of the             The present results are consistent with the theoretical
+                                                                                                                     utility estimate alone, because the same estimate appears            propositions reviewed in the introduction (Dutton & Ash-
+                                                                                                                     in both versions. This should be welcome news to persons             ford, 1993; O'Reilly, 1983; Petty & Cacioppo, 1986). In
+                                                                                                                     at all points on the scientist-practitioner continuum. Re-           a complex decision environment, decision makers attend
+                                                                                                                     searchers who study the adequacy of utility models should            to and use information more when it is presented in a
+                                                                                                                     be heartened that the work in which they have been en-               manner that is shorter in length and higher in comprehensi-
+                                                                                                                     gaged is not seen as entirely useless (or worse) by practic-         bility. Of particular interest is Petty and Cacioppo's elabo-
+                                                                                                                     ing managers. Human resource practitioners and consul-               ration likelihood model, which suggests that strong argu-
+                                                                                                                     tants should be encouraged to look for ways to include               ments will be more positively evaluated and weak argu-
+                                                                                                                     utility data in their presentations to organizations consid-         ments will be more negatively evaluated when they are
+                                                                                                                     ering making changes in their selection systems. However,            better understood. The fact that understandability and ac-
+                                                                                                                     because the managers who participated in these studies               ceptability ratings both increased suggests that utility esti-
+                                                                                                                     were not making real-world decisions, caution should be              mates are strong evidence. Of course, none of these factors
+                                                                                                                     used in generalizing these results to actual decision-mak-           has an absolute value. That is, a proposal is not perfectly
+                                                                                                                     ing contexts.                                                        comprehensible—it is only more or less comprehensible
+                                                                                                                        This upbeat perspective is tempered by a view of the              than some alternative. Future research should examine
+                                                                                                                     data that should not be overlooked. The means for all of             ways in which proposals dealing with human resource
+                                                                                                                     the scenarios are in the 22-26 range on an 8-40 scale,               issues can be presented in an optimal fashion. As noted
+                                                                                                                     the midpoint of which is 24. This means that when com-               above, there remains considerable room for improvement
+                                                                                                                     bining all the conditions together, managers on average              in managers' evaluation of these materials. In addition,
+                                                                                                                     were not particularly impressed with the proposed new                future research might attempt to more directly measure a
+                                                                                                                     selection system. Even the highest mean of the two studies           manager's comprehension of the utility information
+                                                                                                                     reported here, which occurred in the revised validity +              (along the lines of Hazer and Highhouse's, 1997, study)
+                                                                                                                     utility condition for Study 1, had a magnitude of only               or, alternatively, it might be appropriate to use a more
+                                                                                                                     25.26. These values are quite similar to those obtained in           qualitative data-gathering technique to assess what manag-
+                                                                                                                     the Latham and Whyte study. In fact, the highest value               ers are actually thinking about when presented with these
+                                                                                                                     from the Latham and Whyte study (26.4) is not signifi-               proposals.
+                                                                                                                     cantly different from the highest value in the present in-              In conclusion, we return to Miller's (1969) APA presi-
+                                                                                                                     vestigation, 25.26, ?(68) = 0.723, p - .30. So although              dential address. He argued that society would benefit if
+                                                                                                                     we find that utility information is not necessarily nega-            psychologists would learn to appropriately communicate
+                                                                                                                     tively viewed, there remains considerable opportunity for            the findings of scientific psychology to laypersons who
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                             RESEARCH REPORTS                                                            91
+
+
+                                                                                                                     are in a position to use them. We close with a quote from              information frame, and focal intervention. Journal of Applied
+                                                                                                                     this seminal address:                                                  Psychology, 82, 104-112.
+                                                                                                                                                                                          Howell, D.C. (1997). Statistical methods for psychology (4th
+                                                                                                                         Psychological principles and techniques can usefully be            ed.). Belmont, CA: Duxbury Press.
+                                                                                                                         applied by everyone. If our suggestions actually work, peo-      Hunter, I.E., & Hunter, R. F. (1984). Validity and utility of
+                                                                                                                         ple should be eager to learn more. If they do not work, we         alternative predictors of job performance. Psychological Bul-
+                                                                                                                         should improve them. But we should not try to give people          letin, 96, 72-98.
+                                                                                                                         something whose value they cannot recognize, then com-           Latham, G. P. (1988). Human resource training and develop-
+                                                                                                                         plain when they do not return for a second meeting. (Miller,       ment. Annual Review of Psychology, 39, 545-582.
+                                                                                                                         1969, p. 1073)                                                   Latham, G. P., & Whyte, G. (1994). The futility of utility analy-
+                                                                                                                                                                                            sis. Personnel Psychology, 47, 31-46.
+                                                                                                                                                                                          Lyles, M. A. (1987). Defining strategic problems: Subjective
+                                                                                                                                              References                                    criteria of executives. Organization Studies, 8, 263-279.
+                                                                                                                                                                                          Macan, T. H., & Highhouse, S. (1994). Communicating the utility
+                                                                                                                     Borman, W., Hanson, M., & Hedge, J. (1997). Personnel selec-
+                                                                                                                                                                                           of human resource activities: A survey of I/O and HR profes-
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                       tion. Annual Review of Psychology, 48, 299-337.
+                                                                                                                                                                                           sionals. Journal of Business and Psychology, 8, 425-436.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     Cascio, W. F. (1991 a). Applied psychology in personnel man-         McDaniel, M. A., Whetzel, D. L., Schmidt, F. L., & Maurer,
+                                                                                                                       agement (4th ed.). Englewood Cliffs, NJ: Prentice Hall.             S. D. (1994). The validity of employment interviews: A com-
+                                                                                                                     Cascio, W. F. (1991b). Costing human resources: The financial         prehensive meta-analysis. Journal of Applied Psychology, 79,
+                                                                                                                       impact of behavior in organizations (3rd ed.). Boston: PWS-         599-616.
+                                                                                                                       Kent Publishing Co.                                                Miller, G. A. (1969). Psychology as a means of promoting hu-
+                                                                                                                     Chervany, N. L., & Dickson, G. W. (1974). An experimental             man welfare. American Psychologist, 24, 1063-1075.
+                                                                                                                       evaluation of information overload in a production environ-        O'Reilly, C. A. (1983). The use of information in organizational
+                                                                                                                       ment. Management Science, 20, 1335-1344.                             decision making: A model and some propositions. Research
+                                                                                                                     Cohen, J. (1988). Statistical power analysis for the behavioral        in Organizational Behavior, 5, 103-139.
+                                                                                                                       sciences (2nd ed.). Hillsdale, NJ: Erlbaum.                        Oskamp, S. (1965). Overconfidence in case-study judgments.
+                                                                                                                     Cronbach, L. J. (1951). Coefficient alpha and the internal struc-      Journal of Consulting Psychology, 29, 261-265.
+                                                                                                                       ture of tests. Psychometrika, 16, 297-334.                         Petty, R. E., & Cacioppo, J. T. (1986). Communication and
+                                                                                                                     Cronshaw, S. F. (1991). Industrial psychology in Canada. Wa-           persuasion: Central and peripheral routes to attitude change.
+                                                                                                                       terloo, Ontario, Canada: North Waterloo Academic Press.              New \brk: Springer-Verlag.
+                                                                                                                     Dutton, J. E., & Ashford, S. J. (1993). Selling issues to top        Sweller, J., Chandler, P., Tierney, P., & Cooper, M. (1990).
+                                                                                                                       management. Academy of Management Review, 18, 397-428.               Cognitive load as a factor in the structuring of technical mate-
+                                                                                                                     Hazer, J. T., & Highhouse, S. (1997). Factors influencing man-         rial. Journal of Experimental Psychology: General, 119,
+                                                                                                                       agers' reactions to utility analysis: Effects of SD, method,         176-192.
+
+
+
+
+                                                                                                                                                                               (Appendix follows)
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     92                                                   RESEARCH REPORTS
+
+
+                                                                                                                                                                               Appendix
+
+                                                                                                                                                                          Stimulus Materials
+
+
+
+                                                                                                                        Latham and Whyte's Validity-Only Condition and then-          scoring, and outlays for test booklets. Total costs of the
+                                                                                                                     Validity + Utility Condition are printed with permission         consultant's recommendations, if followed, are therefore
+                                                                                                                     from the authors.                                                approximately $429,100.
+                                                                                                                                                                                        As vice president of the company, it is up to you to
+                                                                                                                           Latham and Whyte's Validity-Only Condition                 decide whether to implement the c o n s u l t a n t ' s
+                                                                                                                                                                                      recommendations.
+                                                                                                                        Imagine that you are a vice president of a large Ameri-
+                                                                                                                     can based multi-national corporation. The company has
+                                                                                                                                                                                          Latham and Whyte's Validity + Utility Condition
+                                                                                                                     over 10,000 employees, and last year's sales exceeded $4
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     billion dollars. The company is highly regarded for the             Imagine that you are a vice president of a large Ameri-
+                                                                                                                     quality of it's products. Lately, however, some people           can based multi-national corporation. The company has
+                                                                                                                     within the organization have raised concerns about the           over 10,000 employees, and last year's sales exceeded $4
+                                                                                                                     quality of the clerical/administrative personnel that the        billion dollars. The company is highly regarded for the
+                                                                                                                     firm has been hiring.                                            quality of its products. Lately, however, some people
+                                                                                                                        Potential new hires are interviewed before a decision         within the organization have raised concerns about the
+                                                                                                                     is made to extend an offer, but at present no systematic         quality of the clerical/administrative personnel that the
+                                                                                                                     procedures exist by which clerical/administrative em-            firm has been hiring.
+                                                                                                                     ployees are selected. Although you are skeptical that the           Potential new hires are interviewed before a decision
+                                                                                                                     methods by which your firm selects such personnel can            is made to extend an offer, but at present no systematic
+                                                                                                                     be improved upon, an organizational consultant has been          procedures exist by which clerical/administrative em-
+                                                                                                                     retained to investigate the issue.                               ployees are selected. Although you are skeptical that the
+                                                                                                                        This consultant specializes in the development and vali-      methods by which your firm selects such personnel can
+                                                                                                                     dation of selection practices that attempt to enable compa-      be improved upon, an organizational consultant has been
+                                                                                                                     nies to select high performers in a legally defensible man-      retained to investigate the issue.
+                                                                                                                     ner. She is also a member of the American Psychological             This consultant specializes in the development and vali-
+                                                                                                                     Association, and graduated ten years ago with a Ph.D.            dation of selection practices that attempt to enable compa-
+                                                                                                                     from a prestigious university.                                   nies to select high performers in a legally defensible man-
+                                                                                                                        This particular consultant was contacted because she          ner. She is also a member of the American Psychological
+                                                                                                                     has done research showing that employee performance              Association, and graduated ten years ago with a Ph.D.
+                                                                                                                     can be predicted through the use of selection testing. After     from a prestigious university.
+                                                                                                                     a discussion of the issues, the consultant has recom-               This particular consultant was contacted because she
+                                                                                                                     mended that the following steps be taken:                        has done research showing that employee performance
+                                                                                                                                                                                      can be predicted through the use of selection testing. After
+                                                                                                                        1. Develop a test to measure employee performance
+                                                                                                                                                                                      a discussion of the issues, the consultant has recom-
+                                                                                                                     that is tailor-made to your firm;
+                                                                                                                                                                                      mended that the following steps be taken:
+                                                                                                                        2. Administer this test across all relevant categories of
+                                                                                                                     clerical/administrative personnel;                                  1. Develop a test to measure employee performance
+                                                                                                                                                                                      that is tailor-made to your firm;
+                                                                                                                       3. Correlate the results of the test with performance
+                                                                                                                                                                                         2. Administer this test across all relevant categories of
+                                                                                                                     on the job to see how well the test predicts performance;
+                                                                                                                                                                                      clerical/administrative personnel;
+                                                                                                                        4. Use the results of this test to alter existing selection
+                                                                                                                                                                                        3. Correlate the results of the test with performance
+                                                                                                                     practices so as to improve employee performance in the
+                                                                                                                     clerical/administrative category.                                on the job to see how well the test predicts performance;
+                                                                                                                                                                                         4. Use the results of this test to alter existing selection
+                                                                                                                        The consultant has stated that the cost of designing and
+                                                                                                                                                                                      practices so as to improve employee performance in the
+                                                                                                                     validating the selection test will be $6,100. Because you
+                                                                                                                                                                                      clerical/administrative category.
+                                                                                                                     expect to hire about 470 new clerical/administrative em-
+                                                                                                                     ployees this year from a large pool of applicants it is             The consultant has stated that the cost of designing and
+                                                                                                                     estimated that the total implementation cost of the selec-       validating the selection test will be $6,100. Because you
+                                                                                                                     tion program will be $423,000. This amount reflects re-          expect to hire about 470 new clerical/administrative em-
+                                                                                                                     cruiting costs, test administrators' salary, computer test       ployees this year from a large pool of applicants it is
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                         RESEARCH REPORTS                                                       93
+
+
+                                                                                                                     estimated that the total implementation cost of the selec-         The dollar utility estimates we are asking you to make
+                                                                                                                     tion program will be $423,000. This amount reflects re-         are critical in estimating the relative dollar value to the
+                                                                                                                     cruiting costs, test administrators' salary, computer test      firm of different selection methods. In answering these
+                                                                                                                     scoring, and outlays for test booklets. Total costs of the      questions, you will have to make some very difficult judg-
+                                                                                                                     consultant's recommendations, if followed, are therefore        ments. We realize they are difficult and that they are judg-
+                                                                                                                     approximately $429,100.                                         ments or estimates. "K>u will have to ponder for some time
+                                                                                                                        The consultant estimates that the approximate financial      before giving each estimate, and there is probably no way
+                                                                                                                     gain achievable if her advice is followed is $60,208,786.       you can be absolutely certain your estimate is accurate
+                                                                                                                     This amount represents her estimate of the dollar gain          when you do reach a decision. But keep in mind three
+                                                                                                                     from the use of new selection procedures for one year, as       things:
+                                                                                                                     compared to continuing to use existing methods.
+                                                                                                                                                                                        1. The alternative to estimates of this kind are cost
+                                                                                                                        The algebraically derived model the consultant used
+                                                                                                                                                                                     accounting procedures to the evaluation of job perfor-
+                                                                                                                     to calculate this amount is relied on by many industrial
+                                                                                                                                                                                     mance. Such applications are usually prohibitively expen-
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     psychologists today and was developed and refined by
+                                                                                                                                                                                     sive. And, in the end, they produce only imperfect esti-
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     researchers over many years. The model is as follows:
+                                                                                                                                                                                     mates, like this estimation procedure.
+
+                                                                                                                              DUR =                                                     2. Your estimates will be averaged in with those of
+                                                                                                                                                                                     other supervisors of clerical/administrative employees.
+                                                                                                                     where UR is the dollar gain from the use of the selection       Thus errors produced by too high and too low estimates
+                                                                                                                     test for one year as compared to selecting people using         will tend to be averaged out, providing more accurate
+                                                                                                                     existing procedures; t is the average length of time the        final estimates.
+                                                                                                                     selectees stay with the organization; Ns is the number of          3. The decisions that must be made about selection
+                                                                                                                     people to be selected this year, SDy is the standard devia-     methods do not require that all estimates be accurate down
+                                                                                                                     tion of job performance in dollars; r,y is the correlation      to the last dollar. Substantially accurate estimates will lead
+                                                                                                                     between test scores and job performance as determined           to the same decisions as perfectly accurate estimates.
+                                                                                                                     by previous research; 1 is the height of the normal curve
+                                                                                                                     at the cutting point on the predictor (a statistic which is        Based on your experience with clerical/administrative
+                                                                                                                     obtained from the f or selection ratio); f is the selection     employees, we would like to estimate the yearly value to
+                                                                                                                     ratio (the proportion of people selected as compared to         the firm of the products and services provided by the
+                                                                                                                     the number of people who applied for the job) ; Cis is the      average clerical/administrative employee. Consider the
+                                                                                                                     implementation cost of the selection program per person         quality and quantity of output typical of the average em-
+                                                                                                                     selected; and Cos is the original cost of designing and         ployee and the value of this output, it may help to consider
+                                                                                                                     validating the selection instrument per person selected.        what the cost would be of having an outside firm provide
+                                                                                                                        To compute the dollar gain, input estimates for the terms    these products and services.
+                                                                                                                     in the model were obtained from research studies and               Based on my experience, I estimate the value to the
+                                                                                                                     your firm's personnel records, and then entered into the        firm of the average clerical/administrative employee at
+                                                                                                                     above equation. The input estimates were as follows:                      dollars per year.
+                                                                                                                                                                                        We would now like for you to consider the "superior"
+                                                                                                                       1 . The average length of time new hires in the clerical/     clerical/administrative employee. Let us define a superior
+                                                                                                                     administrative category stay with the firm, or t is 18 years;   performer as some one who is at the 85th percentile. That
+                                                                                                                                                                                     is, his or her performance is better than 85% of his or her
+                                                                                                                       2. The number to be selected this year (Ns) is 470;
+                                                                                                                                                                                     fellow employees, and only 15% turn in better perfor-
+                                                                                                                        3. SDy Refers to the standard deviation of job perfor-       mances. Consider the quality and quantity of the output
+                                                                                                                     mance in dollars. The larger the difference in how well         typical of the superior employee. Then estimate the value
+                                                                                                                     people perform on the job as measured by SDy, the higher        of these products and services. In placing an overall dollar
+                                                                                                                     the potential gain from using selection practices that will     amount on this output, it may again help to consider what
+                                                                                                                     distinguish between poor and good performers. While             the cost would be of having an outside firm provide these
+                                                                                                                     most of the input estimates for the model were obtained         products and services.
+                                                                                                                     from the firm records, SDy cannot be obtained in this way          Based on my experience, I estimate the value to the
+                                                                                                                     but must be estimated. The SDy term is difficult to esti-       firm of the superior clerical/administrative employee at
+                                                                                                                     mate, but it must be estimated in order to express in dollars             dollars per year.
+                                                                                                                     the potential gain to be achieved from following the rec-          Finally, we would like you to consider the "low-per-
+                                                                                                                     ommendations. SDy was calculated using supervisors of           forming" clerical/administrative employee. Let us define
+                                                                                                                     clerical/administrative personnel. In estimating SDy the        a low-performing employee as one who is at the 15th
+                                                                                                                     instructions to the supervisors were as follows:                percentile. That is, 85% of all clerical/administrative em-
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     94                                                 RESEARCH REPORTS
+
+
+                                                                                                                     ployees turn in performances better than the low-per-          reputation for high quality products. Recently concerns
+                                                                                                                     forming employee, and only 15% turn in worse perfor-           have been raised about the quality of clerical/administra-
+                                                                                                                     mances. Consider the quality and quantity of the output        tive personnel.
+                                                                                                                     typical of the low-performing employee. Then estimate             Potential new hires are interviewed before a decision
+                                                                                                                     the value of these products and services. In placing an        is made to extend an offer, but at present no systematic
+                                                                                                                     overall dollar amount on this output, it may again help to     procedures exist by which clerical/administrative em-
+                                                                                                                     consider what the cost would be of having an outside firm      ployees are selected. Although you are skeptical that the
+                                                                                                                     provide these products and services.                           methods by which your firm selects such personnel can
+                                                                                                                        Based on my experience, I estimate the value to the firm    be improved upon, an organizational consultant has been
+                                                                                                                     of the low-performing clerical/administrative employee at      retained to investigate the issue.
+                                                                                                                              dollars per year.                                        This consultant specializes in the development and vali-
+                                                                                                                        SDy was calculated as the average of the estimated          dation of selection practices that attempt to enable compa-
+                                                                                                                     difference in dollar value of yearly job performance be-       nies to select high performers in a legally defensible man-
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     tween superior and average clerical/administrative em-         ner. She is also a member of the American Psychological
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     ployees, and between average and low-performing cleri-         Association, and graduated ten years ago with a Ph.D.
+                                                                                                                     cal/administrative employees. SDy the average of these         from a prestigious university.
+                                                                                                                     two estimations was $16,290. Therefore according to this          This particular consultant was contacted because she
+                                                                                                                     approach, SDy = $16,290.                                       has done research showing that employee performance
+                                                                                                                                                                                    can be predicted through the use of selection testing. After
+                                                                                                                        4. The correlation between performance on the test and
+                                                                                                                                                                                    a discussion of the issues, the consultant submits a prelim-
+                                                                                                                     job performance was estimated from previous research to
+                                                                                                                                                                                    inary proposal. This is a summary of her proposal:
+                                                                                                                     be rxv = .40.
+                                                                                                                                                                                       Interviews like the ones your company uses have tradi-
+                                                                                                                       5. The height of the normal curve at the cutting point       tionally had lower levels of validity than test based selection
+                                                                                                                     on the predictor is .3621. The selection ratio F (the num-     systems. Validity is simply an expression of the relationship
+                                                                                                                     ber of people selected expressed as a proportion of the        between something used to predict job performance and
+                                                                                                                     number of people who applied for the job) was conserva-        actual job performance. A validity coefficient of zero means
+                                                                                                                     tively estimated at .33 (one selectee for every three appli-   there is no relationship; a coefficient of 1.00 means there
+                                                                                                                     cants), therefore 1/F = 1.10;                                  is a perfect relationship. It is very rare for validity coeffi-
+                                                                                                                       6. The implementation cost of the selection program          cients to exceed .50 in a selection context. The higher the
+                                                                                                                     per person selected, or C,s, was estimated at $900;            validity coefficient, the more able we are to accurately pre-
+                                                                                                                                                                                    dict who will be successful on the job. The average validity
+                                                                                                                       7. The original cost of designing and validating the
+                                                                                                                                                                                    for the type of interview your company is using is approxi-
+                                                                                                                     selection instrument per person selected or C05, was esti-
+                                                                                                                                                                                    mately .20, whereas a test designed for another client
+                                                                                                                     mated as $13.
+                                                                                                                                                                                    yielded a coefficient of .40, which is consistent with re-
+                                                                                                                        When these estimates are entered into the equation          search evidence for these types of tests.
+                                                                                                                     given above, the resulting dollar gain was calculated as          For your company, a validity study consisting of the
+                                                                                                                     approximately $60,208,786. This figure represents the es-      following steps will be performed:
+                                                                                                                     timated net returns from using new selection procedures
+                                                                                                                     for one year when the returns are aggregated over the             1. Develop a test to measure employee performance
+                                                                                                                     average length of time that the new selectees are predicted    that is tailor-made to your firm;
+                                                                                                                     to stay with the firm.                                            2. Administer this test across all relevant categories of
+                                                                                                                                                                                    clerical/administrative personnel;
+                                                                                                                     DUR = 18 (470 X 16,290 X .40 X 1.10)
+                                                                                                                                                                                      3. Correlate the results of the test with performance
+                                                                                                                                                      -470(900) - 4 7 0 ( 1 3 )
+                                                                                                                                                                                    on the job to see how well the test predicts performance;
+                                                                                                                     DUR = $60,208,786.
+                                                                                                                                                                                       4. Use the results of this test to alter existing selection
+                                                                                                                     As vice president of the company, it is up to you to decide    practices so as to improve employee performance in the
+                                                                                                                     whether to implement the consultant's recommendations.         clerical/administrative category.
+
+                                                                                                                                                                                       The cost of designing and validating the selection test
+                                                                                                                                 Revised Validity-Only Condition
+                                                                                                                                                                                    will be $6,100. Because you expect to hire about 470 new
+                                                                                                                        Imagine you are the vice president of human resources       clerical/administrative employees this year from a large
+                                                                                                                     in a large American based multi-national company. This         pool of applicants we estimated that the total implementa-
+                                                                                                                     corporation employs over 10,000 people and had sales of        tion cost of the selection program will be $423,000. This
+                                                                                                                     over $4 billion dollars last year. The corporation has a       amount reflects recruiting costs, test administrators' sal-
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                                           RESEARCH REPORTS                                                       95
+
+
+                                                                                                                     ary, computer test scoring, and outlays for test booklets.           4. Use the results of this test to alter existing selection
+                                                                                                                     Total costs are approximately $429,100.                           practices so as to improve employee performance in the
+                                                                                                                        As vice president of the company, it is up to you to decide    clerical/administrative category.
+                                                                                                                     whether to implement the consultant's recommendations.
+                                                                                                                                                                                           The cost of designing and validating the selection test
+                                                                                                                                                                                       will be $6,100. Because you expect to hire about 470 new
+                                                                                                                                Revised Validity + Utility Condition
+                                                                                                                                                                                       clerical/administrative employees this year from a large
+                                                                                                                        Imagine you are the vice president of human resources          pool of applicants we estimated that the total implementa-
+                                                                                                                     in a large American based multi-national company. This            tion cost of the selection program will be $423,000. This
+                                                                                                                     corporation employs over 10,000 people and had sales of           amount reflects recruiting costs, test administrators' sal-
+                                                                                                                     over $4 billion dollars last year. The corporation has a          ary, computer test scoring, and outlays for test booklets.
+                                                                                                                     reputation for high quality products. Recently concerns           Total costs are approximately $429,100.
+                                                                                                                     have been raised about the quality of clerical/administra-           These costs should be evaluated in the context of the
+                                                                                                                     tive personnel.                                                   return the company can expect to receive. If the validity
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                        Potential new hires are interviewed before a decision          study which we are proposing does in fact indicate that
+                                                                                                                     is made to extend an offer, but at present no systematic          the new test has a validity coefficient of about .40 (which
+                                                                                                                     procedures exist by which clerical/administrative em-             is expected based on past experience and research), this
+                                                                                                                     ployees are selected. Although you are skeptical that the         would mean that more productive employees are being
+                                                                                                                     methods by which your firm selects such personnel can             selected than is currently the case. More productive em-
+                                                                                                                     be improved upon, an organizational consultant has been           ployees are obviously beneficial since they produce more
+                                                                                                                     retained to investigate the issue.                                for the company for the same labor costs as their less
+                                                                                                                        This consultant specializes in the development and vali-       productive counterparts. Utility analysis is the process of
+                                                                                                                     dation of selection practices that attempt to enable compa-       estimating the benefit to the company of selecting better,
+                                                                                                                     nies to select high performers in a legally defensible man-       more productive, employees.
+                                                                                                                     ner. She is also a member of the American Psychological              A utility analysis was conducted based on information
+                                                                                                                     Association, and graduated ten years ago with a Ph.D.             gained from supervisors in your company about the value
+                                                                                                                     from a prestigious university.                                    of more productive employees in this particular job cate-
+                                                                                                                        This particular consultant was contacted because she           gory, the expected validity of the new test, the number
+                                                                                                                     has done research showing that employee performance               of applicants for the jobs, and on the cost estimates of
+                                                                                                                     can be predicted through the use of selection testing. After      administering the new selection procedure. This analysis
+                                                                                                                     a discussion of the issues, the consultant submits a prelim-      indicates that the average clerical/administrative em-
+                                                                                                                     inary proposal. This is a summary of her proposal:                ployee will be "worth" $7,117 more to the organization
+                                                                                                                        Interviews like the ones your company uses have tradi-         than the average employee selected under the current sys-
+                                                                                                                     tionally had lower levels of validity than test based selection   tem because the better employees hired based on the new
+                                                                                                                     systems. Validity is simply an expression of the relationship     procedure will learn their jobs more quickly and continue
+                                                                                                                     between something used to predict job performance and             to improve as new policies and technology are put in
+                                                                                                                     actual job performance. A validity coefficient of zero means      place. Since the company expects to hire 470 employees
+                                                                                                                     there is no relationship; a coefficient of 1.00 means there       in this job category over the course of the year, this savings
+                                                                                                                     is a perfect relationship. It is very rare for validity coeffi-   equals $3,344,933 (470*7,117) per year to the company.
+                                                                                                                     cients to exceed .50 in a selection context. The higher the       Further, since employees in this job category stay with
+                                                                                                                     validity coefficient, the more able we are to accurately pre-     the company for an average of 18 years, the total bene-
+                                                                                                                     dict who will be successful on the job. The average validity      fit to the company over the life span of the employ-
+                                                                                                                     for the type of interview your company is using is approxi-       ees selected this year is estimated to be $60,208,786
+                                                                                                                     mately .20, whereas a test designed for another client            (18*3,344,933). In sum, the utility analysis shows that
+                                                                                                                     yielded a coefficient of .40, which is consistent with re-        improved selection has an impressive economic benefit
+                                                                                                                     search evidence for these types of tests.                         to the company.
+                                                                                                                        For your company, a validity study consisting of the              As vice president of the company, it is up to you
+                                                                                                                     following steps will be performed:                                to decide whether to implement the consultant's
+                                                                                                                                                                                       recommendations.
+                                                                                                                        1. Develop a test to measure employee performance
+                                                                                                                     that is tailor-made to your firm;
+                                                                                                                                                                                         SDy-Enhanced Revised Validity + Utility Condition
+                                                                                                                        2. Administer this test across all relevant categories of
+                                                                                                                     clerical/administrative personnel;                                  Imagine that you are a vice president of a large Ameri-
+                                                                                                                       3. Correlate the results of the test with performance           can based multi-national corporation. The company has
+                                                                                                                     on the job to see how well the test predicts performance;         over 10,000 employees, and last year's sales exceeded $4
+
+
+--- PAGE BREAK ---
+
+                                                                                                                     96                                                    RESEARCH REPORTS
+
+
+                                                                                                                     billion dollars. The company is highly regarded for the           amount reflects recruiting costs, test administrators' sal-
+                                                                                                                     quality of it's products. Lately, however, some people            ary, computer test scoring, and outlays for test booklets.
+                                                                                                                     within the organization have raised concerns about the            Total costs are approximately $429,100.
+                                                                                                                     quality of the clerical/administrative personnel that the            These costs should be evaluated in the context of the
+                                                                                                                     firm has been hiring.                                             return the company can expect to receive. If the validity
+                                                                                                                        Potential new hires are interviewed before a decision          study which we are proposing does in fact indicate that
+                                                                                                                     is made to extend an offer, but at present no systematic          the new test has a validity coefficient of about .40 (which
+                                                                                                                     procedures exist by which clerical/administrative em-             is expected based on past experience and research), this
+                                                                                                                     ployees are selected. Although you are skeptical that the         would mean that more productive employees are being
+                                                                                                                     methods by which your firm selects such personnel can             selected than is currently the case. More productive em-
+                                                                                                                     be improved upon, an organizational consultant has been           ployees are obviously beneficial since they produce more
+                                                                                                                     retained to investigate the issue.                                for the company for the same labor costs as their less
+                                                                                                                        This consultant specializes in the development and vali-       productive counterparts. Utility analysis is the process of
+This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.
+
+
+
+
+                                                                                                                     dation of selection practices that attempt to enable compa-       estimating the benefit to the company of selecting better,
+  This document is copyrighted by the American Psychological Association or one of its allied publishers.
+
+
+
+
+                                                                                                                     nies to select high performers in a legally defensible man-       more productive, employees.
+                                                                                                                     ner. She is also a member of the American Psychological              A utility analysis was conducted based on the expected
+                                                                                                                     Association, and graduated ten years ago with a Ph.D.             validity of the new test, the number of applicants for the
+                                                                                                                     from a prestigious university.                                    jobs, the cost estimates of administering the new selection
+                                                                                                                        This particular consultant was contacted because she           procedure, and the information gained from supervisors
+                                                                                                                     has done research showing that employee performance               in your company about the value of more productive em-
+                                                                                                                     can be predicted through the use of selection testing. After      ployees in this particular job category. The value of more
+                                                                                                                     a discussion of the issues, the consultant submits a prelim-      productive employees was obtained utilizing the Schmidt-
+                                                                                                                     inary proposal. This is a summary of her proposal:                Hunter global estimation procedure. This method is based
+                                                                                                                        Interviews like the ones your company uses have tradi-         on the following reasoning: If job performance in dollar
+                                                                                                                     tionally had lower levels of validity than test based selection   terms is distributed normally, then the difference between
+                                                                                                                     systems. Validity is simply an expression of the relationship     the value to the organization of the products and services
+                                                                                                                     between something used to predict job performance and             produced by the average (50th percentile) employee and
+                                                                                                                     actual job performance. A validity coefficient of zero means      those produced by an employee at the 85th percentile in
+                                                                                                                     there is no relationship; a coefficient of 1.00 means there       performance is equal to SDy. To facilitate these judgments,
+                                                                                                                     is a perfect relationship. It is very rare for validity coeffi-   raters are told to imagine how much the goods and ser-
+                                                                                                                     cients to exceed .50 in a selection context. The higher the       vices would cost if provided by an outside consulting
+                                                                                                                     validity coefficient, the more able we are to accurately pre-     firm. The magnitude of SDy then is inferred from the
+                                                                                                                     dict who will be successful on the job. The average validity      difference between these two estimates.
+                                                                                                                     for the type of interview your company is using is approxi-          This analysis indicated that the average clerical/adminis-
+                                                                                                                     mately .20, whereas a test designed for another client            trative employee will be "worth" $7,117 more to the organi-
+                                                                                                                     yielded a coefficient of .40, which is consistent with re-        zation than the average employee selected under the current
+                                                                                                                     search evidence for these types of tests.                          system because the better employees hired based on the new
+                                                                                                                        For your company, a validity study consisting of the           procedure will learn their jobs more quickly and continue
+                                                                                                                     following steps will be performed:                                to improve as new policies and technology are put in place.
+                                                                                                                                                                                        Since the company expects to hire 470 employees in this
+                                                                                                                        1. Develop a test to measure employee performance
+                                                                                                                                                                                       job category over the course of the year, this savings equals
+                                                                                                                     that is tailor-made to your firm;
+                                                                                                                                                                                       $3,344,933 (470*7117) per year to the company. Further,
+                                                                                                                        2. Administer this test across all relevant categories of      since employees in this job category stay with the company
+                                                                                                                     clerical/administrative personnel;                                for an average of 18 years, the total benefit to the company
+                                                                                                                       3. Correlate the results of the test with performance           over the life span of the employees selected this year is
+                                                                                                                     on the job to see how well the test predicts performance;         estimated to be $60,208,786 (18*3,344,933). In sum, the
+                                                                                                                                                                                       utility analysis shows that improved selection has an impres-
+                                                                                                                        4. Use the results of this test to alter existing selection
+                                                                                                                                                                                       sive economic benefit to the company.
+                                                                                                                     practices so as to improve employee performance in the
+                                                                                                                                                                                          As vice president of the company, it is up to you to
+                                                                                                                     clerical/administrative category.
+                                                                                                                                                                                       decide whether to i m p l e m e n t the c o n s u l t a n t ' s
+                                                                                                                        The cost of designing and validating the selection test        recommendations.
+                                                                                                                     will be $6,100. Because you expect to hire about 470 new
+                                                                                                                     clerical/administrative employees this year from a large                                         Received March 7, 1997
+                                                                                                                     pool of applicants we estimated that the total implementa-                                 Revision received July 9, 1997
+                                                                                                                     tion cost of the selection program will be $423,000. This                                          Accepted July 9, 1997 •
+

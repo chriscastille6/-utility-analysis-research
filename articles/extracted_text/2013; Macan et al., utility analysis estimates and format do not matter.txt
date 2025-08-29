@@ -1,0 +1,1113 @@
+                                        The current issue and full text archive of this journal is available at
+                                        www.emeraldinsight.com/0048-3486.htm
+
+
+
+
+Utility analysis: do estimates and Utility analysis:
+                                      do estimates
+          format matter?                    matter?
+                                       Therese Macan
+      Department of Psychology, University of Missouri-St Louis, St Louis,                                           105
+                             Missouri, USA, and
+                 Matthew R. Lemming and Jeffrey L. Foster
+                Hogan Assessment Systems, Tulsa, Oklahoma, USA
+
+Abstract
+Purpose – The present study aims to examine how adjustments to utility analysis (UA) estimates
+and restructuring UA information to include a tabular format affect managerial acceptance of a
+selection test.
+Design/methodology/approach – Managers across organizations (n ¼ 185) indicated whether
+they would accept and implement a new selection test based on a hypothetical scenario. They were
+randomly assigned to different scenarios based on UA dollar estimate size and visual format of the
+information.
+Findings – Overall, managers were indifferent to the dollar size of the UA estimate and were not
+influenced by presentation format. Managers did report use of UA information when making decisions
+and qualitative analyses revealed several patterns that help explain why this information was useful.
+Practical implications – When presenting UA information, practitioners should reexamine how
+they build support for both sides of the benefits-costs equation, potentially adding information beyond
+UA dollar amounts such as legal liability and company reputation.
+Originality/value – The quandary remains regarding how to communicate the value of human
+resource initiatives to organizational stakeholders. The paper adds to the literature by investigating
+two variables not previously examined, the size of UA dollar estimates and the format used to present
+UA information. More importantly, the study incorporates a unique qualitative component to better
+understand managers’ use or non-use of UA and corresponding rationale.
+Keywords Utility analysis, Return on investment, Costs vs benefits comparison, Selection,
+Managerial decision making, Manager buy-in, Managers, Value added, Human resourcing,
+Decision making
+Paper type Research paper
+
+Both public and private organizations across the globe want evidence of the value
+added from human resource (HR) initiatives such as recruiting, selecting, and training
+(Cascio and Boudreau, 2008; Fitz-enz, 2009; Truss and Gill, 2009; Winkler et al., 2010).
+Utility analysis (UA) has been proposed as one approach for communicating the
+financial benefits of HR interventions (Boudreau, 1991; Roth et al., 2001). UA allows HR
+professionals to describe costs and benefits in a language that managers may find
+meaningful: dollar amounts (Brogden and Taylor, 1950; Rauschenberger and Schmidt,
+1987), thereby adding credibility to the “soft” decisions often surrounding HR
+initiatives (see Connerly et al., 2003 for an example; Cascio, 2000; Landy, 1989). That is,
+HR managers must decide which selection assessment tools, programs or interventions                       Personnel Review
+                                                                                                         Vol. 42 No. 1, 2013
+to implement in their organizations. In making such decisions, there is much                                     pp. 105-126
+information to process. How many people are affected? For how long? What is the cost q Emerald Group Publishing0048-3486
+                                                                                                                     Limited
+
+of the intervention? How predictive is the intervention of future performance? What is      DOI 10.1108/00483481311285255
+
+
+--- PAGE BREAK ---
+
+PR     the value of job performance in the organization? Would there be any legal
+42,1   ramifications of using any such program? UA can help in making such decisions. UA
+       uses a mathematical model to combine much of this information and can result in a
+       dollar cost estimate of the value of the intervention, a common metric understood by
+       organizational decision makers. Although UA appears to aid decision-making,
+       researchers continue to debate its usefulness.
+106       Central to this debate is how the presentation of UA information influences
+       managerial decisions (Carson et al., 1998; Cronshaw, 1997; Latham and Whyte, 1994;
+       Macan and Foster, 2004; Sturman, 2000; Whyte and Latham, 1997). Although previous
+       research has examined the effects of UA information, conflicting findings have led to
+       questions regarding whether to present the information and if so, how. Thus,
+       researchers have called for a better understanding of the potential role and use of UA
+       information. The present study addresses these issues by investigating how
+       adjustments to UA estimates and presentation of UA information affect decisions.
+       Such insight can shed light on ways to improve the development and design of UA
+       models. As a result, practitioners can better communicate UA information to
+       organizational decision-makers.
+
+
+       Effects of UA estimates
+       Brogden (1949) developed the initial UA mathematical model and Cronbach and Gleser
+       (1965) expanded his work, resulting in the Brogden-Cronbach-Gleser UA model. Their
+       classic model lay dormant for several years, but is now considered and used as the
+       foundation for most UA research (Holling, 1998). The basic UA formula is an enhanced
+       benefits and costs equation, where UA ¼ benefits 2 costs.
+           Researchers have proposed several modifications to the basic single-attribute UA
+       model, considering additional economic and finance variables that account for variable
+       costs, discounting, tax rates (Boudreau, 1983) and other factors such as probationary
+       periods (De Corte, 1994) and multiple selection devices (Boudreau, 1991). Inclusion of
+       these variables tends to produce lower UA estimates. Using a computer simulation,
+       Sturman (2000) examined the implications of such adjustments, finding that many
+       resulted in a substantial decrease in the size of the UA estimate. Although researchers
+       have not examined the impact of lower UA estimates, this decrease may lead to greater
+       acceptance as managers may ignore utility estimates that seem unrealistic (Roth et al.,
+       2001). UA acceptance is important because the fundamental strength of the
+       information is its ability to show HR’s worth in a language managers can understand
+       (Rauschenberger and Schmidt, 1987). As Boudreau (1995) stated, the true “test” for UA
+       is its effect on decisions.
+           Several UA studies have focused on managerial acceptance of UA information.
+       Latham and Whyte (1994) and Whyte and Latham (1997) found reduced managerial
+       support for implementing a selection test when provided with UA information, noting
+       the “futility of utility.” In particular, Whyte and Latham (1997) found that managers
+       reacted negatively when presented with a written explanation of UA, a written
+       description of a UA performed for a selection system, and a video of an expert
+       explaining the logic of UA. They suggested that their findings question the basic
+       assumption of utility analysis; that managers rely on rational analysis when making
+       such management decisions.
+
+
+--- PAGE BREAK ---
+
+   It is also possible that managers did not understand or comprehend the UA                  Utility analysis:
+information, given the amount and potential complexity of the UA information                     do estimates
+provided. Examining this possibility, Carson et al. (1998) altered the scenarios used by
+Latham and Whyte (1994), making them shorter and easier to understand. In support                      matter?
+of their suppositions, across two separate studies, Carson et al. found that when
+managers reported understanding the UA information, presenting it in a more
+user-friendly manner can result in more positive reactions. Others have also found                        107
+small positive effects (Beckstein and Gilliland, 1996; Hazer and Highhouse, 1997).
+Macan and Foster (2004) not only found positive effects, but results showed that
+managers perceived UA information to be useful. Our first goal was to replicate
+previous positive findings when employing the shorter and easier to understand
+scenarios created by Carson et al. (1998):
+   H1. Managers receiving UA information will be more likely to accept a new
+       selection test than managers who do not receive UA information.
+
+UA estimate size
+It is important to examine the impact of additional alterations to UA information on
+managerial acceptance. As Latham and Whyte (1994) noted, the size of the UA estimate
+they used may have been a reason their findings contradicted previous UA results.
+While they argued that refinements should do little to increase managers’ confidence in
+UA estimates, Cronshaw (1997) advocated for experimentally varying the magnitude
+of the UA estimates. Our study addresses this issue and is the first to examine
+empirically the extent to which the size of the estimate affects managers’ use of the UA
+information in deciding whether or not to accept a new selection system.
+    In general, researchers have used the classic UA model as a springboard in
+producing even more refined UA estimates, primarily through various modifications
+based on a number of assumptions inherent in the model. These assumptions often
+limit the precision of the UA equation (e.g. inflating estimate size) because the model
+assumes that certain variables take on unrealistic properties and ignores other relevant
+variables that should be factored into the equation (Cascio, 1993). This may increase
+managerial uneasiness and skepticism because such estimates are often believed to be
+“too good to be true”, which leads to questions concerning the estimate’s credibility
+(Hunter et al., 1988). For management to accept utility analysis, estimates must be
+credible (Shultz, 1996; Skarlicki et al., 1996). Therefore, several algebraic modifications
+to the basic UA model have been proposed to account for more relevant factors when
+creating the UA estimate.
+    Sturman (2000) suggested that negative effects may result from a lack of credibility
+based on unrealistically large UA estimates. The final estimate in Latham and Whyte’s
+scenario was approximately $60 million dollars, which was also used in subsequent
+scenario replication studies (i.e. Carson et al., 1998; Macan and Foster, 2004). Sturman
+compared the impact of five adjustments to the equation on the final estimate:
+economic/financial variables, employee movement, probationary periods, multiple
+selection devices, and job offer rejections. His computer simulation demonstrated a
+substantial reduction in estimate size (from $60 to $2.2 million) when using all five
+modifications. Whereas economic variables had the largest impact ($42.8 million), the
+other four adjustments ranged from $0.5 to $9.3 million. No research to date, however,
+has examined whether altering the estimates leads to greater UA acceptance.
+
+
+--- PAGE BREAK ---
+
+PR     Therefore, our study examined whether estimate size actually has an effect on
+42,1   managerial acceptance of UA information.
+          We focused on modifying Carson et al.’s (1998) scenarios to include conditions with
+       adjusted UA estimates. We wanted to extend the literature by examining managerial
+       reactions to lower estimates. We included Latham and Whyte’s (1994) original $60
+       million estimate. Furthermore, we used Sturman’s (2000) economic adjustments to
+108    create a moderate estimate of $16.9 million dollars. Finally, although using all five
+       adjustments may not be realistic in many situations, we included a lower estimate
+       because many managers may not control (or relate to) monetary estimates ranging
+       from $15-$60 million dollars (Shultz, 1996). Therefore, we examined a third estimate
+       that took all five adjustments into consideration: $2.2 million dollars. These modified
+       estimates should provide anchors for more accurate decision-making (Tversky and
+       Kahneman, 1974). We hypothesized that managers would be most accepting of this
+       lowest estimate:
+          H2. Adjustments to UA estimates will impact managers’ likelihood of accepting a
+              new selection test such that lower estimates will increase acceptance.
+
+       Presentation of UA information
+       We also examined the effects of presentation format. As the expert in Whyte and
+       Latham (1997), Cronshaw (1997) offered his opinion that to be accepted, UA
+       information should focus on being informational to managers. He suggested that
+       managers may have felt intimidated by “high-pressure persuasive tactics” in his
+       presentation, although that was not his intention or purpose (Cronshaw, 1997).
+       Persuasive communication research may shed light on this issue (Highhouse, 1996).
+       Petty and Cacioppo (1986) suggested that when selling an argument, one should
+       decrease the level of complexity in the message. Dutton and Ashford (1993) advised
+       that succinctly framing and describing information increases attention to the
+       information. Carson et al. (1998) applied this principle, finding that managers reacted
+       more positively to simpler scenarios.
+           Potential users of UA information need background and contextual information to
+       make informed decisions, especially with limited exposure or training in UA
+       methodology (Macan and Highhouse, 1994; Sturman, 2003). We sought to examine the
+       effects of restructuring UA information by altering the visual presentation of the
+       information through use of a table. Users of UA information not only need financial
+       estimates, but also an explanation of how researchers arrived at the results. With strict
+       “textual” formats, even managers who have a vested interest in the information may
+       feel overwhelmed. Managers may better make sense of numerical and statistical
+       information placed in graphs or tables as it sets the information apart from the text
+       ( Jarvenpaa and Dickson, 1988; Kleinmuntz and Schkade, 1993). Subsequently, research
+       suggests that perceptually different information has a greater impact on decision
+       making (Fagerlin et al., 2005; MacGregor and Slovic, 1986).
+           Latham and Whyte (1994) included an expectancy table in their study, arguing that
+       a visual depiction should prove effective in convincing managers to accept a selection
+       procedure. Their findings, however, did not provide support for the presentation of the
+       expectancy table. Comparing expectancy table information to UA information does
+       not, however, allow for a direct comparison of the exact same content. We argue that to
+       examine if information provided in a table is more effective than presenting the
+
+
+--- PAGE BREAK ---
+
+information in textual format, the same content should be presented. In the present       Utility analysis:
+study, we make this direct comparison by presenting the same UA information in               do estimates
+written form and in a tabular format.
+   We argue that the way previous research has presented UA information may not be                 matter?
+the most advantageous when the goal is acceptance of a new selection test. Thus, we
+hypothesized that when numerical findings in UA scenarios are in tabular form,
+managers would be more accepting of the information as compared to text-only                          109
+formats such as that used within Carson et al. (1998):
+   H3. Presentation format will impact managerial acceptance of a new selection test
+       such that the use of tables will increase acceptance.
+In addition, we examined the combined effect between the original and restructured
+format conditions with lower financial estimates on managerial acceptance:
+   H4. Presentation format will have a stronger impact for managers who receive
+       low UA estimates than those who receive high UA estimates.
+Finally, to fully investigate the “managerial acceptance – UA information”
+relationship, we included a qualitative component and directly asked respondents to
+share their reasoning behind their choices. Much of the previous research examined
+how or if managers react to specific manipulated variables, but had not asked
+managers why they did or did not use UA information. Our study is the first to answer
+the repeated calls from researchers that such a qualitative approach could prove
+fruitful (Carson et al., 1998; Cronshaw, 1997; Latham and Whyte, 1994; Winkler et al.,
+2010; Whyte and Latham, 1997). Understanding the underlying reasons for managerial
+actions and behaviors is an essential first step to offering ways to change and improve
+the UA process. Macan and Foster (2004) attempted to identify how managers make
+decisions by asking them to indicate the three most influential pieces of information
+they relied on when determining if to implement a selection test. Approximately
+two-thirds of their sample indicated that UA information was crucial to their
+decision-making process. While this confirmed the criticality of UA results, they did
+not ask why UA information was useful. Therefore, our study is unique in that we
+directly asked managers to describe what information they used and why it was a
+determining factor in their decision-making process.
+
+Method
+Participants
+We recruited participants using a similar approach as in previous studies (i.e. Hazer
+and Highhouse, 1997; Macan and Foster, 2004). Participants were managers identified
+by undergraduate business students who worked directly on determining resource
+allocation decisions within their organizations. Our sample (n ¼ 185)[1] consisted of
+slightly more males (61 percent), with a mean age of 40 years (range 20-62). Managers
+stayed in their current job for an average of nine years and almost half (49 percent)
+made resource allocation decisions at least once a week, with the median resource
+allocation approximately $150,000 per year. Most managers (73 percent) worked in
+positions outside of their human resource department, yet almost all managers (94
+percent) had some level of responsibility for hiring employees. Over half (54 percent)
+were employed in the private sector and most (68 percent) worked in a service industry.
+
+
+--- PAGE BREAK ---
+
+PR     As expected, only a small number (20 percent) had previously encountered UA during
+42,1   their career.
+
+       Study design
+       We used a 3 £ 2 between-subjects factorial design with estimate adjustment (low vs
+       moderate vs high) and format (text vs restructured table format). A control group
+110    received validity-only information. We randomly assigned participants to one of these
+       seven conditions.
+
+       Materials
+       We used seven sets of stimulus materials. Carson et al.’s (1998) revised validity-only
+       scenarios served as the basis for all seven conditions. Each scenario presented
+       participants with four key sections of information:
+          (1) context – a description of the manager’s role in the situation and background
+              information on the company, job, and current employee job performance;
+          (2) description of current selection procedures;
+          (3) qualifications of consultant presenting new selection test; and
+          (4) consultant’s summary of the proposal, which includes a description of the new
+              selection test’s validity, information about the procedures used to assess
+              validity, and the costs associated with the new test.
+       These four sections comprised the validity-only control condition.
+          The other six conditions also contained UA information. For the estimate
+       adjustment manipulation, Carson et al.’s revised validity þ UA scenario (i.e. $60
+       million) represented the high estimate condition. For the moderate estimate adjustment
+       condition, we modified the Carson et al.’s scenario by reducing the original estimate to
+       $16.9 million. Similarly, the low estimate adjustment condition further reduced the
+       estimate to $2.2 million.
+          The format manipulation used Carson et al.’s scenario for the original format
+       condition. For the restructured format condition, we visually restructured Carson et al.’s
+       scenario by presenting the numerical UA information in tabular form in addition to the
+       existing textual form. The only modifications we made to Carson et al.’s scenarios
+       involved modifying estimate numbers and inserting a table with estimate information
+       for the format manipulation conditions. The only difference from those used in prior
+       studies is the mode of presentation.
+
+       Procedure
+       We randomly distributed scenarios to business students and instructed them to
+       identify a manager willing to complete the study materials. They received extra class
+       credit if they delivered the materials back to the researcher. The materials contained
+       instructions and one of the seven scenarios. That is, managers read a scenario
+       describing a critical selection problem with a possible solution. They were instructed to
+       choose whether to implement the solution given available information by completing a
+       set of questionnaires. In addition, managers provided relevant demographic
+       information, including name and contact information for answer verification
+       purposes. We contacted a third of the final sample and all confirmed their participation.
+
+
+--- PAGE BREAK ---
+
+Measures                                                                                     Utility analysis:
+Managers responded to a series of questionnaires that assessed the following variables:         do estimates
+degree of acceptance of the proposed solution; what pieces of information they used
+when forming their decision; and qualitative rationale (e.g. reasoning behind their                   matter?
+decision).
+   Acceptance. Participants completed eight items taken from Macan and Foster (2004),
+measuring their degree of acceptance of the test (“ACCEPTANCE”; 1 ¼ not at all;                          111
+5 ¼ very). Examples include “How likely are you to implement the new selection test?”
+and “How confident are you that the new selection test will improve the quality of
+employees that your organization hires?” We averaged responses to produce a mean
+acceptance score. Internal consistency analyses revealed high reliability (coefficient
+alpha ¼ 0.92).
+   We asked two related acceptance items: “Would you suggest using the test if asked
+for your opinion by the president of the company?” (“SUGGEST”; 1 ¼ would strongly
+oppose; 4 ¼ would strongly suggest) and “Would you implement the test if you were
+the final decision maker?” (“IMPLEMENTATION”; 1 ¼ yes; 0 ¼ no).
+   Useful information. In addition, we provided participants with a list describing each
+type of information found in the scenario. They rated the importance of each piece of
+information (1 ¼ unimportant; 5 ¼ very important) and after making this rating, they
+ranked the three pieces of information they found most influential in making their
+decision on whether to use the proposed selection test.
+   Qualitative rationale. We asked participants several questions related to the reasons
+behind their decision. First, participants elaborated on the choices indicated on the
+useful information questionnaire by providing reasons why the three pieces of
+information chosen were the most influential. Participants provided this information in
+a one-page or less written narrative. Second, we asked participants about their
+decision-making experience, focusing on whether the information presented was
+realistic and believable. We designed these questions to explore what they liked and
+disliked about various aspects (e.g. type, structure) of the information and their ability
+to understand the information. We assessed this with multiple items (1 ¼ not at all;
+5 ¼ very). Examples include “How believable was the UA estimate?” and “How well
+did you understand the proposal for the new selection test?”
+
+Results
+Table I presents the descriptive statistics for the acceptance, suggest, and
+implementation variables for each of the seven study conditions. To test our
+hypotheses, we conducted a series of regressions. We ran regression analyses for the
+two continuous dependent measures (i.e. acceptance and suggest) and logistic
+regression for the dichotomous dependent variable (i.e. implementation). Across all
+regressions, we entered four covariates in the first step that included: manager
+knowledge of UA, manager gender, sector (private vs public), and manager level of
+responsibility for hiring.
+
+Effect of UA estimate adjustments
+Comparing findings. Given previous findings, we expected that managers who received
+UA information would be more likely to accept the selection test than those who
+received validity-only information. In using regression analysis, we dummy coded the
+
+
+--- PAGE BREAK ---
+
+PR
+                                                                                                                            Implementation
+42,1                                                                            Acceptance               Suggest             Percentage of
+                             Condition                                   n     Mean     SD             Mean    SD            yes responses
+
+                             Validity-only                              27      3.36        0.80          2.56    0.70               59
+                             High estimate, original format             26      3.79        0.76          3.15    0.67               88
+112                          Moderate estimate, original format         26      3.89        0.60          3.19    0.57               88
+                             Low estimate, original format              26      3.63        0.88          3.04    0.72               77
+                             High estimate, restructured format         27      3.53        1.01          3.04    0.85               74
+                             Moderate estimate, restructured format     26      3.60        0.99          3.04    0.66               81
+Table I.                     Low estimate, restructured format          27      3.45        0.93          2.96    0.71               74
+Descriptive statistics for
+acceptance, suggest and      Notes: Acceptance is a mean score based on eight items (1 ¼ not at all; 5 ¼ very); Suggest is one item
+implementation by            (1 ¼ would strongly oppose; 4 ¼ would strongly suggest); Implementation is dichotomous (0 ¼ no;
+experimental condition       1 ¼ yes)
+
+
+                             categorical variables to determine whether there was a significant difference between
+                             the validity-only condition and all conditions containing UA information for the three
+                             dependent measures. After controlling for the four covariates in the first step, we
+                             entered the categorical dummy coded variable in the second step. As shown in Tables II
+                             and III respectively for type of information, we found significant overall effects for
+
+                                                                Acceptance                                        Suggest
+                                                         b     SE    t     F           R2          b        SE       t          F         R2
+
+                             Covariates                                       0.93 0.02                                       1.71        0.04
+                             Knowledge of UA          2 0.15   0.17   20.90                    0.10        0.14   0.74
+                             Gender                   2 0.15   0.14   21.07                   20.13        0.11 2 1.18
+                             Sector                   2 0.10   0.13   20.73                   20.19        0.10 2 1.75
+                             Hiring responsibility    2 0.09   0.27   20.32                   20.28        0.22 2 1.27
+
+                             Type of information        0.22 0.19      1.15 1.01 0.03              0.43 0.15       2.91 * * 3.11 * * 0.08
+
+                             Adjustment                                       0.88 0.04                                       2.29 *      0.09
+                             Low                        0.12 0.21      0.57                        0.38 0.17       2.32 *
+                             Moderate                   0.31 0.22      1.45                        0.48 0.17       2.83 * *
+                             High                       0.22 0.21      1.03                        0.44 0.17       2.62 * *
+
+                             Format                                           1.38 0.05                                       2.72 *      0.09
+                             Original                   0.35 0.20      1.73                        0.48 0.16       3.03 * *
+                             Restructured               0.09 0.20      0.48                        0.38 0.16       2.44 *
+
+                             Adjustment, format                               0.94 0.05                                       1.69        0.09
+                             Low, original              0.24   0.25    0.94                        0.39    0.20    1.96 *
+                             Moderate, original         0.49   0.25    1.78                        0.53    0.20    2.65 * *
+Table II.                    High, original             0.36   0.24    1.49                        0.52    0.19    2.70 * *
+Predictors of continuous     Low, restructured          0.01   0.24    0.05                        0.36    0.19    1.86
+criterion variables with     Moderate, restructured     0.19   0.25    0.78                        0.43    0.20    2.22 *
+no UA Information            High, restructured         0.08   0.25    0.32                        0.36    0.20    1.82
+control condition as
+reference category           Notes: *p , 0.05; * *p , 0.01
+
+
+--- PAGE BREAK ---
+
+                                                                                                Utility analysis:
+                                                    Implementation
+                            B      SE      Wald       Odds Ratio      x2      Nagelkerke R 2       do estimates
+Covariates                                                           2.19          0.02
+                                                                                                         matter?
+Knowledge of UA            0.45    0.44    1.09          1.58
+Gender                    20.02    0.38    0.00          0.98
+Sector                     0.31    0.37    0.70          1.36                                                     113
+Hiring responsibility      0.14    0.81    0.03          1.15
+
+Type of information         1.02   0.47    4.67 *        2.77        4.46 *        0.06
+
+Adjustment                                                           5.68          0.06
+Low                         0.78   0.54    2.12          2.19
+Moderate                    1.27   0.58    4.85 *        3.56
+High                        1.05   0.55    3.63          2.87
+
+Format                                                               6.12 *        0.07
+Original                    1.32   0.53    6.08 *        3.73
+Restructured                0.79   0.50    2.47          2.19
+
+Adjustment, format                                                   7.62          0.08
+Low, original               0.90   0.65    1.94          2.46
+Moderate, original          1.57   0.76    4.25 *        4.80
+High, original              1.61   0.75    4.64 *        4.98                                                 Table III.
+Low, restructured           0.66   0.61    1.14          1.93                                   Predictors of categorical
+Moderate, restructured      1.04   0.67    2.49          2.82                                  criterion variable with no
+High, restructured          0.66   0.62    1.12          1.93                                    UA information control
+                                                                                                   condition as reference
+Notes: *p , 0.05; * *p , 0.01                                                                                    category
+
+
+
+
+suggest (F(5,178) ¼ 3.11, p , 0.01, R 2 ¼ 0.08) and Implementation (X 2(1) ¼ 4.46,
+p , 0.05, Nagelkerke R 2 ¼ 0.06), providing support for H1. Managers were more
+likely to suggest and implement the selection test when UA information was provided
+compared to when they had access to validity information only.
+   UA estimate adjustments. To test H2, we examined whether managers presented
+with the lower UA estimates were more likely to accept the selection test compared to
+managers provided with higher UA estimates and to managers with no UA
+information (i.e. control condition). That is, we ran regressions with the four covariates
+in the first step. Then, in the second step, we entered the dummy-coded estimate
+adjustment conditions with the no UA information control condition as the reference
+category. As shown in Table II, we found a significant effect for the dependent
+measure, Suggest (F(7,178) ¼ 2.29, p , 0.05, R 2 ¼ 0.09). Examining the coefficients
+revealed that managers were more likely to suggest use of the selection test across all
+the estimate adjustment conditions regardless of level (i.e. high, moderate or low), in
+comparison to those who did not have access to UA information (validity only control).
+   Format of UA information. Next, we examined whether the way UA information is
+presented affected acceptance. Again, we ran regressions with the four covariates in
+the first step. Then, in the second step, we entered the dummy-coded format conditions
+with the no UA information control condition as the reference category. As shown in
+
+
+--- PAGE BREAK ---
+
+PR                         Table II, we found a significant effect for the dependent measure, suggest
+42,1                       (F(6,178) ¼ 2.72, p , 0.05, R 2 ¼ 0.09). Examining the coefficients revealed that
+                           managers were more likely to suggest use of the selection test across both format
+                           conditions in comparison to those who did not have access to UA information (validity
+                           only control). We also found a significant effect of Implementation (X 2(2) ¼ 6.12,
+                           p , 0.05, Nagelkerke R 2 ¼ 0.07) as displayed in Table III. The Wald statistic indicated
+114                        that managers who received the original UA format as used by other researchers said
+                           they would be more likely to implement the selection test compared to those who did
+                           not receive UA information.
+                               Interaction of adjustment and format. We also examined how a combination of
+                           estimate adjustment and format might affect managers’ acceptance. We ran
+                           regressions for each of the three dependent variables with the four covariates in the
+                           first step. We then entered as a set the dummy-coded estimate adjustment and format
+                           combinations with the no UA information control condition as the reference category.
+                           As shown in Tables II and III, the overall effect was not significant.
+                               Overall model. We conducted three additional sets of regressions for each of the
+                           dependent variables. In the first step we entered the four covariates. In the second step,
+                           we entered a dummy-coded variable (i.e. Type of Information) to determine whether
+                           there was a significant difference between the validity-only condition and all
+                           conditions containing UA information. In the third step, we entered two dummy-coded
+                           variables to represent the three estimate adjustment conditions. That is, in this
+                           regression, we dummy-coded the variables without reference to the validity-only
+                           control group. Likewise, in the fourth step, we entered a dummy-coded variable for
+                           format. Finally, in the fifth step, we entered the interaction between the Adjustment
+                           and Format conditions. As shown in Table IV for the continuous dependent variables
+
+                                                             Acceptance                                Suggest
+                                                     b     SE     t     F        R2      b      SE        t            F       R2
+
+                           Covariates                                     0.93   0.02                               1.71       0.04
+                           Knowledge of UA         20.17   0.17   20.99                  0.07   0.14     0.52
+                           Gender                  20.14   0.14   20.98                 20.09   0.11   2 0.82
+                           Sector                  20.03   0.14   20.23                 20.15   0.11   2 1.34
+                           Hiring responsibility   20.17   0.28   20.63                 20.36   0.22   2 1.66
+
+                           Type of information      0.47   0.25    1.89   1.01   0.03    0.56   0.20     2.84 * *   3.11 * *   0.08
+
+                           Adjustment                                     0.91   0.04                               2.32 *     0.09
+                           Low                     20.24   0.25   20.95                 20.18   0.20   2 0.88
+                           High                    20.11   0.25   20.45                 20.04   0.20   2 0.22
+
+                           Format                                         1.28   0.06                               2.18 *     0.09
+                           Restructured            20.28   0.25   21.13                 20.13   0.20   2 0.67
+
+                           Adjustment, format                             1.02   0.06                               1.77       0.10
+Table IV.                  Low, restructured        0.06   0.35    0.16                  0.10   0.28     0.37
+Predictors of continuous   High, restructured      20.04   0.35   20.11                 20.07   0.28   2 0.26
+criterion variables:
+overall model              Notes: *p , 0.05; * *p , 0.01
+
+
+--- PAGE BREAK ---
+
+and Table V for the categorical dependent variable, results are similar to previous           Utility analysis:
+findings that managers who had UA information were more likely to suggest using the              do estimates
+test and implement it than those who did not have access to UA information. The size
+of the estimate and how the UA information was presented overall did not tend to                       matter?
+affect these results.
+
+Qualitative analyses                                                                                             115
+Table VI displays average importance ratings and shows which pieces of information
+managers ranked as essential for making their final decisions. Approximately
+two-thirds of managers indicated a clear preference for UA information, regardless of
+UA condition, followed by the validity of the test (55.1 percent), the validity procedures
+(40.5 percent) and the cost of the test (39.2 percent). After excluding UA information for
+the control group, validity and cost of the new test tied for the highest ranking at 59.3
+percent, followed next by validity procedures (44.4 percent).
+   To obtain additional qualitative rationales, we asked managers to explain their
+reasoning behind the rank ordering. Two trained raters coded all 55 managerial
+narrative responses to identify general themes in explaining the effect UA information
+had on managerial decisions (Cohen’s kappa ¼ 0.87). Both raters used an inductive
+approach where they let the data drive the coding scheme, which resulted in four
+themes: focus on ROI, legitimacy of UA, importance of the benefit vs cost comparison,
+and the use of other information. Examples of statements made within each of the four
+themes are displayed in Table VII.
+   The first central theme consisted of a return on investment (ROI) rationale. The
+general consensus revealed that UA information was another way of stating the return
+on investment that occurs when comparing the benefits and costs associated with
+
+                                                   Implementation
+                           B      SE      Wald       odds ratio      x2      Nagelkerke R 2
+
+Covariates                                                          2.19          0.02
+Knowledge of UA          20.55    0.46    1.44          0.58
+Gender                    0.13    0.40    0.11          1.14
+Sector                   20.18    0.39    0.21          0.84
+Hiring responsibility    20.41    0.84    0.24          0.66
+
+Type of information        1.62   0.76    4.52 *        5.03        4.46 *        0.06
+
+Adjustment                                                          1.00          0.06
+Low                      20.71    0.79    0.82          0.49
+High                      0.00    0.88    0.00          0.99
+
+Format                                                              1.94          0.08
+Restructured             20.58    0.80    0.52          0.56
+
+Adjustment, format                                                  0.55          0.08
+Low, restructured         0.34    1.03    0.11          1.40                                                  Table V.
+High, restructured       20.42    1.11    0.14          0.66                                   Predictors of categorical
+                                                                                              criterion variable: overall
+Notes: *p , 0.05; * *p , 0.01                                                                                      model
+
+
+--- PAGE BREAK ---
+
+                                                                                                                                                   PR
+                                                                                                                                                   42,1
+
+
+                                                                                                                                    116
+
+
+
+
+  Table VI.
+
+
+
+  selection test
+  Information managers
+  reported to be influential
+  in implementing the new
+                                                                                   Percentage of
+Type of                                     Most     Second most   Third most    responses for UA   Percentage of responses   Percentage of responses for
+information                    Ratinga   influential influential   influential        group           for non-UA groupb         entire sample (n ¼ 185)
+
+UA informationc                 4.19        50           28            21              62.7                  NA                           NA
+Validity of the
+new test                        4.21        42           33            28              55.1                  59.3                         55.7
+Validity
+procedures used                 4.06        14           34            28              40.5                  44.4                         41.1
+Cost of the new
+test                            3.95        26           24            28              39.2                  59.3                         42.2
+Consultant’s
+qualifications                  3.81        12           20            18              25.3                  37.0                         27.0
+Current
+selection
+procedures                      3.58         8           12            13              14.6                  37.0                         17.8
+Job                             3.32         7            7            13              13.9                  18.5                         14.4
+UA tabled                       3.24         0            5             6              13.8                  NA                           NA
+Size of UA
+estimate                        3.41         3            6            11              12.7                  NA                           NA
+Position                        3.06        10            7             5              10.1                  22.2                         11.9
+Company                         3.31         4            6            11               9.5                  22.2                         11.4
+Notes: aImportance Rating Scale: 1=Unimportant; 5=Very Important; bPercentages based on the 27 participants in the Validity-Only Control group; cUA
+Information was only given to 158 of the 185 participants responding to these items; dUA Table was only given to 80 of the 185 participants responding to
+these items
+
+
+--- PAGE BREAK ---
+
+                                                                                                         Utility analysis:
+Four themes with corresponding summary             Sample quotes
+                                                                                                            do estimates
+1. Focus on ROI: information of how much the       1. “Any process that ensures qualified employees               matter?
+   company would benefit from implementing the        that will positively benefit the company’s
+   proposal                                           bottom line should be used”
+                                                   2. “Spend money to save some is a wise decision to
+                                                      me”                                                                117
+                                                   3. “The economic value to the company alone was
+                                                      worth investigating further”
+2. Legitimacy of UA: the extent to which the UA 1. “If the data is not valid, the estimated savings
+   information is seen as accurate and valid          would be incorrect”
+                                                   2. “If there is a flaw in the information, then the
+                                                      estimates may be inaccurate”
+                                                   3. “The UA calculations make too many
+                                                      assumptions”
+3. Importance of the benefit vs cost comparison: 1. “UA info gave high level picture of the risk and
+   the value of having both pieces of information,    reward provided by the new process”
+   the cost and the benefits                       2. “The cost and benefits were most important
+                                                      because that is the information that I would
+                                                      need to sell it to my boss”
+                                                   3. “Need to compare cost and benefits to make a
+                                                      good decision”
+4. Use of other information: the importance of     1. “I would like to see cash flow and profit/loss
+   having non-UA information                          statements used more prominently”                             Table VII.
+                                                   2. “Validity of the test is important because we      Summary of managers’
+                                                      want to make sure it is a valid process before         written qualitative
+                                                      this time and money is involved”                     comments regarding
+                                                   3. “If it costs too much to get slightly better            usefulness of UA
+                                                      results, it may not be worth it”                              information
+
+
+implementing the new selection test. Based on the UA information, many managers
+were impressed with how much the company would benefit from implementing the
+proposal and realized that the company would be better off using the new test because
+more qualified, productive employees would be hired, resulting in significant savings
+for the company over the long-term. Examples of managers’ written comments include:
+“any process that ensures qualified employees that will positively benefit the
+company’s bottom line should be used,” “spend money to save some is a wise decision
+to me,” and “the economic value to the company alone was worth investigating
+further.”
+   Conversely, a smaller number of managers were concerned with the legitimacy of
+the UA information. Several managers described the numbers found in the UA
+information as “soft” and were not convinced that the UA was “accurate” and valid.
+They believed the numbers were “too good to be true” and “if the data is not valid, the
+estimated savings would be incorrect.” Managers also noted that the scenarios either
+made “too many assumptions” or “did not provide enough detail to take the
+information seriously.” This viewpoint was dispersed across all three adjustment
+levels, with half of these cases residing in the low estimate (i.e. $2.2 million) condition,
+providing some evidence that even the lower estimate may still be too large for
+managers to accept as true and believable. These managerial responses also
+
+
+--- PAGE BREAK ---
+
+PR     corroborate Sturman’s (2000) “two fundamental problems,” that he argued are holding
+42,1   back UA as a useful tool for managers in addition to the dollar value. That is, our study
+       provides evidence for Sturman’s notion that the complexity of the UA computation and
+       the necessity for training of managers in using such sophisticated UA information is
+       needed.
+          Another pattern centered on how UA gave the reader a better sense of the overall
+118    picture by presenting both benefits and costs. While only a handful of managers in the
+       UA conditions noted the importance of having access to the benefits and costs for
+       implementing the new test, a third of the managers in the validity-only control group
+       decided that it was difficult to make a decision based solely on the costs involved with
+       the proposal (e.g. “need to compare benefits to how much cost to obtain true benefits.”
+       Again, the validity-only group received cost information but was not provided with the
+       possible benefits, which might also explain why managers in the control group ranked
+       cost as more influential relative to the managers in the UA conditions. Interestingly,
+       managers often mentioned cost in the same breath when describing UA information,
+       which makes sense because it is quite difficult to discuss the financial impact of the test
+       without examining both sides of the benefit – cost equation. Thus, it becomes apparent
+       that at least some managers use, or want to at least have, UA information because of its
+       inherent benefit vs cost comparison.
+          Managers also provided an explanation as to why they believed other pieces,
+       besides UA information, were important. As stated earlier, the control group made
+       decisions primarily using the validity and cost information. These factors were also
+       highly important for those who received UA information, ranking second and fourth,
+       respectively (see Table VI). In particular, the majority of managers, who explained why
+       validity was important to forming their decision, stated that it was necessary to have
+       “confidence” in the validity of the test because without this, there is no point in
+       considering anything else. For example, one manager explained that “the validity of
+       the test proves its effectiveness in the past and offers assurances of its usefulness in the
+       current company.” Another manager felt it was essential to start with a “proven,
+       accurate tool” because it provides the key to a successful selection program.
+       Furthermore, managers indicated that if a test lacks validity, then it is neither worth
+       the time nor money that would be spent to change the system. Although a few
+       managers were not convinced that the test was valid, it was evident that test validity is
+       a sticking point with managers when making their decision, if for no other reason than
+       to have a “basis for comparison” between the new and old selection tests.
+          Similarly, this type of thinking runs parallel with their preference for knowing the
+       cost of the new test. UA and validity information play important roles in managerial
+       decision-making, but the cost of the test was also a critical piece of information. Some
+       managers placed the cost of the test in the context of whether or not the organization
+       could actually allocate the money needed to pay for the test given the current state of
+       the organization’s budget. As one manager explained, the “bottom-line for any
+       company is the cost factor.” To support this, over a third of the managers felt that the
+       cost of the test was an essential factor in their decision-making and another third
+       indicated that the costs exceeded any benefits that may result from implementing the
+       test.
+          The overall qualitative picture revealed that managers used cost and UA
+       information to show how the proposal affects the company’s bottom line, but there is
+
+
+--- PAGE BREAK ---
+
+no point in using a new test without having validity evidence to support its                 Utility analysis:
+implementation. These results offer a view into the types of information managers               do estimates
+want when making decisions and also provide a better understanding as to why they
+desire these pieces over others.                                                                      matter?
+   Reactions to decision-making scenario. We measured understanding of the proposal
+with the same two items used by Carson et al. (1998), which asked managers to what
+extent did they understand the proposal and was the proposal clearly presented. We                       119
+averaged these two items to create an understanding of the proposal composite score
+(1 ¼ not at all; 5 ¼ very) with an alpha of 0.76. The questionnaire also included two
+additional items targeting the understanding of certain pieces of information in the
+scenarios, specifically validity and UA information. Again, we averaged these two
+items to create an understanding of the information composite score (1 ¼ not at all;
+5 ¼ very) with an alpha of 0.80. Over two-thirds of the managers indicated that they
+had a good understanding of the proposal and over half felt they were able to
+comprehend the information presented in the scenario[2]. We examined whether
+managers would have a better understanding of the proposal and its information due
+to the UA table insertion, but we found no difference between the restructured and
+original format groups for both understanding of the proposal (F(1, 152) ¼ 2.00,
+p , 0.16, eta2 ¼ 0.01) and understanding of the information (F(1, 152) ¼ 0.99,
+p , 0.32, eta2 ¼ 0.01).
+   In addition to understanding UA information, managers provided their perception
+on the realism found in the scenarios. Overall, the majority found the scenarios realistic
+and plausible given the context of the situation. We found no differences regarding
+realism for format and estimate conditions.
+
+
+Discussion
+Prior research provides two arguments for the mixed results found in the current
+research stream. Latham and Whyte’s (1994) conclusion focused on the idea that
+managers reacted negatively to UA information because of something inherently
+wrong with the UA model. Carson et al. (1998) went a different direction and
+emphasized the presentation of UA information as the driving force behind managerial
+acceptance. From this, we designed the present study to explore both types of
+explanations by addressing how estimate size and format structure influence
+managerial acceptance. Our primary goal was to provide guidance on how to enhance
+UA information through major (adjusting the UA equation) and minor (tweaking UA
+information structure) modifications. Our results did not support either approach.
+Instead, we learned that managers were indifferent to estimate size and were not more
+favorable to UA information when presented in a tabular format compared to the
+original, written presentation. We did find, however, that managers report using UA
+information, perhaps as a means to support their suggestions to upper management to
+use the new selection test. Our qualitative findings provide unique insight into how
+managers use UA information when making decisions, an important element of the UA
+puzzle not revealed by previous research. Such managerial perspective can serve to
+change the direction of future research in UA. We discuss each point and
+corresponding ideas for future research studies below.
+
+
+--- PAGE BREAK ---
+
+PR     Size of UA estimate
+       Regarding UA estimate magnitude, Hazer and Highhouse (1997) identified the need for
+42,1   investigating how much of an effect UA estimate size has on the credibility of UA
+       information. Our results revealed that managers were no more accepting of the smaller
+       estimates compared to the higher estimates. One possible explanation is that even
+       Sturman’s (2000) adjusted estimates were too high for managers to use in a meaningful
+120    way. For example, several managers expressed surprise at the size of the UA estimate
+       and the majority questioned its believability and credibility, even in the low estimate
+       condition. Although estimate magnitude may still be too large for managers to truly
+       believe, the levels used in the scenarios are more realistic than what has been
+       empirically tested in past research.
+          Clearly the estimate size may have disheartened some managers, yet another
+       potential driving force behind their indifference may stem from their perception of the
+       estimate’s accuracy. UA information can potentially bring something unique and
+       useful to the decision-making situation as long as the information is verified as
+       accurate and valid. Our qualitative data suggests that managers wanted clarifying
+       information (i.e. explanations of assumptions and other supporting data such as
+       references) to help them understand the calculation of the final estimate. Without this
+       additional information, managers seemed unsure whether the estimate was an accurate
+       reflection of the true benefits of the selection test. If the components used to calculate
+       the estimates are missing or unrealistic, then do the perceived inaccuracies of the
+       components and supporting information have a more direct impact on managerial
+       acceptance then estimate magnitudes? Future research should examine the effects of
+       training managers to understand UA and the assumptions inherent in the estimate
+       modifications on their decision-making to disentangle these issues.
+          Although in their written comments some managers felt uncomfortable with how
+       the estimate was derived, this could be viewed more as a strength rather than as a
+       perceived weakness of the scenarios. For example, the lack of supporting information
+       is more realistic of actual decision-making situations because these decisions do not
+       have the luxury of being based on entirely complete information. The limited
+       supporting information within each scenario may provide a truer decision-making
+       experience compared to one where every detail and calculation is given to the
+       decision-maker. It is also possible that managers who have a strong understanding of
+       how UA calculations and estimates are constructed would better comprehend that the
+       values are best estimates. Future research should aim to tease out the extent to which
+       managerial understanding of the UA calculations affects managerial confidence in the
+       process and value of the resulting estimates. Winkler et al. (2010) lend support to these
+       notions in their findings for causal chain analysis. They found that including
+       non-financial information such as employee commitment and customer satisfaction led
+       to more favorable reactions then single-attribute UA. We concur with Winkler et al.
+       (2010) that future research should further explore these comparisons.
+
+       Presentation of utility analysis
+       Regarding UA information format, researchers have only scratched the surface when
+       examining how UA information is presented and communicated to decision-makers.
+       Carson et al. (1998) revised their scenarios to be shorter and easier to understand, but
+       did not alter the visual structure of the information. Our results indicated that using a
+       table to display UA information was not a significant improvement in presenting UA
+
+
+--- PAGE BREAK ---
+
+information to decision-makers. This finding may result from staying too faithful to         Utility analysis:
+the original formats used by previous researchers. The UA tables were intentionally             do estimates
+developed to be embedded within the text and to repeat the same numerical
+information found earlier in the scenario. This was done to minimize changes to the                   matter?
+content of the scenario. Adding conditions in future research where numerical UA
+information is found only in tabular form and combined with cost information may
+yield the expected improvement. Furthermore, we recommend researchers consider                           121
+moving past these scenario formats and focusing on presentation methods that are
+more typically used by business practitioners. In fact, we would “blow up” the textual
+scenarios and start anew with formats companies currently use to share this type of
+information to decision-makers. Most managers are not reading long technical reports
+explaining the ROI of a study. Instead, they are provided with short executive
+summaries and presentations that include compelling tables and graphs to tell the
+story of how the company can save money by implementing a new selection tool, such
+as in the slideshow presentation used in the study by Winkler et al. (2010).
+   In addition to examining the structure of UA information, researchers should also
+investigate the specific language used to communicate UA to decision-makers. When
+we provided managers the opportunity to elaborate on their responses, several
+instances occurred where they referred to utility analysis in terms of “return on
+investment” and would describe their answers in the context of “benefits vs costs.”
+These examples suggest that it may also be necessary to describe the information
+using terminology and language normally associated with financial matters.
+Rauschenberger and Schmidt (1987) recommended that when communicating utility
+analysis to decision makers, it is extremely important to have a conversation with
+someone in the financial or accounting department “to determine standard formats for
+discussing and presenting information related to money.” Practitioners recommend
+talking with all stakeholders early in the project to get their input on how best to frame
+performance metrics, which should help increase the face validity of the information
+(Fallon, 2009). Future researchers may build on this by examining different variations
+on the type of language used to describe UA information (e.g. UA vs ROI) and study its
+effect on managerial acceptance.
+
+Qualitative rank-ordering
+We provided another contribution by incorporating a qualitative component into the
+study’s design. The general consensus among researchers is that we do not understand
+why managers are unimpressed with UA information (Cabrera and Raju, 2001; Latham
+and Whyte, 1994; Skarlicki et al., 1996). We addressed this need by asking managers to
+indicate their top three most influential pieces of information and then elaborate on
+why they used them in making their decisions.
+   As expected, nearly two-thirds of managers rated UA information as being one of
+the three most influential pieces of information used when making their final decision.
+This finding is consistent with previous research (Macan and Foster, 2004) and
+confirms that UA information does play a significant role in managerial
+decision-making. Our findings offer directions future researchers should explore to
+understand better the role played by UA information in managers’ judgment processes
+as well as exploring individual differences in managerial use of UA. Assessing only a
+manager’s overall acceptance of the selection test may be too broad and simplistic.
+
+
+--- PAGE BREAK ---
+
+PR     Overall, our qualitative findings suggest that UA may be appropriate or useful in
+42,1   certain situations and for certain managers.
+           Perhaps one role UA information plays is as a means for managers to “fall back on
+       the data” when suggesting to senior management to adopt the selection test. The
+       qualitative analyses revealed that another key driver for why UA is influential may
+       stem from the benefit vs cost comparison that ultimately results. A manager’s
+122    decision-making process often involves the comparison of the advantages and
+       disadvantages for each option, with the prevailing option being the one where the
+       positives outweigh the negatives (Weirich, 2004). If this inherent benefit vs cost
+       comparison is the underlying reason for using UA, then the literature’s consistent
+       finding of little or no managerial acceptance may result from how well the case on
+       either side of the equation is developed and argued. Researchers need to examine this
+       possibility and whether this need for this comparison is only relevant for certain
+       groups of managers. Practitioners may need to reexamine how they build support for
+       both sides and should incorporate additional information besides dollar amounts, such
+       as legal liability or the effect on company reputation (Macan and Foster, 2004) or the
+       effects on customer satisfaction (Winkler et al., 2010), to further strengthen their case.
+           Besides UA information, a large number of managers reported that the validity and
+       cost of the test were influential in their decision-making. The validity of the test was
+       rated just as important and ranked almost as often as UA information; qualitative
+       analyses revealed that the majority of managers needed to be confident in the test’s
+       validity before considering anything else. These findings revealed that validity may be
+       used as an initial hurdle and that full consideration of all the information would only
+       take place if the test was first deemed valid by the reader. Managers want to know that
+       the new test is just as good or better than the test it is replacing and it appears that the
+       test’s validity is a useful indicator of this factor. Thus, we echo Macan and Foster’s
+       (2004) call for future research on managerial perceptions of the validity coefficient and
+       its use as an independent variable in the current research stream. These findings also
+       lend support to their suggestion that “when validity is very high or very low, UA
+       information is not particularly useful for making decisions.”
+           In addition to UA information and test validity, managers reported the cost associated
+       with the new test as crucial to their decision-making. In fact, the control group rated and
+       ranked the test’s costs at the same importance level as that of the test’s validity (which
+       were the two highest for this condition, see Table VI). Given the importance of
+       controlling costs in today’s business environment, it is not surprising that managers
+       heavily considered the monetary expenses of the new selection test when making their
+       decision; however, managers in the UA conditions ranked costs (39.2 percent) much
+       lower relative to UA information (62.7 percent) and the test’s validity (55.1 percent). One
+       possible explanation for this difference could again be due to the inherent cost vs benefit
+       comparison that may occur when thinking about UA information.
+           The qualitative analyses also revealed information about what was missing or
+       excluded from the scenarios. The qualitative data was filled with many requests for
+       additional or clarifying information. Several managers expressed an interest in having
+       a contrast between the old test and multiple alternative tests. Managers also requested
+       information about whether the new selection test was being utilized by their
+       competitors. Comparisons involving multiple options or companies would also be
+       compelling if the goal was to persuade upper management of the value and merit of
+
+
+--- PAGE BREAK ---
+
+replacing the existing test with a newer one. Future research should investigate this                Utility analysis:
+and determine whether UA information is more useful when derived for several                            do estimates
+options being considered simultaneously.
+                                                                                                              matter?
+Limitations
+While we surveyed actual managers and the decision-making context was genuine in
+many respects, our scenarios were unable to simulate true decision-making situations.                            123
+In a real organization, managers would be forced to make decisions that have real
+consequences. Although it is difficult to conduct UA studies in applied settings, we
+recommend developing more realistic decision-making scenarios and provide financial
+incentives to managers making final decisions.
+   In addition, the UA tables had minimal impact on managers’ acceptance of the
+information. Although we maintained the integrity of Carson et al.’s (1998) scenarios,
+we encourage future studies to continue making modifications by not only changing
+aesthetic (i.e. spacing, headings) and structural (i.e. numerical tables) components, but
+perhaps taking an entirely different approach altogether. By using scenarios that
+mirror components of actual sales presentations from I/O consultants, practitioners
+may start seeing improvement in use and acceptance rates of UA information. Winkler
+et al.’s (2010) slide presentation serves as one possible template to consider.
+   Furthermore, practitioners should include additional variables to account for the
+lack of managerial acceptance of UA information. In an applied decision-making
+situation, managers not only have to consider the information presented in the
+scenario, but also take into consideration other situational factors, such as
+organizational politics, timing of the proposal, and the proposal’s impact on
+organizational directives (Skarlicki et al., 1996; Winkler et al., 2010).
+
+Conclusion
+Discrepant results and conclusions exist in the research literature on UA, leaving one
+to ask: is UA futile or useful? Our study’s contribution focused on an examination of
+variables suggested by previous researchers as possible reasons for the differing
+findings, but not yet considered in the UA decision-making context – estimate size and
+format structure. Neither offered the definitive answer. That is, managers given UA
+information in our study did not fully replicate the small positive effects found in
+earlier studies (Carson et al., 1998; Macan and Foster, 2004), nor the negative findings
+of Latham and Whyte (1994) and Whyte and Latham (1997). Managers did, however,
+report using UA information in their judgment process, signifying the potential
+benefits of continuing to explore the role of UA information in managers’
+decision-making processes. The qualitative data we collected also provides a wealth
+of information that could be used in future studies to help improve the “utility” of
+utility analysis.
+
+Notes
+ 1. Our power analysis recommended a sample of 189 to achieve 80 percent power for our study.
+ 2. Analyses were rerun using a subset (n ¼ 107) of the final sample based on those managers
+    who had a high understanding of UA information (i.e. rated at least a four out of five for the
+    UA information item). This resulted in miniscule changes in effect sizes and non-significant
+    differences for each of the three dependent variables.
+
+
+--- PAGE BREAK ---
+
+PR     References
+42,1   Beckstein, B.A. and Gilliland, S.W. (1996), “The applicability of utility analysis: when do utility
+              estimates influence decisions”, paper presented at the 11th Annual Conference for the
+              Society of Industrial-Organizational Psychology, San Diego, CA.
+       Boudreau, J.W. (1983), “Economic considerations in estimating the utility of human resource
+              productivity improvements”, Personnel Psychology, Vol. 36 No. 3, pp. 551-7.
+124    Boudreau, J.W. (1991), “Utility analysis for decisions in human resource management”, in
+              Dunnette, M.D. and Hough, L.M. (Eds), Handbook of Industrial and Organizational
+              Psychology, Consulting Psychologists Press, Palo Alto, CA, pp. 621-745.
+       Boudreau, J.W. (1995), “Future utility analysis research: continue, but expand the cognitive and
+              strategic focus”, in Boudreau, J. (Ed.), Should the Research on Utility Theory Continue? Why
+              and Why Not?, Symposium conducted at the Academy of Management National Meeting,
+              Vancouver, August.
+       Brogden, H.E. (1949), “When testing pays off”, Personnel Psychology, Vol. 2 No. 2, pp. 171-83.
+       Brogden, H.E. and Taylor, E.K. (1950), “The dollar criterion – applying the cost accounting
+              concept to criterion construction”, Personnel Psychology, Vol. 3 No. 2, pp. 133-54.
+       Cabrera, E.F. and Raju, N.S. (2001), “Utility analysis: current trends and future directions”,
+              International Journal of Selection and Assessment, Vol. 9 No. 1/2, pp. 92-102.
+       Carson, K.P., Becker, J.S. and Henderson, J.A. (1998), “Is utility really futile? A failure to replicate
+              and an extension”, Journal of Applied Psychology, Vol. 83, pp. 84-96.
+       Cascio, W.F. (1993), “Assessing the utility of selection decisions: theoretical and practical
+              considerations”, in Schmitt, N. and Borman, W.C. (Eds), Personnel Selection in
+              Organizations, Jossey-Bass, San Francisco, CA, pp. 310-40.
+       Cascio, W.F. (2000), Costing Human Resources: The Financial Impact of Behavior in
+              Organizations, 4th ed., Kent, Boston, MA.
+       Cascio, W.F. and Boudreau, J.W. (2008), Investing People: Financial Impact of Human Resource
+              Initiatives, Pearson, Upper Saddle River, NJ.
+       Connerly, M.L., Carlson, K.D. and Mecham, R.L. (2003), “Evidence of differences in applicant pool
+              quality”, Personnel Review, Vol. 32 No. 1, pp. 22-39.
+       Cronbach, L. and Gleser, G. (1965), Psychological Tests and Personnel Decision, 2nd ed.,
+              University of Illinois Press, Urbana, IL.
+       Cronshaw, S.F. (1997), “Lo! The stimulus speaks: The insider’s view on Whyte and Latham’s
+              ‘The futility of utility analysis’”, Personnel Psychology, Vol. 50 No. 3, pp. 611-5.
+       De Corte, W. (1994), “Utility analysis for the one-cohort selection-retention decisions with a
+              probationary period”, Journal of Applied Psychology, Vol. 79, pp. 402-11.
+       Dutton, J.E. and Ashford, S.J. (1993), “Selling issues to top management”, Academy of
+              Management Review, Vol. 18, pp. 397-428.
+       Fagerlin, A., Wang, C. and Ubel, P.A. (2005), “Reducing the influence of anecdotal reasoning on
+              people’s health care decisions: is a picture worth a thousand statistics?”, Medical Decision
+              Making, Vol. 25, pp. 398-405.
+       Fallon, J. (2009), “Results only an I/O psychologist can see”, in Facteau, J. (Ed.), Beyond rxy:
+              Communicating the Impact and Value of Selection Programs, symposium conducted at the
+              24th Annual Conference of the Society for Industrial and Organizational Psychology, New
+              Orleans, LA.
+       Fitz-enz, J. (2009), The ROI of Human Capital: Measuring the Economic Value of Employee
+              Performance, AMACOM, New York, NY.
+
+
+--- PAGE BREAK ---
+
+Hazer, J.T. and Highhouse, S. (1997), “Factors influencing managers’ reactions to utility analysis:    Utility analysis:
+       effects of SDy method, information frame, and focal intervention”, Journal of Applied
+       Psychology, Vol. 82, pp. 104-12.                                                                   do estimates
+Highhouse, S. (1996), “The utility estimate as a communication device: practical questions and                  matter?
+       research directions”, Journal of Business and Psychology, Vol. 11, pp. 85-100.
+Holling, H. (1998), “Utility analysis of personnel selection: an overview and empirical study based
+       on objective performance measures”, Methods of Psychological Research, Vol. 3, pp. 5-24.                    125
+Hunter, J.E., Schmidt, F.L. and Coggin, T.D. (1988), “Problems and pitfalls in using capital
+       budgeting and financial accounting techniques in assessing the utility of personnel
+       programs”, Journal of Applied Psychology, Vol. 73 No. 3, pp. 522-8.
+Jarvenpaa, S.L. and Dickson, G.W. (1988), “Graphics and managerial decision making: research
+       based guidelines”, Communications of the ACM, Vol. 31, pp. 764-74.
+Kleinmuntz, D.N. and Schkade, D.A. (1993), “Information displays and decision processes”,
+       Psychological Science, Vol. 4, pp. 221-7.
+Landy, F.J. (1989), Psychology of Work Behavior, 4th ed., Brookes/Cole Publishing Co., Pacific
+       Grove, CA.
+Latham, G.P. and Whyte, G. (1994), “The futility of utility analysis”, Personnel Psychology, Vol. 47
+       No. 1, pp. 31-46.
+Macan, T.H. and Foster, J. (2004), “Managers’ reactions to utility analysis and perceptions of
+       what influences their decisions”, Journal of Business and Psychology, Vol. 19, pp. 241-53.
+Macan, T.H. and Highhouse, S. (1994), “Communicating the utility of human resource activities: a
+       survey of I/O and HR professionals”, Journal of Business and Psychology, Vol. 8, pp. 425-36.
+MacGregor, D. and Slovic, P. (1986), “Graphic representation of judgmental information”,
+       Human-Capital Interaction, Vol. 2, pp. 179-200.
+Petty, R.E. and Cacioppo, J.T. (1986), Communication and Persuasion: Central and Peripheral
+       Routes to Attitude Change, Springer-Verlag, New York, NY.
+Rauschenberger, J.M. and Schmidt, F.L. (1987), “Measuring the economic impact of human
+       resource programs”, Journal of Business and Psychology, Vol. 2, pp. 50-9.
+Roth, P.L., Bobko, P. and Mabon, H. (2001), “Utility analysis: a review and analysis at the turn of
+       the century”, in Anderson, D.S., Ones, H.K. and Viswesvaran, C. (Eds), Handbook of
+       Industrial, Work, and Organizational Psychology: Vol. 1: Personnel Psychology, Sage
+       Publications, Thousand Oaks, CA, pp. 363-84.
+Shultz, K.S. (1996), “Utility analysis in public sector management: current issues and keys to
+       implementation”, Public Personnel Management, Vol. 25 No. 3, pp. 369-77.
+Skarlicki, D.P., Latham, G.P. and Whyte, G. (1996), “Utility analysis: its evolution and tenuous
+       role in human resource management decision making”, Revue Canadienne des Sciences de
+       l’Administration, Vol. 13, pp. 13-22.
+Sturman, M.C. (2000), “Implications of utility analysis adjustments for estimates of human
+       resource intervention value”, Journal of Management, Vol. 26, pp. 281-99.
+Sturman, M.C. (2003), “Utility analysis: a tool for quantifying the value of hospitality human
+       resource interventions”, Cornell Hotel and Restaurant Administration Quarterly, Vol. 44
+       No. 2, pp. 106-13.
+Truss, C. and Gill, J. (2009), “Managing the HR function: the role of social capital”, Personnel
+       Review, Vol. 38 No. 6, pp. 674-95.
+Tversky, A. and Kahneman, D. (1974), “Judgment under uncertainity: heuristics and biases”,
+       Science, Vol. 185, pp. 1124-31.
+
+
+--- PAGE BREAK ---
+
+PR     Weirich, P. (2004), Realistic Decision Theory: Rules for Nonideal Agents in Nonideal
+             Circumstances, Oxford University Press, New York, NY.
+42,1   Whyte, G. and Latham, G. (1997), “The futility of utility analysis revisited: when even an expert
+             fails”, Personnel Psychology, Vol. 50 No. 3, pp. 601-10.
+       Winkler, S., Konig, C.J. and Kleinmann, M. (2010), “Single-attribute utility analysis may be futile,
+             but this can’t be the end of the story: causal chain analysis as an alternative”, Personnel
+126          Psychology, Vol. 63 No. 4, pp. 1041-65.
+
+       About the authors
+       Therese Macan is Associate Professor of Industrial/Organizational (I/O) Psychology at the
+       University of Missouri-St Louis where she is also Director of the Doctoral Program in I/O
+       Psychology. Therese Macan is the corresponding author and can be contacted at:
+       Therese.Macan@umsl.edu
+          Matthew R. Lemming is the Client Research Manager at Hogan Assessment Systems and
+       received his MA in Industrial/Organizational Psychology from the University of Missouri-St
+       Louis.
+          Jeffrey L. Foster is the Director of Research at Hogan Assessment Systems and received his
+       PhD in Industrial/Organizational Psychology at the University of Missouri-St Louis.
+
+
+
+
+       To purchase reprints of this article please e-mail: reprints@emeraldinsight.com
+       Or visit our web site for further details: www.emeraldinsight.com/reprints
+

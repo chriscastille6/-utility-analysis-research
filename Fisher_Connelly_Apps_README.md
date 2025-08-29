@@ -2,6 +2,14 @@
 
 This directory contains two interactive Shiny web applications designed to help students learn about utility analysis through the work of Fisher & Connelly.
 
+## 🚀 **Live Web Apps - Ready to Use!**
+
+**🔗 [Fisher & Connelly (2017) - Contingent Workers Business Case](https://christopher-m-castille.shinyapps.io/fisher-connelly-2017-contingent-workers/)**  
+Interactive tool for learning how to build a business case for using contingent workers selectively.
+
+**🔗 [Fisher & Connelly (2020) - Disability Employment Business Case](https://christopher-m-castille.shinyapps.io/hr_analytics_shinyapp/)**  
+Interactive tool for learning how to build the financial business case for employing workers with disabilities.
+
 ## Apps Included
 
 ### 1. Fisher & Connelly (2017) - Contingent Workers Business Case
@@ -41,9 +49,19 @@ This directory contains two interactive Shiny web applications designed to help 
 - **Business Case Report Tab:** Implementation guides and strategic recommendations
 - **References Tab:** Complete citations, disability employment resources, and app information
 
-## How to Run the Apps
+## How to Access the Apps
 
-### Option 1: Run Directly in R/RStudio
+### Option 1: Use Live Web Apps (Recommended - No Installation Required!)
+
+**🌐 Fisher & Connelly (2017) - Contingent Workers Business Case:**
+https://christopher-m-castille.shinyapps.io/fisher-connelly-2017-contingent-workers/
+
+**🌐 Fisher & Connelly (2020) - Disability Employment Business Case:**
+https://christopher-m-castille.shinyapps.io/hr_analytics_shinyapp/
+
+*Simply click the links above to use the apps directly in your web browser - no software installation required!*
+
+### Option 2: Run Locally in R/RStudio
 ```r
 # For the 2017 Contingent Workers app:
 shiny::runApp("fisher_connelly_2017_app.R")

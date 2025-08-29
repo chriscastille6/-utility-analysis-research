@@ -557,9 +557,7 @@ ui <- dashboardPage(
             </a></p>
             
             <p><strong>Citation for this Tool:</strong><br>
-            <em>Contingent Workers Business Case Analysis Tool</em> (2024). Interactive educational application based on Fisher & Connelly (2017).<br>
-            <strong>Live App:</strong> <a href='https://christopher-m-castille.shinyapps.io/fisher-connelly-2017-contingent-workers/' target='_blank'>https://christopher-m-castille.shinyapps.io/fisher-connelly-2017-contingent-workers/</a><br>
-            <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research</p>
+            <em>Contingent Workers Business Case Analysis Tool</em> (2024). Interactive educational application based on Fisher & Connelly (2017). Available at: https://github.com/chriscastille6/-utility-analysis-research</p>
             
             <h5>Technical Requirements:</h5>
             <ul>

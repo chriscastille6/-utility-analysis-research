@@ -1,0 +1,1409 @@
+r Academy of Management Discoveries
+2017, Vol. 3, No. 2, 165–186.
+Online only
+https://doi.org/10.5465/amd.2015.0119
+
+
+           LOWER COST OR JUST LOWER VALUE? MODELING THE
+        ORGANIZATIONAL COSTS AND BENEFITS OF CONTINGENT WORK
+                                                                          SANDRA L. FISHER
+                                                                          Clarkson University
+
+                                                                    CATHERINE E. CONNELLY
+                                                                      McMaster University
+
+
+
+
+                          Although many managers assume that the use of contingent workers helps organizations lower
+                          their costs, it is unclear if these anticipated savings actually materialize once these workers’
+                          productivity and indirect costs are taken into account. The purpose of this paper is to identify
+                          the conditions under which contingent workers may (or may not) be a cost-effective solution for
+                          organizations. We develop a theoretical framework of the financial costs and benefits of three
+                          different contingent work arrangements, taking into account direct and indirect costs as well as
+                          the value of both task performance and organizational citizenship behaviors. This framework
+                          suggests that costs associated with lower performance and higher turnover substantially re-
+                          duce the overall value of temporary agency workers. We then use a simulation approach with
+                          six scenarios representing different organizational strategies to examine how organizational
+                          circumstances may further affect the likelihood that the use of contingent workers actually
+                          represents a significant cost savings. Our results suggest that although temporary workers were
+                          less cost-effective (and independent contractors were more cost-effective) in each scenario, the
+                          cost-effectiveness of each worker type also varies depending on the strategy, with the “Temp-
+                          to-Perm” approach being most cost-effective overall.
+
+
+                                                                            Editor’s Comment
+                          Fisher and Connelly’s paper shows us how simulations can help us avoid making the-
+                          oretical and practical errors. The topic is contingent work, and the most recent research
+                          suggests that contingent employment has continued to grow since the Bureau of Labor
+                          Statistics last collected data on the contingent labor force in 2005. What is so useful about
+
+We thank Aaron Schat and Janet Marler for their                                                   Barley and two anonymous reviewers for their
+helpful comments on an earlier version of the                                                     feedback and guidance.
+manuscript. We also thank guest editor Stephen
+
+                                                                                         165
+Copyright of the Academy of Management, all rights reserved. Contents may not be copied, emailed, posted to a listserv, or otherwise transmitted without the copyright holder’s express
+written permission. Users may print, download, or email articles for individual use only.
+
+
+--- PAGE BREAK ---
+
+166                                        Academy of Management Discoveries                                         June
+
+                Fisher and Connelly’s cost-benefit simulation is that it undermines simple homilies such
+                as “temporary workers reduce labor costs” and “temporary workers are cheaper than
+                independent contractors.” Given that empirical data of the sort that the authors simulate
+                are difficult to acquire and, given the detrimental effects of the trend toward replacing
+                permanent jobs with contingent workers on the welfare of the labor force, simulations
+                such Fisher and Connelly’s urge us to stop and question whether recent developments in
+                employment relations are based more on myth and ideology than on fact.
+                                                                         Stephen R. Barley, Action Editor
+
+
+   The use of contingent labor, where workers are               of the relative costs and benefits of contingent labor in
+employed on a fixed-term basis, is increasing                   order to identify the circumstances under which it
+worldwide and has changed the nature of the work                makes sense to hire these workers. Our analysis takes
+relationship for many people (e.g., Bidwell, Briscoe,           into account the service value [e.g., value brought to the
+Fernandez-Mateo, & Sterling, 2013). Various reasons             organization through task productivity and organiza-
+have been suggested for why firms use contingent                tional citizenship behaviors (OCBs)] and both direct
+workers, such as to enhance flexibility, to accom-              and indirect service costs. We then compare sim-
+modate fluctuations in production and service re-               ulated organizational scenarios that reflect differ-
+quirements, to bring in specialized skills for a short          ent strategies for using contingent workers. We
+period of time, to create an extended screening pro-            have chosen this approach because simulations
+cess of applicants for permanent positions, and to              offer useful advantages for examining complex
+reduce the need for training (Bonet, Cappelli, &                management phenomena and building theory
+Hamori, 2013). Other organizations use contingent               (Harrison, Lin, Carroll, & Carley, 2007), allowing
+labor to help them manage within tightly defined                researchers to isolate individual effects and iden-
+head count limitations, because contingent workers              tify boundary conditions. Our simulations illus-
+are often not counted under the human resources                 trate the circumstances under which different
+budget or when estimating a firm’s productivity fig-            contingent work arrangements can be more cost-
+ures (Barley & Kunda, 2004). However, the dominant              effective than others.
+viewpoint suggests that most firms use contingent
+workers primarily to reduce their labor costs (Ashford,
+George, & Blatt, 2007; Davis-Blake & Broschak, 2009;                           MODEL DEVELOPMENT
+Kalleberg & Marsden, 2005).
+                                                                Contingent Labor Costs and Benefits
+   It is surprising, then, that little research has ex-
+amined the extent to which using contingent labor                  As noted earlier, one of the most frequently stated
+actually reduces firm costs and under what circum-              reasons for hiring contingent workers instead of per-
+stances this reduction might occur. There is some               manent employees is that doing so is said to provide
+evidence that the use of contingent workers may in-             a significant cost savings. Given the frequency of this
+crease gross profit margins at the firm level (Nayar &          claim, it is surprising that the evidence behind it is
+Willinger, 2001), but the mechanism behind this                 relatively weak. Direct labor costs for contingent
+effect is unclear. Other research suggests that the             workers are typically lower than for permanent
+cost–value relationship of contingent work varies               workers (DiNatale, 2001; Kalleberg, Reskin, & Hudson,
+across organizations based on the specific type of              2000). However, it is unclear if these lower costs
+contingent work (Nollen & Axel, 1996). As noted by              result in overall savings once the productivity of
+Connelly and Gallagher (2004), there are distinct               contingent workers is taken into account. Some re-
+forms of contingent work [e.g., independent contrac-            search suggests that there are situations in which
+tors (ICs), temporary agency workers (TAWs)] that               temporary workers may be more expensive than
+should not be used interchangeably. Indeed, some                permanent employees. For example, the use of over-
+arrangements may be more cost-effective than others.            time has been suggested as a more effective way to
+   In this paper, we examine the net costs of the wide-         reduce costs than the use of temporary workers, given
+spread practice of using contingent labor                       that overtime can be paid 1 hour at a time while tem-
+in organizations. We build and test a theoretical model         porary workers in many jurisdictions must be paid for
+
+
+                  Author’s voice:
+  What motivated you personally to                                                Author’s voice:
+  undertake this research? Why is it                               How did the paper evolve and change
+  important to you?                                                as you worked on it?
+
+
+--- PAGE BREAK ---
+
+2017                                                  Fisher and Connelly                                                   167
+
+at least 4 hours (Easton & Goodale, 2005). Another paper            employment relationship (Aletraris, 2010). The
+examined the effects of turnover and subsequent learn-              agency recruits and selects workers, and then
+ing curves on the productivity of temporary workers                 matches them with clients for relatively short-term
+compared to permanent employees (Stratman, Roth, &                  assignments where the individual is supervised by
+Gilland, 2004). They found that the higher indirect costs           a local manager (Galais & Moser, 2009). Because of
+created by turnover made temporary workers a more                   their relationship with the agency, TAWs can often
+expensive solution in spite of the lower direct labor cost.         be identified and brought onboard quite rapidly.
+However, neither of these studies examined multiple                    ICs can be broadly characterized as self-employed
+types of contingent workers, nor did they consider the              workers who offer their services to a “client” organi-
+full range of performance outcomes (i.e., task per-                 zation on an hourly or per-project basis (Pink, 2001).
+formance, citizenship behaviors).                                   When an assignment is complete, the relationship be-
+   In the practitioner literature, Nollen and Axel (1996)           tween the IC and the client ends unless the parties begin
+developed an early model of the costs and benefits of               a new contract. These workers have considerable con-
+contingent work. They questioned the extent to which                trol over how the work is done (McLean Parks, Kidder,
+lower pay and benefits would actually result in supe-               & Gallagher, 1998) and are often expected to have con-
+rior value overall, concluding that the cost-                       tracts with multiple clients simultaneously (Fragoso &
+effectiveness of contingent workers is situationally                Kleiner, 2005). The primary reason for hiring ICs is
+dependent. These authors described one situation in                 to acquire skills, knowledge, and abilities that are
+which a bank used contingent workers with variable                  “needed immediately but for a limited time” (Barley &
+schedules who could be called in at any time as                     Kunda, 2004: 40). Unlike TAWs, many ICs sign contracts
+workload increased. Because of high training costs for              directly with the client (Barley & Kunda, 2006). How-
+the job in question, this organization did not recoup               ever, in an effort to improve compliance with tax and
+those costs when the contingent workers quit or had                 labor laws, many client companies require ICs to be
+their contracts end. Nollen and Axel then presented                 hired through an “agent of record” (AOR) arrangement
+a second scenario in which a different bank was able to             where the contractors retain their autonomy but a third
+profit from the use of temporary workers because of                 party conducts a compliance review, takes care of the
+a combination of lower wages and training expenses.                 billing or invoicing process, and may provide addi-
+We therefore take into account both direct (e.g., wages,            tional services related to dispute resolution, drug test-
+benefits, and fees to temporary agencies) and indirect              ing, onboarding, and document storage (HireGenics,
+(e.g., turnover, the impact of OCBs) labor costs.                   2016; SIA, 2014). We include both direct-hire ICs (IC-D)
+                                                                    and AOR ICs (IC-AR) in our analyses.
+                                                                       The existing analyses of the costs of hiring contingent
+Types of Contingent Work
+                                                                    workers also fail to take into account the effect that
+   The claims that contingent workers are necessarily               hiring these workers has on the attitudes and behaviors
+more cost-effective than permanent employees fail to                of the permanent employees in the organization. Be-
+take into account that there are many different types of            cause contractors and TAWs are hired for different
+contingent work arrangements, that different types of               strategic reasons at different companies (e.g., as a long-
+contingent workers are hired for different strategic rea-           term temp-to-perm recruiting strategy, to protect job
+sons, and different costs and benefits are associated               security for core employees, short-term replacement),
+with these arrangements. In our framework, we in-                   the effects of hiring them are likely to vary. We first
+clude two popular forms of contingent work: TAWs and                calculate the overall net costs or savings for the different
+ICs, and we further refine our analysis to consider two             types of contingent workers, and then use these find-
+types of independent contracting arrangements. In do-               ings to calculate the net costs or savings at companies
+ing so, we incorporate research that has examined dif-              with different contingent worker hiring strategies.
+ferences in these workers’ attitudes and behaviors.                    One feature of the employment landscape for
+   TAWs are legally employed by a temporary help                    contingent workers is that there is a tendency for
+service or agency, but they work at a client organi-                different occupational groups to be clustered in dif-
+zation (Connelly & Gallagher, 2004). TAWs are dis-                  ferent contingent work arrangements. For example,
+tinct from direct-hire temporary workers in that there              most administrative professionals are hired as
+is a third party, the agency, involved in the                       TAWs, and most graphic design artists are hired as
+                                                                    ICs.1 As such, it is difficult to make comparisons
+                                                                    without confounding the influence of job character-
+                 Author’s voice:
+                                                                    istics or occupational norms. We therefore use
+  What was the most difficult or
+  challenging aspect of this research                                 1
+                                                                        We are grateful to an anonymous reviewer for this
+  project and paper?
+                                                                    useful example.
+
+
+--- PAGE BREAK ---
+
+168                                          Academy of Management Discoveries                                          June
+
+a single occupational group, IT help desk support                insurance and retirement benefits (Barley & Kunda,
+staff, because these workers are frequently hired in             2006). Permanent employees are generally paid more
+all of these groups: permanent employees, TAWs,                  than TAWs who perform similar tasks (DiNatale,
+and ICs. We look at help desk support jobs broadly,              2001; Marler, Barringer, & Milkovich, 2002), and ICs
+including aspects of front-line hardware and soft-               are paid more than TAWs (Kalleberg et al., 2000).
+ware support to end users within the organization.                  Benefits. One reason contingent workers are often
+Typically, these positions are structured in the gen-            viewed as less expensive than permanent employees
+eralist model, where a pool of help desk generalists             is because contingent workers do not typically re-
+field incoming requests, resolve issues when possi-              ceive employment benefits such as pensions, dental
+ble, and escalate the more specialized problems to               care, and health insurance (Houseman, 2001). In-
+a different technical support group or to an outside             deed, the percentage of contingent workers with
+vendor (Computer Economics, 2016; Giva, 2016).                   low-wage jobs and no access to health or pension
+More skilled workers are able to handle a broader                benefits is much higher than for permanent em-
+range of calls. Although most help desk support                  ployees (Kalleberg et al., 2000). In this regard, TAWs
+workers rely on instructions and pre-established                 and ICs produce similar savings for the client orga-
+guidelines to perform their assigned tasks and work              nization, although ICs may price their work to include
+under immediate supervision (salary.com), they re-               their own costs for obtaining health insurance or re-
+tain sufficient autonomy to engage in varying levels             tirement benefits on the open market.
+of performance and OCBs.                                            Transaction costs. Organizations incur indirect
+                                                                 costs each time a new worker is brought into the
+                                                                 organization. Transaction costs for permanent em-
+           THEORETICAL FRAMEWORK
+                                                                 ployees are typically reflected in the cost of turn-
+   In our analysis, we consider the quantifiable costs           over and will be addressed below. For contingent
+and benefits of hiring permanent employees or                    workers, transaction costs include fees paid to agencies
+engaging the services of contingent workers. The                 to cover their costs for recruiting and managing the
+framework we develop is broadly based on the utility             workers, payment of employment taxes, and agency
+analysis approach to evaluating the relative economic            profits (SIA, n.d.). The use of a temporary agency typ-
+costs and benefits of HR interventions (Cascio, 2000;            ically has the highest direct transaction costs, with fees
+Sturman, Trevor, Boudreau, & Gerhart, 2003). This                that cover the agency’s expenses (such as initial can-
+approach requires an estimation of service costs, or the         didate screening) and profit margins. Estimates for
+costs the organization bears to employ the workers,              agency fees range from 24 to 30 percent of the worker’s
+and service value, the value an employee brings to the           salary, with some reaching as high as 45–150 percent
+organization through his or her services.                        of the TAW’s wages (Grossman, 2012; Nollen & Axel,
+                                                                 1996). ICs generally incur few direct transaction costs
+                                                                 because they find clients via referrals and their own
+Service Costs
+                                                                 professional networks. The transaction costs for direct
+  Service costs are the organizational expenses of ac-           ICs are similar to replacement costs in employee
+quiring and maintaining the labor needed to produce              turnover and will be addressed below. Transaction
+goods and services. These expenses include direct costs          costs for ICs with an AOR engagement will include the
+such as wages, benefits, and transaction costs, as well as       costs for vetting the IC for compliance with relevant
+indirect costs such as training. In this section, we pro-        regulations, helping the IC to become compliant if
+vide an overview of the various service costs; more              necessary, and other services that may be provided by
+specific estimates are provided in the following section.        the agency (SIA, 2014). These will be substantially
+  Direct wages. The primary cost associated with                 lower than the fees charged by temporary agencies.
+using contingent workers is wages. Depending on the                 Training. With average annual training costs in
+type of contingent worker, wage costs may be higher              the United States reaching over $1,100 per employee
+or lower than those for permanent employees. Al-                 (American Society for Training and Development
+though there is some variation across industries and             [ASTD], 2010; Miller, 2012), organizations may view
+organizations, ICs are usually paid more than per-               the use of contingent workers as a way to minimize
+manent employees, partially due to the added ex-                 costs by obtaining immediate access to specific skills
+pertise that they are perceived to bring to the client           that they need (Matusik & Hill, 1998). Contingent
+organization. Estimates range from wages being 19                workers do still receive training that is required for all
+percent higher (DiNatale, 2001) to 25–30 percent                 people working in a facility, such as legally required
+higher (Ang & Slaughter, 2001) based on worker de-               training for safety or information security (Halbesleben &
+mography (age, experience, and gender) and the                   Clark, 2010) but generally receive 1 day or less of training
+lower indirect costs due to the lack of health                   each year (Virtanen, Kivimäki, Virtanen, Elovainio, &
+
+
+--- PAGE BREAK ---
+
+2017                                                Fisher and Connelly                                               169
+
+Vahtera, 2003), compared to nearly 4 days per year for            workers in the IT field. They found that ICs had sig-
+permanent employees (Miller, 2012). Thus, regular                 nificantly higher levels of skills than permanent
+training for most contractors would be kept to a mini-            employees, as measured by formal education, past
+mum. We treat training required in the onboarding                 experience working in the high-technology industry,
+process (e.g., to become familiar with information                and past job titles. Because contractors are likely to
+technology systems and organization-specific pro-                 have more knowledge, skills, and abilities, we expect
+cedures) as a component of turnover costs (see be-                that they will generally perform more effectively
+low) rather than on-going training costs.                         than permanent employees. Although these exam-
+   Turnover. Estimates for the cost of turnover for               ples are not specific to the help desk context, they are
+permanent employees range from one to two times an                indicative of a general tendency of differing perfor-
+employee’s salary and typically include direct and                mance levels for contingent workers and we extrap-
+indirect costs for the separation of the departing em-            olate from them to develop our framework.
+ployee and the recruitment, selection, onboarding,                   Interestingly, a variety of moderators have been
+and training of new employees (Allen, 2008; Sturman               identified that suggest that contingent worker perfor-
+et al., 2003). With contingent workers, there is often an         mance may be low in some situations but comparable
+assumption that turnover costs are negligible, but                to permanent employees in other instances. For ex-
+there is some evidence that even when considering                 ample, Lautsch (2002) found wide variability in the
+contingent workers, “turnover remains a major threat              performance of contingent workers when compared
+to employers’ continuity and efficiency” (Grossman,               to permanent employees in the same organizations. In
+2012: 34). We argue that there is variability in the cost         some situations contingent workers were signifi-
+of turnover among different types of contingent                   cantly less productive, but in other situations, such as
+workers based on duration of the assignment and their             when contingents received almost the same amount
+integration with the client’s staff and work processes            of training as permanent employees and were paid
+(Fisher, Wasserman, Wolf, & Wears, 2008). TAWs who                well, performance levels were similar. Likewise, in
+are brought in for a day or two are unlikely to result in         a study of IS professionals at a large transportation
+turnover costs, but when assignments last for longer (e.          firm, Ang and Slaughter (2001) found significant dif-
+g., 6–9 months), clients will incur costs related to the          ferences between ICs and permanent employees on
+departure of the worker, the hiring of a new worker,              a range of dimensions, including loyalty, obedience,
+and the integration of the new worker into the or-                trustworthiness, and overall performance, with ICs
+ganization. Longer term placements, such as those                 scoring lower on each dimension. From a series of in-
+held by ICs, may entail greater disruptions and costs.            depth interviews, it was revealed that the differences
+                                                                  were due to job design and the types of tasks that
+                                                                  were assigned to the contractors. We believe that this
+Service Value
+                                                                  may be reflective of the organizational HR strategy
+   We examine two elements of service value: task                 and how both the permanent workers and contingent
+performance and OCBs, and consider the theoretical                workers are used in the organization. This per-
+foundations for estimating values for permanent                   spective informs the development of our scenario
+employees, TAWs, and ICs. We also consider how                    comparisons, where we compare the implications
+the presence of contingent workers may affect the                 of different HR strategic approaches.
+behaviors of permanent employees. Once again, we                     Organizational citizenship behaviors. In addi-
+provide a broad overview of service value consider-               tion to lower task performance, many studies have
+ations in this section, and a more specific illustration          shown that contingent workers display fewer OCBs
+of how it can be estimated is in the following section.           than permanent employees, further reducing the
+   Task performance. Research on contingent labor                 value brought to the organization. Social exchange
+has suggested that contingent worker task perfor-                 theory (Blau, 1964) can be used to better understand
+mance varies considerably depending on the type of                how organizations can gain additional value by
+worker (Feldman, 2006). Nollen and Axel (1996)                    managing relationships with contingent workers. As
+determined that TAWs were 7–30 percent less pro-                  noted by Blau (1964), “only social exchange tends to
+ductive, depending on the job and organization.                   engender feelings of personal obligation, gratitude,
+Stratman et al. (2004) found that TAWs in a                       and trust; purely economic exchange as such does
+manufacturing setting performed less effectively due              not” (p. 94, emphasis added).
+to the learning curve required for the work. ICs, in                 Contingent workers generally have less of a social
+contrast, are often hired because they bring better or            exchange relationship with the client firm, and they
+unique skills to the organization (Barley & Kunda,                consequently engage in fewer OCBs than do permanent
+2006). In an extensive study, Bidwell and Briscoe                 workers (Liden, Wayne, Kraimer, & Sparrowe, 2003;
+(2009) conducted computer-assisted interviews of                  Van Dyne & Ang, 1998). Contingent workers have been
+
+
+--- PAGE BREAK ---
+
+170                                            Academy of Management Discoveries                                          June
+
+shown to perform OCBs under the right circumstances
+(e.g., if they are treated fairly and perceive high levels of                          Author’s voice:
+organizational support: Connelly, Gallagher, & Web-                    If you were able to do this study again,
+ster, 2011; Coyle-Shapiro, Morrow, & Kessler, 2006),                   what if anything would you do
+but they are often less committed to the organization                  differently?
+and have a more transactional psychological contract
+(Ashford et al., 2007; Marler et al., 2002).
+   To promote increased commitment and OCBs, orga-                   employees who work alongside them. Permanent
+nizations can strengthen attachments with contingent                 employees who work with contingent workers tend
+workers by offering them support, treating them fairly,              to engage in fewer helping behaviors (Broschak &
+and avoiding psychological contract breach (Connelly,                Davis-Blake, 2006; Chattopadhyay & George, 2001),
+Gallagher, & Gilley, 2007; Coyle-Shapiro et al., 2006;               perhaps because the presence of contingent workers
+Lapalme, Simard, & Tremblay, 2011). Although much                    can negatively affect permanent employees’ percep-
+of the research on the treatment of contingent workers               tions of the trustworthiness of their employer (e.g.,
+and their OCBs has been conducted in the context of                  Pearce, 1993). Permanent employees report lower
+TAWs, we expect that all types of contingent workers                 loyalty toward the organization and higher intentions
+would benefit from fair treatment and support.                       to leave (Davis-Blake, Broschak, & George, 2003)
+   One potential difference, however, lies in the fact               when they work with TAWs. Even though organiza-
+that different types of contingent workers may have                  tions may report using contingent workers to protect
+different expectations about the extent to which their               permanent employees from fluctuations in demand,
+psychological contract with the client should be re-                 permanent employees with high levels of job insecu-
+lational (Guest, Isaksson, & De Witte, 2010). For ex-                rity are more likely to see TAWs as a threat to their jobs
+ample, TAWs may minimize social exchanges with                       (Kraimer, Wayne, Liden, & Sparrowe, 2005). Figure 1
+the client to avoid feeling obligated to provide addi-               depicts our framework of costs and benefits for dif-
+tional services that are not specified in their contracts.           ferent types of contingent workers.
+Conversely, some contingent workers may show
+higher commitment and engage in higher levels of
+                                                                        AN ILLUSTRATION OF THE FRAMEWORK
+OCBs to maximize their opportunities for continued
+work with the organization (Felfe, Schmook, Schyns,                     In this section, we illustrate the impact of different
+& Six, 2008). Contingent workers who strive to be                    circumstances on the relative cost-effectiveness of
+hired on as a permanent employee are more likely to                  contingent work. We use estimates of the various pa-
+demonstrate high task performance and OCBs re-                       rameters drawn from the literature and publicly
+gardless of perceived fairness (de Jong & Schalk, 2010).             available sources. This approach allows us to sys-
+   The presence of contingent workers may also af-                   tematically vary the input values to test a range of
+fect the task performance and OCBs of the permanent                  situations and conduct some “what-if” modeling. For
+
+                                                    FIGURE 1
+                                A Framework of Contingent Worker Costs and Benefits
+
+                                                                     Service Costs
+                                                                     -Wages and benefits
+                                                                     -Transaction costs
+                                                                     -Turnover
+                  Worker Type
+                  -Permanent                                                                    Net Value
+                  -Contingent (temporary,
+                  independent contractor)
+                                                                     Service Value
+                                                                     -Task performance
+                                                                     -OCBs
+
+
+
+
+                                                   HR Strategy
+                                                   -Low cost
+                                                   -Core-periphery
+                                                   -Temp to perm
+
+
+--- PAGE BREAK ---
+
+2017                                                       Fisher and Connelly                                                        171
+
+example, we can see the impact of high versus low                          generally higher levels of experience (Bidwell &
+levels of OCBs and the potential impact of offering                        Briscoe, 2009) and lack of employer-provided bene-
+temp-to-perm employment versus only short-term                             fits. Direct salary costs for TAWs (the amount paid to
+temporary assignments. To estimate the parameters                          the worker, excluding agency fees which are dis-
+and the marginal cost of different work arrangements,                      cussed as a separate cost below) were estimated to be
+we focused on a single job category frequently staffed                     16 percent lower than permanent workers (Nollen &
+by both permanent and contingent workers: IT help                          Axel, 1996). This results in an average salary of
+desk support. We assume that all workers are pro-                          $60,301 for ICs and $39,728 for TAWs. To help us
+viding generalist front-line IT support to the em-                         examine costs across a range of organizational situ-
+ployees of a large company that does not have IT as                        ations, we developed estimates for organizations
+a core competency (e.g., retail, manufacturing). We                        paying higher than average and lower than average
+place our simulation in a single country (the United                       wages. We used the 25th and 75th percentile wages
+States). In the section below, we include values for the                   from salary.com to represent high- and low-salary
+most critical data points. More details on the analyses                    categories. These estimates are shown in Table 1.
+are available from the first author.                                          We used the Bureau of Labor Statistics (2013) esti-
+                                                                           mate of 29.6 percent of salary as the cost of benefits,
+                                                                           which includes all legally required benefits such as
+Determining Service Costs
+                                                                           payroll taxes as well as voluntary benefits such as paid
+  Salary and benefits. Data for salary costs of a help                     leave, insurance benefits, and retirement benefits. This
+desk support worker are available from salary.com,                         cost applies only to permanent employees, because
+a commercial website that provides salary data                             contingent workers typically do not receive benefits.
+across jobs and geographic regions. Salary.com only                        We estimate the cost of benefits for a permanent help
+uses employer-reported salary data, which is con-                          desk support worker as ranging from $12,431 to
+sidered more accurate than self-reported salary data.                      $15,949, with $13,999 representing the cost of benefits
+In 2013, the mean annual salary for a US-based help                        at the average salary level (see Table 1 for more details).
+desk support worker was $47,295. We used this                                 Transaction costs. Transaction costs include the
+value as the base salary for permanent employees                           agency fees for TAWs, representing the agency’s
+and the benchmark for estimating salary costs for                          gross margin and statutory expenses such as em-
+contingent workers.                                                        ployment taxes (Staffing Industry Analysts, n.d.). We
+  We estimated direct salary costs for both types                          use the midpoint of the more conservative range
+of ICs to be 27.5 percent higher than permanent                            discussed in the literature, 27 percent of salary. At
+workers (Ang & Slaughter, 2001; Kunda, Barley, &                           average salary, transaction costs for TAWs are
+Evans, 2002), which are commensurate with ICs’                             $10,727. Transaction costs also include the fees
+
+                                                               TABLE 1
+                                                 Service Costs at Three Salary Levels
+Employee Type                                    Low Salary (25th percentile) ($)   Average Salary ($)   High Salary (75th percentile) ($)
+
+Permanent employees
+  Direct salary                                              41,998                      47,295                       53,883
+  Benefits/transaction costs (29.6% of salary)               12,431                      13,999                       15,949
+  Training costs                                              1,808                       1,887                        1,985
+  Turnover                                                   41,998                      47,295                       53,883
+ICs, direct
+  Direct salary (27.5% higher)                               53,547                      60,301                       68,701
+  Benefits/transaction costs                                      0                           0                            0
+  Training costs                                                192                         201                          213
+  Turnover (30% of salary)                                   16,064                      18,090                       20,610
+ICs, agent of record
+  Direct salary (27.5% higher)                               53,547                      60,301                       68,701
+  Benefits/transaction costs (5%)                             2,677                       3,015                        3,435
+  Training costs                                                192                         201                          213
+  Turnover (30% of salary)                                   16,064                      18,090                       20,610
+Temporary workers
+  Direct salary (16% lower)                                  35,278                      39,728                       45,262
+  Benefits/transaction costs (27% of salary)                  9,525                      10,727                       12,221
+  Training costs                                                165                         172                          180
+  Turnover (30% of salary)                                   10,583                      11,918                       13,579
+
+
+--- PAGE BREAK ---
+
+172                                          Academy of Management Discoveries                                          June
+
+associated with ICs who have an AOR (IC-AR) ar-                   provides a percentage of total turnover costs that are
+rangement with a third party. Based on industry                   due to each factor. We evaluated each of these costs
+norms, we estimate IC-AR fees as 5 percent of salary.             for relevance to TAWs and both types of ICs, and
+   Training. We estimate training costs using a com-              adjusted them accordingly. For example, Hillmer
+bination of direct and indirect hourly costs. The 2012            et al. (2004) found that 19 percent of turnover costs
+ASTD State of the Industry report indicates that on               for permanent employees were due to the need to
+average, firms provided 31 hours of training per em-              train a replacement, with an additional 7.5 percent
+ployee at an average cost of $1,182 in 2011 (Miller,              due to lower performance during the training pe-
+2012) for a direct hourly cost of $38.13. Indirect costs          riod. They also found that 43 percent of the turnover
+are the hourly salary costs of the employee being                 costs were due to disruptions in the work environ-
+trained. For the help desk position, we estimated 3               ment following departure of the employee, including
+hours of training for all contingent workers. These               overtime costs to cover the workload in the time be-
+conservative estimates are consistent with research               fore a new employee can be hired and problems with
+suggesting that contingent workers receive 1 day or               knowledge management.
+less of training each year (Virtanen et al., 2003). Thus,            For a contingent worker, we suggest that turnover
+routine training costs, such as safety training and in-           costs will be substantially lower. Temps and ICs are
+formation security protocols, are relatively low for              expected to start their work engagement with the
+contingent employees. At average salary, we estimate              skills needed for the job, thus there should be no direct
+training costs at $1,887 for permanent employees,                 training costs. However, there would still be some
+$201 for ICs and $172 for TAWs.                                   costs for onboarding to bring the new worker up to
+   Turnover. Consistent with conservative estimates               speed on organization-specific systems and pro-
+in the literature, we estimate turnover costs for per-            cedures (Computer Economics, 2015), and somewhat
+manent employees at 13 salary (Sturman et al.,                    of a learning curve for the contingent worker to get up
+2003). This estimate includes a wide variety of direct            to full working pace and quality in the new organi-
+and indirect costs in the departure of the employee               zation (Stratman et al., 2004). Following the Hillmer
+(i.e., cost of lost productivity by the employee and              et al. (2004) framework (see Table 2), we assume that
+the employee’s co-workers before and during de-                   contingent workers receive the same amount of
+parture, cost of overtime while the position is va-               onboarding training as permanent employees, expe-
+cant), hiring a new employee (recruiting, screening,              rience some reduced performance during the learning
+interviewing), and integrating the new employee                   curve, and generate some costs for managing knowl-
+into the organization (reduced productivity for the               edge transfer at the end of the engagement (Computer
+new employee and the new employee’s co-workers                    Economics, 2015). Thus, we estimate that ICs and
+as they provide support, increased supervision                    TAWs incur approximately 30 percent of the turnover
+while the employee is new).                                       costs of permanent employees, although the source of
+   Turnover costs for contingent workers need to be               these costs varies somewhat. A very short-term TAW
+discounted due to their reduced integration into                  (i.e., one placed with a firm for only a few days) would
+the workplace and subsequently reduced indirect                   not incur turnover costs at this level, but for this ex-
+costs for lost productivity by the employee and the               ample, we assume that TAWs are staying for roughly
+employee’s co-workers before and during departure,                the same period of time as the IC. Using these as-
+and for integrating the new employee into the orga-               sumptions, at average salary, the turnover costs are
+nization. We estimated the turnover costs for each                $47,295 for a permanent employee, $18,090 for an IC,
+type of contingent worker based on a framework                    and $11,918 for a TAW (see Table 1).
+provided by Hillmer, Hillmer, and McRoberts (2004),                  Because turnover rates have a substantial impact
+which lists a wide range of direct and indirect turn-             on turnover costs, we also considered the effects of
+over costs involved in a call center position and                 total workforce turnover costs in our analysis. We
+
+
+                                                        TABLE 2
+                                                 Turnover Cost Estimation
+                                                        Percentage of Turnover Costs by Category
+
+Employee Type             Recruitment and Selection         Training/Onboarding          Learning Curve       Departure/KM
+
+Permanent                            5                              19                         24                  52
+IC (direct and AR)                   1                               2                         12                  14
+Temporary workers                    0                               2                         12                  15
+
+  Note. KM 5 knowledge management.
+
+
+--- PAGE BREAK ---
+
+2017                                                        Fisher and Connelly                                                   173
+
+used expected annual turnover rates for each em-                          turnover at 150 percent. We used the above estimates
+ployee category and computed a “per employee”                             of turnover rates in conjunction with the per-
+turnover cost that spreads the expenses across all                        employee turnover costs to compute total turnover
+employees in a category to provide a more accurate                        costs.
+estimate of the impact of turnover across groups. The                        Summary of service costs. Table 3 displays total
+annualized turnover rate for jobs in the information                      service costs for a single help desk worker in each
+industry (most similar to the help desk staff position)                   category both with and without turnover costs in-
+was 28 percent in 2012 (Stephens & Riley, 2005). We                       cluded. Turnover costs are included at the average
+estimate that high levels of turnover within the in-                      rates of turnover described above. Despite the turn-
+dustry would be 38 percent with low turnover at 18                        over costs of individual TAWs being the lowest,
+percent. We use these percentages for our estimates                       the per-employee/position costs rise substantially
+of permanent employee turnover rates.                                     once we consider the category turnover rates (from
+   Turnover rates for contingent workers are likely to                    $50,626 without turnover to $74,463 with turnover).
+vary by type of worker. We estimate that most ICs will                       Examining Table 3, we note two important trends.
+not stay longer than 1 year, partially due to contract-                   First, if we ignore turnover costs, it is evident why
+ing procedures and tax code requirements. ICs with                        the use of contingent workers is attractive to or-
+an AOR relationship are likely to have somewhat                           ganizations from a direct cost perspective. In the
+shorter contracts, as the agency will advise them to                      average salary condition, TAWs are 20 percent less
+have engagements with multiple clients within the                         costly than permanent workers, and it costs 4 percent
+calendar year, resulting in higher turnover rates. We                     less to hire a direct IC with specialized expertise than
+therefore estimate average IC-D turnover at 100 per-                      to use a permanent employee. Second, the impact of
+cent annually, ranging from 125 to 75 percent. We                         turnover costs in this analysis is substantial. TAWs
+estimate average IC-AR turnover will be 10 percent                        become almost as expensive as permanent workers if
+higher, with an annual average of 110 percent and                         we account for turnover costs, even when the turn-
+ranging from 137.5 to 82.5 percent. We expect that                        over cost of a single TAW is less than half that of
+TAWs will have the highest levels of turnover and                         a permanent employee. This is due to the sub-
+will turn over more than once a year on average. Many                     stantially higher turnover rate for TAWs.
+organizations have become sensitive to the duration
+of temporary assignments in reaction to publicity
+                                                                          Determining Service Value
+around misclassification lawsuits (Wears & Fisher,
+2012) and thus have adopted policies of keeping                             Service value is defined as the value an employee
+TAWs for 9–12 months or less to minimize the risk of                      brings to the organization through his or her services,
+them being classified as permanent or joint em-                           and has two main components: task performance and
+ployees. Some TAWs are present for only 1 day or                          OCB. We start our analysis of service value by esti-
+1 week, but data from a major North American tem-                         mating the monetary value of average performance.
+porary agency show approximately half of its as-                          Following Sturman et al. (2003), we use a 1.754 salary
+signments lasted 30 days or less from 2007 to 2009.                       multiplier to determine the monetary value of service
+However, almost 30 percent of the assignments were                        value at average performance levels. This figure is
+180 days or more, and the average assignment length                       normally based on salary costs rather than total ser-
+was 195 days. To account for these factors, we esti-                      vice costs, assuming that for any group of workers the
+mate average turnover for TAWs at 200 percent. We                         total salary costs will represent an approximation of
+estimate high turnover at 250 percent and low                             the value that they bring to the organization. The use
+
+
+                                                            TABLE 3
+                                                   Data Summary for Service Costs
+Employee Type                       Low Salary (25th Percentile)               Average Salary            High Salary (75th Percentile)
+
+Permanent employees                      Avg. TO: $67,997                      Avg. TO: $76,424               Avg. TO: $86,905
+                                          No TO: $56,237                        No TO: $63,181                 No TO: $71,817
+Direct ICs                               Avg. TO: $69,803                      Avg. TO: $78,593               Avg. TO: $89,525
+                                          No TO: $53,739                        No TO: $60,502                 No TO: $68,914
+Agent of record ICs                      Avg. TO: $74,087                      Avg. TO: $83,417               Avg. TO: $95,021
+                                          No TO: $56,416                        No TO: $63,518                 No TO: $72,349
+Temporary workers                        Avg. TO: $66,136                      Avg. TO: $74,463               Avg. TO: $84,819
+                                          No TO: $44,969                        No TO: $50,626                 No TO: $57,662
+
+  Note. TO 5 turnover; Avg. TO 5 service costs including costs of turnover at average levels.
+
+
+--- PAGE BREAK ---
+
+174                                          Academy of Management Discoveries                                            June
+
+of this multiplier assumes that salaries are set with               a standard deviation (SD) in performance [for in-
+some logical basis in the value of the work. The value              formation about the derivation of SDy, see Schmidt
+of a worker’s productivity will not increase in perpe-              and Hunter (1983) or Cascio (2000)]. We used per-
+tuity simply because he or she receives more salary.                formance values at 1 SD above and below the mean to
+Eventually, the constraints of a particular position                model differences in the service value of performance
+will place an upper limit on the value even the most                at three estimations of SDy: 30, 60, and 90 percent,
+productive worker can produce. In our help desk                     meaning that the monetary value of performance
+worker example, at average salary and performance,                  would increase (or decrease) by that percentage.
+the total service value for permanent employees is                  Workers would still be earning the same amount of
+therefore $82,955. The total service value for ICs is               money, but the value they create for the organization
+$105,768 (there is no difference between direct and                 would change (i.e., service value would increase or
+AOR ICs) and for TAWs it is $69,683.                                decrease based on performance but service costs
+   Subcomponents of service value. The next step in                 would remain the same). Thirty percent is considered
+computing service value is to divide total value into               to be conservative, but some authors consider the 90
+task performance and OCBs, which add considerable                   percent value to be most accurate (Sturman et al., 2003).
+value to organizations and are positively related to                For example, consider the task value estimate for ICs at
+both individual- and organizational-level perfor-                   average performance of $88,845. If we consider service
+mance indicators (Podsakoff, Whiting, Podsakoff,                    value at 11 SD of performance, the value of task per-
+& Blume, 2009) but there has been little research on                formance at SDy 5 30 percent becomes $115,499 and at
+the specific economic value of these behaviors. Orr,                SDy 5 90 percent it goes up to $168,806. Table 4 shows
+Sackett, and Mercer (1989) conducted a policy-                      results of these calculations at the three salary levels,
+capturing study in which they asked managers to                     assuming average performance, for all three worker
+estimate the dollar value of citizenship behaviors                  types. As noted in Table 4, we estimate the performance
+relative to task performance. While not all of the                  value of the IC-D and IC-AR as equivalent.
+managers considered OCBs, for those who did, 84                        Summary of service value. Service value within
+percent of the variance in dollar value of performance              each worker category can range widely depending
+was explained by task performance while OCBs                        on performance level and assumptions about the
+explained 16 percent. We use these estimates to di-                 overall value of SDy. Even at the most conservative
+vide overall service value into task performance (84                level of SD y (30 percent), there is a substantial
+percent) and OCB (16 percent) for the three types of                difference in the service value contributed by
+workers. For example, at average performance, the                   a worker at different levels of performance. In our
+$105,768 service value for an IC breaks down into                   example, a TAW with high performance levels
+$88,845 for task performance and $16,923 for OCBs.                  would contribute a task performance service value
+   The next step in our analysis is to account for var-             of $76,093 but with low levels of task performance
+iation in performance levels within and between as-                 would contribute only $40,973. Consistent with
+signment types. In essence, we take into consideration              other performance value analyses (Sturman et al.,
+the fact that some workers will perform at higher                   2003), annual service value at low performance levels
+levels than others who are paid the same wage. From                 in the 90 percent SDy condition can be close to zero,
+the utility analysis perspective, this is typically done            and clearly far less than the associated service costs.
+by modeling differences in value of performance us-                 For example, permanent employees performing 1 SD
+ing different values for SDy, the dollar value of                   below the mean would create only $8,295 in total
+
+
+                                                       TABLE 4
+                      Task Performance and OCB Service Value at Average Salary at Three Levels of SDy
+                                         Low Performance (21 SD)                             High Performance (11 SD)
+
+Employee Type                    Task Performance                  OCB               Task Performance                   OCB
+
+Permanent employees                30% $48,778              30% $9,291                 30% $90,587               30% $17,255
+                                   60% $27,873              60% $5,309                 60% $111,492              60% $21,237
+                                   90% $6,968               90% $1,327                 90% $132,397              90% $25,218
+IC (IC-D/AR)                       30% $62,192              30% $11,846                30% $115,499              30% $22,000
+                                   60% $35,538              60% $6,769                 60% $142,152              60% $27,077
+                                   90% $8,885               90% $1,692                 90% $168,806              90% $32,154
+Temporary workers                  30% $40,973              30% $7,804                 30% $76,093               30% $14,494
+                                   60% $23,413              60% $4,460                 60% $93,653               60% $17,839
+                                   90% $5,853               90% $1,115                 90% $111,213              90% $21,183
+
+
+--- PAGE BREAK ---
+
+2017                                                         Fisher and Connelly                                                            175
+
+                                                               TABLE 5
+                                                Basic Net Value for Three Worker Types
+                 Service      Service Costs      Net Value per Worker      Turnover Costs per     Total Service Costs   Net Value per Worker
+Worker Type     Value ($)   (No TO Costs) ($)      (No TO Costs) ($)       Worker (n 5 10) ($)    (with TO Costs) ($)    (with TO Costs) ($)
+
+Permanent         82,955          63,181                 19,774                  13,243                 76,424                    6,532
+  employees
+IC, direct       105,768          60,502                 45,266                  18,090                 78,592                  26,511
+IC, AOR          105,768          63,518                 42,250                  19,899                 83,417                  21,686
+Temporary         69,683          50,969                 18,714                  23,837                 74,806                  25,561
+  workers
+
+  Note. Net value estimates in this table assume average salary, average performance, and average turnover rates. TO 5 turnover; service costs 5
+wages 1 benefits/transaction costs 1 training costs 1 turnover costs; service value 5 task performance value 1 OCB value; net value 5 service
+value, service costs.
+
+
+
+service value while the average salary alone for this                        employees than contingent workers, and finding
+position is $47,295. When estimating the total value of                      ways to minimize turnover costs.
+workers in any of these categories, it is critical to un-                       The help desk example also shows how what-if
+derstand average performance levels and the mone-                            modeling could help organizations make decisions
+tary value of variation in performance.                                      about the best staffing mix for their situation. If we
+                                                                             assume that permanent employees have average
+                                                                             levels of task performance and OCBs and contingent
+Net Value
+                                                                             workers demonstrate average task performance but
+   The final step in the model is to use the estimates                       low levels of OCBs (21 SD), then at SDy 5 30 percent
+derived above to examine net value for workers in                            the net value of the direct IC is reduced to $40,189
+each category according to specified profile (see                            and the value provided by the TAW is $15,369
+Table 5). We define net value as the service value the                       (without considering turnover) while the net value of
+worker adds to the organization minus the service                            the permanent employee is still $19,774. At SDy 5 90
+costs. In the simplest case, we can compare all four                         percent, we see the service value dropping further for
+types of help desk workers, assuming that all have                           the contingent workers under conditions of low
+average costs and average performance levels (both                           OCBs, to $30,036 for direct ICs, $27,020 for agency
+task and OCB). Considering service costs and service                         ICs, and $8,679 for TAWs due to the higher monetary
+value but ignoring turnover costs for the moment,                            value placed on 1 SD of OCBs. This situation, in
+the highest net value comes from the direct ICs at                           which contingent workers display fewer OCBs,
+$45,266, followed by the agency ICs at $42,250. As-                          would make a strong case for hiring more permanent
+suming average salary and performance, permanent                             employees while decreasing the use of temporary
+employees ($19,774) and TAWs ($18,714) are very                              workers. However, the mix of these employee types
+close in net value, in spite of permanent employees’                         is critical in conducting a cost–benefit analysis. We
+higher salary costs. In this case, it makes financial                        therefore develop a series of scenarios to allow us to
+sense to use more temporary workers because there is                         examine more specific workforce conditions.
+little cost to the added flexibility.
+   However, it is important to include turnover costs.
+                                                                             Scenario Modeling
+For this example, we assume that TAWs and ICs work
+at least 3 months with the organization and are well                           Various frameworks of strategic human resource
+integrated with the permanent employees. Consider-                           management suggest that organizations should make
+ing the average turnover cost per employee based on                          intentional choices about staffing options based on
+the turnover rates described above, the rank ordering                        core competencies and long-term goals. For exam-
+of worker net value remains the same but we reach                            ple, Lepak and Snell (1999) suggest that jobs re-
+a different conclusion about cost-effectiveness. The                         quiring competencies that are unique and valuable
+direct IC arrangement is the most cost-effective but the                     should be staffed internally, whereas those requiring
+net value is reduced to $26,511, with net value for
+the agency IC at $21,686. The permanent employee in
+this situation has much lower net value than ICs but                                          Author’s voice:
+is still positive ($6,532), whereas the TAW has                                Why was this research important to
+a negative net value of 2$5,561. These results                                 you?
+would support the use of more permanent
+
+
+--- PAGE BREAK ---
+
+176                                         Academy of Management Discoveries                                        June
+
+competencies that are widely available and of lower                The help desk position in each of our hypotheti-
+value should be staffed externally. Likewise, Kulkarni          cal firms is staffed by a mix of permanent employees
+and Ramamoorthy (2005) suggest that firms take into             and contingent workers. In each scenario, we spec-
+account the required levels of commitment and flex-             ify the levels of pay, benefits, and training received by
+ibility when deciding what employment contract to               each employee type, as well as turnover rates. We also
+offer. In a similar vein, Cappelli and Neumark (2004)           specify service value (i.e., task performance and
+describe the core and periphery distinction in HR               OCBs) based on the assumptions described above.
+strategy, and note that some organizations make part            While we describe the levels of performance for both
+of their workforce peripheral (through contingent               task performance and OCBs for each employee group
+arrangements) to deal with variations in demand,                in each scenario, it is also instructive to consider
+meet short-term staffing requirements, and deal with            a performance distribution within each employee
+stringent caps on head count.                                   group. These are presented in Table 6. For example, in
+   These strategic choices have implications for the            our first scenario (NormalCo), we have 27 permanent
+attitudes and behaviors of a firm’s permanent em-               employees. Using a conservative performance
+ployees. Overall, the presence of higher proportions            distribution, we include 3 low performers, 21 av-
+of contingent workers in organizations is associated            erage performers, and 3 high performers. To model
+with permanent employees having less favorable                  differences in performance levels, we used the
+attitudes toward supervisors and peers, increased               service values associated with 1 and 2 1 SD to
+turnover intentions, and decreased interpersonal                represent high and low performance, and selected
+helping (Broschak & Davis-Blake, 2006). When firms              the mid-level value of SDy 5 60 percent. Details
+use contingent workers to reduce labor costs, per-              about each scenario are provided below.
+manent employees engage in more withdrawal be-                     NormalCo. Our first scenario involves a company
+haviors (Way, Lepak, Fay, & Thacker, 2010). We                  that uses contingent workers as needed to respond to
+consider how various strategic choices about staffing           fluctuations in staffing requirements, consistent
+arrangements will affect overall value.                         with the core–periphery distinction (Cappelli &
+                                                                Neumark, 2004). Wages, benefits, and training for
+                                                                permanent employees and contingent workers are
+Scenarios
+                                                                average, and all ICs are required to have an AOR.
+   We created six scenarios to represent various orga-          Performance, OCBs, and turnover are also average.
+nizational strategies for using contingent workers.             This scenario represents a baseline condition.
+These scenarios are not intended to be exhaustive, but             MegaCo. This scenario involves a company that
+they provide a starting point for meaningful compar-            has pursued a low-cost HR strategy and uses con-
+isons. All our scenario firms have 10,000 employees             tingent workers wherever possible to save money.
+and a help desk function with 33 co-located positions           Organizations that expect a ready supply of suitable
+(the median help desk staffing ratio is 1 per 300 em-           employees avoid investing in training and retention;
+ployees in an organization: Computer Economics,                 as noted by Cascio (2006a), they anticipate high
+2009). The help desk support job was chosen as the              turnover but accept this as a “cost of doing business.”
+focus of our simulation because jobs in this occupation         Wages, benefits, and training for all workers are low.
+are typically staffed by a mix of permanent employees,          ICs are required to have an AOR. Performance and
+TAWs, and ICs. It is easy to find direct-hire help desk         OCBs are low, and turnover among all three em-
+job postings on sites such as Indeed or Monster.com,            ployee groups is high.
+contract postings on websites such as jobs.yoh.com,                Temp-to-PermCo. This scenario represents orga-
+and temporary agencies such as Adecco and Kelly                 nizations that use contingent employment as an ex-
+advertising help desk services. Postings in these dif-          tended screening or probationary process through
+ferent sources generally include similar job responsi-          which contingent workers may eventually become
+bilities and specifications. Companies could pursue             permanent employees. This approach is typical for
+one of several different strategies, as described below,        organizations that use contingent workers and per-
+for how to staff the help desk function. These strategies       manent employees interchangeably (Lautsch, 2002),
+may lead companies to focus more on permanent                   and is common in accounting and engineering where
+employees to build commitment and engagement, or                skilled workers are scarce (Perlin, 2011). Wages,
+use different types of contingent workers to maximize           benefits, and training for permanent employees are
+flexibility or minimize cost. Companies also vary in            high. Performance and OCBs are also high, and turnover
+the extent to which they have an explicit contingent            rates are low. Contingent workers’ wages are low, but
+workforce strategy. For those that do, we suggest they          their levels of performance and OCBs are high because
+require ICs to have an AOR arrangement to reduce                they are motivated to obtain permanent employment
+risk due to misclassification.                                  with the firm (Broschak, Davis-Blake, & Block, 2008;
+
+
+--- PAGE BREAK ---
+
+2017                                                     Fisher and Connelly                                                        177
+
+                                                            TABLE 6
+                                               Scenario Performance Distributions
+                                                                                            Performance Distributions
+
+                                                                                     Task                               OCB
+
+Scenario               Employee Type         Number of Employees          Low         Avg        High       Low         Avg        High
+
+NormalCo                    Perm                       27                   3         21           3          3         21           3
+                            IC-AR                       3                  —           3          —          —           3          —
+                            Temp                        3                  —           3          —          —           3          —
+MegaCo                      Perm                       25                  18          5           2         18          5           2
+                            IC-AR                       1                  —           1          —          —           1          —
+                            Temp                        7                   5          1           1          5          1           1
+Temp-to-PermCo              Perm                       26                   2          6          18          2          6          18
+                            IC-AR                       1                  —          —            1         —          —            1
+                            Temp                        6                  —           2           4         —           2           4
+CoreCompCo-A                Perm                        3                  —           3          —          —           3          —
+                            IC-D                        7                   1          5           1          1          5           1
+                            Temp                       23                  17          3           3         17          3           3
+CoreCompCo-B                Perm                        3                  —           3          —          —           3          —
+                            IC-AR                       7                   1          5           1          1          5           1
+                            Temp                       23                  17          3           3         17          3           3
+BlendedCo                   Perm                       24                   2         20           2         20          2           2
+                            IC-D                        2                  —           2          —          —           2          —
+                            IC-AR                       1                  —           1          —          —           1          —
+                            Temp                        6                  —           6          —          —           6          —
+
+  Note. Perm 5 permanent employees; Temp 5 temporary workers; Task 5 task performance; help desk in each organization has 33 workers.
+
+
+
+de Jong & Schalk, 2010). ICs in this company are re-                    contingent workers and permanent employees work-
+quired to have an AOR, and turnover among contingent                    ing together. An unintended consequence of this
+workers is low.                                                         strategy is that permanent employees’ perceptions
+   CoreCompetencyCo. The next scenario represents                       of job security are reduced (Davis-Blake et al., 2003;
+organizations that staff noncore roles predominantly                    Kraimer et al., 2005), leading to lower OCBs and
+with contingent workers. This strategy is congruent                     performance levels. In this scenario, wages, benefits,
+with the core–periphery model (Cappelli & Neumark,                      and training for all workers are average. Permanent
+2004) and Matusik and Hill’s (1998) suggestion that                     employees’ task performance is average but OCBs are
+contingent worker roles be reserved for support                         low and turnover is high. Contingent workers’ task
+functions that are not a source of competitive ad-                      performance, OCBs, and turnover levels are average.
+vantage. This scenario also reflects an HR strategy                     Note that this scenario includes both direct and
+whereby core employees’ job security is protected by                    agency-based ICs. A company without an existing
+the presence of contingent workers, who will be the                     strategy for using contingent workers is unlikely to
+first to be let go if financial exigencies demand it.                   require the AOR relationship from its ICs.
+Permanent employees’ wages, training, and benefits
+are average. The task performance, OCBs, and turn-
+                                                                        Results: Scenario Comparisons
+over of these workers are also average. Contingent
+workers’ wages and training levels OCBs and task                          Table 7 shows the interim results of calculations
+performance levels are low. Turnover among con-                         for each major component of net value (service costs,
+tingent workers is high. To reflect the two different                   turnover costs, total costs, and service value) in each
+types of ICs in our analysis, we show two versions of                   scenario, and Table 8 shows the results summarized
+CoreCompetencyCo. In CoreCompetencyCo-A, the                            across worker types for each scenario. The ICs (direct
+firm hires ICs directly, but in CoreCompetencyCo-B,                     and AR) were the most cost-effective across the dif-
+the organization has a policy requiring all contractors                 ferent scenarios, never producing negative net value.
+to be hired through an AOR. These two scenarios                         The use of permanent employees resulted in positive
+directly illustrate the typical financial implications of               net value in three of the six scenarios. The TAWs
+these two approaches.                                                   produced positive net value in only one scenario,
+   BlendedCo. Our final scenario represents com-                        Temp-to-PermCo, where they were motivated to
+panies that do not have an a priori strategy for us-                    perform well in order to gain permanent employ-
+ing contingent workers, and use a combination of                        ment. Two of the scenarios created an overall
+
+
+--- PAGE BREAK ---
+
+178                                             Academy of Management Discoveries                                                  June
+
+                                                        TABLE 7
+                                Interim Components of Net Value Computations for Scenarios
+                                         Service               Turnover             Total               Service               Total
+                      Number of         Costs per              Costs per           Costs Per           Value per            Value per
+Employee Type         Employees        employee ($)           Employee ($)        Employee ($)        Employee ($)         Employee ($)
+
+Scenario 1: NormalCo
+  Permanent              27                63,181               13,243               76,424              82,955                6,531
+  IC-AR                    3               63,518               19,899               83,417             105,768               22,351
+  Temp                     3               50,626               23,836               74,462              69,683               24,779
+Scenario 2: MegaCo
+  Permanent              25                56,237               15,959               72,197                 45,377           226,820
+  IC-AR                    1               56,416               22,088               78,504                 88,779            10,275
+  Temp                     7               44,969               26,458               71,426                 37,834           242,413
+Scenario 3: Temp-to-PermCo
+  Permanent              26                71,817                9,699               81,516             123,679                42,163
+  IC-AR                    1               56,416               13,253               69,669             150,276                80,607
+  Temp                     6               44,969               15,875               60,843              76,316                15,473
+Scenario 4a: CoreCompetencyCo-A (IC-D)
+  Permanent                3               63,181               13,243               76,424                 82,955             6,531
+  IC-D                     7               53,739               20,080               73,819                 93,922            20,103
+  Temp                   23                44,969               26,458               71,426                 39,279           232,147
+Scenario 4b: CoreCompetencyCo-B (IC-AR)
+  Permanent                3               63,181               13,243               76,424                 82,955             6,531
+  IC-AR                    7               56,416               22,088               78,504                 93,922            15,418
+  Temp                   23                44,969               26,458               71,426                 39,279           232,147
+Scenario 5: BlendedCo
+  Permanent              24                63,181               17,972               81,153              76,983               24,170
+  IC-D                     2               60,502               18,090               78,592             105,768               27,176
+  IC-AR                    1               63,518               19,899               83,417             105,768               22,351
+  Temp                     6               50,626               23,836               74,462              69,683               24,779
+
+  Note. Temp 5 Temporary Workers; help desk in each organization has 33 workers.
+
+
+positive net value for the entire workforce segment                      turnover in cost–benefit analyses of contingent
+we examined, with a spread of over $2 million from                       workers is important.
+the highest to lowest net value in this workgroup of                       We then conducted what-if modeling akin to
+33 employees. Clearly, including performance and                         a break-even analysis to see how the lowest
+
+                                                           TABLE 8
+                                               Results from Scenario Simulations
+Scenario                                  Net Value ($): Per Employee        Net Value ($): Employee Type       Net Value ($): Workforce
+
+MegaCo               Perm (n 5 25)                  226,819                           2670,482                         2895,352
+                     IC-AR (n 5 1)                   10,275                              10,274
+                     Temp (n 5 7)                   233,592                           2235,145
+NormalCo             Perm (n 5 27)                    6,532                             176,353                          229,068
+                     IC-AR (n 5 3)                   22,351                              67,054
+                     Temp (n 5 3)                    24,779                            214,338
+Temp-to-PermCo       Perm (n 5 26)                   42,163                           1,096,232                        1,269,678
+                     IC-AR (n 5 1)                   80,607                              80,607
+                     Temp (n 5 6)                    15,473                              92,839
+CoreCompCo-A         Perm (n 5 3)                     6,532                              19,595                        2579,065
+                     IC-D (n 5 7)                    20,103                             140,722
+                     Temp (n 5 23)                  232,147                           2739,382
+CoreCompCo-B         Perm (n 5 3)                     6,532                              19,595                        2611,860
+                     IC-AR (n 5 7)                   33,953                             107,927
+                     Temp (n 5 23)                  232,147                           2739,382
+BlendedCo            Perm (n 5 24)                   24,171                           2100,097                          252,071
+                     IC-D (n 5 2)                    27,176                              54,351
+                     IC-AR (n 5 1)                   22,351                              22,351
+                     Temp (n 5 6)                    24,779                            228,677
+
+  Perm 5 permanent employees; Temp 5 temporary workers; help desk in each organization has 33 workers.
+
+
+--- PAGE BREAK ---
+
+2017                                               Fisher and Connelly                                                179
+
+performing firm (MegaCo) could improve employee                  for contingent workers, and these costs may, when
+net value to at least zero. For MegaCo, reducing                 averaged across employment groups, be highest
+turnover to average levels does not reach the desired            when using TAWs on engagements of 3–6 months.
+effect. Assuming that turnover for permanent and                 Our results suggest that TAWs may be the least cost-
+contingent workers is average instead of low, the net            effective contingent employment arrangement in
+value of the workforce increases from 2$895,352 to               this context because of their combined lower pro-
+2$584,551 but is still negative. Performance also                ductivity and higher turnover. Direct ICs appear to be
+needs to be addressed to approach a net value of zero.           more cost-effective than the AOR ICs due to the in-
+Keeping turnover average and improving perfor-                   creased transaction costs and higher turnover asso-
+mance to a normal distribution around average re-                ciated with AOR contracting.
+sults in a positive net value of $122,628. Note this                While the specific scenarios and model parame-
+what-if scenario maintains the below-average wages               ters created in this paper are firmly based in a single
+from the original analysis, so it assumes there are              occupation (IT help desk work), the overall frame-
+other programs to improve performance and reduce                 work of breaking down and examining the different
+turnover (e.g., employee engagement) in spite of the             sources of cost and value provides a contribution to
+low wages. Further, this analysis does not include               both research and practice in contingent labor more
+the presumed added cost of these programs.                       broadly. For example, we can see how the net value
+                                                                 created by the forms of contingent work is quite dif-
+                                                                 ferent. Permanent employees are paid more but they
+                    DISCUSSION
+                                                                 are also more likely to have higher levels of task
+   There have been many claims that contingent                   performance and engage in more OCBs in compari-
+work is financially beneficial for organizations, but            son to workers who are paid less and who turn over
+there have been few systematic reviews of the overall            more rapidly. However, our scenarios clearly dem-
+cost/benefit trade-offs of using contingent workers.             onstrate that this relationship between service costs
+This paper provides a conceptual foundation (see                 and service value can also be negative, such as when
+Figure 1) for examining these costs, estimates pa-               high turnover costs lead to lower task performance
+rameters for analyzing costs across four types of                because new workers must be trained or customer
+work arrangements for the occupation of help desk                relationships are strained. The costs incurred by
+workers, and then examines differential costs across             IC-Ds, IC-ARs, and TAWs vary only moderately, with
+a range of strategic scenarios. Our model suggests               service costs for IC-ARs $8,954 higher than for TAWs
+that employers should look beyond immediate sav-                 at average salary, and costs for IC-Ds only $4,130
+ings accrued from wage costs when they decide how                higher than for TAWs. However, with average levels
+to structure their workforce; contingent workers may             of OCBs and task performance, the basic difference in
+represent a false economy when all costs and bene-               net value is more substantial with TAWs showing
+fits are considered. We first discuss issues related             negative net value under these assumptions (2$5,561)
+to service costs and value with different types of               and both types of ICs showing net value exceeding
+workers. We then discuss the impact of different                 $20,000. When we model expected variation in levels
+organizational strategies on the use of contingent               of OCBs and performance, we see even greater varia-
+work, followed by future research directions, limi-              tion in net value. These differences underscore the
+tations, and practical implications of the paper.                importance for both research and practice of consid-
+                                                                 ering each employment status individually rather
+                                                                 than using “contingent worker” as a homogenous
+Service Costs and Value
+                                                                 category (Connelly & Gallagher, 2004). Although re-
+   The model and scenarios show how various com-                 cent research has shown that ICs and TAWs have
+ponents of worker service value and service costs                significantly different levels of job satisfaction, orga-
+affect overall net value for different contingent                nizational commitment, and OCBs (Ashford et al.,
+workers and organizational strategies. A central el-             2007), this research is the first to model the financial
+ement of our framework is the identification of                  consequences of these differences. Ultimately, our
+how different types of workers are associated with               framework is flexible and can be adapted to different
+different service costs and value. The type of em-               occupations in which fewer or different types of
+ployment arrangement chosen (i.e., permanent em-                 contingent workers are represented.
+ployees, TAWs, IC-Ds, and IC-ARs) will determine                    The strong impact of performance on net value
+many employment costs, in terms of wages, benefits,              to the firm extends the utility analysis results pre-
+transaction costs, and turnover, as well as the value            sented by Griffith, Witt, Polk, Robinson, Thacker,
+provided, in terms of performance and OCBs. It is                and Callison (2011). They demonstrated that a high-
+critical to recognize here that there are turnover costs         performing computer programmer has a net value of
+
+
+--- PAGE BREAK ---
+
+180                                           Academy of Management Discoveries                                        June
+
+nearly $22,000 more than he or she is paid, while an              desk services rather than staffing it internally with
+underperforming programmer has a negative net value               TAWs. A fully outsourced relationship would allow
+of approximately $20,000. Much evidence in the lit-               the client to contract for services that would be pro-
+erature suggests that TAWs have lower performance                 vided by permanent employees of that service provider,
+than permanent employees or ICs (Nollen & Axel,                   and thus not incur the costs associated with TAWs.
+1996; Stratman et al., 2004). To the extent that con-                From our scenario comparison, we also observe
+tingent workers perform less effectively than perma-              that the superficially similar Temp-to-PermCo and
+nent employees due to lower skills, lower motivation,             BlendedCo strategies result in markedly different out-
+or simply lack of experience, our results reinforce that          comes. In both organizations, there are relatively few
+they will also bring substantially less value to the              contingent workers. However, in Temp-to-PermCo,
+company. Our framework suggests that it is only when              contingent workers are seen as future permanent
+we can expect contingent workers to perform as or                 colleagues while in BlendedCo, contingent workers
+more effectively than permanent employees that they               are viewed as potential competition for a dwindling
+are more cost-effective. We may expect this type of               number of permanent jobs. These perceptions have
+over performance with ICs who bring unique skills to              significant effects on worker performance, with fi-
+the client organization (Marler et al., 2002), or with            nancial consequences at the organizational level.
+TAWs hoping to be hired into permanent positions.                 This finding suggests that organizations need to en-
+                                                                  sure that contingent workers are viewed positively
+                                                                  within the workplace. Possible ways to achieve
+Strategic Perspectives on Contingent Labor
+                                                                  this are to establish a track record of using con-
+   Our scenario analysis helped to illustrate the im-             tingent workers only for entry-level positions and
+pact of different strategies for using contingent                 then promoting from within, avoiding internal mes-
+workers on their cost-effectiveness. For example, us-             saging to permanent employees that implies job in-
+ing a core competency strategy (Cappelli & Neumark,               security, and involving permanent employees in
+2004; Matusik & Hill, 1998) increased service costs               internal mentorship and socialization processes.
+among permanent workers because of higher sal-                       The differences that we observe between MegaCo
+aries, and among TAWs due to higher turnover. Temp-               and NormalCo, while based on simulated data, reflect
+to-perm staffing will positively influence the value              the effects of common business strategies. MegaCo’s
+accrued with TAWs as they are more likely to perform              focus on low wages and benefits for permanent and
+OCBs when there is the possibility of being converted             contingent workers is, in many ways, analogous to the
+to a permanent position. Thus, even when considering              business strategy of firms such as Walmart. The con-
+the use of contingent workers, we still find that orga-           sequences of this HR strategy are clear. Walmart’s
+nizational strategies that emphasize investments in               turnover rate, at 44 percent, is significantly higher than
+both permanent employees and contingent workers                   that of a primary competitor, Costco, which has turn-
+(e.g., Temp-to-PermCo, NormalCo) resulted in greater              over of only 17 percent overall, and just 6 percent in an
+value and lower costs than did strategies that lead to            employee’s first year (Cascio, 2006a, 2006b). Costco’s
+high turnover (e.g., MegaCo).                                     hourly labor rates are more than 40 percent higher than
+   It is interesting to note that the scenario representing       those at Sam’s Club but when worker productivity is
+the most extensive use of TAWs, CoreCompetencyCo,                 considered, Costco’s net labor costs (5.55 percent) are
+had among the lowest net value even though the sce-               lower than those at Sam’s Club (6.25 percent; Cascio,
+nario was designed to be consistent with the recom-               2006a: 35). While it may be possible to reduce the direct
+mendations of the strategic HR literature. Lepak and              costs of temporary workers to the point where it seems
+Snell (1999) suggest that when human capital is easily            that an organization could achieve positive net value, it
+available on the open market and of little strategic              is critical to consider the effect that lower costs have
+value, it should be contracted from the outside. For              on performance and turnover.
+a retail organization, help desk services are of limited
+strategic value, and these services are readily available.
+                                                                  Future Research Directions and Limitations
+Regardless, these TAWs had a negative net value in our
+simulation, suggesting that organizations might be                  We see a number of future research directions for
+better off outsourcing an ongoing function such as help           further exploration of our framework and simulation,
+
+
+
+                  Author’s voice:                                                    Author’s voice:
+  Was there anything that surprised you                              Would there be any changes to your
+  about the findings? If so, what?                                   parameters in future research?
+
+
+--- PAGE BREAK ---
+
+2017                                                  Fisher and Connelly                                                    181
+
+and to address limitations inherent in our approach.                duration of a particular initiative, such as the in-
+First, it would be useful to test the framework with                troduction of a software upgrade, but then reduce
+organizational data. Even though the parameters in                  staffing levels when most employees are comfortable
+our model are based on reliable sources such as ASTD                using the new software. Instead of always having the 33
+(now the Association for Talent Development), salary.               employees assumed to be staffing the help desk in our
+com, and the Bureau of Labor Statistics, it is important            scenarios, an organization could staff up to 36 or 40
+to see how the model holds up under real world con-                 during periods of heavy demand. When reducing
+ditions. Collecting employee data would enable us to                staffing levels to 33, turnover costs would be even less
+measure actual behaviors (e.g., OCBs, performance) as               than the 30 percent suggested in our analysis. This kind
+well as the underlying attitudes. For example, we                   of turnover would involve some disruption and
+could measure contingent and permanent employees’                   knowledge management concerns during the departure
+expectations or psychological contracts as well as how              (e.g., trying to make sure any organization-specific
+well the organization is meeting their needs. Empirical             knowledge is somehow retained when the temporary
+data would also enable us to distinguish between the                workers leave) but there would be no replacement
+added value of different types of OCBs (e.g., in-                   costs. In the United States, the principle of employment
+terpersonal helping vs. civic virtue), which we were                at will generally reduce the costs of downsizing unless
+unable to do in this paper. Although there is evidence              employees have specific contractual protections. In
+that contingent workers do engage in OCBs, it would                 other regions such as Europe, however, this type of
+be particularly interesting to examine whether differ-              flexibility is even more important because it can be
+ent types of contingent workers engage in different                 extremely difficult to terminate workers who have long-
+types of OCBs. For example, ICs may be reluctant to                 term contracts (Mitlacher, 2006).2
+engage in too much interpersonal helping if it may                     We did not explicitly account for staffing flexibil-
+mean that a permanent employee learns enough so                     ity in our model, but the model could be used to
+that the services of the IC are no longer needed. As part           examine the monetary effects of increased flexibility.
+of this analysis, it would be useful to uncover if and              For example, an organization could estimate the
+whether some of OCBs are generally more valuable                    expected costs of downsizing and discount that by
+than others.                                                        the probability of needing to downsize within a de-
+   It would also be useful for future research to consider          fined period of time.3 These costs may be significant;
+the financial impact of some of the organizational-level            as Bidwell (2009) notes in his analysis of a bank’s use
+advantages of using contingent workers instead of                   of contractors, severance benefits can amount to
+permanent employees. For example, Barley and                        60–70 percent of a permanent employee’s annual
+Kunda (2006) describe how some managers prefer to                   cost of employment under certain circumstances,
+hire contingent workers because doing so avoids in-                 although the payment of severance benefits varies
+creasing departmental “head-count,” thereby making                  widely by job type and industry. Those projected
+the unit appear to be more efficient in the eyes of top             costs for downsizing would be added to the service
+management or potential investors. In this situation,               costs of the permanent workers. There could also be
+there are additional external benefits that could be                decreases in service value for permanent employees
+added to the overall model. It might be worth taking                as they anticipate potential downsizing or adjust
+a short-term loss for using TAWs if there is a longer               emotionally after layoffs. It would be interesting to
+term goal that can be met with this staffing model.                 directly compare and attempt to quantify the im-
+   One of the assumptions in our analysis is that per-              pact on performance of the perceived threats of
+manent employees and contingent workers who turn                    layoffs compared to perceived threats from contingent
+over are replaced. Our model provides a baseline                    labor. Working alongside a temporary worker might be
+analysis of the routine day-to-day employment costs;                perceived as more threatening to the permanent em-
+it uses one occupation, help desk support worker that               ployee’s job than vague threats of a layoff.
+has more stable organizational requirements than                       Another approach to estimating the value of flex-
+occupations related to banking, resource extraction                 ibility would be to examine it more generally using
+(e.g., mining, oil & gas, forestry), retail sales, or other         the concept of inventory optimization as described
+cyclical or seasonal industries. However, many orga-                in the supply chain literature (Boudreau, 2010). It is
+nizations say that they hire contingent workers be-                 well accepted that there are costs to carrying excess
+cause of the increased flexibility to terminate workers,            inventory. In the talent management context, this
+avoiding expensive termination costs such as sever-
+ance packages and saving money when the position is                   2
+                                                                         Estimating the probability and costs of layoffs for this
+not needed for a period of time (Bidwell, 2009).                    model could not be included in our model because these
+   In the IT help desk context, for example, an orga-               estimates would have had weak empirical justifications.
+nization may hire additional staff specifically for the                3
+                                                                         We thank an anonymous reviewer for this suggestion.
+
+
+--- PAGE BREAK ---
+
+182                                        Academy of Management Discoveries                                         June
+
+would mean that employees are sitting idle, resulting          high-demand occupations (e.g., statisticians, special-
+in an extremely low net value where service costs are          ized truck drivers) it may be particularly difficult to
+normal but service value is negligible. Carrying an            recruit qualified candidates, which may lead to higher
+excess “inventory” of employees could be important             transaction costs or higher benefits compared to the
+if that employee has critical and unique skills that           national average. Training costs also vary by occu-
+will be needed at some point, similar to maintaining           pation, especially where regulations demand atten-
+“safety stocks” of material resources. However, if the         tion to safety standards (e.g., utilities). Similarly, we
+employee has a noncritical set of skills that can be           should note that in unionized environments (e.g.,
+replaced on the contingent labor market, our model             manufacturing), the transaction costs and employ-
+suggests it would make more sense to utilize a tem-            ment benefit costs for permanent workers may be
+porary employee to fill the position as needed rather          higher, which could affect the outcomes of our ana-
+than regularly carrying the excess capacity.                   lyses. Second, some types of contingent labor may
+   One unique contribution of this paper is that it ex-        need to be deleted from the model. Many union con-
+amines the AOR model of contingent work, which has             tracts specifically limit the use of contingent workers,
+received little attention in the research literature to        or could specify that only TAWs can be used and only
+date. One reason that client firms use the AOR model           for very limited periods of time. Third, other param-
+is to reduce the risk of worker misclassification and          eters may need to be added to better reflect the true
+the subsequent fines or lawsuits associated with               cost or the true value of workers in certain occupa-
+misclassification as an IC when the worker might               tions. In a manufacturing setting, for example, safety
+better fit the legal definition of employee. While we          incidents could be added as another indicator of
+found that ICs in the AOR model were slightly more             performance. Fourth, our use of a white-collar occu-
+expensive in the short term, the value of avoiding             pation where workers enjoy a certain degree of au-
+fines and a lawsuit should be considered. In Cor-              tonomy and discretion may mean that there is greater
+eCompetencyCo, the scenario with the largest num-              variation in performance than in an occupation where
+ber of ICs, we saw a cost differential of $32,795 for          tasks are more mechanized or where there is closer
+engaging seven direct ICs compared to seven ICs                scrutiny (e.g., call centers). More generally, it would
+through an AOR. For small-to-medium-sized firms,               also be interesting to see if the overall model is con-
+the median fines and penalties in employment law               sistent across geographic regions, especially given the
+cases that go to court are approximately $200,000,             regional variations in client expectations and tempo-
+with many misclassification lawsuits resulting in              rary firm HRM practices (Mitlacher, 2006).
+awards more than $1 million (Hiscox, 2015; Reibstein,             An additional research question less directly related
+2010). These estimates do not include the internal             to the cost and benefit analysis is how organizations can
+costs of defending the lawsuit (e.g., lost productivity        maximize contingent worker performance without
+because of time allocated to preparing for court, legal        creating a co-employment relationship. This is a para-
+fees), which can exceed the cost of the fines and              dox of the contingent work relationship, in that the
+penalties. The small additional cost for the AOR               actions that promote more effective task performance
+serves as an insurance policy against the million-             and display of OCBs (enhancing satisfaction and social
+dollar payout. Further, if the client firm has enough          exchange) are also the actions that risk crossing the legal
+power to shift payment of fees onto the IC, then the           line from contingent worker to employee (Broschak &
+service costs may be further reduced. We assumed in            Davis-Blake, 2006; Fisher et al., 2008). Client firms seek
+our analysis that an IC would increase fees charged to         to manage this risk through use of temporary agencies
+the client to cover the 5 percent AOR fee, but this may        and the AOR and employer of record models, but use of
+not always be the case, especially if the IC has trouble       such a triangular employment relationship may create
+finding clients. However, the specific impact of the           confusion and conflict in employee commitment and
+AOR model on IC commitment, engagement, and                    engagement. Future research should examine how best
+performance should be studied in more detail.                  to obtain the financial and performance benefits of us-
+   We chose one focal job, IT help desk support                ing contractors while minimizing legal risks.
+worker, for the purposes of our analyses. Although                Although we focused on the prevalent types of
+focusing on a single occupation allowed us to develop          contingent workers, ICs and TAWs, other forms of
+a relatively parsimonious framework of costs and               nonstandard work are becoming more common and
+benefits, future research should examine the extent to         could be incorporated into a more complex model.
+which our framework and conclusions are generaliz-             “Dependent” contractors, who typically only work
+able to other occupations and organizational settings.         for one client (often a former employer: Connelly &
+We anticipate several adjustments that would need              Gallagher, 2006) would have lower recruitment
+to be made to the framework in other settings. First,          costs and may perform higher levels of OCBs, but
+estimates of costs could change. For example, in               might also expose the client organization to greater
+
+
+--- PAGE BREAK ---
+
+2017                                               Fisher and Connelly                                                     183
+
+misclassification risk unless engaged through an AOR or          their job security and that these workers are likely
+employer of record. Temporary foreign workers or                 to become their future permanent colleagues.
+“guest workers,” noncitizens who are recruited from                 In conclusion, this study models the costs and
+abroad for a short-term contract, may have higher re-            benefits of engaging the services of permanent
+cruitment costs but require lower salaries and benefits.         workers, two types of ICs, and TAWs. We suggest that
+Future research should examine the costs and benefits of         under a standard set of circumstances, ICs have the
+these types of work arrangements and other new con-              highest net value and permanent employees provide
+tingent work arrangements as they continue to evolve.            higher net value than TAWs in spite of the higher
+                                                                 direct costs. Lower performance and higher turnover
+                                                                 of TAWs mean that, in many situations, this category
+Practical Implications
+                                                                 of contingent workers bears hidden costs that should
+   We believe that HR, procurement, and supply                   cause managers to reconsider their use. In many
+chain managers can take the basic approach we used               ways, the use of contingent work is an attempt by
+in this paper and customize the model with histori-              companies to add value at a lower cost. We encour-
+cal and current data specific to their organization.             age researchers and managers to carefully examine
+This approach offers a powerful tool to make in-                 all components of both cost and value when com-
+formed, data-driven decisions about the use of con-              paring different models of work.
+tingent workers. Better decisions will give top
+management confidence to find the optimal matrix
+                                                                                       REFERENCES
+of contingent workers (both numbers and types) that
+balances the trade-off between cost and value. Such              Aletraris, L. 2010. How satisfied are they and why? A study
+an analysis will provide managers the ability to jus-                of job satisfaction, job rewards, gender and temporary
+tify to management, shareholders, employees, and                     agency workers in Australia. Human Relations, 63:
+other stakeholder such as unions, the specifics about                1129–1155.
+when good human capital management supports,                     Allen, D. G. 2008. Retaining talent. Alexandria, VA:
+or does not support, contingent work.                                Society for Human Resource Management.
+   As noted above, the ICs (direct and AOR) were the
+most cost-effective contingent work arrangement,                 American Society for Training and Development (2010).
+                                                                    State of the industry report. Alexandria, VA.
+across scenarios, never producing negative net
+value. In contrast, the TAWs produced positive net               Ang, S., & Slaughter, S. A. 2001. Work outcomes and job
+value in only one scenario, Temp-to-PermCo, where                   design for contract versus permanent information
+they were motivated to perform well in order to gain                systems professionals on software development teams.
+permanent employment. These findings suggest                        Management Information Systems Quarterly, 25:
+several practical implications for firms. First, where              321–350.
+possible, firms that are seeking to hire contingent              Ashford, S. J., George, E., & Blatt, R. 2007. Old assumptions,
+workers should engage the services of contractors                    new work: The opportunities and challenges of re-
+rather than TAWs. Given that the AOR employment                      search on nonstandard employment. Academy of
+arrangement minimizes the potential for misclassifi-                 Management Annals, 1: 65–117.
+cation at minimal cost, this contracting arrangement
+is more advantageous. Second, the performance and                Barley, S. R., & Kunda, G. 2004. Gurus, hired guns, and
+                                                                     warm bodies. Princeton, NJ: Princeton University Press.
+OCBs of contingent workers should be monitored.
+These workers would not be subject to normal per-                Barley, S. R., & Kunda, G. 2006. Contracting: A new form of
+formance appraisal procedures, and we recognize that                 professional practice. Academy of Management
+close supervision of ICs can contribute to them being                Perspectives, 20: 45–66.
+reclassified as employees. However, expected perfor-
+                                                                 Bidwell, M. 2009. Do peripheral workers do peripheral
+mance levels should be defined in contracts, and the
+                                                                    work? Comparing the use of highly skilled contractors
+client must be able to check that standards are being               and regular employees. Industrial & Labor Relations
+maintained in terms of the quality and timeliness of the            Review, 62: 200–225.
+work, especially because very little training is pro-
+vided and the recruitment and selection process is               Bidwell, M., & Briscoe, F. 2009. Who contracts? De-
+minimal. Third, the perceptions of permanent em-                    terminants of the decision to work as an independent
+ployees about the use of contingent workers are im-                 contractor among information technology workers.
+                                                                    Academy of Management Journal, 52: 1148–1168.
+portant, and should be measured and managed. If
+a temp-to-perm program is in place, managers should              Bidwell, M., Briscoe, F., Fernandez-Mateo, I., & Sterling, A.
+take care to make permanent employees aware that                    2013. The employment relationship and inequality:
+the presence of contingent workers is not a threat to               How and why changes in employment practices are
+
+
+--- PAGE BREAK ---
+
+184                                             Academy of Management Discoveries                                          June
+
+      reshaping rewards in organizations. The Academy of            Connelly, C. E., Gallagher, D. G., & Gilley, K. M. 2007. Or-
+      Management Annals, 7: 61–121.                                    ganizational and client commitment among con-
+                                                                       tracted employees: A replication and extension with
+Blau, P. M. 1964. Exchange and power in social life. New               temporary workers. Journal of Vocational Behavior,
+    York: Wiley.                                                       70: 326–335.
+Bonet, R., Cappelli, P., & Hamori, M. 2013. Labor market            Connelly, C. E., Gallagher, D. G., & Webster, J. 2011. Pre-
+    intermediaries and the new paradigm for human re-                  dicting temporary agency workers’ behaviors: Justice,
+    sources. Academy of Management Annals, 7: 341–392.                 volition, and spillover. Career Development In-
+Boudreau, J. W. 2010. Retooling HR: using proven busi-                 ternational, 16: 178–194.
+   ness tools to make better decisions about talent.                Coyle-Shapiro, J. A.-M., Morrow, P. C., & Kessler, I. 2006.
+   Boston, MA: Harvard Business Press.                                  Serving two organizations: Exploring the employment
+Broschak, J. P., & Davis-Blake, A. 2006. Mixing standard                relationship of contracted employees. Human Re-
+    work and nonstandard deals: The consequences of                     source Management, 45: 561–583.
+    heterogeneity in employment arrangements. Acad-                 Davis-Blake, A., & Broschak, J. P. 2009. Outsourcing and
+    emy of Management Journal, 49: 371–393.                             the changing nature of work. Annual Review of So-
+Broschak, J. P., Davis-Blake, A., & Block, E. S. 2008. Non-             ciology, 35: 321–340.
+    standard, not substandard: The relationship among               Davis-Blake, A., Broschak, J. P., & George, E. 2003. Happy
+    work arrangements, work attitudes, and job perfor-                  together? How using nonstandard workers affects exit,
+    mance. Work and Occupations, 35: 3–43.                              voice, and loyalty among standard employees. Acad-
+Bureau of Labor Statistics. 2013. Employer costs for em-                emy of Management Journal, 46: 475–485.
+    ployee compensation. Historical Listing March 2004–             de Jong, J., & Schalk, R. 2010. Extrinsic motives as moder-
+    June 2013. ftp.bls.gov/pub/special.requests/ocwc/ect/                ators in the relationship between fairness and work-
+    ececqrtn.pdf.                                                        related outcomes among temporary workers. Journal
+Cappelli, P., & Neumark, D. 2004. External churning and                  of Business and Psychology, 25: 175–189.
+   internal flexibility: Evidence on the functional flexi-          DiNatale, M. March 2001. Characteristics of and preference
+   bility and core-periphery hypotheses. Industrial Re-                for alternative work arrangements. Monthly Labor
+   lations, 43: 148–182.                                               Review, 28–49.
+Cascio, W. F. 2000. Costing human resources: The finan-             Easton, F. F., & Goodale, J. C. 2005. Schedule recovery:
+    cial impact of behavior in organizations (4th ed.).                 Unplanned absences in service operations. Decision
+    Cincinnati, OH: South-Western College Publishing.                   Sciences, 36: 459–488.
+Cascio, W. F. 2006a. Decency means more than “always low            Feldman, D. C. 2006. Toward a new taxonomy for un-
+    prices”: A comparison of Costco to Wal-Mart’s Sam’s Club.           derstanding the nature and consequences of contingent
+    Academy of Management Perspectives, 20: 26–37.                      employment. Career Development International, 11:
+Cascio, W. F. 2006b. The economic impact of employee                    28–47.
+    behaviors on organizational performance. California             Felfe, J., Schmook, R., Schyns, B., & Six, B. 2008. Does
+    Management Review, 48: 41–59.                                       the form of employment make a difference?—
+Chattopadhyay, P., & George, E. 2001. Examining the effects of          Commitment of traditional, temporary, and self-
+    work externalization through the lens of social identity            employed workers. Journal of Vocational Behavior,
+    theory. Journal of Applied Psychology, 86: 781–788.                 72: 81–94.
+
+Computer Economics. 2009. Help desk staffing ratios.                Fisher, S. L., Wasserman, M. E., Wolf, P. P., & Wears, K. H.
+   Irving, CA: Computer Economics.                                      2008. Human resource issues in outsourcing: Integrating
+                                                                        research and practice. Human Resource Management,
+Computer Economics. 2015. IT contingency worker use                     47: 501–523.
+   cyclical, not secular. Irving, CA: Computer Economics.
+                                                                    Fragoso, J. L., & Kleiner, B. H. 2005. How to distinguish
+Computer Economics. 2016. Help desk staffing on slow                    between independent contractors and employees.
+   march to recovery. Irving, CA: Computer Economics.                   Management Research News, 28: 136–149.
+Connelly, C. E., & Gallagher, D. G. 2004. Emerging trends in        Galais, N., & Moser, K. 2009. Organizational commitment
+   contingent work research. Journal of Management,                     and the well-being of temporary agency workers: A
+   30: 959–983.                                                         longitudinal study. Human Relations, 62: 589–620.
+Connelly, C. E., & Gallagher, D. G. 2006. Independent and           Giva. 2016. Help desk staffing models. https://www.givainc.
+   dependent contracting: Meaning and implications.                     com/wp/help-desk-staffing-models-simple-analysis-
+   Human Resource Management Review, 16: 95–106.                        save-money.cfm.
+
+
+--- PAGE BREAK ---
+
+2017                                                     Fisher and Connelly                                                    185
+
+Griffith, R. W., Witt, L. A., Polk, C., Robinson, S. D.,               Lapalme, M.-E., Simard, G., & Tremblay, M. 2011. The in-
+     Thacker, R., & Callison, K. 2011. Assessing the cost of               fluence of psychological contract breach on temporary
+     underperformance: A computer programmer example.                      workers’ commitment and behaviors: A multiple
+     Industrial-Organizational Psychologist, 48: 13–19.                    agency perspective. Journal of Business and Psy-
+                                                                           chology, 26: 311–324.
+Grossman, R. J. 2012. The art of choosing a staffing agency.
+    HR Magazine, 57: 33–35.                                            Lautsch, B. A. 2002. Uncovering and explaining variance
+                                                                           in the features and outcomes of contingent work. In-
+Guest, D. E., Isaksson, K., & De Witte, H. (Eds.). 2010. Em-               dustrial & Labor Relations Review, 56: 23–43.
+   ployment contracts, psychological contracts, and
+   employee well-being: An international study. Ox-                    Lepak, D. P., & Snell, S. A. 1999. The human resource ar-
+   ford, UK: Oxford University Press.                                      chitecture: Toward a theory of human capital alloca-
+                                                                           tion and development. Academy of Management
+Halbesleben, J. R. B., & Clark, S. K. 2010. The experience of              Review, 24: 31–48.
+    alienation among temporary workers in high-skill
+    jobs: A qualitative analysis of temporary firefighters.            Liden, R. C., Wayne, S. J., Kraimer, M. L., & Sparrowe, R. T.
+    Journal of Managerial Issues, 22: 531–545.                             2003. The dual commitments of contingent workers:
+                                                                           An examination of contingents’ commitment to the
+Harrison, J. R., Lin, Z., Carroll, G. R., & Carley, K. M. 2007.            agency and the organization. Journal of Organiza-
+    Simulation modeling in organizational and manage-                      tional Behavior, 24: 609–625.
+    ment research. Academy of Management Review,
+    32: 1229–1245.                                                     Marler, J. H., Barringer, M. W., & Milkovich, G. T. 2002.
+                                                                           Boundaryless and traditional contingent employees:
+Hillmer, S., Hillmer, B., & McRoberts, G. 2004. The real                   Worlds apart. Journal of Organizational Behavior,
+    costs of turnover: Lessons from a call center. Human                   23: 425–453.
+    Resource Planning, 27: 34–41.
+                                                                       Matusik, S. F., & Hill, C. W. L. 1998. The utilization of
+HireGenics. 2016. Agent of record services. http://hiregenics.            contingent work, knowledge creation, and competi-
+    acsicorp.com/hiregenics/sites/all/themes/hiregenics/                  tive advantage. Academy of Management Review,
+    pdfs/HireGenics_BR_1.2_AOR.pdf.                                       23: 680–697.
+Hiscox. 2015. Hiscox guide to employee lawsuits. https://              McLean Parks, J., Kidder, D. L., & Gallagher, D. G. 1998.
+    www.hiscox.com/shared-documents/The-2015-Hiscox-                      Fitting square pegs into round holes: Mapping the
+    Guide-to-Employee-Lawsuits-Employee-charge-trends-                    domain of contingent work arrangements onto the
+    across-the-United-States.pdf.                                         psychological contract. Journal of Organizational
+                                                                          Behavior, 19: 697–730.
+Houseman, S. N. 2001. Why employers use flexible
+   staffing arrangements: Evidence from an establish-                  Miller, L. 2012. ASTD 2012 state of the industry report:
+   ment survey. Industrial & Labor Relations Review,                       Organizations continue to invest in workplace
+   55: 149–170.                                                            learning (November 8). TD Magazine. www.td.org/
+                                                                           Publications/Magazines/TD/TD-Archive/2012/11/
+Kalleberg, A. L., & Marsden, P. V. 2005. Externalizing or-
+                                                                           ASTD-2012-State-of-the-Industry-Report.
+    ganizational activities: Where and how US establish-
+    ments use employment intermediaries. Socio-economic                Mitlacher, L. W. 2006. The organization of Human Resource
+    Review, 3: 389–416.                                                    Management in temporary work agencies—Towards
+                                                                           a comprehensive research agenda on temporary
+Kalleberg, A. L., Reskin, B. F., & Hudson, K. 2000. Bad jobs
+                                                                           agency work in Germany, the Netherlands and
+    in America: Standard and nonstandard employment
+                                                                           the US. Human Resource Management Review,
+    relations and job quality in the United States. Ameri-
+                                                                           16: 67–81.
+    can Sociological Review, 65: 256–278.
+                                                                       Nayar, N., & Willinger, G. L. 2001. Financial implications
+Kraimer, M. L., Wayne, S. J., Liden, R. C., & Sparrowe,
+                                                                          of the decision to increase reliance on contingent la-
+    R. T. 2005. The role of job security in understanding
+                                                                          bor. Decision Sciences, 32: 661–681.
+    the relationship between employees’ perceptions of
+    temporary workers and employees’ performance.                      Nollen, S., & Axel, H. 1996. Managing contingent
+    Journal of Applied Psychology, 90: 389–398.                            workers: How to reap the benefits and reduce the
+                                                                           risks. New York: AMACOM.
+Kulkarni, S. P., & Ramamoorthy, N. 2005. Commitment,
+    flexibility and the choice of employment contracts.                Orr, J. M., Sackett, P. R., & Mercer, M. 1989. The role
+    Human Relations, 58: 741–761.                                          of prescribed and nonprescribed behaviors in esti-
+                                                                           mating the dollar value of performance. Journal of
+Kunda, G., Barley, S. R., & Evans, J. 2002. Why do con-
+                                                                           Applied Psychology, 74: 34–40.
+   tractors contract? The experience of highly skilled
+   technical professionals in a contingent labor market.               Pearce, J. L. 1993. Toward an organizational behavior of
+   Industrial & Labor Relations Review, 55: 234–261.                       contract laborers: Their psychological involvement
+
+
+--- PAGE BREAK ---
+
+186                                           Academy of Management Discoveries                                            June
+
+      and effects on employee co-workers. Academy of              Sturman, M. C., Trevor, C. O., Boudreau, J. W., & Gerhart, B.
+      Management Journal, 36: 1082–1096.                              2003. Is it worth it to win the talent war? Evaluating the
+                                                                      utility of performance-based pay. Personnel Psy-
+Perlin, R. 2011. Intern nation: How to earn nothing and               chology, 56: 997–1035.
+     learn little in the brave new economy. London, UK:
+     Verso.                                                       Van Dyne, L., & Ang, S. 1998. Organizational citizenship
+                                                                      behaviors of contingent workers in Singapore. Acad-
+Pink, D. H. 2001. Free agent nation: The future of work-              emy of Management Journal, 41: 692–703.
+    ing for yourself. New York: Warner Books.
+                                                                  Virtanen, M., Kivimäki, M., Virtanen, P., Elovainio, M., &
+Podsakoff, N. P., Whiting, S. W., Podsakoff, P. M., & Blume,           Vahtera, J. 2003. Disparity in occupational training
+    B. D. 2009. Individual- and organizational-level conse-            and career planning between contingent and perma-
+    quences of organizational citizenship behaviors: A meta-           nent employees. European Journal of Work and Or-
+    analysis. Journal of Applied Psychology, 94: 122–141.              ganizational Psychology, 12: 19–36.
+Reibstein, R. J. 2010. Independent contractor mis-                Way, S. A., Lepak, D. P., Fay, C. H., & Thacker, J. W. 2010.
+    classification cases cost yet another truck delivery             Contingent workers’ impact on standard employee
+    firm millions to settle. The National Law Review.                withdrawal behaviors: Does what you use them for
+    http://www.natlawreview.com/article/independent-                 matter? Human Resource Management, 49: 109–138.
+    contractor-misclassification-cases-cost-yet-another-
+                                                                  Wears, K. H., & Fisher, S. L. 2012. Who is an employer in
+    truck-delivery-firm-millions.
+                                                                     the triangular employment relationship? Sorting
+Schmidt, F. L., & Hunter, J. E. 1983. Individual differences         through the definitional confusion. Employee Re-
+   in productivity: An empirical test of estimates derived           sponsibilities and Rights Journal, 24: 159–176.
+   from studies of selection procedure utility. Journal of
+   Applied Psychology, 68: 407–414.
+Staffing Industry Analysts. n.d. What’s in the contin-
+                                                                  Sandra L. Fisher (sfisher@clarkson.edu) is an associate
+    gent worker bill rate? Mountain View, CA. www.                professor of Organizational Studies in the School of Busi-
+    staffingindustry.com.                                         ness at Clarkson University in Potsdam, NY. Her research
+Staffing Industry Analysts. 2014. Agents of record and IC         is in three main areas: the use of contingent work, the
+     compliance: A growing industry. Mountain View,               implementation and strategic use of e-HRM, and effective
+                                                                  design of technology-based training.
+     CA. www.staffingindustry.com.
+                                                                  Catherine E. Connelly (connell@mcmaster.ca) is a Canada
+Stephens, B., & Riley, K. 2005. Developing annual estimates
+                                                                  Research Chair and associate professor of organizational
+    of hires and separations. Bureau of Labor Statistics.
+                                                                  behavior at the DeGroote School of Business at McMaster
+    http://www.bls.gov/osmr/pdf/st050250.pdf.                     University in Hamilton, Ontario, Canada. She is interested
+Stratman, J. K., Roth, A. V., & Gilland, W. G. 2004. The          in the experiences of workers with nonstandard employ-
+     deployment of temporary production workers in as-            ment experiences (e.g., temporary agency workers, in-
+     sembly operations: A case study of the hidden costs of       dependent contractors, temporary foreign workers).
+     learning and forgetting. Journal of Operations Man-
+     agement, 21: 689–707.
+
