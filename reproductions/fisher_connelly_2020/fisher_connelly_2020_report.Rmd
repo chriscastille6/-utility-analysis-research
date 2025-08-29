@@ -1,0 +1,53 @@
+---
+title: "Fisher & Connelly (2020) Reproduction: Utility of Workers with Disabilities"
+author: "Utility Analysis Research"
+date: "`r format(Sys.Date())`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+    df_print: paged
+---
+
+# Abstract
+Brief summary of the reproduction scope, methods, and key outcomes.
+
+# Introduction
+- Study context and research questions
+- Overview of modeling approach
+
+# Methods
+- Parameter extraction from the paper
+- Utility model formulation and assumptions (accommodation costs, productivity)
+- Scenarios and sensitivity designs
+
+# Results
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+```{r load-results}
+results <- readr::read_csv("fisher_connelly_2020_results.csv", show_col_types = FALSE)
+results
+```
+
+## Net Utility under Accommodation Tiers
+```{r fig-utility}
+knitr::include_graphics("figures/net_utility_accommodations.png")
+```
+
+# Discussion
+- Interpretation relative to paper claims
+- Sensitivity insights and boundary conditions
+- Limitations and assumptions
+
+# Conclusion
+- Reproduction status and implications
+
+# Appendix
+- Parameter tables, extraction notes, and any digitization details
+
+# References
+```{r}
+# References managed via references.bib if using pandoc-citeproc; otherwise list here
+``` 

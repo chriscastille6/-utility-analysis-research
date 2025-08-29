@@ -1,0 +1,10 @@
+scenario,employee_type,num_employees,service_costs,turnover_costs,total_costs,service_value,net_value
+NormalCo,Permanent,27,63181,13243,76424,82955,6531
+NormalCo,IC-AR,3,63518,19899,83417,105768,22351
+NormalCo,Temp,3,50626,23836,74462,69683,-4779
+MegaCo,Permanent,25,56237,15959,72197,45377,-26820
+MegaCo,IC-AR,1,56416,22088,78504,88779,10275
+MegaCo,Temp,7,44969,26458,71426,37834,-33592
+Temp-to-PermCo,Permanent,26,71817,9699,81516,123679,42163
+Temp-to-PermCo,IC-AR,1,56416,13253,69669,150276,80607
+Temp-to-PermCo,Temp,6,44969,15875,60843,76316,15473

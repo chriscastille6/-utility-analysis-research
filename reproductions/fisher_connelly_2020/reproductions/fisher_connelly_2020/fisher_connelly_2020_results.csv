@@ -1,0 +1,3 @@
+group,average_service_value,adjusted_service_value,average_service_costs,average_net_value,adjusted_net_value,calculated_avg_net_value,calculated_adj_net_value,avg_net_value_match,adj_net_value_match
+employees_with_disabilities,34524,44329,22380,12144,21949,12144,21949,TRUE,TRUE
+employees_without_disabilities,44347,39537,33071,11276,6466,11276,6466,TRUE,TRUE

@@ -1,0 +1,5 @@
+worker_type,service_value,service_costs_no_to,net_value_no_to,turnover_costs,total_service_costs_with_to,net_value_with_to
+permanent_employees,82955,63181,19774,13243,76424,6532
+ic_direct,105768,60502,45266,18090,78592,27176
+ic_agent_of_record,105768,63518,42250,19899,83417,22351
+temporary_workers,69683,50969,18714,23837,74806,-5093

@@ -1,0 +1,722 @@
+Investments in workplace accommodations for disabilities are associated with
+increased firm productivity, employee retention, and organizational
+performance, though the magnitude and consistency of these effects depend on
+the type of accommodation, organizational context, and implementation quality.
+1. Introduction
+The impact of investments in workplace accommodations for employees with disabilities on firm productivity has
+been a subject of growing research and policy interest. A substantial body of evidence indicates that such
+accommodations can yield direct benefits for firms, including increased worker productivity, retention of qualified
+employees, reduced turnover costs, and improved company morale and culture (Solovieva et al., 2011; Solovieva &
+Walls, 2013; Hartnett et al., 2011; Solovieva et al., 2009; Schur et al., 2014; Lindsay et al., 2018; Jansen et al., 2021).
+Systematic reviews and empirical studies have found that accommodations—ranging from physical modifications
+to flexible work arrangements—are often low-cost and can lead to measurable improvements in organizational
+performance, profitability, and innovation (Solovieva et al., 2011; Lindsay et al., 2018; Schur et al., 2014; JuradoCaraballo & Quintana García, 2024; Dwertmann et al., 2025; Man et al., 2020). However, the literature also
+highlights variability in outcomes depending on the type of accommodation, the nature of the disability, and the
+organizational environment (Annett, 2024; Jing et al., 2022; Nevala et al., 2015; Jansen et al., 2021; Van Berkel &
+Breit, 2025). Some studies note that while the majority of accommodations are inexpensive, certain cases (e.g.,
+those involving personal assistance services) can be more costly, though these costs are frequently offset by
+productivity gains and reduced recruitment expenses (Solovieva et al., 2009; Solovieva et al., 2011). There is also
+evidence that inclusive practices and supportive leadership further enhance the positive effects of
+accommodations on both individual and firm-level outcomes (Zhu et al., 2019; Alfalih & Ragmoun, 2025; Luu, 2019).
+Despite these positive findings, gaps remain in rigorous cost-effectiveness evaluations and in understanding the
+long-term impacts across different industries and disability types (Padkapayeva et al., 2017; Nevala et al., 2015; Van
+Berkel & Breit, 2025). This review synthesizes the current state of research on the relationship between workplace
+accommodations for disabilities and firm productivity, drawing on systematic reviews, large-scale surveys, and
+recent empirical studies (Solovieva et al., 2011; Annett, 2024; Solovieva & Walls, 2013; Lindsay et al., 2018; JuradoCaraballo & Quintana García, 2024; Nevala et al., 2015; Jansen et al., 2021; Hartnett et al., 2011; Solovieva et al.,
+2009; Schur et al., 2014).
+
+‐
+
+‐
+
+2. Methods
+A comprehensive search was conducted across over 170 million research papers in Consensus, encompassing
+databases such as Semantic Scholar, PubMed, and others. The search strategy included multiple targeted queries
+and terminology variations to capture the breadth of research on workplace accommodations, disabilities, and firm
+productivity. In total, 1,017 papers were identified, 602 were screened after de-duplication, 304 met the eligibility
+criteria, and the top 50 most relevant papers were included in this review.
+
+1 / 9
+
+Search Strategy
+
+Identification
+N = 1017
+
+→
+
+Screening
+N = 602
+
+Eligibility
+
+→
+
+N = 304
+
+→
+
+Included
+N = 50
+
+Identified 1005 papers
+
+Removed papers with
+
+Removed papers with low
+
+Selected the top 50
+
+that matched 20
+Consensus searches
+
+missing abstracts
+
+semantic relevance to
+each search
+
+highest quality papers
+after final ranking
+
+1005 identified
+
+Identified 12 papers from
+citation graph exploration
+
+298 removed
+
+254 removed
+
+Removed duplicates
+415 removed
+
+12 identified
+
+FIGURE 1 Flow diagram of the search and selection process for included papers.
+
+Eight unique search groups were used, employing 20 distinct search queries to ensure comprehensive coverage of
+the topic.
+
+3. Results
+3.1. Direct Effects of Accommodations on Firm Productivity
+Multiple studies report that workplace accommodations lead to increased worker productivity, retention of
+qualified employees, and reduced costs associated with turnover and training new hires (Solovieva et al., 2011;
+Solovieva & Walls, 2013; Hartnett et al., 2011; Solovieva et al., 2009; Schur et al., 2014; Lindsay et al., 2018).
+Employers frequently cite improved company morale and overall productivity as indirect benefits (Solovieva et al.,
+2011; Solovieva & Walls, 2013; Hartnett et al., 2011). Quantitative analyses and large-scale surveys confirm that
+these benefits are observed across both large and small businesses, with most accommodations incurring minimal
+or no cost (Solovieva et al., 2011; Solovieva et al., 2009; Schur et al., 2014).
+3.2. Economic and Organizational Performance Outcomes
+Systematic reviews and empirical studies demonstrate that hiring and accommodating people with disabilities can
+improve profitability, reduce absenteeism, and enhance company reputation (Lindsay et al., 2018; Jurado-Caraballo
+
+‐
+
+& Quintana García, 2024; Jing et al., 2022; Jansen et al., 2021; Dwertmann et al., 2025). Some studies identify a Ushaped relationship between the proportion of disabled employees and firm performance, suggesting that the
+impact may vary depending on firm size, industry, and the extent of inclusion (Jing et al., 2022; Jurado-Caraballo &
+
+‐
+
+Quintana García, 2024). Cost-benefit analyses indicate that the financial benefits of accommodations often
+outweigh the costs, especially when considering reduced turnover and increased employee loyalty (Solovieva et al.,
+2011; Lindsay et al., 2018; Solovieva et al., 2009).
+
+2 / 9
+
+3.3. Moderators and Implementation Factors
+The effectiveness of accommodations is influenced by organizational culture, leadership, and the type of disability
+being accommodated (Jansen et al., 2021; Zhu et al., 2019; Alfalih & Ragmoun, 2025; Luu, 2019). Supportive
+leadership and inclusive HR practices amplify the positive effects on productivity and well-being (Zhu et al., 2019;
+Alfalih & Ragmoun, 2025; Luu, 2019). However, barriers such as lack of awareness, attitudinal biases, and
+bureaucratic challenges can limit the realization of these benefits (Padkapayeva et al., 2017; Nevala et al., 2015;
+Syma, 2019; Aichner et al., 2024). The literature also notes that accommodations for invisible or psychological
+disabilities are less likely to be granted, despite evidence of their necessity for productivity (Telwatte et al., 2017;
+Syma, 2019).
+3.4. Cost Considerations and Return on Investment
+Most accommodations are low-cost, with many requiring no financial outlay (e.g., flexible scheduling, job
+restructuring) (Solovieva et al., 2011; Solovieva et al., 2009; Schur et al., 2014). When costs are incurred, they are
+typically offset by direct benefits such as increased productivity and retention (Solovieva et al., 2011; Solovieva et
+al., 2009). More expensive accommodations, such as personal assistance services, still yield positive returns
+through enhanced productivity and reduced turnover (Solovieva et al., 2009). Studies also highlight that fears of
+high costs are often unfounded and that the overall economic argument for disability inclusion is strong (Aichner,
+2021; Aichner et al., 2024).
+Key Papers
+Accommodation
+Paper
+
+Methodology
+
+Sample/Scope
+
+Key Results
+
+Types
+
+(Solovieva et
+
+Employer
+
+194 employers
+
+Increased productivity,
+
+Equipment, schedule
+
+al., 2011)
+
+survey
+
+(US)
+
+retention, morale; most
+benefits >$1000
+
+changes
+
+(Lindsay et
+al., 2018)
+
+Systematic
+review
+
+39 studies
+
+Improved profitability,
+retention, company image
+
+Diverse (physical,
+social, attitudinal)
+
+(Solovieva et
+al., 2009)
+
+Employer
+survey
+
+1,182 employers
+
+Median cost $0–$1,850;
+benefits: productivity,
+
+PAS, non-PAS
+accommodations
+
+retention
+(Jansen et
+
+Systematic
+
+al., 2021)
+
+review
+
+(Schur et al.,
+2014)
+
+Case studies,
+surveys
+
+50 studies
+
+5,000+
+employees
+
+Strong evidence:
+
+Work schedule,
+
+accommodations improve
+employment, RTW
+
+workplace adaptations
+
+Positive effects on
+attitudes, productivity; low
+
+Disability & nondisability
+
+costs
+
+accommodations
+
+FIGURE 2 Comparison of key studies on workplace accommodations and firm productivity.
+
+3 / 9
+
+Top Contributors
+Type
+
+Name
+
+Papers
+
+Author
+
+T. Solovieva
+
+(Solovieva et al., 2011; Solovieva & Walls, 2013; Solovieva et al., 2009)
+
+Author
+
+R. Walls
+
+(Solovieva et al., 2011; Solovieva & Walls, 2013; Solovieva et al., 2009)
+
+Author
+
+Lisa Schur
+
+(Schur et al., 2014; Ameri et al., 2023)
+
+Journal
+
+Journal of
+Occupational
+Rehabilitation
+
+(Lindsay et al., 2018; Nevala et al., 2015; Jansen et al., 2021; Van Berkel &
+
+Journal
+
+Disability and health
+journal
+
+(Solovieva et al., 2011; Solovieva et al., 2009)
+
+Journal
+
+Human Resource
+Management
+
+(Schur et al., 2014)
+
+Breit, 2025; Gignac et al., 2024; Cullen et al., 2017; Williams-Whitt et al.,
+2016; Amick et al., 2000)
+
+FIGURE 3 Authors & journals that appeared most frequently in the included papers.
+
+4. Discussion
+The research consistently supports the conclusion that investments in workplace accommodations for disabilities
+are beneficial for firm productivity and organizational performance (Solovieva et al., 2011; Lindsay et al., 2018;
+
+‐
+
+Jansen et al., 2021; Schur et al., 2014; Jurado-Caraballo & Quintana García, 2024; Solovieva et al., 2009). The
+evidence is strongest for direct outcomes such as employee retention, reduced turnover costs, and increased
+productivity, with most accommodations being low-cost or cost-neutral (Solovieva et al., 2011; Solovieva et al.,
+2009; Schur et al., 2014). Systematic reviews and meta-analyses further corroborate these findings, highlighting
+additional benefits such as improved company image, innovation, and workplace morale (Lindsay et al., 2018;
+
+‐
+
+Jurado-Caraballo & Quintana García, 2024; Dwertmann et al., 2025; Man et al., 2020). However, the literature also
+points to important caveats: the magnitude of benefits can vary by industry, firm size, and the type of
+accommodation or disability (Jing et al., 2022; Nevala et al., 2015; Jansen et al., 2021; Van Berkel & Breit, 2025).
+Barriers such as lack of awareness, attitudinal resistance, and insufficient leadership support can limit the
+effectiveness of accommodations (Padkapayeva et al., 2017; Nevala et al., 2015; Syma, 2019; Telwatte et al., 2017;
+Aichner et al., 2024). There is a need for more rigorous, longitudinal, and industry-specific studies to better quantify
+the long-term return on investment and to identify best practices for implementation (Padkapayeva et al., 2017;
+Nevala et al., 2015; Van Berkel & Breit, 2025).
+
+4 / 9
+
+Claims and Evidence Table
+Evidence
+Claim
+
+Strength
+
+Reasoning
+
+Papers
+
+Workplace
+
+Multiple large-scale surveys
+
+(Solovieva et al., 2011;
+
+accommodations increase
+firm productivity and
+
+and systematic reviews show
+consistent positive effects on
+
+Lindsay et al., 2018;
+Jansen et al., 2021; Schur
+
+productivity and retention
+
+et al., 2014; Solovieva et
+al., 2009; Hartnett et al.,
+
+Strong
+
+employee retention
+
+2011)
+Most accommodations
+
+Employer surveys and cost
+
+(Solovieva et al., 2011;
+
+are low-cost or costneutral for employers
+
+analyses report median costs of
+$0–$1,850, with many
+
+Solovieva et al., 2009;
+Schur et al., 2014; Lindsay
+
+accommodations requiring no
+financial outlay
+
+et al., 2018)
+
+Studies show that
+organizational culture and
+
+(Zhu et al., 2019; Alfalih &
+Ragmoun, 2025; Luu,
+
+leadership moderate the impact
+of accommodations on
+
+2019; Jansen et al., 2021)
+
+Inclusive practices and
+supportive leadership
+amplify positive effects
+
+Strong
+
+Moderate
+
+productivity and well-being
+Accommodations improve
+
+Systematic reviews and
+
+(Lindsay et al., 2018;
+
+company image,
+innovation, and morale
+
+empirical studies link
+accommodations to improved
+
+Jurado-Caraballo &
+Quintana García, 2024;
+
+reputation, innovation, and
+workplace climate
+
+Dwertmann et al., 2025;
+Man et al., 2020; Hartnett
+
+Moderate
+
+‐
+
+et al., 2011)
+The impact of
+
+Evidence of U-shaped or
+
+(Jing et al., 2022; Nevala
+
+accommodations varies by
+disability type, industry,
+
+variable effects depending on
+context; some
+
+et al., 2015; Telwatte et al.,
+2017; Syma, 2019; Van
+
+and implementation
+
+accommodations less likely for
+invisible disabilities
+
+Berkel & Breit, 2025)
+
+Some employers
+overestimate the costs
+
+Qualitative studies and
+employer interviews reveal
+
+(Aichner et al., 2024;
+Syma, 2019; Telwatte et
+
+persistent misconceptions
+about costs and
+
+al., 2017; Ameri et al.,
+2023)
+
+and challenges of
+accommodations
+
+Moderate
+
+Moderate
+
+implementation barriers
+FIGURE 4 Key claims and support evidence identified in these papers.
+
+5 / 9
+
+5. Conclusion
+In summary, the literature demonstrates that investments in workplace accommodations for disabilities generally
+have a positive impact on firm productivity, employee retention, and organizational performance, with most
+accommodations being low-cost and yielding substantial direct and indirect benefits. The effectiveness of these
+investments is enhanced by inclusive organizational cultures and supportive leadership, though variability exists
+depending on context and implementation.
+5.1. Research Gaps
+Despite the strong evidence base, gaps remain in rigorous cost-effectiveness evaluations, longitudinal studies, and
+research on specific industries and types of disabilities. There is also a need for more research on the long-term
+impacts of accommodations and on best practices for implementation in diverse organizational contexts.
+Research Gaps Matrix
+Accommodation Type /
+Outcome
+
+Manufacturing
+
+Services
+
+Large
+
+Small
+
+Invisible
+
+Firms
+
+Firms
+
+Disabilities
+
+Physical/Technological
+
+7
+
+9
+
+8
+
+6
+
+2
+
+Flexible Scheduling
+
+3
+
+8
+
+7
+
+5
+
+1
+
+Job Restructuring
+
+2
+
+5
+
+4
+
+3
+
+1
+
+Personal Assistance Services
+
+1
+
+2
+
+2
+
+1
+
+GAP
+
+Leadership/Culture
+
+2
+
+6
+
+5
+
+2
+
+1
+
+FIGURE 5 Matrix showing research coverage by accommodation type, firm size, sector, and disability type.
+
+5.2. Open Research Questions
+Future research should focus on filling these gaps by conducting rigorous, longitudinal, and industry-specific
+studies, and by exploring the mechanisms through which accommodations impact firm productivity.
+
+6 / 9
+
+Question
+
+Why
+
+What is the long-term return on investment of
+different types of workplace accommodations
+
+Understanding ROI over time and in various sectors will help
+firms and policymakers allocate resources more effectively
+
+across industries?
+
+and justify accommodation investments.
+
+How do organizational culture and leadership
+
+Identifying moderating factors can inform best practices and
+
+styles influence the effectiveness of disability
+accommodations?
+
+maximize the positive impact of accommodations on
+productivity and inclusion.
+
+What are the barriers and facilitators to
+implementing accommodations for invisible or
+
+Addressing these challenges is crucial for ensuring equitable
+access and maximizing productivity for all employees with
+
+psychological disabilities?
+
+disabilities.
+
+FIGURE 6 Open research questions to guide future studies on workplace accommodations and firm productivity.
+
+In conclusion, while the evidence strongly supports the positive impact of workplace accommodations for
+disabilities on firm productivity, further research is needed to optimize implementation and ensure benefits are
+realized across all contexts.
+
+These papers were sourced and synthesized using Consensus, an AI-powered search engine for research. Try it at
+https://consensus.app
+
+References
+Solovieva, T., Dowler, D., & Walls, R. (2011). Employer benefits from making workplace accommodations.. Disability
+
+and health journal, 4 1, 39-45. https://doi.org/10.1016/j.dhjo.2010.03.001
+Annett, M. (2024). Impacts on Firm Productivity by Retaining Worker Knowledge and Capacity Through Disability
+Management Programs. Journal of Knowledge Management Practice. https://doi.org/10.62477/jkmp.v24i3.443
+Solovieva, T., & Walls, R. (2013). Implications of Workplace Accommodations for Persons With Disabilities. Journal
+
+of Workplace Behavioral Health, 28, 192 - 211. https://doi.org/10.1080/15555240.2013.808079
+Jing, J., Feng, X., Song, J., & Li, B. (2022). Does the Inclusion of Disabled Employees Affect Firm Performance?
+Empirical Evidence from China. Sustainability. https://doi.org/10.3390/su14137835
+Padkapayeva, K., Posen, A., Yazdani, A., Buettgen, A., Mahood, Q., & Tompa, E. (2017). Workplace accommodations
+for persons with physical disabilities: evidence synthesis of the peer-reviewed literature. Disability and
+
+Rehabilitation, 39, 2134 - 2147. https://doi.org/10.1080/09638288.2016.1224276
+Lindsay, S., Cagliostro, E., Albarico, M., Mortaji, N., & Karon, L. (2018). A Systematic Review of the Benefits of Hiring
+People with Disabilities. Journal of Occupational Rehabilitation, 28, 634-655. https://doi.org/10.1007/s10926-0189756-z
+
+‐
+
+Jurado-Caraballo, M., & Quintana García, C. (2024). DISABILITY INCLUSION IN WORKPLACES, FIRM
+PERFORMANCE, AND REPUTATION. European Management Journal. https://doi.org/10.1016/j.emj.2024.08.001
+Nevala, N., Pehkonen, I., Koskela, I., Ruusuvuori, J., & Anttila, H. (2015). Workplace Accommodation Among
+Persons with Disabilities: A Systematic Review of Its Effectiveness and Barriers or Facilitators. Journal of
+
+Occupational Rehabilitation, 25, 432-448. https://doi.org/10.1007/s10926-014-9548-z
+
+7 / 9
+
+Jansen, J., Van Ooijen, R., Koning, P., Boot, C., & Brouwer, S. (2021). The Role of the Employer in Supporting Work
+Participation of Workers with Disabilities: A Systematic Literature Review Using an Interdisciplinary Approach.
+
+Journal of Occupational Rehabilitation, 31, 916 - 949. https://doi.org/10.1007/s10926-021-09978-3
+Hartnett, H., Stuart, H., Thurman, H., Loy, B., & Batiste, L. (2011). Employers' perceptions of the benefits of
+workplace accommodations: Reasons to hire, retain and promote people with disabilities. Journal of Vocational
+
+Rehabilitation, 34, 17 - 23. https://doi.org/10.3233/JVR-2010-0530
+Syma, C. (2019). Invisible disabilities: perceptions and barriers to reasonable accommodations in the workplace.
+
+Library Management. https://doi.org/10.1108/LM-10-2017-0101
+Van Berkel, R., & Breit, E. (2025). Organizational Practices and Their Outcomes for Employees with Disabilities: A
+Review and Synthesis of Quantitative Studies.. Journal of occupational rehabilitation.
+https://doi.org/10.1007/s10926-025-10283-6
+Solovieva, T., Walls, R., Hendricks, D., & Dowler, D. (2009). Cost of workplace accommodations for individuals with
+disabilities: with or without personal assistance services.. Disability and health journal, 2 4, 196-205.
+https://doi.org/10.1016/j.dhjo.2009.04.002
+Aichner, T. (2021). The economic argument for hiring people with disabilities. Humanities and Social Sciences
+
+Communications, 8, 1-4. https://doi.org/10.1057/s41599-021-00707-y
+
+‐
+
+Zhu, X., Law, K., Sun, C., & Yang, D. (2019). Thriving of employees with disabilities: The roles of job self efficacy,
+
+‐
+
+inclusion, and team learning climate. Human Resource Management, 58, 21-34.
+https://doi.org/10.1002/HRM.21920
+
+Schur, L., Nishii, L., Adya, M., Kruse, D., Bruyere, S., & Blanck, P. (2014). Accommodating employees with and
+without disabilities. Human Resource Management, 53, 593-621. https://doi.org/10.1002/HRM.21607
+Telwatte, A., Anglim, J., Wynton, S., & Moulding, R. (2017). Workplace Accommodations for Employees With
+Disabilities: A Multilevel Model of Employer Decision-Making. Rehabilitation Psychology, 62, 7–19.
+https://doi.org/10.1037/rep0000120
+Alfalih, A., & Ragmoun, W. (2025). The impact of transformational leadership on the workplace well-being of
+employees with disabilities: series mediation and moderation process. Frontiers in Public Health, 13.
+https://doi.org/10.3389/fpubh.2025.1506257
+Luu, T. (2019). The well-being among hospitability employees with disabilities: The role of disability inclusive
+benevolent leadership. International Journal of Hospitality Management.
+https://doi.org/10.1016/J.IJHM.2019.01.004
+Dwertmann, D., Boehm, S., McAlpine, K., & Kulkarni, M. (2025). Organizational Burden or Catalyst for Ideas?
+Disability as a Driver of Cognitive Flexibility and Creativity. Administrative Science Quarterly.
+https://doi.org/10.1177/00018392251326110
+Gignac, M., Bowring, J., Navaratnerajah, L., Saunders, R., Jetha, A., Thompson, A., Shaw, W., Franche, R., Van Eerd,
+D., Irvin, E., Tompa, E., Macdermid, J., & Smith, P. (2024). The Job Demands and Accommodation Planning Tool
+(JDAPT): A Nine-Month Evaluation of Use, Changes in Self-efficacy, Presenteeism, and Absenteeism in Workers
+with Chronic and Episodic Disabilities.. Journal of occupational rehabilitation. https://doi.org/10.1007/s10926024-10231-w
+Ameri, M., Kurtzberg, T., Kruse, D., Schur, L., Baldridge, D., Kulkarni, M., Hyseni, F., Goodman, N., Cohen, J., & Van
+Der Meulen Rodgers, Y. (2023). Accommodation Woes: Employer Perspectives on Disability Access. Academy of
+
+Management Proceedings. https://doi.org/10.5465/amproc.2023.10979symposium
+
+8 / 9
+
+Man, X., Zhu, X., & Sun, C. (2020). The Positive Effect of Workplace Accommodation on Creative Performance of
+Employees With and Without Disabilities. Frontiers in Psychology, 11. https://doi.org/10.3389/fpsyg.2020.01217
+
+‐
+
+Cullen, K., Irvin, E., Collie, A., Clay, F., Gensby, U., Jennings, P., Hogg Johnson, S., Kristman, V., Laberge, M.,
+McKenzie, D., Newnam, S., Palagyi, A., Ruseckaite, R., Sheppard, D., Shourie, S., Steenstra, I., Eerd, D., & Amick, B.
+(2017). Effectiveness of Workplace Interventions in Return-to-Work for Musculoskeletal, Pain-Related and Mental
+Health Conditions: An Update of the Evidence and Messages for Practitioners. Journal of Occupational
+
+Rehabilitation, 28, 1 - 15. https://doi.org/10.1007/s10926-016-9690-x
+Aichner, T., Cologna, A., Cvilak, L., & Zacca, R. (2024). Exploring the Challenges and Opportunities of Employing
+Persons with Disabilities. F1000Research. https://doi.org/10.12688/f1000research.141322.1
+Williams-Whitt, K., Bültmann, U., Amick, B., Munir, F., Tveito, T., Anema, J., Amick, B., Anema, J., Besen, E., Blanck,
+P., Boot, C., Bültmann, U., Chan, C., Delclos, G., Ekberg, K., Ehrhart, M., Fassier, J., Feuerstein, M., Gimeno, D.,
+Kristman, V., Linton, S., Main, C., Munir, F., Nicholas, M., Pransky, G., Shaw, W., Sullivan, M., Tetrick, L., Tveito, T.,
+Viikari-Juntura, E., Williams-Whitt, K., & Young, A. (2016). Workplace Interventions to Prevent Disability from Both
+the Scientific and Practice Perspectives: A Comparison of Scientific Literature, Grey Literature and Stakeholder
+Observations. Journal of Occupational Rehabilitation, 26, 417 - 433. https://doi.org/10.1007/s10926-016-9664-z
+Amick, B., Habeck, R., Hunt, A., Fossel, A., Chapin, A., Keller, R., & Katz, J. (2000). Measuring the Impact of
+Organizational Behaviors on Work Disability Prevention and Management. Journal of Occupational Rehabilitation,
+10, 21-38. https://doi.org/10.1023/A:1009437728024
+
+9 / 9
+
+
