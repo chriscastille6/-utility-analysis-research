@@ -18,6 +18,7 @@ library(rmarkdown)
 library(knitr)
 library(stringr)
 library(lavaan)
+# Note: ParetoR functionality gracefully handled if package not available
 
 # =============================================================================
 # CORE UTILITY ANALYSIS FUNCTIONS

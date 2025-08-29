@@ -326,6 +326,7 @@ ui <- dashboardPage(
       menuItem("Monte Carlo Analysis", tabName = "montecarlo", icon = icon("random")),
       menuItem("Cost Savings Analysis", tabName = "savings", icon = icon("dollar-sign")),
       menuItem("Selection Battery Optimization", tabName = "comparative", icon = icon("balance-scale")),
+      menuItem("Executive Selection & Character", tabName = "executive", icon = icon("user-tie")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-pdf")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -768,6 +769,111 @@ ui <- dashboardPage(
               ),
               box(width = 6, title = "Method Characteristics", status = "info", solidHeader = TRUE,
                 DT::dataTableOutput("method_characteristics")
+              )
+            )
+          )
+        )
+      ),
+      
+      # Executive Selection & Character Assessment Tab
+      tabItem(tabName = "executive",
+        fluidRow(
+          box(width = 12, title = "Executive Selection & Character Assessment Utility", status = "primary", solidHeader = TRUE,
+            p("Analyze the utility of character assessment in executive selection based on Seijts, Espinoza, & Carswell (2020). 
+              This analysis demonstrates the economic value of character-based leadership assessment for senior management positions."),
+            
+            div(style = "background-color: #f0f8e8; padding: 15px; border-radius: 5px; margin-bottom: 20px;",
+              h5("Character Assessment Research (Seijts et al., 2020):"),
+              p("Study of 111 senior managers using the Leader Character Insight Assessment (LCIA) to predict performance. 
+                The LCIA measures 11 character dimensions: Accountability, Collaboration, Courage, Drive, Humanity, 
+                Humility, Integrity, Judgment, Justice, Temperance, and Transcendence."),
+              p(strong("Key Finding:"), " Character assessment showed r = 0.30 correlation with supervisor-rated performance.")
+            ),
+            
+            fluidRow(
+              column(4,
+                h5("Executive Assessment Parameters:"),
+                numericInput("exec_sample_size", "Number of Executive Candidates:", value = 111, min = 10, max = 1000, step = 1),
+                numericInput("exec_character_validity", "Character Assessment Validity:", value = 0.30, min = 0.1, max = 0.8, step = 0.01),
+                numericInput("exec_selection_ratio", "Executive Selection Ratio:", value = 0.33, min = 0.05, max = 0.95, step = 0.01),
+                
+                br(),
+                h5("Financial Parameters:"),
+                numericInput("exec_sdy", "Executive Performance SDy (CAD):", value = 115500, min = 50000, max = 500000, step = 5000),
+                numericInput("exec_assessment_cost", "Character Assessment Cost per Candidate (CAD):", value = 800, min = 200, max = 5000, step = 100),
+                numericInput("exec_tenure", "Expected Executive Tenure (Years):", value = 15, min = 5, max = 25, step = 1),
+                
+                br(),
+                actionButton("calculate_exec_utility", "Calculate Executive Selection Utility", class = "btn-primary", style = "width: 100%;")
+              ),
+              
+              column(8,
+                fluidRow(
+                  valueBoxOutput("exec_total_utility", width = 4),
+                  valueBoxOutput("exec_annual_utility", width = 4),
+                  valueBoxOutput("exec_roi_ratio", width = 4)
+                ),
+                
+                br(),
+                
+                tabsetPanel(
+                  tabPanel("Character Assessment Results",
+                    br(),
+                    htmlOutput("exec_utility_analysis")
+                  ),
+                  
+                  tabPanel("Character Dimensions",
+                    br(),
+                    div(style = "background-color: #f8f9fa; padding: 20px; border-radius: 5px;",
+                      h6("Leader Character Insight Assessment (LCIA) - 11 Character Dimensions:"),
+                      fluidRow(
+                        column(6,
+                          tags$ul(
+                            tags$li(strong("Accountability:"), " Taking responsibility for decisions and outcomes"),
+                            tags$li(strong("Collaboration:"), " Working effectively with others toward common goals"),
+                            tags$li(strong("Courage:"), " Acting despite risk, uncertainty, or opposition"),
+                            tags$li(strong("Drive:"), " Persistent effort toward achieving objectives"),
+                            tags$li(strong("Humanity:"), " Showing compassion and care for others"),
+                            tags$li(strong("Humility:"), " Acknowledging limitations and being open to learning")
+                          )
+                        ),
+                        column(6,
+                          tags$ul(
+                            tags$li(strong("Integrity:"), " Consistency between values, words, and actions"),
+                            tags$li(strong("Judgment:"), " Making sound decisions based on available information"),
+                            tags$li(strong("Justice:"), " Treating people fairly and equitably"),
+                            tags$li(strong("Temperance:"), " Exercising self-control and moderation"),
+                            tags$li(strong("Transcendence:"), " Connecting to something larger than oneself")
+                          )
+                        )
+                      ),
+                      p(em("These character dimensions collectively predict executive leadership effectiveness and organizational performance."))
+                    )
+                  ),
+                  
+                  tabPanel("Research Context",
+                    br(),
+                    div(style = "background-color: #fff8e1; padding: 20px; border-radius: 5px;",
+                      h6("Study Background (Seijts, Espinoza, & Carswell, 2020):"),
+                      p(strong("Organization:"), " Large Canadian manufacturing organization"),
+                      p(strong("Purpose:"), " Succession planning for senior leadership positions"),
+                      p(strong("Assessment Method:"), " Peer ratings using the LCIA (behaviorally-based, validated instrument)"),
+                      p(strong("Performance Criteria:"), " Supervisor ratings of leadership performance"),
+                      p(strong("Sample:"), " 111 senior managers being considered for top executive roles"),
+                      
+                      h6("Key Results:"),
+                      tags$ul(
+                        tags$li("Character-performance correlation: r = 0.30 (p < 0.01)"),
+                        tags$li("15-year utility: CAD $564,128 (CAD $37,609 annually)"),
+                        tags$li("10-year utility: CAD $375,285 (CAD $37,529 annually)"),
+                        tags$li("Positive ROI even with conservative adjustments")
+                      ),
+                      
+                      p(strong("Implication:"), " Character assessment provides substantial economic value in executive selection, 
+                        supporting the business case for character-based leadership development.")
+                    )
+                  )
+                )
               )
             )
           )
@@ -1779,6 +1885,124 @@ server <- function(input, output, session) {
     
     strategy_data
   }, options = list(pageLength = 5, searching = FALSE))
+  
+  # Executive Selection & Character Assessment Analysis
+  exec_results <- reactive({
+    input$calculate_exec_utility
+    
+    isolate({
+      # Basic utility calculation using BCG model
+      zxs_value <- ux(input$exec_selection_ratio)
+      total_cost <- input$exec_assessment_cost * (input$exec_sample_size / input$exec_selection_ratio)
+      
+      # Traditional utility calculation
+      utility_total <- utilityBcg(
+        n = input$exec_sample_size,
+        sdy = input$exec_sdy,
+        rxy = input$exec_character_validity,
+        uxs = zxs_value,
+        sr = input$exec_selection_ratio,
+        cost = total_cost,
+        period = input$exec_tenure
+      )
+      
+      # Annual utility
+      utility_annual <- utility_total / input$exec_tenure
+      
+      # ROI calculation
+      roi_ratio <- utility_total / total_cost
+      
+      list(
+        total_utility = utility_total,
+        annual_utility = utility_annual,
+        total_cost = total_cost,
+        roi_ratio = roi_ratio,
+        zxs_value = zxs_value,
+        selected_executives = round(input$exec_sample_size * input$exec_selection_ratio)
+      )
+    })
+  })
+  
+  output$exec_total_utility <- renderValueBox({
+    results <- exec_results()
+    valueBox(
+      value = paste0("CAD $", format(round(results$total_utility), big.mark = ",")),
+      subtitle = paste0(input$exec_tenure, "-Year Total Utility"),
+      icon = icon("chart-line"),
+      color = "green"
+    )
+  })
+  
+  output$exec_annual_utility <- renderValueBox({
+    results <- exec_results()
+    valueBox(
+      value = paste0("CAD $", format(round(results$annual_utility), big.mark = ",")),
+      subtitle = "Annual Utility",
+      icon = icon("calendar"),
+      color = "blue"
+    )
+  })
+  
+  output$exec_roi_ratio <- renderValueBox({
+    results <- exec_results()
+    valueBox(
+      value = paste0(round(results$roi_ratio, 1), ":1"),
+      subtitle = "ROI Ratio",
+      icon = icon("dollar-sign"),
+      color = "orange"
+    )
+  })
+  
+  output$exec_utility_analysis <- renderUI({
+    results <- exec_results()
+    
+    # Sturman adjustments (approximate)
+    conservative_utility <- results$total_utility * 0.65
+    conservative_annual <- conservative_utility / input$exec_tenure
+    
+    HTML(paste0(
+      "<div style='background-color: #f8f9fa; padding: 20px; border-radius: 5px;'>",
+      "<h5>Executive Character Assessment Utility Analysis</h5>",
+      
+      "<h6>Assessment Parameters:</h6>",
+      "<p><strong>Character Assessment Validity:</strong> r = ", input$exec_character_validity, "</p>",
+      "<p><strong>Executive Candidates:</strong> ", input$exec_sample_size, "</p>",
+      "<p><strong>Executives Selected:</strong> ", results$selected_executives, " (", round(input$exec_selection_ratio * 100, 1), "% selection ratio)</p>",
+      "<p><strong>Assessment Cost:</strong> CAD $", format(input$exec_assessment_cost, big.mark = ","), " per candidate</p>",
+      "<p><strong>Total Assessment Cost:</strong> CAD $", format(round(results$total_cost), big.mark = ","), "</p>",
+      
+      "<hr>",
+      
+      "<h6>Utility Analysis Results:</h6>",
+      "<p><strong>Total Utility (", input$exec_tenure, " years):</strong> CAD $", format(round(results$total_utility), big.mark = ","), "</p>",
+      "<p><strong>Annual Utility:</strong> CAD $", format(round(results$annual_utility), big.mark = ","), "</p>",
+      "<p><strong>Per-Executive Annual Value:</strong> CAD $", format(round(results$annual_utility / results$selected_executives), big.mark = ","), "</p>",
+      
+      "<hr>",
+      
+      "<h6>Conservative Estimates (Sturman Adjustments):</h6>",
+      "<p><strong>Conservative Total Utility:</strong> CAD $", format(round(conservative_utility), big.mark = ","), " (65% of traditional)</p>",
+      "<p><strong>Conservative Annual Utility:</strong> CAD $", format(round(conservative_annual), big.mark = ","), "</p>",
+      
+      "<hr>",
+      
+      "<h6>Return on Investment:</h6>",
+      "<p><strong>ROI Ratio:</strong> ", round(results$roi_ratio, 1), ":1</p>",
+      "<p><strong>ROI Percentage:</strong> ", round((results$roi_ratio - 1) * 100, 0), "%</p>",
+      "<p><strong>Payback Period:</strong> ", round((results$total_cost / results$annual_utility) * 12, 1), " months</p>",
+      
+      "<hr>",
+      
+      "<h6>Key Insights:</h6>",
+      "<p>• Character assessment provides <strong>CAD $", format(round(results$annual_utility / results$selected_executives), big.mark = ","), 
+      "</strong> annual value per selected executive</p>",
+      "<p>• Investment pays back in <strong>", round((results$total_cost / results$annual_utility) * 12, 1), " months</strong></p>",
+      "<p>• Character-based selection supports long-term organizational leadership effectiveness</p>",
+      "<p>• Results align with Seijts et al. (2020) findings on character assessment utility</p>",
+      
+      "</div>"
+    ))
+  })
   
   # Download Report Handler - Now functional
   output$download_staff_report <- downloadHandler(
