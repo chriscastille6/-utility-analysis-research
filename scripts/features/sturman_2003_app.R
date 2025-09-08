@@ -13,6 +13,7 @@ ui <- dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Overview", tabName = "overview", icon = icon("info-circle")),
+      menuItem("About", tabName = "about", icon = icon("book")),
       menuItem("Pay Strategies", tabName = "strategies", icon = icon("dollar-sign")),
       menuItem("Turnover Analysis", tabName = "turnover", icon = icon("users")),
       menuItem("Cost-Benefit Analysis", tabName = "costbenefit", icon = icon("calculator")),
@@ -105,6 +106,118 @@ ui <- dashboardPage(
             ),
             p("Higher SDy values indicate that performance differences have greater economic impact, 
               making performance-based pay strategies more valuable.")
+          )
+        )
+      ),
+      
+      # About Tab
+      tabItem(tabName = "about",
+        fluidRow(
+          box(
+            title = "About This Analysis", width = 12, status = "primary", solidHeader = TRUE,
+            HTML("
+            <h3>Sturman et al. (2003): Is it worth it to win the Talent War? Evaluating the Utility of Performance-Based Pay</h3>
+            <p><strong>Research Question:</strong> What is the financial utility of different performance-based pay strategies compared to traditional across-the-board increases?</p>
+            
+            <h4>Study Context:</h4>
+            <p>This landmark study applied the Boudreau & Berger (1985) employee movement utility framework to evaluate three compensation strategies over a 4-year period. The analysis bridges turnover research with compensation strategy, providing the first comprehensive cost-benefit analysis of pay-for-performance initiatives.</p>
+            
+            <h4>Key Concepts:</h4>
+            <ul>
+              <li><strong>Service Value:</strong> Economic value created by employee performance (base value + performance differential)</li>
+              <li><strong>Service Costs:</strong> Total compensation and benefits paid to employees</li>
+              <li><strong>Movement Costs:</strong> Turnover-related expenses including separation, replacement, and training costs</li>
+              <li><strong>Net Utility:</strong> Service Value - Service Costs - Movement Costs</li>
+              <li><strong>SDy (Standard Deviation of Performance):</strong> Economic value of performance differences as percentage of salary</li>
+            </ul>
+            
+            <h4>Methodology:</h4>
+            <p>The analysis uses utility theory to compare strategies by calculating the total economic impact of each approach. Key components include:</p>
+            <ul>
+              <li><strong>Framework:</strong> Boudreau & Berger (1985) employee movement utility model</li>
+              <li><strong>Data Source:</strong> Trevor et al. (1997) turnover probability estimates</li>
+              <li><strong>Performance Measurement:</strong> Schmidt & Hunter (1983) service value methodology</li>
+              <li><strong>Sample:</strong> 5,143 employees with performance ratings on 1.0-5.0 scale</li>
+              <li><strong>Time Period:</strong> 4-year analysis (2004-2007)</li>
+              <li><strong>Base Salary:</strong> $47,983 (2003 dollars)</li>
+            </ul>
+            
+            <h4>Key Innovation:</h4>
+            <p>Unlike traditional cost analyses that focus only on compensation expenses, this study measures both costs AND benefits, including the economic value of performance differences and the impact of turnover on organizational outcomes.</p>
+            
+            <h4>Strategic Implications:</h4>
+            <ul>
+              <li>Traditional cost analysis is insufficient - would reject all pay-for-performance strategies</li>
+              <li>Performance-based pay becomes attractive when service value is properly considered</li>
+              <li>SDy assumptions are critical - results highly sensitive to performance variability estimates</li>
+              <li>Strategy 2 (merit-based hybrid) typically provides the best balance of return and stability</li>
+            </ul>
+            ")
+          )
+        ),
+        
+        fluidRow(
+          box(
+            title = "Original Study Citation", width = 6, status = "info", solidHeader = TRUE,
+            HTML("
+            <p><strong>Sturman, M. C., Trevor, C. O., Boudreau, J. W., & Gerhart, B. (2003).</strong></p>
+            <p><em>Is it worth it to win the talent war? Evaluating the utility of performance-based pay.</em></p>
+            <p><strong>Personnel Psychology, 56(4), 997-1035.</strong></p>
+            
+            <h5>DOI:</h5>
+            <p><a href='https://doi.org/10.1111/j.1744-6570.2003.tb00246.x' target='_blank'>https://doi.org/10.1111/j.1744-6570.2003.tb00246.x</a></p>
+            
+            <h5>Key References:</h5>
+            <ul>
+              <li>Boudreau, J. W., & Berger, C. J. (1985). Decision-theoretic utility analysis applied to employee separations and acquisitions. <em>Journal of Applied Psychology, 70(3), 581-612.</em></li>
+              <li>Trevor, C. O., Gerhart, B., & Boudreau, J. W. (1997). Voluntary turnover and job performance: Curvilinearity and the moderating influences of salary growth and promotions. <em>Journal of Applied Psychology, 82(1), 44-61.</em></li>
+              <li>Schmidt, F. L., & Hunter, J. E. (1983). Individual differences in productivity: An empirical test of estimates derived from studies of selection procedure utility. <em>Journal of Applied Psychology, 68(3), 407-414.</em></li>
+            </ul>
+            ")
+          ),
+          
+          box(
+            title = "App Information", width = 6, status = "success", solidHeader = TRUE,
+            HTML("
+            <h5>About This Tool</h5>
+            <p><strong>Sturman (2003) Performance-Based Pay Analysis Tool</strong> (2025). Interactive replication and exploration of utility analysis for compensation strategies.</p>
+            <p><strong>Version:</strong> 1.0</p>
+            <p><strong>Last Updated:</strong> January 2025</p>
+            <p><strong>Key Features:</strong> Interactive parameter adjustment, sensitivity analysis, Monte Carlo simulation, ROI comparison</p>
+            
+            <h5>Source Code & Documentation:</h5>
+            <p><strong>GitHub Repository:</strong><br>
+            <a href='https://github.com/chriscastille6/-utility-analysis-research' target='_blank' style='color: #666; font-style: italic;'>
+            https://github.com/chriscastille6/-utility-analysis-research
+            </a></p>
+            
+            <p><strong>Citation for this Tool:</strong><br>
+            <em>Sturman (2003) Performance-Based Pay Analysis Tool</em> (2025). Interactive utility analysis of compensation strategies.<br>
+            <strong>Live App:</strong> <a href='#' target='_blank'>[To be added when deployed]</a><br>
+            <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research</p>
+            
+            <h5>Educational Purpose:</h5>
+            <p>Designed for HR practitioners, compensation professionals, and organizational leaders to understand the economic implications of different pay strategies. Suitable for graduate-level courses in compensation, utility analysis, and organizational decision-making.</p>
+            
+            <h5>Technical Implementation:</h5>
+            <p>Built using R Shiny with interactive visualizations, real-time calculations, and comprehensive sensitivity analysis. Integrates original study methodology with modern dashboard framework.</p>
+            ")
+          )
+        ),
+        
+        fluidRow(
+          box(
+            title = "AI Development Assistance", width = 12, status = "warning", solidHeader = TRUE,
+            HTML("
+            <p>This educational application was developed with assistance from AI language models and modern development tools:</p>
+            <ul>
+              <li><strong>AI Assistants:</strong> Claude (Anthropic) for code development, research integration, and educational content design</li>
+              <li><strong>Development Environment:</strong> Cursor IDE with AI-powered code completion and debugging</li>
+              <li><strong>Version Control:</strong> Git and GitHub for collaborative development and deployment</li>
+              <li><strong>Deployment Platform:</strong> shinyapps.io for cloud hosting and accessibility</li>
+            </ul>
+            <p><em>Note: While AI tools assisted in development, all research content, methodology, and findings are based on peer-reviewed academic literature and original study data.</em></p>
+            ")
           )
         )
       ),
