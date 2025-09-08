@@ -261,23 +261,22 @@ ui <- dashboardPage(
           box(
             title = "Turnover Rate Parameters", status = "primary", solidHeader = TRUE, width = 4,
             
-            h4("Customize Turnover Rates by Performance Level"),
-            p("Adjust turnover probabilities for each performance rating level:"),
+            h4("Turnover Rate Sensitivity"),
+            p("The app uses the original Sturman (2003) turnover rates by performance level. Adjust the sensitivity multiplier to explore different scenarios:"),
             
-            h5("Strategy 1: Across-the-Board"),
-            numericInput("t1_low", "Rating 1.0-2.0:", value = 0.8, min = 0, max = 1, step = 0.05),
-            numericInput("t1_med", "Rating 2.5-3.5:", value = 0.3, min = 0, max = 1, step = 0.05),
-            numericInput("t1_high", "Rating 4.0-5.0:", value = 0.4, min = 0, max = 1, step = 0.05),
+            sliderInput("turnover_sensitivity", "Turnover Rate Multiplier:", 
+                       min = 0.5, max = 2.0, value = 1.0, step = 0.1),
             
-            h5("Strategy 2: Merit-Based"),
-            numericInput("t2_low", "Rating 1.0-2.0:", value = 0.8, min = 0, max = 1, step = 0.05),
-            numericInput("t2_med", "Rating 2.5-3.5:", value = 0.3, min = 0, max = 1, step = 0.05),
-            numericInput("t2_high", "Rating 4.0-5.0:", value = 0.12, min = 0, max = 1, step = 0.05),
+            h5("Original Sturman (2003) Turnover Rates:"),
+            p("The app uses the actual turnover probabilities from the original study:"),
+            tags$ul(
+              tags$li("Strategy 1 (ATB): Higher turnover for both low and high performers"),
+              tags$li("Strategy 2 (Merit): Reduced turnover for high performers (3.0+)"),
+              tags$li("Strategy 3 (Performance): Highest turnover for low performers, lowest for high performers")
+            ),
             
-            h5("Strategy 3: Performance-Based"),
-            numericInput("t3_low", "Rating 1.0-2.0:", value = 0.95, min = 0, max = 1, step = 0.05),
-            numericInput("t3_med", "Rating 2.5-3.5:", value = 0.4, min = 0, max = 1, step = 0.05),
-            numericInput("t3_high", "Rating 4.0-5.0:", value = 0.12, min = 0, max = 1, step = 0.05)
+            h5("Key Insight:"),
+            p("Performance-based pay strategies reduce turnover among high performers while potentially increasing turnover among low performers, creating the U-shaped pattern visible in the plot.")
           ),
           
           box(
@@ -379,7 +378,7 @@ ui <- dashboardPage(
             sliderInput("sdy_range", "SDy Range:", min = 0.1, max = 1.5, value = c(0.3, 0.9), step = 0.1),
             
             h5("Turnover Sensitivity"),
-            sliderInput("turnover_sensitivity", "Turnover Rate Multiplier:", min = 0.5, max = 2.0, value = 1.0, step = 0.1),
+            p("Note: This uses the same parameter as the Turnover Analysis tab"),
             
             h5("Cost Sensitivity"),
             sliderInput("cost_sensitivity", "Cost Multiplier:", min = 0.5, max = 2.0, value = 1.0, step = 0.1),
@@ -461,27 +460,21 @@ server <- function(input, output, session) {
     ratings <- perf_data$rating
     n_ratings <- length(ratings)
     
-    # Create turnover rates based on user inputs
-    turnover_s1 <- numeric(n_ratings)
-    turnover_s2 <- numeric(n_ratings)
-    turnover_s3 <- numeric(n_ratings)
+    # Original Sturman (2003) turnover rates by performance level
+    # These are the actual values from the original study
+    original_turnover_s1 <- c(0.96, 0.65, 0.38, 0.25, 0.21, 0.22, 0.27, 0.41, 0.66)
+    original_turnover_s2 <- c(0.96, 0.65, 0.38, 0.25, 0.21, 0.14, 0.11, 0.11, 0.14)
+    original_turnover_s3 <- c(0.99, 0.88, 0.60, 0.35, 0.21, 0.14, 0.11, 0.11, 0.14)
     
-    # Assign turnover rates based on performance levels
-    for(i in 1:n_ratings) {
-      if(ratings[i] <= 2.0) {
-        turnover_s1[i] <- input$t1_low
-        turnover_s2[i] <- input$t2_low
-        turnover_s3[i] <- input$t3_low
-      } else if(ratings[i] <= 3.5) {
-        turnover_s1[i] <- input$t1_med
-        turnover_s2[i] <- input$t2_med
-        turnover_s3[i] <- input$t3_med
-      } else {
-        turnover_s1[i] <- input$t1_high
-        turnover_s2[i] <- input$t2_high
-        turnover_s3[i] <- input$t3_high
-      }
-    }
+    # Allow user to adjust turnover rates using multipliers
+    turnover_s1 <- original_turnover_s1 * input$turnover_sensitivity
+    turnover_s2 <- original_turnover_s2 * input$turnover_sensitivity
+    turnover_s3 <- original_turnover_s3 * input$turnover_sensitivity
+    
+    # Ensure turnover rates don't exceed 1.0
+    turnover_s1 <- pmin(turnover_s1, 1.0)
+    turnover_s2 <- pmin(turnover_s2, 1.0)
+    turnover_s3 <- pmin(turnover_s3, 1.0)
     
     data.frame(
       rating = ratings,
@@ -1332,12 +1325,26 @@ server <- function(input, output, session) {
         cost_mult <- runif(1, 0.9, 1.1)
         
         pay_data <- pay_strategies()
-        turnover_data <- turnover_rates()
         
-        # Adjust turnover rates
-        turnover_data$retained_s1 <- round((1 - turnover_data$turnover_s1 * turnover_mult) * perf_data$n_employees)
-        turnover_data$retained_s2 <- round((1 - turnover_data$turnover_s2 * turnover_mult) * perf_data$n_employees)
-        turnover_data$retained_s3 <- round((1 - turnover_data$turnover_s3 * turnover_mult) * perf_data$n_employees)
+        # Calculate turnover data with random multiplier
+        original_turnover_s1 <- c(0.96, 0.65, 0.38, 0.25, 0.21, 0.22, 0.27, 0.41, 0.66)
+        original_turnover_s2 <- c(0.96, 0.65, 0.38, 0.25, 0.21, 0.14, 0.11, 0.11, 0.14)
+        original_turnover_s3 <- c(0.99, 0.88, 0.60, 0.35, 0.21, 0.14, 0.11, 0.11, 0.14)
+        
+        turnover_s1 <- pmin(original_turnover_s1 * turnover_mult, 1.0)
+        turnover_s2 <- pmin(original_turnover_s2 * turnover_mult, 1.0)
+        turnover_s3 <- pmin(original_turnover_s3 * turnover_mult, 1.0)
+        
+        turnover_data <- data.frame(
+          rating = perf_data$rating,
+          n_employees = perf_data$n_employees,
+          turnover_s1 = turnover_s1,
+          turnover_s2 = turnover_s2,
+          turnover_s3 = turnover_s3,
+          retained_s1 = round((1 - turnover_s1) * perf_data$n_employees),
+          retained_s2 = round((1 - turnover_s2) * perf_data$n_employees),
+          retained_s3 = round((1 - turnover_s3) * perf_data$n_employees)
+        )
         
         # Ensure retained employees don't go negative
         turnover_data$retained_s1 <- pmax(0, turnover_data$retained_s1)
