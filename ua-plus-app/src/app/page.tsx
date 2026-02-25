@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { InterventionBuilder } from "@/components/InterventionBuilder";
 import { ResultsDashboard } from "@/components/ResultsDashboard";
 import { ChatInterface } from "@/components/ChatInterface";
+import { GuidedScenarios } from "@/components/GuidedScenarios";
 import { Header } from "@/components/Header";
 import type { InterventionParams, CombinedResult } from "@/lib/models/utility-engine";
 import { computeCombinedUtility } from "@/lib/models/utility-engine";
@@ -12,7 +13,7 @@ export default function Home() {
   const [interventions, setInterventions] = useState<InterventionParams[]>([]);
   const [results, setResults] = useState<CombinedResult | null>(null);
   const [overlapFactor, setOverlapFactor] = useState(0.15);
-  const [activeTab, setActiveTab] = useState<"build" | "results" | "chat">("build");
+  const [activeTab, setActiveTab] = useState<"scenarios" | "build" | "results">("scenarios");
   const [showChat, setShowChat] = useState(false);
 
   const handleCalculate = useCallback(() => {
@@ -37,6 +38,17 @@ export default function Home() {
     );
     setResults(null);
   }, []);
+
+  const handleLoadScenario = useCallback(
+    (scenarioInterventions: InterventionParams[], scenarioOverlap: number) => {
+      setInterventions(scenarioInterventions);
+      setOverlapFactor(scenarioOverlap);
+      const combined = computeCombinedUtility(scenarioInterventions, scenarioOverlap);
+      setResults(combined);
+      setActiveTab("results");
+    },
+    []
+  );
 
   const handleAIConfig = useCallback(
     (config: { interventions: Partial<InterventionParams>[]; overlapFactor?: number }) => {
@@ -70,10 +82,17 @@ export default function Home() {
       <Header onToggleChat={() => setShowChat(!showChat)} showChat={showChat} />
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Main Content */}
         <main className="flex-1 flex flex-col overflow-hidden">
           {/* Tabs */}
           <div className="flex border-b border-[var(--border)] bg-white px-6">
+            <button
+              onClick={() => setActiveTab("scenarios")}
+              className={`px-4 py-3 text-sm transition-colors ${
+                activeTab === "scenarios" ? "tab-active" : "text-[var(--muted)] hover:text-[var(--foreground)]"
+              }`}
+            >
+              Guided Scenarios
+            </button>
             <button
               onClick={() => setActiveTab("build")}
               className={`px-4 py-3 text-sm transition-colors ${
@@ -97,6 +116,9 @@ export default function Home() {
           </div>
 
           <div className="flex-1 overflow-auto p-6">
+            {activeTab === "scenarios" && (
+              <GuidedScenarios onLoadScenario={handleLoadScenario} />
+            )}
             {activeTab === "build" && (
               <InterventionBuilder
                 interventions={interventions}
@@ -114,7 +136,6 @@ export default function Home() {
           </div>
         </main>
 
-        {/* Chat Sidebar */}
         {showChat && (
           <aside className="w-[420px] border-l border-[var(--border)] bg-white flex flex-col">
             <ChatInterface onConfigGenerated={handleAIConfig} results={results} />
