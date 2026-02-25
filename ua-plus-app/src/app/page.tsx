@@ -131,7 +131,7 @@ export default function Home() {
               />
             )}
             {activeTab === "results" && results && (
-              <ResultsDashboard result={results} overlapFactor={overlapFactor} />
+              <ResultsDashboard result={results} overlapFactor={overlapFactor} interventions={interventions} />
             )}
           </div>
         </main>

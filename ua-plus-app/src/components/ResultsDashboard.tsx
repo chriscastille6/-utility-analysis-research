@@ -5,16 +5,18 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   LineChart, Line, Legend, AreaChart, Area, Cell,
 } from "recharts";
-import type { CombinedResult, UtilityResult, MonteCarloResult } from "@/lib/models/utility-engine";
+import type { CombinedResult, UtilityResult, InterventionParams, MonteCarloResult } from "@/lib/models/utility-engine";
 import { runMonteCarlo } from "@/lib/models/utility-engine";
 import { formatCurrency } from "@/lib/stats";
+import { ExportToolbar } from "./ExportToolbar";
 
 interface Props {
   result: CombinedResult;
   overlapFactor: number;
+  interventions: InterventionParams[];
 }
 
-export function ResultsDashboard({ result, overlapFactor }: Props) {
+export function ResultsDashboard({ result, overlapFactor, interventions }: Props) {
   const [activeView, setActiveView] = useState<"summary" | "individual" | "sensitivity" | "montecarlo">("summary");
   const [selectedIntervention, setSelectedIntervention] = useState(0);
 
@@ -87,6 +89,9 @@ export function ResultsDashboard({ result, overlapFactor }: Props) {
         <SensitivityView result={currentResult} results={result.individualResults} selected={selectedIntervention} onSelect={setSelectedIntervention} />
       )}
       {activeView === "montecarlo" && <MonteCarloView result={result} />}
+
+      {/* Export Toolbar */}
+      <ExportToolbar interventions={interventions} result={result} overlapFactor={overlapFactor} />
 
       {/* Formula & Citations */}
       <div className="card">
