@@ -39,6 +39,16 @@ The `scripts/utilities/sturman_utility_functions.R` file includes a `validate_im
 The following system libraries are required for compiling R packages from source:
 `libcurl4-openssl-dev`, `libssl-dev`, `libxml2-dev`, `libfontconfig1-dev`, `libharfbuzz-dev`, `libfribidi-dev`, `libfreetype6-dev`, `libpng-dev`, `libtiff5-dev`, `libjpeg-dev`, `librsvg2-dev`, `libv8-dev`, `libpoppler-cpp-dev`, `cmake`, `pandoc`.
 
-### No formal lint/test framework
+### No formal lint/test framework (R codebase)
 
-This project does not use a formal R linting tool (e.g., `lintr`) or testing framework (e.g., `testthat`). Code validation is done by sourcing scripts and running Shiny apps manually.
+The R project does not use a formal linting tool (e.g., `lintr`) or testing framework (e.g., `testthat`). Code validation is done by sourcing scripts and running Shiny apps manually.
+
+### UA+ Web App (`ua-plus-app/`)
+
+A Next.js (TypeScript + Tailwind CSS) web application that unifies all utility analysis models into a single platform with AI-powered chat.
+
+- **Dev server**: `cd ua-plus-app && npm run dev` (runs on port 3000)
+- **Build**: `cd ua-plus-app && npm run build`
+- **Lint**: `cd ua-plus-app && npx eslint src/`
+- **AI chat** requires `OPENAI_API_KEY` in `ua-plus-app/.env`; the guided wizard works without it
+- **Dependencies**: `cd ua-plus-app && npm install`
