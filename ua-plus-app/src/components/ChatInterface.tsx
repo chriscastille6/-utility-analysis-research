@@ -85,7 +85,7 @@ export function ChatInterface({ onConfigGenerated, results }: Props) {
             {
               role: "assistant",
               content:
-                "I need an OpenAI API key to chat. You can add `OPENAI_API_KEY` to your `.env` file. In the meantime, use the **Build Analysis** tab to configure interventions with the guided wizard — it works great without AI!",
+                "I need a Gemini API key to chat. Get a free one (no credit card) at https://aistudio.google.com/apikey and add GOOGLE_GENERATIVE_AI_API_KEY to your .env file.\n\nIn the meantime, the guided wizard and Build Analysis tab work great without AI!",
             },
           ]);
           setIsLoading(false);
@@ -105,23 +105,12 @@ export function ChatInterface({ onConfigGenerated, results }: Props) {
         const { done, value } = await reader.read();
         if (done) break;
         const chunk = decoder.decode(value, { stream: true });
-        // Parse SSE data lines from AI SDK
-        const lines = chunk.split("\n");
-        for (const line of lines) {
-          if (line.startsWith("0:")) {
-            try {
-              const text = JSON.parse(line.slice(2));
-              assistantContent += text;
-              setMessages((prev) => {
-                const updated = [...prev];
-                updated[updated.length - 1] = { role: "assistant", content: assistantContent };
-                return updated;
-              });
-            } catch {
-              // skip unparseable lines
-            }
-          }
-        }
+        assistantContent += chunk;
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { role: "assistant", content: assistantContent };
+          return updated;
+        });
       }
 
       parseAnalysisConfig(assistantContent);
@@ -176,7 +165,7 @@ export function ChatInterface({ onConfigGenerated, results }: Props) {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={noApiKey ? "Add OPENAI_API_KEY to enable chat..." : "Describe your HR decision..."}
+            placeholder={noApiKey ? "Add GOOGLE_GENERATIVE_AI_API_KEY to enable chat..." : "Describe your HR decision..."}
             className="input-field text-sm"
             disabled={isLoading || noApiKey}
           />
