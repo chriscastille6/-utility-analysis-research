@@ -1226,13 +1226,21 @@ server <- function(input, output, session) {
   output$general_roi_projection <- renderPlotly({
     results <- general_results()
     
-    years <- 1:input$general_time_period
-    cumulative_benefits <- cumsum(rep(results$total_benefit / input$general_time_period, input$general_time_period))
-    cumulative_costs <- rep(results$total_cost, input$general_time_period)
+    time_period <- input$general_time_period
+    full_years <- floor(time_period)
+    has_partial_year <- (time_period %% 1) != 0
+    year_points <- c(seq_len(full_years), if (has_partial_year) time_period)
+    annual_benefit <- results$total_benefit / time_period
+    benefit_increments <- c(
+      if (full_years > 0) rep(annual_benefit, full_years),
+      if (has_partial_year) annual_benefit * (time_period %% 1)
+    )
+    cumulative_benefits <- cumsum(benefit_increments)
+    cumulative_costs <- rep(results$total_cost, length(year_points))
     net_value <- cumulative_benefits - cumulative_costs
     
     projection_data <- data.frame(
-      Year = years,
+      Year = year_points,
       Benefits = cumulative_benefits,
       Costs = cumulative_costs,
       Net_Value = net_value
@@ -1360,23 +1368,16 @@ server <- function(input, output, session) {
       annual_benefit_base <- input$roi_participants * input$roi_effect_size * input$roi_performance_sdy
       
       # Apply benefit decay over time
-      years <- 1:ceiling(input$roi_benefit_duration)
+      years <- seq_len(ceiling(input$roi_benefit_duration))
       decay_factor <- (1 - input$roi_decay_rate/100)
       
-      # Calculate benefits for each year
-      yearly_benefits <- sapply(years, function(year) {
-        if(year <= input$roi_benefit_duration) {
-          annual_benefit_base * (decay_factor ^ (year - 1))
-        } else {
-          0
-        }
-      })
+      # Calculate decayed annual benefits
+      yearly_benefits <- annual_benefit_base * (decay_factor ^ (years - 1))
       
       # Partial year calculation if needed
       if(input$roi_benefit_duration %% 1 != 0) {
-        partial_year <- ceiling(input$roi_benefit_duration)
         partial_fraction <- input$roi_benefit_duration %% 1
-        yearly_benefits[partial_year] <- yearly_benefits[partial_year] * partial_fraction
+        yearly_benefits[length(yearly_benefits)] <- yearly_benefits[length(yearly_benefits)] * partial_fraction
       }
       
       total_benefits <- sum(yearly_benefits)
@@ -2041,6 +2042,9 @@ server <- function(input, output, session) {
   
   output$morrow_breakeven_analysis <- renderPlotly({
     results <- morrow_results()
+    if (results$analysis_type != "aggregated") {
+      return(NULL)
+    }
     
     breakeven_data <- data.frame(
       Program = rep(c("Technical/Sales", "Managerial"), each = 2),
@@ -2072,6 +2076,14 @@ server <- function(input, output, session) {
   
   output$morrow_breakeven_interpretation <- renderUI({
     results <- morrow_results()
+    if (results$analysis_type != "aggregated") {
+      return(HTML("
+        <div style='background-color: #e2e3e5; padding: 20px; border-radius: 5px; border: 1px solid #ced4da;'>
+          <h5>Break-Even Analysis</h5>
+          <p>Break-even metrics are available in <strong>Aggregated Program Comparison</strong> mode.</p>
+        </div>
+      "))
+    }
     
     technical_viable <- 0.64 > results$technical_breakeven
     managerial_viable <- 0.31 > results$managerial_breakeven
