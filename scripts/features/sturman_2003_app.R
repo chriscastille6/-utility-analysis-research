@@ -379,7 +379,7 @@ ui <- dashboardPage(
             
             <p><strong>Citation for this Tool:</strong><br>
             <em>Sturman (2003) Performance-Based Pay Analysis Tool</em> (2025). Interactive utility analysis of compensation strategies.<br>
-            <strong>Live App:</strong> <a href='https://christopher-m-castille.shinyapps.io/sturman-2003-performance-pay-analysis/' target='_blank'>https://christopher-m-castille.shinyapps.io/sturman-2003-performance-pay-analysis/</a><br>
+            <strong>Live App:</strong> <span style='color: #666; font-style: italic;'>Deployment URL currently unavailable</span><br>
             <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research</p>
             
             <h5>Educational Purpose:</h5>
