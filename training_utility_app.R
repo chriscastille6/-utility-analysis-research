@@ -855,7 +855,7 @@ ui <- dashboardPage(
               
               p(strong("Citation for this Tool:"), br(),
               HTML("<em>Training Utility Analysis Tool</em> (2025). Evidence-based analysis of training program effectiveness and ROI.<br>
-              <strong>Live App:</strong> <a href='#' target='_blank'>[To be added when deployed]</a><br>
+              <strong>Live App:</strong> <span style='color: #666; font-style: italic;'>Deployment URL currently unavailable</span><br>
               <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research")),
               
               h5("Educational Purpose:"),

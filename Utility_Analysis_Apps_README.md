@@ -2,11 +2,11 @@
 
 This repository contains a comprehensive suite of interactive Shiny web applications designed to help students, researchers, and practitioners learn about utility analysis through evidence-based case studies.
 
-## 🚀 **Live Web Apps - Ready to Use!**
+## 🚀 **Web App Deployment Status**
 
 ### **Human Resources & Organizational Psychology Applications**
 
-#### **🔗 [Job Crafting Intervention Utility Analysis](https://christopher-m-castille.shinyapps.io/job-crafting-utility-analysis/)**
+#### **Job Crafting Intervention Utility Analysis** *(deployment currently unavailable)*
 *Based on Oprea et al. (2019) - European Journal of Work and Organizational Psychology*
 
 **Purpose:** Interactive tool for analyzing the economic value of job crafting interventions
@@ -26,7 +26,7 @@ This repository contains a comprehensive suite of interactive Shiny web applicat
 
 ---
 
-#### **🔗 [Fisher & Connelly (2017) - Contingent Workers Business Case](https://christopher-m-castille.shinyapps.io/fisher-connelly-2017-contingent-workers/)**
+#### **Fisher & Connelly (2017) - Contingent Workers Business Case** *(deployment currently unavailable)*
 *Based on Fisher & Connelly (2017) - Journal of Applied Psychology*
 
 **Purpose:** Interactive tool for building business cases for contingent worker strategies
@@ -46,7 +46,7 @@ This repository contains a comprehensive suite of interactive Shiny web applicat
 
 ---
 
-#### **🔗 [Fisher & Connelly (2020) - Disability Employment Business Case](https://christopher-m-castille.shinyapps.io/fisher-connelly-2020-disability-employment/)**
+#### **Fisher & Connelly (2020) - Disability Employment Business Case** *(deployment currently unavailable)*
 *Based on Fisher & Connelly (2020) - Journal of Business and Psychology*
 
 **Purpose:** Interactive tool for analyzing the financial business case for employing workers with disabilities
