@@ -1,0 +1,19 @@
+[Unit]
+Description=UA Shiny app (%i)
+After=network.target
+
+[Service]
+Type=simple
+User=apache
+Group=apache
+Environment="APP_BASE=__APP_BASE__"
+EnvironmentFile=/etc/ua-shiny/%i.env
+WorkingDirectory=__APP_BASE__
+ExecStart=/bin/bash ${APP_BASE}/deploy/bayoupal/run_shiny_app.sh "${APP_BASE}/${APP_SCRIPT}" "${APP_PORT}"
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
