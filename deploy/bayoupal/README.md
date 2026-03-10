@@ -43,6 +43,8 @@ Backed by systemd services:
    - `httpd`
    - `mod_ssl`
    - `R`
+   - `texlive`
+   - `texlive-xetex`
    - Apache proxy modules (`mod_proxy`, `mod_proxy_http`, `mod_proxy_wstunnel`, `mod_headers`, `mod_rewrite`)
 
 2. Install R packages:
@@ -64,6 +66,13 @@ From repository root on the server:
 2. Install and immediately enable services:
 
    - `sudo bash deploy/bayoupal/install.sh /var/www/ua-plus --enable`
+
+Notes:
+
+- `install.sh` now checks for `pdflatex` and `xelatex` (required for PDF report downloads).
+- On supported systems, it attempts to install LaTeX automatically.
+- To skip auto-install and only deploy configs/services:
+  - `sudo bash deploy/bayoupal/install.sh /var/www/ua-plus --enable --skip-latex-install`
 
 3. Restart Apache if needed:
 
