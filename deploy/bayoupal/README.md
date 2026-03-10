@@ -6,6 +6,8 @@ This folder contains a ready-to-apply deployment bundle for hosting the UA Shiny
 
 Path-based URLs:
 
+- `https://bayoupal.nicholls.edu/ua/` (redirects to homepage)
+- `https://bayoupal.nicholls.edu/ua/home/` (homepage)
 - `https://bayoupal.nicholls.edu/ua/training/`
 - `https://bayoupal.nicholls.edu/ua/staffing/`
 - `https://bayoupal.nicholls.edu/ua/staffing-fixed/`
@@ -28,9 +30,11 @@ Backed by systemd services:
 
 - `install.sh` - installs unit files/env files/apache config
 - `run_shiny_app.sh` - service launcher used by systemd
+- `validate_routes.sh` - checks all public UA route health
 - `systemd/ua-shiny@.service` - templated service unit
 - `systemd/env/*.env` - per-app script/port mapping
 - `apache/ua-shiny.conf` - Apache reverse-proxy rules
+- `homepage/index.html` - static landing page served at `/ua/home/`
 
 ## Server prerequisites (RHEL/Apache)
 
@@ -43,7 +47,7 @@ Backed by systemd services:
 
 2. Install R packages:
 
-   - `shiny`, `shinydashboard`, `ggplot2`, `dplyr`, `scales`, `DT`, `plotly`, `tidyr`, `rmarkdown`, `knitr`, `ggtext`, `gridExtra`
+   - `shiny`, `shinydashboard`, `shinyjs`, `ggplot2`, `dplyr`, `scales`, `DT`, `plotly`, `tidyr`, `rmarkdown`, `knitr`, `ggtext`, `gridExtra`, `mvtnorm`, `stringr`, `iopsych`, `lavaan`
 
 3. Deploy the repository to a server path (default expected path):
 
@@ -80,8 +84,15 @@ Port checks:
 
 Public URL checks:
 
+- `curl -I https://bayoupal.nicholls.edu/ua/home/`
 - `curl -I https://bayoupal.nicholls.edu/ua/training/`
 - `curl -I https://bayoupal.nicholls.edu/ua/fisher-2017/`
+- `bash deploy/bayoupal/validate_routes.sh`
+
+If a route returns `503`:
+
+- `sudo journalctl -u ua-shiny@staffing -n 120 --no-pager`
+- `sudo journalctl -u ua-shiny@staffing-fixed -n 120 --no-pager`
 
 ## Updating app code
 

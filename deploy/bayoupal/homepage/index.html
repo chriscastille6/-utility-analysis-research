@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UA Apps Portal</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2a44;
+      --muted: #5b6780;
+      --accent: #0b63ce;
+      --border: #d9e1ef;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    p.lead {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+    .card h2 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .foot {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Utility Analysis Apps Portal</h1>
+    <p class="lead">BayouPAL-hosted interactive tools for training, staffing, and business case analysis.</p>
+    <div class="grid">
+      <div class="card">
+        <h2>Training Utility Analysis</h2>
+        <p>ROI, Morrow analysis, and intervention comparisons.</p>
+        <a class="btn" href="/ua/training/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Staffing Utility Analysis</h2>
+        <p>Comprehensive staffing utility framework.</p>
+        <a class="btn" href="/ua/staffing/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Staffing Utility (Fixed)</h2>
+        <p>Alternative staffing app variant.</p>
+        <a class="btn" href="/ua/staffing-fixed/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Job Crafting Utility</h2>
+        <p>Intervention utility and ROI analysis.</p>
+        <a class="btn" href="/ua/job-crafting/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Fisher & Connelly (2017)</h2>
+        <p>Contingent workers business case tool.</p>
+        <a class="btn" href="/ua/fisher-2017/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Fisher & Connelly (2020)</h2>
+        <p>Disability employment business case tool.</p>
+        <a class="btn" href="/ua/fisher-2020/">Open App</a>
+      </div>
+      <div class="card">
+        <h2>Sturman (2003)</h2>
+        <p>Performance-based pay strategy analysis.</p>
+        <a class="btn" href="/ua/sturman/">Open App</a>
+      </div>
+    </div>
+    <p class="foot">Tip: bookmark <code>/ua/home/</code> as your app landing page.</p>
+  </div>
+</body>
+</html>

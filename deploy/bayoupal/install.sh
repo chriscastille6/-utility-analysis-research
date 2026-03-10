@@ -32,11 +32,30 @@ if [[ "$RUNNER_SRC" != "$RUNNER_DST" ]]; then
   install -m 0755 "$RUNNER_SRC" "$RUNNER_DST"
 fi
 
+VALIDATOR_SRC="$SCRIPT_DIR/validate_routes.sh"
+VALIDATOR_DST="$APP_BASE/deploy/bayoupal/validate_routes.sh"
+if [[ "$VALIDATOR_SRC" != "$VALIDATOR_DST" ]]; then
+  install -m 0755 "$VALIDATOR_SRC" "$VALIDATOR_DST"
+fi
+
+HOME_SRC="$SCRIPT_DIR/homepage"
+HOME_DST="$APP_BASE/deploy/bayoupal/homepage"
+if [[ -d "$HOME_SRC" ]]; then
+  mkdir -p "$HOME_DST"
+  if [[ "$HOME_SRC" != "$HOME_DST" ]]; then
+    cp -a "$HOME_SRC"/. "$HOME_DST"/
+  fi
+fi
+
 for env_file in "$SCRIPT_DIR"/systemd/env/*.env; do
   install -m 0644 "$env_file" "/etc/ua-shiny/$(basename "$env_file")"
 done
 
-install -m 0644 "$SCRIPT_DIR/apache/ua-shiny.conf" /etc/httpd/conf.d/ua-shiny.conf
+TMP_APACHE="$(mktemp)"
+trap 'rm -f "$TMP_UNIT" "$TMP_APACHE"' EXIT
+sed "s|__APP_BASE__|$APP_BASE|g" \
+  "$SCRIPT_DIR/apache/ua-shiny.conf" > "$TMP_APACHE"
+install -m 0644 "$TMP_APACHE" /etc/httpd/conf.d/ua-shiny.conf
 
 systemctl daemon-reload
 
