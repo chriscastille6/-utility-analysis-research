@@ -116,23 +116,103 @@ Expectancyfunc <- function(Validity, PredLowerCut, PredUpperCut, CritLowerCut, C
   return(expectancy[1])
 }
 
-# Enhanced utility calculation with multiple approaches
+# Enhanced utility calculation with multiple selection methods
 calculate_comprehensive_utility <- function(params) {
+  # Research-based correlation matrix for selection methods (Schmidt & Hunter, 1998; meta-analyses)
+  method_correlations <- matrix(c(
+    1.00, 0.38, 0.25, 0.65, 0.38, 0.52, 0.12,  # Cognitive
+    0.38, 1.00, 0.30, 0.45, 0.65, 0.35, 0.15,  # Interview
+    0.25, 0.30, 1.00, 0.40, 0.30, 0.35, 0.18,  # Personality
+    0.65, 0.45, 0.40, 1.00, 0.50, 0.55, 0.20,  # Integrity
+    0.38, 0.65, 0.30, 0.50, 1.00, 0.40, 0.25,  # Work Sample
+    0.52, 0.35, 0.35, 0.55, 0.40, 1.00, 0.15,  # Biodata
+    0.12, 0.15, 0.18, 0.20, 0.25, 0.15, 1.00   # Physical
+  ), nrow = 7, byrow = TRUE)
+  
+  rownames(method_correlations) <- colnames(method_correlations) <- 
+    c("cognitive", "interview", "personality", "integrity", "worksample", "biodata", "physical")
+  
+  # Collect selected methods and their validities
+  selected_methods <- c()
+  validities <- c()
+  costs <- c()
+  method_costs <- c(cognitive = 3000, interview = 500, personality = 2000, 
+                   integrity = 2000, worksample = 6000, biodata = 1500, physical = 3000)
+  
+  if (params$use_cognitive) {
+    selected_methods <- c(selected_methods, "cognitive")
+    validities <- c(validities, params$cognitive_validity)
+    costs <- c(costs, method_costs["cognitive"])
+  }
+  if (params$use_interview) {
+    selected_methods <- c(selected_methods, "interview")
+    validities <- c(validities, params$interview_validity)
+    costs <- c(costs, method_costs["interview"])
+  }
+  if (params$use_personality) {
+    selected_methods <- c(selected_methods, "personality")
+    validities <- c(validities, params$personality_validity)
+    costs <- c(costs, method_costs["personality"])
+  }
+  if (params$use_integrity) {
+    selected_methods <- c(selected_methods, "integrity")
+    validities <- c(validities, params$integrity_validity)
+    costs <- c(costs, method_costs["integrity"])
+  }
+  if (params$use_worksample) {
+    selected_methods <- c(selected_methods, "worksample")
+    validities <- c(validities, params$worksample_validity)
+    costs <- c(costs, method_costs["worksample"])
+  }
+  if (params$use_biodata) {
+    selected_methods <- c(selected_methods, "biodata")
+    validities <- c(validities, params$biodata_validity)
+    costs <- c(costs, method_costs["biodata"])
+  }
+  if (params$use_physical) {
+    selected_methods <- c(selected_methods, "physical")
+    # Adjust physical validity for job demands
+    physical_multiplier <- switch(params$job_physical_demands, "low" = 0.8, "moderate" = 1.0, "high" = 1.2)
+    validities <- c(validities, params$physical_validity * physical_multiplier)
+    costs <- c(costs, method_costs["physical"])
+  }
+  
+  # Calculate composite validity using multiple correlation
+  if (length(selected_methods) == 1) {
+    combined_validity <- validities[1]
+  } else if (length(selected_methods) > 1) {
+    # Extract correlation submatrix for selected methods
+    cor_matrix <- method_correlations[selected_methods, selected_methods]
+    
+    # Calculate composite validity (assumes equal weights for simplicity)
+    weights <- rep(1/length(selected_methods), length(selected_methods))
+    combined_validity <- sqrt(t(weights * validities) %*% cor_matrix %*% (weights * validities))
+    combined_validity <- as.numeric(combined_validity)
+  } else {
+    # Fallback to original single method
+    combined_validity <- params$rxy
+    costs <- c(params$cost)
+  }
+  
+  # Cap validity and calculate total cost
+  combined_validity <- min(combined_validity, 0.95)
+  total_cost <- sum(costs)
+  
   # Traditional BCG Utility (using iopsych)
   traditional_utility <- utilityBcg(
     n = params$n,
     sdy = params$sdy,
-    rxy = params$rxy,
+    rxy = combined_validity,
     uxs = ux(params$sr),
     sr = params$sr,
-    cost = params$cost * (params$n / params$sr),
+    cost = total_cost * (params$n / params$sr),
     period = params$period
   )
   
   # Naylor-Shine approach utility
   zxs_value <- ux(params$sr)
-  naylor_shine_utility <- params$n * params$period * params$rxy * params$sdy * zxs_value - 
-    (params$cost * (params$n / params$sr))
+  naylor_shine_utility <- params$n * params$period * combined_validity * params$sdy * zxs_value - 
+    (total_cost * (params$n / params$sr))
   
   # Financially adjusted utility (Sturman 2000 three-factor adjustments)
   # Factor 1: Variable costs adjustment
@@ -152,7 +232,7 @@ calculate_comprehensive_utility <- function(params) {
   set.seed(123)
   mc_results <- replicate(1000, {
     # Add random variation to key parameters
-    mc_rxy <- pmax(0, pmin(1, rnorm(1, params$rxy, params$rxy * 0.1)))
+    mc_rxy <- pmax(0, pmin(1, rnorm(1, combined_validity, combined_validity * 0.1)))
     mc_sdy <- pmax(0, rnorm(1, params$sdy, params$sdy * 0.15))
     mc_sr <- pmax(0.01, pmin(0.99, rnorm(1, params$sr, params$sr * 0.05)))
     
@@ -163,7 +243,7 @@ calculate_comprehensive_utility <- function(params) {
       rxy = mc_rxy,
       uxs = ux(mc_sr),
       sr = mc_sr,
-      cost = params$cost * (params$n / mc_sr),
+      cost = total_cost * (params$n / mc_sr),
       period = params$period
     )
   })
@@ -178,7 +258,15 @@ calculate_comprehensive_utility <- function(params) {
     monte_carlo_mean = monte_carlo_mean,
     monte_carlo_sd = monte_carlo_sd,
     monte_carlo_results = mc_results,
-    zxs_value = zxs_value
+    zxs_value = zxs_value,
+    variable_cost_factor = variable_cost_factor,
+    tax_factor = tax_factor,
+    discount_factor = discount_factor,
+    combined_adjustment = combined_adjustment,
+    combined_validity = combined_validity,
+    total_cost = total_cost,
+    selected_methods = selected_methods,
+    method_validities = validities
   ))
 }
 
@@ -406,6 +494,7 @@ ui <- dashboardPage(
       menuItem("Selection Battery Optimization", tabName = "comparative", icon = icon("balance-scale")),
       menuItem("Executive Selection & Character", tabName = "executive", icon = icon("user-tie")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-pdf")),
+      menuItem("Selection Analysis", tabName = "selection_analysis", icon = icon("crosshairs")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
   ),
@@ -598,6 +687,71 @@ ui <- dashboardPage(
             sliderInput("variable_costs", "Variable Costs (%):", value = 35, min = 0, max = 50, step = 1),
             sliderInput("tax_rate", "Tax Rate (%):", value = 63, min = 0, max = 70, step = 1),
             sliderInput("discount_rate", "Discount Rate (%):", value = 15, min = 0, max = 25, step = 1),
+            
+            br(),
+            h5("Selection Methods (Choose 2-4 recommended):"),
+            p(style = "font-size: 12px; color: #666; margin-bottom: 15px;", 
+              "Select multiple methods for comprehensive assessment:"),
+            
+            div(style = "background-color: #ffe6e6; padding: 15px; border-radius: 5px; margin-bottom: 15px; border: 3px solid #ff0000;",
+              h5("🚨 PHYSICAL ABILITY TEST - SHOULD BE VISIBLE! 🚨"),
+              checkboxInput("use_physical", "🏋️ Physical Ability Test ($3,000) 🏋️", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_physical == true",
+                numericInput("physical_validity", "Validity:", value = 0.35, min = 0.2, max = 0.6, step = 0.01),
+                selectInput("job_physical_demands", "Job Physical Demands:",
+                           choices = c("Low" = "low", "Moderate" = "moderate", "High" = "high"),
+                           selected = "moderate")
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_cognitive", "Cognitive Ability Test ($3,000)", value = TRUE),
+              conditionalPanel(
+                condition = "input.use_cognitive == true",
+                numericInput("cognitive_validity", "Validity:", value = 0.51, min = 0.3, max = 0.8, step = 0.01)
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_interview", "Structured Interview ($500)", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_interview == true",
+                numericInput("interview_validity", "Validity:", value = 0.51, min = 0.3, max = 0.7, step = 0.01)
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_personality", "Personality Test ($2,000)", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_personality == true",
+                numericInput("personality_validity", "Validity:", value = 0.31, min = 0.15, max = 0.5, step = 0.01)
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_integrity", "Integrity Test ($2,000)", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_integrity == true",
+                numericInput("integrity_validity", "Validity:", value = 0.41, min = 0.25, max = 0.6, step = 0.01)
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_worksample", "Performance/Work Sample ($6,000)", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_worksample == true",
+                numericInput("worksample_validity", "Validity:", value = 0.54, min = 0.35, max = 0.8, step = 0.01)
+              )
+            ),
+            
+            div(style = "background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 10px;",
+              checkboxInput("use_biodata", "Biodata ($1,500)", value = FALSE),
+              conditionalPanel(
+                condition = "input.use_biodata == true",
+                numericInput("biodata_validity", "Validity:", value = 0.35, min = 0.2, max = 0.5, step = 0.01)
+              )
+            ),
             
             br(),
             actionButton("calculate_utility", "Calculate Utility", class = "btn-success", style = "width: 100%;")
@@ -1070,6 +1224,47 @@ ui <- dashboardPage(
         )
       ),
       
+      # Selection Analysis Tab
+      tabItem(tabName = "selection_analysis",
+        fluidRow(
+          box(width = 4, title = "Selection Analysis Parameters", status = "primary", solidHeader = TRUE,
+            h5("Analysis Settings:"),
+            numericInput("analysis_composite_r", "Composite Validity (R):", value = 0.60, min = 0.3, max = 0.9, step = 0.01),
+            numericInput("analysis_cutoff", "Selection Cut Score (z-score):", value = 0.67, min = -2, max = 2, step = 0.1),
+            numericInput("analysis_sr", "Selection Ratio:", value = 0.33, min = 0.05, max = 0.95, step = 0.01),
+            
+            br(),
+            h5("Group Differences (Adverse Impact):"),
+            numericInput("majority_mean", "Majority Group Mean:", value = 0, min = -1, max = 1, step = 0.1),
+            numericInput("minority_mean", "Minority Group Mean:", value = -0.5, min = -2, max = 1, step = 0.1),
+            numericInput("minority_proportion", "Minority Group Proportion:", value = 0.30, min = 0.05, max = 0.95, step = 0.05),
+            
+            br(),
+            h5("Performance Criterion:"),
+            numericInput("performance_cutoff", "Performance Cut Score (z-score):", value = 0.5, min = -2, max = 2, step = 0.1),
+            
+            br(),
+            actionButton("update_selection_analysis", "Update Analysis", class = "btn-primary", style = "width: 100%;")
+          ),
+          
+          box(width = 8, title = "Selection Scatterplot & Decision Matrix", status = "success", solidHeader = TRUE,
+            plotOutput("selection_scatterplot", height = "450px"),
+            br(),
+            h6("Decision Accuracy:"),
+            htmlOutput("decision_matrix_summary")
+          )
+        ),
+        
+        fluidRow(
+          box(width = 6, title = "Correlation Matrix (Lower Triangle)", status = "info", solidHeader = TRUE,
+            verbatimTextOutput("correlation_matrix_display")
+          ),
+          box(width = 6, title = "Adverse Impact Analysis", status = "warning", solidHeader = TRUE,
+            htmlOutput("adverse_impact_analysis")
+          )
+        )
+      ),
+      
       # References Tab
       tabItem(tabName = "references",
         fluidRow(
@@ -1337,7 +1532,22 @@ server <- function(input, output, session) {
           period = input$tenure_period,
           variable_costs = input$variable_costs,
           tax_rate = input$tax_rate,
-          discount_rate = input$discount_rate
+          discount_rate = input$discount_rate,
+          use_cognitive = input$use_cognitive,
+          cognitive_validity = if(input$use_cognitive) input$cognitive_validity else 0,
+          use_interview = input$use_interview,
+          interview_validity = if(input$use_interview) input$interview_validity else 0,
+          use_personality = input$use_personality,
+          personality_validity = if(input$use_personality) input$personality_validity else 0,
+          use_integrity = input$use_integrity,
+          integrity_validity = if(input$use_integrity) input$integrity_validity else 0,
+          use_worksample = input$use_worksample,
+          worksample_validity = if(input$use_worksample) input$worksample_validity else 0,
+          use_biodata = input$use_biodata,
+          biodata_validity = if(input$use_biodata) input$biodata_validity else 0,
+          use_physical = input$use_physical,
+          physical_validity = if(input$use_physical) input$physical_validity else 0,
+          job_physical_demands = if(input$use_physical) input$job_physical_demands else "moderate"
         )
       
       calculate_comprehensive_utility(params)
@@ -1422,6 +1632,21 @@ server <- function(input, output, session) {
       "- Standard deviation: $", format(round(results$monte_carlo_sd), big.mark = ","), "\n",
       "- 95% CI: [$", format(round(results$monte_carlo_mean - 1.96 * results$monte_carlo_sd), big.mark = ","), 
       ", $", format(round(results$monte_carlo_mean + 1.96 * results$monte_carlo_sd), big.mark = ","), "]\n\n",
+      
+      if(length(results$selected_methods) > 0) {
+        method_details <- paste0(
+          "SELECTION METHODS USED:\n",
+          paste(paste0("- ", stringr::str_to_title(results$selected_methods), 
+                      " (validity: ", round(results$method_validities, 3), ")"), collapse = "\n"),
+          "\n",
+          "- Combined validity: ", round(results$combined_validity, 3), "\n",
+          "- Total cost per person: $", format(results$total_cost, big.mark = ","), "\n",
+          "- Number of methods: ", length(results$selected_methods), "\n\n"
+        )
+        method_details
+      } else {
+        ""
+      },
       
       "ECONOMIC ADJUSTMENTS (Sturman 2000):\n",
       "1. Variable costs factor: ", (100 - input$variable_costs), "%\n",
@@ -2249,6 +2474,207 @@ Monte Carlo analysis provides confidence intervals and risk assessment for the u
       rmarkdown::render(rmd_file, output_file = file, quiet = TRUE)
     }
   )
+  
+  # ============================================================================
+  # SELECTION ANALYSIS TAB
+  # ============================================================================
+  
+  # Selection analysis reactive data
+  selection_analysis_data <- reactive({
+    input$update_selection_analysis
+    
+    isolate({
+      # Generate correlated data for scatterplot
+      set.seed(123)
+      n_total <- 1000
+      n_minority <- round(n_total * input$minority_proportion)
+      n_majority <- n_total - n_minority
+      
+      # Generate predictor scores
+      majority_pred <- rnorm(n_majority, input$majority_mean, 1)
+      minority_pred <- rnorm(n_minority, input$minority_mean, 1)
+      predictor_scores <- c(majority_pred, minority_pred)
+      
+      # Generate correlated criterion scores
+      criterion_scores <- input$analysis_composite_r * predictor_scores + 
+        sqrt(1 - input$analysis_composite_r^2) * rnorm(n_total, 0, 1)
+      
+      # Group membership
+      group <- c(rep("Majority", n_majority), rep("Minority", n_minority))
+      
+      # Selection decisions
+      selected <- predictor_scores >= input$analysis_cutoff
+      
+      # Performance success
+      performance_success <- criterion_scores >= input$performance_cutoff
+      
+      # Calculate selection statistics
+      majority_selected <- sum(selected[group == "Majority"])
+      minority_selected <- sum(selected[group == "Minority"])
+      majority_sr <- majority_selected / n_majority
+      minority_sr <- minority_selected / n_minority
+      ai_ratio <- minority_sr / majority_sr
+      
+      # Decision matrix
+      true_positive <- sum(selected & performance_success)
+      false_positive <- sum(selected & !performance_success)
+      true_negative <- sum(!selected & !performance_success)
+      false_negative <- sum(!selected & performance_success)
+      
+      list(
+        data = data.frame(
+          predictor = predictor_scores,
+          criterion = criterion_scores,
+          group = group,
+          selected = selected,
+          performance_success = performance_success
+        ),
+        stats = list(
+          majority_sr = majority_sr,
+          minority_sr = minority_sr,
+          ai_ratio = ai_ratio,
+          tp = true_positive,
+          fp = false_positive,
+          tn = true_negative,
+          fn = false_negative,
+          accuracy = (true_positive + true_negative) / n_total,
+          sensitivity = true_positive / (true_positive + false_negative),
+          specificity = true_negative / (true_negative + false_positive)
+        )
+      )
+    })
+  })
+  
+  # Selection scatterplot
+  output$selection_scatterplot <- renderPlot({
+    data_list <- selection_analysis_data()
+    plot_data <- data_list$data
+    
+    p <- ggplot(plot_data, aes(x = predictor, y = criterion)) +
+      geom_point(aes(color = group, shape = selected), alpha = 0.6, size = 2) +
+      geom_vline(xintercept = input$analysis_cutoff, linetype = "dashed", color = "red", size = 1) +
+      geom_hline(yintercept = input$performance_cutoff, linetype = "dashed", color = "blue", size = 1) +
+      geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "solid") +
+      scale_color_manual(values = c("Majority" = "#2E86AB", "Minority" = "#A23B72"),
+                        name = "Group") +
+      scale_shape_manual(values = c("TRUE" = 19, "FALSE" = 1),
+                        name = "Selected",
+                        labels = c("Not Selected", "Selected")) +
+      labs(
+        title = paste0("Selection Analysis (R = ", input$analysis_composite_r, ")"),
+        subtitle = paste0("Red line: Selection cutoff | Blue line: Performance cutoff"),
+        x = "Predictor Score (z-score)",
+        y = "Criterion/Performance Score (z-score)"
+      ) +
+      theme_minimal() +
+      theme(
+        plot.title = element_text(size = 14, hjust = 0.5),
+        plot.subtitle = element_text(size = 12, hjust = 0.5),
+        legend.position = "bottom"
+      ) +
+      annotate("text", x = -2.5, y = 2.5, label = "True\nNegatives", hjust = 0, vjust = 1, size = 3) +
+      annotate("text", x = 1.5, y = 2.5, label = "False\nPositives", hjust = 0, vjust = 1, size = 3) +
+      annotate("text", x = -2.5, y = -1.5, label = "False\nNegatives", hjust = 0, vjust = 1, size = 3) +
+      annotate("text", x = 1.5, y = -1.5, label = "True\nPositives", hjust = 0, vjust = 1, size = 3)
+    
+    return(p)
+  })
+  
+  # Decision matrix summary
+  output$decision_matrix_summary <- renderUI({
+    data_list <- selection_analysis_data()
+    stats <- data_list$stats
+    
+    HTML(paste0(
+      "<div style='background-color: #f8f9fa; padding: 15px; border-radius: 5px;'>",
+      "<h6><strong>Decision Accuracy Metrics:</strong></h6>",
+      "<p><strong>Overall Accuracy:</strong> ", round(stats$accuracy * 100, 1), "%</p>",
+      "<p><strong>Sensitivity (True Positive Rate):</strong> ", round(stats$sensitivity * 100, 1), "%</p>",
+      "<p><strong>Specificity (True Negative Rate):</strong> ", round(stats$specificity * 100, 1), "%</p>",
+      "<hr>",
+      "<h6><strong>Decision Counts:</strong></h6>",
+      "<p><strong>True Positives:</strong> ", stats$tp, " | <strong>False Positives:</strong> ", stats$fp, "</p>",
+      "<p><strong>True Negatives:</strong> ", stats$tn, " | <strong>False Negatives:</strong> ", stats$fn, "</p>",
+      "</div>"
+    ))
+  })
+  
+  # Correlation matrix display (lower triangle only)
+  output$correlation_matrix_display <- renderText({
+    # Get current selected methods
+    selected_methods <- c()
+    if (input$use_cognitive) selected_methods <- c(selected_methods, "Cognitive")
+    if (input$use_interview) selected_methods <- c(selected_methods, "Interview")
+    if (input$use_personality) selected_methods <- c(selected_methods, "Personality")
+    if (input$use_integrity) selected_methods <- c(selected_methods, "Integrity")
+    if (input$use_worksample) selected_methods <- c(selected_methods, "Work Sample")
+    if (input$use_biodata) selected_methods <- c(selected_methods, "Biodata")
+    if (input$use_physical) selected_methods <- c(selected_methods, "Physical")
+    
+    if (length(selected_methods) < 2) {
+      return("Select at least 2 methods to view correlation matrix")
+    }
+    
+    # Research-based correlation matrix
+    full_matrix <- matrix(c(
+      1.00, 0.38, 0.25, 0.65, 0.38, 0.52, 0.12,  # Cognitive
+      0.38, 1.00, 0.30, 0.45, 0.65, 0.35, 0.15,  # Interview
+      0.25, 0.30, 1.00, 0.40, 0.30, 0.35, 0.18,  # Personality
+      0.65, 0.45, 0.40, 1.00, 0.50, 0.55, 0.20,  # Integrity
+      0.38, 0.65, 0.30, 0.50, 1.00, 0.40, 0.25,  # Work Sample
+      0.52, 0.35, 0.35, 0.55, 0.40, 1.00, 0.15,  # Biodata
+      0.12, 0.15, 0.18, 0.20, 0.25, 0.15, 1.00   # Physical
+    ), nrow = 7, byrow = TRUE)
+    
+    method_mapping <- c("Cognitive", "Interview", "Personality", "Integrity", "Work Sample", "Biodata", "Physical")
+    method_indices <- match(selected_methods, method_mapping)
+    
+    # Extract submatrix
+    cor_matrix <- full_matrix[method_indices, method_indices]
+    rownames(cor_matrix) <- colnames(cor_matrix) <- selected_methods
+    
+    # Create lower triangle display
+    cor_matrix[upper.tri(cor_matrix)] <- NA
+    
+    # Format for display
+    output_text <- paste0("Correlation Matrix (Lower Triangle):\n")
+    output_text <- paste0(output_text, "=====================================\n\n")
+    
+    for (i in 1:nrow(cor_matrix)) {
+      row_text <- sprintf("%-12s", rownames(cor_matrix)[i])
+      for (j in 1:i) {
+        if (!is.na(cor_matrix[i, j])) {
+          row_text <- paste0(row_text, sprintf("%6.2f ", cor_matrix[i, j]))
+        }
+      }
+      output_text <- paste0(output_text, row_text, "\n")
+    }
+    
+    return(output_text)
+  })
+  
+  # Adverse impact analysis
+  output$adverse_impact_analysis <- renderUI({
+    data_list <- selection_analysis_data()
+    stats <- data_list$stats
+    
+    ai_status <- if (stats$ai_ratio >= 0.8) "Compliant" else "Non-Compliant"
+    ai_color <- if (stats$ai_ratio >= 0.8) "green" else "red"
+    
+    HTML(paste0(
+      "<div style='background-color: #f8f9fa; padding: 15px; border-radius: 5px;'>",
+      "<h6><strong>Adverse Impact Analysis:</strong></h6>",
+      "<p><strong>Majority Group Selection Rate:</strong> ", round(stats$majority_sr * 100, 1), "%</p>",
+      "<p><strong>Minority Group Selection Rate:</strong> ", round(stats$minority_sr * 100, 1), "%</p>",
+      "<p><strong>Adverse Impact Ratio:</strong> ", round(stats$ai_ratio, 3), "</p>",
+      "<p style='color: ", ai_color, ";'><strong>4/5ths Rule Status:</strong> ", ai_status, "</p>",
+      "<hr>",
+      "<h6><strong>Interpretation:</strong></h6>",
+      "<p style='font-size: 12px;'>The 4/5ths rule requires the minority selection rate to be at least 80% of the majority rate. ",
+      "Values below 0.80 may indicate adverse impact requiring justification.</p>",
+      "</div>"
+    ))
+  })
 }
 
 # Run the application
