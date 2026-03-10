@@ -159,7 +159,6 @@ systemctl daemon-reload
 SERVICES=(
   ua-shiny@training
   ua-shiny@staffing
-  ua-shiny@staffing-fixed
   ua-shiny@job-crafting
   ua-shiny@fisher-2017
   ua-shiny@fisher-2020
@@ -168,6 +167,10 @@ SERVICES=(
 
 if [[ "$ENABLE_NOW" == true ]]; then
   systemctl enable --now "${SERVICES[@]}"
+  # One-time migration: retire the legacy staffing-fixed service.
+  if systemctl list-unit-files | grep -q '^ua-shiny@staffing-fixed\.service'; then
+    systemctl disable --now ua-shiny@staffing-fixed >/dev/null 2>&1 || true
+  fi
   systemctl restart httpd
   echo "Services enabled and started."
 else

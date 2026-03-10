@@ -10,7 +10,6 @@ Path-based URLs:
 - `https://bayoupal.nicholls.edu/ua/home/` (homepage)
 - `https://bayoupal.nicholls.edu/ua/training/`
 - `https://bayoupal.nicholls.edu/ua/staffing/`
-- `https://bayoupal.nicholls.edu/ua/staffing-fixed/`
 - `https://bayoupal.nicholls.edu/ua/job-crafting/`
 - `https://bayoupal.nicholls.edu/ua/fisher-2017/`
 - `https://bayoupal.nicholls.edu/ua/fisher-2020/`
@@ -20,7 +19,6 @@ Backed by systemd services:
 
 - `ua-shiny@training.service`
 - `ua-shiny@staffing.service`
-- `ua-shiny@staffing-fixed.service`
 - `ua-shiny@job-crafting.service`
 - `ua-shiny@fisher-2017.service`
 - `ua-shiny@fisher-2020.service`
@@ -101,7 +99,12 @@ Public URL checks:
 If a route returns `503`:
 
 - `sudo journalctl -u ua-shiny@staffing -n 120 --no-pager`
-- `sudo journalctl -u ua-shiny@staffing-fixed -n 120 --no-pager`
+- `sudo systemctl restart ua-shiny@staffing`
+
+Legacy note:
+
+- `/ua/staffing-fixed/` now redirects to `/ua/staffing/`.
+- Running `install.sh ... --enable` disables `ua-shiny@staffing-fixed` if it exists.
 
 ## Updating app code
 

@@ -7,7 +7,6 @@ ROUTES=(
   "/ua/home/"
   "/ua/training/"
   "/ua/staffing/"
-  "/ua/staffing-fixed/"
   "/ua/job-crafting/"
   "/ua/fisher-2017/"
   "/ua/fisher-2020/"
