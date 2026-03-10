@@ -26,7 +26,11 @@ sed "s|__APP_BASE__|$APP_BASE|g" \
   "$SCRIPT_DIR/systemd/ua-shiny@.service" > "$TMP_UNIT"
 
 install -m 0644 "$TMP_UNIT" /etc/systemd/system/ua-shiny@.service
-install -m 0755 "$SCRIPT_DIR/run_shiny_app.sh" "$APP_BASE/deploy/bayoupal/run_shiny_app.sh"
+RUNNER_SRC="$SCRIPT_DIR/run_shiny_app.sh"
+RUNNER_DST="$APP_BASE/deploy/bayoupal/run_shiny_app.sh"
+if [[ "$RUNNER_SRC" != "$RUNNER_DST" ]]; then
+  install -m 0755 "$RUNNER_SRC" "$RUNNER_DST"
+fi
 
 for env_file in "$SCRIPT_DIR"/systemd/env/*.env; do
   install -m 0644 "$env_file" "/etc/ua-shiny/$(basename "$env_file")"
