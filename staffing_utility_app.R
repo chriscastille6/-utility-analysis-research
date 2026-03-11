@@ -18,6 +18,7 @@ library(rmarkdown)
 library(knitr)
 library(stringr)
 library(lavaan)
+if (file.exists("sim_lens_import_helpers.R")) source("sim_lens_import_helpers.R")
 
 # =============================================================================
 # CORE UTILITY ANALYSIS FUNCTIONS
@@ -328,6 +329,7 @@ ui <- dashboardPage(
       menuItem("Selection Battery Optimization", tabName = "comparative", icon = icon("balance-scale")),
       menuItem("Executive Selection & Character", tabName = "executive", icon = icon("user-tie")),
       menuItem("Simulation Decision Lens", tabName = "simlens", icon = icon("compass")),
+      menuItem("Simulation Bundle Forecaster", tabName = "simbundle", icon = icon("object-group")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-pdf")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -900,6 +902,18 @@ ui <- dashboardPage(
               condition = "input.sim_staff_manual_sdy == true",
               numericInput("sim_staff_sdy_manual", "Manual SDy ($):", value = 20800, min = 100, max = 500000, step = 100)
             ),
+            selectInput(
+              "sim_staff_validity_preset",
+              "Current system validity assumption:",
+              choices = c(
+                "Reference check + unstructured interview (overall baseline)" = "0.12",
+                "Structured interview + reference check" = "0.26",
+                "Security guard system: background + integrity + structured interview" = "0.32",
+                "Cognitive + structured interview (high rigor)" = "0.45",
+                "Manual entry" = "manual"
+              ),
+              selected = "0.12"
+            ),
             numericInput("sim_staff_validity_current", "Current validity:", value = 0.18, min = 0, max = 1, step = 0.01),
             numericInput("sim_staff_validity_new", "Proposed validity:", value = 0.35, min = 0, max = 1, step = 0.01),
             sliderInput("sim_staff_sr", "Selection ratio:", min = 0.05, max = 0.95, value = 0.30, step = 0.01),
@@ -912,6 +926,10 @@ ui <- dashboardPage(
             numericInput("sim_staff_vacancy_days_saved", "Vacancy days avoided (horizon):", value = 180, min = 0, max = 200000, step = 5),
             numericInput("sim_staff_vacancy_day_cost", "Cost per vacancy day ($):", value = 300, min = 0, max = 10000, step = 25),
             br(),
+            h5("Student report upload"),
+            fileInput("sim_staff_upload", "Upload simulation Excel files (.xlsx)", multiple = TRUE, accept = c(".xlsx")),
+            actionButton("sim_staff_import_apply", "Auto-fill from uploads", class = "btn-default", style = "width: 100%;"),
+            br(), br(),
             actionButton("sim_staff_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
           ),
           box(width = 8, title = "Lens Output", status = "success", solidHeader = TRUE,
@@ -921,7 +939,65 @@ ui <- dashboardPage(
               valueBoxOutput("sim_staff_roi_box", width = 4)
             ),
             br(),
+            textOutput("sim_staff_import_status"),
+            br(),
             htmlOutput("sim_staff_summary")
+          )
+        )
+      ),
+
+      # Simulation Bundle Forecaster
+      tabItem(tabName = "simbundle",
+        fluidRow(
+          box(width = 12, title = "Simulation Bundle Forecaster (Additive + Pareto)", status = "primary", solidHeader = TRUE,
+            p("Build customizable bundles of decisions, combine their utility channels additively, and identify Pareto-efficient bundles."),
+            p("Pareto criterion used here: maximize net utility and productivity gain while minimizing risk score.")
+          )
+        ),
+        fluidRow(
+          box(width = 4, title = "Bundle Inputs", status = "info", solidHeader = TRUE,
+            sliderInput("bundle_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            sliderInput("bundle_interaction_pct", "Interaction uplift on productivity for multi-policy bundles (% per extra policy):", min = 0, max = 30, value = 5, step = 1),
+            br(),
+            h5("Policy channel inputs (annualized)"),
+            tags$small("Enter expected annual channel values; horizon scaling is applied automatically."),
+            br(), br(),
+            checkboxInput("bundle_training_on", "Include Training policy", TRUE),
+            numericInput("bundle_training_prod", "Training: productivity ($)", 250000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_training_other", "Training: other savings ($)", 60000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_training_cost", "Training: cost ($)", 120000, min = 0, max = 10000000, step = 1000),
+            sliderInput("bundle_training_risk", "Training: risk score", min = 0, max = 10, value = 3, step = 1),
+            br(),
+            checkboxInput("bundle_staffing_on", "Include Staffing policy", TRUE),
+            numericInput("bundle_staffing_prod", "Staffing: productivity ($)", 220000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_staffing_other", "Staffing: other savings ($)", 90000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_staffing_cost", "Staffing: cost ($)", 80000, min = 0, max = 10000000, step = 1000),
+            sliderInput("bundle_staffing_risk", "Staffing: risk score", min = 0, max = 10, value = 4, step = 1),
+            br(),
+            checkboxInput("bundle_contingent_on", "Include Contingent/Labor-mix policy", TRUE),
+            numericInput("bundle_contingent_prod", "Contingent: productivity ($)", 90000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_contingent_other", "Contingent: other savings ($)", 110000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_contingent_cost", "Contingent: cost ($)", 70000, min = 0, max = 10000000, step = 1000),
+            sliderInput("bundle_contingent_risk", "Contingent: risk score", min = 0, max = 10, value = 5, step = 1),
+            br(),
+            checkboxInput("bundle_dei_on", "Include DEI/Disability policy", TRUE),
+            numericInput("bundle_dei_prod", "DEI: productivity ($)", 150000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_dei_other", "DEI: other savings ($)", 75000, min = -1000000, max = 10000000, step = 1000),
+            numericInput("bundle_dei_cost", "DEI: cost ($)", 65000, min = 0, max = 10000000, step = 1000),
+            sliderInput("bundle_dei_risk", "DEI: risk score", min = 0, max = 10, value = 2, step = 1),
+            br(),
+            actionButton("bundle_run", "Generate Bundle Set", class = "btn-primary", style = "width: 100%;")
+          ),
+          box(width = 8, title = "Bundle Results", status = "success", solidHeader = TRUE,
+            fluidRow(
+              valueBoxOutput("bundle_best_net_box", width = 4),
+              valueBoxOutput("bundle_best_prod_box", width = 4),
+              valueBoxOutput("bundle_pareto_count_box", width = 4)
+            ),
+            br(),
+            plotlyOutput("bundle_pareto_plot", height = "350px"),
+            br(),
+            DT::dataTableOutput("bundle_results_table")
           )
         )
       ),
@@ -2063,6 +2139,34 @@ server <- function(input, output, session) {
   })
 
   # Simulation Decision Lens (Staffing)
+  sim_staff_import_msg <- reactiveVal("Upload your report files to auto-fill assumptions.")
+
+  observeEvent(input$sim_staff_validity_preset, {
+    if (!is.null(input$sim_staff_validity_preset) && input$sim_staff_validity_preset != "manual") {
+      updateNumericInput(session, "sim_staff_validity_current", value = as.numeric(input$sim_staff_validity_preset))
+    }
+  })
+
+  observeEvent(input$sim_staff_import_apply, {
+    if (!exists("sim_lens_parse_upload")) {
+      sim_staff_import_msg("Import helper not available; continue with manual assumptions.")
+      return()
+    }
+    parsed <- sim_lens_parse_upload(input$sim_staff_upload)
+    vals <- parsed$values
+
+    if (!is.na(vals$total_hires)) updateNumericInput(session, "sim_staff_hires", value = round(vals$total_hires))
+    if (!is.na(vals$headcount_total) && is.na(vals$total_hires)) updateNumericInput(session, "sim_staff_hires", value = round(vals$headcount_total * 0.06))
+    if (!is.na(vals$weighted_avg_annual_salary)) updateNumericInput(session, "sim_staff_avg_salary", value = round(vals$weighted_avg_annual_salary))
+
+    warn_txt <- if (length(parsed$warnings) > 0) paste(" Warnings:", paste(parsed$warnings, collapse = " | ")) else ""
+    sim_staff_import_msg(paste0(parsed$message, " Auto-filled available fields.", warn_txt))
+  })
+
+  output$sim_staff_import_status <- renderText({
+    sim_staff_import_msg()
+  })
+
   sim_staff_results <- reactive({
     input$sim_staff_run
     isolate({
@@ -2149,6 +2253,138 @@ server <- function(input, output, session) {
       "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
       "</div>"
     ))
+  })
+
+  # Simulation Bundle Forecaster
+  bundle_results <- reactive({
+    input$bundle_run
+    isolate({
+      policies <- data.frame(
+        name = c("Training", "Staffing", "Contingent", "DEI"),
+        include = c(input$bundle_training_on, input$bundle_staffing_on, input$bundle_contingent_on, input$bundle_dei_on),
+        prod = c(input$bundle_training_prod, input$bundle_staffing_prod, input$bundle_contingent_prod, input$bundle_dei_prod),
+        other = c(input$bundle_training_other, input$bundle_staffing_other, input$bundle_contingent_other, input$bundle_dei_other),
+        cost = c(input$bundle_training_cost, input$bundle_staffing_cost, input$bundle_contingent_cost, input$bundle_dei_cost),
+        risk = c(input$bundle_training_risk, input$bundle_staffing_risk, input$bundle_contingent_risk, input$bundle_dei_risk),
+        stringsAsFactors = FALSE
+      )
+      policies <- policies[policies$include, , drop = FALSE]
+      if (nrow(policies) == 0) {
+        return(data.frame())
+      }
+
+      n <- nrow(policies)
+      horizon_factor <- input$bundle_horizon_q / 4
+      interaction_pct <- input$bundle_interaction_pct / 100
+
+      combos <- lapply(1:(2^n - 1), function(mask) {
+        idx <- which(as.logical(intToBits(mask)[1:n]))
+        chosen <- policies[idx, , drop = FALSE]
+        k <- nrow(chosen)
+        prod_scaled <- sum(chosen$prod) * horizon_factor * (1 + interaction_pct * (k - 1))
+        other_scaled <- sum(chosen$other) * horizon_factor
+        cost_scaled <- sum(chosen$cost) * horizon_factor
+        net <- prod_scaled + other_scaled - cost_scaled
+        data.frame(
+          bundle_id = paste0("B", mask),
+          policies = paste(chosen$name, collapse = " + "),
+          n_policies = k,
+          productivity_gain = prod_scaled,
+          other_savings = other_scaled,
+          cost = cost_scaled,
+          net_utility = net,
+          risk = sum(chosen$risk),
+          stringsAsFactors = FALSE
+        )
+      })
+
+      df <- do.call(rbind, combos)
+      if (is.null(df) || nrow(df) == 0) return(data.frame())
+
+      pareto <- logical(nrow(df))
+      for (i in seq_len(nrow(df))) {
+        dominates_i <- (df$net_utility >= df$net_utility[i]) &
+          (df$productivity_gain >= df$productivity_gain[i]) &
+          (df$risk <= df$risk[i]) &
+          ((df$net_utility > df$net_utility[i]) |
+             (df$productivity_gain > df$productivity_gain[i]) |
+             (df$risk < df$risk[i]))
+        pareto[i] <- !any(dominates_i)
+      }
+      df$pareto_optimal <- pareto
+      df[order(-df$net_utility), , drop = FALSE]
+    })
+  })
+
+  output$bundle_best_net_box <- renderValueBox({
+    df <- bundle_results()
+    if (nrow(df) == 0) {
+      return(valueBox("N/A", "Best net utility", icon = icon("dollar-sign"), color = "yellow"))
+    }
+    valueBox(
+      paste0("$", format(round(max(df$net_utility)), big.mark = ",")),
+      "Best net utility",
+      icon = icon("dollar-sign"),
+      color = "green"
+    )
+  })
+
+  output$bundle_best_prod_box <- renderValueBox({
+    df <- bundle_results()
+    if (nrow(df) == 0) {
+      return(valueBox("N/A", "Best productivity gain", icon = icon("chart-line"), color = "yellow"))
+    }
+    valueBox(
+      paste0("$", format(round(max(df$productivity_gain)), big.mark = ",")),
+      "Best productivity gain",
+      icon = icon("chart-line"),
+      color = "blue"
+    )
+  })
+
+  output$bundle_pareto_count_box <- renderValueBox({
+    df <- bundle_results()
+    if (nrow(df) == 0) {
+      return(valueBox("0", "Pareto-efficient bundles", icon = icon("object-group"), color = "yellow"))
+    }
+    valueBox(
+      sum(df$pareto_optimal),
+      "Pareto-efficient bundles",
+      icon = icon("object-group"),
+      color = "purple"
+    )
+  })
+
+  output$bundle_pareto_plot <- renderPlotly({
+    df <- bundle_results()
+    if (nrow(df) == 0) {
+      p <- ggplot() + annotate("text", x = 0.5, y = 0.5, label = "No bundles generated yet") + xlim(0, 1) + ylim(0, 1) + theme_void()
+      return(ggplotly(p))
+    }
+
+    p <- ggplot(df, aes(x = risk, y = net_utility, color = pareto_optimal, size = productivity_gain,
+                        text = paste0("Policies: ", policies,
+                                      "<br>Net: $", format(round(net_utility), big.mark = ","),
+                                      "<br>Productivity: $", format(round(productivity_gain), big.mark = ","),
+                                      "<br>Risk: ", risk))) +
+      geom_point(alpha = 0.8) +
+      scale_color_manual(values = c("FALSE" = "#6c757d", "TRUE" = "#1b9e77")) +
+      scale_y_continuous(labels = scales::dollar_format()) +
+      labs(title = "Bundle Pareto Map", x = "Risk score (lower is better)", y = "Net utility ($)", color = "Pareto optimal") +
+      theme_minimal()
+    ggplotly(p, tooltip = "text")
+  })
+
+  output$bundle_results_table <- DT::renderDataTable({
+    df <- bundle_results()
+    if (nrow(df) == 0) return(data.frame(Message = "Click 'Generate Bundle Set' to run bundle analysis."))
+    show <- df
+    show$productivity_gain <- paste0("$", format(round(show$productivity_gain), big.mark = ","))
+    show$other_savings <- paste0("$", format(round(show$other_savings), big.mark = ","))
+    show$cost <- paste0("$", format(round(show$cost), big.mark = ","))
+    show$net_utility <- paste0("$", format(round(show$net_utility), big.mark = ","))
+    show$pareto_optimal <- ifelse(show$pareto_optimal, "Yes", "No")
+    DT::datatable(show, options = list(pageLength = 10, scrollX = TRUE))
   })
   
   # Download Report Handler - Now functional

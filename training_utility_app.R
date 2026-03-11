@@ -12,6 +12,7 @@ library(dplyr)
 library(stringr)
 library(rmarkdown)
 library(knitr)
+if (file.exists("sim_lens_import_helpers.R")) source("sim_lens_import_helpers.R")
 
 # =============================================================================
 # TRAINING PROGRAM DATABASE (Based on Research Literature)
@@ -779,6 +780,10 @@ ui <- dashboardPage(
             numericInput("sim_train_absence_days_saved", "Absence days avoided (horizon):", value = 120, min = 0, max = 100000, step = 5),
             numericInput("sim_train_absence_day_cost", "Cost per absence day ($):", value = 220, min = 0, max = 5000, step = 10),
             br(),
+            h5("Student report upload"),
+            fileInput("sim_train_upload", "Upload simulation Excel files (.xlsx)", multiple = TRUE, accept = c(".xlsx")),
+            actionButton("sim_train_import_apply", "Auto-fill from uploads", class = "btn-default", style = "width: 100%;"),
+            br(), br(),
             actionButton("sim_train_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
           ),
           box(width = 8, title = "Lens Output", status = "success", solidHeader = TRUE,
@@ -787,6 +792,8 @@ ui <- dashboardPage(
               valueBoxOutput("sim_train_net_box", width = 4),
               valueBoxOutput("sim_train_roi_box", width = 4)
             ),
+            br(),
+            textOutput("sim_train_import_status"),
             br(),
             htmlOutput("sim_train_summary")
           )
@@ -2186,6 +2193,28 @@ server <- function(input, output, session) {
 
   
   # Simulation Decision Lens (Training)
+  sim_train_import_msg <- reactiveVal("Upload your report files to auto-fill assumptions.")
+
+  observeEvent(input$sim_train_import_apply, {
+    if (!exists("sim_lens_parse_upload")) {
+      sim_train_import_msg("Import helper not available; continue with manual assumptions.")
+      return()
+    }
+    parsed <- sim_lens_parse_upload(input$sim_train_upload)
+    vals <- parsed$values
+
+    if (!is.na(vals$headcount_total)) updateNumericInput(session, "sim_train_headcount", value = round(vals$headcount_total))
+    if (!is.na(vals$weighted_avg_annual_salary)) updateNumericInput(session, "sim_train_avg_salary", value = round(vals$weighted_avg_annual_salary))
+    if (!is.na(vals$training_budget_total)) updateNumericInput(session, "sim_train_program_cost", value = round(vals$training_budget_total))
+
+    warn_txt <- if (length(parsed$warnings) > 0) paste(" Warnings:", paste(parsed$warnings, collapse = " | ")) else ""
+    sim_train_import_msg(paste0(parsed$message, " Auto-filled available fields.", warn_txt))
+  })
+
+  output$sim_train_import_status <- renderText({
+    sim_train_import_msg()
+  })
+
   sim_train_results <- reactive({
     input$sim_train_run
     isolate({

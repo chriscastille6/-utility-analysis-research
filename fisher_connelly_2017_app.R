@@ -15,6 +15,7 @@ library(knitr)
 library(ggtext)
 library(grid)
 library(gridExtra)
+if (file.exists("sim_lens_import_helpers.R")) source("sim_lens_import_helpers.R")
 
 # Load the data from the reproduction analysis
 load_reproduction_data <- function() {
@@ -481,6 +482,10 @@ ui <- dashboardPage(
             numericInput("sim_cw_turnover_cost", "Cost per turnover event ($):", value = 12000, min = 0, max = 250000, step = 1000),
             numericInput("sim_cw_coordination_overhead", "Coordination overhead ($):", value = 20000, min = 0, max = 5000000, step = 1000),
             br(),
+            h5("Student report upload"),
+            fileInput("sim_cw_upload", "Upload simulation Excel files (.xlsx)", multiple = TRUE, accept = c(".xlsx")),
+            actionButton("sim_cw_import_apply", "Auto-fill from uploads", class = "btn-default", style = "width: 100%;"),
+            br(), br(),
             actionButton("sim_cw_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
           ),
           box(
@@ -490,6 +495,8 @@ ui <- dashboardPage(
               valueBoxOutput("sim_cw_net_box", width = 4),
               valueBoxOutput("sim_cw_quality_box", width = 4)
             ),
+            br(),
+            textOutput("sim_cw_import_status"),
             br(),
             htmlOutput("sim_cw_summary")
           )
@@ -968,6 +975,27 @@ server <- function(input, output, session) {
   })
 
   # Simulation Decision Lens (Contingent/Labor-Mix)
+  sim_cw_import_msg <- reactiveVal("Upload your report files to auto-fill assumptions.")
+
+  observeEvent(input$sim_cw_import_apply, {
+    if (!exists("sim_lens_parse_upload")) {
+      sim_cw_import_msg("Import helper not available; continue with manual assumptions.")
+      return()
+    }
+    parsed <- sim_lens_parse_upload(input$sim_cw_upload)
+    vals <- parsed$values
+
+    if (!is.na(vals$headcount_total)) updateNumericInput(session, "sim_cw_positions", value = round(vals$headcount_total))
+    if (!is.na(vals$weighted_avg_annual_salary)) updateNumericInput(session, "sim_cw_avg_salary", value = round(vals$weighted_avg_annual_salary))
+
+    warn_txt <- if (length(parsed$warnings) > 0) paste(" Warnings:", paste(parsed$warnings, collapse = " | ")) else ""
+    sim_cw_import_msg(paste0(parsed$message, " Auto-filled available fields.", warn_txt))
+  })
+
+  output$sim_cw_import_status <- renderText({
+    sim_cw_import_msg()
+  })
+
   sim_cw_results <- reactive({
     input$sim_cw_run
     isolate({

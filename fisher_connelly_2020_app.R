@@ -12,6 +12,7 @@ library(plotly)
 library(tidyr)
 library(rmarkdown)
 library(knitr)
+if (file.exists("sim_lens_import_helpers.R")) source("sim_lens_import_helpers.R")
 
 # Load the data from the reproduction analysis
 load_fc2020_data <- function() {
@@ -299,6 +300,10 @@ ui <- dashboardPage(
             numericInput("sim_dis_absence_days_saved", "Absence days avoided (horizon):", value = 90, min = 0, max = 100000, step = 5),
             numericInput("sim_dis_absence_day_cost", "Cost per absence day ($):", value = 220, min = 0, max = 5000, step = 10),
             br(),
+            h5("Student report upload"),
+            fileInput("sim_dis_upload", "Upload simulation Excel files (.xlsx)", multiple = TRUE, accept = c(".xlsx")),
+            actionButton("sim_dis_import_apply", "Auto-fill from uploads", class = "btn-default", style = "width: 100%;"),
+            br(), br(),
             actionButton("sim_dis_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
           ),
           box(
@@ -308,6 +313,8 @@ ui <- dashboardPage(
               valueBoxOutput("sim_dis_net_box", width = 4),
               valueBoxOutput("sim_dis_roi_box", width = 4)
             ),
+            br(),
+            textOutput("sim_dis_import_status"),
             br(),
             htmlOutput("sim_dis_summary")
           )
@@ -796,6 +803,28 @@ server <- function(input, output, session) {
   })
 
   # Simulation Decision Lens (Disability/DEI Proxy)
+  sim_dis_import_msg <- reactiveVal("Upload your report files to auto-fill assumptions.")
+
+  observeEvent(input$sim_dis_import_apply, {
+    if (!exists("sim_lens_parse_upload")) {
+      sim_dis_import_msg("Import helper not available; continue with manual assumptions.")
+      return()
+    }
+    parsed <- sim_lens_parse_upload(input$sim_dis_upload)
+    vals <- parsed$values
+
+    if (!is.na(vals$headcount_total)) updateNumericInput(session, "sim_dis_headcount", value = round(vals$headcount_total))
+    if (!is.na(vals$weighted_avg_annual_salary)) updateNumericInput(session, "sim_dis_avg_salary", value = round(vals$weighted_avg_annual_salary))
+    if (!is.na(vals$dei_program_cost)) updateNumericInput(session, "sim_dis_program_cost", value = round(vals$dei_program_cost))
+
+    warn_txt <- if (length(parsed$warnings) > 0) paste(" Warnings:", paste(parsed$warnings, collapse = " | ")) else ""
+    sim_dis_import_msg(paste0(parsed$message, " Auto-filled available fields.", warn_txt))
+  })
+
+  output$sim_dis_import_status <- renderText({
+    sim_dis_import_msg()
+  })
+
   sim_dis_results <- reactive({
     input$sim_dis_run
     isolate({
