@@ -1031,7 +1031,7 @@ ui <- dashboardPage(
               
               p(strong("Citation for this Tool:"), br(),
               HTML("<em>Comprehensive Staffing Utility Analysis Tool</em> (2025). Integrating Taylor-Russell, Naylor-Shine, BCG, and Monte Carlo approaches.<br>
-              <strong>Live App:</strong> <a href='https://christopher-m-castille.shinyapps.io/comprehensive-staffing-utility-analysis/' target='_blank'>https://christopher-m-castille.shinyapps.io/comprehensive-staffing-utility-analysis/</a><br>
+              <strong>Live App:</strong> <span style='color: #666; font-style: italic;'>Deployment URL currently unavailable</span><br>
               <strong>Source Code:</strong> https://github.com/chriscastille6/-utility-analysis-research")),
               
               h5("Technical Implementation:"),
