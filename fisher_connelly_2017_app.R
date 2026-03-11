@@ -474,6 +474,7 @@ ui <- dashboardPage(
               numericInput("sim_cw_sdy_manual", "Manual SDy ($):", value = 18800, min = 100, max = 500000, step = 100)
             ),
             sliderInput("sim_cw_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            selectInput("sim_cw_view_period", "View outputs as:", choices = c("Quarterly" = "quarterly", "Annualized" = "annual"), selected = "quarterly"),
             sliderInput("sim_cw_contingent_share_base", "Baseline contingent share (%):", min = 0, max = 100, value = 30, step = 1),
             sliderInput("sim_cw_contingent_share_new", "Proposed contingent share (%):", min = 0, max = 100, value = 40, step = 1),
             sliderInput("sim_cw_cost_ratio", "Contingent fully loaded cost (% of permanent):", min = 50, max = 160, value = 90, step = 1),
@@ -1020,6 +1021,10 @@ server <- function(input, output, session) {
 
       turnover_benefit <- input$sim_cw_turnover_avoided * input$sim_cw_turnover_cost
       net_utility <- direct_cost_savings + quality_delta + turnover_benefit - input$sim_cw_coordination_overhead
+      per_quarter_scale <- 1 / max(input$sim_cw_horizon_q, 1)
+      annual_scale <- 4 / max(input$sim_cw_horizon_q, 1)
+      view_scale <- if (identical(input$sim_cw_view_period, "annual")) annual_scale else per_quarter_scale
+      view_label <- if (identical(input$sim_cw_view_period, "annual")) "annualized" else "quarterly"
 
       list(
         sdy = sdy,
@@ -1028,6 +1033,12 @@ server <- function(input, output, session) {
         turnover_benefit = turnover_benefit,
         coordination_overhead = input$sim_cw_coordination_overhead,
         net_utility = net_utility,
+        direct_cost_savings_view = direct_cost_savings * view_scale,
+        quality_delta_view = quality_delta * view_scale,
+        turnover_benefit_view = turnover_benefit * view_scale,
+        coordination_overhead_view = input$sim_cw_coordination_overhead * view_scale,
+        net_utility_view = net_utility * view_scale,
+        view_label = view_label,
         mix_delta = (new_share - base_share) * 100
       )
     })
@@ -1046,39 +1057,40 @@ server <- function(input, output, session) {
   output$sim_cw_net_box <- renderValueBox({
     results <- sim_cw_results()
     valueBox(
-      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
-      subtitle = "Net utility (horizon)",
+      value = paste0("$", format(round(results$net_utility_view), big.mark = ",")),
+      subtitle = paste0("Net utility (", results$view_label, ")"),
       icon = icon("dollar-sign"),
-      color = if (results$net_utility >= 0) "green" else "red"
+      color = if (results$net_utility_view >= 0) "green" else "red"
     )
   })
 
   output$sim_cw_quality_box <- renderValueBox({
     results <- sim_cw_results()
     valueBox(
-      value = paste0("$", format(round(results$quality_delta), big.mark = ",")),
-      subtitle = "Quality channel delta",
+      value = paste0("$", format(round(results$quality_delta_view), big.mark = ",")),
+      subtitle = paste0("Quality delta (", results$view_label, ")"),
       icon = icon("chart-line"),
-      color = if (results$quality_delta >= 0) "green" else "orange"
+      color = if (results$quality_delta_view >= 0) "green" else "orange"
     )
   })
 
   output$sim_cw_summary <- renderUI({
     results <- sim_cw_results()
-    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
-    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
-    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+    lens_signal <- if (results$net_utility_view >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility_view >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility_view >= 0) "#d4edda" else "#f8d7da"
 
     HTML(paste0(
       "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
       "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
       "<p>This estimate combines labor-mix cost effects with quality and turnover channels using your assumptions.</p>",
       "<hr>",
-      "<p><strong>Direct cost delta (baseline - proposed):</strong> $", format(round(results$direct_cost_savings), big.mark = ","), "</p>",
-      "<p><strong>Quality channel delta:</strong> $", format(round(results$quality_delta), big.mark = ","), "</p>",
-      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
-      "<p><strong>Coordination overhead:</strong> $", format(round(results$coordination_overhead), big.mark = ","), "</p>",
-      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "<p><strong>Viewing mode:</strong> ", stringr::str_to_title(results$view_label), " (horizon=", input$sim_cw_horizon_q, " quarter(s))</p>",
+      "<p><strong>Direct cost delta (baseline - proposed):</strong> $", format(round(results$direct_cost_savings_view), big.mark = ","), "</p>",
+      "<p><strong>Quality channel delta:</strong> $", format(round(results$quality_delta_view), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Coordination overhead:</strong> $", format(round(results$coordination_overhead_view), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility_view), big.mark = ","), "</p>",
       "</div>"
     ))
   })

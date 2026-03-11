@@ -291,6 +291,7 @@ ui <- dashboardPage(
             ),
             sliderInput("sim_dis_effect", "Expected performance effect size (d):", min = 0.01, max = 1.00, value = 0.20, step = 0.01),
             sliderInput("sim_dis_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            selectInput("sim_dis_view_period", "View outputs as:", choices = c("Quarterly" = "quarterly", "Annualized" = "annual"), selected = "quarterly"),
             br(),
             h5("Economic assumptions"),
             numericInput("sim_dis_program_cost", "Fixed DEI/disability program cost ($):", value = 25000, min = 0, max = 5000000, step = 1000),
@@ -839,6 +840,10 @@ server <- function(input, output, session) {
       total_cost <- input$sim_dis_program_cost + (input$sim_dis_headcount * input$sim_dis_accommodation_cost)
       net_utility <- total_benefit - total_cost
       roi <- if (total_cost > 0) net_utility / total_cost else NA_real_
+      per_quarter_scale <- 1 / max(input$sim_dis_horizon_q, 1)
+      annual_scale <- 4 / max(input$sim_dis_horizon_q, 1)
+      view_scale <- if (identical(input$sim_dis_view_period, "annual")) annual_scale else per_quarter_scale
+      view_label <- if (identical(input$sim_dis_view_period, "annual")) "annualized" else "quarterly"
 
       list(
         sdy = sdy,
@@ -848,6 +853,13 @@ server <- function(input, output, session) {
         total_benefit = total_benefit,
         total_cost = total_cost,
         net_utility = net_utility,
+        productivity_benefit_view = productivity_benefit * view_scale,
+        turnover_benefit_view = turnover_benefit * view_scale,
+        absence_benefit_view = absence_benefit * view_scale,
+        total_benefit_view = total_benefit * view_scale,
+        total_cost_view = total_cost * view_scale,
+        net_utility_view = net_utility * view_scale,
+        view_label = view_label,
         roi = roi
       )
     })
@@ -866,10 +878,10 @@ server <- function(input, output, session) {
   output$sim_dis_net_box <- renderValueBox({
     results <- sim_dis_results()
     valueBox(
-      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
-      subtitle = "Net utility (horizon)",
+      value = paste0("$", format(round(results$net_utility_view), big.mark = ",")),
+      subtitle = paste0("Net utility (", results$view_label, ")"),
       icon = icon("dollar-sign"),
-      color = if (results$net_utility >= 0) "green" else "red"
+      color = if (results$net_utility_view >= 0) "green" else "red"
     )
   })
 
@@ -886,21 +898,22 @@ server <- function(input, output, session) {
 
   output$sim_dis_summary <- renderUI({
     results <- sim_dis_results()
-    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
-    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
-    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+    lens_signal <- if (results$net_utility_view >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility_view >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility_view >= 0) "#d4edda" else "#f8d7da"
 
     HTML(paste0(
       "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
       "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
       "<p>This output uses your assumptions to indicate likely economic direction, including secondary cost-control channels.</p>",
       "<hr>",
-      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit), big.mark = ","), "</p>",
-      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
-      "<p><strong>Absenteeism savings:</strong> $", format(round(results$absence_benefit), big.mark = ","), "</p>",
-      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit), big.mark = ","), "</p>",
-      "<p><strong>Total costs:</strong> $", format(round(results$total_cost), big.mark = ","), "</p>",
-      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "<p><strong>Viewing mode:</strong> ", stringr::str_to_title(results$view_label), " (horizon=", input$sim_dis_horizon_q, " quarter(s))</p>",
+      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Absenteeism savings:</strong> $", format(round(results$absence_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Total costs:</strong> $", format(round(results$total_cost_view), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility_view), big.mark = ","), "</p>",
       "</div>"
     ))
   })

@@ -918,6 +918,7 @@ ui <- dashboardPage(
             numericInput("sim_staff_validity_new", "Proposed validity:", value = 0.35, min = 0, max = 1, step = 0.01),
             sliderInput("sim_staff_sr", "Selection ratio:", min = 0.05, max = 0.95, value = 0.30, step = 0.01),
             sliderInput("sim_staff_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            selectInput("sim_staff_view_period", "View outputs as:", choices = c("Quarterly" = "quarterly", "Annualized" = "annual"), selected = "quarterly"),
             br(),
             h5("Economic assumptions"),
             numericInput("sim_staff_cost_per_hire", "System cost per hire ($):", value = 550, min = 0, max = 25000, step = 25),
@@ -957,6 +958,7 @@ ui <- dashboardPage(
         fluidRow(
           box(width = 4, title = "Bundle Inputs", status = "info", solidHeader = TRUE,
             sliderInput("bundle_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            selectInput("bundle_view_period", "View bundle outputs as:", choices = c("Quarterly" = "quarterly", "Annualized" = "annual"), selected = "quarterly"),
             sliderInput("bundle_interaction_pct", "Interaction uplift on productivity for multi-policy bundles (% per extra policy):", min = 0, max = 30, value = 5, step = 1),
             br(),
             h5("Policy channel inputs (annualized)"),
@@ -2185,6 +2187,10 @@ server <- function(input, output, session) {
       total_cost <- input$sim_staff_hires * input$sim_staff_cost_per_hire
       net_utility <- total_benefit - total_cost
       roi <- if (total_cost > 0) net_utility / total_cost else NA_real_
+      per_quarter_scale <- 1 / max(input$sim_staff_horizon_q, 1)
+      annual_scale <- 4 / max(input$sim_staff_horizon_q, 1)
+      view_scale <- if (identical(input$sim_staff_view_period, "annual")) annual_scale else per_quarter_scale
+      view_label <- if (identical(input$sim_staff_view_period, "annual")) "annualized" else "quarterly"
 
       list(
         sdy = sdy,
@@ -2196,6 +2202,13 @@ server <- function(input, output, session) {
         total_benefit = total_benefit,
         total_cost = total_cost,
         net_utility = net_utility,
+        productivity_benefit_view = productivity_benefit * view_scale,
+        turnover_benefit_view = turnover_benefit * view_scale,
+        vacancy_benefit_view = vacancy_benefit * view_scale,
+        total_benefit_view = total_benefit * view_scale,
+        total_cost_view = total_cost * view_scale,
+        net_utility_view = net_utility * view_scale,
+        view_label = view_label,
         roi = roi
       )
     })
@@ -2214,10 +2227,10 @@ server <- function(input, output, session) {
   output$sim_staff_net_box <- renderValueBox({
     results <- sim_staff_results()
     valueBox(
-      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
-      subtitle = "Net utility (horizon)",
+      value = paste0("$", format(round(results$net_utility_view), big.mark = ",")),
+      subtitle = paste0("Net utility (", results$view_label, ")"),
       icon = icon("dollar-sign"),
-      color = if (results$net_utility >= 0) "green" else "red"
+      color = if (results$net_utility_view >= 0) "green" else "red"
     )
   })
 
@@ -2234,23 +2247,24 @@ server <- function(input, output, session) {
 
   output$sim_staff_summary <- renderUI({
     results <- sim_staff_results()
-    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
-    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
-    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+    lens_signal <- if (results$net_utility_view >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility_view >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility_view >= 0) "#d4edda" else "#f8d7da"
 
     HTML(paste0(
       "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
       "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
       "<p>This estimate reflects your assumptions and should be used as an insight aid alongside operational constraints.</p>",
       "<hr>",
+      "<p><strong>Viewing mode:</strong> ", stringr::str_to_title(results$view_label), " (horizon=", input$sim_staff_horizon_q, " quarter(s))</p>",
       "<p><strong>Validity gain:</strong> ", round(results$validity_gain, 3), "</p>",
       "<p><strong>Selection intensity (from SR):</strong> ", round(results$selection_intensity, 3), "</p>",
-      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit), big.mark = ","), "</p>",
-      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
-      "<p><strong>Vacancy savings:</strong> $", format(round(results$vacancy_benefit), big.mark = ","), "</p>",
-      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit), big.mark = ","), "</p>",
-      "<p><strong>Total costs:</strong> $", format(round(results$total_cost), big.mark = ","), "</p>",
-      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Vacancy savings:</strong> $", format(round(results$vacancy_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit_view), big.mark = ","), "</p>",
+      "<p><strong>Total costs:</strong> $", format(round(results$total_cost_view), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility_view), big.mark = ","), "</p>",
       "</div>"
     ))
   })
@@ -2275,6 +2289,10 @@ server <- function(input, output, session) {
 
       n <- nrow(policies)
       horizon_factor <- input$bundle_horizon_q / 4
+      per_quarter_scale <- 1 / max(input$bundle_horizon_q, 1)
+      annual_scale <- 4 / max(input$bundle_horizon_q, 1)
+      view_scale <- if (identical(input$bundle_view_period, "annual")) annual_scale else per_quarter_scale
+      view_label <- if (identical(input$bundle_view_period, "annual")) "annualized" else "quarterly"
       interaction_pct <- input$bundle_interaction_pct / 100
 
       combos <- lapply(1:(2^n - 1), function(mask) {
@@ -2312,6 +2330,11 @@ server <- function(input, output, session) {
         pareto[i] <- !any(dominates_i)
       }
       df$pareto_optimal <- pareto
+      df$productivity_gain_view <- df$productivity_gain * view_scale
+      df$other_savings_view <- df$other_savings * view_scale
+      df$cost_view <- df$cost * view_scale
+      df$net_utility_view <- df$net_utility * view_scale
+      df$view_label <- view_label
       df[order(-df$net_utility), , drop = FALSE]
     })
   })
@@ -2322,8 +2345,8 @@ server <- function(input, output, session) {
       return(valueBox("N/A", "Best net utility", icon = icon("dollar-sign"), color = "yellow"))
     }
     valueBox(
-      paste0("$", format(round(max(df$net_utility)), big.mark = ",")),
-      "Best net utility",
+      paste0("$", format(round(max(df$net_utility_view)), big.mark = ",")),
+      paste0("Best net utility (", unique(df$view_label)[1], ")"),
       icon = icon("dollar-sign"),
       color = "green"
     )
@@ -2335,8 +2358,8 @@ server <- function(input, output, session) {
       return(valueBox("N/A", "Best productivity gain", icon = icon("chart-line"), color = "yellow"))
     }
     valueBox(
-      paste0("$", format(round(max(df$productivity_gain)), big.mark = ",")),
-      "Best productivity gain",
+      paste0("$", format(round(max(df$productivity_gain_view)), big.mark = ",")),
+      paste0("Best productivity gain (", unique(df$view_label)[1], ")"),
       icon = icon("chart-line"),
       color = "blue"
     )
@@ -2362,15 +2385,15 @@ server <- function(input, output, session) {
       return(ggplotly(p))
     }
 
-    p <- ggplot(df, aes(x = risk, y = net_utility, color = pareto_optimal, size = productivity_gain,
+    p <- ggplot(df, aes(x = risk, y = net_utility_view, color = pareto_optimal, size = productivity_gain_view,
                         text = paste0("Policies: ", policies,
-                                      "<br>Net: $", format(round(net_utility), big.mark = ","),
-                                      "<br>Productivity: $", format(round(productivity_gain), big.mark = ","),
+                                      "<br>Net: $", format(round(net_utility_view), big.mark = ","),
+                                      "<br>Productivity: $", format(round(productivity_gain_view), big.mark = ","),
                                       "<br>Risk: ", risk))) +
       geom_point(alpha = 0.8) +
       scale_color_manual(values = c("FALSE" = "#6c757d", "TRUE" = "#1b9e77")) +
       scale_y_continuous(labels = scales::dollar_format()) +
-      labs(title = "Bundle Pareto Map", x = "Risk score (lower is better)", y = "Net utility ($)", color = "Pareto optimal") +
+      labs(title = paste0("Bundle Pareto Map (", unique(df$view_label)[1], ")"), x = "Risk score (lower is better)", y = "Net utility ($)", color = "Pareto optimal") +
       theme_minimal()
     ggplotly(p, tooltip = "text")
   })
@@ -2378,7 +2401,11 @@ server <- function(input, output, session) {
   output$bundle_results_table <- DT::renderDataTable({
     df <- bundle_results()
     if (nrow(df) == 0) return(data.frame(Message = "Click 'Generate Bundle Set' to run bundle analysis."))
-    show <- df
+    show <- df[, c("bundle_id", "policies", "n_policies", "productivity_gain_view", "other_savings_view", "cost_view", "net_utility_view", "risk", "pareto_optimal")]
+    names(show)[names(show) == "productivity_gain_view"] <- "productivity_gain"
+    names(show)[names(show) == "other_savings_view"] <- "other_savings"
+    names(show)[names(show) == "cost_view"] <- "cost"
+    names(show)[names(show) == "net_utility_view"] <- "net_utility"
     show$productivity_gain <- paste0("$", format(round(show$productivity_gain), big.mark = ","))
     show$other_savings <- paste0("$", format(round(show$other_savings), big.mark = ","))
     show$cost <- paste0("$", format(round(show$cost), big.mark = ","))
