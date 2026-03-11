@@ -327,6 +327,7 @@ ui <- dashboardPage(
       menuItem("Cost Savings Analysis", tabName = "savings", icon = icon("dollar-sign")),
       menuItem("Selection Battery Optimization", tabName = "comparative", icon = icon("balance-scale")),
       menuItem("Executive Selection & Character", tabName = "executive", icon = icon("user-tie")),
+      menuItem("Simulation Decision Lens", tabName = "simlens", icon = icon("compass")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-pdf")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -876,6 +877,51 @@ ui <- dashboardPage(
                 )
               )
             )
+          )
+        )
+      ),
+
+      # Simulation Decision Lens Tab
+      tabItem(tabName = "simlens",
+        fluidRow(
+          box(width = 12, title = "Simulation Decision Lens: Staffing", status = "primary", solidHeader = TRUE,
+            p("Estimate decision direction for staffing system upgrades under simulation assumptions. This lens supports judgment and does not prescribe choices."),
+            div(style = "background-color: #eef7ff; padding: 12px; border-radius: 5px;",
+              strong("Default SDy rule:"), " SDy = 40% of annual salary (override available)."
+            )
+          )
+        ),
+        fluidRow(
+          box(width = 4, title = "Assumptions", status = "info", solidHeader = TRUE,
+            numericInput("sim_staff_hires", "Hires in horizon:", value = 80, min = 1, max = 50000, step = 1),
+            numericInput("sim_staff_avg_salary", "Average annual salary ($):", value = 52000, min = 1000, max = 500000, step = 1000),
+            checkboxInput("sim_staff_manual_sdy", "Manually override SDy", value = FALSE),
+            conditionalPanel(
+              condition = "input.sim_staff_manual_sdy == true",
+              numericInput("sim_staff_sdy_manual", "Manual SDy ($):", value = 20800, min = 100, max = 500000, step = 100)
+            ),
+            numericInput("sim_staff_validity_current", "Current validity:", value = 0.18, min = 0, max = 1, step = 0.01),
+            numericInput("sim_staff_validity_new", "Proposed validity:", value = 0.35, min = 0, max = 1, step = 0.01),
+            sliderInput("sim_staff_sr", "Selection ratio:", min = 0.05, max = 0.95, value = 0.30, step = 0.01),
+            sliderInput("sim_staff_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            br(),
+            h5("Economic assumptions"),
+            numericInput("sim_staff_cost_per_hire", "System cost per hire ($):", value = 550, min = 0, max = 25000, step = 25),
+            numericInput("sim_staff_turnover_avoided", "Avoided turnover events (horizon):", value = 5, min = 0, max = 10000, step = 1),
+            numericInput("sim_staff_turnover_cost", "Cost per turnover event ($):", value = 15000, min = 0, max = 250000, step = 500),
+            numericInput("sim_staff_vacancy_days_saved", "Vacancy days avoided (horizon):", value = 180, min = 0, max = 200000, step = 5),
+            numericInput("sim_staff_vacancy_day_cost", "Cost per vacancy day ($):", value = 300, min = 0, max = 10000, step = 25),
+            br(),
+            actionButton("sim_staff_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
+          ),
+          box(width = 8, title = "Lens Output", status = "success", solidHeader = TRUE,
+            fluidRow(
+              valueBoxOutput("sim_staff_sdy_box", width = 4),
+              valueBoxOutput("sim_staff_net_box", width = 4),
+              valueBoxOutput("sim_staff_roi_box", width = 4)
+            ),
+            br(),
+            htmlOutput("sim_staff_summary")
           )
         )
       ),
@@ -2012,6 +2058,95 @@ server <- function(input, output, session) {
       "<p>• Character-based selection supports long-term organizational leadership effectiveness</p>",
       "<p>• Results align with Seijts et al. (2020) findings on character assessment utility</p>",
       
+      "</div>"
+    ))
+  })
+
+  # Simulation Decision Lens (Staffing)
+  sim_staff_results <- reactive({
+    input$sim_staff_run
+    isolate({
+      horizon_factor <- input$sim_staff_horizon_q / 4
+      sdy <- if (isTRUE(input$sim_staff_manual_sdy)) input$sim_staff_sdy_manual else input$sim_staff_avg_salary * 0.4
+      validity_gain <- max(input$sim_staff_validity_new - input$sim_staff_validity_current, 0)
+      sr <- max(min(input$sim_staff_sr, 0.99), 0.01)
+      z <- qnorm(1 - sr)
+      selection_intensity <- dnorm(z) / sr
+
+      productivity_benefit <- input$sim_staff_hires * sdy * validity_gain * selection_intensity * horizon_factor
+      turnover_benefit <- input$sim_staff_turnover_avoided * input$sim_staff_turnover_cost
+      vacancy_benefit <- input$sim_staff_vacancy_days_saved * input$sim_staff_vacancy_day_cost
+      total_benefit <- productivity_benefit + turnover_benefit + vacancy_benefit
+
+      total_cost <- input$sim_staff_hires * input$sim_staff_cost_per_hire
+      net_utility <- total_benefit - total_cost
+      roi <- if (total_cost > 0) net_utility / total_cost else NA_real_
+
+      list(
+        sdy = sdy,
+        selection_intensity = selection_intensity,
+        validity_gain = validity_gain,
+        productivity_benefit = productivity_benefit,
+        turnover_benefit = turnover_benefit,
+        vacancy_benefit = vacancy_benefit,
+        total_benefit = total_benefit,
+        total_cost = total_cost,
+        net_utility = net_utility,
+        roi = roi
+      )
+    })
+  })
+
+  output$sim_staff_sdy_box <- renderValueBox({
+    results <- sim_staff_results()
+    valueBox(
+      value = paste0("$", format(round(results$sdy), big.mark = ",")),
+      subtitle = "SDy used",
+      icon = icon("calculator"),
+      color = "blue"
+    )
+  })
+
+  output$sim_staff_net_box <- renderValueBox({
+    results <- sim_staff_results()
+    valueBox(
+      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
+      subtitle = "Net utility (horizon)",
+      icon = icon("dollar-sign"),
+      color = if (results$net_utility >= 0) "green" else "red"
+    )
+  })
+
+  output$sim_staff_roi_box <- renderValueBox({
+    results <- sim_staff_results()
+    roi_text <- if (is.na(results$roi)) "N/A" else paste0(round(results$roi * 100, 1), "%")
+    valueBox(
+      value = roi_text,
+      subtitle = "Return on investment",
+      icon = icon("chart-line"),
+      color = if (!is.na(results$roi) && results$roi >= 0) "green" else "orange"
+    )
+  })
+
+  output$sim_staff_summary <- renderUI({
+    results <- sim_staff_results()
+    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+
+    HTML(paste0(
+      "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
+      "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
+      "<p>This estimate reflects your assumptions and should be used as an insight aid alongside operational constraints.</p>",
+      "<hr>",
+      "<p><strong>Validity gain:</strong> ", round(results$validity_gain, 3), "</p>",
+      "<p><strong>Selection intensity (from SR):</strong> ", round(results$selection_intensity, 3), "</p>",
+      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
+      "<p><strong>Vacancy savings:</strong> $", format(round(results$vacancy_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total costs:</strong> $", format(round(results$total_cost), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
       "</div>"
     ))
   })

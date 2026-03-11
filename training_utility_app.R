@@ -236,6 +236,7 @@ ui <- dashboardPage(
       menuItem("Training ROI Calculator", tabName = "roi", icon = icon("calculator")),
       menuItem("Effect Size (BESD)", tabName = "besd", icon = icon("chart-simple")),
       menuItem("Morrow et al. (1997) Analysis", tabName = "morrow", icon = icon("chart-bar")),
+      menuItem("Simulation Decision Lens", tabName = "simlens", icon = icon("compass")),
       menuItem("Training Reports", tabName = "reports", icon = icon("file-pdf")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -744,6 +745,50 @@ ui <- dashboardPage(
               
 
             )
+          )
+        )
+      ),
+
+      # Simulation Decision Lens Tab
+      tabItem(tabName = "simlens",
+        fluidRow(
+          box(width = 12, title = "Simulation Decision Lens: Training", status = "primary", solidHeader = TRUE,
+            p("Use simulation assumptions to estimate directional utility for a training decision. This lens is insight-oriented and does not prescribe what to do."),
+            div(style = "background-color: #eef7ff; padding: 12px; border-radius: 5px;",
+              strong("Default SDy rule:"), " SDy = 40% of annual salary (override available)."
+            )
+          )
+        ),
+        fluidRow(
+          box(width = 4, title = "Assumptions", status = "info", solidHeader = TRUE,
+            numericInput("sim_train_headcount", "Employees affected in horizon:", value = 120, min = 1, max = 50000, step = 1),
+            numericInput("sim_train_avg_salary", "Average annual salary ($):", value = 52000, min = 1000, max = 500000, step = 1000),
+            checkboxInput("sim_train_manual_sdy", "Manually override SDy", value = FALSE),
+            conditionalPanel(
+              condition = "input.sim_train_manual_sdy == true",
+              numericInput("sim_train_sdy_manual", "Manual SDy ($):", value = 20800, min = 100, max = 500000, step = 100)
+            ),
+            sliderInput("sim_train_effect", "Expected performance effect size (d):", min = 0.01, max = 1.00, value = 0.28, step = 0.01),
+            sliderInput("sim_train_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            br(),
+            h5("Economic assumptions"),
+            numericInput("sim_train_program_cost", "Fixed program cost ($):", value = 30000, min = 0, max = 5000000, step = 1000),
+            numericInput("sim_train_cost_per_employee", "Variable cost per employee ($):", value = 650, min = 0, max = 25000, step = 50),
+            numericInput("sim_train_turnover_avoided", "Avoided turnover events (horizon):", value = 4, min = 0, max = 10000, step = 1),
+            numericInput("sim_train_turnover_cost", "Cost per turnover event ($):", value = 12000, min = 0, max = 250000, step = 1000),
+            numericInput("sim_train_absence_days_saved", "Absence days avoided (horizon):", value = 120, min = 0, max = 100000, step = 5),
+            numericInput("sim_train_absence_day_cost", "Cost per absence day ($):", value = 220, min = 0, max = 5000, step = 10),
+            br(),
+            actionButton("sim_train_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
+          ),
+          box(width = 8, title = "Lens Output", status = "success", solidHeader = TRUE,
+            fluidRow(
+              valueBoxOutput("sim_train_sdy_box", width = 4),
+              valueBoxOutput("sim_train_net_box", width = 4),
+              valueBoxOutput("sim_train_roi_box", width = 4)
+            ),
+            br(),
+            htmlOutput("sim_train_summary")
           )
         )
       ),
@@ -2140,6 +2185,87 @@ server <- function(input, output, session) {
   
 
   
+  # Simulation Decision Lens (Training)
+  sim_train_results <- reactive({
+    input$sim_train_run
+    isolate({
+      horizon_factor <- input$sim_train_horizon_q / 4
+      sdy <- if (isTRUE(input$sim_train_manual_sdy)) input$sim_train_sdy_manual else input$sim_train_avg_salary * 0.4
+
+      productivity_benefit <- input$sim_train_headcount * sdy * input$sim_train_effect * horizon_factor
+      turnover_benefit <- input$sim_train_turnover_avoided * input$sim_train_turnover_cost
+      absence_benefit <- input$sim_train_absence_days_saved * input$sim_train_absence_day_cost
+      total_benefit <- productivity_benefit + turnover_benefit + absence_benefit
+
+      total_cost <- input$sim_train_program_cost + (input$sim_train_headcount * input$sim_train_cost_per_employee)
+      net_utility <- total_benefit - total_cost
+      roi <- if (total_cost > 0) net_utility / total_cost else NA_real_
+
+      list(
+        sdy = sdy,
+        total_benefit = total_benefit,
+        total_cost = total_cost,
+        net_utility = net_utility,
+        roi = roi,
+        productivity_benefit = productivity_benefit,
+        turnover_benefit = turnover_benefit,
+        absence_benefit = absence_benefit
+      )
+    })
+  })
+
+  output$sim_train_sdy_box <- renderValueBox({
+    results <- sim_train_results()
+    valueBox(
+      value = paste0("$", format(round(results$sdy), big.mark = ",")),
+      subtitle = "SDy used",
+      icon = icon("ruler"),
+      color = "blue"
+    )
+  })
+
+  output$sim_train_net_box <- renderValueBox({
+    results <- sim_train_results()
+    valueBox(
+      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
+      subtitle = "Net utility (horizon)",
+      icon = icon("dollar-sign"),
+      color = if (results$net_utility >= 0) "green" else "red"
+    )
+  })
+
+  output$sim_train_roi_box <- renderValueBox({
+    results <- sim_train_results()
+    roi_text <- if (is.na(results$roi)) "N/A" else paste0(round(results$roi * 100, 1), "%")
+    valueBox(
+      value = roi_text,
+      subtitle = "Return on investment",
+      icon = icon("chart-line"),
+      color = if (!is.na(results$roi) && results$roi >= 0) "green" else "orange"
+    )
+  })
+
+  output$sim_train_summary <- renderUI({
+    results <- sim_train_results()
+    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+
+    HTML(paste0(
+      "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
+      "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
+      "<p>This output summarizes expected value under your assumptions and should be interpreted as a scenario lens, not a prescription.</p>",
+      "<hr>",
+      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
+      "<p><strong>Absenteeism savings:</strong> $", format(round(results$absence_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total costs:</strong> $", format(round(results$total_cost), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "</div>"
+    ))
+  })
+
   # Download Report Handler
   output$download_training_report <- downloadHandler(
     filename = function() {

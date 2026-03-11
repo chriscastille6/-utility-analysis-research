@@ -218,6 +218,7 @@ ui <- dashboardPage(
       menuItem("Interactive Analysis", tabName = "analysis", icon = icon("calculator")),
       menuItem("Six Strategy Analysis", tabName = "strategies", icon = icon("chess")),
       menuItem("Custom Scenario Builder", tabName = "scenarios", icon = icon("sliders-h")),
+      menuItem("Simulation Decision Lens", tabName = "simlens", icon = icon("compass")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-alt")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -446,6 +447,51 @@ ui <- dashboardPage(
             plotlyOutput("scenario_plot", height = "400px"),
             br(),
             htmlOutput("scenario_interpretation")
+          )
+        )
+      ),
+
+      # Simulation Decision Lens Tab
+      tabItem(tabName = "simlens",
+        fluidRow(
+          box(
+            title = "Simulation Decision Lens: Contingent/Labor-Mix", width = 12, status = "primary",
+            p("Evaluate contingent labor-mix choices with simulation assumptions. This lens provides directional insight and does not prescribe strategy."),
+            div(style = "background-color: #eef7ff; padding: 12px; border-radius: 5px;",
+              strong("Default SDy rule:"), " SDy = 40% of annual salary (override available)."
+            )
+          )
+        ),
+        fluidRow(
+          box(
+            title = "Assumptions", width = 4, status = "info",
+            numericInput("sim_cw_positions", "Positions in scope:", value = 150, min = 1, max = 100000, step = 1),
+            numericInput("sim_cw_avg_salary", "Average annual salary ($):", value = 47000, min = 1000, max = 500000, step = 1000),
+            checkboxInput("sim_cw_manual_sdy", "Manually override SDy", value = FALSE),
+            conditionalPanel(
+              condition = "input.sim_cw_manual_sdy == true",
+              numericInput("sim_cw_sdy_manual", "Manual SDy ($):", value = 18800, min = 100, max = 500000, step = 100)
+            ),
+            sliderInput("sim_cw_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            sliderInput("sim_cw_contingent_share_base", "Baseline contingent share (%):", min = 0, max = 100, value = 30, step = 1),
+            sliderInput("sim_cw_contingent_share_new", "Proposed contingent share (%):", min = 0, max = 100, value = 40, step = 1),
+            sliderInput("sim_cw_cost_ratio", "Contingent fully loaded cost (% of permanent):", min = 50, max = 160, value = 90, step = 1),
+            sliderInput("sim_cw_quality_penalty", "Contingent quality penalty vs permanent (% SDy):", min = 0, max = 40, value = 8, step = 1),
+            numericInput("sim_cw_turnover_avoided", "Avoided turnover events (horizon):", value = 3, min = 0, max = 10000, step = 1),
+            numericInput("sim_cw_turnover_cost", "Cost per turnover event ($):", value = 12000, min = 0, max = 250000, step = 1000),
+            numericInput("sim_cw_coordination_overhead", "Coordination overhead ($):", value = 20000, min = 0, max = 5000000, step = 1000),
+            br(),
+            actionButton("sim_cw_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
+          ),
+          box(
+            title = "Lens Output", width = 8, status = "success",
+            fluidRow(
+              valueBoxOutput("sim_cw_mix_box", width = 4),
+              valueBoxOutput("sim_cw_net_box", width = 4),
+              valueBoxOutput("sim_cw_quality_box", width = 4)
+            ),
+            br(),
+            htmlOutput("sim_cw_summary")
           )
         )
       ),
@@ -919,6 +965,94 @@ server <- function(input, output, session) {
       <p><strong>Conclusion:</strong> Strategic alignment between worker types and organizational goals is crucial for value creation.</p>
       ")
     }
+  })
+
+  # Simulation Decision Lens (Contingent/Labor-Mix)
+  sim_cw_results <- reactive({
+    input$sim_cw_run
+    isolate({
+      n_positions <- input$sim_cw_positions
+      horizon_factor <- input$sim_cw_horizon_q / 4
+      sdy <- if (isTRUE(input$sim_cw_manual_sdy)) input$sim_cw_sdy_manual else input$sim_cw_avg_salary * 0.4
+
+      base_share <- input$sim_cw_contingent_share_base / 100
+      new_share <- input$sim_cw_contingent_share_new / 100
+
+      permanent_cost <- input$sim_cw_avg_salary
+      contingent_cost <- input$sim_cw_avg_salary * (input$sim_cw_cost_ratio / 100)
+
+      base_cost <- n_positions * ((1 - base_share) * permanent_cost + base_share * contingent_cost) * horizon_factor
+      proposed_cost <- n_positions * ((1 - new_share) * permanent_cost + new_share * contingent_cost) * horizon_factor
+      direct_cost_savings <- base_cost - proposed_cost
+
+      quality_penalty <- input$sim_cw_quality_penalty / 100
+      base_quality_drag <- n_positions * base_share * sdy * quality_penalty * horizon_factor
+      new_quality_drag <- n_positions * new_share * sdy * quality_penalty * horizon_factor
+      quality_delta <- base_quality_drag - new_quality_drag
+
+      turnover_benefit <- input$sim_cw_turnover_avoided * input$sim_cw_turnover_cost
+      net_utility <- direct_cost_savings + quality_delta + turnover_benefit - input$sim_cw_coordination_overhead
+
+      list(
+        sdy = sdy,
+        direct_cost_savings = direct_cost_savings,
+        quality_delta = quality_delta,
+        turnover_benefit = turnover_benefit,
+        coordination_overhead = input$sim_cw_coordination_overhead,
+        net_utility = net_utility,
+        mix_delta = (new_share - base_share) * 100
+      )
+    })
+  })
+
+  output$sim_cw_mix_box <- renderValueBox({
+    results <- sim_cw_results()
+    valueBox(
+      value = paste0(ifelse(results$mix_delta >= 0, "+", ""), round(results$mix_delta, 1), " pp"),
+      subtitle = "Change in contingent share",
+      icon = icon("users"),
+      color = "blue"
+    )
+  })
+
+  output$sim_cw_net_box <- renderValueBox({
+    results <- sim_cw_results()
+    valueBox(
+      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
+      subtitle = "Net utility (horizon)",
+      icon = icon("dollar-sign"),
+      color = if (results$net_utility >= 0) "green" else "red"
+    )
+  })
+
+  output$sim_cw_quality_box <- renderValueBox({
+    results <- sim_cw_results()
+    valueBox(
+      value = paste0("$", format(round(results$quality_delta), big.mark = ",")),
+      subtitle = "Quality channel delta",
+      icon = icon("chart-line"),
+      color = if (results$quality_delta >= 0) "green" else "orange"
+    )
+  })
+
+  output$sim_cw_summary <- renderUI({
+    results <- sim_cw_results()
+    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+
+    HTML(paste0(
+      "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
+      "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
+      "<p>This estimate combines labor-mix cost effects with quality and turnover channels using your assumptions.</p>",
+      "<hr>",
+      "<p><strong>Direct cost delta (baseline - proposed):</strong> $", format(round(results$direct_cost_savings), big.mark = ","), "</p>",
+      "<p><strong>Quality channel delta:</strong> $", format(round(results$quality_delta), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
+      "<p><strong>Coordination overhead:</strong> $", format(round(results$coordination_overhead), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "</div>"
+    ))
   })
   
   # Executive summary

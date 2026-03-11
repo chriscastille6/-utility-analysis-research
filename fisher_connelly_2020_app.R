@@ -58,6 +58,7 @@ ui <- dashboardPage(
       menuItem("Overview", tabName = "overview", icon = icon("info-circle")),
       menuItem("Interactive Analysis", tabName = "analysis", icon = icon("calculator")),
       menuItem("Accommodation Builder", tabName = "accommodations", icon = icon("tools")),
+      menuItem("Simulation Decision Lens", tabName = "simlens", icon = icon("compass")),
       menuItem("Business Case Report", tabName = "report", icon = icon("file-alt")),
       menuItem("References", tabName = "references", icon = icon("book"))
     )
@@ -262,6 +263,53 @@ ui <- dashboardPage(
           box(
             title = "ROI Analysis", width = 12, status = "info",
             plotlyOutput("roi_analysis", height = "400px")
+          )
+        )
+      ),
+
+      # Simulation Decision Lens Tab
+      tabItem(tabName = "simlens",
+        fluidRow(
+          box(
+            title = "Simulation Decision Lens: Disability/DEI Proxy", width = 12, status = "primary",
+            p("Estimate directional utility of disability/DEI investments under simulation assumptions. This lens supports decisions without prescribing them."),
+            div(style = "background-color: #eef7ff; padding: 12px; border-radius: 5px;",
+              strong("Default SDy rule:"), " SDy = 40% of annual salary (override available)."
+            )
+          )
+        ),
+        fluidRow(
+          box(
+            title = "Assumptions", width = 4, status = "info",
+            numericInput("sim_dis_headcount", "Employees in scope:", value = 100, min = 1, max = 100000, step = 1),
+            numericInput("sim_dis_avg_salary", "Average annual salary ($):", value = 50000, min = 1000, max = 500000, step = 1000),
+            checkboxInput("sim_dis_manual_sdy", "Manually override SDy", value = FALSE),
+            conditionalPanel(
+              condition = "input.sim_dis_manual_sdy == true",
+              numericInput("sim_dis_sdy_manual", "Manual SDy ($):", value = 20000, min = 100, max = 500000, step = 100)
+            ),
+            sliderInput("sim_dis_effect", "Expected performance effect size (d):", min = 0.01, max = 1.00, value = 0.20, step = 0.01),
+            sliderInput("sim_dis_horizon_q", "Horizon (quarters):", min = 1, max = 4, value = 1, step = 1),
+            br(),
+            h5("Economic assumptions"),
+            numericInput("sim_dis_program_cost", "Fixed DEI/disability program cost ($):", value = 25000, min = 0, max = 5000000, step = 1000),
+            numericInput("sim_dis_accommodation_cost", "Accommodation cost per employee ($):", value = 214, min = 0, max = 50000, step = 25),
+            numericInput("sim_dis_turnover_avoided", "Avoided turnover events (horizon):", value = 3, min = 0, max = 10000, step = 1),
+            numericInput("sim_dis_turnover_cost", "Cost per turnover event ($):", value = 12000, min = 0, max = 250000, step = 1000),
+            numericInput("sim_dis_absence_days_saved", "Absence days avoided (horizon):", value = 90, min = 0, max = 100000, step = 5),
+            numericInput("sim_dis_absence_day_cost", "Cost per absence day ($):", value = 220, min = 0, max = 5000, step = 10),
+            br(),
+            actionButton("sim_dis_run", "Evaluate Simulation Lens", class = "btn-primary", style = "width: 100%;")
+          ),
+          box(
+            title = "Lens Output", width = 8, status = "success",
+            fluidRow(
+              valueBoxOutput("sim_dis_sdy_box", width = 4),
+              valueBoxOutput("sim_dis_net_box", width = 4),
+              valueBoxOutput("sim_dis_roi_box", width = 4)
+            ),
+            br(),
+            htmlOutput("sim_dis_summary")
           )
         )
       ),
@@ -745,6 +793,87 @@ server <- function(input, output, session) {
     updateSliderInput(session, "performance_multiplier", value = 1.28)
     updateSliderInput(session, "turnover_rate_disabled", value = 0)
     updateSliderInput(session, "turnover_rate_nondisabled", value = 16.6)
+  })
+
+  # Simulation Decision Lens (Disability/DEI Proxy)
+  sim_dis_results <- reactive({
+    input$sim_dis_run
+    isolate({
+      horizon_factor <- input$sim_dis_horizon_q / 4
+      sdy <- if (isTRUE(input$sim_dis_manual_sdy)) input$sim_dis_sdy_manual else input$sim_dis_avg_salary * 0.4
+
+      productivity_benefit <- input$sim_dis_headcount * sdy * input$sim_dis_effect * horizon_factor
+      turnover_benefit <- input$sim_dis_turnover_avoided * input$sim_dis_turnover_cost
+      absence_benefit <- input$sim_dis_absence_days_saved * input$sim_dis_absence_day_cost
+      total_benefit <- productivity_benefit + turnover_benefit + absence_benefit
+
+      total_cost <- input$sim_dis_program_cost + (input$sim_dis_headcount * input$sim_dis_accommodation_cost)
+      net_utility <- total_benefit - total_cost
+      roi <- if (total_cost > 0) net_utility / total_cost else NA_real_
+
+      list(
+        sdy = sdy,
+        productivity_benefit = productivity_benefit,
+        turnover_benefit = turnover_benefit,
+        absence_benefit = absence_benefit,
+        total_benefit = total_benefit,
+        total_cost = total_cost,
+        net_utility = net_utility,
+        roi = roi
+      )
+    })
+  })
+
+  output$sim_dis_sdy_box <- renderValueBox({
+    results <- sim_dis_results()
+    valueBox(
+      value = paste0("$", format(round(results$sdy), big.mark = ",")),
+      subtitle = "SDy used",
+      icon = icon("calculator"),
+      color = "blue"
+    )
+  })
+
+  output$sim_dis_net_box <- renderValueBox({
+    results <- sim_dis_results()
+    valueBox(
+      value = paste0("$", format(round(results$net_utility), big.mark = ",")),
+      subtitle = "Net utility (horizon)",
+      icon = icon("dollar-sign"),
+      color = if (results$net_utility >= 0) "green" else "red"
+    )
+  })
+
+  output$sim_dis_roi_box <- renderValueBox({
+    results <- sim_dis_results()
+    roi_text <- if (is.na(results$roi)) "N/A" else paste0(round(results$roi * 100, 1), "%")
+    valueBox(
+      value = roi_text,
+      subtitle = "Return on investment",
+      icon = icon("chart-line"),
+      color = if (!is.na(results$roi) && results$roi >= 0) "green" else "orange"
+    )
+  })
+
+  output$sim_dis_summary <- renderUI({
+    results <- sim_dis_results()
+    lens_signal <- if (results$net_utility >= 0) "favorable" else "unfavorable"
+    signal_color <- if (results$net_utility >= 0) "#155724" else "#842029"
+    signal_bg <- if (results$net_utility >= 0) "#d4edda" else "#f8d7da"
+
+    HTML(paste0(
+      "<div style='background-color:", signal_bg, "; padding: 16px; border-radius: 6px;'>",
+      "<h5 style='margin-top: 0;'>Directional signal: <span style='color:", signal_color, ";'>", lens_signal, "</span></h5>",
+      "<p>This output uses your assumptions to indicate likely economic direction, including secondary cost-control channels.</p>",
+      "<hr>",
+      "<p><strong>Productivity utility (SDy channel):</strong> $", format(round(results$productivity_benefit), big.mark = ","), "</p>",
+      "<p><strong>Turnover savings:</strong> $", format(round(results$turnover_benefit), big.mark = ","), "</p>",
+      "<p><strong>Absenteeism savings:</strong> $", format(round(results$absence_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total benefits:</strong> $", format(round(results$total_benefit), big.mark = ","), "</p>",
+      "<p><strong>Total costs:</strong> $", format(round(results$total_cost), big.mark = ","), "</p>",
+      "<p><strong>Net utility:</strong> $", format(round(results$net_utility), big.mark = ","), "</p>",
+      "</div>"
+    ))
   })
   
   # Executive summary
