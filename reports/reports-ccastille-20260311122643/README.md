@@ -6,5 +6,6 @@ Excel reports exported 2026-03-11 (reports-ccastille-20260311122643).
 - **department-** (7): compensation, dashboard, demographics, development, production, relations, staffing_report  
 - **environment-** (4): iperformance, iproduction, itraining, iwages  
 - **rationale.xlsx**
+- **Incidents_for_the_Simulation.pdf** — simulation incidents doc for UA tool generator
 
-All files are `.xlsx`. Use these paths from the repo root, e.g. `reports/reports-ccastille-20260311122643/decisions-benefits.xlsx`.
+All Excel files are `.xlsx`. Use paths from the repo root, e.g. `reports/reports-ccastille-20260311122643/decisions-benefits.xlsx` or `reports/reports-ccastille-20260311122643/Incidents_for_the_Simulation.pdf`.

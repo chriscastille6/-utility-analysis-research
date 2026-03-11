@@ -12,4 +12,4 @@ git pull origin main
 
 Then check again: `ls /workspace/reports/reports-ccastille-20260311122643/`
 
-Contents: README.md plus 18 Excel files (decisions-*.xlsx, department-*.xlsx, environment-*.xlsx, rationale.xlsx).
+Contents: README.md, 18 Excel files (decisions-*.xlsx, department-*.xlsx, environment-*.xlsx, rationale.xlsx), and Incidents_for_the_Simulation.pdf (simulation incidents for UA tool generator).
