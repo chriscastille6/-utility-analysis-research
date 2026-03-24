@@ -32,7 +32,8 @@ A comprehensive R-based research platform for workforce diversity and productivi
 │   ├── 📄 FILE_ORGANIZATION_SUMMARY.md # File organization guide
 │   ├── 📄 STANDARDIZATION_ACTION_PLAN.md # Standardization roadmap
 │   ├── 📄 STURMAN_REPLICATION_SUMMARY.md # Sturman replication analysis
-│   └── 📄 PERFORMANCE_BASED_TURNOVER_MODEL.md # Turnover model docs
+│   ├── 📄 PERFORMANCE_BASED_TURNOVER_MODEL.md # Turnover model docs
+│   └── 📄 SIMULATION_UA_LENS_SPEC.md # Simulation UA Lens / tool-generator design spec
 │
 ├── 📁 scripts/                        # 🔧 ANALYSIS SCRIPTS
 │   ├── 📁 utilities/                  # Core utility functions
