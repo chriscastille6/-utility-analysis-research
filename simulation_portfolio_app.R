@@ -23,8 +23,42 @@ sim_spec_url <- function() {
   )
 }
 
+#' Illustrative rows only — not tied to a real sim key; replace with your numbers.
+example_portfolio_df <- function() {
+  data.frame(
+    practice = c(
+      "[Example] Structured interviews + validated work sample",
+      "[Example] Supervisor coaching program (ongoing)",
+      "[Example] Merit budget / pay mix change"
+    ),
+    domain = c("Staffing/selection", "Training", "Wages/pay"),
+    start_quarter = c(1L, 2L, 4L),
+    annual_utility = c(185000, 72000, 210000),
+    cost = c(48000, 28000, 35000),
+    cost_type = c("once", "recur", "once"),
+    stringsAsFactors = FALSE
+  )
+}
+
+empty_portfolio_df <- function() {
+  data.frame(
+    practice = character(),
+    domain = character(),
+    start_quarter = integer(),
+    annual_utility = numeric(),
+    cost = numeric(),
+    cost_type = character(),
+    stringsAsFactors = FALSE
+  )
+}
+
 ui <- dashboardPage(
-  dashboardHeader(title = "Simulation UA portfolio"),
+  dashboardHeader(
+    title = span(
+      "Simulation UA portfolio ",
+      tags$span(class = "label label-warning", style = "font-size:12px;vertical-align:middle;", "Under development")
+    )
+  ),
   dashboardSidebar(
     sidebarMenu(
       id = "sidebar",
@@ -44,7 +78,10 @@ ui <- dashboardPage(
         fluidRow(
           box(
             width = 12,
-            title = "Joint utility across decisions",
+            title = tagList(
+              "Joint utility across decisions ",
+              tags$span(class = "label label-warning", "Under development")
+            ),
             status = "primary",
             solidHeader = TRUE,
             htmlOutput("from_context"),
@@ -53,6 +90,20 @@ ui <- dashboardPage(
               "Use domain calculators (training, staffing, pay, etc.) to estimate annualized utility and cost, then record them here to see combined impact and timing across ",
               strong("eight quarters"),
               " (extend later as needed)."
+            ),
+            tags$div(
+              class = "callout",
+              style = "background:#fff8e6;border-left:4px solid #f0ad4e;padding:12px 14px;margin:12px 0;border-radius:4px;",
+              tags$strong("Template workflow (suggested)"),
+              tags$ol(
+                tags$li("Pick one decision area (e.g., staffing), run the matching UA calculator, copy defensible annual utility and cost assumptions."),
+                tags$li("Enter a ", tags$strong("start quarter"), " when the practice begins affecting outcomes in your sim story."),
+                tags$li(tags$strong("One-time cost"), " hits in the start quarter; ", tags$strong("recurring cost"), " spreads per active quarter (simplified)."),
+                tags$li("Repeat for other practices, then read the chart as a ", tags$em("relative"), " comparison — not a substitute for your sim’s official scoring.")
+              )
+            ),
+            p(
+              tags$em("This page loads with ", tags$strong("illustrative"), " rows (prefixed ", tags$code("[Example]"), "). Clear them when you enter your own numbers.")
             ),
             p(
               a(href = sim_spec_url(), "Simulation UA Lens design spec", target = "_blank")
@@ -80,7 +131,13 @@ ui <- dashboardPage(
             selectInput("pr_cost_type", "Cost timing", choices = c("One-time (Q1 of item)" = "once", "Each active quarter" = "recur")),
             actionButton("pr_add", "Add to portfolio", class = "btn-primary"),
             br(), br(),
-            downloadButton("dl_csv", "Download table (CSV)")
+            actionButton("pr_load_examples", "Reload example rows", class = "btn-warning"),
+            br(), br(),
+            actionButton("pr_clear", "Clear all rows", class = "btn-default"),
+            br(), br(),
+            downloadButton("dl_csv", "Download current table (CSV)"),
+            br(), br(),
+            downloadButton("dl_template", "Download empty CSV template")
           ),
           box(
             width = 8,
@@ -131,17 +188,7 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output, session) {
-  rv <- reactiveValues(
-    df = data.frame(
-      practice = character(),
-      domain = character(),
-      start_quarter = integer(),
-      annual_utility = numeric(),
-      cost = numeric(),
-      cost_type = character(),
-      stringsAsFactors = FALSE
-    )
-  )
+  rv <- reactiveValues(df = example_portfolio_df())
 
   output$from_context <- renderUI({
     qs <- isolate(session$clientData$url_search)
@@ -170,6 +217,16 @@ server <- function(input, output, session) {
         stringsAsFactors = FALSE
       )
     )
+  })
+
+  observeEvent(input$pr_load_examples, {
+    rv$df <- example_portfolio_df()
+    showNotification("Loaded illustrative example rows.", type = "message")
+  })
+
+  observeEvent(input$pr_clear, {
+    rv$df <- empty_portfolio_df()
+    showNotification("Table cleared.", type = "message")
   })
 
   output$pr_table <- renderDT({
@@ -220,6 +277,13 @@ server <- function(input, output, session) {
     filename = function() paste0("simulation_ua_portfolio_", Sys.Date(), ".csv"),
     content = function(file) {
       utils::write.csv(rv$df, file, row.names = FALSE)
+    }
+  )
+
+  output$dl_template <- downloadHandler(
+    filename = function() "simulation_ua_portfolio_template.csv",
+    content = function(file) {
+      utils::write.csv(empty_portfolio_df(), file, row.names = FALSE)
     }
   )
 }
