@@ -27,6 +27,30 @@ Production **`APP_SCRIPT`** paths are the source of truth. The repo also contain
 
 Set **`UA_REPO_ROOT=/var/www/ua-plus`** in the environment if Shiny’s working directory is ever not the repo root (shared modules use it to find `scripts/shiny_modules/`).
 
+## One-command push + restart (from your Mac)
+
+Script: [`sync_bayoupal_from_local.sh`](sync_bayoupal_from_local.sh)
+
+1. **Commit** your changes on `main` (the script does not commit for you).
+2. From the **repo root**:
+
+```bash
+./deploy/bayoupal/sync_bayoupal_from_local.sh
+```
+
+This runs `git push origin main`, then SSHs to the server, `sudo git pull origin main --no-rebase`, restarts `httpd`, and restarts all `ua-shiny@*` instances listed in the script.
+
+- **Apache / new systemd env / first-time portfolio:** use  
+  `./deploy/bayoupal/sync_bayoupal_from_local.sh --install`  
+  (runs `install.sh ... --enable` on the server).
+
+- **Override SSH user/host or path:**  
+  `UA_DEPLOY_SSH=you@yourhost UA_DEPLOY_PATH=/var/www/ua-plus ./deploy/bayoupal/sync_bayoupal_from_local.sh`
+
+You still need **SSH access** and will usually be prompted for **sudo** on the server unless you configure passwordless sudo for those commands. Fully unattended deploy requires CI (e.g. GitHub Actions with a deploy key) or a pull-based hook on the server—not something this repo configures by default.
+
+If you see **“Pseudo-terminal will not be allocated”** / **sudo: a terminal is required**, the script uses **`ssh -tt`** and an inline remote command (not a heredoc) so your **keyboard** stays the TTY for sudo. Run the script from **Terminal.app** or **iTerm** if your IDE terminal still cannot allocate a PTY.
+
 ## What this bundle deploys
 
 Path-based URLs:
@@ -54,6 +78,7 @@ Backed by systemd services:
 ## Files in this folder
 
 - `install.sh` - installs unit files/env files/apache config
+- `sync_bayoupal_from_local.sh` - from your Mac: `git push` + SSH pull + restart services (optional `--install`)
 - `run_shiny_app.sh` - service launcher used by systemd
 - `validate_routes.sh` - checks all public UA route health
 - `systemd/ua-shiny@.service` - templated service unit
