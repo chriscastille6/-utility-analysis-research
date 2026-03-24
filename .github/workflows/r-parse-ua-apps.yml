@@ -1,0 +1,23 @@
+# Minimal syntax check for BayouPAL Shiny entrypoints (no full R CMD check).
+name: R parse UA apps
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+
+      - name: Parse deployed-style app scripts
+        run: |
+          Rscript -e 'files <- c("training_utility_app.R","staffing_utility_app.R","job_crafting_utility_app.R","fisher_connelly_2017_app.R","fisher_connelly_2020_app.R","scripts/features/sturman_2003_app.R","simulation_portfolio_app.R"); for (f in files) { message("Parsing ", f); parse(file = f) }; message("All parses OK.")'

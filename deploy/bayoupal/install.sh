@@ -163,6 +163,7 @@ SERVICES=(
   ua-shiny@fisher-2017
   ua-shiny@fisher-2020
   ua-shiny@sturman
+  ua-shiny@portfolio
 )
 
 if [[ "$ENABLE_NOW" == true ]]; then

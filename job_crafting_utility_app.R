@@ -12,6 +12,39 @@ library(scales)
 library(rmarkdown)
 library(knitr)
 
+# Simulation UA chrome (shared): simulation tab + portfolio href helper
+local({
+  .ua_chrome <- NULL
+  .d <- getwd()
+  if (nzchar(Sys.getenv("UA_REPO_ROOT"))) {
+    .try0 <- file.path(Sys.getenv("UA_REPO_ROOT"), "scripts", "shiny_modules", "simulation_ua_chrome.R")
+    if (file.exists(.try0)) .ua_chrome <- .try0
+  }
+  if (is.null(.ua_chrome)) {
+    for (.i in 1:10) {
+      .try <- file.path(.d, "scripts", "shiny_modules", "simulation_ua_chrome.R")
+      if (file.exists(.try)) { .ua_chrome <- .try; break }
+      .parent <- dirname(.d)
+      if (.parent == .d) break
+      .d <- .parent
+    }
+  }
+  if (!is.null(.ua_chrome)) {
+    sys.source(.ua_chrome, envir = .GlobalEnv)
+  } else {
+    assign("simulation_ua_portfolio_href", function(app_id) {
+      paste0("https://bayoupal.nicholls.edu/ua/portfolio/?from=", utils::URLencode(app_id))
+    }, envir = .GlobalEnv)
+    assign("simulation_ua_context_tab_item", function(app_id) {
+      tabItem(
+        tabName = "simulation_ua_context",
+        fluidRow(box(width = 12, title = "Simulation context", status = "warning",
+          p("Could not load scripts/shiny_modules/simulation_ua_chrome.R.")))
+      )
+    }, envir = .GlobalEnv)
+  }
+})
+
 # Load job crafting data based on Oprea et al. (2019) meta-analysis
 load_jc_data <- function() {
   
@@ -63,6 +96,9 @@ ui <- dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Overview", tabName = "overview", icon = icon("info-circle")),
+      menuItem("Simulation context", tabName = "simulation_ua_context", icon = icon("flask")),
+      menuItem("UA portfolio (all decisions)", icon = icon("layer-group"),
+        href = simulation_ua_portfolio_href("job-crafting"), newtab = FALSE),
       menuItem("Meta-Analysis Results", tabName = "meta", icon = icon("chart-bar")),
       menuItem("Utility Calculator", tabName = "calculator", icon = icon("calculator")),
       menuItem("Break-Even Analysis", tabName = "breakeven", icon = icon("balance-scale")),
@@ -361,6 +397,8 @@ ui <- dashboardPage(
       ),
       
       # References Tab
+      simulation_ua_context_tab_item("job-crafting"),
+
       tabItem(tabName = "references",
         fluidRow(
           box(width = 12, title = "References and Citations", status = "info", solidHeader = TRUE,

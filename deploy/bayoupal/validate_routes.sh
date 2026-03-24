@@ -11,6 +11,7 @@ ROUTES=(
   "/ua/fisher-2017/"
   "/ua/fisher-2020/"
   "/ua/sturman/"
+  "/ua/portfolio/"
 )
 
 echo "Validating routes against: ${BASE_URL}"
