@@ -23,6 +23,84 @@ library(lavaan)
 # CORE UTILITY ANALYSIS FUNCTIONS
 # =============================================================================
 
+# Custom Pareto Optimization Functions (replacing ParetoR dependency)
+calculate_composite_validity <- function(weights, cor_matrix) {
+  composite_validity <- sqrt(t(weights) %*% cor_matrix %*% weights)
+  return(as.numeric(composite_validity))
+}
+
+calculate_adverse_impact <- function(weights, d, sr) {
+  composite_d <- sum(weights * d)
+  minority_selection_rate <- pnorm(qnorm(sr, lower.tail = FALSE) + composite_d, lower.tail = FALSE)
+  majority_selection_rate <- sr
+  ai_ratio <- minority_selection_rate / majority_selection_rate
+  return(ai_ratio)
+}
+
+identify_pareto_frontier <- function(validity_scores, ai_ratios) {
+  pareto_optimal <- logical(length(validity_scores))
+  
+  for (i in 1:length(validity_scores)) {
+    dominated <- FALSE
+    for (j in 1:length(validity_scores)) {
+      if (i != j) {
+        if (validity_scores[j] >= validity_scores[i] && ai_ratios[j] >= ai_ratios[i] &&
+            (validity_scores[j] > validity_scores[i] || ai_ratios[j] > ai_ratios[i])) {
+          dominated <- TRUE
+          break
+        }
+      }
+    }
+    pareto_optimal[i] <- !dominated
+  }
+  
+  return(pareto_optimal)
+}
+
+custom_pareto_optimization <- function(prop, sr, d, cor_matrix, n_combinations = 100) {
+  n_predictors <- length(d)
+  
+  weights_list <- list()
+  validity_list <- numeric()
+  ai_ratio_list <- numeric()
+  
+  set.seed(123)
+  
+  for (i in 1:n_combinations) {
+    weights <- runif(n_predictors)
+    weights <- weights / sum(weights)
+    
+    composite_validity <- calculate_composite_validity(weights, cor_matrix)
+    ai_ratio <- calculate_adverse_impact(weights, d, sr)
+    
+    weights_list[[i]] <- weights
+    validity_list[i] <- composite_validity
+    ai_ratio_list[i] <- ai_ratio
+  }
+  
+  pareto_optimal <- identify_pareto_frontier(validity_list, ai_ratio_list)
+  
+  results <- data.frame(
+    combination = 1:n_combinations,
+    validity = validity_list,
+    ai_ratio = ai_ratio_list,
+    pareto_optimal = pareto_optimal,
+    stringsAsFactors = FALSE
+  )
+  
+  for (i in 1:n_predictors) {
+    results[[paste0("weight_", i)]] <- sapply(weights_list, function(w) w[i])
+  }
+  
+  return(list(
+    results = results,
+    pareto_solutions = results[pareto_optimal, ],
+    weights = weights_list[pareto_optimal],
+    validity = validity_list[pareto_optimal],
+    ai_ratio = ai_ratio_list[pareto_optimal]
+  ))
+}
+
 # Expectancy Function (from existing app.R)
 Expectancyfunc <- function(Validity, PredLowerCut, PredUpperCut, CritLowerCut, CritUpperCut) {
   n <- 1000
@@ -352,12 +430,33 @@ ui <- dashboardPage(
       # Overview Tab
       tabItem(tabName = "overview",
         fluidRow(
-          box(width = 12, title = "Comprehensive Staffing Utility Analysis", status = "primary", solidHeader = TRUE,
-            h4("Understanding the Economic Value of Selection Systems"),
-            p("This comprehensive tool integrates the foundational approaches to staffing utility analysis, 
-              combining classical models with modern adjustments for realistic decision-making."),
+          box(width = 12, title = "The Latham & Whyte Case Study: From $59.7M to Reality", status = "primary", solidHeader = TRUE,
+            h4("Learning from the Most Famous Utility Analysis Failure"),
+            p("This tool demonstrates utility analysis through the famous Latham & Whyte (1994) case study that revealed 
+              why unrealistic estimates undermine managerial acceptance. We progress through their original example, 
+              showing how economic adjustments and Monte Carlo analysis create credible business decisions."),
             
-            h5("Integrated Methodologies:"),
+            div(style = "background-color: #fff3cd; padding: 20px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #ffc107;",
+              h4(icon("exclamation-triangle"), " The Classic Paradox"),
+              fluidRow(
+                column(6,
+                  p(strong("Latham & Whyte (1994) Results:"), br(),
+                    "• $59.7 million utility estimate", br(),
+                    "• 14,000% return on investment", br(),
+                    "• Based on selecting 470 of 1,410 applicants", br(),
+                    "• 18-year average tenure, $16,290 SDy")
+                ),
+                column(6,
+                  p(strong("Manager Response:"), br(),
+                    "• LESS likely to implement procedure", br(),
+                    "• Despite massive projected returns", br(),
+                    "• Lack of credibility was the problem", br(),
+                    "• Even expert presentations didn't help")
+                )
+              )
+            ),
+            
+            h5("Our Progressive Analysis Approach:"),
             
             fluidRow(
               column(6,
@@ -381,9 +480,9 @@ ui <- dashboardPage(
                 ),
                 br(),
                 div(style = "background-color: #fce4ec; padding: 15px; border-radius: 5px; border-left: 4px solid #e91e63;",
-                  h6(icon("random"), "Monte Carlo Adjustments"),
-                  p("Sturman (2000) inspired adjustments accounting for real-world constraints, 
-                    parameter uncertainty, and operational limitations.")
+                  h6(icon("dollar-sign"), "Sturman Economic Adjustments"),
+                  p("Sturman (2000) three-factor model adjusting for variable costs, taxes, and present value. 
+                    Transforms unrealistic estimates into credible business cases that managers will accept.")
                 )
               )
             ),
@@ -415,12 +514,12 @@ ui <- dashboardPage(
         fluidRow(
           box(width = 4, title = "Selection Parameters", status = "primary", solidHeader = TRUE,
             h5("Validity Coefficients:"),
-            numericInput("rxy_old", "Current System Validity:", value = 0.10, min = 0, max = 1, step = 0.01),
-            numericInput("rxy_new", "Proposed System Validity:", value = 0.50, min = 0, max = 1, step = 0.01),
+            numericInput("rxy_old", "Current System Validity:", value = 0.00, min = 0, max = 1, step = 0.01),
+            numericInput("rxy_new", "Proposed System Validity:", value = 0.40, min = 0, max = 1, step = 0.01),
             
             br(),
             h5("Selection Parameters:"),
-            numericInput("selection_ratio", "Selection Ratio:", value = 0.33, min = 0.01, max = 0.99, step = 0.01),
+            numericInput("selection_ratio", "Selection Ratio:", value = 0.333, min = 0.01, max = 0.99, step = 0.001),
             
             br(),
             actionButton("update_expectancy", "Update Analysis", class = "btn-primary", style = "width: 100%;")
@@ -448,24 +547,54 @@ ui <- dashboardPage(
       # Utility Calculator Tab
       tabItem(tabName = "calculator",
         fluidRow(
+          box(width = 12, title = "Latham & Whyte (1994) Case Study Parameters", status = "warning", solidHeader = TRUE,
+            div(style = "background-color: #fff3cd; padding: 15px; border-radius: 5px; margin-bottom: 15px;",
+              h5(icon("info-circle"), " Original Case Study Setup"),
+              p("The default values below replicate the famous Latham & Whyte (1994) case study. Their traditional 
+                BCG calculation produced a $59.7 million utility estimate (14,000% ROI) that paradoxically made 
+                managers LESS likely to implement the selection procedure."),
+              fluidRow(
+                column(6,
+                  tags$ul(
+                    tags$li(strong("Applicants per year:"), " 1,410"),
+                    tags$li(strong("Number selected:"), " 470 (33.3% selection ratio)"),
+                    tags$li(strong("Validity coefficient:"), " 0.40"),
+                    tags$li(strong("Average tenure:"), " 18 years")
+                  )
+                ),
+                column(6,
+                  tags$ul(
+                    tags$li(strong("Performance SDy:"), " $16,290 (1992 dollars)"),
+                    tags$li(strong("Total selection cost:"), " $429,110"),
+                    tags$li(strong("Cost per applicant:"), " $304"),
+                    tags$li(strong("Original utility:"), " $59,657,532")
+                  )
+                )
+              )
+            )
+          )
+        ),
+        fluidRow(
           box(width = 4, title = "Utility Parameters", status = "primary", solidHeader = TRUE,
             h5("Organization Size & Duration:"),
-            numericInput("n_employees", "Number of Employees Selected:", value = 100, min = 1, max = 10000),
-            numericInput("tenure_period", "Average Tenure (Years):", value = 3, min = 0.5, max = 20, step = 0.5),
+            numericInput("n_employees", "Number of Employees Selected:", value = 470, min = 1, max = 10000),
+            numericInput("tenure_period", "Average Tenure (Years):", value = 18, min = 0.5, max = 20, step = 0.5),
             
             br(),
             h5("Performance & Costs:"),
-            numericInput("sdy_value", "Performance SD (SDy) $:", value = 20000, min = 1000, max = 200000, step = 1000),
-            numericInput("cost_per_person", "Selection Cost per Person $:", value = 500, min = 0, max = 10000, step = 50),
+            numericInput("sdy_value", "Performance SD (SDy) $:", value = 16290, min = 1000, max = 200000, step = 1000),
+            numericInput("cost_per_person", "Selection Cost per Person $:", value = 304, min = 0, max = 10000, step = 50),
             
             br(),
             h5("Selection System:"),
-            numericInput("validity_current", "Current Validity:", value = 0.10, min = 0, max = 1, step = 0.01),
-            numericInput("validity_proposed", "Proposed Validity:", value = 0.50, min = 0, max = 1, step = 0.01),
-            numericInput("selection_ratio_calc", "Selection Ratio:", value = 0.33, min = 0.01, max = 0.99, step = 0.01),
+            numericInput("validity_current", "Current Validity:", value = 0.00, min = 0, max = 1, step = 0.01),
+            numericInput("validity_proposed", "Proposed Validity:", value = 0.40, min = 0, max = 1, step = 0.01),
+            numericInput("selection_ratio_calc", "Selection Ratio:", value = 0.333, min = 0.01, max = 0.99, step = 0.001),
             
             br(),
-            h5("Economic Adjustments (Sturman 2000):"),
+            h5("Economic Adjustments (Sturman, 2000):"),
+            p(style = "font-size: 12px; color: #666; margin-bottom: 15px;", 
+              "Three-factor adjustment model for realistic utility estimates:"),
             sliderInput("variable_costs", "Variable Costs (%):", value = 35, min = 0, max = 50, step = 1),
             sliderInput("tax_rate", "Tax Rate (%):", value = 63, min = 0, max = 70, step = 1),
             sliderInput("discount_rate", "Discount Rate (%):", value = 15, min = 0, max = 25, step = 1),
@@ -518,32 +647,32 @@ ui <- dashboardPage(
               fluidRow(
                 column(6,
                   h6("Validity Bounds:"),
-                  numericInput("validity_lower", "Lower Bound:", value = 0.2, min = 0, max = 1, step = 0.01),
-                  numericInput("validity_upper", "Upper Bound:", value = 0.6, min = 0, max = 1, step = 0.01)
+                  numericInput("validity_lower", "Lower Bound:", value = 0.30, min = 0, max = 1, step = 0.01),
+                  numericInput("validity_upper", "Upper Bound:", value = 0.50, min = 0, max = 1, step = 0.01)
                 ),
                 column(6,
                   h6("SDy Bounds ($):"),
-                  numericInput("sdy_lower", "Lower Bound:", value = 15000, min = 1000, max = 100000, step = 1000),
-                  numericInput("sdy_upper", "Upper Bound:", value = 30000, min = 1000, max = 100000, step = 1000)
+                  numericInput("sdy_lower", "Lower Bound:", value = 12000, min = 1000, max = 100000, step = 1000),
+                  numericInput("sdy_upper", "Upper Bound:", value = 20000, min = 1000, max = 100000, step = 1000)
                 )
               ),
               fluidRow(
                 column(6,
                   h6("Selection Ratio Bounds:"),
-                  numericInput("sr_lower", "Lower Bound:", value = 0.15, min = 0.01, max = 0.95, step = 0.01),
-                  numericInput("sr_upper", "Upper Bound:", value = 0.50, min = 0.01, max = 0.95, step = 0.01)
+                  numericInput("sr_lower", "Lower Bound:", value = 0.25, min = 0.01, max = 0.95, step = 0.01),
+                  numericInput("sr_upper", "Upper Bound:", value = 0.45, min = 0.01, max = 0.95, step = 0.01)
                 ),
                 column(6,
                   h6("Cost per Person Bounds ($):"),
-                  numericInput("cost_lower", "Lower Bound:", value = 200, min = 50, max = 5000, step = 50),
-                  numericInput("cost_upper", "Upper Bound:", value = 800, min = 50, max = 5000, step = 50)
+                  numericInput("cost_lower", "Lower Bound:", value = 250, min = 50, max = 5000, step = 50),
+                  numericInput("cost_upper", "Upper Bound:", value = 400, min = 50, max = 5000, step = 50)
                 )
               ),
               fluidRow(
                 column(6,
                   h6("Tenure Period Bounds (Years):"),
-                  numericInput("tenure_lower", "Lower Bound:", value = 2, min = 0.5, max = 10, step = 0.5),
-                  numericInput("tenure_upper", "Upper Bound:", value = 5, min = 0.5, max = 10, step = 0.5)
+                  numericInput("tenure_lower", "Lower Bound:", value = 15, min = 0.5, max = 25, step = 0.5),
+                  numericInput("tenure_upper", "Upper Bound:", value = 20, min = 0.5, max = 25, step = 0.5)
                 )
               )
             ),
@@ -1004,12 +1133,12 @@ ui <- dashboardPage(
             p("• Cucina, J., Berger, J., & Busciglio, H. (2017). Communicating criterion-related validity using expectancy charts: A new approach. 
               Personnel Assessment and Decisions, 3(1), 1-13."),
             p("• Sturman, M. C. (2000). Implications of utility analysis adjustments for estimates of human resource intervention value. 
-              Journal of Management, 26(2), 281-299."),
+              Journal of Management, 26(2), 281-299. ", 
+              em("(Provides the three-factor economic adjustment model used throughout this application)")),
             
-            h5("Pareto Optimization Software:"),
-            p("• Rupp, D. E., De Corte, W., Ravid, D., Naumenko, A., Comas, I., Credo, N. A., ... & Eckstein, L. (2020). 
-              ParetoR package: Tools for Pareto optimization in personnel selection. R package version 1.0.0."),
-            p("• Available at: https://CRAN.R-project.org/package=ParetoR"),
+            h5("Pareto Optimization Implementation:"),
+            p("• Custom Pareto optimization implementation based on De Corte et al. (2011) methodology"),
+            p("• Replaces external ParetoR dependency with self-contained solution"),
             
             h4("Monte Carlo and Economic Adjustments"),
             p("• Cascio, W. F., Boudreau, J. W., & Fink, A. A. (2019). Investing in people: Financial impact of human resource initiatives (3rd ed.). 
@@ -1739,57 +1868,50 @@ server <- function(input, output, session) {
     input$run_pareto
     
     isolate({
-      # Check if ParetoR is available
-      if (!requireNamespace("ParetoR", quietly = TRUE)) {
-        return(list(error = "ParetoR package not installed. Please install with: install.packages('ParetoR')"))
-      }
-      
-      # Create full correlation matrix with criterion (Berry et al. 2024)
-      berry_matrix_lower <- '
-      1.00,
-       .13, 1.00,
-       .54,  .03, 1.00,
-       .21,  .18,  .08, 1.00,
-       .25,  .01,  .28, -.02, 1.00,
-       .42,  .29,  .23,  .45,  .16, 1.00,
-       .38,  .31,  .19,  .42,  .31,  .26, 1.00
-      '
-      
-      Table_2.data <- lavaan::getCov(berry_matrix_lower, diagonal = TRUE, 
-                             names = c("Biodata", "GMA_Tests", "Conscientiousness", 
-                                      "Structured_interview", "Integrity_test", "Performance", "Criterion"))
+      # Create correlation matrix (Berry et al. 2024)
+      berry_matrix <- matrix(c(
+        1.00, 0.13, 0.54, 0.21, 0.25, 0.42,
+        0.13, 1.00, 0.03, 0.18, 0.01, 0.29,
+        0.54, 0.03, 1.00, 0.08, 0.28, 0.23,
+        0.21, 0.18, 0.08, 1.00, -0.02, 0.45,
+        0.25, 0.01, 0.28, -0.02, 1.00, 0.16,
+        0.42, 0.29, 0.23, 0.45, 0.16, 1.00
+      ), nrow = 6, byrow = TRUE)
       
       # d-values for adverse impact
       d <- c(0.32, 0.79, -0.07, 0.24, 0.10, 0.37)
       
-      # Run Pareto optimization
+      # Run custom Pareto optimization
       tryCatch({
-        out <- ParetoR::ParetoR(input$pareto_prop, input$pareto_sr, d, Table_2.data)
+        out <- custom_pareto_optimization(input$pareto_prop, input$pareto_sr, d, berry_matrix, n_combinations = 200)
         
         # Find strategy solutions
-        balanced_target <- 1.0
-        balanced_row <- which.min(abs(out$Pareto_Fmat[, "AI.ratio"] - balanced_target))
-        balanced_ai_ratio <- out$Pareto_Fmat[balanced_row, "AI.ratio"]
-        balanced_validity <- out$Pareto_Fmat[balanced_row, "Criterion.Validity"]
+        pareto_data <- out$pareto_solutions
         
-        aggressive_target <- 0.8
-        eligible_solutions <- out$Pareto_Fmat[out$Pareto_Fmat[, "AI.ratio"] >= aggressive_target, , drop = FALSE]
-        if (nrow(eligible_solutions) == 0) {
-          aggressive_row <- which.max(out$Pareto_Fmat[, "AI.ratio"])
-        } else {
-          closest_idx <- which.min(abs(eligible_solutions[, "AI.ratio"] - aggressive_target))
-          aggressive_row <- which(out$Pareto_Fmat[, "AI.ratio"] == eligible_solutions[closest_idx, "AI.ratio"])[1]
-        }
-        aggressive_ai_ratio <- out$Pareto_Fmat[aggressive_row, "AI.ratio"]
-        aggressive_validity <- out$Pareto_Fmat[aggressive_row, "Criterion.Validity"]
+        # Balanced strategy (closest to 0.80 AI ratio)
+        balanced_row <- which.min(abs(pareto_data$ai_ratio - 0.80))
+        balanced_ai_ratio <- pareto_data$ai_ratio[balanced_row]
+        balanced_validity <- pareto_data$validity[balanced_row]
+        
+        # Aggressive strategy (highest AI ratio)
+        aggressive_row <- which.max(pareto_data$ai_ratio)
+        aggressive_ai_ratio <- pareto_data$ai_ratio[aggressive_row]
+        aggressive_validity <- pareto_data$validity[aggressive_row]
+        
+        # High performance strategy (highest validity)
+        performance_row <- which.max(pareto_data$validity)
+        performance_ai_ratio <- pareto_data$ai_ratio[performance_row]
+        performance_validity <- pareto_data$validity[performance_row]
         
         list(
           pareto_output = out,
-          num_solutions = nrow(out$Pareto_Fmat),
+          num_solutions = nrow(pareto_data),
           balanced_strategy = list(row = balanced_row, ai_ratio = balanced_ai_ratio, validity = balanced_validity),
           aggressive_strategy = list(row = aggressive_row, ai_ratio = aggressive_ai_ratio, validity = aggressive_validity),
-          weights_matrix = out$Pareto_Xmat,
-          results_matrix = out$Pareto_Fmat
+          performance_strategy = list(row = performance_row, ai_ratio = performance_ai_ratio, validity = performance_validity),
+          weights_matrix = out$weights,
+          results_matrix = pareto_data,
+          all_results = out$results
         )
       }, error = function(e) {
         list(error = paste("Pareto optimization failed:", e$message))
@@ -1840,35 +1962,65 @@ server <- function(input, output, session) {
     if("error" %in% names(results)) {
       # Return empty plot with error message
       p <- ggplot() + 
-        annotate("text", x = 0.5, y = 0.5, label = "ParetoR package required", size = 5) +
+        annotate("text", x = 0.5, y = 0.5, label = "Pareto optimization failed", size = 5) +
         xlim(0, 1) + ylim(0, 1) + theme_void()
       return(ggplotly(p))
     }
     
-    # Create Pareto frontier plot
-    frontier_data <- data.frame(
-      AI_Ratio = results$results_matrix[, "AI.ratio"],
-      Validity = results$results_matrix[, "Criterion.Validity"],
-      Solution = 1:nrow(results$results_matrix)
+    # Create Pareto frontier plot with ALL solutions
+    all_data <- data.frame(
+      AI_Ratio = results$all_results$ai_ratio,
+      Validity = results$all_results$validity,
+      Pareto_Optimal = results$all_results$pareto_optimal
     )
     
-    # Highlight key strategies
-    frontier_data$Strategy <- "Other"
-    frontier_data$Strategy[results$balanced_strategy$row] <- "Balanced"
-    frontier_data$Strategy[results$aggressive_strategy$row] <- "Aggressive"
+    # Create Pareto data with strategy labels
+    pareto_data <- all_data[all_data$Pareto_Optimal, ]
     
-    p <- ggplot(frontier_data, aes(x = AI_Ratio, y = Validity, color = Strategy)) +
-      geom_point(size = 3, alpha = 0.7) +
-      geom_line(alpha = 0.5, color = "gray") +
-      scale_color_manual(values = c("Balanced" = "green", "Aggressive" = "red", "Other" = "blue")) +
-      labs(title = "Pareto Frontier: Validity vs. Adverse Impact",
-           x = "Adverse Impact Ratio", y = "Criterion Validity") +
-      theme_minimal() +
-      geom_vline(xintercept = 0.8, linetype = "dashed", color = "red", alpha = 0.7) +
-      annotate("text", x = 0.82, y = max(frontier_data$Validity) * 0.9, 
-               label = "4/5ths Rule", angle = 90, size = 3)
+    # Add strategy labels if Pareto solutions exist
+    if (nrow(pareto_data) > 0) {
+      # Identify key strategies
+      high_perf_row <- which.max(pareto_data$Validity)
+      diversity_row <- which.max(pareto_data$AI_Ratio)
+      balanced_row <- which.min(abs(pareto_data$AI_Ratio - 0.80))
+      
+      pareto_data$Strategy <- "Pareto Frontier"
+      pareto_data$Strategy[high_perf_row] <- "High Performance"
+      pareto_data$Strategy[diversity_row] <- "Aggressive"
+      pareto_data$Strategy[balanced_row] <- "Balanced"
+      
+      # Create plot
+      p <- ggplot() +
+        # All solutions as background
+        geom_point(data = all_data, aes(x = AI_Ratio, y = Validity), 
+                  color = "lightgray", alpha = 0.3, size = 1) +
+        # Pareto frontier line (sorted for smooth curve)
+        geom_line(data = pareto_data[order(pareto_data$AI_Ratio), ], 
+                 aes(x = AI_Ratio, y = Validity), 
+                 color = "red", linewidth = 2, alpha = 0.8) +
+        # Pareto solutions
+        geom_point(data = pareto_data, aes(x = AI_Ratio, y = Validity, color = Strategy), 
+                  size = 3, alpha = 0.8) +
+        scale_color_manual(values = c("High Performance" = "purple", 
+                                     "Aggressive" = "blue", 
+                                     "Balanced" = "green", 
+                                     "Pareto Frontier" = "red")) +
+        labs(title = "Pareto Frontier: Validity vs. Adverse Impact",
+             subtitle = "Red line shows Pareto-optimal frontier from all simulated combinations",
+             x = "Adverse Impact Ratio", y = "Criterion Validity") +
+        theme_minimal() +
+        geom_hline(yintercept = 0.8, linetype = "dashed", color = "orange", alpha = 0.7) +
+        annotate("text", x = 0.5, y = 0.85, label = "4/5ths Rule (0.80)", color = "orange", size = 3)
+    } else {
+      # Fallback if no Pareto solutions
+      p <- ggplot(all_data, aes(x = AI_Ratio, y = Validity)) +
+        geom_point(color = "lightgray", alpha = 0.3) +
+        labs(title = "No Pareto Solutions Found",
+             x = "Adverse Impact Ratio", y = "Criterion Validity") +
+        theme_minimal()
+    }
     
-    ggplotly(p)
+    ggplotly(p, tooltip = c("x", "y", "color"))
   })
   
   output$pareto_strategies_table <- DT::renderDataTable({
@@ -1879,16 +2031,18 @@ server <- function(input, output, session) {
     
     # Create strategy comparison table
     strategy_data <- data.frame(
-      Strategy = c("Balanced", "Aggressive"),
-      AI_Ratio = c(results$balanced_strategy$ai_ratio, results$aggressive_strategy$ai_ratio),
-      Validity = c(results$balanced_strategy$validity, results$aggressive_strategy$validity),
+      Strategy = c("High Performance", "Balanced", "Aggressive"),
+      AI_Ratio = c(results$performance_strategy$ai_ratio, results$balanced_strategy$ai_ratio, results$aggressive_strategy$ai_ratio),
+      Validity = c(results$performance_strategy$validity, results$balanced_strategy$validity, results$aggressive_strategy$validity),
       Passes_80_Rule = c(
+        results$performance_strategy$ai_ratio >= 0.8,
         results$balanced_strategy$ai_ratio >= 0.8,
         results$aggressive_strategy$ai_ratio >= 0.8
       ),
       Description = c(
-        "Maximizes diversity (AI ratio closest to 1.0)",
-        "Maximizes validity while meeting 4/5ths rule"
+        "Maximizes validity while accepting some adverse impact",
+        "Optimal balance between validity and diversity",
+        "Maximizes diversity while maintaining acceptable validity"
       )
     )
     
@@ -2016,10 +2170,10 @@ server <- function(input, output, session) {
     ))
   })
   
-  # Download Report Handler - Now functional
+  # Download Report Handler - Carson et al. Best Practice Report
   output$download_staff_report <- downloadHandler(
     filename = function() {
-      paste0("staffing_utility_analysis_", Sys.Date(), ".pdf")
+      paste0("latham_whyte_case_analysis_", Sys.Date(), ".pdf")
     },
     content = function(file) {
       rmd_content <- paste0('
